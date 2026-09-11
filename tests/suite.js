@@ -1,0 +1,121 @@
+(() => {
+  const R = [];
+  const ok = (n, c, d='') => R.push((c?'PASS':'FALL') + ' | ' + n + (d?' | '+d:''));
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const cards = () => $$('.card');
+  const fire = (el, t='change') => el.dispatchEvent(new Event(t, {bubbles:true}));
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+
+  return (async () => {
+    ok('catalogo carregou', window.XBX_DB.games.length > 3000, window.XBX_DB.games.length + ' jogos');
+    ok('stats total confere', $('#s-total').textContent.replace(/\D/g,'') == window.XBX_DB.games.length, $('#s-total').textContent);
+    ok('cards renderizaram', cards().length > 50, cards().length + ' cards no 1o lote');
+    ok('secoes de ano', $$('.year').length > 0, $$('.year').length + ' secoes');
+
+    // filtro de plataforma: so xbox original
+    $$('.f-plat').forEach(c => { c.checked = (c.value === 'xbox'); fire(c); });
+    await wait(400);
+    const ids = cards().map(c => c.dataset.id);
+    ok('filtro plataforma', ids.length > 0 && ids.every(i => i.startsWith('xbox-')), ids.length + ' cards, todos xbox-');
+
+    // filtro de retrocompatibilidade
+    $('#f-bc').value = 'yes'; fire($('#f-bc')); await wait(400);
+    const bcShown = +$('#s-shown').textContent.replace(/\D/g,'');
+    const bcReal = window.XBX_DB.games.filter(g => g.platform==='xbox' && g.bc360 && g.bc360.compatible).length;
+    ok('filtro retrocompat', bcShown === bcReal, bcShown + ' exibidos vs ' + bcReal + ' reais');
+    $('#f-bc').value = 'all'; fire($('#f-bc'));
+    $$('.f-plat').forEach(c => { c.checked = true; fire(c); }); await wait(400);
+
+    // busca
+    $('#q').value = 'halo'; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(600);
+    const hal = cards().map(c => c.querySelector('h3').textContent.toLowerCase());
+    ok('busca funciona', hal.length > 3 && hal.every(t => t.includes('halo')), hal.length + ' resultados');
+
+    // marcar "tenho"
+    const first = cards()[0], fid = first.dataset.id;
+    first.click(); await wait(250);
+    const stored = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
+    ok('marcar tenho persiste', stored.includes(fid), 'id=' + fid);
+    ok('card ganha classe own', $('.card[data-id="'+CSS.escape(fid)+'"]').classList.contains('own'));
+    ok('contador de posse', $('#s-own').textContent.replace(/\D/g,'') === '1', $('#s-own').textContent);
+
+    // filtro "so os que tenho"
+    $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(500);
+    $('#f-own').value = 'yes'; fire($('#f-own')); await wait(400);
+    ok('filtro so-tenho', cards().length === 1, cards().length + ' card(s)');
+    $('#f-own').value = 'no'; fire($('#f-own')); await wait(400);
+    ok('filtro so-faltam', +$('#s-shown').textContent.replace(/\D/g,'') === window.XBX_DB.games.length - 1, $('#s-shown').textContent);
+    $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
+
+    // persistencia de filtros
+    ok('filtros salvos no storage', !!localStorage.getItem('xbx.filters.v1'));
+
+    // import: injeta ids conhecidos e valida via fluxo real do app
+    const sample = window.XBX_DB.games.slice(0, 5).map(g => g.id);
+    const payload = JSON.stringify({app:'xbox-vault', version:1, owned: sample.concat(['id-que-nao-existe'])});
+    const file = new File([payload], 'col.json', {type:'application/json'});
+    const dt = new DataTransfer(); dt.items.add(file);
+    const inp = document.getElementById('file-in');
+    inp.files = dt.files; fire(inp);
+    await wait(600);
+    const modalOpen = !document.getElementById('modal').hidden;
+    ok('import abre dialogo', modalOpen, modalOpen ? 'ok' : 'modal nao abriu');
+    if (modalOpen && document.getElementById('imp-merge')) {
+      window.alert = () => {};
+      document.getElementById('imp-merge').click(); await wait(500);
+      const after = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
+      ok('import soma ids validos', sample.every(i => after.includes(i)), after.length + ' na colecao');
+      ok('import descarta id invalido', !after.includes('id-que-nao-existe'));
+    } else ok('import soma ids validos', false, 'dialogo ausente');
+
+
+    // conteudo REAL do arquivo exportado (intercepta o blob do download)
+    let captured = null;
+    const origCreate = URL.createObjectURL;
+    URL.createObjectURL = b => { captured = b; return origCreate.call(URL, b); };
+    document.getElementById('btn-export').click(); await wait(400);
+    URL.createObjectURL = origCreate;
+    if (captured) {
+      const txt = await captured.text(); const p = JSON.parse(txt);
+      const cur = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
+      ok('export gera JSON valido', p.app === 'xbox-vault' && Array.isArray(p.owned), 'v' + p.version);
+      ok('export contem a colecao', p.owned.length === cur.length && p.owned.length > 0,
+         p.owned.length + ' ids exportados');
+      ok('export: count confere', p.count === p.owned.length, 'count=' + p.count);
+      ok('export -> import ida e volta', p.owned.every(i => window.XBX_DB.games.some(g => g.id === i)),
+         'todos os ids existem no catalogo');
+    } else ok('export gera JSON valido', false, 'blob nao capturado');
+
+    // filtros de tags (so valem quando ha dados de tags)
+    const tagged = window.XBX_DB.games.filter(g => g.tags && Object.keys(g.tags).length);
+    if (tagged.length > 100) {
+      const coopBox = $$('.f-mode').find(c => c.value === 'coop');
+      coopBox.checked = true; fire(coopBox); await wait(500);
+      const shown = +$('#s-shown').textContent.replace(/\D/g,'');
+      const real = window.XBX_DB.games.filter(g => g.tags && g.tags.coop).length;
+      ok('filtro co-op', shown === real, shown + ' exibidos vs ' + real + ' reais');
+      const lb = $$('.f-mode').find(c => c.value === 'multiplayerLocal');
+      lb.checked = true; fire(lb); await wait(500);
+      const both = window.XBX_DB.games.filter(g => g.tags && g.tags.coop && g.tags.multiplayerLocal).length;
+      ok('filtros combinam (E logico)', +$('#s-shown').textContent.replace(/\D/g,'') === both, both + ' co-op local');
+      coopBox.checked = false; fire(coopBox); lb.checked = false; fire(lb); await wait(400);
+
+      $('#f-pl-min').value = '4'; fire($('#f-pl-min')); await wait(500);
+      const p4 = window.XBX_DB.games.filter(g => { const t = g.tags||{};
+        return Math.max(t.maxPlayersLocal||0, t.maxPlayersOnline||0, t.maxPlayers||0) >= 4; }).length;
+      ok('filtro 4+ jogadores', +$('#s-shown').textContent.replace(/\D/g,'') === p4, p4 + ' jogos');
+      $('#f-pl-min').value = '0'; fire($('#f-pl-min')); await wait(300);
+
+      const withImg = window.XBX_DB.games.filter(g => g.image).length;
+      ok('capas presentes', withImg > tagged.length * 0.5, withImg + ' jogos com imagem');
+    } else ok('dados de tags presentes', false, 'apenas ' + tagged.length + ' jogos com tags');
+
+    // scroll infinito
+    const before = cards().length;
+    window.scrollTo(0, document.body.scrollHeight); await wait(900);
+    ok('render progressivo', cards().length > before, before + ' -> ' + cards().length + ' cards');
+
+    localStorage.clear();
+    return R.join('\n');
+  })();
+})()

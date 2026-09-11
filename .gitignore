@@ -1,0 +1,6 @@
+# respostas cruas da API da Wikipedia — regeradas sob demanda pelos scripts (~70 MB)
+cache/
+
+__pycache__/
+*.pyc
+.DS_Store

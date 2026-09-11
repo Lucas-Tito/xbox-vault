@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xbox Vault — catálogo Xbox 360 / Xbox / Homebrew</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%2352b043'/><text x='16' y='23' font-size='20' font-weight='bold' text-anchor='middle' fill='%230d1117'>X</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><span class="orb">X</span> Xbox Vault</div>
+    <label class="search"><input id="q" type="search" placeholder="Buscar por título, desenvolvedora, publisher…" autocomplete="off"></label>
+    <div class="actions">
+      <button class="btn mobile-filters" id="btn-filters">Filtros</button>
+      <button class="btn" id="btn-import">Importar</button>
+      <button class="btn primary" id="btn-export">Exportar coleção</button>
+    </div>
+  </div>
+  <div class="stats">
+    <span><b id="s-shown">0</b> exibidos</span><span class="sep"></span>
+    <span><b id="s-total">0</b> no catálogo</span><span class="sep"></span>
+    <span>Tenho: <b id="s-own">0</b> <span id="s-pct"></span></span>
+    <div class="bar"><i id="s-bar" style="width:0"></i></div>
+    <span class="sep"></span>
+    <span id="s-breakdown"></span>
+  </div>
+</header>
+
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="fgroup">
+      <h4>Coleção</h4>
+      <select id="f-own">
+        <option value="all">Todos os jogos</option>
+        <option value="yes">Só os que eu tenho</option>
+        <option value="no">Só os que faltam</option>
+      </select>
+    </div>
+
+    <div class="fgroup">
+      <h4>Plataforma</h4>
+      <label class="chk"><input type="checkbox" class="f-plat" value="x360" checked> Xbox 360 <span class="n" data-cnt="plat-x360"></span></label>
+      <label class="chk"><input type="checkbox" class="f-plat" value="xbox" checked> Xbox original <span class="n" data-cnt="plat-xbox"></span></label>
+      <label class="chk"><input type="checkbox" class="f-plat" value="homebrew" checked> Homebrew <span class="n" data-cnt="plat-homebrew"></span></label>
+    </div>
+
+    <div class="fgroup">
+      <h4>Modo de jogo</h4>
+      <label class="chk"><input type="checkbox" class="f-mode" value="singlePlayer"> Single player <span class="n" data-cnt="m-singlePlayer"></span></label>
+      <label class="chk"><input type="checkbox" class="f-mode" value="multiplayerLocal"> Multiplayer local <span class="n" data-cnt="m-multiplayerLocal"></span></label>
+      <label class="chk"><input type="checkbox" class="f-mode" value="multiplayerOnline"> Multiplayer online <span class="n" data-cnt="m-multiplayerOnline"></span></label>
+      <label class="chk"><input type="checkbox" class="f-mode" value="coop"> Co-op <span class="n" data-cnt="m-coop"></span></label>
+      <label class="chk"><input type="checkbox" class="f-mode" value="coopLocal"> Co-op local <span class="n" data-cnt="m-coopLocal"></span></label>
+      <label class="chk"><input type="checkbox" class="f-mode" value="versus"> Versus <span class="n" data-cnt="m-versus"></span></label>
+      <label class="chk"><input type="checkbox" class="f-mode" value="versusLocal"> Versus local <span class="n" data-cnt="m-versusLocal"></span></label>
+    </div>
+
+    <div class="fgroup">
+      <h4>Nº de jogadores</h4>
+      <div class="row2">
+        <select id="f-pl-scope">
+          <option value="any">Qualquer</option>
+          <option value="local">Local</option>
+          <option value="online">Online</option>
+        </select>
+        <select id="f-pl-min">
+          <option value="0">todos</option>
+          <option value="2">2+</option><option value="3">3+</option>
+          <option value="4">4+</option><option value="6">6+</option>
+          <option value="8">8+</option><option value="12">12+</option>
+          <option value="16">16+</option><option value="24">24+</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <h4>Ano</h4>
+      <div class="row2">
+        <select id="f-y1"></select><span>até</span><select id="f-y2"></select>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <h4>Retrocompatibilidade (Xbox → 360)</h4>
+      <select id="f-bc">
+        <option value="all">Tanto faz</option>
+        <option value="yes">Só retrocompatíveis</option>
+        <option value="no">Só não compatíveis</option>
+      </select>
+    </div>
+
+    <div class="fgroup">
+      <h4>Extras</h4>
+      <label class="chk"><input type="checkbox" class="f-flag" value="xbla"> XBLA <span class="n" data-cnt="f-xbla"></span></label>
+      <label class="chk"><input type="checkbox" class="f-flag" value="xblig"> Indie (XBLIG) <span class="n" data-cnt="f-xblig"></span></label>
+      <label class="chk"><input type="checkbox" class="f-flag" value="kinect"> Kinect <span class="n" data-cnt="f-kinect"></span></label>
+      <label class="chk"><input type="checkbox" class="f-flag" value="stereo3d"> 3D <span class="n" data-cnt="f-stereo3d"></span></label>
+      <label class="chk"><input type="checkbox" class="f-flag" value="xboxOne"> Roda no Xbox One <span class="n" data-cnt="f-xboxOne"></span></label>
+    </div>
+
+    <div class="fgroup">
+      <h4>Categoria (homebrew)</h4>
+      <select id="f-cat"><option value="">Todas</option></select>
+    </div>
+
+    <div class="fgroup">
+      <h4>Gênero</h4>
+      <div class="genre-box" id="f-genres"></div>
+    </div>
+
+    <div class="fgroup">
+      <h4>Ordenar</h4>
+      <select id="f-sort">
+        <option value="year-desc">Ano (mais novo)</option>
+        <option value="year-asc">Ano (mais antigo)</option>
+        <option value="title">Título (A–Z)</option>
+        <option value="players">Mais jogadores</option>
+      </select>
+    </div>
+
+    <button class="btn" id="btn-reset" style="width:100%">Limpar filtros</button>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="loading">Carregando catálogo…</div>
+  </main>
+</div>
+
+<!-- modal export/import -->
+<div class="modal" id="modal" hidden>
+  <div class="sheet">
+    <button class="sheet-x" id="modal-x">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+<input type="file" id="file-in" accept="application/json,.json" hidden>
+
+<script src="data/db.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
