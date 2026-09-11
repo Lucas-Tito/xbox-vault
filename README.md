@@ -85,6 +85,7 @@ python3 tools/tag_x360.py       # tags + capas
 python3 tools/tag_xbox.py
 python3 tools/tag_homebrew.py
 python3 tools/fetch_images.py   # baixa e comprime as capas em images/ (resumível)
+python3 tools/fetch_images_launchbox.py  # completa as que a Wikipédia não tem
 python3 tools/bundle.py         # <- sempre por último: escreve data/db.js
 ```
 
@@ -126,7 +127,10 @@ não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jo
 | Xbox 360 | 2.155 | 1.948 (90%) | 2.155 |
 | Xbox original | 995 (466 retrocompatíveis) | 918 (92%) | 995 |
 | Homebrew | 300 | 130 | 300 |
-| **total** | **3.450** | **2.996 (87%)** | **3.450** |
+| **total** | **3.450** | **3.236 (94%)** | **3.450** |
+
+Contando só jogos comerciais (o homebrew raramente teve capa), a cobertura é de
+**3.106 de 3.150 — 98,6%**.
 
 O total de 2.155 do Xbox 360 bate com o contador da própria Wikipédia, e os 466
 retrocompatíveis batem com a lista oficial final da Microsoft.
@@ -138,10 +142,16 @@ busca, marcação, export e import. Veja `tests/README.md`.
 
 ## Procedência dos dados
 
+As capas vêm de duas fontes. A principal é a imagem do artigo da Wikipédia; para os ~280 títulos
+sem imagem lá (lançamentos só no Japão, shovelware, jogos sem artigo), o
+`tools/fetch_images_launchbox.py` completa a partir do dump aberto do
+[LaunchBox Games Database](https://gamesdb.launchbox-app.com/), que tem box art de console e não
+exige chave de API — 240 dos 284 casaram por título normalizado. Todas as imagens são
+reduzidas para 240px de largura e convertidas em WebP q72 antes de entrar no repositório.
+
 As listas de Xbox 360 e Xbox original vêm das listas da Wikipédia em inglês (`List of Xbox 360
 games (A–L)` / `(M–Z)`, `List of Xbox games`, `List of Xbox games compatible with Xbox 360`),
-raspadas por script — não digitadas à mão. As capas vêm da imagem principal de cada artigo.
-
+raspadas por script — não digitadas à mão. 
 As **tags de modo de jogo** são de qualidade desigual, e o campo `tags.confidence` diz qual é qual:
 
 - `high` — veio do campo *modes* da infobox do artigo, ou foi conferido à mão.
