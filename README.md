@@ -22,29 +22,36 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 
 - **Marcar que tenho** — clique em qualquer ponto do card (ou no botão `+` no canto). O card fica
   destacado em verde. O clique no *título* abre a página do jogo na Wikipédia.
+- **Wishlist** — o botão `☆` no canto do card. Fica destacado em âmbar.
+  "Tenho" e "quero" são mutuamente exclusivos: marcar um limpa o outro, porque as duas coisas se
+  contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
 - **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
   Os filtros ficam salvos entre visitas.
-- **Exportar coleção** — baixa um `.json` com a lista dos jogos que você tem.
+- **Exportar coleção** — baixa um `.json` com a coleção **e** a wishlist.
 - **Importar** — aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
-  **somar** à coleção atual ou **substituir** tudo.
+  **somar** ao que já está aqui ou **substituir** tudo.
 
-A coleção é guardada no `localStorage` do navegador. Como isso é por navegador e por perfil, o
-**export é a forma de levar os dados para outra máquina** — ou de fazer backup.
+A coleção e a wishlist ficam no `localStorage` do navegador. Como isso é por navegador **e por
+origem**, o que você marca em `lucas-tito.github.io` não aparece ao abrir o `index.html` local, e
+vice-versa. O **export é a ponte entre os dois** — e o backup se você limpar os dados do navegador.
 
 ### Formato do arquivo de coleção
 
 ```json
 {
   "app": "xbox-vault",
-  "version": 1,
+  "version": 2,
   "exportedAt": "2026-09-11T18:40:00.000Z",
   "count": 42,
-  "owned": ["x360-halo-3", "xbox-halo-combat-evolved", "hb-xbmc"]
+  "wishlistCount": 7,
+  "owned": ["x360-halo-3", "xbox-halo-combat-evolved", "hb-xbmc"],
+  "wishlist": ["x360-red-dead-redemption"]
 }
 ```
 
-Só a lista de ids é necessária para importar — dá para editar à mão sem medo.
+Só as listas de ids importam — dá para editar à mão sem medo. Arquivos da `version: 1` (sem
+wishlist) continuam sendo aceitos, e um array puro de ids também.
 
 ## Estrutura
 
@@ -64,6 +71,7 @@ tools/
   build_*.py        geram os data/*.json das listas
   tag_*.py          geram os data/tags-*.json
   bundle.py         une os JSONs em data/db.js
+images/             capas em WebP (240px, q72), uma por jogo, versionadas no repo
 cache/              respostas da API da Wikipédia (pode apagar; será rebaixado)
 ```
 
@@ -76,6 +84,7 @@ python3 tools/build_homebrew.py # homebrews
 python3 tools/tag_x360.py       # tags + capas
 python3 tools/tag_xbox.py
 python3 tools/tag_homebrew.py
+python3 tools/fetch_images.py   # baixa e comprime as capas em images/ (resumível)
 python3 tools/bundle.py         # <- sempre por último: escreve data/db.js
 ```
 
@@ -96,7 +105,8 @@ JSONs, rode `tools/bundle.py`** — o site lê o `db.js`, não os JSONs.
   "publishers": ["Microsoft Game Studios"],
   "flags": { "xbla": false, "kinect": null, "stereo3d": false, "xboxOne": true },
   "bc360": { "compatible": true, "region": "all", "issues": null },  // só Xbox original
-  "image": "https://upload.wikimedia.org/...",
+  "image": "images/x360-halo-3.webp",   // arquivo local versionado no repo
+  "imageRemote": "https://upload.wikimedia.org/...",  // reserva, se o arquivo faltar
   "tags": {
     "singlePlayer": true, "multiplayerLocal": true, "multiplayerOnline": true,
     "coop": true, "coopLocal": true, "versus": true, "versusLocal": true,

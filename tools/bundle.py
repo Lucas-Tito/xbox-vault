@@ -10,6 +10,11 @@ sem precisar de servidor -- fetch de JSON local e bloqueado por CORS.
 """
 import json, os, sys, datetime
 
+try:
+    from PIL import Image
+except ImportError:
+    Image = None
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "data")
 
@@ -54,7 +59,7 @@ def main():
         tags.update(t)
     print("  %-16s %5d" % ("tags", len(tags)))
 
-    seen, dupes, tagged, imaged = set(), 0, 0, 0
+    seen, dupes, tagged, imaged, localed, wide = set(), 0, 0, 0, 0, 0
     for g in games:
         if g["id"] in seen:
             dupes += 1
@@ -62,9 +67,30 @@ def main():
         t = tags.get(g["id"]) or {}
         if t:
             tagged += 1
-        img = norm_image(t.get("image") or g.get("image"))
-        if img:
-            g["image"] = img
+        remote = norm_image(t.get("image") or g.get("image"))
+        local = os.path.join(D, "..", "images", g["id"] + ".webp")
+        g.pop("imageRemote", None)
+        g.pop("wide", None)
+        if os.path.exists(local) and os.path.getsize(local) > 0:
+            # capa versionada no repo: nao depende do upload.wikimedia.org
+            g["image"] = "images/" + g["id"] + ".webp"
+            if remote:
+                g["imageRemote"] = remote          # reserva se o arquivo faltar
+            # nem toda "capa" e box art: ~250 artigos usam logo/faixa horizontal.
+            # Ampliar isso num card 3/4 fica ilegivel, entao marcamos para o site
+            # exibir inteiro em vez de cortar.
+            if Image:
+                try:
+                    w, h = Image.open(local).size
+                    if h and w / h > 1.2:
+                        g["wide"] = True
+                        wide += 1
+                except Exception:
+                    pass
+            imaged += 1
+            localed += 1
+        elif remote:
+            g["image"] = remote
             imaged += 1
         elif "image" in g:
             g["image"] = None
@@ -72,7 +98,8 @@ def main():
 
     payload = {
         "generated": datetime.datetime.now().isoformat(timespec="seconds"),
-        "counts": {"total": len(games), "tagged": tagged, "withImage": imaged},
+        "counts": {"total": len(games), "tagged": tagged, "withImage": imaged,
+                   "withLocalImage": localed, "wideImage": wide},
         "games": games,
     }
     out = os.path.join(D, "db.js")
@@ -82,8 +109,8 @@ def main():
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
-    print("\n  total %d jogos | %d com tags | %d com imagem | %d ids duplicados" %
-          (len(games), tagged, imaged, dupes))
+    print("\n  total %d jogos | %d com tags | %d com imagem (%d locais, %d em paisagem) | "
+          "%d ids duplicados" % (len(games), tagged, imaged, localed, wide, dupes))
     print("  -> data/db.js (%.1f MB)" % (os.path.getsize(out) / 1048576))
     if missing:
         print("  AVISO: sem dados de: %s" % ", ".join(missing))

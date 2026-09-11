@@ -5,12 +5,14 @@
 var DB = window.XBX_DB || { games: [], generated: null };
 var GAMES = DB.games || [];
 var OWNED_KEY = "xbx.owned.v1";
+var WISH_KEY  = "xbx.wishlist.v1";
 var FILT_KEY  = "xbx.filters.v1";
 var BATCH = 120;
 
 /* ---------------- estado ---------------- */
-var owned = new Set();
+var owned = new Set(), wishlist = new Set();
 try { owned = new Set(JSON.parse(localStorage.getItem(OWNED_KEY) || "[]")); } catch (e) {}
+try { wishlist = new Set(JSON.parse(localStorage.getItem(WISH_KEY) || "[]")); } catch (e) {}
 
 var F = {
   q: "", own: "all", plats: ["x360", "xbox", "homebrew"], modes: [], flags: [],
@@ -50,6 +52,7 @@ function match(g, skip) {
 
   if (F.own === "yes" && !owned.has(g.id)) return false;
   if (F.own === "no" && owned.has(g.id)) return false;
+  if (F.own === "wish" && !wishlist.has(g.id)) return false;
 
   if (skip !== "mode") {
     for (var i = 0; i < F.modes.length; i++) if (!g._t[F.modes[i]]) return false;
@@ -123,16 +126,28 @@ function tagsHtml(g) {
   }
   var f = g.flags || {};
   if (f.xbla) h.push('<span class="tag">XBLA</span>');
-  if (f.xblig) h.push('<span class="tag">INDIE</span>');
   if (f.kinect) h.push('<span class="tag">KINECT</span>');
-  if (f.stereo3d) h.push('<span class="tag">3D</span>');
   if (g.category) h.push('<span class="tag">' + esc(g.category.toUpperCase()) + "</span>");
   return h.join("");
 }
 
+/* capa: tenta o arquivo local, cai para a URL da Wikipedia, depois placeholder */
+window.XBXimgErr = function (im) {
+  var fb = im.getAttribute("data-fb");
+  if (fb) { im.removeAttribute("data-fb"); im.src = fb; return; }
+  var card = im.closest(".card"), h3 = card && card.querySelector("h3");
+  var ph = document.createElement("div");
+  ph.className = "ph";
+  ph.textContent = h3 ? h3.textContent : "";
+  im.parentNode.replaceChild(ph, im);
+};
+
 function cardHtml(g) {
   var img = g.image
-    ? '<img loading="lazy" src="' + esc(g.image) + '" alt="' + esc(g.title) + '" onerror="this.parentNode.innerHTML=\'<div class=ph>' + esc(g.title).replace(/'/g, "") + '</div>\'">'
+    ? '<img loading="lazy" src="' + esc(g.image) + '"' +
+      (g.imageRemote ? ' data-fb="' + esc(g.imageRemote) + '"' : "") +
+      ' alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") +
+      ' onerror="XBXimgErr(this)">'
     : '<div class="ph">' + esc(g.title) + "</div>";
   var sub = g.platform === "homebrew"
     ? esc(g.description || g.category || "")
@@ -141,8 +156,13 @@ function cardHtml(g) {
     ? '<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(g.wiki) + '" target="_blank" rel="noopener">' + esc(g.title) + "</a>"
     : (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">' + esc(g.title) + "</a>" : esc(g.title));
 
-  return '<article class="card' + (owned.has(g.id) ? " own" : "") + '" data-id="' + esc(g.id) + '">' +
-    '<button class="own-btn" title="Marcar como “tenho”">' + (owned.has(g.id) ? "✓" : "+") + "</button>" +
+  var o = owned.has(g.id), w = wishlist.has(g.id);
+  return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") +
+    '" data-id="' + esc(g.id) + '">' +
+    '<div class="marks">' +
+    '<button class="own-btn" title="Marcar como tenho">' + (o ? "✓" : "+") + "</button>" +
+    '<button class="wish-btn" title="Adicionar à wishlist">' + (w ? "★" : "☆") + "</button>" +
+    "</div>" +
     '<div class="thumb">' + img + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
     '<div class="sub">' + sub + "</div>" +
@@ -205,6 +225,7 @@ function updateStats(list) {
     byPlat[g.platform]++;
     if (owned.has(g.id)) { ownCount++; ownPlat[g.platform]++; }
   });
+  $("#s-wish").textContent = wishlist.size.toLocaleString("pt-BR");
   $("#s-shown").textContent = list.length.toLocaleString("pt-BR");
   $("#s-total").textContent = GAMES.length.toLocaleString("pt-BR");
   $("#s-own").textContent = ownCount.toLocaleString("pt-BR");
@@ -235,17 +256,29 @@ function updateFacets() {
 }
 
 /* ---------------- coleção ---------------- */
-function saveOwned() {
-  try { localStorage.setItem(OWNED_KEY, JSON.stringify(Array.from(owned))); }
-  catch (e) { alert("Não consegui salvar no navegador: " + e.message); }
+function saveMarks() {
+  try {
+    localStorage.setItem(OWNED_KEY, JSON.stringify(Array.from(owned)));
+    localStorage.setItem(WISH_KEY, JSON.stringify(Array.from(wishlist)));
+  } catch (e) { alert("Não consegui salvar no navegador: " + e.message); }
 }
-function toggleOwn(id, card) {
-  if (owned.has(id)) owned.delete(id); else owned.add(id);
-  saveOwned();
-  if (card) {
-    card.classList.toggle("own", owned.has(id));
-    card.querySelector(".own-btn").textContent = owned.has(id) ? "✓" : "+";
-  }
+
+function paintCard(card, id) {
+  var o = owned.has(id), w = wishlist.has(id);
+  card.classList.toggle("own", o);
+  card.classList.toggle("wish", w);
+  card.querySelector(".own-btn").textContent = o ? "✓" : "+";
+  card.querySelector(".wish-btn").textContent = w ? "★" : "☆";
+}
+/* "tenho" e "quero" se contradizem: marcar um limpa o outro, senao o arquivo
+   exportado sairia com o mesmo jogo nas duas listas. */
+function toggleMark(id, which, card) {
+  var set = which === "wish" ? wishlist : owned;
+  var other = which === "wish" ? owned : wishlist;
+  if (set.has(id)) set.delete(id);
+  else { set.add(id); other.delete(id); }
+  saveMarks();
+  if (card) paintCard(card, id);
   updateStats(filtered(null));
   if (F.own !== "all") render();
 }
@@ -253,11 +286,13 @@ function toggleOwn(id, card) {
 /* ---------------- export / import ---------------- */
 function doExport() {
   var payload = {
-    app: "xbox-vault", version: 1,
+    app: "xbox-vault", version: 2,
     exportedAt: new Date().toISOString(),
     catalogGenerated: DB.generated || null,
     count: owned.size,
-    owned: Array.from(owned).sort()
+    wishlistCount: wishlist.size,
+    owned: Array.from(owned).sort(),
+    wishlist: Array.from(wishlist).sort()
   };
   var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   var url = URL.createObjectURL(blob);
@@ -270,40 +305,51 @@ function doExport() {
 
 function parseImport(text) {
   var data = JSON.parse(text);
-  var ids = Array.isArray(data) ? data : (data.owned || data.ids || []);
-  if (!Array.isArray(ids)) throw new Error("Formato não reconhecido: faltou a lista 'owned'.");
-  return ids.filter(function (x) { return typeof x === "string"; });
+  var str = function (a) { return a.filter(function (x) { return typeof x === "string"; }); };
+  if (Array.isArray(data)) return { owned: str(data), wishlist: [] };
+  var o = data.owned || data.ids || [], w = data.wishlist || [];
+  if (!Array.isArray(o) || !Array.isArray(w))
+    throw new Error("Formato não reconhecido: esperava as listas 'owned' e 'wishlist'.");
+  return { owned: str(o), wishlist: str(w) };   // arquivos v1 nao tem wishlist
 }
 
-function applyImport(ids, mode) {
+function applyImport(p, mode) {
   var known = new Set(GAMES.map(function (g) { return g.id; }));
-  var ok = ids.filter(function (i) { return known.has(i); });
-  var unknown = ids.length - ok.length;
-  if (mode === "replace") owned = new Set(ok);
-  else ok.forEach(function (i) { owned.add(i); });
-  saveOwned(); render();
+  var keep = function (a) { return a.filter(function (i) { return known.has(i); }); };
+  var o = keep(p.owned), w = keep(p.wishlist);
+  var unknown = (p.owned.length - o.length) + (p.wishlist.length - w.length);
+  if (mode === "replace") { owned = new Set(o); wishlist = new Set(w); }
+  else {
+    o.forEach(function (i) { owned.add(i); });
+    w.forEach(function (i) { wishlist.add(i); });
+  }
+  owned.forEach(function (i) { wishlist.delete(i); });   // "tenho" ganha de "quero"
+  saveMarks(); render();
   closeModal();
-  alert("Importado: " + ok.length + " jogo(s)" +
+  alert("Importado: " + o.length + " na coleção, " + w.length + " na wishlist" +
     (unknown ? "\n" + unknown + " id(s) do arquivo não existem neste catálogo e foram ignorados." : "") +
-    "\nTotal na coleção agora: " + owned.size);
+    "\nAgora: " + owned.size + " que tenho, " + wishlist.size + " na wishlist.");
 }
 
 function openModal(html) { $("#modal-body").innerHTML = html; $("#modal").hidden = false; }
 function closeModal() { $("#modal").hidden = true; }
 
-var pendingIds = null;
+var pending = null;
 function importFlow(text) {
-  try { pendingIds = parseImport(text); }
+  try { pending = parseImport(text); }
   catch (e) { alert("Arquivo inválido: " + e.message); return; }
   openModal(
-    "<h3>Importar coleção</h3><p>O arquivo tem <b>" + pendingIds.length +
-    "</b> jogo(s). Como aplicar?</p>" +
-    '<button class="btn primary" id="imp-merge">➕ Somar à minha coleção atual (' + owned.size + " jogos)</button>" +
+    "<h3>Importar</h3><p>O arquivo tem <b>" + pending.owned.length +
+    "</b> jogo(s) na coleção e <b>" + pending.wishlist.length +
+    "</b> na wishlist. Como aplicar?</p>" +
+    '<button class="btn primary" id="imp-merge">➕ Somar ao que já tenho aqui (' +
+    owned.size + " + " + wishlist.size + " na wishlist)</button>" +
     '<button class="btn" id="imp-replace">♻️ Substituir tudo pelo arquivo</button>');
-  $("#imp-merge").onclick = function () { applyImport(pendingIds, "merge"); };
+  $("#imp-merge").onclick = function () { applyImport(pending, "merge"); };
   $("#imp-replace").onclick = function () {
-    if (confirm("Isso apaga sua coleção atual (" + owned.size + " jogos) e usa só a do arquivo. Confirmar?"))
-      applyImport(pendingIds, "replace");
+    if (confirm("Isso apaga sua coleção atual (" + owned.size + " jogos e " + wishlist.size +
+                " na wishlist) e usa só a do arquivo. Confirmar?"))
+      applyImport(pending, "replace");
   };
 }
 
@@ -340,6 +386,8 @@ function initControls() {
   $$(".f-plat").forEach(function (c) { c.checked = F.plats.indexOf(c.value) >= 0; });
   $$(".f-mode").forEach(function (c) { c.checked = F.modes.indexOf(c.value) >= 0; });
   $$(".f-flag").forEach(function (c) { c.checked = F.flags.indexOf(c.value) >= 0; });
+  // descarta flags salvas que nao existem mais na UI (senao filtrariam sem forma de desmarcar)
+  F.flags = $$(".f-flag").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
 
   // listeners
   var tmr;
@@ -370,7 +418,8 @@ function initControls() {
   $("#main").addEventListener("click", function (e) {
     if (e.target.tagName === "A") return;
     var card = e.target.closest(".card");
-    if (card) toggleOwn(card.dataset.id, card);
+    if (!card) return;
+    toggleMark(card.dataset.id, e.target.closest(".wish-btn") ? "wish" : "own", card);
   });
 
   $("#btn-export").onclick = doExport;
