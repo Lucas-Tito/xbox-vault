@@ -1,5 +1,7 @@
 # Xbox Vault
 
+**No ar: https://lucas-tito.github.io/xbox-vault/**
+
 Catálogo navegável de **todos os jogos de Xbox 360**, **todos os do Xbox original** (com
 classificação de retrocompatibilidade com o 360) e uma lista de **homebrews** das duas consoles.
 Agrupado por ano, com filtros por modo de jogo, número de jogadores, gênero e mais — e com
@@ -7,7 +9,7 @@ marcação de "eu tenho" que você exporta e importa como arquivo.
 
 ## Como abrir
 
-Basta **abrir o `index.html`** no navegador (duplo clique). Não precisa de servidor: os dados são
+Pelo navegador, é só acessar o link acima. Para rodar local, basta **abrir o `index.html`** no navegador (duplo clique). Não precisa de servidor: os dados são
 carregados via `<script>`, não por `fetch()`, justamente para funcionar em `file://`.
 
 Se preferir servir por HTTP:
