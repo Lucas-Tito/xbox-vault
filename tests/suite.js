@@ -5,6 +5,11 @@
   const cards = () => $$('.card');
   const fire = (el, t='change') => el.dispatchEvent(new Event(t, {bubbles:true}));
   const wait = ms => new Promise(r => setTimeout(r, ms));
+  // espera condicional: evita flake quando a rede esta lenta (CDN frio apos deploy)
+  const until = async (fn, ms = 6000, step = 100) => {
+    for (let t = 0; t < ms; t += step) { if (fn()) return true; await wait(step); }
+    return false;
+  };
 
   return (async () => {
     ok('catalogo carregou', window.XBX_DB.games.length > 3000, window.XBX_DB.games.length + ' jogos');
@@ -76,7 +81,8 @@
 
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
-    dcard.querySelector('.thumb').click(); await wait(350);
+    dcard.querySelector('.thumb').click();
+    await until(() => document.querySelector('.sheet--det'));
     const sheet = document.querySelector('.sheet--det');
     ok('clique no card abre o popup', !!sheet && !document.getElementById('modal').hidden);
     if (sheet) {
@@ -87,11 +93,13 @@
       if (dg.description)
         ok('popup mostra a descricao inteira', sheet.textContent.includes(dg.description), 'len=' + dg.description.length);
       // marcar pelo popup reflete no card
-      sheet.querySelector('[data-mark="own"]').click(); await wait(300);
+      sheet.querySelector('[data-mark="own"]').click();
+      await until(() => document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').classList.contains('own'));
       ok('marcar pelo popup afeta o card',
          document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').classList.contains('own'));
       sheet.querySelector('[data-mark="own"]').click(); await wait(300);
-      document.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true})); await wait(250);
+      document.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}));
+      await until(() => document.getElementById('modal').hidden);
       ok('Escape fecha o popup', document.getElementById('modal').hidden);
     }
 
