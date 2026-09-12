@@ -86,6 +86,7 @@ python3 tools/tag_xbox.py
 python3 tools/tag_homebrew.py
 python3 tools/fetch_images.py   # baixa e comprime as capas em images/ (resumível)
 python3 tools/fetch_images_launchbox.py  # completa as que a Wikipédia não tem
+python3 tools/fetch_images_extra.py      # links verificados à mão para o resto
 python3 tools/bundle.py         # <- sempre por último: escreve data/db.js
 ```
 
@@ -127,10 +128,11 @@ não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jo
 | Xbox 360 | 2.155 | 1.948 (90%) | 2.155 |
 | Xbox original | 995 (466 retrocompatíveis) | 918 (92%) | 995 |
 | Homebrew | 300 | 130 | 300 |
-| **total** | **3.450** | **3.236 (94%)** | **3.450** |
+| **total** | **3.450** | **3.374 (97,8%)** | **3.450** |
 
-Contando só jogos comerciais (o homebrew raramente teve capa), a cobertura é de
-**3.106 de 3.150 — 98,6%**.
+Contando só jogos comerciais, a cobertura é de **3.141 de 3.150 — 99,7%**. Os 76 sem imagem
+são 67 homebrews (a maioria utilitários de linha de comando que nunca tiveram GUI, logo nem
+screenshot existe) e 9 jogos obscuros.
 
 O total de 2.155 do Xbox 360 bate com o contador da própria Wikipédia, e os 466
 retrocompatíveis batem com a lista oficial final da Microsoft.
@@ -146,8 +148,16 @@ As capas vêm de duas fontes. A principal é a imagem do artigo da Wikipédia; p
 sem imagem lá (lançamentos só no Japão, shovelware, jogos sem artigo), o
 `tools/fetch_images_launchbox.py` completa a partir do dump aberto do
 [LaunchBox Games Database](https://gamesdb.launchbox-app.com/), que tem box art de console e não
-exige chave de API — 240 dos 284 casaram por título normalizado. Todas as imagens são
-reduzidas para 240px de largura e convertidas em WebP q72 antes de entrar no repositório.
+exige chave de API — 240 dos 284 casaram por título normalizado.
+
+O que sobrou depois dessas duas passadas foi caçado uma a uma por `tools/fetch_images_extra.py`,
+que tem os 138 links verificados à mão num dicionário no topo: GameBrew, TheGamesDB,
+libretro-thumbnails, ConsoleMods recuperado pela Wayback Machine, READMEs de repositórios no
+GitHub e o Internet Archive. Para homebrew o alvo não é box art (esses projetos nunca tiveram
+caixa) e sim o logo do projeto ou uma captura da interface.
+
+Todas as imagens são reduzidas para 240px de largura e convertidas em WebP q72 antes de entrar
+no repositório.
 
 As listas de Xbox 360 e Xbox original vêm das listas da Wikipédia em inglês (`List of Xbox 360
 games (A–L)` / `(M–Z)`, `List of Xbox games`, `List of Xbox games compatible with Xbox 360`),
