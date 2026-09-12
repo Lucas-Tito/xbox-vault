@@ -16,13 +16,14 @@ var BATCH = 120;
    ressuscita o que você desmarcou num deles. `s: null` é uma lápide — registra que
    a marcação foi REMOVIDA naquele instante, em vez de sumir do arquivo. */
 var marks = {};
-var owned = new Set(), wishlist = new Set();
+var owned = new Set(), wishlist = new Set(), escondidos = new Set();
 
 function rebuildSets() {
-  owned = new Set(); wishlist = new Set();
+  owned = new Set(); wishlist = new Set(); escondidos = new Set();
   for (var id in marks) {
     if (marks[id].s === "own") owned.add(id);
     else if (marks[id].s === "wish") wishlist.add(id);
+    else if (marks[id].s === "hide") escondidos.add(id);
   }
 }
 
@@ -79,6 +80,9 @@ function match(g, skip) {
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
   if (F.q && g._s.indexOf(F.q) < 0) return false;
 
+  // "não quero" tira o jogo de todas as listas, menos da lista de escondidos
+  if (F.own === "hide") { if (!escondidos.has(g.id)) return false; }
+  else if (escondidos.has(g.id)) return false;
   if (F.own === "yes" && !owned.has(g.id)) return false;
   if (F.own === "no" && owned.has(g.id)) return false;
   if (F.own === "wish" && !wishlist.has(g.id)) return false;
@@ -185,12 +189,13 @@ function cardHtml(g) {
     ? '<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(g.wiki) + '" target="_blank" rel="noopener">' + esc(g.title) + "</a>"
     : (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">' + esc(g.title) + "</a>" : esc(g.title));
 
-  var o = owned.has(g.id), w = wishlist.has(g.id);
-  return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") +
+  var o = owned.has(g.id), w = wishlist.has(g.id), h = escondidos.has(g.id);
+  return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") + (h ? " hide" : "") +
     '" data-id="' + esc(g.id) + '">' +
     '<div class="marks">' +
     '<button class="own-btn" title="Marcar como tenho">' + (o ? "✓" : "+") + "</button>" +
     '<button class="wish-btn" title="Adicionar à wishlist">' + (w ? "★" : "☆") + "</button>" +
+    '<button class="hide-btn" title="Não quero — esconder da lista">⊘</button>' +
     "</div>" +
     '<div class="thumb">' + img + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
@@ -255,6 +260,7 @@ function updateStats(list) {
     if (owned.has(g.id)) { ownCount++; ownPlat[g.platform]++; }
   });
   $("#s-wish").textContent = wishlist.size.toLocaleString("pt-BR");
+  var eh = $("#s-hide"); if (eh) eh.textContent = escondidos.size.toLocaleString("pt-BR");
   $("#s-shown").textContent = list.length.toLocaleString("pt-BR");
   $("#s-total").textContent = GAMES.length.toLocaleString("pt-BR");
   $("#s-own").textContent = ownCount.toLocaleString("pt-BR");
@@ -384,6 +390,8 @@ function detalheHtml(g) {
           (o ? "✓ Eu tenho" : "+ Marcar que tenho") + "</button>" +
         '<button class="btn ' + (w ? "amber" : "") + '" data-mark="wish">' +
           (w ? "★ Na wishlist" : "☆ Pôr na wishlist") + "</button>" +
+        '<button class="btn' + (escondidos.has(g.id) ? " muted" : "") + '" data-mark="hide">' +
+          (escondidos.has(g.id) ? "⊘ Escondido" : "⊘ Não quero") + "</button>" +
       "</div>" +
       "<h4>Modos de jogo</h4>" + modosHtml(g) +
       (extras.length ? "<h4>Extras</h4><ul class=\"modos\">" +
@@ -427,7 +435,7 @@ function mergeMarks(remoto) {
     var l = marks[id];
     if (!l || r.t > l.t) {
       if (!l || l.s !== r.s) mudou++;
-      marks[id] = { s: r.s === "own" || r.s === "wish" ? r.s : null, t: r.t };
+      marks[id] = { s: (r.s === "own" || r.s === "wish" || r.s === "hide") ? r.s : null, t: r.t };
     }
   }
   if (mudou) { rebuildSets(); try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch (e) {} }
@@ -438,18 +446,33 @@ function paintCard(card, id) {
   var o = owned.has(id), w = wishlist.has(id);
   card.classList.toggle("own", o);
   card.classList.toggle("wish", w);
+  card.classList.toggle("hide", escondidos.has(id));
   card.querySelector(".own-btn").textContent = o ? "✓" : "+";
   card.querySelector(".wish-btn").textContent = w ? "★" : "☆";
 }
 /* "tenho" e "quero" se contradizem: marcar um limpa o outro, senao o arquivo
    exportado sairia com o mesmo jogo nas duas listas. */
+/* Tira um card da tela sem re-renderizar tudo (re-render perderia a rolagem).
+   Ajusta a contagem da seção do ano e some com a seção se ela esvaziar. */
+function removeCard(card) {
+  var sec = card.closest("section"), grid = card.parentNode;
+  card.remove();
+  if (!sec) return;
+  var cnt = sec.querySelector(".cnt"), n = grid ? grid.children.length : 0;
+  if (!n) { sec.remove(); return; }
+  if (cnt) cnt.textContent = n + " jogo" + (n > 1 ? "s" : "");
+}
+
 function toggleMark(id, which, card) {
   var atual = marks[id] && marks[id].s;
   setMark(id, atual === which ? null : which);   // null = lápide, não some do arquivo
   saveMarks();
-  if (card) paintCard(card, id);
+  var g = GAMES.find(function (x) { return x.id === id; });
+  if (card) {
+    if (g && !match(g, null)) removeCard(card);  // não bate mais com o filtro atual
+    else paintCard(card, id);
+  }
   updateStats(filtered(null));
-  if (F.own !== "all") render();
 }
 
 /* ---------------- export / import ---------------- */
@@ -464,6 +487,7 @@ function doExport() {
     // `marks` é a fonte da verdade, porque carrega o quando de cada mudança
     owned: Array.from(owned).sort(),
     wishlist: Array.from(wishlist).sort(),
+    hidden: Array.from(escondidos).sort(),
     marks: marks
   };
   var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
@@ -478,12 +502,12 @@ function doExport() {
 function parseImport(text) {
   var data = JSON.parse(text);
   var str = function (a) { return a.filter(function (x) { return typeof x === "string"; }); };
-  if (Array.isArray(data)) return { owned: str(data), wishlist: [], marks: null };
+  if (Array.isArray(data)) return { owned: str(data), wishlist: [], hidden: [], marks: null };
   var o = data.owned || data.ids || [], w = data.wishlist || [];
   if (!Array.isArray(o) || !Array.isArray(w))
     throw new Error("Formato não reconhecido: esperava as listas 'owned' e 'wishlist'.");
   var m = data.marks && typeof data.marks === "object" ? data.marks : null;
-  return { owned: str(o), wishlist: str(w), marks: m };  // v1/v2 não têm marks
+  return { owned: str(o), wishlist: str(w), hidden: str(data.hidden || []), marks: m };  // v1/v2 não têm marks
 }
 
 function applyImport(p, mode) {
@@ -502,6 +526,7 @@ function applyImport(p, mode) {
     if (mode === "replace") marks = {};
     o.forEach(function (i) { marks[i] = { s: "own", t: agora }; });
     w.forEach(function (i) { marks[i] = { s: "wish", t: agora }; });
+    keep(p.hidden || []).forEach(function (i) { marks[i] = { s: "hide", t: agora }; });
     rebuildSets();
   }
   saveMarks(); render();
@@ -607,9 +632,11 @@ function initControls() {
     if (e.target.tagName === "A") return;
     var card = e.target.closest(".card");
     if (!card) return;
-    var btn = e.target.closest(".own-btn, .wish-btn");
+    var btn = e.target.closest(".own-btn, .wish-btn, .hide-btn");
     if (btn) {                                   // botoes do canto marcam direto
-      toggleMark(card.dataset.id, btn.classList.contains("wish-btn") ? "wish" : "own", card);
+      toggleMark(card.dataset.id,
+        btn.classList.contains("wish-btn") ? "wish"
+          : btn.classList.contains("hide-btn") ? "hide" : "own", card);
       return;
     }
     var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
@@ -713,7 +740,7 @@ window.XBXSync = (function () {
       app: "xbox-vault", version: 3, exportedAt: new Date().toISOString(),
       count: owned.size, wishlistCount: wishlist.size,
       owned: Array.from(owned).sort(), wishlist: Array.from(wishlist).sort(),
-      marks: marks
+      hidden: Array.from(escondidos).sort(), marks: marks
     }, null, 1);
   }
 

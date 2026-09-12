@@ -140,6 +140,14 @@ select:focus{border-color:var(--green)}
 .own-btn:hover{background:var(--green);color:#0b1a08;border-color:var(--green);transform:scale(1.1)}
 .card.own .own-btn{background:var(--green);color:#0b1a08;border-color:var(--green)}
 .wish-btn:hover{background:var(--amber);color:#1a1206;border-color:var(--amber);transform:scale(1.1)}
+.hide-btn{width:28px;height:28px;border-radius:50%;background:rgba(13,17,23,.82);
+  border:1px solid var(--line);color:var(--txt);display:grid;place-items:center;
+  font-size:15px;line-height:1;backdrop-filter:blur(4px);transition:.15s}
+.hide-btn:hover{background:var(--dim2);color:var(--bg);border-color:var(--dim2);transform:scale(1.1)}
+.card.hide{opacity:.55;border-color:var(--line)}
+.card.hide .hide-btn{background:var(--dim2);color:var(--bg);border-color:var(--dim2)}
+.card.hide .thumb img{filter:grayscale(1) brightness(.7)}
+.btn.muted{background:var(--bg3);border-color:var(--dim2);color:var(--dim)}
 .card.wish .wish-btn{background:var(--amber);color:#1a1206;border-color:var(--amber)}
 
 /* wishlist: mesma linguagem visual do "tenho", em ambar */

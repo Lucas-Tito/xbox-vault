@@ -126,6 +126,37 @@
     ok('filtro so-wishlist', cards().length === wlFilter, cards().length + ' cards vs ' + wlFilter + ' na wishlist');
     $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
 
+    // ---- "nao quero" (esconder) ----
+    $('#f-own').value = 'all'; fire($('#f-own')); await wait(400);
+    $('#q').value = 'Bayonetta'; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
+    await until(() => cards().length > 0 && cards().length < 40, 6000); await wait(250);
+    const hc = cards()[0], hid = hc.dataset.id;
+    const antes = cards().length;
+    hc.querySelector('.hide-btn').click(); await wait(400);
+    ok('esconder tira o card da lista na hora', cards().length === antes - 1,
+       antes + ' -> ' + cards().length);
+    ok('contador de escondidos sobe', +$('#s-hide').textContent.replace(/\D/g,'') > 0, $('#s-hide').textContent);
+    ok('estado gravado como hide',
+       JSON.parse(localStorage.getItem('xbx.marks.v3')||'{}')[hid]?.s === 'hide');
+
+    $('#f-own').value = 'hide'; fire($('#f-own')); await wait(500);
+    ok('filtro "so os escondidos" mostra ele',
+       cards().some(c => c.dataset.id === hid), cards().length + ' escondido(s)');
+    ok('card escondido tem a classe', cards()[0].classList.contains('hide'));
+
+    // desfazer devolve o jogo para a lista normal
+    cards().find(c => c.dataset.id === hid).querySelector('.hide-btn').click(); await wait(400);
+    $('#f-own').value = 'all'; fire($('#f-own')); await wait(500);
+    ok('desfazer devolve o jogo', cards().some(c => c.dataset.id === hid));
+
+    // esconder e exclusivo com tenho/wishlist
+    const hc2 = cards().find(c => c.dataset.id === hid);
+    hc2.querySelector('.own-btn').click(); await wait(350);
+    const m1 = JSON.parse(localStorage.getItem('xbx.marks.v3')||'{}')[hid];
+    ok('marcar tenho sai do escondido', m1.s === 'own', 'estado=' + m1.s);
+    $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
+    await until(() => cards().length > 50, 8000); await wait(300);
+
     // ---- merge por timestamp (o coracao da sincronizacao) ----
     // sem location.reload(): recarregar mata o contexto de avaliacao do teste
     window.alert = () => {};
@@ -206,6 +237,7 @@
       ok('export inclui a wishlist', Array.isArray(p.wishlist) && p.wishlist.length === curW.length && curW.length > 0,
          (p.wishlist||[]).length + ' na wishlist exportada');
       ok('export v3', p.version === 3, 'version=' + p.version);
+      ok('export inclui a lista de escondidos', Array.isArray(p.hidden), JSON.stringify(p.hidden||[]).slice(0,40));
       ok('export inclui marks com timestamp',
          !!p.marks && Object.values(p.marks).every(m => typeof m.t === 'number'),
          Object.keys(p.marks || {}).length + ' marcacoes');
