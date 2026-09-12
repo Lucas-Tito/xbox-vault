@@ -27,6 +27,9 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 - **Marcar que tenho** — o botão `+` no canto do card, ou o botão dentro do popup. O card fica
   destacado em verde.
 - **Wishlist** — o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
+- **Não quero** — o botão `⊘`. O jogo sai de todas as listas e só reaparece no filtro
+  *Só os que eu escondi*, de onde dá para desfazer. Serve para tirar da frente o que não te
+  interessa — shovelware, esporte anual, o que for — num catálogo de 3.450 títulos.
   "Tenho" e "quero" são mutuamente exclusivos: marcar um limpa o outro, porque as duas coisas se
   contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
 - **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
@@ -81,7 +84,7 @@ gravar, o site relê o arquivo e junta, para nunca apagar o que a outra máquina
 }
 ```
 
-`marks` é a fonte da verdade: `s` é o estado (`own`, `wish` ou `null` para "desmarcado") e `t` é
+`marks` é a fonte da verdade: `s` é o estado (`own`, `wish`, `hide` ou `null` para "desmarcado") e `t` é
 quando mudou, em milissegundos. `owned` e `wishlist` continuam ali para leitura humana e para
 importadores antigos. Arquivos `version: 1` e `2` (sem `marks`) continuam sendo aceitos, e um array
 puro de ids também.
@@ -172,8 +175,8 @@ retrocompatíveis batem com a lista oficial final da Microsoft.
 
 ## Testes
 
-`tests/` tem duas suítes que dirigem um Chrome headless: 51 asserções sobre filtros, busca, popup
-de detalhes, marcação, wishlist, merge por timestamp e export/import; e mais 9 sobre a
+`tests/` tem duas suítes que dirigem um Chrome headless: 59 asserções sobre filtros, busca, popup
+de detalhes, marcação, wishlist, "não quero", merge por timestamp e export/import; e mais 9 sobre a
 sincronização com arquivo, usando um handle falso em memória (o seletor de arquivo de verdade
 exige interação humana). Veja `tests/README.md`.
 
