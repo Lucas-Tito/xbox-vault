@@ -33,7 +33,7 @@
 
     // marcar "tenho"
     const first = cards()[0], fid = first.dataset.id;
-    first.click(); await wait(250);
+    first.querySelector('.own-btn').click(); await wait(250);
     const stored = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
     ok('marcar tenho persiste', stored.includes(fid), 'id=' + fid);
     ok('card ganha classe own', $('.card[data-id="'+CSS.escape(fid)+'"]').classList.contains('own'));
@@ -52,7 +52,9 @@
 
     // import: injeta ids conhecidos e valida via fluxo real do app
     const sample = window.XBX_DB.games.slice(0, 5).map(g => g.id);
-    const payload = JSON.stringify({app:'xbox-vault', version:1, owned: sample.concat(['id-que-nao-existe'])});
+    const wsample = window.XBX_DB.games.slice(10, 13).map(g => g.id);
+    const payload = JSON.stringify({app:'xbox-vault', version:2,
+      owned: sample.concat(['id-que-nao-existe']), wishlist: wsample});
     const file = new File([payload], 'col.json', {type:'application/json'});
     const dt = new DataTransfer(); dt.items.add(file);
     const inp = document.getElementById('file-in');
@@ -66,8 +68,55 @@
       const after = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
       ok('import soma ids validos', sample.every(i => after.includes(i)), after.length + ' na colecao');
       ok('import descarta id invalido', !after.includes('id-que-nao-existe'));
+      const afterW = JSON.parse(localStorage.getItem('xbx.wishlist.v1') || '[]');
+      ok('import traz a wishlist', wsample.every(i => afterW.includes(i)), afterW.length + ' na wishlist');
+      ok('import mantem exclusividade', !after.some(i => afterW.includes(i)), 'nenhum id nas duas listas');
     } else ok('import soma ids validos', false, 'dialogo ausente');
 
+
+    // ---- popup de detalhes ----
+    const dcard = cards()[0], did = dcard.dataset.id;
+    dcard.querySelector('.thumb').click(); await wait(350);
+    const sheet = document.querySelector('.sheet--det');
+    ok('clique no card abre o popup', !!sheet && !document.getElementById('modal').hidden);
+    if (sheet) {
+      const dg = window.XBX_DB.games.find(g => g.id === did);
+      ok('popup mostra o titulo', sheet.textContent.includes(dg.title), dg.title);
+      ok('popup tem secao de modos', sheet.textContent.includes('Modos de jogo'));
+      ok('popup tem ficha', sheet.textContent.includes('Ficha'));
+      if (dg.description)
+        ok('popup mostra a descricao inteira', sheet.textContent.includes(dg.description), 'len=' + dg.description.length);
+      // marcar pelo popup reflete no card
+      sheet.querySelector('[data-mark="own"]').click(); await wait(300);
+      ok('marcar pelo popup afeta o card',
+         document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').classList.contains('own'));
+      sheet.querySelector('[data-mark="own"]').click(); await wait(300);
+      document.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true})); await wait(250);
+      ok('Escape fecha o popup', document.getElementById('modal').hidden);
+    }
+
+    // ---- wishlist ----
+    const wcard = cards()[1], wid = wcard.dataset.id;
+    wcard.querySelector('.wish-btn').click(); await wait(250);
+    ok('wishlist marca', JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]').includes(wid), 'id='+wid);
+    ok('card ganha classe wish', wcard.classList.contains('wish'));
+    const wlNow = JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]').length;
+    ok('contador de wishlist bate com o storage',
+       +$('#s-wish').textContent.replace(/\D/g,'') === wlNow, $('#s-wish').textContent + ' na tela, ' + wlNow + ' salvos');
+
+    // exclusividade: marcar "tenho" num item da wishlist tira ele da wishlist
+    wcard.querySelector('.own-btn').click(); await wait(250);
+    const wl = JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]');
+    const ol = JSON.parse(localStorage.getItem('xbx.owned.v1')||'[]');
+    ok('tenho e quero sao exclusivos', !wl.includes(wid) && ol.includes(wid),
+       'wishlist='+wl.length+' owned='+ol.length);
+    // devolve para a wishlist para os testes de filtro/export
+    wcard.querySelector('.wish-btn').click(); await wait(250);
+
+    $('#f-own').value = 'wish'; fire($('#f-own')); await wait(400);
+    const wlFilter = JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]').length;
+    ok('filtro so-wishlist', cards().length === wlFilter, cards().length + ' cards vs ' + wlFilter + ' na wishlist');
+    $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
 
     // conteudo REAL do arquivo exportado (intercepta o blob do download)
     let captured = null;
@@ -84,6 +133,10 @@
       ok('export: count confere', p.count === p.owned.length, 'count=' + p.count);
       ok('export -> import ida e volta', p.owned.every(i => window.XBX_DB.games.some(g => g.id === i)),
          'todos os ids existem no catalogo');
+      const curW = JSON.parse(localStorage.getItem('xbx.wishlist.v1') || '[]');
+      ok('export inclui a wishlist', Array.isArray(p.wishlist) && p.wishlist.length === curW.length && curW.length > 0,
+         (p.wishlist||[]).length + ' na wishlist exportada');
+      ok('export v2', p.version === 2, 'version=' + p.version);
     } else ok('export gera JSON valido', false, 'blob nao capturado');
 
     // filtros de tags (so valem quando ha dados de tags)

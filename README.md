@@ -20,9 +20,13 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 
 ## Usando
 
-- **Marcar que tenho** — clique em qualquer ponto do card (ou no botão `+` no canto). O card fica
-  destacado em verde. O clique no *título* abre a página do jogo na Wikipédia.
-- **Wishlist** — o botão `☆` no canto do card. Fica destacado em âmbar.
+- **Ver detalhes** — clique no card. Abre um popup com a ficha inteira: descrição completa (a do
+  card é cortada em 2 linhas), modos de jogo com número de jogadores, retrocompatibilidade e os
+  problemas conhecidos, datas de lançamento por região, e links para a Wikipédia e para a página
+  do projeto. `Esc` ou clique fora fecham.
+- **Marcar que tenho** — o botão `+` no canto do card, ou o botão dentro do popup. O card fica
+  destacado em verde.
+- **Wishlist** — o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
   "Tenho" e "quero" são mutuamente exclusivos: marcar um limpa o outro, porque as duas coisas se
   contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
 - **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
@@ -139,8 +143,8 @@ retrocompatíveis batem com a lista oficial final da Microsoft.
 
 ## Testes
 
-`tests/` tem uma suíte de 25 asserções que dirige um Chrome headless e exercita filtros,
-busca, marcação, export e import. Veja `tests/README.md`.
+`tests/` tem uma suíte de 41 asserções que dirige um Chrome headless e exercita filtros,
+busca, popup de detalhes, marcação, wishlist, export e import. Veja `tests/README.md`.
 
 ## Procedência dos dados
 

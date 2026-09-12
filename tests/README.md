@@ -10,7 +10,7 @@ sleep 4
 node tests/drive.mjs "file://$PWD/index.html" tests/suite.js
 ```
 
-25 asserções. Ela já pegou três bugs reais:
+41 asserções. Ela já pegou três bugs reais:
 
 - `Array.prototype.slice.call(owned)` com um `Set` devolve `[]` — a exportação gravava
   uma lista vazia enquanto o contador na tela mostrava o número certo. Só apareceu porque

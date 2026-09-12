@@ -255,6 +255,123 @@ function updateFacets() {
   });
 }
 
+/* ---------------- detalhes ---------------- */
+var REGIAO = { NA: "América do Norte", EU: "Europa", PAL: "PAL (Europa/Oceania)",
+               JP: "Japão", AU: "Austrália" };
+var PLATNOME = { x360: "Xbox 360", xbox: "Xbox original", homebrew: "Homebrew" };
+var CONFNOTA = {
+  high: "conferido à mão, ou vindo do campo estruturado do artigo",
+  medium: "inferido do texto do artigo",
+  low: "inferido do gênero, ou sem artigo de referência"
+};
+
+function fmtDate(s) {
+  if (!s) return null;
+  var p = String(s).split("-");
+  if (p.length === 3) return p[2] + "/" + p[1] + "/" + p[0];
+  if (p.length === 2) return p[1] + "/" + p[0];
+  return p[0];
+}
+
+function linha(rot, val) {
+  return val ? '<div class="li"><span>' + rot + "</span><b>" + val + "</b></div>" : "";
+}
+
+function modosHtml(g) {
+  var t = g.tags || {}, out = [];
+  var qtd = function (n) { return n ? " — até " + n + (n > 1 ? " jogadores" : " jogador") : ""; };
+  if (t.source === "not-a-game")
+    return '<p class="nota">Não é um jogo — é ' +
+      ({ emulator: "um emulador", dashboard: "um dashboard", utility: "um utilitário",
+         media: "um app de mídia" }[g.category] || "um software") +
+      ", então não tem modo de jogo.</p>";
+  if (t.singlePlayer) out.push("Single player");
+  if (t.multiplayerLocal) out.push("Multiplayer local" + qtd(t.maxPlayersLocal));
+  if (t.multiplayerOnline) out.push("Multiplayer online" + qtd(t.maxPlayersOnline));
+  if (t.coop) out.push("Co-op" + (t.coopLocal && t.coopOnline ? " (local e online)"
+      : t.coopLocal ? " (local)" : t.coopOnline ? " (online)" : ""));
+  if (t.versus) out.push("Versus" + (t.versusLocal ? " (local)" : ""));
+  if (!out.length) return '<p class="nota">Sem informação de modo de jogo.</p>';
+  var h = "<ul class=\"modos\">" + out.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
+  if (CONFNOTA[t.confidence])
+    h += '<p class="nota">Confiança <b>' + esc(t.confidence) + "</b> — " + CONFNOTA[t.confidence] + ".</p>";
+  return h;
+}
+
+function detalheHtml(g) {
+  var o = owned.has(g.id), w = wishlist.has(g.id), t = g.tags || {};
+  var capa = g.image
+    ? '<img src="' + esc(g.image) + '" alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") + ">"
+    : '<div class="ph">' + esc(g.title) + "</div>";
+
+  var ficha = linha("Plataforma", esc(PLATNOME[g.platform] || g.platform)) +
+    linha("Ano", g.year || null) +
+    linha("Gênero", esc(g.genre || "")) +
+    linha("Categoria", g.category ? esc(g.category) : null) +
+    linha("Console", g.console ? esc(g.console === "x360" ? "Xbox 360"
+          : g.console === "both" ? "Xbox e Xbox 360" : "Xbox original") : null) +
+    linha("Desenvolvedora", esc((g.developers || []).join(", "))) +
+    linha("Publicadora", esc((g.publishers || []).join(", ")));
+
+  var lanc = "";
+  if (g.releases) {
+    var ls = Object.keys(g.releases).filter(function (k) { return g.releases[k]; })
+      .map(function (k) { return linha(REGIAO[k] || k, fmtDate(g.releases[k])); }).join("");
+    if (ls) lanc = "<h4>Lançamento</h4>" + ls;
+  }
+
+  var bc = "";
+  if (g.platform === "xbox" && g.bc360) {
+    var c = g.bc360;
+    bc = "<h4>Retrocompatibilidade com o Xbox 360</h4>" +
+      '<p class="' + (c.compatible ? "sim" : "nao") + '">' +
+      (c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360") + "</p>" +
+      (c.compatible ? linha("Região", esc(c.region === "all" ? "todas" : (c.regions || [c.region]).join(", "))) : "") +
+      (c.xboxOriginals ? linha("Xbox Originals", "sim (era vendido digitalmente)") : "") +
+      (c.issues ? '<p class="nota"><b>Problemas conhecidos:</b> ' + esc(c.issues) + "</p>" : "");
+  }
+
+  var extras = [];
+  var f = g.flags || {};
+  if (f.xbla) extras.push("Xbox Live Arcade");
+  if (f.kinect) extras.push("Kinect (" + (f.kinect === "required" ? "obrigatório" : "opcional") + ")");
+  if (f.xboxOne) extras.push("Roda também no Xbox One");
+  if (f.stereo3d) extras.push("Suporte a 3D estereoscópico");
+
+  var links = [];
+  if (g.wiki) links.push('<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(g.wiki) +
+    '" target="_blank" rel="noopener">Wikipédia ↗</a>');
+  if (g.url) links.push('<a href="' + esc(g.url) + '" target="_blank" rel="noopener">Página do projeto ↗</a>');
+
+  return '<div class="det">' +
+    '<div class="det-capa">' + capa + "</div>" +
+    '<div class="det-info">' +
+      "<h3>" + esc(g.title) + "</h3>" +
+      '<div class="det-sub">' + esc([PLATNOME[g.platform], g.year, g.genre || g.category]
+        .filter(Boolean).join(" · ")) + "</div>" +
+      (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
+      '<div class="det-acoes">' +
+        '<button class="btn ' + (o ? "primary" : "") + '" data-mark="own">' +
+          (o ? "✓ Eu tenho" : "+ Marcar que tenho") + "</button>" +
+        '<button class="btn ' + (w ? "amber" : "") + '" data-mark="wish">' +
+          (w ? "★ Na wishlist" : "☆ Pôr na wishlist") + "</button>" +
+      "</div>" +
+      "<h4>Modos de jogo</h4>" + modosHtml(g) +
+      (extras.length ? "<h4>Extras</h4><ul class=\"modos\">" +
+        extras.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
+      bc +
+      "<h4>Ficha</h4>" + ficha +
+      lanc +
+      (links.length ? '<div class="det-links">' + links.join("") + "</div>" : "") +
+    "</div></div>";
+}
+
+var detAtual = null;
+function openDetail(g) {
+  detAtual = g;
+  openModal(detalheHtml(g), "sheet--det");
+}
+
 /* ---------------- coleção ---------------- */
 function saveMarks() {
   try {
@@ -331,8 +448,12 @@ function applyImport(p, mode) {
     "\nAgora: " + owned.size + " que tenho, " + wishlist.size + " na wishlist.");
 }
 
-function openModal(html) { $("#modal-body").innerHTML = html; $("#modal").hidden = false; }
-function closeModal() { $("#modal").hidden = true; }
+function openModal(html, cls) {
+  $("#modal-body").innerHTML = html;
+  $(".sheet").className = "sheet" + (cls ? " " + cls : "");
+  $("#modal").hidden = false;
+}
+function closeModal() { $("#modal").hidden = true; detAtual = null; }
 
 var pending = null;
 function importFlow(text) {
@@ -419,7 +540,13 @@ function initControls() {
     if (e.target.tagName === "A") return;
     var card = e.target.closest(".card");
     if (!card) return;
-    toggleMark(card.dataset.id, e.target.closest(".wish-btn") ? "wish" : "own", card);
+    var btn = e.target.closest(".own-btn, .wish-btn");
+    if (btn) {                                   // botoes do canto marcam direto
+      toggleMark(card.dataset.id, btn.classList.contains("wish-btn") ? "wish" : "own", card);
+      return;
+    }
+    var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
+    if (g) openDetail(g);                        // resto do card abre os detalhes
   });
 
   $("#btn-export").onclick = doExport;
@@ -442,6 +569,16 @@ function initControls() {
     e.target.value = "";
   });
   $("#modal-x").onclick = closeModal;
+  $("#modal-body").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-mark]");
+    if (!b || !detAtual) return;
+    var card = $('.card[data-id="' + (window.CSS && CSS.escape ? CSS.escape(detAtual.id) : detAtual.id) + '"]');
+    toggleMark(detAtual.id, b.dataset.mark, card);
+    $("#modal-body").innerHTML = detalheHtml(detAtual);   // redesenha com o novo estado
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !$("#modal").hidden) closeModal();
+  });
   $("#modal").addEventListener("click", function (e) { if (e.target.id === "modal") closeModal(); });
   $("#btn-filters").onclick = function () { $("#side").classList.toggle("open"); };
   $("#btn-reset").onclick = function () {

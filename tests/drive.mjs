@@ -1,5 +1,5 @@
 // Driver CDP minimo: abre a pagina no Chrome headless e avalia JS nela.
-const PORT = 9224;
+const PORT = 9225;
 const target = process.argv[2];
 async function j(u){ return (await fetch(u)).json(); }
 
