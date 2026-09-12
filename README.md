@@ -32,6 +32,10 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 - **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
   Os filtros ficam salvos entre visitas.
+- **Sincronizar arquivo** — o site pede um arquivo `.json` no seu computador e passa a **ler e
+  gravar nele sozinho**. Aponte para uma pasta do Google Drive, OneDrive ou Dropbox e a coleção
+  sincroniza entre máquinas de graça: sem conta, sem token, sem servidor — quem faz o trabalho de
+  nuvem é o cliente de sincronização que você já usa. Detalhes abaixo.
 - **Exportar coleção** — baixa um `.json` com a coleção **e** a wishlist.
 - **Importar** — aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
   **somar** ao que já está aqui ou **substituir** tudo.
@@ -40,22 +44,47 @@ A coleção e a wishlist ficam no `localStorage` do navegador. Como isso é por 
 origem**, o que você marca em `lucas-tito.github.io` não aparece ao abrir o `index.html` local, e
 vice-versa. O **export é a ponte entre os dois** — e o backup se você limpar os dados do navegador.
 
+## Sincronização entre dispositivos
+
+O botão **Sincronizar arquivo** usa a File System Access API: o navegador guarda uma referência ao
+arquivo que você escolheu, e o site volta a usar o mesmo arquivo nas próximas visitas.
+
+No prompt de permissão do Chrome, escolha **"Permitir em todas as visitas"** — aí ele nunca mais
+pergunta. Se escolher "Permitir desta vez", o botão fica âmbar escrito *Reconectar arquivo* a cada
+sessão, e um clique resolve (a API exige um gesto do usuário, não dá para contornar). Instalando o
+site como app (ícone de instalar na barra do Chrome) a permissão persiste automaticamente.
+
+**Só funciona em navegadores Chromium** — Chrome e Edge, não Firefox nem Safari. Nos outros o botão
+nem aparece e o site funciona como antes, com export/import manual.
+
+Como a sincronização junta dois lados: cada marcação guarda **quando** mudou, e vence a mais
+recente, item a item. Desmarcar um jogo grava uma *lápide* (`s: null`) em vez de sumir do arquivo —
+sem isso, juntar dois dispositivos ressuscitaria tudo que você desmarcou num deles. E antes de
+gravar, o site relê o arquivo e junta, para nunca apagar o que a outra máquina escreveu.
+
 ### Formato do arquivo de coleção
 
 ```json
 {
   "app": "xbox-vault",
-  "version": 2,
+  "version": 3,
   "exportedAt": "2026-09-11T18:40:00.000Z",
   "count": 42,
   "wishlistCount": 7,
   "owned": ["x360-halo-3", "xbox-halo-combat-evolved", "hb-xbmc"],
-  "wishlist": ["x360-red-dead-redemption"]
+  "wishlist": ["x360-red-dead-redemption"],
+  "marks": {
+    "x360-halo-3": { "s": "own",  "t": 1789100000000 },
+    "x360-red-dead-redemption": { "s": "wish", "t": 1789100000001 },
+    "x360-fable-iii": { "s": null, "t": 1789100000002 }
+  }
 }
 ```
 
-Só as listas de ids importam — dá para editar à mão sem medo. Arquivos da `version: 1` (sem
-wishlist) continuam sendo aceitos, e um array puro de ids também.
+`marks` é a fonte da verdade: `s` é o estado (`own`, `wish` ou `null` para "desmarcado") e `t` é
+quando mudou, em milissegundos. `owned` e `wishlist` continuam ali para leitura humana e para
+importadores antigos. Arquivos `version: 1` e `2` (sem `marks`) continuam sendo aceitos, e um array
+puro de ids também.
 
 ## Estrutura
 
@@ -143,8 +172,10 @@ retrocompatíveis batem com a lista oficial final da Microsoft.
 
 ## Testes
 
-`tests/` tem uma suíte de 41 asserções que dirige um Chrome headless e exercita filtros,
-busca, popup de detalhes, marcação, wishlist, export e import. Veja `tests/README.md`.
+`tests/` tem duas suítes que dirigem um Chrome headless: 51 asserções sobre filtros, busca, popup
+de detalhes, marcação, wishlist, merge por timestamp e export/import; e mais 9 sobre a
+sincronização com arquivo, usando um handle falso em memória (o seletor de arquivo de verdade
+exige interação humana). Veja `tests/README.md`.
 
 ## Procedência dos dados
 

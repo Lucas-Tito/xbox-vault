@@ -10,13 +10,22 @@ sleep 4
 node tests/drive.mjs "file://$PWD/index.html" tests/suite.js
 ```
 
-41 asserções. Ela já pegou três bugs reais:
+```bash
+# suíte da sincronização: injeta um handle de arquivo falso antes da página carregar
+node tests/drive.mjs "file://$PWD/index.html" tests/synctest.js tests/pre_fsapi.js
+```
+
+51 + 9 asserções. Elas já pegaram cinco bugs reais:
 
 - `Array.prototype.slice.call(owned)` com um `Set` devolve `[]` — a exportação gravava
   uma lista vazia enquanto o contador na tela mostrava o número certo. Só apareceu porque
   o teste lê o conteúdo do arquivo exportado em vez de confiar na interface.
 - Contagens dos filtros divergindo do catálogo real.
 - Import aceitando ids inexistentes.
+- `closeModal()` escondia o modal sem limpar o conteúdo, deixando os botões do diálogo anterior
+  vivos no DOM e reativáveis.
+- Falha ao memorizar o handle do arquivo no IndexedDB derrubava a sincronização da sessão inteira,
+  quando deveria ser só uma otimização para a próxima visita.
 
 Por isso as asserções comparam contra `window.XBX_DB` recalculado na hora, e não contra
 números fixos: se os dados mudarem, o teste continua válido.

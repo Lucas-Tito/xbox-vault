@@ -1,5 +1,5 @@
 // Driver CDP minimo: abre a pagina no Chrome headless e avalia JS nela.
-const PORT = 9225;
+const PORT = 9226;
 const target = process.argv[2];
 async function j(u){ return (await fetch(u)).json(); }
 
@@ -24,6 +24,11 @@ async function evalJS(expr){
 
 await send('Page.enable');
 await send('Runtime.enable');
+// script opcional injetado ANTES dos scripts da pagina (para stubar APIs)
+if (process.argv[4]) {
+  const pre = await (await import('node:fs/promises')).readFile(process.argv[4], 'utf8');
+  await send('Page.addScriptToEvaluateOnNewDocument', {source: pre});
+}
 await send('Page.navigate', {url: target});
 await new Promise(r => setTimeout(r, 4000));
 

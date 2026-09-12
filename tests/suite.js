@@ -126,6 +126,67 @@
     ok('filtro so-wishlist', cards().length === wlFilter, cards().length + ' cards vs ' + wlFilter + ' na wishlist');
     $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
 
+    // ---- merge por timestamp (o coracao da sincronizacao) ----
+    // sem location.reload(): recarregar mata o contexto de avaliacao do teste
+    window.alert = () => {};
+    const lerMarks = () => JSON.parse(localStorage.getItem('xbx.marks.v3') || '{}');
+    const buscar = async (txt) => {
+      $('#q').value = txt; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
+      await until(() => cards().length > 0 && cards().length < 40, 6000);
+      await wait(200);
+      return cards()[0];
+    };
+    let c = await buscar('Bayonetta');
+    const gid = c.dataset.id;
+    // zera o estado desse card, seja qual for
+    if (c.classList.contains('own')) { c.querySelector('.own-btn').click(); await wait(250); }
+    if (c.classList.contains('wish')) { c.querySelector('.wish-btn').click(); await wait(250); }
+
+    c = cards()[0];
+    c.querySelector('.own-btn').click(); await wait(300);
+    ok('marca grava timestamp', typeof lerMarks()[gid]?.t === 'number', 'id=' + gid);
+    ok('marca grava estado', lerMarks()[gid]?.s === 'own');
+
+    cards()[0].querySelector('.own-btn').click(); await wait(300);
+    ok('desmarcar deixa lapide (s:null), nao some do arquivo',
+       gid in lerMarks() && lerMarks()[gid].s === null, JSON.stringify(lerMarks()[gid]));
+
+    cards()[0].querySelector('.own-btn').click(); await wait(300);
+    const impMarks = async (obj) => {
+      const f = new File([JSON.stringify(obj)], 'c.json', {type:'application/json'});
+      const dt = new DataTransfer(); dt.items.add(f);
+      const inp = document.getElementById('file-in'); inp.files = dt.files; fire(inp);
+      // espera o dialogo REABRIR (nao so o botao existir: ele pode ser do dialogo anterior)
+      await until(() => !document.getElementById('modal').hidden
+                        && document.getElementById('imp-merge'), 6000);
+      document.getElementById('imp-merge').click();
+      await until(() => document.getElementById('modal').hidden, 6000);
+      await wait(250);
+    };
+
+    await impMarks({app:'xbox-vault', version:3, owned:[], wishlist:[], marks:{[gid]:{s:null, t:1}}});
+    ok('remocao ANTIGA e ignorada', lerMarks()[gid].s === 'own', 'estado=' + lerMarks()[gid].s);
+
+    await impMarks({app:'xbox-vault', version:3, owned:[], wishlist:[],
+                    marks:{[gid]:{s:null, t: Date.now() + 60000}}});
+    ok('remocao MAIS NOVA vence', lerMarks()[gid].s === null, 'estado=' + lerMarks()[gid].s);
+
+    await buscar('Bayonetta');
+    ok('card reflete a remocao vinda de fora', !cards()[0].classList.contains('own'));
+
+    const outro = window.XBX_DB.games[5].id;
+    await impMarks({app:'xbox-vault', version:3, owned:[], wishlist:[],
+                    marks:{[outro]:{s:'wish', t: Date.now() + 60000}}});
+    ok('marca externa mais nova entra', lerMarks()[outro]?.s === 'wish');
+
+    const v2alvo = window.XBX_DB.games[9].id;
+    await impMarks({app:'xbox-vault', version:2, owned:[v2alvo], wishlist:[]});
+    ok('arquivo v2 antigo (sem marks) ainda importa', lerMarks()[v2alvo]?.s === 'own');
+
+    ok('botao de sync existe no DOM', !!document.getElementById('btn-sync'));
+    $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
+    await until(() => cards().length > 50, 8000); await wait(300);
+
     // conteudo REAL do arquivo exportado (intercepta o blob do download)
     let captured = null;
     const origCreate = URL.createObjectURL;
@@ -144,7 +205,10 @@
       const curW = JSON.parse(localStorage.getItem('xbx.wishlist.v1') || '[]');
       ok('export inclui a wishlist', Array.isArray(p.wishlist) && p.wishlist.length === curW.length && curW.length > 0,
          (p.wishlist||[]).length + ' na wishlist exportada');
-      ok('export v2', p.version === 2, 'version=' + p.version);
+      ok('export v3', p.version === 3, 'version=' + p.version);
+      ok('export inclui marks com timestamp',
+         !!p.marks && Object.values(p.marks).every(m => typeof m.t === 'number'),
+         Object.keys(p.marks || {}).length + ' marcacoes');
     } else ok('export gera JSON valido', false, 'blob nao capturado');
 
     // filtros de tags (so valem quando ha dados de tags)
