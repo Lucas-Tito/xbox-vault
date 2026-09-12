@@ -71,8 +71,6 @@ def montar(lista_arquivos, tag_arquivos, rotulo):
         g.pop("iaCover", None); g.pop("lbFile", None)   # campos internos de build
         if os.path.exists(local) and os.path.getsize(local) > 0:
             g["image"] = "images/" + g["id"] + ".webp"
-            if remote:
-                g["imageRemote"] = remote
             if Image:
                 try:
                     w, h = Image.open(local).size
@@ -82,7 +80,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo):
                     pass
             imaged += 1; localed += 1
         elif remote:
-            g["image"] = remote; imaged += 1
+            # Sem arquivo local, o card cai no placeholder. Guardar a URL remota
+            # faria o site buscar imagem em servidor de terceiro -- o catalogo e
+            # para funcionar inteiro a partir do proprio repositorio.
+            g["image"] = None
         elif "image" in g:
             g["image"] = None
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}

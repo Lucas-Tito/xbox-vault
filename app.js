@@ -791,5 +791,8 @@ if (!GAMES.length) {
 } else {
   initControls();
   render();
+  // Se a emulacao ficou ligada de uma visita anterior, o filtro salvo a pede mas
+  // nada dispara o carregamento no boot -- a lista viria vazia.
+  if (F.plats.indexOf("emu") >= 0 && !emuCarregado) carregarEmu(render);
 }
 })();

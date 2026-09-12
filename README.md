@@ -194,6 +194,15 @@ jogo). 79% das notas saíram pelo casamento por URL, que é o mais confiável.
 A distribuição das 2.223 notas serve de sanidade: curva em sino centrada em **69,5**, com só 93
 jogos acima de 90 — o formato da distribuição real do Metacritic.
 
+## Nenhuma requisição externa
+
+O site funciona inteiro a partir do próprio repositório: capas, catálogo e notas são arquivos
+locais. Os scripts de `tools/` é que vão à rede — na hora de gerar os dados, não na hora de usar.
+
+Isso é verificado, não prometido: `tests/netcheck.mjs` intercepta toda requisição que a página
+faz e falha se alguma sair do domínio. As únicas URLs externas que restam no catálogo são o campo
+`url` dos homebrews, que vira o link "Página do projeto" — abre só se você clicar.
+
 ## Procedência dos dados
 
 As capas vêm de duas fontes. A principal é a imagem do artigo da Wikipédia; para os ~280 títulos

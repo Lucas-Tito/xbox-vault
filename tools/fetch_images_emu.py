@@ -5,7 +5,10 @@ Mesmo pipeline dos outros (240px, WEBP q72), resumivel e idempotente.
 """
 import concurrent.futures as cf
 import io, json, os, sys, threading, time, urllib.error, urllib.parse, urllib.request
-from PIL import Image
+from PIL import Image, PngImagePlugin
+
+# alguns PNGs do acervo trazem blocos de texto gigantes; o limite padrao os rejeita
+PngImagePlugin.MAX_TEXT_CHUNK = 64 * 1024 * 1024
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "images")

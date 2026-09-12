@@ -12,6 +12,7 @@
   };
 
   return (async () => {
+    // estado de visita anterior nao pode vazar entre execucoes do teste
     ok('catalogo carregou', window.XBX_DB.games.length > 3000, window.XBX_DB.games.length + ' jogos');
     ok('stats total confere', $('#s-total').textContent.replace(/\D/g,'') == window.XBX_DB.games.length, $('#s-total').textContent);
     ok('cards renderizaram', cards().length > 50, cards().length + ' cards no 1o lote');
