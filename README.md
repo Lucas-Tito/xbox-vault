@@ -27,6 +27,11 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 - **Marcar que tenho** — o botão `+` no canto do card, ou o botão dentro do popup. O card fica
   destacado em verde.
 - **Wishlist** — o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
+- **Emulação** — desligada por padrão. Ao ligar, o site baixa `data/db-emu.js` (uma vez por
+  visita) com SNES, GBA e PS1 — o 360 roda esses sistemas via homebrew. Quem nunca liga a
+  categoria não paga nada pelo peso dela. Traz um sub-filtro por sistema e outro por tipo de
+  lançamento, que começa em **só oficiais**: dos 9.962, apenas 7.976 são jogos licenciados; o
+  resto são 1.478 ROM hacks, 222 homebrew, 138 não-licenciados e 136 nunca lançados.
 - **Não quero** — o botão `⊘`. O jogo sai de todas as listas e só reaparece no filtro
   *Só os que eu escondi*, de onde dá para desfazer. Serve para tirar da frente o que não te
   interessa — shovelware, esporte anual, o que for — num catálogo de 3.450 títulos.
@@ -150,8 +155,12 @@ não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jo
 |---|---|---|---|
 | Xbox 360 | 2.155 | 1.948 (90%) | 2.155 |
 | Xbox original | 995 (466 retrocompatíveis) | 918 (92%) | 995 |
+| Indie (XBLIG) | 3.450 | 3.450 (100%) | 3.450 |
 | Homebrew | 300 | 130 | 300 |
-| **total** | **3.450** | **3.374 (97,8%)** | **3.450** |
+| **total** | **6.900** | **6.824 (99%)** | **6.900** |
+
+E, carregado **sob demanda**, um catálogo de **emulação** com 9.962 jogos de SNES, Game Boy
+Advance e PlayStation 1.
 
 Contando só jogos comerciais, a cobertura é de **3.141 de 3.150 — 99,7%**. Os 76 sem imagem
 são 67 homebrews (a maioria utilitários de linha de comando que nunca tiveram GUI, logo nem

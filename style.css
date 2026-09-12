@@ -130,6 +130,7 @@ select:focus{border-color:var(--green)}
 .tag.bc{color:var(--purple);border-color:rgba(167,123,212,.35);background:rgba(167,123,212,.1)}
 .tag.nobc{color:var(--dim2);opacity:.75}
 .tag.plat{background:transparent}
+.tag.emu{color:var(--purple);border-color:rgba(167,123,212,.35);background:rgba(167,123,212,.1)}
 
 .marks{position:absolute;top:8px;right:8px;z-index:3;display:flex;flex-direction:column;gap:6px}
 .own-btn,.wish-btn{

@@ -45,8 +45,9 @@ function rebuildSets() {
 })();
 
 var F = {
-  q: "", own: "all", plats: ["x360", "xbox", "homebrew"], modes: [], flags: [],
-  plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "", genres: [], sort: "year-desc"
+  q: "", own: "all", plats: ["x360", "xblig", "xbox", "homebrew"], modes: [], flags: [],
+  systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "",
+  genres: [], sort: "year-desc"
 };
 try { Object.assign(F, JSON.parse(localStorage.getItem(FILT_KEY) || "{}")); } catch (e) {}
 
@@ -63,10 +64,43 @@ function esc(s) {
 }
 
 /* índice de busca pré-computado (título + devs + publishers) */
-GAMES.forEach(function (g) {
+function prepararJogo(g) {
   g._s = norm([g.title, (g.developers || []).join(" "), (g.publishers || []).join(" ")].join(" "));
   g._t = g.tags || {};
-});
+}
+GAMES.forEach(prepararJogo);
+
+/* ---- catálogo de emulação: carregado só quando o usuário liga a categoria ----
+   Injetar um <script> (em vez de fetch) é o que faz isso funcionar também com o
+   site aberto direto do arquivo, via file:// — fetch de arquivo local é bloqueado. */
+var emuCarregado = false, emuCarregando = false;
+
+function carregarEmu(pronto) {
+  if (emuCarregado) return pronto();
+  if (emuCarregando) return;
+  emuCarregando = true;
+  var main = $("#main");
+  if (main) main.innerHTML = '<div class="loading">Carregando o catálogo de emulação…<br>' +
+    '<small>São ~10 mil jogos; isso acontece só uma vez por visita.</small></div>';
+  var sc = document.createElement("script");
+  sc.src = "data/db-emu.js";
+  sc.onload = function () {
+    var lista = (window.XBX_EMU && window.XBX_EMU.games) || [];
+    lista.forEach(prepararJogo);
+    GAMES = GAMES.concat(lista);
+    emuCarregado = true; emuCarregando = false;
+    montarFacetas();          // anos e gêneros mudaram
+    pronto();
+  };
+  sc.onerror = function () {
+    emuCarregando = false;
+    F.plats = F.plats.filter(function (p) { return p !== "emu"; });
+    $$(".f-plat").forEach(function (c) { if (c.value === "emu") c.checked = false; });
+    alert("Não consegui carregar data/db-emu.js. Confira se o arquivo está junto do site.");
+    pronto();
+  };
+  document.head.appendChild(sc);
+}
 
 /* ---------------- filtragem ---------------- */
 function maxPlayers(g, scope) {
@@ -109,6 +143,13 @@ function match(g, skip) {
   }
   if (F.bc === "yes" && g.platform !== "xbox") return false;
 
+  if (g.platform === "emu") {
+    if (F.systems.length && F.systems.indexOf(g.system) < 0) return false;
+    // "oficial" = lançamento licenciado; o resto são ROM hacks, homebrew, etc.
+    if (F.relType === "oficial" && g.releaseType !== "Released") return false;
+    if (F.relType === "hack" && g.releaseType !== "ROM Hack") return false;
+    if (F.relType === "hb" && g.releaseType !== "Homebrew") return false;
+  }
   if (F.cat && g.category !== F.cat) return false;
   if (F.genres.length && F.genres.indexOf(g.genre || "") < 0) return false;
   return true;
@@ -137,6 +178,8 @@ var queue = [], qi = 0, io = null;
 function tagsHtml(g) {
   var t = g._t, h = [], pl;
   if (g.platform === "x360") h.push('<span class="tag plat">360</span>');
+  else if (g.platform === "xblig") h.push('<span class="tag plat">INDIE</span>');
+  else if (g.platform === "emu") h.push('<span class="tag emu">' + esc(g.system) + "</span>");
   else if (g.platform === "xbox") h.push('<span class="tag plat">XBOX</span>');
   else h.push('<span class="tag plat">HB</span>');
 
@@ -254,7 +297,8 @@ function observe() {
 
 /* ---------------- stats e contadores ---------------- */
 function updateStats(list) {
-  var ownCount = 0, byPlat = { x360: 0, xbox: 0, homebrew: 0 }, ownPlat = { x360: 0, xbox: 0, homebrew: 0 };
+  var ownCount = 0, byPlat = { x360: 0, xblig: 0, xbox: 0, homebrew: 0, emu: 0 },
+      ownPlat = { x360: 0, xblig: 0, xbox: 0, homebrew: 0, emu: 0 };
   GAMES.forEach(function (g) {
     byPlat[g.platform]++;
     if (owned.has(g.id)) { ownCount++; ownPlat[g.platform]++; }
@@ -269,8 +313,10 @@ function updateStats(list) {
   $("#s-bar").style.width = pct + "%";
   $("#s-breakdown").textContent =
     "360: " + ownPlat.x360 + "/" + byPlat.x360 +
+    " · Indie: " + ownPlat.xblig + "/" + byPlat.xblig +
     " · Xbox: " + ownPlat.xbox + "/" + byPlat.xbox +
-    " · Homebrew: " + ownPlat.homebrew + "/" + byPlat.homebrew;
+    " · Homebrew: " + ownPlat.homebrew + "/" + byPlat.homebrew +
+    (byPlat.emu ? " · Emulação: " + ownPlat.emu + "/" + byPlat.emu : "");
   $$("[data-cnt^='plat-']").forEach(function (el) {
     el.textContent = byPlat[el.dataset.cnt.slice(5)] || 0;
   });
@@ -293,7 +339,8 @@ function updateFacets() {
 /* ---------------- detalhes ---------------- */
 var REGIAO = { NA: "América do Norte", EU: "Europa", PAL: "PAL (Europa/Oceania)",
                JP: "Japão", AU: "Austrália" };
-var PLATNOME = { x360: "Xbox 360", xbox: "Xbox original", homebrew: "Homebrew" };
+var PLATNOME = { x360: "Xbox 360", xblig: "Indie (XBLIG)", xbox: "Xbox original",
+                 homebrew: "Homebrew", emu: "Emulação" };
 var CONFNOTA = {
   high: "conferido à mão, ou vindo do campo estruturado do artigo",
   medium: "inferido do texto do artigo",
@@ -567,9 +614,21 @@ function importFlow(text) {
 
 /* ---------------- UI ---------------- */
 function saveF() { try { localStorage.setItem(FILT_KEY, JSON.stringify(F)); } catch (e) {} }
-function onChange() { saveF(); render(); }
+function onChange() {
+  saveF();
+  subfiltrosEmu();
+  // ligar a emulação dispara o download do catálogo dela, uma vez por visita
+  if (F.plats.indexOf("emu") >= 0 && !emuCarregado) return carregarEmu(render);
+  render();
+}
 
 function initControls() {
+  montarFacetas();
+  restaurarControles();
+  ligarEventos();
+}
+
+function montarFacetas() {
   // anos
   var years = Array.from(new Set(GAMES.map(function (g) { return g.year; })
     .filter(function (y) { return y != null; }))).sort(function (a, b) { return a - b; });
@@ -590,7 +649,16 @@ function initControls() {
   var cats = Array.from(new Set(GAMES.map(function (g) { return g.category; }).filter(Boolean))).sort();
   $("#f-cat").innerHTML = '<option value="">Todas</option>' +
     cats.map(function (c) { return '<option value="' + esc(c) + '">' + esc(c) + "</option>"; }).join("");
+  $("#f-cat").value = F.cat;
+}
 
+function subfiltrosEmu() {
+  var on = F.plats.indexOf("emu") >= 0;
+  var g = $("#g-emu");
+  if (g) g.hidden = !on;
+}
+
+function restaurarControles() {
   // restaura estado
   $("#q").value = F.q ? F.q : "";
   $("#f-own").value = F.own; $("#f-bc").value = F.bc; $("#f-cat").value = F.cat;
@@ -600,7 +668,12 @@ function initControls() {
   $$(".f-flag").forEach(function (c) { c.checked = F.flags.indexOf(c.value) >= 0; });
   // descarta flags salvas que nao existem mais na UI (senao filtrariam sem forma de desmarcar)
   F.flags = $$(".f-flag").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
+  $$(".f-sys").forEach(function (c) { c.checked = F.systems.indexOf(c.value) >= 0; });
+  if ($("#f-reltype")) $("#f-reltype").value = F.relType;
+  subfiltrosEmu();
+}
 
+function ligarEventos() {
   // listeners
   var tmr;
   $("#q").addEventListener("input", function (e) {
@@ -615,6 +688,8 @@ function initControls() {
     else if (t.classList.contains("f-mode")) F.modes = pick(".f-mode");
     else if (t.classList.contains("f-flag")) F.flags = pick(".f-flag");
     else if (t.classList.contains("f-genre")) F.genres = pick(".f-genre");
+    else if (t.classList.contains("f-sys")) F.systems = pick(".f-sys");
+    else if (t.id === "f-reltype") F.relType = t.value;
     else if (t.id === "f-own") F.own = t.value;
     else if (t.id === "f-bc") F.bc = t.value;
     else if (t.id === "f-cat") F.cat = t.value;
@@ -667,7 +742,7 @@ function initControls() {
     if (!b || !detAtual) return;
     var card = $('.card[data-id="' + (window.CSS && CSS.escape ? CSS.escape(detAtual.id) : detAtual.id) + '"]');
     toggleMark(detAtual.id, b.dataset.mark, card);
-    $("#modal-body").innerHTML = detalheHtml(detAtual);   // redesenha com o novo estado
+    closeModal();      // marcou pelo popup: a ação está feita, fecha
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !$("#modal").hidden) closeModal();
@@ -675,8 +750,9 @@ function initControls() {
   $("#modal").addEventListener("click", function (e) { if (e.target.id === "modal") closeModal(); });
   $("#btn-filters").onclick = function () { $("#side").classList.toggle("open"); };
   $("#btn-reset").onclick = function () {
-    F = { q: "", own: "all", plats: ["x360", "xbox", "homebrew"], modes: [], flags: [],
-          plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "", genres: [], sort: "year-desc" };
+    F = { q: "", own: "all", plats: ["x360", "xblig", "xbox", "homebrew"], modes: [], flags: [],
+          systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "",
+          genres: [], sort: "year-desc" };
     saveF(); location.reload();
   };
 }

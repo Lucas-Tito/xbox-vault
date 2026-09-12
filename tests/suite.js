@@ -29,7 +29,9 @@
     const bcReal = window.XBX_DB.games.filter(g => g.platform==='xbox' && g.bc360 && g.bc360.compatible).length;
     ok('filtro retrocompat', bcShown === bcReal, bcShown + ' exibidos vs ' + bcReal + ' reais');
     $('#f-bc').value = 'all'; fire($('#f-bc'));
-    $$('.f-plat').forEach(c => { c.checked = true; fire(c); }); await wait(400);
+    // emulacao fica de fora: ela vem desligada de proposito e ligar dispara o
+    // download do catalogo dela, o que mudaria todas as contagens seguintes
+    $$('.f-plat').forEach(c => { c.checked = c.value !== 'emu'; fire(c); }); await wait(400);
 
     // busca
     $('#q').value = 'halo'; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(600);
@@ -87,17 +89,24 @@
     ok('clique no card abre o popup', !!sheet && !document.getElementById('modal').hidden);
     if (sheet) {
       const dg = window.XBX_DB.games.find(g => g.id === did);
-      ok('popup mostra o titulo', sheet.textContent.includes(dg.title), dg.title);
+      ok('popup mostra o titulo', !!dg && sheet.textContent.includes(dg.title),
+         dg ? dg.title : 'id do card nao esta no catalogo: ' + JSON.stringify(did));
       ok('popup tem secao de modos', sheet.textContent.includes('Modos de jogo'));
       ok('popup tem ficha', sheet.textContent.includes('Ficha'));
-      if (dg.description)
+      if (dg && dg.description)
         ok('popup mostra a descricao inteira', sheet.textContent.includes(dg.description), 'len=' + dg.description.length);
       // marcar pelo popup reflete no card
       sheet.querySelector('[data-mark="own"]').click();
-      await until(() => document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').classList.contains('own'));
+      await until(() => document.querySelector('.card[data-id="'+CSS.escape(did)+'"]')?.classList.contains('own'));
       ok('marcar pelo popup afeta o card',
-         document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').classList.contains('own'));
-      sheet.querySelector('[data-mark="own"]').click(); await wait(300);
+         document.querySelector('.card[data-id="'+CSS.escape(did)+'"]')?.classList.contains('own'));
+      ok('marcar pelo popup FECHA o popup', document.getElementById('modal').hidden);
+
+      // desfaz pelo card (o popup ja fechou) e reabre para testar o Escape
+      document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').querySelector('.own-btn').click();
+      await wait(300);
+      document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').querySelector('.thumb').click();
+      await until(() => !document.getElementById('modal').hidden);
       document.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}));
       await until(() => document.getElementById('modal').hidden);
       ok('Escape fecha o popup', document.getElementById('modal').hidden);
