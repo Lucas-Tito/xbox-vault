@@ -35,35 +35,20 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 - **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
   Os filtros ficam salvos entre visitas.
-- **Sincronizar arquivo** — o site pede um arquivo `.json` no seu computador e passa a **ler e
-  gravar nele sozinho**. Aponte para uma pasta do Google Drive, OneDrive ou Dropbox e a coleção
-  sincroniza entre máquinas de graça: sem conta, sem token, sem servidor — quem faz o trabalho de
-  nuvem é o cliente de sincronização que você já usa. Detalhes abaixo.
 - **Exportar coleção** — baixa um `.json` com a coleção **e** a wishlist.
 - **Importar** — aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
   **somar** ao que já está aqui ou **substituir** tudo.
 
-A coleção e a wishlist ficam no `localStorage` do navegador. Como isso é por navegador **e por
-origem**, o que você marca em `lucas-tito.github.io` não aparece ao abrir o `index.html` local, e
-vice-versa. O **export é a ponte entre os dois** — e o backup se você limpar os dados do navegador.
+Suas marcações ficam no `localStorage` do navegador e **sobrevivem a fechar e reabrir** — no dia a
+dia não é preciso exportar nada. Três ressalvas:
 
-## Sincronização entre dispositivos
+- É **por navegador e por origem**: o que você marca em `lucas-tito.github.io` não aparece ao abrir
+  o `index.html` local, e Chrome e Firefox não compartilham nada.
+- **Limpar dados de navegação apaga**, e janela anônima não guarda ao fechar.
+- Fechamento normal grava em disco; um travamento duro do sistema pode perder a última escrita.
 
-O botão **Sincronizar arquivo** usa a File System Access API: o navegador guarda uma referência ao
-arquivo que você escolheu, e o site volta a usar o mesmo arquivo nas próximas visitas.
-
-No prompt de permissão do Chrome, escolha **"Permitir em todas as visitas"** — aí ele nunca mais
-pergunta. Se escolher "Permitir desta vez", o botão fica âmbar escrito *Reconectar arquivo* a cada
-sessão, e um clique resolve (a API exige um gesto do usuário, não dá para contornar). Instalando o
-site como app (ícone de instalar na barra do Chrome) a permissão persiste automaticamente.
-
-**Só funciona em navegadores Chromium** — Chrome e Edge, não Firefox nem Safari. Nos outros o botão
-nem aparece e o site funciona como antes, com export/import manual.
-
-Como a sincronização junta dois lados: cada marcação guarda **quando** mudou, e vence a mais
-recente, item a item. Desmarcar um jogo grava uma *lápide* (`s: null`) em vez de sumir do arquivo —
-sem isso, juntar dois dispositivos ressuscitaria tudo que você desmarcou num deles. E antes de
-gravar, o site relê o arquivo e junta, para nunca apagar o que a outra máquina escreveu.
+Por isso o **export existe como backup** e como forma de levar a coleção para outra máquina ou
+outro navegador — não como parte do uso normal.
 
 ### Formato do arquivo de coleção
 
@@ -84,9 +69,11 @@ gravar, o site relê o arquivo e junta, para nunca apagar o que a outra máquina
 }
 ```
 
-`marks` é a fonte da verdade: `s` é o estado (`own`, `wish`, `hide` ou `null` para "desmarcado") e `t` é
-quando mudou, em milissegundos. `owned` e `wishlist` continuam ali para leitura humana e para
-importadores antigos. Arquivos `version: 1` e `2` (sem `marks`) continuam sendo aceitos, e um array
+`marks` é a fonte da verdade: `s` é o estado (`own`, `wish`, `hide` ou `null` para "desmarcado") e
+`t` é quando mudou, em milissegundos. O timestamp faz a importação juntar direito: importar um
+arquivo mais antigo não desfaz o que você marcou depois, e um jogo desmarcado guarda uma *lápide*
+(`s: null`) em vez de sumir, para que a remoção também viaje. `owned`, `wishlist` e `hidden`
+continuam ali para leitura humana e para importadores antigos. Arquivos `version: 1` e `2` (sem `marks`) continuam sendo aceitos, e um array
 puro de ids também.
 
 ## Estrutura

@@ -214,7 +214,6 @@
     await impMarks({app:'xbox-vault', version:2, owned:[v2alvo], wishlist:[]});
     ok('arquivo v2 antigo (sem marks) ainda importa', lerMarks()[v2alvo]?.s === 'own');
 
-    ok('botao de sync existe no DOM', !!document.getElementById('btn-sync'));
     $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
     await until(() => cards().length > 50, 8000); await wait(300);
 

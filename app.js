@@ -417,7 +417,6 @@ function saveMarks() {
     localStorage.setItem(OWNED_KEY, JSON.stringify(Array.from(owned)));
     localStorage.setItem(WISH_KEY, JSON.stringify(Array.from(wishlist)));
   } catch (e) { alert("Não consegui salvar no navegador: " + e.message); }
-  if (window.XBXSync) XBXSync.agendarGravacao();
 }
 
 function setMark(id, estado) {
@@ -644,8 +643,6 @@ function initControls() {
   });
 
   $("#btn-export").onclick = doExport;
-  var bs = $("#btn-sync");
-  if (bs) { bs.hidden = !XBXSync.suporta; bs.onclick = XBXSync.aoClicar; }
   $("#btn-import").onclick = function () {
     openModal('<h3>Importar coleção</h3><p>Escolha o arquivo <code>.json</code> exportado antes.</p>' +
       '<div class="drop" id="drop">Arraste o arquivo aqui<br>ou clique para escolher</div>');
@@ -684,181 +681,6 @@ function initControls() {
   };
 }
 
-/* ---------------- sincronização com um arquivo do dispositivo ----------------
-   A File System Access API devolve um handle serializável: guardamos ele no
-   IndexedDB e o site volta a ler/gravar no MESMO arquivo nas próximas visitas.
-   Apontando esse arquivo para uma pasta do Google Drive/OneDrive/Dropbox, a
-   sincronização entre máquinas sai de graça, sem conta, token ou servidor.
-   Só existe em navegadores Chromium; nos demais o botão nem aparece. */
-window.XBXSync = (function () {
-  var SUPORTA = typeof window.showSaveFilePicker === "function";
-  var DB_NOME = "xbx-sync", LOJA = "handles";
-  var handle = null, ligado = false, timer = null, gravando = false;
-
-  function idb() {
-    return new Promise(function (res, rej) {
-      var r = indexedDB.open(DB_NOME, 1);
-      r.onupgradeneeded = function () { r.result.createObjectStore(LOJA); };
-      r.onsuccess = function () { res(r.result); };
-      r.onerror = function () { rej(r.error); };
-    });
-  }
-  function idbOp(modo, fn) {
-    return idb().then(function (db) {
-      return new Promise(function (res, rej) {
-        var tx = db.transaction(LOJA, modo), req = fn(tx.objectStore(LOJA));
-        tx.oncomplete = function () { res(req && req.result); };
-        tx.onerror = function () { rej(tx.error); };
-      });
-    });
-  }
-  var guardar = function (h) { return idbOp("readwrite", function (st) { return st.put(h, "file"); }); };
-  var buscar  = function () { return idbOp("readonly",  function (st) { return st.get("file"); }); };
-  var limpar  = function () { return idbOp("readwrite", function (st) { return st.delete("file"); }); };
-
-  function permissao(h, pedir) {
-    var op = { mode: "readwrite" };
-    return (pedir ? h.requestPermission(op) : h.queryPermission(op))
-      .then(function (p) { return p === "granted"; })
-      .catch(function () { return false; });
-  }
-
-  function pintar(estado, detalhe) {
-    var b = document.getElementById("btn-sync");
-    if (!b) return;
-    b.hidden = !SUPORTA;
-    b.dataset.estado = estado;
-    var txt = { off: "Sincronizar arquivo", on: "Sincronizado",
-                perm: "Reconectar arquivo", erro: "Erro na sincronização",
-                salvando: "Salvando…" }[estado] || estado;
-    b.textContent = (estado === "on" ? "✓ " : "") + txt;
-    b.title = detalhe || (estado === "on" ? "Clique para recarregar ou desconectar" : "");
-  }
-
-  function payload() {
-    return JSON.stringify({
-      app: "xbox-vault", version: 3, exportedAt: new Date().toISOString(),
-      count: owned.size, wishlistCount: wishlist.size,
-      owned: Array.from(owned).sort(), wishlist: Array.from(wishlist).sort(),
-      hidden: Array.from(escondidos).sort(), marks: marks
-    }, null, 1);
-  }
-
-  function lerArquivo() {
-    return handle.getFile().then(function (f) { return f.text(); }).then(function (t) {
-      if (!t.trim()) return null;
-      try { return JSON.parse(t); } catch (e) { return null; }
-    });
-  }
-
-  /* Nunca sobrescreve cego: relê o arquivo e junta antes de gravar, senão a
-     gravação daqui apagaria o que outra máquina escreveu enquanto isso. */
-  function gravar() {
-    if (!handle || !ligado || gravando) return Promise.resolve();
-    gravando = true;
-    pintar("salvando");
-    return lerArquivo().then(function (remoto) {
-      if (remoto && remoto.marks) mergeMarks(remoto.marks);
-      return handle.createWritable();
-    }).then(function (w) {
-      return w.write(payload()).then(function () { return w.close(); });
-    }).then(function () {
-      pintar("on", handle.name);
-    }).catch(function (e) {
-      pintar(e && e.name === "NotAllowedError" ? "perm" : "erro", String(e && e.message || e));
-    }).then(function () { gravando = false; });
-  }
-
-  function agendarGravacao() {
-    if (!ligado) return;
-    clearTimeout(timer);
-    timer = setTimeout(gravar, 1200);
-  }
-
-  function puxar(silencioso) {
-    if (!handle || !ligado) return Promise.resolve(0);
-    return lerArquivo().then(function (remoto) {
-      if (!remoto) return 0;
-      var conhecidos = new Set(GAMES.map(function (g) { return g.id; }));
-      var lim = {};
-      if (remoto.marks) {
-        for (var k in remoto.marks) if (conhecidos.has(k)) lim[k] = remoto.marks[k];
-      } else {                                   // arquivo antigo, sem timestamp
-        var t = 0;
-        (remoto.owned || []).forEach(function (i) { if (conhecidos.has(i)) lim[i] = { s: "own", t: t }; });
-        (remoto.wishlist || []).forEach(function (i) { if (conhecidos.has(i)) lim[i] = { s: "wish", t: t }; });
-      }
-      var n = mergeMarks(lim);
-      if (n) { render(); }
-      if (!silencioso) pintar("on", handle.name);
-      return n;
-    }).catch(function () { return 0; });
-  }
-
-  function ativar(h) {
-    handle = h; ligado = true;
-    pintar("on", h.name);
-    return puxar(true).then(gravar);
-  }
-
-  function conectar() {
-    if (!SUPORTA) return;
-    var nome = "xbox-vault-colecao.json";
-    return window.showSaveFilePicker({
-      suggestedName: nome,
-      types: [{ description: "Coleção do Xbox Vault", accept: { "application/json": [".json"] } }]
-    }).then(function (h) {
-      // memorizar o handle é otimização para a próxima visita, não pré-requisito:
-      // se o IndexedDB falhar, a sincronização desta sessão continua valendo
-      return guardar(h).catch(function () {}).then(function () { return ativar(h); });
-    }).catch(function (e) {
-      if (e && e.name === "AbortError") return;   // usuário cancelou o seletor
-      pintar("erro", String(e && e.message || e));
-    });
-  }
-
-  function desconectar() {
-    ligado = false; handle = null;
-    clearTimeout(timer);
-    return limpar().then(function () { pintar("off"); });
-  }
-
-  function restaurar() {
-    if (!SUPORTA) { pintar("off"); return; }
-    pintar("off");
-    buscar().then(function (h) {
-      if (!h) return;
-      handle = h;
-      permissao(h, false).then(function (ok) {
-        if (ok) ativar(h);
-        else pintar("perm", h.name);   // precisa de um clique: a API exige gesto do usuário
-      });
-    }).catch(function () {});
-  }
-
-  function aoClicar() {
-    var b = document.getElementById("btn-sync");
-    var estado = b && b.dataset.estado;
-    if (estado === "on") {
-      if (confirm("Sincronizando com “" + handle.name + "”.\n\nOK recarrega do arquivo agora.\nCancelar desconecta.")) puxar();
-      else desconectar();
-      return;
-    }
-    if (estado === "perm" && handle) {
-      permissao(handle, true).then(function (ok) {
-        if (ok) ativar(handle); else pintar("perm", handle.name);
-      });
-      return;
-    }
-    conectar();
-  }
-
-  window.addEventListener("focus", function () { puxar(true); });
-
-  return { suporta: SUPORTA, restaurar: restaurar, aoClicar: aoClicar,
-           agendarGravacao: agendarGravacao, puxar: puxar, desconectar: desconectar };
-})();
-
 /* ---------------- boot ---------------- */
 if (!GAMES.length) {
   $("#main").innerHTML = '<div class="empty"><b>Catálogo vazio.</b><br>' +
@@ -866,6 +688,5 @@ if (!GAMES.length) {
 } else {
   initControls();
   render();
-  XBXSync.restaurar();
 }
 })();
