@@ -163,7 +163,8 @@ não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jo
 | **total** | **6.900** | **6.824 (99%)** | **6.900** |
 
 E, carregado **sob demanda**, um catálogo de **emulação** com 9.962 jogos de SNES, Game Boy
-Advance e PlayStation 1.
+Advance e PlayStation 1 — 8.915 deles com capa. No total são **16.862 títulos** e 187 MB de capas
+no repositório.
 
 Contando só jogos comerciais, a cobertura é de **3.141 de 3.150 — 99,7%**. Os 76 sem imagem
 são 67 homebrews (a maioria utilitários de linha de comando que nunca tiveram GUI, logo nem
