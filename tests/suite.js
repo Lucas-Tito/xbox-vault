@@ -226,6 +226,43 @@
     $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
     await until(() => cards().length > 50, 8000); await wait(300);
 
+    // ---- nota do Metacritic ----
+    $('#f-own').value='all'; fire($('#f-own'));
+    $('#q').value=''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+    await until(() => cards().length > 50, 8000); await wait(300);
+    const comMC = window.XBX_DB.games.filter(g => typeof g.mc === 'number');
+    ok('catalogo tem notas', comMC.length > 2000, comMC.length + ' jogos com nota');
+    ok('notas em faixa valida', comMC.every(g => g.mc >= 0 && g.mc <= 100));
+    const halo = window.XBX_DB.games.find(g => g.id === 'x360-halo-3');
+    ok('Halo 3 = 94', halo && halo.mc === 94, String(halo && halo.mc));
+
+    $('#f-mc').value='90'; fire($('#f-mc')); await wait(600);
+    const alta = window.XBX_DB.games.filter(g => g.mc >= 90).length;
+    ok('filtro nota 90+', +$('#s-shown').textContent.replace(/\D/g,'') === alta, alta + ' jogos');
+    ok('sem nota nao passa no filtro',
+       cards().every(c => { const g = window.XBX_DB.games.find(x => x.id === c.dataset.id);
+                            return g && g.mc >= 90; }));
+    ok('card mostra o badge da nota', !!cards()[0].querySelector('.mc'),
+       cards()[0].querySelector('.mc') ? cards()[0].querySelector('.mc').textContent : '');
+
+    $('#f-sort').value='mc'; fire($('#f-sort')); await wait(600);
+    const notas = cards().slice(0,10).map(c => {
+      const g = window.XBX_DB.games.find(x => x.id === c.dataset.id); return g.mc; });
+    ok('ordenacao por nota (desc)',
+       notas.every((n,i) => i===0 || notas[i-1] >= n), JSON.stringify(notas));
+    ok('ordenar por nota nao agrupa por ano', document.querySelectorAll('.year').length === 0,
+       document.querySelectorAll('.year').length + ' cabecalhos de ano');
+    ok('render progressivo tambem na lista corrida', cards().length >= 50, cards().length + ' cards');
+
+    // popup mostra a nota
+    cards()[0].querySelector('.thumb').click();
+    await until(() => document.querySelector('.sheet--det'));
+    ok('popup mostra a nota', !!document.querySelector('.det-mc'));
+    document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+    await until(() => document.getElementById('modal').hidden);
+    $('#f-mc').value='0'; fire($('#f-mc'));
+    $('#f-sort').value='year-desc'; fire($('#f-sort')); await wait(500);
+
     // conteudo REAL do arquivo exportado (intercepta o blob do download)
     let captured = null;
     const origCreate = URL.createObjectURL;

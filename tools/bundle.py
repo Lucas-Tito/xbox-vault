@@ -48,6 +48,7 @@ def montar(lista_arquivos, tag_arquivos, rotulo):
         lst = load(fn, [])
         print("  %-16s %5d" % (label, len(lst)))
         games.extend(lst)
+    notas = load("metacritic.json", {})
     tags = {}
     for fn in tag_arquivos:
         t = load(fn, {})
@@ -85,8 +86,15 @@ def montar(lista_arquivos, tag_arquivos, rotulo):
         elif "image" in g:
             g["image"] = None
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
-    print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | %d dup" %
-          (rotulo, len(games), tagged, imaged, localed, wide, dupes))
+        n = notas.get(g["id"])
+        if n and isinstance(n.get("score"), int):
+            g["mc"] = n["score"]
+        else:
+            g.pop("mc", None)
+    com_mc = sum(1 for g in games if g.get("mc"))
+    print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
+          "%d com Metacritic | %d dup" %
+          (rotulo, len(games), tagged, imaged, localed, wide, com_mc, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 

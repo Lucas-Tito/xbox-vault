@@ -230,3 +230,14 @@ ul.modos li{color:var(--txt)}
   .det-info{padding:16px 18px 20px;max-height:none}
   .sheet--det{max-height:88vh;overflow-y:auto}
 }
+
+/* ---------- nota do Metacritic ---------- */
+.mc{position:absolute;left:8px;bottom:8px;z-index:3;min-width:26px;height:26px;padding:0 5px;
+  border-radius:5px;display:grid;place-items:center;font-size:13px;font-weight:800;
+  color:#0d1117;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+.mc.bom{background:#6c3}      /* faixas de cor do proprio Metacritic */
+.mc.medio{background:#fc3}
+.mc.ruim{background:#f00;color:#fff}
+.det-mc{display:flex;align-items:center;gap:9px;margin:2px 0 14px}
+.det-mc .mc{position:static;min-width:34px;height:34px;font-size:16px;border-radius:6px}
+.det-mc span:last-child{color:var(--dim2);font-size:12.5px}

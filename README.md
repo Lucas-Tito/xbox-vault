@@ -27,6 +27,9 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 - **Marcar que tenho** — o botão `+` no canto do card, ou o botão dentro do popup. O card fica
   destacado em verde.
 - **Wishlist** — o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
+- **Nota do Metacritic** — no canto da capa, nas cores do próprio Metacritic (verde 75+, amarelo
+  50–74, vermelho abaixo). Dá para filtrar por nota mínima e ordenar por nota. **2.223 jogos têm
+  nota** — 67% do Xbox 360 e 78% do Xbox original; XBLIG e emulação não têm.
 - **Emulação** — desligada por padrão. Ao ligar, o site baixa `data/db-emu.js` (uma vez por
   visita) com SNES, GBA e PS1 — o 360 roda esses sistemas via homebrew. Quem nunca liga a
   categoria não paga nada pelo peso dela. Traz um sub-filtro por sistema e outro por tipo de
@@ -175,6 +178,20 @@ retrocompatíveis batem com a lista oficial final da Microsoft.
 de detalhes, marcação, wishlist, "não quero", merge por timestamp e export/import; e mais 9 sobre a
 sincronização com arquivo, usando um handle falso em memória (o seletor de arquivo de verdade
 exige interação humana). Veja `tests/README.md`.
+
+### De onde vem a nota do Metacritic
+
+Não dá para raspar o Metacritic (bloqueio agressivo), mas os artigos da Wikipédia citam a nota
+**junto com a URL da página do Metacritic** — e essa URL diz a plataforma
+(`?platform=xbox-360`). É a própria Wikipédia dizendo de qual versão é aquela nota, o que importa
+porque um mesmo jogo tem notas diferentes em cada plataforma.
+
+O `tools/metacritic.py` trata três formatos que convivem nos artigos: `MC = 94/100` (jogo único),
+`MC_XBOX = 95/100` (plataforma no nome do campo) e `game1/mc1` (artigo de série, uma nota por
+jogo). 79% das notas saíram pelo casamento por URL, que é o mais confiável.
+
+A distribuição das 2.223 notas serve de sanidade: curva em sino centrada em **69,5**, com só 93
+jogos acima de 90 — o formato da distribuição real do Metacritic.
 
 ## Procedência dos dados
 

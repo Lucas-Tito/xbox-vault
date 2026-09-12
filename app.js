@@ -47,7 +47,7 @@ function rebuildSets() {
 var F = {
   q: "", own: "all", plats: ["x360", "xblig", "xbox", "homebrew"], modes: [], flags: [],
   systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "",
-  genres: [], sort: "year-desc"
+  mcMin: 0, genres: [], sort: "year-desc"
 };
 try { Object.assign(F, JSON.parse(localStorage.getItem(FILT_KEY) || "{}")); } catch (e) {}
 
@@ -132,6 +132,7 @@ function match(g, skip) {
     }
   }
   if (F.plMin > 0 && maxPlayers(g, F.plScope) < F.plMin) return false;
+  if (F.mcMin > 0 && !(g.mc >= F.mcMin)) return false;   // sem nota também não passa
 
   if (F.y1 && (g.year == null || g.year < +F.y1)) return false;
   if (F.y2 && (g.year == null || g.year > +F.y2)) return false;
@@ -166,6 +167,7 @@ function sortList(list) {
   return list.sort(function (a, b) {
     if (s === "title") return a.title.localeCompare(b.title);
     if (s === "players") return maxPlayers(b, "any") - maxPlayers(a, "any") || a.title.localeCompare(b.title);
+    if (s === "mc") return (b.mc || -1) - (a.mc || -1) || a.title.localeCompare(b.title);
     var ya = a.year == null ? -Infinity : a.year, yb = b.year == null ? -Infinity : b.year;
     if (ya !== yb) return s === "year-asc" ? ya - yb : yb - ya;
     return a.title.localeCompare(b.title);
@@ -174,6 +176,8 @@ function sortList(list) {
 
 /* ---------------- render ---------------- */
 var queue = [], qi = 0, io = null;
+
+function mcClasse(n) { return n >= 75 ? "bom" : n >= 50 ? "medio" : "ruim"; }
 
 function tagsHtml(g) {
   var t = g._t, h = [], pl;
@@ -219,6 +223,8 @@ window.XBXimgErr = function (im) {
 };
 
 function cardHtml(g) {
+  var mc = typeof g.mc === "number"
+    ? '<span class="mc ' + mcClasse(g.mc) + '" title="Metacritic">' + g.mc + "</span>" : "";
   var img = g.image
     ? '<img loading="lazy" src="' + esc(g.image) + '"' +
       (g.imageRemote ? ' data-fb="' + esc(g.imageRemote) + '"' : "") +
@@ -240,7 +246,7 @@ function cardHtml(g) {
     '<button class="wish-btn" title="Adicionar à wishlist">' + (w ? "★" : "☆") + "</button>" +
     '<button class="hide-btn" title="Não quero — esconder da lista">⊘</button>' +
     "</div>" +
-    '<div class="thumb">' + img + "</div>" +
+    '<div class="thumb">' + img + mc + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
     '<div class="sub">' + sub + "</div>" +
     '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
@@ -248,6 +254,13 @@ function cardHtml(g) {
 
 function buildQueue(list) {
   var groups = [], cur = null;
+  // Agrupar por ano só faz sentido quando a ordenação É por ano. Ordenando por
+  // título ou nota, cada seção viraria um jogo só.
+  if (F.sort !== "year-desc" && F.sort !== "year-asc") {
+    queue = list.length ? [{ y: null, items: list }] : [];
+    qi = 0;
+    return;
+  }
   for (var i = 0; i < list.length; i++) {
     var y = list[i].year == null ? "Sem ano" : list[i].year;
     if (!cur || cur.y !== y) { cur = { y: y, items: [] }; groups.push(cur); }
@@ -260,10 +273,19 @@ function renderMore() {
   var main = $("#main"), html = "", n = 0;
   while (qi < queue.length && n < BATCH) {
     var g = queue[qi];
-    html += '<section><div class="year"><h2>' + esc(g.y) + '</h2><span class="cnt">' +
-      g.items.length + " jogo" + (g.items.length > 1 ? "s" : "") + '</span><div class="ln"></div></div><div class="grid">' +
-      g.items.map(cardHtml).join("") + "</div></section>";
-    n += g.items.length; qi++;
+    if (g.y === null) {                       // lista corrida, sem cabeçalho de ano
+      var lote = g.items.slice(0, BATCH);
+      html += '<section><div class="grid">' + lote.map(cardHtml).join("") + "</div></section>";
+      n += lote.length;
+      g.items = g.items.slice(BATCH);
+      if (!g.items.length) qi++;
+    } else {
+      html += '<section><div class="year"><h2>' + esc(g.y) + '</h2><span class="cnt">' +
+        g.items.length + " jogo" + (g.items.length > 1 ? "s" : "") +
+        '</span><div class="ln"></div></div><div class="grid">' +
+        g.items.map(cardHtml).join("") + "</div></section>";
+      n += g.items.length; qi++;
+    }
   }
   var sent = $("#sentinel");
   if (sent) sent.insertAdjacentHTML("beforebegin", html);
@@ -431,6 +453,9 @@ function detalheHtml(g) {
       "<h3>" + esc(g.title) + "</h3>" +
       '<div class="det-sub">' + esc([PLATNOME[g.platform], g.year, g.genre || g.category]
         .filter(Boolean).join(" · ")) + "</div>" +
+      (typeof g.mc === "number"
+        ? '<div class="det-mc"><span class="mc ' + mcClasse(g.mc) + '">' + g.mc + "</span>" +
+          "<span>Metacritic</span></div>" : "") +
       (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
       '<div class="det-acoes">' +
         '<button class="btn ' + (o ? "primary" : "") + '" data-mark="own">' +
@@ -670,6 +695,7 @@ function restaurarControles() {
   F.flags = $$(".f-flag").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
   $$(".f-sys").forEach(function (c) { c.checked = F.systems.indexOf(c.value) >= 0; });
   if ($("#f-reltype")) $("#f-reltype").value = F.relType;
+  if ($("#f-mc")) $("#f-mc").value = String(F.mcMin);
   subfiltrosEmu();
 }
 
@@ -698,6 +724,7 @@ function ligarEventos() {
     else if (t.id === "f-y2") F.y2 = t.value;
     else if (t.id === "f-pl-scope") F.plScope = t.value;
     else if (t.id === "f-pl-min") F.plMin = +t.value;
+    else if (t.id === "f-mc") F.mcMin = +t.value;
     else return;
     onChange();
   });
@@ -751,8 +778,8 @@ function ligarEventos() {
   $("#btn-filters").onclick = function () { $("#side").classList.toggle("open"); };
   $("#btn-reset").onclick = function () {
     F = { q: "", own: "all", plats: ["x360", "xblig", "xbox", "homebrew"], modes: [], flags: [],
-          systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "",
-          genres: [], sort: "year-desc" };
+          systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all",
+          cat: "", mcMin: 0, genres: [], sort: "year-desc" };
     saveF(); location.reload();
   };
 }
