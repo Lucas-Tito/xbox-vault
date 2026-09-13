@@ -324,8 +324,9 @@
         const c = cards().find(x => x.dataset.id === g.id);
         if (!c) { ok('card de ' + g.title + ' na tela', false); continue; }
         c.querySelector('.thumb').click(); await wait(400);
-        const lin = $$('#modal-body .li')
-          .find(l => l.querySelector('span') && l.querySelector('span').textContent === 'Tamanho');
+        // o tamanho virou pilula na faixa de fatos, nao e mais linha de ficha
+        const lin = $$('#modal-body .chip')
+          .find(c => c.querySelector('span') && c.querySelector('span').textContent === 'Tamanho');
         ok('popup mostra o tamanho', !!lin, g.title + ' = ' + g.tamanho + ' GB');
         const txt = lin ? lin.querySelector('b').textContent : '';
         ok('unidade certa para ' + g.tamanho + ' GB', txt.endsWith(unidade), txt);

@@ -232,7 +232,10 @@ select:focus{border-color:var(--green)}
   background:var(--bg3);padding:11px 13px;border-radius:8px;border-left:3px solid var(--green)}
 .det-info h4{margin:18px 0 7px;font-size:10.5px;text-transform:uppercase;letter-spacing:.9px;
   color:var(--dim2);font-weight:700}
-.det-info h4:first-of-type{margin-top:4px}
+/* So o h4 que abre o painel perde a margem de cima. Com :first-of-type, o
+   "Tempo de jogo" tambem perdia, porque e o primeiro h4 da Visao geral mesmo
+   vindo depois da faixa de fatos, e colava na nota acima dele. */
+.det-info h4:first-child,.pane > h4:first-child{margin-top:4px}
 .det-acoes{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
 .det-acoes .btn{flex:1;min-width:150px;text-align:center;justify-content:center}
 .btn.amber{background:var(--amber);border-color:var(--amber);color:#1a1206;font-weight:600}
@@ -249,6 +252,22 @@ ul.modos li{color:var(--txt)}
 .det-info .nota{font-size:12px;color:var(--dim);margin:7px 0 0;line-height:1.5}
 .det-info p.sim{color:var(--green2);font-weight:600;margin:0 0 6px;font-size:13.5px}
 .det-info p.nao{color:var(--dim2);font-weight:600;margin:0 0 6px;font-size:13.5px}
+/* Faixa de fatos da Visao geral. Pilula em vez de linha para o fato nao se
+   confundir com a lista de tempo de jogo nem com a prosa da descricao: a aba
+   misturava tres registros com o mesmo peso, e os fatos ainda usavam dois
+   sistemas de linha diferentes. */
+.faixa{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.chip{display:flex;align-items:baseline;gap:6px;background:var(--bg3);
+  border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12px;
+  color:var(--dim);max-width:100%}
+.chip > span{flex:none}
+.chip b{color:var(--txt);font-weight:600;font-variant-numeric:tabular-nums;
+  min-width:0;overflow-wrap:anywhere}
+.chip.sim{border-color:rgba(82,176,67,.4)}
+.chip.sim b{color:var(--green2)}
+.chip.nao b{color:var(--dim2)}
+.bc-nota{margin:0 0 14px}
+
 /* As abas da ficha. Com o popup a 820px a coluna tem 525px e os quatro nomes
    cabem folgados; a 700px eles somavam 404px de 405px e o padding tinha de ser
    curto. Se um nome crescer, conferir isso de novo antes de soltar. */

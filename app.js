@@ -634,15 +634,34 @@ function tuHtml(g) {
 
 /* Retrocompatibilidade: bloco proprio porque so 995 jogos tem, e para eles e a
    primeira pergunta, nao um detalhe de rodape. */
-function bcHtml(g) {
+/* Uma pilula por fato de uma linha so. Elas nao parecem nem texto nem lista,
+   que era o problema da Visao geral: prosa, midia e fatos disputando o mesmo
+   peso, com os fatos ainda usando dois sistemas de linha diferentes. */
+function chip(rot, val, classe) {
+  if (!val) return "";
+  return '<span class="chip' + (classe ? " " + classe : "") + '">' +
+    (rot ? "<span>" + rot + "</span>" : "") + "<b>" + val + "</b></span>";
+}
+
+function bcChips(g) {
   var c = g.bc360;
   if (!c) return "";
-  return "<h4>Retrocompatibilidade com o Xbox 360</h4>" +
-    '<p class="' + (c.compatible ? "sim" : "nao") + '">' +
-    (c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360") + "</p>" +
-    (c.compatible ? linha("Região", esc(c.region === "all" ? "todas" : (c.regions || [c.region]).join(", "))) : "") +
-    (c.xboxOriginals ? linha("Xbox Originals", "sim (era vendido digitalmente)") : "") +
-    (c.issues ? '<p class="nota"><b>Problemas conhecidos:</b> ' + esc(c.issues) + "</p>" : "");
+  var h = chip("", c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360",
+    c.compatible ? "sim" : "nao");
+  if (c.compatible) {
+    /* A lista da Microsoft era por REGIAO do disco: o perfil de compatibilidade
+       era feito por SKU, entao a versao NA podia rodar e a PAL nao. Mas o
+       build_xbox.py grava "all" tambem quando a tabela da Wikipedia nao traz
+       selo nenhum, o que e o caso de 425 dos 466 compativeis. Mostrar "todas"
+       ali seria transformar silencio da fonte em afirmacao, que e exatamente o
+       que o aviso de co-op existe para evitar. So falamos quando a fonte falou. */
+    /* "Disco" e nao "Regiao": o campo diz qual versao FISICA o 360 aceita, e e o
+       disco que a pessoa tem na mao. "Regiao NA" solto nao se explica. */
+    var regs = (c.regions || []).join(", ");
+    h += chip("Disco", esc(regs));
+    if (c.xboxOriginals) h += chip("", "Xbox Originals", "");
+  }
+  return h;
 }
 
 function fichaHtml(g) {
@@ -701,15 +720,20 @@ function fichaHtml(g) {
 function abasDetalhe(g) {
   var f = g.flags || {}, abas = [];
 
-  var geral = (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
+  /* O que se escaneia vem antes do que se le: a faixa de fatos abre a aba, a
+     midia e a prosa vem depois. Kinect entra aqui e nao com os modos porque nos
+     132 jogos que EXIGEM o sensor ele responde a mesma pergunta que a
+     retrocompatibilidade, se roda no seu setup. */
+  var fatos = chip("Tamanho", tamanhoTexto(g.tamanho)) +
+    chip("Kinect", f.kinect ? (f.kinect === "required" ? "obrigatório" : "opcional") : null) +
+    bcChips(g);
+  var geral = (fatos ? '<div class="faixa">' + fatos + "</div>" : "") +
+    (g.bc360 && g.bc360.issues
+      ? '<p class="nota bc-nota"><b>Problemas conhecidos:</b> ' + esc(g.bc360.issues) + "</p>" : "") +
+    (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
     galeriaHtml(g);
   var tempo = tempoHtml(g);
   if (tempo) geral += "<h4>Tempo de jogo</h4>" + tempo;
-  /* Kinect fica aqui e nao com os modos: nos 132 jogos que EXIGEM o sensor ele
-     responde a mesma pergunta que a retrocompatibilidade, se roda no seu setup. */
-  geral += linha("Tamanho", tamanhoTexto(g.tamanho));
-  if (f.kinect) geral += linha("Kinect", f.kinect === "required" ? "obrigatório" : "opcional");
-  geral += bcHtml(g);
   if (geral) abas.push(["Visão geral", geral]);
 
   var coop = coopHtml(g);
