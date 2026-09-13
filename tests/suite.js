@@ -61,6 +61,10 @@
     const stored = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
     ok('marcar tenho persiste', stored.includes(fid), 'id=' + fid);
     ok('card ganha classe own', $('.card[data-id="'+CSS.escape(fid)+'"]').classList.contains('own'));
+    // sem o botao no card, o selo e o unico sinal que nao depende de matiz
+    ok('card marcado ganha o selo de visto',
+       getComputedStyle($('.card[data-id="'+CSS.escape(fid)+'"]'), '::after')
+         .content.includes('\u2713'));
     ok('contador de posse', $('#s-own').textContent.replace(/\D/g,'') === '1', $('#s-own').textContent);
 
     // filtro "so os que tenho"

@@ -3396,6 +3396,24 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "emu-gba-extreme-ghostbusters-code-ecto-1": {
+  "ano": 2002,
+  "cem": 2.2,
+  "hltb": 15070,
+  "main": 2.8,
+  "n": 4,
+  "nome": "Extreme Ghostbusters: Code Ecto-1",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-extreme-mahjong-deluxe-terminator-21": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-eyeshield-21-devilbats-devildays": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-gba-ez-talk-shokyuuhen-1": {
   "nao": "nenhum-casou",
   "v": 2
@@ -3418,6 +3436,373 @@
  },
  "emu-gba-ez-talk-shokyuuhen-6": {
   "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-f-14-tomcat": {
+  "ano": 1988,
+  "hltb": 44395,
+  "main": 5.0,
+  "n": 1,
+  "nome": "F-14 Tomcat",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-f-zero-climax": {
+  "ano": 2004,
+  "hltb": 23564,
+  "main": 2.0,
+  "n": 12,
+  "nome": "F-Zero Climax",
+  "plus": 4.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-f-zero-gp-legend": {
+  "ano": 2003,
+  "cem": 13.4,
+  "hltb": 3291,
+  "main": 5.6,
+  "n": 19,
+  "nome": "F-Zero: GP Legend",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-f-zero-maximum-velocity": {
+  "ano": 2001,
+  "cem": 16.0,
+  "hltb": 3292,
+  "main": 2.6,
+  "n": 33,
+  "nome": "F-Zero: Maximum Velocity",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-f1-2002": {
+  "ano": 2002,
+  "hltb": 3304,
+  "main": 7.3,
+  "n": 1,
+  "nome": "F1 2002",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-f24-stealth-fighter": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-08-mappy": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-10-star-soldier": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-11-mario-bros": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-12-clu-clu-land": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-13-balloon-fight": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-14-wrecking-crew": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-16-dig-dug": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-17-takahashi-meijin-no-bouken-jima": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-18-makaimura": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-19-twinbee": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-20-ganbare-goemon-karakuri-douchuu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-21-super-mario-bros-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-22-nazo-no-murasame-jo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-24-hikari-shinwa-palthena-no-kagami": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-26-famicom-mukashibanashi-shin-onigashima-zen-kouhen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-27-famicom-tantei-club-kieta-koukeisha-zen-kouhen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-28-famicom-tantei-club-part-ii-ushiro-ni-tatsu-shoujo-zen-kouhen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-30-sd-gundam-world-gachapon-senshi-scramble-wars": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-dai-2-ji-super-robot-taisen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-kidou-senshi-z-gundam-hot-scramble": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famicom-mini-super-mario-bros": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-family-feud": {
+  "ano": 1991,
+  "hltb": 3359,
+  "main": 0.4,
+  "n": 3,
+  "nome": "Family Feud",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-family-tennis-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-famista-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fancy-pocket": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fantastic-4": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-fantastic-4-flame-on": {
+  "ano": 2005,
+  "hltb": 24327,
+  "main": 3.9,
+  "n": 2,
+  "nome": "Fantastic 4: Flame On",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fantastic-children": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-fantastic-marchen-cake-yasan-monogatari-doubutsu-chara-navi-uranai-kosei-shinri-gaku": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fear-factor-unleashed": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-field-of-nine-digital-edition-2001": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fifa-soccer-06": {
+  "ano": 2005,
+  "hltb": 3442,
+  "main": 11.4,
+  "n": 2,
+  "nome": "FIFA 06",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fifa-soccer-07": {
+  "ano": 2006,
+  "hltb": 15161,
+  "main": 7.2,
+  "n": 1,
+  "nome": "FIFA 07",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fifa-soccer-2003": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-fifa-soccer-2004": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-fifa-soccer-2005": {
+  "ano": 2004,
+  "hltb": 3455,
+  "main": 10.0,
+  "n": 2,
+  "nome": "FIFA Football 2005",
+  "plus": 9.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fifa-world-cup-germany-2006": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fightbox": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-gba-fila-decathlon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-final-fantasy-i-ii-dawn-of-souls": {
+  "ano": 2004,
+  "cem": 45.7,
+  "hltb": 3494,
+  "main": 26.7,
+  "n": 104,
+  "nome": "Final Fantasy I & II: Dawn of Souls",
+  "plus": 40.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-final-fantasy-iv-advance": {
+  "ano": 2005,
+  "cem": 39.8,
+  "hltb": 3501,
+  "main": 25.2,
+  "n": 84,
+  "nome": "Final Fantasy IV Advance",
+  "plus": 33.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-final-fantasy-tactics-advance": {
+  "ano": 2003,
+  "cem": 122.7,
+  "hltb": 3513,
+  "main": 45.0,
+  "n": 227,
+  "nome": "Final Fantasy Tactics Advance",
+  "plus": 69.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-final-fantasy-v-advance": {
+  "ano": 2006,
+  "cem": 72.8,
+  "hltb": 3517,
+  "main": 31.8,
+  "n": 112,
+  "nome": "Final Fantasy V Advance",
+  "plus": 38.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-final-fantasy-vi-advance": {
+  "ano": 2006,
+  "cem": 61.8,
+  "hltb": 3520,
+  "main": 32.9,
+  "n": 120,
+  "nome": "Final Fantasy VI Advance",
+  "plus": 42.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-final-fight-one": {
+  "ano": 2001,
+  "cem": 5.0,
+  "hltb": 28373,
+  "main": 1.9,
+  "n": 23,
+  "nome": "Final Fight One",
+  "plus": 10.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-finding-nemo": {
+  "ano": 2003,
+  "cem": 3.3,
+  "hltb": 3547,
+  "main": 1.9,
+  "n": 10,
+  "nome": "Finding Nemo",
+  "plus": 1.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-finding-nemo-the-continuing-adventures": {
+  "hltb": 140050,
+  "main": 1.7,
+  "n": 3,
+  "nome": "Finding Nemo: The Continuing Adventures",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fire-emblem": {
+  "ano": 2003,
+  "cem": 48.0,
+  "hltb": 3551,
+  "main": 27.2,
+  "n": 408,
+  "nome": "Fire Emblem",
+  "plus": 33.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fire-emblem-the-binding-blade": {
+  "ano": 2002,
+  "cem": 45.8,
+  "hltb": 3557,
+  "main": 27.1,
+  "n": 135,
+  "nome": "Fire Emblem: The Binding Blade",
+  "plus": 37.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fire-emblem-the-sacred-stones": {
+  "ano": 2004,
+  "cem": 48.6,
+  "hltb": 3564,
+  "main": 23.4,
+  "n": 298,
+  "nome": "Fire Emblem: The Sacred Stones",
+  "plus": 32.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fire-pro-wrestling": {
+  "ano": 2001,
+  "hltb": 17914,
+  "main": 5.3,
+  "n": 1,
+  "nome": "Fire Pro Wrestling",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-fire-pro-wrestling-2": {
+  "nao": "sem-medida",
   "v": 2
  },
  "emu-ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi": {
@@ -9702,6 +10087,620 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "emu-ps1-extreme-ghostbusters-the-ultimate-invasion": {
+  "ano": 2004,
+  "hltb": 32427,
+  "main": 2.5,
+  "n": 1,
+  "nome": "Extreme Ghostbusters: The Ultimate Invasion",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-extreme-go-kart-racing": {
+  "ano": 2003,
+  "hltb": 25299,
+  "main": 3.6,
+  "n": 2,
+  "nome": "Extreme Go-Kart Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-extreme-pinball": {
+  "ano": 1995,
+  "hltb": 40723,
+  "main": 3.5,
+  "n": 1,
+  "nome": "Extreme Pinball",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-extreme-power": {
+  "ano": 1996,
+  "hltb": 114289,
+  "main": 1.7,
+  "n": 1,
+  "nome": "Extreme Power",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-extreme-snow-break": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-f-1-grand-prix-1996-team-unei-simulation": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-f-a-manager": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-f1-2000": {
+  "ano": 2000,
+  "hltb": 3303,
+  "main": 30.0,
+  "n": 4,
+  "nome": "F1 2000",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-f1-championship-season-2000": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-f1-gp-nippon-no-chousen-dome-no-yabou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-f1-racing-championship": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-f1-world-grand-prix": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-f1-world-grand-prix-1999-season": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fade-to-black": {
+  "ano": 1995,
+  "hltb": 3323,
+  "main": 8.4,
+  "n": 5,
+  "nome": "Fade to Black",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-faire-games-language-arts": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-faire-games-mathematics": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-falcata": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-1500-series-mahjong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-bowling": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-card-games-fun-pack": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-family-chess": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-connection-a-guide-to-lightspan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-diamond": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-feud": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-family-game-pack": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-family-games-compendium": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-gunjin-shougi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-igo-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-igo-super-strong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-shougi-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-family-shougi-super-strong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fantastep": {
+  "ano": 1997,
+  "hltb": 56133,
+  "main": 10.0,
+  "n": 1,
+  "nome": "Fantastep",
+  "plus": 12.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-fantastic-fortune": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fantastic-four": {
+  "ano": 1997,
+  "cem": 4.0,
+  "hltb": 3366,
+  "main": 2.8,
+  "n": 6,
+  "nome": "Fantastic Four",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fantastic-night-dreams-cotton-original": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-farland-saga-toki-no-michishirube": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-farland-story-yottsu-no-fuuin": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-fatal-fury-wild-ambition": {
+  "ano": 1999,
+  "hltb": 3406,
+  "main": 0.8,
+  "n": 10,
+  "nome": "Fatal Fury: Wild Ambition",
+  "plus": 0.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-favorite-dear": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-favorite-dear-enkan-no-monogatari": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-favorite-dear-junpaku-no-yogensha": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fear-effect": {
+  "ano": 2000,
+  "cem": 9.3,
+  "hltb": 3423,
+  "main": 7.5,
+  "n": 46,
+  "nome": "Fear Effect",
+  "plus": 8.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fear-effect-2-retro-helix": {
+  "ano": 2001,
+  "hltb": 3424,
+  "main": 9.4,
+  "n": 21,
+  "nome": "Fear Effect 2: Retro Helix",
+  "plus": 10.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-feda-2-white-surge-the-platoon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-felony-11-79": {
+  "ano": 1997,
+  "hltb": 64127,
+  "main": 0.7,
+  "n": 12,
+  "nome": "Felony 11-79",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fever-2-sankyo-koushiki-pachinko-simulation": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fever-3-sankyo-koushiki-pachinko-simulation": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fever-4-sankyo-koushiki-pachinko-simulation": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fever-5-sankyo-koushiki-pachinko-simulation": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fever-sankyo-koushiki-pachinko-simulation": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fifa-2000-major-league-soccer": {
+  "ano": 1999,
+  "cem": 85.0,
+  "hltb": 3450,
+  "main": 10.5,
+  "n": 9,
+  "nome": "FIFA 2000",
+  "plus": 110.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fifa-2001-major-league-soccer": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-fifa-99": {
+  "ano": 1998,
+  "hltb": 3441,
+  "main": 12.4,
+  "n": 12,
+  "nome": "FIFA '99",
+  "plus": 61.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fifa-road-to-world-cup-98": {
+  "ano": 1997,
+  "cem": 100.0,
+  "hltb": 3460,
+  "main": 4.6,
+  "n": 6,
+  "nome": "FIFA: Road to World Cup 98",
+  "plus": 32.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fifa-soccer-2002-major-league-soccer": {
+  "ano": 2001,
+  "hltb": 3452,
+  "n": 2,
+  "nome": "FIFA Football 2002",
+  "plus": 30.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fifa-soccer-2003": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-fifa-soccer-2004": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-fifa-soccer-2005": {
+  "ano": 2004,
+  "cem": 60.5,
+  "hltb": 3455,
+  "main": 34.6,
+  "n": 7,
+  "nome": "FIFA Football 2005",
+  "plus": 41.9,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-fifa-soccer-96": {
+  "ano": 1995,
+  "hltb": 34605,
+  "main": 1.0,
+  "n": 1,
+  "nome": "FIFA Soccer 96",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fifa-soccer-97": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-fighter-maker": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-fighters-impact": {
+  "ano": 1997,
+  "hltb": 73148,
+  "main": 1.2,
+  "n": 2,
+  "nome": "Fighters' Impact",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fighting-eyes": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fighting-force": {
+  "ano": 1997,
+  "cem": 6.0,
+  "hltb": 3472,
+  "main": 3.7,
+  "n": 56,
+  "nome": "Fighting Force",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fighting-force-2": {
+  "ano": 1999,
+  "hltb": 3473,
+  "main": 6.1,
+  "n": 3,
+  "nome": "Fighting Force 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fighting-illusion-k-1-gp-2000": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fighting-illusion-k-1-revenge": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fighting-illusion-v-k-1-grand-prix-99": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fighting-network-rings": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-final-doom": {
+  "ano": 1996,
+  "cem": 9.5,
+  "hltb": 3478,
+  "main": 9.7,
+  "n": 12,
+  "nome": "Final Doom",
+  "plus": 12.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-anthology": {
+  "ano": 1999,
+  "cem": 108.7,
+  "hltb": 3482,
+  "main": 71.8,
+  "n": 16,
+  "nome": "Final Fantasy Anthology",
+  "plus": 91.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-anthology-european-edition": {
+  "ano": 2002,
+  "cem": 95.0,
+  "hltb": 78300,
+  "n": 2,
+  "nome": "Final Fantasy Anthology: European Edition",
+  "plus": 60.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-chronicles": {
+  "ano": 2001,
+  "cem": 104.2,
+  "hltb": 3483,
+  "main": 42.9,
+  "n": 9,
+  "nome": "Final Fantasy Chronicles",
+  "plus": 57.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-collection": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-final-fantasy-i": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-final-fantasy-ii": {
+  "ano": 1988,
+  "cem": 36.9,
+  "hltb": 3495,
+  "main": 27.1,
+  "n": 69,
+  "nome": "Final Fantasy II",
+  "plus": 33.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-iv": {
+  "ano": 1991,
+  "cem": 38.8,
+  "hltb": 3499,
+  "main": 27.7,
+  "n": 51,
+  "nome": "Final Fantasy IV",
+  "plus": 32.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-ix": {
+  "ano": 2000,
+  "cem": 87.0,
+  "hltb": 3505,
+  "main": 43.6,
+  "n": 662,
+  "nome": "Final Fantasy IX",
+  "plus": 58.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-origins": {
+  "ano": 2002,
+  "cem": 52.3,
+  "hltb": 3510,
+  "main": 42.2,
+  "n": 29,
+  "nome": "Final Fantasy Origins",
+  "plus": 46.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-tactics": {
+  "ano": 1997,
+  "cem": 93.4,
+  "hltb": 3511,
+  "main": 39.3,
+  "n": 221,
+  "nome": "Final Fantasy Tactics",
+  "plus": 58.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-v": {
+  "ano": 1992,
+  "cem": 58.0,
+  "hltb": 3516,
+  "main": 35.4,
+  "n": 89,
+  "nome": "Final Fantasy V",
+  "plus": 39.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-vi": {
+  "ano": 1994,
+  "cem": 66.4,
+  "hltb": 3519,
+  "main": 34.7,
+  "n": 120,
+  "nome": "Final Fantasy VI",
+  "plus": 44.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-vii": {
+  "ano": 1997,
+  "cem": 96.3,
+  "hltb": 3521,
+  "main": 42.2,
+  "n": 1152,
+  "nome": "Final Fantasy VII",
+  "plus": 57.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-fantasy-vii-international": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-final-fantasy-vii-square-soft-on-playstation-previews": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-final-fantasy-viii": {
+  "ano": 1999,
+  "cem": 93.2,
+  "hltb": 3524,
+  "main": 43.8,
+  "n": 524,
+  "nome": "Final Fantasy VIII",
+  "plus": 60.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-final-round": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-finger-flashing": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-fire-pro-wrestling-g": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-fire-pro-wrestling-iron-slam-96": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fire-woman-matoigumi": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-firebugs": {
+  "ano": 2002,
+  "cem": 4.5,
+  "hltb": 3567,
+  "main": 2.3,
+  "n": 11,
+  "nome": "Firebugs",
+  "plus": 1.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-firo-klawd": {
+  "ano": 1996,
+  "cem": 5.0,
+  "hltb": 66430,
+  "main": 2.5,
+  "n": 2,
+  "nome": "Firo & Klawd",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-first-kiss-story": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-first-queen-iv-varcia-senki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fist": {
+  "ano": 1996,
+  "hltb": 89254,
+  "main": 0.3,
+  "n": 1,
+  "nome": "FIST",
+  "v": 2,
+  "via": "plataforma"
+ },
  "emu-ps1-playstation-demo-disc-spring-2000": {
   "nao": "sem-resultado",
   "v": 2
@@ -12244,5 +13243,332 @@
   "nome": "Extra Innings",
   "v": 2,
   "via": "plataforma"
+ },
+ "emu-snes-f-1-grand-prix": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-f-1-grand-prix-part-ii": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-f-1-grand-prix-part-iii": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-f-zero": {
+  "ano": 1990,
+  "cem": 5.8,
+  "hltb": 3288,
+  "main": 2.3,
+  "n": 162,
+  "nome": "F-Zero",
+  "plus": 3.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-f1-pole-position": {
+  "ano": 1993,
+  "hltb": 64037,
+  "main": 6.0,
+  "n": 1,
+  "nome": "F1 Pole Position",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-f1-pole-position-2": {
+  "ano": 1994,
+  "hltb": 104465,
+  "main": 4.7,
+  "n": 2,
+  "nome": "F1 Pole Position 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-f1-roc-ii-race-of-champions": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-f1-roc-race-of-champions": {
+  "ano": 1992,
+  "hltb": 42161,
+  "main": 2.5,
+  "n": 2,
+  "nome": "F1 ROC: Race of Champions",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-f1-world-championship-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-faceball-2000": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-famicom-tantei-club-part-ii-ushiro-ni-tatsu-shoujo": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-family-dog": {
+  "ano": 1993,
+  "hltb": 52779,
+  "main": 0.6,
+  "n": 4,
+  "nome": "Family Dog",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-family-feud": {
+  "ano": 1991,
+  "hltb": 3359,
+  "main": 2.5,
+  "n": 5,
+  "nome": "Family Feud",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-farland-story": {
+  "ano": 1995,
+  "hltb": 15270,
+  "main": 20.0,
+  "n": 1,
+  "nome": "Farland Story",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-farland-story-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-fatal-fury": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-fatal-fury-2": {
+  "ano": 1992,
+  "cem": 4.2,
+  "hltb": 3400,
+  "main": 1.0,
+  "n": 7,
+  "nome": "Fatal Fury 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fatal-fury-special": {
+  "ano": 1993,
+  "hltb": 3402,
+  "main": 1.0,
+  "n": 6,
+  "nome": "Fatal Fury Special",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-feda-the-emblem-of-justice": {
+  "ano": 1994,
+  "hltb": 11645,
+  "main": 47.6,
+  "n": 2,
+  "nome": "Feda: The Emblem of Justice",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fifa-96-soccer": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-fifa-international-soccer": {
+  "ano": 1993,
+  "cem": 30.2,
+  "hltb": 3456,
+  "main": 4.3,
+  "n": 4,
+  "nome": "FIFA International Soccer",
+  "plus": 80.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fifa-road-to-world-cup-98": {
+  "ano": 1997,
+  "cem": 125.6,
+  "hltb": 3460,
+  "main": 15.2,
+  "n": 14,
+  "nome": "FIFA: Road to World Cup 98",
+  "plus": 44.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-fifa-soccer-97": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-fighter-s-history": {
+  "ano": 1993,
+  "cem": 5.5,
+  "hltb": 3469,
+  "main": 0.4,
+  "n": 16,
+  "nome": "Fighter's History",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fighter-s-history-mizoguchi-kiki-ippatsu": {
+  "ano": 1995,
+  "hltb": 26621,
+  "main": 0.9,
+  "n": 5,
+  "nome": "Fighter's History: Mizoguchi Kiki Ippatsu!!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fantasy-ii": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-final-fantasy-iv-easy-type": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-final-fantasy-mystic-quest": {
+  "ano": 1992,
+  "cem": 14.4,
+  "hltb": 3509,
+  "main": 13.8,
+  "n": 174,
+  "nome": "Final Fantasy: Mystic Quest",
+  "plus": 14.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fantasy-v": {
+  "ano": 1992,
+  "cem": 63.4,
+  "hltb": 3516,
+  "main": 32.8,
+  "n": 130,
+  "nome": "Final Fantasy V",
+  "plus": 37.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fantasy-vi": {
+  "ano": 1994,
+  "cem": 65.2,
+  "hltb": 3519,
+  "main": 36.3,
+  "n": 436,
+  "nome": "Final Fantasy VI",
+  "plus": 43.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fight": {
+  "ano": 1990,
+  "cem": 2.2,
+  "hltb": 3540,
+  "main": 1.5,
+  "n": 57,
+  "nome": "Final Fight",
+  "plus": 1.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fight-2": {
+  "ano": 1993,
+  "cem": 3.8,
+  "hltb": 3541,
+  "main": 1.5,
+  "n": 94,
+  "nome": "Final Fight 2",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fight-3": {
+  "ano": 1995,
+  "cem": 6.9,
+  "hltb": 3542,
+  "main": 1.3,
+  "n": 96,
+  "nome": "Final Fight 3",
+  "plus": 2.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-fight-guy": {
+  "ano": 1992,
+  "cem": 1.2,
+  "hltb": 3544,
+  "main": 1.5,
+  "n": 20,
+  "nome": "Final Fight Guy",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-final-stretch": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-finalset": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-fire-emblem-monshou-no-nazo": {
+  "ano": 1994,
+  "cem": 62.4,
+  "hltb": 3558,
+  "main": 38.8,
+  "n": 30,
+  "nome": "Fire Emblem: Mystery of the Emblem",
+  "plus": 40.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fire-emblem-seisen-no-keifu": {
+  "ano": 1996,
+  "cem": 82.6,
+  "hltb": 3561,
+  "main": 52.0,
+  "n": 74,
+  "nome": "Fire Emblem: Genealogy of the Holy War",
+  "plus": 60.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fire-emblem-thracia-776": {
+  "ano": 1999,
+  "cem": 61.8,
+  "hltb": 15923,
+  "main": 40.6,
+  "n": 28,
+  "nome": "Fire Emblem: Thracia 776",
+  "plus": 38.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fire-pro-joshi-all-star-dream-slam": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-firepower-2000": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-firestriker": {
+  "ano": 1994,
+  "cem": 2.0,
+  "hltb": 3572,
+  "main": 1.7,
+  "n": 6,
+  "nome": "Firestriker",
+  "plus": 1.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-first-queen-ornic-senki": {
+  "nao": "sem-resultado",
+  "v": 2
  }
 }

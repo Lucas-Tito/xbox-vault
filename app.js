@@ -592,26 +592,20 @@ function tempoHtml(g) {
     nota = "Valor aproximado, preenchido \u00e0 m\u00e3o. Corrija em data/tempo.json.";
   } else if (t.fonte === "hltb") {
     var n = typeof t.n === "number" ? t.n : null;
-    var versao = g.system || PLATNOME[g.platform] || "";
-    nota = "HowLongToBeat" +
-      (n === null ? "" : ", " + n.toLocaleString("pt-BR") +
-        (n === 1 ? " relato" : " relatos")) +
-      (t.geral
-        /* o numero soma todas as versoes do jogo. Avisar disso e o mesmo que o
-           catalogo ja faz com a nota do Metacritic que nao e da plataforma. */
-        ? ", somando todas as vers\u00f5es do jogo" +
-          (versao ? ", n\u00e3o s\u00f3 a de " + esc(versao) : "")
-        : versao ? " de quem jogou no " + esc(versao) : "") + ".";
-    /* A mediana deste cat\u00e1logo \u00e9 6 relatos por plataforma, ent\u00e3o um aviso \u00fanico
-       dispararia em dois ter\u00e7os dos jogos e viraria ru\u00eddo. Escalonado, ele
-       volta a dizer algo: um relato \u00e9 o tempo de UMA pessoa (18% dos casos),
-       o que \u00e9 diferente de uma m\u00e9dia magra. Acima disso a contagem j\u00e1 est\u00e1 na
-       frase e o leitor julga sozinho. */
-    if (n === 1) {
-      nota += " \u00c9 o tempo de uma pessoa s\u00f3, n\u00e3o uma m\u00e9dia.";
-    } else if (n !== null && n < POUCOS_RELATOS) {
-      nota += " Poucos relatos: o n\u00famero ainda oscila bastante.";
-    }
+    var console_ = g.system || PLATNOME[g.platform] || "";
+    /* O "S\u00f3" faz o trabalho que antes era uma frase inteira de aviso, e o
+       proprio numero fica a vista para quem quiser julgar sozinho. A mediana
+       deste catalogo e 6 relatos, entao sem o corte o aviso dispararia em dois
+       tercos dos jogos e viraria ruido. */
+    var quantos = n === null ? "" :
+      (n < POUCOS_RELATOS ? "S\u00f3 " : "") + n.toLocaleString("pt-BR") +
+      (n === 1 ? " relato" : " relatos") + " ";
+    nota = (quantos || "") + (quantos ? "no HowLongToBeat" : "HowLongToBeat") +
+      /* De onde vem o numero. O geral soma o jogo em todo canto onde ele saiu;
+         avisar disso e o mesmo que o catalogo ja faz com a nota do Metacritic
+         que nao e da plataforma. */
+      (t.geral ? ", de todos os consoles"
+        : console_ ? ", no " + esc(console_) : "") + ".";
   }
   return "<ul class=\"tempo\">" + li.join("") + "</ul>" +
     (nota ? '<p class="nota">' + nota + "</p>" : "");
