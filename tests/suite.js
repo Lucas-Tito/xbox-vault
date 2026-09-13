@@ -10,6 +10,15 @@
     for (let t = 0; t < ms; t += step) { if (fn()) return true; await wait(step); }
     return false;
   };
+  // O card nao tem mais botao de "tenho": marcar e desmarcar so pelo popup,
+  // entao o teste percorre o mesmo caminho que o usuario percorre.
+  const toggleOwn = async (card) => {
+    card.querySelector('.thumb').click();
+    await until(() => !document.getElementById('modal').hidden);
+    document.querySelector('#modal-body [data-mark="own"]').click();
+    await until(() => document.getElementById('modal').hidden);
+    await wait(250);
+  };
 
   return (async () => {
     // estado de visita anterior nao pode vazar entre execucoes do teste
@@ -41,7 +50,7 @@
 
     // marcar "tenho"
     const first = cards()[0], fid = first.dataset.id;
-    first.querySelector('.own-btn').click(); await wait(250);
+    await toggleOwn(first);
     const stored = JSON.parse(localStorage.getItem('xbx.owned.v1') || '[]');
     ok('marcar tenho persiste', stored.includes(fid), 'id=' + fid);
     ok('card ganha classe own', $('.card[data-id="'+CSS.escape(fid)+'"]').classList.contains('own'));
@@ -281,8 +290,7 @@
       ok('marcar pelo popup FECHA o popup', document.getElementById('modal').hidden);
 
       // desfaz pelo card (o popup ja fechou) e reabre para testar o Escape
-      document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').querySelector('.own-btn').click();
-      await wait(300);
+      await toggleOwn(document.querySelector('.card[data-id="'+CSS.escape(did)+'"]'));
       document.querySelector('.card[data-id="'+CSS.escape(did)+'"]').querySelector('.thumb').click();
       await until(() => !document.getElementById('modal').hidden);
       document.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}));
@@ -300,7 +308,7 @@
        +$('#s-wish').textContent.replace(/\D/g,'') === wlNow, $('#s-wish').textContent + ' na tela, ' + wlNow + ' salvos');
 
     // exclusividade: marcar "tenho" num item da wishlist tira ele da wishlist
-    wcard.querySelector('.own-btn').click(); await wait(250);
+    await toggleOwn(wcard);
     const wl = JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]');
     const ol = JSON.parse(localStorage.getItem('xbx.owned.v1')||'[]');
     ok('tenho e quero sao exclusivos', !wl.includes(wid) && ol.includes(wid),
@@ -338,7 +346,7 @@
 
     // esconder e exclusivo com tenho/wishlist
     const hc2 = cards().find(c => c.dataset.id === hid);
-    hc2.querySelector('.own-btn').click(); await wait(350);
+    await toggleOwn(hc2);
     const m1 = JSON.parse(localStorage.getItem('xbx.marks.v3')||'{}')[hid];
     ok('marcar tenho sai do escondido', m1.s === 'own', 'estado=' + m1.s);
     $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
@@ -357,19 +365,19 @@
     let c = await buscar('Bayonetta');
     const gid = c.dataset.id;
     // zera o estado desse card, seja qual for
-    if (c.classList.contains('own')) { c.querySelector('.own-btn').click(); await wait(250); }
+    if (c.classList.contains('own')) { await toggleOwn(c); }
     if (c.classList.contains('wish')) { c.querySelector('.wish-btn').click(); await wait(250); }
 
     c = cards()[0];
-    c.querySelector('.own-btn').click(); await wait(300);
+    await toggleOwn(c);
     ok('marca grava timestamp', typeof lerMarks()[gid]?.t === 'number', 'id=' + gid);
     ok('marca grava estado', lerMarks()[gid]?.s === 'own');
 
-    cards()[0].querySelector('.own-btn').click(); await wait(300);
+    await toggleOwn(cards()[0]);
     ok('desmarcar deixa lapide (s:null), nao some do arquivo',
        gid in lerMarks() && lerMarks()[gid].s === null, JSON.stringify(lerMarks()[gid]));
 
-    cards()[0].querySelector('.own-btn').click(); await wait(300);
+    await toggleOwn(cards()[0]);
     const impMarks = async (obj) => {
       const f = new File([JSON.stringify(obj)], 'c.json', {type:'application/json'});
       const dt = new DataTransfer(); dt.items.add(f);

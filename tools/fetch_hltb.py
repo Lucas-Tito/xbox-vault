@@ -383,6 +383,21 @@ def registro(c, linha, plataforma):
     return r
 
 
+def relatos(reg):
+    """Quantos relatos sustentam um registro, tolerando as DUAS formas de "n".
+
+    A versao 1 gravava um dicionario por medida e a 2 grava um inteiro. Enquanto
+    a migracao nao termina os dois convivem -- em disco e tambem dentro do
+    processo, porque o registro v1 fica em memoria ate ter substituto. Toda
+    leitura de "n" tem de passar por aqui; foi por nao fazer isso que o resumo
+    estourou com TypeError depois de uma coleta inteira.
+    """
+    n = reg.get("n")
+    if isinstance(n, dict):
+        return max(n.values()) if n else 0
+    return int(n or 0)
+
+
 def promover(velho, linha):
     """Converte um registro da versao 1 para a 2 sem refazer a busca.
 
@@ -408,8 +423,7 @@ def promover(velho, linha):
     r = {k: velho[k] for k in ("main", "plus", "cem") if k in velho}
     if not r:
         return None
-    n = velho.get("n")
-    r["n"] = max(n.values()) if isinstance(n, dict) and n else int(n or 0)
+    r["n"] = relatos(velho)
     r["via"] = "geral"
     for k in ("hltb", "nome", "ano"):
         if velho.get(k) is not None:
@@ -491,11 +505,20 @@ def main():
                 v["v"] = VERSAO
                 dados[k] = v
             elif v.get("hltb"):
-                promoveis[k] = v      # tem o id: falta so a leitura por plataforma
+                # Entra nos DOIS: em promoveis para ser reprocessado, e em dados
+                # para continuar existindo em disco enquanto isso nao acontece.
+                # Sem a segunda parte, salvar() -- que grava so o que esta em
+                # dados -- apaga do arquivo tudo que a fila ainda nao alcancou.
+                # Foi o que aconteceu: um teste de 30 jogos levou junto 2.266
+                # registros, e com eles os game_id que dispensavam a busca.
+                dados[k] = v
+                promoveis[k] = v
 
-    fila = [(g, p) for g, p in entradas(arquivos) if g["id"] not in dados]
+    fila = [(g, p) for g, p in entradas(arquivos)
+            if g["id"] not in dados or g["id"] in promoveis]
     print("alvo=%s | ja na versao %d: %d | a promover (so 1 requisicao): %d | "
-          "na fila: %d" % (alvo, VERSAO, len(dados), len(promoveis), len(fila)))
+          "na fila: %d" % (alvo, VERSAO, len(dados) - len(promoveis),
+                           len(promoveis), len(fila)))
     if limite:
         fila = fila[:limite]
     if not fila:
@@ -555,7 +578,7 @@ def main():
 
     salvar(saida, dados)
     uteis = [v for v in dados.values() if v.get("main") or v.get("plus") or v.get("cem")]
-    poucos = sum(1 for v in uteis if int(v.get("n") or 0) < POUCOS_RELATOS)
+    poucos = sum(1 for v in uteis if relatos(v) < POUCOS_RELATOS)
     propria = sum(1 for v in uteis if v.get("via") == "plataforma")
     print("\ndata/%s: %d jogos consultados, %d com tempo (%d com menos de %d relatos)"
           % (nome_saida, len(dados), len(uteis), poucos, POUCOS_RELATOS))

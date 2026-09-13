@@ -290,7 +290,6 @@ function cardHtml(g) {
   return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") + (h ? " hide" : "") +
     '" data-id="' + esc(g.id) + '">' +
     '<div class="marks">' +
-    '<button class="own-btn" title="Marcar como tenho">' + (o ? "✓" : "+") + "</button>" +
     '<button class="wish-btn" title="Adicionar à wishlist">' + (w ? "★" : "☆") + "</button>" +
     '<button class="hide-btn" title="Não quero — esconder da lista">⊘</button>' +
     "</div>" +
@@ -721,7 +720,6 @@ function paintCard(card, id) {
   card.classList.toggle("own", o);
   card.classList.toggle("wish", w);
   card.classList.toggle("hide", escondidos.has(id));
-  card.querySelector(".own-btn").textContent = o ? "✓" : "+";
   card.querySelector(".wish-btn").textContent = w ? "★" : "☆";
 }
 /* "tenho" e "quero" se contradizem: marcar um limpa o outro, senao o arquivo
@@ -936,11 +934,10 @@ function ligarEventos() {
     if (e.target.tagName === "A") return;
     var card = e.target.closest(".card");
     if (!card) return;
-    var btn = e.target.closest(".own-btn, .wish-btn, .hide-btn");
+    var btn = e.target.closest(".wish-btn, .hide-btn");
     if (btn) {                                   // botoes do canto marcam direto
       toggleMark(card.dataset.id,
-        btn.classList.contains("wish-btn") ? "wish"
-          : btn.classList.contains("hide-btn") ? "hide" : "own", card);
+        btn.classList.contains("wish-btn") ? "wish" : "hide", card);
       return;
     }
     var g = GAMES.find(function (x) { return x.id === card.dataset.id; });

@@ -24,8 +24,9 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   card é cortada em 2 linhas), modos de jogo com número de jogadores, retrocompatibilidade e os
   problemas conhecidos, datas de lançamento por região, e links para a Wikipédia e para a página
   do projeto. `Esc` ou clique fora fecham.
-- **Marcar que tenho** — o botão `+` no canto do card, ou o botão dentro do popup. O card fica
-  destacado em verde.
+- **Marcar que tenho** é coisa do popup, o card não tem botão para isso. Quem tem fica
+  destacado em verde, com a borda acesa e a capa em cor cheia, enquanto o resto do catálogo
+  aparece levemente dessaturado.
 - **Wishlist** — o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
 - **Nota do Metacritic** — no canto da capa, nas cores do próprio Metacritic (verde 75+, amarelo
   50–74, vermelho abaixo). Dá para filtrar por nota mínima e ordenar por nota. **2.223 jogos têm

@@ -1,241 +1,236 @@
 {
  "emu-gba-007-everything-or-nothing": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-gba-007-nightfire": {
   "ano": 2002,
-  "cem": 20.5,
   "hltb": 4809,
-  "main": 6.2,
-  "n": {
-   "cem": 11,
-   "main": 97,
-   "plus": 25
-  },
+  "main": 7.6,
+  "n": 2,
   "nome": "James Bond 007: Nightfire",
-  "plus": 9.8,
-  "v": 1
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-gba-2-disney-games-disney-sports-football-disney-sports-skateboarding": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-disney-games-lilo-stitch-2-peter-pan-return-to-neverland": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-game-pack-hot-wheels-stunt-track-challenge-hot-wheels-world-race": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-brother-bear-the-lion-king": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-cartoon-network-block-party-cartoon-network-speedway": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-columns-crown-chuchu-rocket": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-disney-princess-brother-bear": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-disney-princess-disney-s-the-lion-king": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-disney-princess-lizzie-mcguire": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-double-pack-hot-wheels-world-race-hot-wheels-velocity-x": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-double-pack-scooby-doo-and-the-cyber-chase-scooby-doo-mystery-mayhem": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-double-pack-scooby-doo-scooby-doo-2-monsters-unleashed": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-dragon-ball-z-buu-s-fury-dragon-ball-gt-transformation": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-finding-nemo-finding-nemo-the-continuing-adventures": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-finding-nemo-the-continuing-adventures-the-incredibles": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-finding-nemo-the-incredibles": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-golden-nugget-casino-texas-hold-em-poker": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-gt-3-advance-pro-concept-racing-moto-gp-ultimate-racing-technology": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-lego-knights-kingdom-lego-bionicle": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-monsters-inc-finding-nemo": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-power-rangers-ninja-storm-power-rangers-time-force": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-quad-desert-fury-monster-trucks": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-rugrats-go-wild-spongebob-squarepants-supersponge": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-sonic-advance-chuchu-rocket": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-sonic-advance-sonic-battle": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-sonic-battle-chuchu-rocket": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-sonic-battle-sonic-pinball-party": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-sonic-pinball-party-columns-crown": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-jimmy-neutron-boy-genius": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-nicktoons-freeze-frame-frenzy": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-spongebob-squarepants-supersponge": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-the-fairly-oddparents-breakin-da-rules": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-supersponge-spongebob-squarepants-revenge-of-the-flying-dutchman": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-1-the-spongebob-squarepants-movie-spongebob-squarepants-and-friends-in-freeze-frame-frenzy": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-games-in-one-dr-mario-puzzle-league": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-asterix-obelix-bash-them-all-asterix-obelix-xxl": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-fun-pack-madagascar-operation-penguin-shrek-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-fun-pack-shrek-2-madagascar": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-game-pack-shrek-2-shark-tale": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-game-pack-spider-man-mysterio-s-menace-x2-wolverine-s-revenge": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-game-pack-spider-man-spider-man-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-game-pack-tony-hawk-s-underground-kelly-slater-s-pro-surfer": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-in-1-v-rally-3-stuntman": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-2-jeux-en-1-titeuf-ze-gag-machine-titeuf-mega-compet": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-game-pack-candy-land-chutes-ladders-original-memory-game": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-game-pack-connect-four-perfection-trouble": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-game-pack-ker-plunk-toss-across-tip-it": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-game-pack-mouse-trap-simon-operation": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-game-pack-risk-battleship-clue": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-game-pack-the-game-of-life-payday-yahtzee": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-games-in-1-rugrats-i-gotta-go-party-spongebob-squarepants-supersponge-tak-and-the-power-of-the-juju": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-3-in-1-sports-pack": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-4-games-on-one-game-pak-gt-advance-gt-advance-2-gt-advance-3-motogp": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-4-games-on-one-game-pak-movies": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-4-games-on-one-game-pak-nicktoons": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-a-sound-of-thunder": {
   "ano": 2004,
@@ -265,7 +260,7 @@
  },
  "emu-gba-ace-lightning": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-gba-action-man-robot-atak": {
   "ano": 2004,
@@ -331,7 +326,7 @@
  },
  "emu-gba-adventure-of-tokyo-disneysea": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-aero-the-acro-bat": {
   "ano": 1993,
@@ -359,7 +354,7 @@
  },
  "emu-gba-agent-hugo-roborumble": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-gba-aggressive-inline": {
   "ano": 2002,
@@ -389,15 +384,15 @@
  },
  "emu-gba-aka-chan-doubutsuen": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-aleck-bordon-adventure-tower-and-shaft-advance": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-alex-ferguson-s-player-manager-2002": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-alex-rider-stormbreaker": {
   "ano": 2006,
@@ -439,7 +434,7 @@
  },
  "emu-gba-all-grown-up-express-yourself": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-gba-all-star-baseball-2003": {
   "ano": 2002,
@@ -453,7 +448,7 @@
  },
  "emu-gba-all-star-baseball-2004": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-gba-altered-beast-guardian-of-the-realms": {
   "ano": 2002,
@@ -505,19 +500,19 @@
  },
  "emu-gba-angel-collection-2-pichimo-ni-narou": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-angel-collection-mezase-gakuen-no-fashion-leader": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-angelique": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-gba-animal-mania-dokidoki-aishou-check": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-animal-snap-rescue-them-2-by-2": {
   "ano": 2002,
@@ -533,11 +528,11 @@
  },
  "emu-gba-animal-yokochou-doki-doki-kyuushutsu-daisakusen-no-maki": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-animal-yokochou-doki-doki-shinkyuu-shiken-no-kan": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-animaniacs-lights-camera-action": {
   "ano": 2005,
@@ -561,7 +556,7 @@
  },
  "emu-gba-ao-zora-to-nakama-tachi-yume-no-bouken": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-gba-archer-maclean-s-3d-pool": {
   "ano": 2004,
@@ -575,7 +570,7 @@
  },
  "emu-gba-arctic-tale": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-gba-army-men-advance": {
   "ano": 2001,
@@ -637,7 +632,7 @@
  },
  "emu-gba-ashita-no-joe-masseki-ni-moe-agare": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-gba-asterix-obelix-bash-them-all": {
   "ano": 2002,
@@ -715,171 +710,152 @@
  },
  "emu-gba-atv-thunder-ridge-riders": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-0-kara-no-shogi-shogi-youchien-ayumi-gumi-r": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-0-kara-no-shougi-shougi-youchien-ayumi-gumi": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-007-racing": {
   "ano": 2000,
   "hltb": 29,
   "main": 3.0,
-  "n": {
-   "main": 12,
-   "plus": 2
-  },
+  "n": 13,
   "nome": "007 Racing",
   "plus": 3.0,
-  "v": 1
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-007-the-world-is-not-enough": {
   "ano": 2000,
-  "cem": 16.3,
+  "cem": 8.0,
   "hltb": 10278,
-  "main": 5.0,
-  "n": {
-   "cem": 4,
-   "main": 59,
-   "plus": 12
-  },
+  "main": 4.8,
+  "n": 27,
   "nome": "007: The World Is Not Enough",
-  "plus": 8.1,
-  "v": 1
+  "plus": 7.4,
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-007-tomorrow-never-dies": {
   "ano": 1999,
-  "cem": 14.8,
+  "cem": 9.5,
   "hltb": 10487,
-  "main": 4.8,
-  "n": {
-   "cem": 2,
-   "main": 29,
-   "plus": 5
-  },
+  "main": 5.0,
+  "n": 30,
   "nome": "Tomorrow Never Dies",
-  "plus": 8.9,
-  "v": 1
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-1-on-1": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-100-manyen-quiz-hunter": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-100-star": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-10101-will-the-starship": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-16-tales-vol-1": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-16-tales-vol-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-16-tales-vol-3": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-16-tales-vol-4": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-19-ji-03-pun-ueno-hatsu-yakou-ressha": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-2002-fifa-world-cup": {
   "ano": 2002,
   "cem": 33.3,
   "hltb": 36129,
   "main": 3.6,
-  "n": {
-   "cem": 1,
-   "main": 10
-  },
+  "n": 10,
   "nome": "2002 FIFA World Cup",
-  "v": 1
+  "v": 2,
+  "via": "geral"
  },
  "emu-ps1-2xtreme": {
   "ano": 1996,
-  "cem": 2.8,
+  "cem": 3.5,
   "hltb": 19095,
-  "main": 1.4,
-  "n": {
-   "cem": 6,
-   "main": 7,
-   "plus": 2
-  },
+  "main": 0.9,
+  "n": 6,
   "nome": "2Xtreme",
-  "plus": 2.2,
-  "v": 1
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-360-three-sixty": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-3d-baseball": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-3d-shooting-tsukuru": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-3x3-eyes-kyuusei-koushu": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-3x3-eyes-tenrinougenmu": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-3xtreme": {
   "ano": 1999,
   "hltb": 76,
   "main": 1.1,
-  "n": {
-   "main": 3,
-   "plus": 4
-  },
+  "n": 7,
   "nome": "3Xtreme",
-  "plus": 4.4,
-  "v": 1
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-4-4-2-soccer": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-40-winks": {
   "ano": 1999,
-  "cem": 10.3,
+  "cem": 9.9,
   "hltb": 79,
-  "main": 7.8,
-  "n": {
-   "cem": 8,
-   "main": 7,
-   "plus": 4
-  },
+  "main": 7.6,
+  "n": 14,
   "nome": "40 Winks",
-  "plus": 9.9,
-  "v": 1
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-5-star-racing": {
   "ano": 2003,
@@ -895,19 +871,19 @@
  },
  "emu-ps1-70-s-robot-anime-geppy-x-the-super-boosted-armor": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-98-koshien": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-99-koushien": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-a-bug-s-life-activity-centre": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-a-collection-of-activision-classic-games-for-the-atari-2600": {
   "ano": 1998,
@@ -921,15 +897,15 @@
  },
  "emu-ps1-a-collection-of-classic-games-from-the-intellivision": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-a-ressha-de-ikou-4-evolution": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-a-ressha-de-ikou-z-mezase-tairiku-oudan": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-a-train-trains-power-money": {
   "ano": 1996,
@@ -943,11 +919,11 @@
  },
  "emu-ps1-a2-racer-iii-europa-tour": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-a5-a-ressha-de-ikou-5": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-abalaburn": {
   "ano": 1998,
@@ -989,7 +965,7 @@
  },
  "emu-ps1-ace-combat-3-electrosphere-direct-audio-with-appendisc": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aces-of-the-air": {
   "ano": 2002,
@@ -1003,7 +979,7 @@
  },
  "emu-ps1-acid": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aconcagua": {
   "ano": 2000,
@@ -1056,19 +1032,19 @@
  },
  "emu-ps1-actua-golf-3": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-actua-ice-hockey": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-actua-ice-hockey-2": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-actua-soccer-3": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-actua-soccer-club-edition": {
   "ano": 1996,
@@ -1086,15 +1062,15 @@
  },
  "emu-ps1-actua-tennis": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ad-lib-ouji-to-fuyukai-na-nakamatachi": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-addie-no-okurimono-to-moze-from-addie": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-adiboo-paziral-s-secret": {
   "ano": 2003,
@@ -1120,11 +1096,11 @@
  },
  "emu-ps1-adidas-power-soccer": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-adidas-power-soccer-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-adidas-power-soccer-98": {
   "ano": 1998,
@@ -1138,7 +1114,7 @@
  },
  "emu-ps1-adidas-power-soccer-international-97": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-advan-racing": {
   "ano": 1998,
@@ -1152,7 +1128,7 @@
  },
  "emu-ps1-advanced-dungeons-dragons-iron-blood-warriors-of-ravenloft": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-advanced-v-g": {
   "ano": 1994,
@@ -1176,23 +1152,23 @@
  },
  "emu-ps1-affect-taikenban-vol-1": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-afl-99": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-afraid-gear": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-afraid-gear-another": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-agent-armstrong": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-agile-warrior-f-111x": {
   "ano": 1995,
@@ -1206,35 +1182,35 @@
  },
  "emu-ps1-ah-nanjarin": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-mahjong-2000": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-mahjong-selection": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-shogi-2-deluxe": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-shougi": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-shougi-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-shougi-selection": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ai-to-yuujou-no-neko-monogatari-jingle-cats-love-para-daisakusen-no-maki": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-air-combat": {
   "ano": 1995,
@@ -1262,7 +1238,7 @@
  },
  "emu-ps1-air-management-96": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-airgrave": {
   "ano": 1996,
@@ -1276,43 +1252,43 @@
  },
  "emu-ps1-aironauts": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-airrace-championship": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aishiau-koto-shika-dekinai": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aitakute-your-smiles-in-my-heart": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aizouban-houshinengi": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-akagawa-jiro-majo-tachi-no-nemuri-fukkatsusai": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-akagawa-jiro-yasoukyoku": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-akagawa-jiro-yasoukyoku-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-akagi-touhaiden": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-akazu-no-ma": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-akuji-the-heartless": {
   "ano": 1999,
@@ -1330,23 +1306,23 @@
  },
  "emu-ps1-alabama-pop-de-cute-na-shinri-test": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-albaria-no-otome-uruwashi-no-seikishitachi": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alex-ferguson-s-player-manager-2001": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alex-ferguson-s-player-manager-2002": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alexi-lalas-international-soccer": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alfred-chicken": {
   "ano": 1993,
@@ -1364,7 +1340,7 @@
  },
  "emu-ps1-alice-in-cyberland": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alien-resurrection": {
   "ano": 2000,
@@ -1406,15 +1382,15 @@
  },
  "emu-ps1-all-star-action": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-all-star-baseball-97-featuring-frank-thomas": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-all-star-mahjong-karei-naru-shoubushi-kara-no-chousen": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-all-star-racing": {
   "ano": 2002,
@@ -1448,11 +1424,11 @@
  },
  "emu-ps1-all-star-soccer": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-all-star-tennis-2000": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-all-star-tennis-99": {
   "ano": 1998,
@@ -1466,23 +1442,23 @@
  },
  "emu-ps1-all-star-watersports": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-allied-general": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alnam-no-kiba-fang-of-alnam": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alnam-no-tsubasa-shoujin-no-sora-no-kanata-e": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alone-in-the-dark-one-eyed-jack-s-revenge": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-alone-in-the-dark-the-new-nightmare": {
   "ano": 2001,
@@ -1528,11 +1504,11 @@
  },
  "emu-ps1-america-oudan-ultra-quiz": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-american-pool": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-amerzone-the-explorer-s-legacy": {
   "ano": 1999,
@@ -1572,27 +1548,27 @@
  },
  "emu-ps1-andretti-racing": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-angel-blade-neo-tokyo-guardians": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-angel-graffiti-anata-he-no-profile": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-angelique-duet": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-angelique-special": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-angelique-special-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-angelique-tenkuu-no-requiem": {
   "ano": 1999,
@@ -1606,7 +1582,7 @@
  },
  "emu-ps1-angolmois-99": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-animal-football": {
   "ano": 2003,
@@ -1646,7 +1622,7 @@
  },
  "emu-ps1-animetic-story-game-1-cardcaptor-sakura": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-animorphs-shattered-reality": {
   "ano": 2000,
@@ -1660,7 +1636,7 @@
  },
  "emu-ps1-ankh-tutankhamen-no-nazo": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-anna-kournikova-s-smash-court-tennis": {
   "ano": 1999,
@@ -1678,15 +1654,15 @@
  },
  "emu-ps1-ano-ko-doko-no-ko": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ano-ko-doko-no-ko-endless-season": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-another-memories": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-another-mind": {
   "ano": 1998,
@@ -1700,7 +1676,7 @@
  },
  "emu-ps1-ao-zora-to-nakama-tachi-yume-no-bouken": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ape-escape": {
   "ano": 1999,
@@ -1740,7 +1716,7 @@
  },
  "emu-ps1-aqua-paradise-boku-no-suizokukan": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aquanaut-no-kyuujitsu-2": {
   "ano": 1999,
@@ -1754,7 +1730,7 @@
  },
  "emu-ps1-aquanaut-no-kyuujitsu-memories-of-summer-1996": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-aquanaut-s-holiday": {
   "ano": 1996,
@@ -1768,7 +1744,7 @@
  },
  "emu-ps1-aquarian-age-tokyo-wars": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arc-the-lad": {
   "ano": 1995,
@@ -1826,39 +1802,39 @@
  },
  "emu-ps1-arc-the-lad-monster-game-with-casino-game": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-crazy-climber": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-frisky-tom": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-magical-drop": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-moon-cresta": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-raiden": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-shienryuu": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-soukyuu-gurentai": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-hits-wolf-fang": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-party-pak": {
   "ano": 1999,
@@ -1882,11 +1858,11 @@
  },
  "emu-ps1-arcade-s-greatest-hits-the-atari-collection-2": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arcade-s-greatest-hits-the-midway-collection-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-archer-maclean-s-3d-pool": {
   "ano": 2004,
@@ -1900,7 +1876,7 @@
  },
  "emu-ps1-are-mo-koremo-momotarou": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-area-51": {
   "ano": 1995,
@@ -1928,7 +1904,7 @@
  },
  "emu-ps1-arkana-senki-ludo": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arkanoid-r-2000": {
   "ano": 1997,
@@ -1956,7 +1932,7 @@
  },
  "emu-ps1-armed-fighter": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-armored-core": {
   "ano": 1997,
@@ -2136,11 +2112,11 @@
  },
  "emu-ps1-art-camion-geijutsuden": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-art-camion-sugorokuden": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-arthur-ready-to-race": {
   "ano": 2017,
@@ -2156,23 +2132,23 @@
  },
  "emu-ps1-arthur-to-astaroth-no-nazo-maikamura-incredible-toons": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-ascii-entertainment-demo-cd": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-asonde-aiueo": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-asonde-chinou-up": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-asonde-kazu-suuji": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-assault-retribution": {
   "ano": 1998,
@@ -2256,15 +2232,15 @@
  },
  "emu-ps1-astronoka": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-asuka-120-burning-fest-excellent": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-asuka-120-burning-fest-final": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-asuka-120-special-burning-fest": {
   "ano": 1996,
@@ -2290,11 +2266,11 @@
  },
  "emu-ps1-atari-anniversary-edition-redux": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-atari-demo-disk": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-atelier-elie-the-alchemist-of-salburg-2": {
   "ano": 1998,
@@ -2310,7 +2286,7 @@
  },
  "emu-ps1-atelier-marie-plus-the-alchemist-of-salburg": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-atelier-marie-the-alchemist-of-salburg": {
   "ano": 1997,
@@ -2328,11 +2304,11 @@
  },
  "emu-ps1-athena-awakening-from-the-ordinary-life": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-athena-no-kateiban-family-games": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-atlantis-the-lost-continent": {
   "ano": 2003,
@@ -2360,7 +2336,7 @@
  },
  "emu-ps1-atv-mania": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-atv-quad-power-racing": {
   "ano": 2000,
@@ -2388,63 +2364,58 @@
  },
  "emu-ps1-playstation-demo-disc-spring-2000": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-playstation-underground-vol-1-issue-2": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-playstation-underground-vol-2-issue-1": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-ps1-playstation-underground-vol-3-issue-4": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-snes-3-ninjas-kick-back": {
   "ano": 1994,
   "hltb": 14034,
-  "main": 2.0,
-  "n": {
-   "main": 13,
-   "plus": 3
-  },
+  "main": 2.2,
+  "n": 14,
   "nome": "3 Ninjas Kick Back",
   "plus": 2.1,
-  "v": 1
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-snes-3x3-eyes-juuma-houkan": {
   "ano": 1995,
-  "cem": 3.8,
   "hltb": 76708,
   "main": 3.6,
-  "n": {
-   "cem": 1,
-   "main": 2
-  },
+  "n": 2,
   "nome": "3x3 Eyes: Juuma Houkan",
-  "v": 1
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-snes-3x3-eyes-seima-kourinden": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-4-nin-shougi": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-snes-90-minutes-european-prime-goal": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-96-zenkoku-koukou-soccer-senshuken": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-a-s-p-air-strike-patrol": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-aaahh-real-monsters": {
   "ano": 1995,
@@ -2482,7 +2453,7 @@
  },
  "emu-snes-ace-o-nerae": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-snes-acme-animation-factory": {
   "ano": 1994,
@@ -2506,7 +2477,7 @@
  },
  "emu-snes-action-pachio": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-snes-actraiser": {
   "ano": 1990,
@@ -2638,7 +2609,7 @@
  },
  "emu-snes-aiii-s-v-a-ressha-de-ikou-3-super-version": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-snes-air-cavalry": {
   "ano": 1995,
@@ -2662,7 +2633,7 @@
  },
  "emu-snes-akazukin-cha-cha": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-snes-al-unser-jr-s-road-to-the-top": {
   "ano": 1994,
@@ -2688,7 +2659,7 @@
  },
  "emu-snes-albert-odyssey-2-jashin-no-taidou": {
   "nao": "so-outra-plataforma",
-  "v": 1
+  "v": 2
  },
  "emu-snes-alcahest": {
   "ano": 1993,
@@ -2730,15 +2701,15 @@
  },
  "emu-snes-alien-vs-predator": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-snes-america-oudan-ultra-quiz": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-american-battle-dome": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-american-gladiators": {
   "ano": 1991,
@@ -2796,7 +2767,7 @@
  },
  "emu-snes-angelique-voice-fantasy": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-animaniacs": {
   "ano": 1994,
@@ -2814,15 +2785,15 @@
  },
  "emu-snes-aoki-densetsu-shoot": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-appleseed-prometheus-no-shintaku": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-snes-arabian-nights-sabaku-no-seirei-ou": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-snes-araiguma-rascal-raccoon-rascal": {
   "ano": 1994,
@@ -2896,11 +2867,11 @@
  },
  "emu-snes-aretha-aretha-the-super-famicom": {
   "nao": "nenhum-casou",
-  "v": 1
+  "v": 2
  },
  "emu-snes-aretha-ii-ariel-no-fushigi-na-tabi": {
   "nao": "sem-medida",
-  "v": 1
+  "v": 2
  },
  "emu-snes-arkanoid-doh-it-again": {
   "ano": 1997,
@@ -2932,7 +2903,7 @@
  },
  "emu-snes-asahi-shinbun-rensai-katou-hifumi-kudan-shougi-shingiryuu": {
   "nao": "sem-resultado",
-  "v": 1
+  "v": 2
  },
  "emu-snes-asameshimae-nyanko": {
   "ano": 1994,
