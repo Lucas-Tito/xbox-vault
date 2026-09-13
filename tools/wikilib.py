@@ -3,7 +3,7 @@
 Todos os agentes DEVEM usar este modulo para garantir schema e cache consistentes.
 Cache em disco: cache/  (nunca refetch do que ja foi baixado).
 """
-import json, os, re, time, urllib.parse, urllib.request, hashlib
+import json, os, re, shutil, sys, tempfile, time, urllib.parse, urllib.request, hashlib
 
 UA = "XbxListBuilder/1.0 (lucas.tito@virtual360.io) python-urllib"
 API = "https://en.wikipedia.org/w/api.php"
@@ -230,10 +230,39 @@ def iter_table_rows(wikitext, table_id="softwarelist"):
         yield cells
 
 
-def save(path, obj):
+def save(path, obj, force=False):
+    """Grava JSON de forma ATOMICA e recusa encolhimento brusco.
+
+    open(...,"w") trunca o arquivo ANTES de o conteudo novo existir: um erro no
+    meio do dump deixa JSON quebrado e sem backup. E um script que monte a lista
+    parcial sobrescreve a completa sem avisar -- foi assim que 535 notas do
+    Metacritic se perderam. Aqui: escreve em temporario, valida tamanho, troca
+    com os.replace (atomico) e guarda .bak.
+    """
     full = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
-    with open(full, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=1)
+    if os.path.exists(full) and not force and "--force" not in sys.argv:
+        try:
+            with open(full, encoding="utf-8") as f:
+                antigo = json.load(f)
+            if len(obj) < len(antigo) * 0.9:
+                raise SystemExit(
+                    "RECUSADO: %s tem %d itens e o novo so %d (queda de %.0f%%). "
+                    "Se for intencional, rode com --force." %
+                    (path, len(antigo), len(obj), 100 - len(obj) / len(antigo) * 100))
+        except (ValueError, TypeError):
+            pass
+    fd, tmp = tempfile.mkstemp(dir=os.path.dirname(full), prefix=".tmp-save-")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(obj, f, ensure_ascii=False, indent=1)
+            f.flush()
+            os.fsync(f.fileno())
+        if os.path.exists(full):
+            shutil.copy2(full, full + ".bak")
+        os.replace(tmp, full)
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
     print("gravado %s (%d itens, %.1f KB)" % (
         path, len(obj) if isinstance(obj, list) else -1, os.path.getsize(full) / 1024))

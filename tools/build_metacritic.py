@@ -37,12 +37,24 @@ def main():
         print("  com nota: %d (%.0f%%)" % (achou, achou / len(jogos) * 100))
 
     p = os.path.join(ROOT, "data", "metacritic.json")
-    with open(p, "w", encoding="utf-8") as f:
+    # NAO sobrescrever cego: fill_metacritic.py grava no MESMO arquivo as notas
+    # buscadas no site. Reescrever so com o que veio do wikitext apagaria tudo
+    # que ele coletou -- foi assim que 535 notas se perderam.
+    if os.path.exists(p):
+        with open(p, encoding="utf-8") as f:
+            antes = json.load(f)
+        preservadas = {k: v for k, v in antes.items() if k not in saida}
+        if preservadas:
+            print("  preservando %d entradas de outra origem (fill_metacritic)" % len(preservadas))
+        antes.update(saida)
+        saida = antes
+    with open(p + ".tmp", "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, indent=1)
+    os.replace(p + ".tmp", p)
     print("\ngravado data/metacritic.json (%d notas, %.1f KB)" %
           (len(saida), os.path.getsize(p) / 1024))
     print("  por metodo:", dict(via))
-    notas = [v["score"] for v in saida.values()]
+    notas = [v["score"] for v in saida.values() if isinstance(v.get("score"), int)]
     if notas:
         faixas = collections.Counter(min(n // 10 * 10, 90) for n in notas)
         print("  distribuicao:", " ".join("%d-%d:%d" % (k, k + 9, faixas[k])

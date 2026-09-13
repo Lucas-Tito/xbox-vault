@@ -253,8 +253,11 @@ def main():
         taken.add(gid)
         g["id"] = gid
 
+    # Gravar antes de verificar sobrescreve o catalogo bom com um quebrado.
+    if not verify(games):
+        print("\nABORTADO: verificacao falhou, %s NAO foi regravado." % OUT)
+        return None
     w.save(OUT, games)
-    verify(games)
     return games
 
 
@@ -307,4 +310,4 @@ def verify(games):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

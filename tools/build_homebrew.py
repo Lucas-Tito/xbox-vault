@@ -1114,6 +1114,17 @@ def main():
         raise SystemExit("FALHA NA VALIDACAO: " + "; ".join(problems))
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    # build_homebrew_extra.py acrescenta entradas NO MESMO arquivo. Reescrever
+    # so com a tabela ENTRIES deste script apagaria todas elas.
+    if os.path.exists(OUT):
+        with open(OUT, encoding="utf-8") as f:
+            atual = json.load(f)
+        meus = {d["id"] for d in data}
+        extras = [d for d in atual if d["id"] not in meus]
+        if extras and "--merge" not in sys.argv:
+            raise SystemExit("RECUSADO: %s tem %d entradas de outra origem "
+                             "(build_homebrew_extra.py). Rode com --merge." % (OUT, len(extras)))
+        data = data + extras
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 

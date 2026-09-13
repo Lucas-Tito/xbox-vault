@@ -121,17 +121,45 @@ def notas_por_url(val, plataforma):
     return [n for n, p in achados if p == plataforma]
 
 
+_TODAS_MARCAS = [(p, pad) for p, pads in MARCAS.items() for pad in pads] + \
+                [(None, pad) for pad in OUTRAS]
+
+
+def _lado_do_rotulo(t, ms):
+    """O campo escreve "PC: 83/100" (rotulo ANTES) ou "83/100 (PC)" (DEPOIS)?
+
+    Decidido UMA vez por campo. Misturar os lados faz cada nota ler o rotulo da
+    vizinha -- era assim que "PS3: 91/100, X360: 90/100" devolvia 91 para o 360.
+    """
+    antes = depois = 0
+    baixo = t.lower()
+    for i, m in enumerate(ms):
+        ini = ms[i - 1].end() if i else 0
+        fim = ms[i + 1].start() if i + 1 < len(ms) else len(t)
+        pre, pos = baixo[ini:m.start()], baixo[m.end():fim]
+        if any(re.search(pad, pre) for _, pad in _TODAS_MARCAS):
+            antes += 1
+        if any(re.search(pad, pos) for _, pad in _TODAS_MARCAS):
+            depois += 1
+    return "antes" if antes > depois else "depois"
+
+
 def _notas(txt):
     """[(nota, contexto)] de um campo. Aceita '94/100' e tambem '(X360) 85'."""
     txt = _limpar(txt)
     achados = []
     for t in [x for x in re.split(r"<br\s*/?>|\n", txt) if x.strip()]:
         casou = False
-        for m in re.finditer(r"(\b\d{1,3})\s*/\s*100", t):
-            n = int(m.group(1))
-            if 0 <= n <= 100:
-                achados.append((n, (t[:m.start()] + " " + t[m.end():m.end() + 40]).lower()))
-                casou = True
+        ms = [x for x in re.finditer(r"(\b\d{1,3})\s*/\s*100", t)
+              if 0 <= int(x.group(1)) <= 100]
+        lado = _lado_do_rotulo(t, ms)
+        for i, m in enumerate(ms):
+            # o contexto PARA na nota vizinha, dos dois lados
+            ini = ms[i - 1].end() if i else 0
+            fim = ms[i + 1].start() if i + 1 < len(ms) else len(t)
+            ctx = t[ini:m.start()] if lado == "antes" else t[m.end():fim]
+            achados.append((int(m.group(1)), ctx.lower()))
+            casou = True
         if casou:
             continue
         # formato do VG Series Reviews: plataforma entre parenteses e a nota crua
@@ -162,11 +190,22 @@ def extrair(wikitext, plataforma, titulo=None):
         return None, None
     alvo = _norm_titulo(titulo)
 
-    # 0) a URL do proprio ref diz a plataforma: sinal mais confiavel de todos
-    for c in campos:
-        porurl = notas_por_url(c["val"], plataforma)
-        if porurl:
-            return porurl[0], "url-do-ref"
+    # 0) a URL do ref diz a plataforma -- mas so vale depois de escolher o campo
+    # do JOGO certo: num artigo de serie, varrer todos os campos faz um jogo
+    # herdar a nota do irmao (Boxing Fight recebia os 73 do Kinect Sports).
+    def _rot(c):
+        return _norm_titulo(c["rot"]) if c["rot"] else None
+
+    exatos = [c for c in campos if alvo and _rot(c) == alvo]
+    sem_rot = [c for c in campos if not c["rot"]]
+    parciais = [c for c in campos if _rot(c) and alvo and _rot(c) != alvo
+                and (_rot(c) in alvo or alvo in _rot(c))]
+    resto = [] if any(_rot(c) for c in campos) else campos
+    for grupo in (exatos, sem_rot, parciais, resto):
+        for c in grupo:
+            porurl = notas_por_url(c["val"], plataforma)
+            if porurl:
+                return porurl[0], "url-do-ref"
 
     escolhido, via = None, None
 

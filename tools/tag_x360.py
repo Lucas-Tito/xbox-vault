@@ -948,13 +948,20 @@ def main():
         sl = syslink.get(norm_title(wk or "")) or syslink.get(norm_title(g["title"]))
         if sl:
             stats["systemlink"] += 1
-            per = sl.get("per_console") or 0
-            e["multiplayerLocal"] = True
+            per = sl.get("per_console")
+            per = int(per) if (isinstance(per, int) or
+                               (isinstance(per, str) and per.isdigit())) else None
+            # per_console == 1 quer dizer UM jogador por console (so LAN, sem tela
+            # dividida). Colapsar isso com "desconhecido" inventava split-screen de 2.
+            sem_local = per == 1
+            per = per or 0
+            if not sem_local:
+                e["multiplayerLocal"] = True
             # so o split-screen ("Per console") vira maxPlayersLocal; "Total players" e' o
             # total via System Link (varios consoles) e inflaria o numero de sofa.
             if per >= 2:
                 e["maxPlayersLocal"] = per
-            elif e["maxPlayersLocal"] < 2:
+            elif not sem_local and e["maxPlayersLocal"] < 2:
                 e["maxPlayersLocal"] = 2
             if sl.get("coop"):
                 e["coop"] = True

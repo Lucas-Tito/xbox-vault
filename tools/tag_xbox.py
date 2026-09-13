@@ -721,7 +721,9 @@ def normalize(e, allow_net_without_online=False, no_local_floor=False):
         e["maxPlayers"] = max(e["maxPlayers"], e["maxPlayersOnline"])
         e["maxPlayersOnline"] = 0
         fixes.append("online-players-sem-online")
-    e["maxPlayers"] = max(e["maxPlayers"], e["maxPlayersLocal"], e["maxPlayersOnline"])
+    # derivado, nunca acumulado: manter um valor antigo deixava numeros orfaos
+    # (128 do "World Snooker Tour" sobrevivia ao rebaixamento para local)
+    e["maxPlayers"] = max(e["maxPlayersLocal"], e["maxPlayersOnline"])
     return fixes
 
 
@@ -821,7 +823,6 @@ def main():
         if e["maxPlayersOnline"] and not e["maxPlayersLocal"]:
             n = e["maxPlayersOnline"]
             e["maxPlayersLocal"] = min(n, MAX_LOCAL) if SPLITSCREEN_HINT.search(wt) else 0
-            e["maxPlayers"] = max(e["maxPlayers"], n)
         e["maxPlayersOnline"] = 0
         if e["confidence"] == "high":
             e["confidence"] = "medium"

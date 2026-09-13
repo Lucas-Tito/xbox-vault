@@ -83,6 +83,10 @@ def _plain(s):
     s = re.sub(r"<ref(?![^>]*/>)[^>]*>.*?</ref>", "", s, flags=re.S)
     s = re.sub(r"\[\[[^\]|]*\|([^\]]*)\]\]", r"\1", s)
     s = re.sub(r"\[\[([^\]]*)\]\]", r"\1", s)
+    # expande listas ANTES do strip generico: {{hlist|Single-player|multiplayer}}
+    # seria apagado com o miolo, e o jogo sairia como sem modo nenhum
+    s = re.sub(r"\{\{(?:hlist|plainlist|ubl|unbulleted list|flatlist)\|(.*?)\}\}",
+               lambda m: ", ".join(m.group(1).split("|")), s, flags=re.S | re.I)
     s = re.sub(r"\{\{[^{}]*\}\}", " ", s)
     s = re.sub(r"</?[^>]+>", " ", s)
     return re.sub(r"\s+", " ", s.replace("'''", "").replace("''", ""))
@@ -132,10 +136,27 @@ def scan_players(text):
         if not found:
             continue
         is_loc, is_onl = bool(LOCAL_HINT.search(s)), bool(ONLINE_HINT.search(s))
-        if is_loc and not is_onl: loc += found
-        elif is_onl and not is_loc: onl += found
-        elif is_loc and is_onl: loc += found; onl += found
-        else: gen += found
+        if is_loc and not is_onl:
+            loc += found
+        elif is_onl and not is_loc:
+            onl += found
+        elif is_loc and is_onl:
+            # A frase cita os dois ("12 online ou four em tela dividida"): dar os
+            # MESMOS numeros aos dois baldes punha 12 jogadores locais num
+            # console de 4 controles. Cada numero vai para a pista mais proxima.
+            palavra = {v: k for k, v in NUMW.items()}
+            for n in found:
+                baixo = s.lower()
+                pos = baixo.find(str(n))
+                if pos < 0 and n in palavra:      # o texto pode dizer "four", nao "4"
+                    pos = baixo.find(palavra[n])
+                if pos < 0:
+                    gen.append(n); continue
+                dl = min((abs(pos - x.start()) for x in LOCAL_HINT.finditer(s)), default=10**6)
+                do = min((abs(pos - x.start()) for x in ONLINE_HINT.finditer(s)), default=10**6)
+                (loc if dl <= do else onl).append(n)
+        else:
+            gen += found
     return (max(loc) if loc else 0, max(onl) if onl else 0, max(gen) if gen else 0)
 
 
@@ -197,6 +218,8 @@ def build_tags(wikitext, fallback_multi=None):
         pl_onl = 2 if has_online and not has_local else 0
         weak = True
 
+    if pl_loc > 4:
+        pl_loc = 4          # Xbox e Xbox 360 tem 4 portas de controle, sem multitap
     coop_local = coop and has_local
     coop_online = coop and has_online
     versus_local = versus and has_local
@@ -206,7 +229,10 @@ def build_tags(wikitext, fallback_multi=None):
         has_local = has_online = False
         pl_loc = pl_onl = 0
 
-    conf = "high" if ib.get("modes") else ("medium" if multi or single else "low")
+    # A infobox so conta se REALMENTE deu para ler os modos dela. Antes bastava o
+    # parametro existir, e um {{hlist}} apagado virava "infobox/high" sem dado.
+    leu_infobox = modes_from_infobox(ib) != (None, None)
+    conf = "high" if leu_infobox else ("medium" if multi or single else "low")
     if weak and conf == "high":
         conf = "medium"
     elif weak:
@@ -219,7 +245,9 @@ def build_tags(wikitext, fallback_multi=None):
         "versus": bool(versus), "versusLocal": bool(versus_local),
         "maxPlayersLocal": pl_loc or 0,
         "maxPlayersOnline": pl_onl or 0,
-        "maxPlayers": max(pl_loc, pl_onl, pl_gen) or 0,
-        "source": "wikipedia-infobox" if ib.get("modes") else "wikipedia-text",
+        # sem pl_gen: numeros soltos no texto sao elenco, nao jogadores
+        # ("128 players from the World Snooker Tour" virava maxPlayers=128)
+        "maxPlayers": max(pl_loc, pl_onl) or 0,
+        "source": "wikipedia-infobox" if leu_infobox else "wikipedia-text",
         "confidence": conf,
     }

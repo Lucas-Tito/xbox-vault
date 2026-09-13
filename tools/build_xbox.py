@@ -504,7 +504,7 @@ def main():
     if not (400 <= compat <= 500):
         problems.append("compativeis fora de 400-500: %d" % compat)
 
-    w.save(OUT, records)
+    # gravacao movida para DEPOIS da validacao (ver bloco de problems)
 
     print("\n== casamento ==")
     for k, v in matched_by.most_common():
@@ -540,6 +540,11 @@ def main():
             name, r["year"], r["bc360"]["compatible"], r["bc360"]["region"],
             "/".join(r["developers"]) or "-", "/".join(r["publishers"]) or "-", r["wiki"]))
 
+    # So grava se a validacao passou: gravar antes sobrescrevia o catalogo bom
+    if problems:
+        print("\nABORTADO: %d problema(s), %s NAO foi regravado." % (len(problems), OUT))
+        return 1
+    w.save(OUT, records)
     if problems:
         print("\n!! VERIFICACAO FALHOU:")
         for p in problems:
