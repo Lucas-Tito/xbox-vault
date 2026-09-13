@@ -1,4 +1,4 @@
-/* Xbox Vault — app principal. Dados vêm de data/db.js (window.XBX_DB). */
+/* Xbox Vault: app principal. Dados vêm de data/db.js (window.XBX_DB). */
 (function () {
 "use strict";
 
@@ -13,7 +13,7 @@ var BATCH = 120;
 /* ---------------- estado ---------------- */
 /* marks: { "<id>": { s: "own" | "wish" | null, t: <epoch ms> } }
    O timestamp existe por causa da sincronização: sem ele, juntar dois dispositivos
-   ressuscita o que você desmarcou num deles. `s: null` é uma lápide — registra que
+   ressuscita o que você desmarcou num deles. `s: null` é uma lápide: registra que
    a marcação foi REMOVIDA naquele instante, em vez de sumir do arquivo. */
 var marks = {};
 var owned = new Set(), wishlist = new Set(), escondidos = new Set();
@@ -89,7 +89,7 @@ GAMES.forEach(prepararJogo);
 
 /* ---- catálogo de emulação: carregado só quando o usuário liga a categoria ----
    Injetar um <script> (em vez de fetch) é o que faz isso funcionar também com o
-   site aberto direto do arquivo, via file:// — fetch de arquivo local é bloqueado. */
+   site aberto direto do arquivo, via file://, onde fetch de arquivo local é bloqueado. */
 var emuCarregado = false, emuCarregando = false;
 
 function carregarEmu(pronto) {

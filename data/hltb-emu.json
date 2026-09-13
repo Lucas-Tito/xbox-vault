@@ -2728,6 +2728,49 @@
   "v": 2,
   "via": "plataforma"
  },
+ "emu-gba-dokidoki-cooking-series-1-komugi-chan-no-happy-cake": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dokidoki-cooking-series-2-gourmet-kitchen-suteki-na-obentou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dokodemo-taikyoku-yakuman-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-domo-kun-no-fushigi-terebi": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-don-chan-puzzle-hanabi-de-doon-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-donald-duck-adv-nce": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-donkey-kong-country": {
+  "ano": 1994,
+  "cem": 8.7,
+  "hltb": 2686,
+  "main": 5.1,
+  "n": 65,
+  "nome": "Donkey Kong Country",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-donkey-kong-country-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-donkey-kong-country-3": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
  "emu-gba-doom": {
   "ano": 1993,
   "cem": 4.8,
@@ -8124,6 +8167,43 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "emu-ps1-doki-doki-shutter-chance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dokiou-ki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doko-demo-issyo": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-dokodemo-hamster-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dokodemo-hamster-4-doki-doki-sugoroku-daibouken": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dokodemo-hamster-bi-click-tanken-tai": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dokomademo-aoku": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-donpachi": {
+  "ano": 1995,
+  "hltb": 2700,
+  "main": 0.7,
+  "n": 2,
+  "nome": "DonPachi",
+  "v": 2,
+  "via": "plataforma"
+ },
  "emu-ps1-doom": {
   "ano": 1993,
   "cem": 5.8,
@@ -10167,6 +10247,59 @@
  },
  "emu-snes-dokapon-gaiden-honoo-no-audition": {
   "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dolucky-no-a-league-soccer": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dolucky-no-kusayakiu": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dolucky-no-puzzle-tour-94": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-donald-duck-no-mahou-no-boushi": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-donkey-kong-country": {
+  "ano": 1994,
+  "cem": 6.4,
+  "hltb": 2686,
+  "main": 4.1,
+  "n": 849,
+  "nome": "Donkey Kong Country",
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-donkey-kong-country-2-diddy-s-kong-quest": {
+  "ano": 1995,
+  "cem": 10.6,
+  "hltb": 2687,
+  "main": 5.3,
+  "n": 464,
+  "nome": "Donkey Kong Country 2: Diddy's Kong Quest",
+  "plus": 7.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-donkey-kong-country-3-dixie-kong-s-double-trouble": {
+  "ano": 1996,
+  "cem": 9.9,
+  "hltb": 2688,
+  "main": 4.8,
+  "n": 304,
+  "nome": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+  "plus": 7.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-donkey-kong-country-blockbuster-world-video-game-championship-ii": {
+  "nao": "sem-resultado",
   "v": 2
  },
  "emu-snes-doom": {
