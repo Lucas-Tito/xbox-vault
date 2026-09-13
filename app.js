@@ -387,7 +387,15 @@ function updateStats(list) {
     " · Homebrew: " + ownPlat.homebrew + "/" + byPlat.homebrew +
     (byPlat.emu ? " · Emulação: " + ownPlat.emu + "/" + byPlat.emu : "");
   $$("[data-cnt^='plat-']").forEach(function (el) {
-    el.textContent = byPlat[el.dataset.cnt.slice(5)] || 0;
+    var k = el.dataset.cnt.slice(5);
+    // A emulacao so entra em GAMES depois do download sob demanda, entao ate la
+    // o numero vem do total que o bundle.py grava no db.js. Bundle velho nao
+    // tem esse campo: nesse caso fica em branco, que mente menos que um zero.
+    if (k === "emu" && !byPlat.emu) {
+      el.textContent = (DB.counts || {}).emu || "";
+      return;
+    }
+    el.textContent = byPlat[k] || 0;
   });
 }
 
@@ -945,19 +953,9 @@ function ligarEventos() {
   });
 
   $("#btn-export").onclick = doExport;
-  $("#btn-import").onclick = function () {
-    openModal('<h3>Importar coleção</h3><p>Escolha o arquivo <code>.json</code> exportado antes.</p>' +
-      '<div class="drop" id="drop">Arraste o arquivo aqui<br>ou clique para escolher</div>');
-    var d = $("#drop");
-    d.onclick = function () { $("#file-in").click(); };
-    d.ondragover = function (ev) { ev.preventDefault(); d.classList.add("over"); };
-    d.ondragleave = function () { d.classList.remove("over"); };
-    d.ondrop = function (ev) {
-      ev.preventDefault(); d.classList.remove("over");
-      var f = ev.dataTransfer.files[0];
-      if (f) f.text().then(importFlow);
-    };
-  };
+  // Abre o seletor do sistema direto. A tela intermediaria existia so para
+  // oferecer o arrastar, e cobrava um clique de todo mundo por isso.
+  $("#btn-import").onclick = function () { $("#file-in").click(); };
   $("#file-in").addEventListener("change", function (e) {
     var f = e.target.files[0];
     if (f) f.text().then(importFlow);

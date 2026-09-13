@@ -298,14 +298,22 @@ def main():
          ("xbox.json", "Xbox original"), ("homebrew.json", "Homebrew")],
         ["tags-x360.json", "tags-xblig.json", "tags-xbox.json", "tags-homebrew.json"],
         "principal", extras=load("vazados.json", {}).get("catalogo", []))
+    # Emulacao vai num arquivo separado: a categoria vem desligada e o site so
+    # baixa este arquivo se o usuario ligar. Quem nunca ligar nao paga o peso.
+    # Ela e montada ANTES de escrever o bundle principal so para o total dela
+    # caber la dentro; ver counts["emu"] logo abaixo.
+    print("\n== emulacao (carregada sob demanda) ==")
+    emu, ec = montar([("emu.json", "SNES/GBA/PS1")], ["tags-emu.json"], "emulacao")
+
+    # O tamanho da categoria viaja no bundle principal porque o filtro precisa
+    # dele antes de baixar os 3,9 MB da emulacao. Sem isso o painel contava os
+    # jogos em GAMES, onde a emulacao ainda nao esta, e exibia um zero falso.
+    if emu:
+        counts["emu"] = ec.get("total", len(emu))
+
     escrever("db.js", "XBX_DB", {
         "generated": datetime.datetime.now().isoformat(timespec="seconds"),
         "counts": counts, "games": games})
-
-    # Emulacao vai num arquivo separado: a categoria vem desligada e o site so
-    # baixa este arquivo se o usuario ligar. Quem nunca ligar nao paga o peso.
-    print("\n== emulacao (carregada sob demanda) ==")
-    emu, ec = montar([("emu.json", "SNES/GBA/PS1")], ["tags-emu.json"], "emulacao")
     if emu:
         escrever("db-emu.js", "XBX_EMU", {
             "generated": datetime.datetime.now().isoformat(timespec="seconds"),

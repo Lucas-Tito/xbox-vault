@@ -14,6 +14,14 @@
   ok('subfiltros escondidos', $('#g-emu').hidden);
   const base = window.XBX_DB.games.length;
   ok('catalogo base sem emulacao', base > 6000 && !window.XBX_EMU, base + ' jogos');
+  // zero seria mentira: a categoria tem milhares de jogos, eles e que nao foram
+  // baixados ainda. Enquanto o db.js nao trouxer o total, o certo e nao dizer nada.
+  const cntEmu = () => $('[data-cnt="plat-emu"]').textContent.trim();
+  const totalEmu = (window.XBX_DB.counts || {}).emu;
+  ok('contador da emulacao nao mostra zero', cntEmu() !== '0', 'mostra "' + cntEmu() + '"');
+  ok('desligada, o contador usa o total do bundle ou fica vazio',
+     totalEmu ? cntEmu() === String(totalEmu) : cntEmu() === '',
+     totalEmu ? 'db.js diz ' + totalEmu : 'db.js ainda nao grava o total');
 
   // liga -> deve baixar sob demanda
   emuBox.checked = true; fire(emuBox);
@@ -21,6 +29,8 @@
   ok('ligar dispara o carregamento', veio, veio ? window.XBX_EMU.games.length+' jogos de emulacao' : 'nao carregou');
   await until(()=>cards().length>0); await wait(600);
   ok('subfiltros aparecem', !$('#g-emu').hidden);
+  ok('carregada, o contador mostra o catalogo inteiro',
+     cntEmu() === String(window.XBX_EMU.games.length), 'contador=' + cntEmu());
 
   // por padrao so oficiais + os cancelados que vazaram jogaveis
   ok('filtro de tipo comeca em oficiais', $('#f-reltype').value === 'oficial');

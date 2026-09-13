@@ -10645,6 +10645,36 @@
   "v": 2,
   "via": "plataforma"
  },
+ "x360-nba-2k14": {
+  "ano": 2013,
+  "hltb": 14344,
+  "main": 20.0,
+  "n": 2,
+  "nome": "NBA 2K14",
+  "plus": 30.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-2k15": {
+  "ano": 2014,
+  "hltb": 21992,
+  "main": 18.3,
+  "n": 1,
+  "nome": "NBA 2K15",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-2k16": {
+  "ano": 2015,
+  "cem": 209.5,
+  "hltb": 29893,
+  "main": 18.7,
+  "n": 35,
+  "nome": "NBA 2K16",
+  "plus": 71.5,
+  "v": 2,
+  "via": "geral"
+ },
  "x360-nba-2k17": {
   "nao": "so-outra-plataforma",
   "v": 2
@@ -10696,9 +10726,102 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-nba-ballers-chosen-one": {
+  "ano": 2008,
+  "hltb": 14522,
+  "main": 5.6,
+  "n": 2,
+  "nome": "NBA Ballers: Chosen One",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-jam": {
+  "ano": 2010,
+  "hltb": 6437,
+  "main": 8.6,
+  "n": 2,
+  "nome": "NBA Jam",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-jam-on-fire-edition": {
+  "ano": 2011,
+  "cem": 40.0,
+  "hltb": 6439,
+  "main": 24.0,
+  "n": 2,
+  "nome": "NBA Jam: On Fire Edition",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-live-06": {
+  "ano": 2005,
+  "hltb": 11832,
+  "main": 25.0,
+  "n": 1,
+  "nome": "NBA Live 06",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-live-07": {
+  "ano": 2006,
+  "hltb": 12246,
+  "main": 5.0,
+  "n": 1,
+  "nome": "NBA Live 07",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-nba-live-08": {
+  "ano": 2007,
+  "hltb": 6441,
+  "main": 30.0,
+  "n": 1,
+  "nome": "NBA Live 08",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-live-09": {
+  "ano": 2008,
+  "hltb": 6442,
+  "main": 100.0,
+  "n": 1,
+  "nome": "NBA Live 09",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-nba-live-10": {
+  "hltb": 6443,
+  "main": 10.0,
+  "n": 1,
+  "nome": "NBA Live 10",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nba-street-homecourt": {
+  "ano": 2007,
+  "cem": 36.0,
+  "hltb": 6448,
+  "main": 8.0,
+  "n": 7,
+  "nome": "NBA Street Homecourt",
+  "plus": 21.6,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-nba-unrivaled": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-ncaa-basketball-09": {
+  "ano": 2008,
+  "cem": 18.5,
+  "hltb": 6452,
+  "main": 3.0,
+  "n": 3,
+  "nome": "NCAA Basketball 09",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-ncaa-basketball-09-march-madness-edition": {
   "nao": "sem-resultado",
@@ -10707,6 +10830,86 @@
  "x360-ncaa-basketball-10": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-ncaa-football-07": {
+  "ano": 2006,
+  "cem": 55.0,
+  "hltb": 6454,
+  "main": 20.0,
+  "n": 3,
+  "nome": "NCAA Football 07",
+  "plus": 45.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-08": {
+  "ano": 2007,
+  "cem": 40.0,
+  "hltb": 6455,
+  "main": 16.0,
+  "n": 3,
+  "nome": "NCAA Football 08",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-09": {
+  "ano": 2008,
+  "cem": 40.0,
+  "hltb": 6456,
+  "main": 16.3,
+  "n": 4,
+  "nome": "NCAA Football 09",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-10": {
+  "ano": 2009,
+  "cem": 30.0,
+  "hltb": 6457,
+  "n": 1,
+  "nome": "NCAA Football 10",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-11": {
+  "ano": 2010,
+  "cem": 30.0,
+  "hltb": 6458,
+  "n": 2,
+  "nome": "NCAA Football 11",
+  "plus": 78.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-12": {
+  "ano": 2011,
+  "cem": 12.0,
+  "hltb": 6459,
+  "main": 7.0,
+  "n": 3,
+  "nome": "NCAA Football 12",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-13": {
+  "ano": 2012,
+  "cem": 21.5,
+  "hltb": 6460,
+  "main": 15.8,
+  "n": 3,
+  "nome": "NCAA Football 13",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ncaa-football-14": {
+  "ano": 2013,
+  "hltb": 12248,
+  "n": 1,
+  "nome": "NCAA Football 14",
+  "plus": 50.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-ncaa-march-madness-07": {
   "nao": "sem-medida",
@@ -10720,21 +10923,281 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-need-for-speed-carbon": {
+  "ano": 2006,
+  "cem": 17.2,
+  "hltb": 6472,
+  "main": 10.6,
+  "n": 27,
+  "nome": "Need for Speed: Carbon",
+  "plus": 13.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-hot-pursuit": {
+  "ano": 2010,
+  "cem": 30.6,
+  "hltb": 6474,
+  "main": 14.3,
+  "n": 38,
+  "nome": "Need for Speed: Hot Pursuit",
+  "plus": 21.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-most-wanted-2005": {
+  "ano": 2012,
+  "cem": 31.8,
+  "hltb": 6478,
+  "main": 10.2,
+  "n": 34,
+  "nome": "Need for Speed: Most Wanted",
+  "plus": 15.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-most-wanted-2012": {
+  "ano": 2012,
+  "cem": 31.8,
+  "hltb": 6478,
+  "main": 10.2,
+  "n": 34,
+  "nome": "Need for Speed: Most Wanted",
+  "plus": 15.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-prostreet": {
+  "ano": 2007,
+  "cem": 18.9,
+  "hltb": 6481,
+  "main": 10.4,
+  "n": 15,
+  "nome": "Need for Speed: ProStreet",
+  "plus": 16.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-rivals": {
+  "ano": 2013,
+  "hltb": 14334,
+  "main": 14.7,
+  "n": 13,
+  "nome": "Need for Speed: Rivals",
+  "plus": 25.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-shift": {
+  "ano": 2009,
+  "cem": 24.9,
+  "hltb": 6482,
+  "main": 13.7,
+  "n": 19,
+  "nome": "Need for Speed: Shift",
+  "plus": 22.7,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-need-for-speed-shift-2-unleashed": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-need-for-speed-the-run": {
+  "ano": 2011,
+  "cem": 15.0,
+  "hltb": 6483,
+  "main": 4.7,
+  "n": 50,
+  "nome": "Need for Speed: The Run",
+  "plus": 7.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-need-for-speed-undercover": {
+  "ano": 2008,
+  "cem": 18.7,
+  "hltb": 6484,
+  "main": 11.7,
+  "n": 22,
+  "nome": "Need for Speed: Undercover",
+  "plus": 13.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-neogeo-battle-coliseum": {
+  "ano": 2005,
+  "hltb": 6499,
+  "main": 0.6,
+  "n": 7,
+  "nome": "NeoGeo Battle Coliseum",
+  "plus": 2.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-neverdead": {
+  "ano": 2012,
+  "cem": 13.0,
+  "hltb": 6511,
+  "main": 8.1,
+  "n": 14,
+  "nome": "NeverDead",
+  "plus": 9.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-new-rally-x": {
+  "ano": 2006,
+  "cem": 1.8,
+  "hltb": 17149,
+  "main": 3.0,
+  "n": 6,
+  "nome": "New Rally-X",
+  "plus": 0.6,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-nexuiz": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-nfl-blitz": {
+  "ano": 2012,
+  "hltb": 6549,
+  "main": 5.8,
+  "n": 1,
+  "nome": "NFL Blitz",
+  "v": 2,
+  "via": "geral"
+ },
  "x360-nfl-head-coach-09": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-nfl-tour": {
+  "ano": 2008,
+  "hltb": 12249,
+  "main": 5.0,
+  "n": 1,
+  "nome": "NFL Tour",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-nhl-07": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-nhl-08": {
+  "ano": 2007,
+  "hltb": 6558,
+  "main": 15.0,
+  "n": 1,
+  "nome": "NHL 08",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-09": {
+  "ano": 2008,
+  "cem": 26.5,
+  "hltb": 6559,
+  "main": 20.0,
+  "n": 2,
+  "nome": "NHL 09",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-nhl-10": {
+  "ano": 2009,
+  "hltb": 6560,
+  "main": 22.0,
+  "n": 1,
+  "nome": "NHL 10",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-11": {
+  "ano": 2010,
+  "hltb": 6561,
+  "main": 25.0,
+  "n": 2,
+  "nome": "NHL 11",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-12": {
+  "ano": 2011,
+  "hltb": 6562,
+  "main": 22.5,
+  "n": 2,
+  "nome": "NHL 12",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-13": {
+  "ano": 2012,
+  "hltb": 6563,
+  "main": 4.0,
+  "n": 2,
+  "nome": "NHL 13",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-14": {
+  "ano": 2013,
+  "hltb": 14733,
+  "main": 8.0,
+  "n": 2,
+  "nome": "NHL 14",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-15": {
+  "ano": 2014,
+  "hltb": 21637,
+  "main": 38.0,
+  "n": 1,
+  "nome": "NHL 15",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-2k10": {
+  "ano": 2009,
+  "hltb": 12250,
+  "main": 40.0,
+  "n": 1,
+  "nome": "NHL 2K10",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-nhl-2k6": {
+  "ano": 2005,
+  "cem": 2.0,
+  "hltb": 6568,
+  "main": 1.0,
+  "n": 5,
+  "nome": "NHL 2K6",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-2k7": {
+  "ano": 2006,
+  "hltb": 6569,
+  "main": 32.0,
+  "n": 2,
+  "nome": "NHL 2K7",
+  "plus": 57.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nhl-2k8": {
+  "ano": 2007,
+  "hltb": 6570,
+  "main": 29.0,
+  "n": 1,
+  "nome": "NHL 2K8",
+  "v": 2,
+  "via": "geral"
  },
  "x360-nhl-2k9": {
   "nao": "sem-medida",
@@ -10752,9 +11215,156 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-nicktoons-mlb": {
+  "ano": 2011,
+  "cem": 6.5,
+  "hltb": 22374,
+  "n": 1,
+  "nome": "Nicktoons MLB",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nier": {
+  "ano": 2010,
+  "cem": 69.4,
+  "hltb": 6591,
+  "main": 21.1,
+  "n": 130,
+  "nome": "NieR",
+  "plus": 37.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-night-at-the-museum-battle-of-the-smithsonian": {
+  "ano": 2009,
+  "cem": 3.8,
+  "hltb": 6592,
+  "main": 2.8,
+  "n": 9,
+  "nome": "Night at the Museum: Battle of the Smithsonian",
+  "plus": 3.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-nights-into-dreams": {
+  "ano": 1996,
+  "cem": 6.0,
+  "hltb": 6601,
+  "main": 2.2,
+  "n": 12,
+  "nome": "NiGHTS into Dreams...",
+  "plus": 3.7,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-nike-plus-kinect-training": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-nin2-jump": {
+  "ano": 2011,
+  "cem": 5.0,
+  "hltb": 14994,
+  "n": 3,
+  "nome": "NIN2-JUMP",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ninety-nine-nights": {
+  "ano": 2006,
+  "cem": 25.0,
+  "hltb": 6612,
+  "main": 5.0,
+  "n": 31,
+  "nome": "Ninety-Nine Nights",
+  "plus": 15.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ninety-nine-nights-ii": {
+  "ano": 2010,
+  "cem": 31.0,
+  "hltb": 6613,
+  "main": 6.5,
+  "n": 9,
+  "nome": "Ninety-Nine Nights II",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ninja-blade": {
+  "ano": 2009,
+  "cem": 31.8,
+  "hltb": 6616,
+  "main": 8.7,
+  "n": 30,
+  "nome": "Ninja Blade",
+  "plus": 10.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ninja-gaiden-3": {
+  "ano": 2012,
+  "cem": 47.5,
+  "hltb": 6622,
+  "main": 7.8,
+  "n": 21,
+  "nome": "Ninja Gaiden 3",
+  "plus": 14.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ninja-gaiden-3-razor-s-edge": {
+  "ano": 2012,
+  "cem": 77.0,
+  "hltb": 6623,
+  "main": 7.4,
+  "n": 9,
+  "nome": "Ninja Gaiden 3: Razor's Edge",
+  "plus": 11.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ninja-gaiden-ii": {
+  "ano": 2008,
+  "cem": 71.4,
+  "hltb": 6626,
+  "main": 14.0,
+  "n": 66,
+  "nome": "Ninja Gaiden II",
+  "plus": 19.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-no-fate-only-the-power-of-will": {
+  "ano": 2010,
+  "cem": 6.0,
+  "hltb": 76812,
+  "n": 1,
+  "nome": "No Fate! Only the Power of Will",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-no-more-heroes-heroes-paradise": {
+  "ano": 2010,
+  "cem": 29.7,
+  "hltb": 6655,
+  "main": 13.5,
+  "n": 32,
+  "nome": "No More Heroes: Heroes' Paradise",
+  "plus": 16.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-nobunaga-no-yabou-tendou": {
+  "ano": 2009,
+  "hltb": 119112,
+  "n": 1,
+  "nome": "Nobunaga no Yabou: Tendou",
+  "plus": 20.0,
+  "v": 2,
+  "via": "geral"
  },
  "x360-novadrome": {
   "nao": "so-outra-plataforma",
@@ -10772,25 +11382,328 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-of-orcs-and-men": {
+  "ano": 2012,
+  "hltb": 6710,
+  "main": 13.0,
+  "n": 3,
+  "nome": "Of Orcs and Men",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-omega-five": {
+  "ano": 2008,
+  "cem": 4.6,
+  "hltb": 6730,
+  "main": 0.6,
+  "n": 3,
+  "nome": "Omega Five",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-omerta-city-of-gangsters": {
+  "ano": 2013,
+  "hltb": 6731,
+  "main": 20.0,
+  "n": 1,
+  "nome": "Omerta: City of Gangsters",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-onechanbara-bikini-samurai-squad": {
+  "ano": 2006,
+  "cem": 37.8,
+  "hltb": 6758,
+  "main": 6.0,
+  "n": 13,
+  "nome": "Onechanbara: Bikini Samurai Squad",
+  "plus": 25.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-onechanbara-z-kagura": {
+  "ano": 2012,
+  "cem": 43.5,
+  "hltb": 83487,
+  "n": 1,
+  "nome": "Onechanbara Z: Kagura",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-open-season": {
+  "ano": 2006,
+  "cem": 8.6,
+  "hltb": 6774,
+  "main": 3.3,
+  "n": 12,
+  "nome": "Open Season",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-operation-darkness": {
+  "ano": 2007,
+  "hltb": 6777,
+  "main": 84.3,
+  "n": 4,
+  "nome": "Operation Darkness",
+  "plus": 62.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-operation-flashpoint-dragon-rising": {
+  "ano": 2009,
+  "hltb": 6779,
+  "main": 11.2,
+  "n": 10,
+  "nome": "Operation Flashpoint: Dragon Rising",
+  "plus": 18.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-operation-flashpoint-red-river": {
+  "ano": 2011,
+  "hltb": 6781,
+  "main": 9.0,
+  "n": 2,
+  "nome": "Operation Flashpoint: Red River",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-orc-attack-flatulent-rebellion": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-orcs-must-die": {
+  "ano": 2011,
+  "hltb": 6795,
+  "main": 9.2,
+  "n": 3,
+  "nome": "Orcs Must Die!",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-ore-no-yome-anata-dake-no-hanayome": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-otomedius-excellent": {
+  "ano": 2011,
+  "cem": 30.0,
+  "hltb": 6820,
+  "main": 0.9,
+  "n": 13,
+  "nome": "Otomedius Excellent",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-otomedius-gorgeous": {
+  "ano": 2008,
+  "hltb": 15262,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Otomedius G",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-outland": {
+  "ano": 2011,
+  "cem": 11.8,
+  "hltb": 6827,
+  "main": 7.5,
+  "n": 41,
+  "nome": "Outland",
+  "plus": 9.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-outpost-kaloki-x": {
+  "ano": 2004,
+  "cem": 9.0,
+  "hltb": 6835,
+  "main": 6.8,
+  "n": 3,
+  "nome": "Outpost Kaloki X",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-outrun-online-arcade": {
+  "ano": 2009,
+  "hltb": 6841,
+  "main": 0.4,
+  "n": 3,
+  "nome": "OutRun Online Arcade",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-over-g-fighters": {
+  "ano": 2006,
+  "hltb": 6844,
+  "main": 19.0,
+  "n": 1,
+  "nome": "Over G Fighters",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-overlord": {
+  "ano": 2007,
+  "cem": 33.5,
+  "hltb": 6848,
+  "main": 16.4,
+  "n": 17,
+  "nome": "Overlord",
+  "plus": 18.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-overlord-ii": {
+  "ano": 2009,
+  "cem": 25.0,
+  "hltb": 6850,
+  "main": 16.0,
+  "n": 9,
+  "nome": "Overlord II",
+  "plus": 18.9,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-pac-man": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-pac-man-and-the-ghostly-adventures": {
+  "ano": 2013,
+  "cem": 11.4,
+  "hltb": 14353,
+  "main": 5.8,
+  "n": 4,
+  "nome": "Pac-Man and the Ghostly Adventures",
+  "plus": 8.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pac-man-and-the-ghostly-adventures-2": {
+  "ano": 2014,
+  "cem": 11.2,
+  "hltb": 21256,
+  "main": 8.0,
+  "n": 4,
+  "nome": "Pac-Man and the Ghostly Adventures 2",
+  "plus": 8.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pac-man-championship-edition": {
+  "ano": 2007,
+  "cem": 7.6,
+  "hltb": 6859,
+  "main": 2.1,
+  "n": 18,
+  "nome": "Pac-Man Championship Edition",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pac-man-championship-edition-dx": {
+  "ano": 2010,
+  "cem": 3.7,
+  "hltb": 6860,
+  "main": 3.5,
+  "n": 26,
+  "nome": "Pac-Man Championship Edition DX",
+  "plus": 3.5,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-pac-man-museum-includes-nine-pac-man-games": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-pacific-rim-the-video-game": {
+  "ano": 2013,
+  "hltb": 119117,
+  "main": 1.4,
+  "n": 4,
+  "nome": "Pacific Rim: The Video Game",
+  "plus": 4.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-painkiller-hell-and-damnation": {
+  "ano": 2012,
+  "cem": 17.2,
+  "hltb": 6875,
+  "main": 4.8,
+  "n": 6,
+  "nome": "Painkiller: Hell & Damnation",
+  "plus": 11.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-panzer-general-allied-assault": {
+  "ano": 2009,
+  "hltb": 11759,
+  "main": 5.3,
+  "n": 1,
+  "nome": "Panzer General: Allied Assault",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-paperboy": {
+  "ano": 1984,
+  "cem": 8.0,
+  "hltb": 6913,
+  "n": 1,
+  "nome": "Paperboy",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-payday-2": {
+  "ano": 2013,
+  "hltb": 12649,
+  "main": 23.6,
+  "n": 5,
+  "nome": "Payday 2",
+  "plus": 150.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pdc-world-championship-darts-2008": {
+  "ano": 2008,
+  "hltb": 119118,
+  "n": 1,
+  "nome": "PDC World Championship Darts 2008",
+  "plus": 45.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-pdc-world-championship-darts-pro-tour": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-peggle": {
+  "ano": 2007,
+  "hltb": 6947,
+  "main": 4.6,
+  "n": 30,
+  "nome": "Peggle Deluxe",
+  "plus": 12.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-peggle-2": {
+  "ano": 2013,
+  "hltb": 15272,
+  "main": 5.0,
+  "n": 2,
+  "nome": "Peggle 2",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-penguins-of-madagascar-dr-blowhole-returns-again": {
   "nao": "nenhum-casou",
@@ -10804,9 +11717,96 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-perfect-dark": {
+  "ano": 2000,
+  "cem": 35.3,
+  "hltb": 6966,
+  "main": 6.2,
+  "n": 45,
+  "nome": "Perfect Dark",
+  "plus": 16.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-perfect-dark-zero": {
+  "ano": 2005,
+  "cem": 39.9,
+  "hltb": 6967,
+  "main": 7.4,
+  "n": 73,
+  "nome": "Perfect Dark Zero",
+  "plus": 11.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-persona-4-arena": {
+  "ano": 2012,
+  "cem": 33.8,
+  "hltb": 6973,
+  "main": 10.6,
+  "n": 23,
+  "nome": "Persona 4 Arena",
+  "plus": 17.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-persona-4-arena-ultimax": {
+  "ano": 2014,
+  "cem": 80.0,
+  "hltb": 21257,
+  "main": 10.2,
+  "n": 16,
+  "nome": "Persona 4 Arena Ultimax",
+  "plus": 15.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-peter-jackson-s-king-kong": {
+  "ano": 2005,
+  "cem": 7.2,
+  "hltb": 6981,
+  "main": 6.4,
+  "n": 61,
+  "nome": "Peter Jackson's King Kong",
+  "plus": 6.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-phantasy-star-ii": {
+  "ano": 1989,
+  "cem": 44.6,
+  "hltb": 6999,
+  "main": 29.6,
+  "n": 13,
+  "nome": "Phantasy Star II",
+  "plus": 33.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-phantasy-star-universe": {
+  "ano": 2006,
+  "cem": 41.8,
+  "hltb": 7006,
+  "main": 29.3,
+  "n": 12,
+  "nome": "Phantasy Star Universe",
+  "plus": 40.7,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-phantom-breaker": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-phantom-breaker-battle-grounds": {
+  "ano": 2013,
+  "cem": 9.0,
+  "hltb": 7014,
+  "main": 3.0,
+  "n": 3,
+  "nome": "Phantom Breaker: Battle Grounds",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-phantom-breaker-extra": {
   "nao": "sem-resultado",
@@ -10816,9 +11816,85 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-phineas-and-ferb-quest-for-cool-stuff": {
+  "ano": 2013,
+  "cem": 4.5,
+  "hltb": 21189,
+  "main": 2.3,
+  "n": 5,
+  "nome": "Phineas and Ferb: Quest for Cool Stuff",
+  "plus": 3.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-pia-carrot-e-youkoso-4-natsu-no-koikatsu": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "x360-pid": {
+  "ano": 2012,
+  "hltb": 7038,
+  "main": 9.0,
+  "n": 1,
+  "nome": "Pid",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pimp-my-ride": {
+  "ano": 2006,
+  "hltb": 12252,
+  "main": 7.3,
+  "n": 2,
+  "nome": "Pimp My Ride",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pinball-fx": {
+  "ano": 2007,
+  "hltb": 20283,
+  "n": 1,
+  "nome": "Pinball FX",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pinball-fx-2": {
+  "ano": 2010,
+  "hltb": 7052,
+  "main": 12.1,
+  "n": 2,
+  "nome": "Pinball FX 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pinball-hall-of-fame-the-williams-collection": {
+  "ano": 2008,
+  "cem": 35.0,
+  "hltb": 7053,
+  "n": 1,
+  "nome": "Pinball Hall of Fame: The Williams Collection",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pirates-of-the-caribbean-at-world-s-end": {
+  "ano": 2007,
+  "hltb": 7066,
+  "main": 7.3,
+  "n": 3,
+  "nome": "Pirates of the Caribbean: At World's End",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pirates-vs-ninjas-dodgeball": {
+  "ano": 2008,
+  "hltb": 81039,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Pirates vs Ninjas Dodgeball",
+  "plus": 1.5,
+  "v": 2,
+  "via": "geral"
  },
  "x360-planet-51": {
   "nao": "nenhum-casou",
@@ -10828,37 +11904,400 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-plants-vs-zombies": {
+  "ano": 2009,
+  "cem": 40.4,
+  "hltb": 7106,
+  "main": 8.4,
+  "n": 61,
+  "nome": "Plants vs. Zombies",
+  "plus": 18.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-plants-vs-zombies-garden-warfare": {
+  "ano": 2014,
+  "hltb": 17076,
+  "main": 8.0,
+  "n": 4,
+  "nome": "Plants vs. Zombies: Garden Warfare",
+  "plus": 57.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pocketbike-racer": {
+  "ano": 2006,
+  "cem": 4.2,
+  "hltb": 7126,
+  "main": 1.9,
+  "n": 7,
+  "nome": "PocketBike Racer",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-poker-night-2": {
+  "ano": 2013,
+  "cem": 13.5,
+  "hltb": 7186,
+  "main": 6.2,
+  "n": 5,
+  "nome": "Poker Night 2",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-poker-smash": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-polar-panic": {
+  "ano": 2009,
+  "hltb": 15432,
+  "main": 3.6,
+  "n": 1,
+  "nome": "Polar Panic",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pool-nation": {
+  "ano": 2012,
+  "hltb": 7205,
+  "main": 13.0,
+  "n": 1,
+  "nome": "Pool Nation",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-port-royale-3-pirates-and-merchants": {
+  "ano": 2012,
+  "hltb": 7228,
+  "main": 14.3,
+  "n": 4,
+  "nome": "Port Royale 3: Pirates & Merchants",
+  "plus": 22.9,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-portal-2": {
+  "ano": 2011,
+  "cem": 20.8,
+  "hltb": 7231,
+  "main": 8.8,
+  "n": 291,
+  "nome": "Portal 2",
+  "plus": 12.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-portal-still-alive": {
+  "ano": 2008,
+  "cem": 7.9,
+  "hltb": 7235,
+  "main": 2.8,
+  "n": 41,
+  "nome": "Portal: Still Alive",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-power-gig-rise-of-the-sixstring": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-power-rangers-super-samurai": {
+  "ano": 2012,
+  "hltb": 35955,
+  "main": 2.0,
+  "n": 2,
+  "nome": "Power Rangers Super Samurai",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-powerup-forever": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-powerup-heroes": {
+  "ano": 2011,
+  "hltb": 13412,
+  "n": 2,
+  "nome": "PowerUp Heroes",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-prey": {
+  "ano": 2006,
+  "cem": 15.8,
+  "hltb": 7278,
+  "main": 8.0,
+  "n": 72,
+  "nome": "Prey",
+  "plus": 9.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-prince-of-persia": {
+  "ano": 2008,
+  "cem": 17.3,
+  "hltb": 7288,
+  "main": 11.7,
+  "n": 107,
+  "nome": "Prince of Persia",
+  "plus": 14.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-prince-of-persia-classic": {
+  "ano": 2007,
+  "hltb": 7292,
+  "main": 2.0,
+  "n": 13,
+  "nome": "Prince of Persia Classic",
+  "plus": 2.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-prince-of-persia-the-forgotten-sands": {
+  "ano": 2010,
+  "cem": 10.7,
+  "hltb": 7296,
+  "main": 8.1,
+  "n": 91,
+  "nome": "Prince of Persia: The Forgotten Sands",
+  "plus": 9.2,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-prison-architect-xbox-360-edition": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-prison-break-the-conspiracy": {
+  "ano": 2010,
+  "cem": 15.9,
+  "hltb": 7309,
+  "main": 5.4,
+  "n": 9,
+  "nome": "Prison Break: The Conspiracy",
+  "plus": 8.1,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-prize-driver": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-pro-evolution-soccer-2008": {
+  "ano": 2007,
+  "cem": 103.4,
+  "hltb": 7318,
+  "main": 10.0,
+  "n": 3,
+  "nome": "Pro Evolution Soccer 2008",
+  "plus": 35.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2009": {
+  "ano": 2008,
+  "cem": 82.2,
+  "hltb": 7319,
+  "main": 23.8,
+  "n": 5,
+  "nome": "Pro Evolution Soccer 2009",
+  "plus": 52.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-pro-evolution-soccer-2010": {
+  "ano": 2009,
+  "hltb": 7320,
+  "main": 50.0,
+  "n": 1,
+  "nome": "Pro Evolution Soccer 2010",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2011": {
+  "ano": 2010,
+  "cem": 272.0,
+  "hltb": 7321,
+  "main": 10.0,
+  "n": 5,
+  "nome": "Pro Evolution Soccer 2011",
+  "plus": 76.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2012": {
+  "ano": 2011,
+  "hltb": 7323,
+  "n": 3,
+  "nome": "Pro Evolution Soccer 2012",
+  "plus": 65.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2013": {
+  "ano": 2012,
+  "hltb": 7324,
+  "n": 2,
+  "nome": "Pro Evolution Soccer 2013",
+  "plus": 85.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2014": {
+  "ano": 2013,
+  "hltb": 14188,
+  "main": 20.0,
+  "n": 1,
+  "nome": "Pro Evolution Soccer 2014",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2015": {
+  "ano": 2014,
+  "cem": 150.0,
+  "hltb": 22529,
+  "n": 1,
+  "nome": "Pro Evolution Soccer 2015",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-2016": {
+  "ano": 2015,
+  "hltb": 30359,
+  "main": 46.0,
+  "n": 1,
+  "nome": "Pro Evolution Soccer 2016",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-pro-evolution-soccer-2017": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-pro-evolution-soccer-2018": {
+  "ano": 2017,
+  "hltb": 49143,
+  "main": 42.7,
+  "n": 5,
+  "nome": "Pro Evolution Soccer 2018",
+  "plus": 230.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pro-evolution-soccer-6": {
+  "ano": 2006,
+  "hltb": 7328,
+  "main": 33.5,
+  "n": 2,
+  "nome": "Pro Evolution Soccer 6",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-pro-yakyu-spirits-3": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-project-gotham-racing-3": {
+  "ano": 2005,
+  "cem": 35.0,
+  "hltb": 7350,
+  "main": 8.3,
+  "n": 31,
+  "nome": "Project Gotham Racing 3",
+  "plus": 21.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-project-gotham-racing-4": {
+  "ano": 2007,
+  "cem": 55.0,
+  "hltb": 7351,
+  "main": 14.1,
+  "n": 38,
+  "nome": "Project Gotham Racing 4",
+  "plus": 26.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-project-sylpheed": {
+  "ano": 2006,
+  "hltb": 7356,
+  "main": 6.6,
+  "n": 15,
+  "nome": "Project Sylpheed",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-prototype": {
+  "ano": 2009,
+  "cem": 34.5,
+  "hltb": 7365,
+  "main": 11.3,
+  "n": 85,
+  "nome": "Prototype",
+  "plus": 18.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-prototype-2": {
+  "ano": 2012,
+  "cem": 18.9,
+  "hltb": 7366,
+  "main": 9.6,
+  "n": 58,
+  "nome": "Prototype 2",
+  "plus": 14.2,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-puddle": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-pure": {
+  "ano": 2008,
+  "cem": 16.8,
+  "hltb": 7393,
+  "main": 8.3,
+  "n": 20,
+  "nome": "Pure",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-pure-football": {
+  "ano": 2010,
+  "hltb": 12202,
+  "main": 3.0,
+  "n": 2,
+  "nome": "Pure Football",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-puss-in-boots": {
+  "ano": 2011,
+  "hltb": 7402,
+  "n": 3,
+  "nome": "Puss in Boots",
+  "plus": 3.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-putty-squad": {
+  "ano": 1994,
+  "cem": 10.2,
+  "hltb": 24308,
+  "main": 3.4,
+  "n": 3,
+  "nome": "Putty Squad",
+  "v": 2,
+  "via": "geral"
  },
  "x360-puzzle-arcade": {
   "nao": "sem-medida",
@@ -10868,6 +12307,48 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-puzzle-chronicles": {
+  "ano": 2010,
+  "cem": 26.0,
+  "hltb": 7419,
+  "n": 2,
+  "nome": "Puzzle Chronicles",
+  "plus": 40.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-puzzle-quest-2": {
+  "ano": 2010,
+  "cem": 51.8,
+  "hltb": 7426,
+  "main": 39.5,
+  "n": 7,
+  "nome": "Puzzle Quest 2",
+  "plus": 42.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-puzzle-quest-challenge-of-the-warlords": {
+  "ano": 2007,
+  "cem": 58.5,
+  "hltb": 7427,
+  "main": 36.9,
+  "n": 18,
+  "nome": "Puzzle Quest: Challenge of the Warlords",
+  "plus": 44.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-puzzle-quest-galactrix": {
+  "ano": 2009,
+  "cem": 21.0,
+  "hltb": 7428,
+  "n": 2,
+  "nome": "Puzzle Quest: Galactrix",
+  "plus": 17.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-puzzlegeddon": {
   "nao": "sem-medida",
   "v": 2
@@ -10875,6 +12356,53 @@
  "x360-qix-plus-plus": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-quake-4": {
+  "ano": 2005,
+  "cem": 22.0,
+  "hltb": 7453,
+  "main": 8.5,
+  "n": 18,
+  "nome": "Quake 4",
+  "plus": 12.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-quake-arena-arcade": {
+  "ano": 2010,
+  "cem": 28.0,
+  "hltb": 15263,
+  "n": 1,
+  "nome": "Quake Arena Arcade",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-quantum-conundrum": {
+  "ano": 2012,
+  "hltb": 7464,
+  "main": 7.0,
+  "n": 18,
+  "nome": "Quantum Conundrum",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-quantum-theory": {
+  "ano": 2010,
+  "hltb": 7469,
+  "main": 6.7,
+  "n": 8,
+  "nome": "Quantum Theory",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-quarrel": {
+  "hltb": 7472,
+  "n": 1,
+  "nome": "Quarrel",
+  "plus": 9.8,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-qubed": {
   "nao": "sem-resultado",
@@ -10888,6 +12416,16 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-r-type-dimensions-r-type-and-r-type-ii": {
+  "ano": 2010,
+  "cem": 3.2,
+  "hltb": 7493,
+  "main": 1.6,
+  "n": 4,
+  "nome": "R-Type Dimensions",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-r-u-s-e": {
   "nao": "nenhum-casou",
   "v": 2
@@ -10896,13 +12434,104 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-race-driver-grid": {
+  "ano": 2008,
+  "hltb": 7510,
+  "main": 20.9,
+  "n": 11,
+  "nome": "Race Driver: Grid",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-race-pro": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-radiant-silvergun": {
+  "ano": 1998,
+  "cem": 15.7,
+  "hltb": 7519,
+  "main": 6.2,
+  "n": 4,
+  "nome": "Radiant Silvergun",
+  "plus": 42.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-radirgy-noa-massive": {
+  "ano": 2010,
+  "hltb": 15292,
+  "n": 1,
+  "nome": "Radirgy Noa Massive",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rage": {
+  "ano": 2011,
+  "cem": 22.2,
+  "hltb": 7526,
+  "main": 11.0,
+  "n": 118,
+  "nome": "Rage",
+  "plus": 15.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-raiden-fighters-aces": {
+  "ano": 2008,
+  "hltb": 7541,
+  "main": 0.6,
+  "n": 2,
+  "nome": "Raiden Fighters Aces",
+  "plus": 6.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-raiden-iv": {
+  "ano": 2007,
+  "cem": 9.8,
+  "hltb": 7545,
+  "main": 1.3,
+  "n": 6,
+  "nome": "Raiden IV",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-rainbow-islands-towering-adventure": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-rambo-the-video-game": {
+  "ano": 2014,
+  "cem": 9.0,
+  "hltb": 16884,
+  "main": 3.7,
+  "n": 6,
+  "nome": "Rambo: The Video Game",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rango": {
+  "ano": 2011,
+  "cem": 6.6,
+  "hltb": 7574,
+  "main": 5.0,
+  "n": 5,
+  "nome": "Rango",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rapala-fishing-frenzy-2009": {
+  "ano": 2008,
+  "cem": 17.1,
+  "hltb": 28874,
+  "n": 1,
+  "nome": "Rapala Fishing Frenzy 2009",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-rapala-for-kinect": {
   "nao": "sem-medida",
@@ -10916,6 +12545,87 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-raskulls": {
+  "ano": 2010,
+  "cem": 3.0,
+  "hltb": 7580,
+  "main": 1.6,
+  "n": 7,
+  "nome": "Raskulls",
+  "plus": 3.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ratatouille": {
+  "ano": 2007,
+  "cem": 16.5,
+  "hltb": 7584,
+  "n": 2,
+  "nome": "Ratatouille",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-raven-squad-operation-hidden-dagger": {
+  "ano": 2009,
+  "hltb": 7599,
+  "main": 5.1,
+  "n": 5,
+  "nome": "Raven Squad: Operation Hidden Dagger",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-raving-rabbids-alive-and-kicking": {
+  "ano": 2011,
+  "hltb": 32181,
+  "main": 2.5,
+  "n": 1,
+  "nome": "Raving Rabbids: Alive & Kicking",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rayman-3-hd": {
+  "ano": 2012,
+  "hltb": 7611,
+  "main": 8.5,
+  "n": 12,
+  "nome": "Rayman 3 HD",
+  "plus": 7.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rayman-legends": {
+  "ano": 2013,
+  "cem": 30.0,
+  "hltb": 12655,
+  "main": 10.4,
+  "n": 56,
+  "nome": "Rayman Legends",
+  "plus": 16.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rayman-origins": {
+  "ano": 2011,
+  "cem": 23.3,
+  "hltb": 7619,
+  "main": 11.8,
+  "n": 89,
+  "nome": "Rayman Origins",
+  "plus": 16.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rayman-raving-rabbids": {
+  "ano": 2006,
+  "cem": 11.0,
+  "hltb": 7620,
+  "main": 5.6,
+  "n": 11,
+  "nome": "Rayman Raving Rabbids",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-raystorm-hd": {
   "nao": "nenhum-casou",
   "v": 2
@@ -10923,6 +12633,16 @@
  "x360-reaction-rally": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-real-steel": {
+  "ano": 2011,
+  "hltb": 17636,
+  "main": 2.2,
+  "n": 1,
+  "nome": "Real Steel",
+  "plus": 3.0,
+  "v": 2,
+  "via": "geral"
  },
  "x360-realms-of-ancient-war-a-k-a-r-a-w": {
   "nao": "sem-resultado",
@@ -10932,6 +12652,16 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-record-of-agarest-war-zero": {
+  "ano": 2009,
+  "hltb": 7670,
+  "main": 120.0,
+  "n": 2,
+  "nome": "Record of Agarest War Zero",
+  "plus": 68.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-red-bull-crashed-ice-kinect": {
   "nao": "sem-medida",
   "v": 2
@@ -10939,6 +12669,60 @@
  "x360-red-bull-x-fighters": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-red-dead-redemption": {
+  "ano": 2010,
+  "cem": 46.9,
+  "hltb": 7676,
+  "main": 18.2,
+  "n": 754,
+  "nome": "Red Dead Redemption",
+  "plus": 28.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-red-dead-redemption-undead-nightmare": {
+  "ano": 2010,
+  "cem": 13.1,
+  "hltb": 7677,
+  "main": 7.1,
+  "n": 148,
+  "nome": "Red Dead Redemption: Undead Nightmare",
+  "plus": 8.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-red-faction-armageddon": {
+  "ano": 2011,
+  "cem": 24.0,
+  "hltb": 7685,
+  "main": 8.4,
+  "n": 41,
+  "nome": "Red Faction: Armageddon",
+  "plus": 11.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-red-faction-battlegrounds": {
+  "ano": 2011,
+  "cem": 10.5,
+  "hltb": 7687,
+  "main": 1.3,
+  "n": 3,
+  "nome": "Red Faction: Battlegrounds",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-red-faction-guerrilla": {
+  "ano": 2009,
+  "cem": 83.1,
+  "hltb": 7689,
+  "main": 13.1,
+  "n": 54,
+  "nome": "Red Faction: Guerrilla",
+  "plus": 18.9,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-red-johnson-s-chronicles-one-against-all": {
   "nao": "so-outra-plataforma",
@@ -10948,29 +12732,465 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-remember-me": {
+  "ano": 2013,
+  "cem": 15.6,
+  "hltb": 7702,
+  "main": 9.8,
+  "n": 58,
+  "nome": "Remember Me",
+  "plus": 11.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-renegade-ops": {
+  "ano": 2011,
+  "hltb": 7705,
+  "main": 4.7,
+  "n": 8,
+  "nome": "Renegade Ops",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-4": {
+  "ano": 2005,
+  "cem": 29.0,
+  "hltb": 7720,
+  "main": 16.3,
+  "n": 76,
+  "nome": "Resident Evil 4",
+  "plus": 19.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-5": {
+  "ano": 2009,
+  "cem": 37.2,
+  "hltb": 7722,
+  "main": 13.0,
+  "n": 215,
+  "nome": "Resident Evil 5",
+  "plus": 19.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-6": {
+  "ano": 2012,
+  "cem": 52.1,
+  "hltb": 7725,
+  "main": 21.6,
+  "n": 133,
+  "nome": "Resident Evil 6",
+  "plus": 28.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-code-veronica-x": {
+  "ano": 2000,
+  "cem": 17.2,
+  "hltb": 7727,
+  "main": 11.0,
+  "n": 40,
+  "nome": "Resident Evil Code: Veronica X",
+  "plus": 15.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-hd-remaster": {
+  "ano": 2014,
+  "cem": 43.9,
+  "hltb": 22906,
+  "main": 10.0,
+  "n": 16,
+  "nome": "Resident Evil: HD Remaster",
+  "plus": 13.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-operation-raccoon-city": {
+  "ano": 2012,
+  "cem": 14.2,
+  "hltb": 7739,
+  "main": 5.9,
+  "n": 56,
+  "nome": "Resident Evil: Operation Raccoon City",
+  "plus": 7.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-revelations": {
+  "ano": 2012,
+  "cem": 28.1,
+  "hltb": 7742,
+  "main": 9.0,
+  "n": 61,
+  "nome": "Resident Evil: Revelations",
+  "plus": 13.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-revelations-2": {
+  "ano": 2015,
+  "cem": 20.5,
+  "hltb": 21258,
+  "main": 12.6,
+  "n": 18,
+  "nome": "Resident Evil: Revelations 2",
+  "plus": 14.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resident-evil-zero-hd-remaster": {
+  "ano": 2016,
+  "hltb": 33676,
+  "main": 11.3,
+  "n": 5,
+  "nome": "Resident Evil Zero: HD Remaster",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-resonance-of-fate": {
+  "ano": 2010,
+  "cem": 103.0,
+  "hltb": 7753,
+  "main": 55.0,
+  "n": 24,
+  "nome": "Resonance of Fate",
+  "plus": 64.2,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-retro-city-rampage-retro-city-rampage-dx": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-rez-hd": {
+  "ano": 2008,
+  "hltb": 7785,
+  "main": 2.8,
+  "n": 11,
+  "nome": "Rez HD",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-rhythm-party-boom-boom-dance": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-ride": {
+  "ano": 2015,
+  "cem": 35.5,
+  "hltb": 25275,
+  "main": 12.2,
+  "n": 9,
+  "nome": "Ride",
+  "plus": 23.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-ride-to-hell-retribution": {
+  "ano": 2013,
+  "cem": 17.3,
+  "hltb": 11721,
+  "main": 9.0,
+  "n": 11,
+  "nome": "Ride to Hell: Retribution",
+  "plus": 16.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ridge-racer-6": {
+  "ano": 2005,
+  "cem": 28.7,
+  "hltb": 7807,
+  "main": 8.0,
+  "n": 5,
+  "nome": "Ridge Racer 6",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ridge-racer-unbounded": {
+  "ano": 2012,
+  "hltb": 7812,
+  "main": 9.6,
+  "n": 3,
+  "nome": "Ridge Racer: Unbounded",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rio": {
+  "ano": 2012,
+  "cem": 8.1,
+  "hltb": 21635,
+  "n": 2,
+  "nome": "Rio",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rise-of-nightmares": {
+  "ano": 2011,
+  "cem": 32.3,
+  "hltb": 7836,
+  "main": 7.1,
+  "n": 15,
+  "nome": "Rise of Nightmares",
+  "plus": 17.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rise-of-the-argonauts": {
+  "ano": 2008,
+  "hltb": 7837,
+  "main": 12.8,
+  "n": 8,
+  "nome": "Rise of the Argonauts",
+  "plus": 13.8,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-rise-of-the-guardians": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-rise-of-the-tomb-raider": {
+  "ano": 2015,
+  "cem": 30.1,
+  "hltb": 19266,
+  "main": 13.0,
+  "n": 53,
+  "nome": "Rise of the Tomb Raider",
+  "plus": 19.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-risen": {
+  "ano": 2009,
+  "cem": 44.5,
+  "hltb": 7843,
+  "main": 33.9,
+  "n": 14,
+  "nome": "Risen",
+  "plus": 63.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-risen-2-dark-waters": {
+  "ano": 2012,
+  "cem": 63.8,
+  "hltb": 7845,
+  "main": 39.5,
+  "n": 19,
+  "nome": "Risen 2: Dark Waters",
+  "plus": 43.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-risen-3-titan-lords": {
+  "ano": 2014,
+  "cem": 46.8,
+  "hltb": 20633,
+  "main": 27.6,
+  "n": 5,
+  "nome": "Risen 3: Titan Lords",
+  "plus": 63.3,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-risk": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-risk-factions": {
+  "ano": 2010,
+  "cem": 13.5,
+  "hltb": 7849,
+  "main": 2.3,
+  "n": 12,
+  "nome": "Risk: Factions",
+  "plus": 10.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-risk-urban-assault": {
+  "ano": 2016,
+  "hltb": 68867,
+  "main": 4.0,
+  "n": 1,
+  "nome": "Risk: Urban Assault",
+  "plus": 7.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-robert-ludlum-s-the-bourne-conspiracy": {
+  "ano": 2008,
+  "cem": 12.7,
+  "hltb": 7873,
+  "main": 6.6,
+  "n": 35,
+  "nome": "Robert Ludlum's The Bourne Conspiracy",
+  "plus": 8.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-roboblitz": {
+  "ano": 2006,
+  "hltb": 7883,
+  "main": 3.4,
+  "n": 10,
+  "nome": "RoboBlitz",
+  "plus": 4.9,
+  "v": 2,
+  "via": "geral"
+ },
  "x360-robotics-notes": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-robotron-2084": {
+  "ano": 1983,
+  "cem": 3.4,
+  "hltb": 7905,
+  "main": 0.4,
+  "n": 5,
+  "nome": "Robotron: 2084",
+  "plus": 1.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-rock-band": {
+  "ano": 2007,
+  "cem": 145.1,
+  "hltb": 7911,
+  "main": 8.7,
+  "n": 39,
+  "nome": "Rock Band",
+  "plus": 37.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-band-2": {
+  "ano": 2008,
+  "cem": 137.2,
+  "hltb": 7912,
+  "main": 10.2,
+  "n": 38,
+  "nome": "Rock Band 2",
+  "plus": 96.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-band-3": {
+  "ano": 2010,
+  "cem": 168.0,
+  "hltb": 7913,
+  "main": 9.4,
+  "n": 41,
+  "nome": "Rock Band 3",
+  "plus": 41.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-band-blitz": {
+  "ano": 2012,
+  "cem": 28.7,
+  "hltb": 7914,
+  "main": 4.6,
+  "n": 11,
+  "nome": "Rock Band Blitz",
+  "plus": 6.4,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-rock-band-classic-rock-track-pack": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-rock-band-country-track-pack": {
+  "ano": 2009,
+  "hltb": 14684,
+  "main": 1.6,
+  "n": 1,
+  "nome": "Rock Band Track Pack: Country",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-rock-band-country-track-pack-2": {
+  "ano": 2011,
+  "hltb": 40169,
+  "main": 1.5,
+  "n": 1,
+  "nome": "Rock Band: Country Track Pack 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-band-metal-track-pack": {
+  "ano": 2009,
+  "hltb": 14685,
+  "main": 2.1,
+  "n": 2,
+  "nome": "Rock Band Track Pack: Metal",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-rock-band-track-pack-volume-2": {
+  "ano": 2008,
+  "hltb": 14687,
+  "main": 2.0,
+  "n": 2,
+  "nome": "Rock Band Track Pack: Volume 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-of-ages": {
+  "ano": 2011,
+  "cem": 13.3,
+  "hltb": 7917,
+  "main": 5.8,
+  "n": 10,
+  "nome": "Rock of Ages",
+  "plus": 7.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-of-the-dead": {
+  "ano": 2010,
+  "cem": 17.0,
+  "hltb": 19330,
+  "n": 3,
+  "nome": "Rock of the Dead",
+  "plus": 8.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rock-revolution": {
+  "ano": 2008,
+  "hltb": 7918,
+  "main": 5.1,
+  "n": 3,
+  "nome": "Rock Revolution",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rocket-knight": {
+  "ano": 2010,
+  "hltb": 7921,
+  "main": 2.0,
+  "n": 15,
+  "nome": "Rocket Knight",
+  "plus": 2.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rocket-riot": {
+  "ano": 2009,
+  "cem": 11.5,
+  "hltb": 7927,
+  "n": 2,
+  "nome": "Rocket Riot",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-rocketbowl": {
   "nao": "sem-medida",
@@ -10980,13 +13200,84 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-rocksmith": {
+  "ano": 2011,
+  "hltb": 7932,
+  "main": 14.7,
+  "n": 5,
+  "nome": "Rocksmith",
+  "plus": 58.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-rocksmith-2014-edition": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-rockstar-games-presents-table-tennis": {
+  "ano": 2006,
+  "cem": 22.0,
+  "hltb": 7933,
+  "main": 3.6,
+  "n": 9,
+  "nome": "Rockstar Games Presents Table Tennis",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rocky-and-bullwinkle": {
+  "ano": 2008,
+  "cem": 5.0,
+  "hltb": 119197,
+  "n": 1,
+  "nome": "Rocky and Bullwinkle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-rogue-warrior": {
+  "ano": 2009,
+  "cem": 6.0,
+  "hltb": 7950,
+  "main": 2.9,
+  "n": 16,
+  "nome": "Rogue Warrior",
+  "plus": 4.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-roogoo": {
+  "ano": 2008,
+  "cem": 3.4,
+  "hltb": 7986,
+  "main": 2.4,
+  "n": 9,
+  "nome": "Roogoo",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-root-beer-tapper": {
+  "ano": 1983,
+  "hltb": 19324,
+  "main": 0.0,
+  "n": 7,
+  "nome": "Tapper",
+  "plus": 0.3,
+  "v": 2,
+  "via": "geral"
+ },
  "x360-root-double-before-crime-after-days": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-rotastic": {
+  "ano": 2011,
+  "hltb": 11876,
+  "main": 4.1,
+  "n": 4,
+  "nome": "Rotastic",
+  "plus": 7.2,
+  "v": 2,
+  "via": "geral"
  },
  "x360-rugby-15": {
   "nao": "so-outra-plataforma",
@@ -10995,6 +13286,15 @@
  "x360-rugby-challenge-2": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-rugby-challenge-3": {
+  "ano": 2016,
+  "hltb": 36974,
+  "main": 24.2,
+  "n": 1,
+  "nome": "Rugby Challenge 3",
+  "v": 2,
+  "via": "geral"
  },
  "x360-rugby-league-live": {
   "nao": "so-outra-plataforma",
@@ -11008,21 +13308,235 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-rugby-world-cup-2011": {
+  "ano": 2011,
+  "cem": 25.0,
+  "hltb": 8001,
+  "main": 16.0,
+  "n": 2,
+  "nome": "Rugby World Cup 2011",
+  "plus": 19.0,
+  "v": 2,
+  "via": "geral"
+ },
  "x360-rugby-world-cup-2015": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-rumble-roses-xx": {
+  "ano": 2006,
+  "hltb": 8011,
+  "main": 11.0,
+  "n": 4,
+  "nome": "Rumble Roses XX",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-runner2": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-rush-n-attack": {
+  "ano": 1985,
+  "cem": 1.1,
+  "hltb": 8031,
+  "main": 0.3,
+  "n": 24,
+  "nome": "Rush'N Attack",
+  "plus": 0.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-rush-n-attack-ex-patriot": {
+  "ano": 2011,
+  "hltb": 8032,
+  "n": 1,
+  "nome": "Rush'n Attack: Ex-Patriot",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sacred-2-fallen-angel": {
+  "ano": 2008,
+  "cem": 110.0,
+  "hltb": 8050,
+  "main": 21.7,
+  "n": 10,
+  "nome": "Sacred 2: Fallen Angel",
+  "plus": 58.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sacred-3": {
+  "ano": 2014,
+  "cem": 74.0,
+  "hltb": 20253,
+  "main": 9.0,
+  "n": 7,
+  "nome": "Sacred 3",
+  "plus": 8.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sacred-citadel": {
+  "ano": 2013,
+  "cem": 23.5,
+  "hltb": 8052,
+  "main": 6.8,
+  "n": 9,
+  "nome": "Sacred Citadel",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-saints-row": {
+  "ano": 2006,
+  "cem": 49.4,
+  "hltb": 8071,
+  "main": 16.9,
+  "n": 138,
+  "nome": "Saints Row",
+  "plus": 22.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-saints-row-2": {
+  "ano": 2008,
+  "cem": 58.0,
+  "hltb": 8072,
+  "main": 21.8,
+  "n": 143,
+  "nome": "Saints Row 2",
+  "plus": 28.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-saints-row-gat-out-of-hell": {
+  "ano": 2015,
+  "cem": 25.0,
+  "hltb": 21260,
+  "main": 4.7,
+  "n": 25,
+  "nome": "Saints Row: Gat out of Hell",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-saints-row-iv": {
+  "ano": 2013,
+  "cem": 36.3,
+  "hltb": 12650,
+  "main": 14.6,
+  "n": 147,
+  "nome": "Saints Row IV",
+  "plus": 22.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-saints-row-the-third": {
+  "ano": 2011,
+  "cem": 42.3,
+  "hltb": 8076,
+  "main": 15.2,
+  "n": 258,
+  "nome": "Saints Row: The Third",
+  "plus": 26.6,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-sakura-flamingo-archives": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-sam-and-max-beyond-time-and-space": {
+  "ano": 2007,
+  "cem": 15.5,
+  "hltb": 8111,
+  "main": 12.3,
+  "n": 7,
+  "nome": "Sam & Max: Beyond Time and Space",
+  "plus": 15.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sam-and-max-save-the-world": {
+  "ano": 2006,
+  "cem": 11.4,
+  "hltb": 8113,
+  "main": 11.7,
+  "n": 10,
+  "nome": "Sam & Max: Save the World",
+  "plus": 11.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-samurai-shodown-ii": {
+  "ano": 1994,
+  "cem": 8.0,
+  "hltb": 19411,
+  "main": 1.0,
+  "n": 2,
+  "nome": "Samurai Shodown II",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-samurai-shodown-sen": {
+  "ano": 2008,
+  "cem": 1.6,
+  "hltb": 8134,
+  "main": 0.4,
+  "n": 9,
+  "nome": "Samurai Shodown: Sen",
+  "plus": 2.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-samurai-warriors-2": {
+  "ano": 2006,
+  "cem": 50.1,
+  "hltb": 8138,
+  "main": 30.7,
+  "n": 9,
+  "nome": "Samurai Warriors 2",
+  "plus": 50.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-samurai-warriors-2-empires": {
+  "ano": 2006,
+  "cem": 15.8,
+  "hltb": 8139,
+  "main": 15.9,
+  "n": 6,
+  "nome": "Samurai Warriors 2 Empires",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sanctum-2": {
+  "ano": 2013,
+  "cem": 32.0,
+  "hltb": 8148,
+  "main": 11.8,
+  "n": 2,
+  "nome": "Sanctum 2",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-saw": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-saw-ii-flesh-and-blood": {
+  "ano": 2010,
+  "cem": 10.1,
+  "hltb": 8161,
+  "main": 8.5,
+  "n": 16,
+  "nome": "Saw II: Flesh & Blood",
+  "plus": 7.7,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-sbk-08-superbike-world-championship": {
   "nao": "sem-medida",
@@ -11036,9 +13550,61 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-sbk-generations": {
+  "ano": 2012,
+  "hltb": 8164,
+  "main": 21.0,
+  "n": 1,
+  "nome": "SBK Generations",
+  "plus": 24.0,
+  "v": 2,
+  "via": "geral"
+ },
  "x360-sbk-x-superbike-world-championship": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-scarygirl": {
+  "ano": 2011,
+  "cem": 37.0,
+  "hltb": 8169,
+  "main": 5.1,
+  "n": 3,
+  "nome": "Scarygirl",
+  "plus": 5.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-scene-it-box-office-smash": {
+  "ano": 2008,
+  "hltb": 8170,
+  "main": 2.0,
+  "n": 9,
+  "nome": "Scene It? Box Office Smash",
+  "plus": 4.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-scene-it-bright-lights-big-screen": {
+  "ano": 2009,
+  "hltb": 8171,
+  "main": 2.0,
+  "n": 2,
+  "nome": "Scene It? Bright Lights! Big Screen!",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-scene-it-lights-camera-action": {
+  "ano": 2007,
+  "cem": 11.0,
+  "hltb": 8172,
+  "main": 3.3,
+  "n": 10,
+  "nome": "Scene It? Lights, Camera, Action",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-scene-it-movie-night": {
   "nao": "sem-medida",
@@ -11048,17 +13614,188 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-score-international-baja-1000": {
+  "ano": 2008,
+  "cem": 6.0,
+  "hltb": 25082,
+  "main": 5.5,
+  "n": 3,
+  "nome": "SCORE International Baja 1000",
+  "plus": 5.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-scott-pilgrim-vs-the-world-the-game": {
+  "ano": 2010,
+  "cem": 15.1,
+  "hltb": 8184,
+  "main": 4.9,
+  "n": 25,
+  "nome": "Scott Pilgrim vs. the World: The Game",
+  "plus": 15.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-scourge-outbreak": {
+  "ano": 2013,
+  "hltb": 12088,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Scourge: Outbreak",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-scramble": {
+  "ano": 1981,
+  "cem": 7.8,
+  "hltb": 19313,
+  "main": 0.4,
+  "n": 8,
+  "nome": "Scramble",
+  "plus": 0.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-scrap-metal": {
+  "ano": 2010,
+  "hltb": 8186,
+  "main": 7.6,
+  "n": 2,
+  "nome": "Scrap Metal",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-screamride": {
+  "ano": 2015,
+  "hltb": 21715,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Screamride",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-screwjumper": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-sea-life-safari": {
+  "ano": 2007,
+  "cem": 4.3,
+  "hltb": 15155,
+  "n": 4,
+  "nome": "SeaLife Safari",
+  "plus": 4.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-secret-service": {
+  "ano": 2008,
+  "cem": 10.0,
+  "hltb": 8217,
+  "main": 4.2,
+  "n": 6,
+  "nome": "Secret Service",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-section-8": {
+  "ano": 2009,
+  "hltb": 8219,
+  "main": 2.8,
+  "n": 12,
+  "nome": "Section 8",
+  "plus": 4.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-section-8-prejudice": {
+  "ano": 2011,
+  "hltb": 8220,
+  "main": 4.2,
+  "n": 5,
+  "nome": "Section 8: Prejudice",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sega-bass-fishing": {
+  "ano": 1997,
+  "hltb": 8223,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Sega Bass Fishing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sega-rally-online-arcade": {
+  "ano": 2011,
+  "cem": 4.6,
+  "hltb": 8289,
+  "main": 0.3,
+  "n": 6,
+  "nome": "SEGA Rally Online Arcade",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sega-rally-revo": {
+  "ano": 2007,
+  "cem": 22.0,
+  "hltb": 8290,
+  "main": 8.8,
+  "n": 7,
+  "nome": "Sega Rally Revo",
+  "plus": 9.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sega-superstars-tennis": {
+  "ano": 2008,
+  "cem": 11.9,
+  "hltb": 8292,
+  "main": 6.9,
+  "n": 14,
+  "nome": "Sega Superstars Tennis",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-sega-vintage-collection-alex-kidd-and-co-alex-kidd-in-miracle-world-super-hang-on-the-revenge-of-shinobi": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-sega-vintage-collection-golden-axe-golden-axe-ii-iii": {
+  "ano": 1989,
+  "cem": 2.0,
+  "hltb": 3994,
+  "main": 0.9,
+  "n": 7,
+  "nome": "Golden Axe",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sega-vintage-collection-monster-world-wonder-boy-in-monster-land-wonder-boy-in-monster-world-monster-world-iv": {
+  "ano": 2012,
+  "cem": 49.0,
+  "hltb": 25891,
+  "n": 2,
+  "nome": "SEGA Vintage Collection: Monster World",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-sega-vintage-collection-streets-of-rage-streets-of-rage-2-3": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-sega-vintage-collection-toejam-and-earl-toejam-and-earl-panic-on-funkotron": {
+  "ano": 1991,
+  "cem": 6.7,
+  "hltb": 10396,
+  "main": 3.5,
+  "n": 2,
+  "nome": "ToeJam & Earl",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-self-defense-training-camp": {
   "nao": "sem-medida",
@@ -11068,9 +13805,183 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-sensible-world-of-soccer-swos": {
+  "ano": 1994,
+  "cem": 36.7,
+  "hltb": 8303,
+  "main": 8.0,
+  "n": 3,
+  "nome": "Sensible World of Soccer",
+  "plus": 30.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-serious-sam-3-bfe": {
+  "ano": 2011,
+  "hltb": 8309,
+  "main": 12.3,
+  "n": 2,
+  "nome": "Serious Sam 3: BFE",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-serious-sam-double-d-xxl": {
+  "ano": 2011,
+  "cem": 12.8,
+  "hltb": 14189,
+  "main": 2.8,
+  "n": 29,
+  "nome": "Serious Sam: Double D XXL",
+  "plus": 5.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-serious-sam-hd-the-first-encounter": {
+  "ano": 2009,
+  "hltb": 8312,
+  "main": 5.2,
+  "n": 12,
+  "nome": "Serious Sam HD: The First Encounter",
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-serious-sam-hd-the-second-encounter": {
+  "ano": 2010,
+  "hltb": 8313,
+  "main": 6.9,
+  "n": 6,
+  "nome": "Serious Sam HD: The Second Encounter",
+  "plus": 10.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sesame-street-once-upon-a-monster": {
+  "ano": 2011,
+  "hltb": 8324,
+  "main": 4.8,
+  "n": 2,
+  "nome": "Sesame Street: Once Upon a Monster",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shadow-assault-tenchu": {
+  "ano": 2008,
+  "hltb": 20009,
+  "n": 1,
+  "nome": "Shadow Assault: Tenchu",
+  "plus": 4.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shadow-complex": {
+  "ano": 2009,
+  "cem": 15.7,
+  "hltb": 8336,
+  "main": 6.2,
+  "n": 97,
+  "nome": "Shadow Complex",
+  "plus": 9.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shadowrun": {
+  "ano": 2007,
+  "cem": 66.3,
+  "hltb": 8363,
+  "main": 1.1,
+  "n": 5,
+  "nome": "Shadowrun",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shadows-of-the-damned": {
+  "ano": 2011,
+  "cem": 18.4,
+  "hltb": 8368,
+  "main": 8.6,
+  "n": 102,
+  "nome": "Shadows of the Damned",
+  "plus": 9.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shank": {
+  "ano": 2010,
+  "cem": 5.5,
+  "hltb": 8379,
+  "main": 3.6,
+  "n": 12,
+  "nome": "Shank",
+  "plus": 4.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shank-2": {
+  "ano": 2012,
+  "cem": 10.3,
+  "hltb": 8380,
+  "main": 4.0,
+  "n": 9,
+  "nome": "Shank 2",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-sharin-no-kuni-the-girl-among-the-sunflowers": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "x360-shaun-white-skateboarding": {
+  "ano": 2010,
+  "hltb": 8394,
+  "main": 12.0,
+  "n": 2,
+  "nome": "Shaun White Skateboarding",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shaun-white-snowboarding": {
+  "ano": 2008,
+  "hltb": 8395,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Shaun White Snowboarding",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shellshock-2-blood-trails": {
+  "ano": 2009,
+  "cem": 9.0,
+  "hltb": 8398,
+  "main": 4.4,
+  "n": 9,
+  "nome": "Shellshock 2: Blood Trails",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sherlock-holmes-crimes-and-punishments": {
+  "ano": 2014,
+  "cem": 12.5,
+  "hltb": 21386,
+  "main": 11.6,
+  "n": 6,
+  "nome": "Sherlock Holmes: Crimes and Punishments",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sherlock-holmes-vs-jack-the-ripper": {
+  "ano": 2009,
+  "cem": 9.5,
+  "hltb": 8403,
+  "main": 10.4,
+  "n": 11,
+  "nome": "Sherlock Holmes versus Jack the Ripper",
+  "plus": 11.4,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-shiei-no-sona-nyl-refrain-what-a-beautiful-memories": {
   "nao": "sem-resultado",
@@ -11088,6 +13999,17 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-shoot-many-robots": {
+  "ano": 2012,
+  "cem": 22.4,
+  "hltb": 8487,
+  "main": 5.4,
+  "n": 17,
+  "nome": "Shoot Many Robots",
+  "plus": 9.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-shooting-love-10-shuunen-xiizeal-and-deltazeal": {
   "nao": "sem-resultado",
   "v": 2
@@ -11100,6 +14022,24 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-shred-nebula": {
+  "ano": 2008,
+  "hltb": 67395,
+  "n": 1,
+  "nome": "Shred Nebula",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-shrek-forever-after": {
+  "ano": 2010,
+  "cem": 11.0,
+  "hltb": 8491,
+  "n": 2,
+  "nome": "Shrek Forever After",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-shrek-n-roll": {
   "nao": "sem-medida",
   "v": 2
@@ -11107,6 +14047,101 @@
  "x360-shrek-the-third": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-silent-hill-downpour": {
+  "ano": 2012,
+  "cem": 14.9,
+  "hltb": 8530,
+  "main": 8.8,
+  "n": 75,
+  "nome": "Silent Hill: Downpour",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-silent-hill-hd-collection": {
+  "ano": 2012,
+  "cem": 32.1,
+  "hltb": 8531,
+  "main": 15.7,
+  "n": 15,
+  "nome": "Silent Hill HD Collection",
+  "plus": 12.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-silent-hill-homecoming": {
+  "ano": 2008,
+  "cem": 18.6,
+  "hltb": 8528,
+  "main": 9.1,
+  "n": 61,
+  "nome": "Silent Hill: Homecoming",
+  "plus": 10.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sine-mora": {
+  "ano": 2012,
+  "hltb": 8581,
+  "main": 3.4,
+  "n": 7,
+  "nome": "Sine Mora",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-singularity": {
+  "ano": 2010,
+  "cem": 13.1,
+  "hltb": 8585,
+  "main": 8.0,
+  "n": 55,
+  "nome": "Singularity",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skate": {
+  "ano": 2007,
+  "cem": 44.0,
+  "hltb": 8597,
+  "main": 10.7,
+  "n": 24,
+  "nome": "Skate",
+  "plus": 19.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skate-2": {
+  "ano": 2009,
+  "cem": 63.0,
+  "hltb": 8598,
+  "main": 19.7,
+  "n": 23,
+  "nome": "Skate 2",
+  "plus": 25.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skate-3": {
+  "ano": 2010,
+  "cem": 46.9,
+  "hltb": 8599,
+  "main": 12.5,
+  "n": 75,
+  "nome": "Skate 3",
+  "plus": 28.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ski-doo-snowmobile-challenge": {
+  "ano": 2009,
+  "hltb": 17204,
+  "main": 7.8,
+  "n": 1,
+  "nome": "Ski-Doo: Snowmobile Challenge",
+  "v": 2,
+  "via": "geral"
  },
  "x360-ski-race": {
   "nao": "sem-medida",
@@ -11124,17 +14159,337 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-skydrift": {
+  "ano": 2011,
+  "hltb": 8617,
+  "main": 2.6,
+  "n": 1,
+  "nome": "SkyDrift",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skylanders-giants": {
+  "ano": 2012,
+  "cem": 37.2,
+  "hltb": 8621,
+  "main": 12.6,
+  "n": 19,
+  "nome": "Skylanders: Giants",
+  "plus": 30.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skylanders-imaginators": {
+  "ano": 2016,
+  "cem": 62.0,
+  "hltb": 41885,
+  "main": 12.0,
+  "n": 7,
+  "nome": "Skylanders: Imaginators",
+  "plus": 27.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skylanders-spyro-s-adventure": {
+  "ano": 2011,
+  "cem": 23.4,
+  "hltb": 8622,
+  "main": 10.4,
+  "n": 25,
+  "nome": "Skylanders: Spyro's Adventure",
+  "plus": 17.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skylanders-superchargers": {
+  "ano": 2015,
+  "cem": 29.5,
+  "hltb": 31187,
+  "main": 11.9,
+  "n": 8,
+  "nome": "Skylanders: SuperChargers",
+  "plus": 45.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skylanders-swap-force": {
+  "ano": 2013,
+  "cem": 36.8,
+  "hltb": 14812,
+  "main": 11.1,
+  "n": 13,
+  "nome": "Skylanders: Swap Force",
+  "plus": 33.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-skylanders-trap-team": {
+  "ano": 2014,
+  "cem": 29.0,
+  "hltb": 21667,
+  "main": 9.8,
+  "n": 9,
+  "nome": "Skylanders: Trap Team",
+  "plus": 35.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sleeping-dogs": {
+  "ano": 2012,
+  "cem": 34.3,
+  "hltb": 8640,
+  "main": 15.7,
+  "n": 224,
+  "nome": "Sleeping Dogs",
+  "plus": 21.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-slender-the-arrival": {
+  "ano": 2013,
+  "cem": 4.7,
+  "hltb": 13981,
+  "main": 2.0,
+  "n": 16,
+  "nome": "Slender: The Arrival",
+  "plus": 2.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-small-arms": {
+  "ano": 2006,
+  "hltb": 17602,
+  "main": 1.1,
+  "n": 5,
+  "nome": "Small Arms",
+  "plus": 2.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-smash-court-tennis-3": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-smash-tv": {
+  "ano": 1990,
+  "hltb": 8661,
+  "main": 1.2,
+  "n": 5,
+  "nome": "Smash TV",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sneak-king": {
+  "ano": 2006,
+  "hltb": 8676,
+  "main": 2.9,
+  "n": 9,
+  "nome": "Sneak King",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sniper-elite-iii": {
+  "ano": 2014,
+  "hltb": 19547,
+  "main": 8.9,
+  "n": 7,
+  "nome": "Sniper Elite III",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sniper-elite-v2": {
+  "ano": 2012,
+  "cem": 30.4,
+  "hltb": 8679,
+  "main": 8.2,
+  "n": 45,
+  "nome": "Sniper Elite V2",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sniper-ghost-warrior": {
+  "ano": 2010,
+  "cem": 8.0,
+  "hltb": 8686,
+  "main": 6.3,
+  "n": 18,
+  "nome": "Sniper: Ghost Warrior",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sniper-ghost-warrior-2": {
+  "ano": 2013,
+  "cem": 7.4,
+  "hltb": 8688,
+  "main": 5.4,
+  "n": 12,
+  "nome": "Sniper: Ghost Warrior 2",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-snipers": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-snoopy-flying-ace": {
+  "ano": 2010,
+  "hltb": 12725,
+  "main": 2.4,
+  "n": 5,
+  "nome": "Snoopy Flying Ace",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-soldier-of-fortune-payback": {
+  "ano": 2007,
+  "hltb": 8726,
+  "main": 3.4,
+  "n": 10,
+  "nome": "Soldier of Fortune: Payback",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-soltrio-solitaire": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-sonic-adventure": {
+  "ano": 1998,
+  "cem": 50.6,
+  "hltb": 8748,
+  "main": 8.4,
+  "n": 23,
+  "nome": "Sonic Adventure",
+  "plus": 12.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-adventure-2": {
+  "ano": 2001,
+  "cem": 53.0,
+  "hltb": 8749,
+  "main": 9.2,
+  "n": 19,
+  "nome": "Sonic Adventure 2",
+  "plus": 15.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-and-all-stars-racing-transformed": {
+  "ano": 2012,
+  "cem": 52.1,
+  "hltb": 8739,
+  "main": 7.7,
+  "n": 31,
+  "nome": "Sonic & All-Stars Racing Transformed",
+  "plus": 21.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-and-knuckles": {
+  "ano": 1994,
+  "cem": 3.0,
+  "hltb": 8741,
+  "main": 2.2,
+  "n": 17,
+  "nome": "Sonic & Knuckles",
+  "plus": 3.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-and-sega-all-stars-racing": {
+  "ano": 2010,
+  "cem": 16.1,
+  "hltb": 8742,
+  "main": 5.6,
+  "n": 36,
+  "nome": "Sonic & Sega All-Stars Racing",
+  "plus": 19.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-cd": {
+  "ano": 1993,
+  "cem": 4.4,
+  "hltb": 8793,
+  "main": 1.8,
+  "n": 25,
+  "nome": "Sonic CD",
+  "plus": 3.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-free-riders": {
+  "ano": 2010,
+  "cem": 9.6,
+  "hltb": 17202,
+  "main": 6.2,
+  "n": 9,
+  "nome": "Sonic Free Riders",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-generations": {
+  "ano": 2011,
+  "cem": 24.6,
+  "hltb": 8763,
+  "main": 6.3,
+  "n": 129,
+  "nome": "Sonic Generations",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-s-ultimate-genesis-collection": {
+  "ano": 2009,
+  "cem": 20.7,
+  "hltb": 8799,
+  "main": 13.8,
+  "n": 14,
+  "nome": "Sonic's Ultimate Genesis Collection",
+  "plus": 21.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-the-fighters": {
+  "ano": 1996,
+  "cem": 0.8,
+  "hltb": 8782,
+  "main": 0.7,
+  "n": 37,
+  "nome": "Sonic the Fighters",
+  "plus": 1.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-the-hedgehog": {
+  "ano": 2006,
+  "cem": 25.4,
+  "hltb": 8785,
+  "main": 15.4,
+  "n": 68,
+  "nome": "Sonic the Hedgehog",
+  "plus": 20.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-sonic-the-hedgehog-2": {
+  "ano": 2006,
+  "cem": 25.4,
+  "hltb": 8785,
+  "main": 15.4,
+  "n": 68,
+  "nome": "Sonic the Hedgehog",
+  "plus": 20.2,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-sonic-the-hedgehog-2-2": {
   "nao": "so-outra-plataforma",
@@ -11152,13 +14507,125 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-sonic-unleashed": {
+  "ano": 2008,
+  "cem": 25.7,
+  "hltb": 8798,
+  "main": 13.0,
+  "n": 68,
+  "nome": "Sonic Unleashed",
+  "plus": 16.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-soulcalibur": {
+  "ano": 1999,
+  "cem": 9.7,
+  "hltb": 8821,
+  "main": 1.2,
+  "n": 16,
+  "nome": "Soulcalibur",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-soulcalibur-ii-hd-online": {
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-soulcalibur-iv": {
+  "ano": 2008,
+  "cem": 58.4,
+  "hltb": 8824,
+  "main": 3.1,
+  "n": 53,
+  "nome": "Soulcalibur IV",
+  "plus": 12.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-soulcalibur-v": {
+  "ano": 2012,
+  "cem": 67.0,
+  "hltb": 8815,
+  "main": 2.5,
+  "n": 49,
+  "nome": "Soulcalibur V",
+  "plus": 24.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-south-park-let-s-go-tower-defense-play": {
+  "ano": 2009,
+  "cem": 8.2,
+  "hltb": 8831,
+  "main": 4.1,
+  "n": 12,
+  "nome": "South Park Let's Go Tower Defense Play!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-south-park-tenorman-s-revenge": {
+  "ano": 2012,
+  "hltb": 15876,
+  "main": 9.5,
+  "n": 3,
+  "nome": "South Park: Tenorman's Revenge",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-south-park-the-stick-of-truth": {
+  "ano": 2014,
+  "cem": 18.3,
+  "hltb": 8833,
+  "main": 11.5,
+  "n": 264,
+  "nome": "South Park: The Stick of Truth",
+  "plus": 13.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-space-ark": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-space-channel-5-part-2": {
+  "ano": 2002,
+  "hltb": 8841,
+  "main": 2.5,
+  "n": 3,
+  "nome": "Space Channel 5: Part 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-space-chimps": {
+  "ano": 2008,
+  "hltb": 21191,
+  "main": 1.3,
+  "n": 2,
+  "nome": "Space Chimps",
+  "plus": 2.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-space-giraffe": {
+  "ano": 2007,
+  "hltb": 8849,
+  "n": 1,
+  "nome": "Space Giraffe",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-space-invaders-extreme": {
+  "ano": 2008,
+  "hltb": 8855,
+  "main": 1.2,
+  "n": 9,
+  "nome": "Space Invaders Extreme",
+  "plus": 6.7,
+  "v": 2,
+  "via": "geral"
  },
  "x360-special-forces-team-x-stx": {
   "nao": "so-outra-plataforma",
@@ -11790,9 +15257,39 @@
   "v": 2,
   "via": "plataforma"
  },
+ "x360-the-orange-box": {
+  "ano": 2007,
+  "cem": 71.8,
+  "hltb": 10122,
+  "main": 23.0,
+  "n": 36,
+  "nome": "The Orange Box",
+  "plus": 28.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-outfit": {
+  "ano": 2006,
+  "hltb": 10125,
+  "main": 8.0,
+  "n": 10,
+  "nome": "The Outfit",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-the-path-of-go": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-the-peanuts-movie-snoopy-s-grand-adventure": {
+  "ano": 2015,
+  "hltb": 31901,
+  "n": 1,
+  "nome": "The Peanuts Movie: Snoopy's Grand Adventure",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-the-pinball-arcade": {
   "nao": "so-outra-plataforma",
@@ -11801,6 +15298,91 @@
  "x360-the-price-is-right-the-decades": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-the-raven-legacy-of-a-master-thief": {
+  "ano": 2013,
+  "cem": 13.5,
+  "hltb": 21041,
+  "main": 13.2,
+  "n": 5,
+  "nome": "The Raven: Legacy of a Master Thief",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-saboteur": {
+  "ano": 2009,
+  "cem": 44.0,
+  "hltb": 10157,
+  "main": 10.5,
+  "n": 40,
+  "nome": "The Saboteur",
+  "plus": 19.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-secret-of-monkey-island-special-edition": {
+  "ano": 1990,
+  "cem": 6.7,
+  "hltb": 10162,
+  "main": 6.3,
+  "n": 50,
+  "nome": "The Secret of Monkey Island",
+  "plus": 7.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-simpsons-arcade-game": {
+  "ano": 1991,
+  "cem": 6.0,
+  "hltb": 10175,
+  "main": 0.9,
+  "n": 13,
+  "nome": "The Simpsons Arcade Game",
+  "plus": 1.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-simpsons-game": {
+  "ano": 2007,
+  "cem": 20.7,
+  "hltb": 10176,
+  "main": 7.9,
+  "n": 43,
+  "nome": "The Simpsons Game",
+  "plus": 11.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-sims-3": {
+  "ano": 2010,
+  "cem": 107.4,
+  "hltb": 10194,
+  "main": 19.4,
+  "n": 82,
+  "nome": "The Sims 3",
+  "plus": 65.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-sims-3-pets": {
+  "ano": 2011,
+  "hltb": 10197,
+  "main": 7.0,
+  "n": 2,
+  "nome": "The Sims 3: Pets",
+  "plus": 20.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-the-smurfs-2": {
+  "ano": 2013,
+  "cem": 8.0,
+  "hltb": 15972,
+  "main": 3.0,
+  "n": 3,
+  "nome": "The Smurfs 2",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-the-splatters": {
   "nao": "sem-medida",

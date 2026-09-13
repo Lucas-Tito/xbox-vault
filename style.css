@@ -162,9 +162,6 @@ select:focus{border-color:var(--green)}
 .sheet h3{margin:0 0 4px;font-size:17px}
 .sheet p{color:var(--dim);font-size:13px;margin:0 0 16px}
 .sheet .btn{width:100%;margin-bottom:8px;text-align:left;display:flex;gap:10px;align-items:center}
-.drop{border:2px dashed var(--line);border-radius:var(--r);padding:26px;text-align:center;color:var(--dim);
-  margin-bottom:12px;transition:.15s}
-.drop.over{border-color:var(--green);background:rgba(82,176,67,.06);color:var(--txt)}
 .sheet-x{float:right;background:none;border:none;color:var(--dim);font-size:22px;line-height:1;padding:0 4px}
 
 .mobile-filters{display:none}
