@@ -3805,6 +3805,416 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "emu-gba-flame-of-recca": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-flashback-legends": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-flushed-away": {
+  "ano": 2006,
+  "hltb": 13823,
+  "main": 1.8,
+  "n": 2,
+  "nome": "Flushed Away",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-ford-racing-3": {
+  "ano": 2004,
+  "hltb": 3637,
+  "main": 5.3,
+  "n": 2,
+  "nome": "Ford Racing 3",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-formation-soccer-2002": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fortress": {
+  "ano": 2001,
+  "cem": 2.7,
+  "hltb": 15072,
+  "main": 2.2,
+  "n": 3,
+  "nome": "Fortress",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-foster-s-home-for-imaginary-friends": {
+  "ano": 2006,
+  "hltb": 34339,
+  "main": 2.6,
+  "n": 3,
+  "nome": "Foster's Home For Imaginary Friends",
+  "plus": 4.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-franklin-s-great-adventures": {
+  "ano": 2006,
+  "cem": 1.8,
+  "hltb": 45620,
+  "main": 1.6,
+  "n": 2,
+  "nome": "Franklin's Great Adventures",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-franklin-the-turtle": {
+  "ano": 2005,
+  "hltb": 96648,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Franklin the Turtle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-freekstyle": {
+  "ano": 2002,
+  "hltb": 3696,
+  "main": 7.4,
+  "n": 5,
+  "nome": "Freekstyle",
+  "plus": 14.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-frogger-advance-the-great-quest": {
+  "ano": 2002,
+  "hltb": 17958,
+  "main": 1.4,
+  "n": 2,
+  "nome": "Frogger Advance: The Great Quest",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-frogger-s-adventures-2-the-lost-wand": {
+  "ano": 2002,
+  "cem": 8.6,
+  "hltb": 89047,
+  "main": 4.2,
+  "n": 5,
+  "nome": "Frogger's Adventures 2: The Lost Wand",
+  "plus": 3.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-frogger-s-adventures-temple-of-the-frog": {
+  "ano": 2001,
+  "cem": 2.0,
+  "hltb": 15617,
+  "main": 1.5,
+  "n": 20,
+  "nome": "Frogger's Adventures: Temple of the Frog",
+  "plus": 0.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-frogger-s-journey-the-forgotten-relic": {
+  "ano": 2003,
+  "hltb": 17986,
+  "n": 1,
+  "nome": "Frogger's Journey: The Forgotten Relic",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-from-tv-animation-one-piece-mezase-king-of-berry": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-from-tv-animation-one-piece-nanatsu-shima-no-daihihou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fruits-mura-no-doubutsu-tachi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-fushigi-no-kuni-no-alice": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-fushigi-no-kuni-no-angelique": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-futari-wa-pretty-cure-arienaai-yume-no-sono-wa-daimeikyuu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-futari-wa-pretty-cure-max-heart-maji-maji-fight-de-in-janai": {
+  "hltb": 15483,
+  "main": 2.7,
+  "n": 3,
+  "nome": "Futari wa Pretty Cure: Max Heart -- Maji? Maji!? Fight de IN Janai",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-gachasute-dino-device-2-dragon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gachasute-dino-device-2-phoenix": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gachasute-dino-device-blue": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gachasute-dyna-device-red": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gachinko-pro-yakyuu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gadget-racers": {
+  "ano": 2000,
+  "cem": 6.4,
+  "hltb": 3786,
+  "main": 4.0,
+  "n": 3,
+  "nome": "Gadget Racers",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-gakkou-no-kaidan-hyakuyoubako-no-fuuin": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gakkou-o-tsukurou-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gakuen-alice-dokidoki-fushigi-taiken": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gakuen-senki-muryou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-galaxy-angel-game-boy-advance-moridakusan-tenshi-no-full-course-okawari-jiyuu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-galidor-defenders-of-the-outer-dimension": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-gambler-densetsu-tetsuya-yomigaeru-densetsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-all-grown-up-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-cartoon-network-collection-limited-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-cartoon-network-collection-platinum-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-cartoon-network-collection-premium-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-cartoon-network-collection-special-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-cartoon-network-collection-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-cartoon-network-collection-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-codename-kids-next-door-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-disney-channel-collection-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-disney-channel-collection-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-dora-the-explorer-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-dragon-ball-gt-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-dreamworks-shrek": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-nicktoons-collection-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-nicktoons-collection-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-nicktoons-collection-volume-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-pokemon-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-pokemon-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-pokemon-volume-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-pokemon-volume-4": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-shark-tale": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-shrek-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-shrek-shark-tale": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-sonic-x-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-spongebob-squarepants-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-spongebob-squarepants-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-spongebob-squarepants-volume-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-strawberry-shortcake-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-super-robot-monkey-team-hyper-force-go-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-teenage-mutant-ninja-turtles-things-change": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-the-adventures-of-jimmy-neutron-boy-genius-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-the-fairly-oddparents-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-the-fairly-oddparents-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-the-proud-family-volume-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-advance-video-yu-gi-oh-yugi-vs-joey": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-boy-wars-advance-1-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-game-watch-gallery-4": {
+  "ano": 2002,
+  "cem": 38.5,
+  "hltb": 32137,
+  "main": 6.8,
+  "n": 15,
+  "nome": "Game & Watch Gallery 4",
+  "plus": 15.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-get-boku-no-mushi-tsukamaete": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-gt-advance-2-rally-racing": {
+  "ano": 2001,
+  "cem": 6.4,
+  "hltb": 23449,
+  "main": 2.7,
+  "n": 7,
+  "nome": "GT Advance 2: Rally Racing",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-gt-advance-3-pro-concept-racing": {
+  "ano": 2002,
+  "cem": 14.0,
+  "hltb": 50349,
+  "main": 3.3,
+  "n": 6,
+  "nome": "GT Advance 3: Pro Concept Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-gt-advance-championship-racing": {
+  "ano": 2001,
+  "cem": 8.3,
+  "hltb": 15068,
+  "main": 4.2,
+  "n": 13,
+  "nome": "GT Advance Championship Racing",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-gt-racers": {
+  "hltb": 75535,
+  "main": 0.6,
+  "n": 1,
+  "nome": "GT Racers",
+  "v": 2,
+  "via": "plataforma"
+ },
  "emu-ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi": {
   "nao": "sem-resultado",
   "v": 2
@@ -10692,6 +11102,34 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "emu-ps1-fish-on-bass": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-fisher-s-road": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fisherman-s-bait-2-big-ol-bass": {
+  "hltb": 14085,
+  "main": 6.0,
+  "n": 3,
+  "nome": "Fisherman's Bait 2: Big Ol' Bass",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fisherman-s-bait-a-bass-challenge": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fishing-freaks-bassrise-plus": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fishing-koshien-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-ps1-fist": {
   "ano": 1996,
   "hltb": 89254,
@@ -10700,6 +11138,514 @@
   "nome": "FIST",
   "v": 2,
   "via": "plataforma"
+ },
+ "emu-ps1-floating-runner-quest-for-the-7-crystals": {
+  "ano": 1996,
+  "hltb": 25304,
+  "main": 1.8,
+  "n": 2,
+  "nome": "Floating Runner: Quest for the 7 Crystals",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fluid": {
+  "ano": 1996,
+  "hltb": 131571,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Fluid",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-flying-squadron": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-football-madness": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-ford-racing": {
+  "ano": 2001,
+  "hltb": 3636,
+  "main": 3.4,
+  "n": 3,
+  "nome": "Ford Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-ford-truck-mania": {
+  "ano": 2003,
+  "cem": 4.0,
+  "hltb": 32431,
+  "main": 2.0,
+  "n": 4,
+  "nome": "Ford Truck Mania",
+  "plus": 3.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-forget-me-not-pallete": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formation-soccer-97-the-road-to-france": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formation-soccer-98-ganbare-nippon-in-france": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formula-1": {
+  "ano": 1996,
+  "hltb": 23562,
+  "main": 4.2,
+  "n": 8,
+  "nome": "Formula 1",
+  "plus": 50.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-formula-1-98": {
+  "ano": 1998,
+  "hltb": 3647,
+  "main": 3.5,
+  "n": 4,
+  "nome": "Formula 1 98",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-formula-1-championship-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formula-circus": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formula-gp": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-formula-grand-prix-team-unei-simulation-2-1997-han": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formula-karts-special-edition": {
+  "ano": 1997,
+  "hltb": 32213,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Formula Karts",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-formula-nippon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-formula-one-2000": {
+  "ano": 2000,
+  "hltb": 74773,
+  "main": 3.5,
+  "n": 1,
+  "nome": "Formula One 2000",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-formula-one-2001": {
+  "ano": 2001,
+  "cem": 10.0,
+  "hltb": 29100,
+  "main": 6.0,
+  "n": 5,
+  "nome": "Formula One 2001",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-formula-one-99": {
+  "ano": 1999,
+  "cem": 30.0,
+  "hltb": 3648,
+  "main": 5.8,
+  "n": 5,
+  "nome": "Formula One 99",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-formula-one-arcade": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-forsaken": {
+  "ano": 1998,
+  "hltb": 3650,
+  "main": 9.0,
+  "n": 2,
+  "nome": "Forsaken",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fox-hunt": {
+  "ano": 1996,
+  "hltb": 3671,
+  "main": 3.8,
+  "n": 4,
+  "nome": "Fox Hunt",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fox-junction": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-fox-sports-golf-99": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-fox-sports-soccer-99": {
+  "ano": 1997,
+  "cem": 18.8,
+  "hltb": 76542,
+  "n": 1,
+  "nome": "Actua Soccer 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-frank-thomas-big-hurt-baseball": {
+  "ano": 1995,
+  "hltb": 42283,
+  "main": 1.3,
+  "n": 1,
+  "nome": "Frank Thomas Big Hurt Baseball",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-free-spin-demo-disc": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-free-talk-studio-mari-no-kimamana-oshaberi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-freestyle-boardin-99": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-freestyle-motocross-mcgrath-vs-pastrana": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-frenzy": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-frogger": {
+  "ano": 1997,
+  "cem": 13.0,
+  "hltb": 3715,
+  "main": 7.1,
+  "n": 17,
+  "nome": "Frogger",
+  "plus": 10.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-frogger-2-swampy-s-revenge": {
+  "ano": 2000,
+  "cem": 3.2,
+  "hltb": 3717,
+  "main": 2.0,
+  "n": 17,
+  "nome": "Frogger 2: Swampy's Revenge",
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-from-tv-animation-one-piece-tobidase-kaizoku-dan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-front-mission-1st": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-front-mission-2": {
+  "ano": 1997,
+  "cem": 114.4,
+  "hltb": 3726,
+  "main": 48.4,
+  "n": 7,
+  "nome": "Front Mission 2",
+  "plus": 53.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-front-mission-3": {
+  "ano": 1999,
+  "cem": 78.8,
+  "hltb": 3727,
+  "main": 42.6,
+  "n": 55,
+  "nome": "Front Mission 3",
+  "plus": 61.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-front-mission-alternative": {
+  "ano": 1997,
+  "hltb": 25307,
+  "main": 7.4,
+  "n": 2,
+  "nome": "Front Mission Alternative",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fun-fun-pingu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-furimukeba-tonari-ni": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fushigi-deka": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-fushigi-no-kuni-no-angelique": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-future-cop-l-a-p-d": {
+  "ano": 1998,
+  "cem": 12.0,
+  "hltb": 3762,
+  "main": 5.4,
+  "n": 16,
+  "nome": "Future Cop: LAPD",
+  "plus": 6.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-future-racer": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-fuuraiki": {
+  "ano": 2001,
+  "hltb": 122660,
+  "main": 12.0,
+  "n": 1,
+  "nome": "Fuuraiki",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-fuuun-gokuu-ninden": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-g-darius": {
+  "ano": 1997,
+  "cem": 4.8,
+  "hltb": 17116,
+  "main": 1.0,
+  "n": 17,
+  "nome": "G-Darius",
+  "plus": 1.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-g-o-d-pure-growth-or-devolution": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-g-police": {
+  "ano": 1997,
+  "hltb": 3775,
+  "main": 16.3,
+  "n": 4,
+  "nome": "G-Police",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-g-police-weapons-of-justice": {
+  "ano": 1999,
+  "hltb": 3776,
+  "main": 4.5,
+  "n": 2,
+  "nome": "G-Police: Weapons of Justice",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-g1-jockey": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-g1-jockey-2000": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gaball-screen": {
+  "ano": 1996,
+  "cem": 2.0,
+  "hltb": 104855,
+  "n": 1,
+  "nome": "Gaball Screen",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-gadget-past-as-future": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-gaia-seed-project-seed-trap": {
+  "ano": 1996,
+  "hltb": 25322,
+  "main": 0.6,
+  "n": 3,
+  "nome": "Gaia Seed: Project Seed Trap",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-gaiamaster-kamigami-no-board-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gakkou-deatta-kowai-hanashi-s": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-gakkou-no-kowai-uwasa-hanako-sangakita": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gakkou-o-tsukurou-kouchou-sensei-monogatari": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gakkou-wo-tsukurou-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gakkou-wo-tsukurou-let-s-make-a-school": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gakuen-sentai-solblast": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-galaga-destination-earth": {
+  "ano": 2000,
+  "hltb": 3809,
+  "main": 1.9,
+  "n": 2,
+  "nome": "Galaga: Destination Earth",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-galaxian-3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-galaxy-fight-universal-warriors": {
+  "ano": 1995,
+  "hltb": 16472,
+  "main": 1.4,
+  "n": 2,
+  "nome": "Galaxy Fight",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-gale-gunner": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-galeoz": {
+  "ano": 1996,
+  "hltb": 32449,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Galeoz",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-galerians": {
+  "ano": 1999,
+  "cem": 7.9,
+  "hltb": 3815,
+  "main": 5.3,
+  "n": 42,
+  "nome": "Galerians",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-gallop-racer-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-gallop-racer-2000": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gallop-racer-japan": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-gallop-racer-north-america": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-gambler-jiko-chuushinha-ippatsu-shoubu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-game-de-hajimeru-toeic-test-mazu-wa-nyuumon-hen-1500": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-game-nihonshi-kakumeiji-oda-nobunaga": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-game-no-tatsujin": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-game-no-tatsujin-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-game-no-tetsujin-the-shanghai": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-game-soft-o-tsukurou-let-s-be-a-super-game-creator": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gp-challenge": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-gt-all-japan-touring-car-championship": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gt-straight-victory-hoshino-kazuyoshi-e-no-chousen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-gunbare-game-tengoku-the-game-paradise-2": {
+  "nao": "sem-resultado",
+  "v": 2
  },
  "emu-ps1-playstation-demo-disc-spring-2000": {
   "nao": "sem-resultado",
@@ -13569,6 +14515,210 @@
  },
  "emu-snes-first-queen-ornic-senki": {
   "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-first-samurai": {
+  "ano": 1991,
+  "hltb": 3574,
+  "main": 1.9,
+  "n": 7,
+  "nome": "First Samurai",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-fishing-koushien": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-flashback-the-quest-for-identity": {
+  "ano": 1992,
+  "cem": 8.0,
+  "hltb": 3585,
+  "main": 7.7,
+  "n": 8,
+  "nome": "Flashback",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-flying-hero-bugyuru-no-daibouken": {
+  "ano": 1992,
+  "hltb": 31268,
+  "main": 0.9,
+  "n": 9,
+  "nome": "Flying Hero",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-football-fury": {
+  "ano": 1993,
+  "hltb": 106008,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Football Fury",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-foreman-for-real": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-fortune-quest-dice-wo-korogase": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-frank-thomas-big-hurt-baseball": {
+  "ano": 1995,
+  "hltb": 42283,
+  "main": 1.3,
+  "n": 1,
+  "nome": "Frank Thomas Big Hurt Baseball",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-frantic-flea": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-frogger": {
+  "ano": 1981,
+  "hltb": 3714,
+  "main": 4.7,
+  "n": 2,
+  "nome": "Frogger",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-from-tv-animation-slam-dunk-2-ih-yosen-kanzen-ban": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-from-tv-animation-slam-dunk-dream-team-shuueisha-limited": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-from-tv-animation-slam-dunk-sd-heat-up": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-from-tv-animation-slam-dunk-yonkyou-gekitotsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-front-mission": {
+  "ano": 1995,
+  "cem": 27.5,
+  "hltb": 3724,
+  "main": 24.3,
+  "n": 17,
+  "nome": "Front Mission",
+  "plus": 28.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-front-mission-gun-hazard": {
+  "ano": 1996,
+  "cem": 20.0,
+  "hltb": 3731,
+  "main": 18.0,
+  "n": 21,
+  "nome": "Front Mission: Gun Hazard",
+  "plus": 20.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-full-throttle-all-american-racing": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-fun-n-games": {
+  "ano": 1994,
+  "cem": 4.9,
+  "hltb": 15061,
+  "main": 0.3,
+  "n": 2,
+  "nome": "Fun 'n Games",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-funaki-masakatsu-hybrid-wrestler-tougi-denshou": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-fune-tarou": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-furuta-atsuya-no-simulation-pro-yakyuu-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-fushigi-no-dungeon-2-fuurai-no-shiren": {
+  "ano": 1995,
+  "hltb": 6318,
+  "main": 20.8,
+  "n": 6,
+  "nome": "Mystery Dungeon: Shiren the Wanderer",
+  "plus": 45.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-gaia-saver-hero-saidai-no-sakusen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-gakkou-de-atta-kowai-hanashi": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-galaxy-robo": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-galaxy-wars": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-gambler-jiko-chuushinha-2-dorapon-quest": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-gambler-jiko-chuushinha-mahjong-ooisen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-gambling-hourouki": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-game-genie": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-game-no-tatsujin": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-gp-1": {
+  "ano": 1993,
+  "hltb": 42757,
+  "main": 2.5,
+  "n": 1,
+  "nome": "GP-1",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-gp-1-part-ii": {
+  "ano": 1994,
+  "hltb": 116490,
+  "main": 2.0,
+  "n": 1,
+  "nome": "GP-1 Part II",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-gt-racing": {
+  "nao": "so-outra-plataforma",
   "v": 2
  }
 }

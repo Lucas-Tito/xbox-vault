@@ -672,6 +672,11 @@ function fichaHtml(g) {
           : g.console === "both" ? "Xbox e Xbox 360" : "Xbox original") : null) +
     linha("Desenvolvedora", esc((g.developers || []).join(", "))) +
     linha("Publicadora", esc((g.publishers || []).join(", "))) +
+    /* A chave canonica do jogo no console. E o que aparece no dashboard e o que
+       o Xbox Unity, os gerenciadores de TU e o Xenia pedem, entao quem usa o
+       catalogo para montar console vai querer copiar daqui. Monoespacada porque
+       e codigo, e para 425307D5 nao virar 4253O7D5 na leitura. */
+    linha("Title ID", g.titleId ? "<code>" + esc(g.titleId) + "</code>" : null) +
     /* O que era a gaveta "Extras" virou linha de ficha. A gaveta misturava fato
        de patch, forma de venda, hardware e recurso de video numa lista so, e
        cada um deles responde uma pergunta diferente. */

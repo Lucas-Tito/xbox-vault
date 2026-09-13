@@ -339,6 +339,32 @@
       await until(() => cards().length > 50, 8000); await wait(300);
     }
 
+    // ---- Title ID ----
+    {
+      const alvo = window.XBX_DB.games.find(g => g.titleId && g.image);
+      ok('catalogo tem Title ID',
+         window.XBX_DB.games.filter(g => g.titleId).length > 1000,
+         window.XBX_DB.games.filter(g => g.titleId).length + ' jogos');
+      if (alvo) {
+        $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === alvo.id);
+        if (c) {
+          c.querySelector('.thumb').click(); await wait(400);
+          await irPara('Ficha técnica');
+          const cod = $('#modal-body .li code');
+          // e o que se copia para o Xbox Unity, o Xenia e os gerenciadores de TU
+          ok('ficha mostra o Title ID', !!cod && cod.textContent === alvo.titleId,
+             cod ? cod.textContent : 'sem <code>');
+          ok('Title ID em fonte monoespacada',
+             !!cod && /mono|Menlo|Consolas/i.test(getComputedStyle(cod).fontFamily));
+          $('#modal-x').click(); await wait(200);
+        } else ok('card do jogo com Title ID', false, alvo.id);
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
+    }
+
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
     dcard.querySelector('.thumb').click();
