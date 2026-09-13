@@ -243,7 +243,7 @@ function tagsHtml(g) {
   }
   if (g.releaseType === "Vazado") {
     h.push('<span class="tag vaz" title="Cancelado antes de sair, mas ficou pronto e ' +
-      'a build vazou — dá para jogar">VAZADO</span>');
+      'a build vazou, então dá para jogar">VAZADO</span>');
   }
   var f = g.flags || {};
   if (f.xbla) h.push('<span class="tag">XBLA</span>');
@@ -295,7 +295,7 @@ function cardHtml(g) {
     '" data-id="' + esc(g.id) + '">' +
     '<div class="marks">' +
     '<button class="wish-btn" title="Adicionar à wishlist">' + (w ? "★" : "☆") + "</button>" +
-    '<button class="hide-btn" title="Não quero — esconder da lista">⊘</button>' +
+    '<button class="hide-btn" title="Não quero, esconder da lista">⊘</button>' +
     "</div>" +
     '<div class="thumb">' + img + mc + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
@@ -418,8 +418,6 @@ function updateFacets() {
 }
 
 /* ---------------- detalhes ---------------- */
-var REGIAO = { NA: "América do Norte", EU: "Europa", PAL: "PAL (Europa/Oceania)",
-               JP: "Japão", AU: "Austrália" };
 var PLATNOME = { x360: "Xbox 360", xblig: "Indie (XBLIG)", xbox: "Xbox original",
                  homebrew: "Homebrew", emu: "Emulação" };
 /* Os rotulos vem em ingles do Co-Optimus; o resto da interface e em portugues. */
@@ -449,10 +447,10 @@ function coopHtml(g) {
   var li = [], n = function (v) {
     return v > 0 ? "até " + v + (v > 1 ? " jogadores" : " jogador") : "não tem";
   };
-  if (c.local != null) li.push("Local — " + n(c.local));
-  if (c.online != null) li.push("Online — " + n(c.online));
-  if (c.combo) li.push("Local + online juntos — " + n(c.combo));
-  if (c.lan) li.push("LAN / System Link — " + n(c.lan));
+  if (c.local != null) li.push("Local: " + n(c.local));
+  if (c.online != null) li.push("Online: " + n(c.online));
+  if (c.combo) li.push("Local + online juntos: " + n(c.combo));
+  if (c.lan) li.push("LAN / System Link: " + n(c.lan));
   var ex = (c.extras || []).map(function (x) {
     return COOPEXTRA[x.toLowerCase()] || x;
   });
@@ -484,9 +482,9 @@ function linha(rot, val) {
 
 function modosHtml(g) {
   var t = g.tags || {}, out = [];
-  var qtd = function (n) { return n ? " — até " + n + (n > 1 ? " jogadores" : " jogador") : ""; };
+  var qtd = function (n) { return n ? " (até " + n + (n > 1 ? " jogadores)" : " jogador)") : ""; };
   if (t.source === "not-a-game")
-    return '<p class="nota">Não é um jogo — é ' +
+    return '<p class="nota">Não é um jogo, é ' +
       ({ emulator: "um emulador", dashboard: "um dashboard", utility: "um utilitário",
          media: "um app de mídia" }[g.category] || "um software") +
       ", então não tem modo de jogo.</p>";
@@ -499,7 +497,7 @@ function modosHtml(g) {
   if (!out.length) return '<p class="nota">Sem informação de modo de jogo.</p>';
   var h = "<ul class=\"modos\">" + out.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
   if (CONFNOTA[t.confidence])
-    h += '<p class="nota">Confiança <b>' + esc(t.confidence) + "</b> — " + CONFNOTA[t.confidence] + ".</p>";
+    h += '<p class="nota">Confiança <b>' + esc(t.confidence) + "</b>: " + CONFNOTA[t.confidence] + ".</p>";
   // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. O aviso vale nos
   // DOIS casos: quando dizemos que tem co-op, porque o número foi inferido do
   // texto de um artigo e é aí que moram os erros; e quando dizemos que não tem,
@@ -621,7 +619,7 @@ function tuHtml(g) {
   }).join("");
   return '<details class="tu"><summary>' + t.n +
     (t.n > 1 ? " atualizações oficiais" : " atualização oficial") +
-    (t.ultima ? " — última v" + t.ultima : "") +
+    (t.ultima ? ", última v" + t.ultima : "") +
     (t.data ? " em " + esc(fmtDate(t.data)) : "") +
     "</summary><ul>" + linhas + "</ul></details>";
 }
@@ -632,22 +630,32 @@ function detalheHtml(g) {
     ? '<img src="' + esc(g.image) + '" alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") + ">"
     : '<div class="ph">' + esc(g.title) + "</div>";
 
+  /* Uma data so, a mais antiga entre as regioes: quem abre a ficha quer saber
+     quando o jogo saiu, nao em qual loja regional ele saiu primeiro. Quando o
+     ano empata e so uma das regioes tem dia e mes, vale a mais precisa. */
+  var lancamento = null;
+  if (g.releases) {
+    var ds = [];
+    for (var rk in g.releases) if (g.releases[rk]) ds.push(String(g.releases[rk]));
+    if (ds.length) {
+      ds.sort();
+      var d0 = ds[0];
+      for (var di = 1; di < ds.length; di++) {
+        if (ds[di].indexOf(d0) === 0 && ds[di].length > d0.length) d0 = ds[di];
+      }
+      lancamento = fmtDate(d0);
+    }
+  }
+
   var ficha = linha("Plataforma", esc(PLATNOME[g.platform] || g.platform)) +
-    linha("Ano", g.year || null) +
+    linha("Lançamento", lancamento || g.year || null) +
     linha("Gênero", esc(g.genre || "")) +
     linha("Categoria", g.category ? esc(g.category) : null) +
-    linha("Situação", g.releaseType === "Vazado" ? "cancelado — build vazada, jogável" : null) +
+    linha("Situação", g.releaseType === "Vazado" ? "cancelado, com a build vazada e jogável" : null) +
     linha("Console", g.console ? esc(g.console === "x360" ? "Xbox 360"
           : g.console === "both" ? "Xbox e Xbox 360" : "Xbox original") : null) +
     linha("Desenvolvedora", esc((g.developers || []).join(", "))) +
     linha("Publicadora", esc((g.publishers || []).join(", ")));
-
-  var lanc = "";
-  if (g.releases) {
-    var ls = Object.keys(g.releases).filter(function (k) { return g.releases[k]; })
-      .map(function (k) { return linha(REGIAO[k] || k, fmtDate(g.releases[k])); }).join("");
-    if (ls) lanc = "<h4>Lançamento</h4>" + ls;
-  }
 
   var bc = "";
   if (g.platform === "xbox" && g.bc360) {
@@ -708,7 +716,6 @@ function detalheHtml(g) {
       tempoHtml(g) +
       bc +
       "<h4>Ficha</h4>" + ficha +
-      lanc +
       (links.length ? '<div class="det-links">' + links.join("") + "</div>" : "") +
       (g.mcGeral
         ? '<p class="det-aviso">* Esta nota do Metacritic não é da versão de ' +
@@ -898,7 +905,7 @@ function montarFacetas() {
   // anos
   var years = Array.from(new Set(GAMES.map(function (g) { return g.year; })
     .filter(function (y) { return y != null; }))).sort(function (a, b) { return a - b; });
-  var o1 = '<option value="">—</option>' + years.map(function (y) { return "<option>" + y + "</option>"; }).join("");
+  var o1 = '<option value="">qualquer</option>' + years.map(function (y) { return "<option>" + y + "</option>"; }).join("");
   $("#f-y1").innerHTML = o1; $("#f-y2").innerHTML = o1;
   $("#f-y1").value = F.y1; $("#f-y2").value = F.y2;
 

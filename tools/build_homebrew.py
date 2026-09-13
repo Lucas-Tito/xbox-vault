@@ -247,7 +247,7 @@ ENTRIES += [
      "Emulador do Pokémon Mini, o menor console da Nintendo.",
      "https://www.gamebrew.org/wiki/List_of_XBOX_homebrew_emulators", "high"),
     ("desmumex", "xbox", "DesmumeX", None, 2017, "emulator", ["HCF"],
-     "Port do DeSmuME 0.9.11, emulador de Nintendo DS — extremamente lento no hardware do Xbox.",
+     "Port do DeSmuME 0.9.11, emulador de Nintendo DS, extremamente lento no hardware do Xbox.",
      "https://www.gamebrew.org/wiki/List_of_XBOX_homebrew_emulators", "high"),
     # --- NEC / PC Engine ---
     ("mednafenx-pce", "xbox", "MednafenX-PCE", "Mednafen", None, "emulator", ["XPort", "madmab"],

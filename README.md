@@ -4,7 +4,7 @@
 
 Catálogo navegável de **todos os jogos de Xbox 360**, **todos os do Xbox original** (com
 classificação de retrocompatibilidade com o 360) e uma lista de **homebrews** das duas consoles.
-Agrupado por ano, com filtros por modo de jogo, número de jogadores, gênero e mais — e com
+Agrupado por ano, com filtros por modo de jogo, número de jogadores, gênero e mais, e com
 marcação de "eu tenho" que você exporta e importa como arquivo.
 
 ## Como abrir
@@ -20,38 +20,38 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 
 ## Usando
 
-- **Ver detalhes** — clique no card. Abre um popup com a ficha inteira: descrição completa (a do
+- **Ver detalhes**: clique no card. Abre um popup com a ficha inteira: descrição completa (a do
   card é cortada em 2 linhas), modos de jogo com número de jogadores, retrocompatibilidade e os
-  problemas conhecidos, datas de lançamento por região, e links para a Wikipédia e para a página
+  problemas conhecidos, data de lançamento, e links para a Wikipédia e para a página
   do projeto. `Esc` ou clique fora fecham.
 - **Marcar que tenho** é coisa do popup, o card não tem botão para isso. Quem tem fica
   destacado em verde, com a borda acesa e a capa em cor cheia, enquanto o resto do catálogo
   aparece levemente dessaturado.
-- **Wishlist** — o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
-- **Nota do Metacritic** — no canto da capa, nas cores do próprio Metacritic (verde 75+, amarelo
+- **Wishlist**: o botão `☆` no canto do card, ou dentro do popup. Fica destacado em âmbar.
+- **Nota do Metacritic**: no canto da capa, nas cores do próprio Metacritic (verde 75+, amarelo
   50–74, vermelho abaixo). Dá para filtrar por nota mínima e ordenar por nota. **2.223 jogos têm
-  nota** — 67% do Xbox 360 e 78% do Xbox original; XBLIG e emulação não têm.
-- **Emulação** — desligada por padrão. Ao ligar, o site baixa `data/db-emu.js` (uma vez por
-  visita) com SNES, GBA e PS1 — o 360 roda esses sistemas via homebrew. Quem nunca liga a
+  nota**: 67% do Xbox 360 e 78% do Xbox original; XBLIG e emulação não têm.
+- **Emulação**: desligada por padrão. Ao ligar, o site baixa `data/db-emu.js` (uma vez por
+  visita) com SNES, GBA e PS1, que o 360 roda via homebrew. Quem nunca liga a
   categoria não paga nada pelo peso dela. Traz um sub-filtro por sistema e outro por tipo de
   lançamento, que começa em **só oficiais**: dos 9.962, apenas 7.976 são jogos licenciados; o
   resto são 1.478 ROM hacks, 222 homebrew, 138 não-licenciados e 136 nunca lançados.
-- **Não quero** — o botão `⊘`. O jogo sai de todas as listas e só reaparece no filtro
+- **Não quero**: o botão `⊘`. O jogo sai de todas as listas e só reaparece no filtro
   *Só os que eu escondi*, de onde dá para desfazer. Serve para tirar da frente o que não te
-  interessa — shovelware, esporte anual, o que for — num catálogo de 3.450 títulos.
+  interessa (shovelware, esporte anual, o que for) num catálogo de 3.450 títulos.
   "Tenho" e "quero" são mutuamente exclusivos: marcar um limpa o outro, porque as duas coisas se
   contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
-- **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
+- **Filtros** (coluna da esquerda): coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
   Os filtros ficam salvos entre visitas. **Indie (XBLIG) e homebrew nascem desmarcados**, como
   a emulação: o catálogo abre no Xbox 360 e no Xbox original, e as outras categorias entram
   quando você liga. O peso delas continua vindo no mesmo arquivo, então ligar não baixa nada
   (só a emulação é carregada à parte).
-- **Exportar coleção** — baixa um `.json` com a coleção **e** a wishlist.
-- **Importar** — aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
+- **Exportar coleção**: baixa um `.json` com a coleção **e** a wishlist.
+- **Importar**: aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
   **somar** ao que já está aqui ou **substituir** tudo.
 
-Suas marcações ficam no `localStorage` do navegador e **sobrevivem a fechar e reabrir** — no dia a
+Suas marcações ficam no `localStorage` do navegador e **sobrevivem a fechar e reabrir**: no dia a
 dia não é preciso exportar nada. Três ressalvas:
 
 - É **por navegador e por origem**: o que você marca em `lucas-tito.github.io` não aparece ao abrir
@@ -60,7 +60,7 @@ dia não é preciso exportar nada. Três ressalvas:
 - Fechamento normal grava em disco; um travamento duro do sistema pode perder a última escrita.
 
 Por isso o **export existe como backup** e como forma de levar a coleção para outra máquina ou
-outro navegador — não como parte do uso normal.
+outro navegador, não como parte do uso normal.
 
 ### Formato do arquivo de coleção
 
@@ -132,7 +132,7 @@ python3 tools/bundle.py         # <- sempre por último: escreve data/db.js
 ```
 
 Todos são idempotentes e usam `cache/`, então re-rodar é barato. **Depois de qualquer edição nos
-JSONs, rode `tools/bundle.py`** — o site lê o `db.js`, não os JSONs.
+JSONs, rode `tools/bundle.py`**: o site lê o `db.js`, não os JSONs.
 
 ### Schema de um jogo
 
@@ -159,7 +159,7 @@ JSONs, rode `tools/bundle.py`** — o site lê o `db.js`, não os JSONs.
 }
 ```
 
-Campos ausentes em `tags` significam `false` / `0` — o bundler remove os vazios para o arquivo
+Campos ausentes em `tags` significam `false` / `0`: o bundler remove os vazios para o arquivo
 não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jogadores".
 
 ## Números
@@ -173,10 +173,10 @@ não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jo
 | **total** | **6.900** | **6.824 (99%)** | **6.900** |
 
 E, carregado **sob demanda**, um catálogo de **emulação** com 9.962 jogos de SNES, Game Boy
-Advance e PlayStation 1 — 8.915 deles com capa. No total são **16.862 títulos** e 187 MB de capas
+Advance e PlayStation 1, 8.915 deles com capa. No total são **16.862 títulos** e 187 MB de capas
 no repositório.
 
-Contando só jogos comerciais, a cobertura é de **3.141 de 3.150 — 99,7%**. Os 76 sem imagem
+Contando só jogos comerciais, a cobertura é de **3.141 de 3.150, ou 99,7%**. Os 76 sem imagem
 são 67 homebrews (a maioria utilitários de linha de comando que nunca tiveram GUI, logo nem
 screenshot existe) e 9 jogos obscuros.
 
@@ -193,7 +193,7 @@ exige interação humana). Veja `tests/README.md`.
 ### De onde vem a nota do Metacritic
 
 Não dá para raspar o Metacritic (bloqueio agressivo), mas os artigos da Wikipédia citam a nota
-**junto com a URL da página do Metacritic** — e essa URL diz a plataforma
+**junto com a URL da página do Metacritic**, e essa URL diz a plataforma
 (`?platform=xbox-360`). É a própria Wikipédia dizendo de qual versão é aquela nota, o que importa
 porque um mesmo jogo tem notas diferentes em cada plataforma.
 
@@ -202,7 +202,7 @@ O `tools/metacritic.py` trata três formatos que convivem nos artigos: `MC = 94/
 jogo). 79% das notas saíram pelo casamento por URL, que é o mais confiável.
 
 A distribuição das 2.223 notas serve de sanidade: curva em sino centrada em **69,5**, com só 93
-jogos acima de 90 — o formato da distribuição real do Metacritic.
+jogos acima de 90, o formato da distribuição real do Metacritic.
 
 ### De onde vem o tempo de jogo
 
@@ -212,22 +212,22 @@ o [HowLongToBeat](https://howlongtobeat.com/), em três medidas que são exatame
 `data/tempo.json` já previa: história principal, principal + extras, e 100%.
 
 **Duas fontes, uma regra de precedência.** `data/tempo.json` é curadoria à mão e manda no que
-estiver lá — número conferido por uma pessoa não é substituído por média de internet. A única
+estiver lá: número conferido por uma pessoa não é substituído por média de internet. A única
 exceção é a entrada marcada `"fonte": "aproximado"`, que o próprio cabeçalho do arquivo define
 como estimativa posta para a interface ter o que mostrar: essa cede a vez assim que o coletor
 trouxer número de verdade. Quem decide é o `juntar_tempo()` do `bundle.py`, e a regra é testada em
-`tests/tempo.py`, não só documentada — um erro ali apagaria curadoria em silêncio, mostrando na
+`tests/tempo.py`, não só documentada, porque um erro ali apagaria curadoria em silêncio, mostrando na
 tela um número plausível só que errado.
 
 **A contagem de relatos vai junto, e não é enfeite.** Portal 2 tem 5.533 relatos e a média vale;
 um obscuro de PS1 com 1 relato é o tempo de *uma pessoa*, que não é média de nada. As duas coisas
-são a mesma frase — "8h" — com valor muito diferente, então o popup mostra os dois números e avisa
+são a mesma frase, "8h", com valor muito diferente, então o popup mostra os dois números e avisa
 quando a amostra tem menos de 5 relatos. Quem lê decide.
 
 **O casamento é estrito de propósito.** Exige título normalizado idêntico (ao nome ou ao *alias*
 do site) **e** a nossa plataforma presente na lista da entrada. "Halo: Combat Evolved" e "Halo:
 Combat Evolved - Anniversary" são dois jogos com tempos diferentes; "A.R.E.S.: Extinction Agenda"
-e o "EX" também. O preço disso é perder casos legítimos — *Abyss Odyssey* existe no site mas sem
+e o "EX" também. O preço disso é perder casos legítimos: *Abyss Odyssey* existe no site mas sem
 Xbox 360 na lista de plataformas, e *Quantum of Solace* está lá sem o prefixo "007:" que o nosso
 catálogo usa. Esses descartes ficam gravados com motivo separado (`so-outra-plataforma`) em vez de
 virarem um "não achei" opaco, justamente para dar para medir o tamanho do prejuízo depois sem
@@ -240,11 +240,11 @@ o que temos é a porta de Xbox 360. Quem usa ano como filtro perde toda porta ta
 ## Nenhuma requisição externa
 
 O site funciona inteiro a partir do próprio repositório: capas, catálogo e notas são arquivos
-locais. Os scripts de `tools/` é que vão à rede — na hora de gerar os dados, não na hora de usar.
+locais. Os scripts de `tools/` é que vão à rede, na hora de gerar os dados e não na hora de usar.
 
 Isso é verificado, não prometido: `tests/netcheck.mjs` intercepta toda requisição que a página
 faz e falha se alguma sair do domínio. As únicas URLs externas que restam no catálogo são o campo
-`url` dos homebrews, que vira o link "Página do projeto" — abre só se você clicar.
+`url` dos homebrews, que vira o link "Página do projeto", que abre só se você clicar.
 
 ## Procedência dos dados
 
@@ -252,7 +252,7 @@ As capas vêm de duas fontes. A principal é a imagem do artigo da Wikipédia; p
 sem imagem lá (lançamentos só no Japão, shovelware, jogos sem artigo), o
 `tools/fetch_images_launchbox.py` completa a partir do dump aberto do
 [LaunchBox Games Database](https://gamesdb.launchbox-app.com/), que tem box art de console e não
-exige chave de API — 240 dos 284 casaram por título normalizado.
+exige chave de API: 240 dos 284 casaram por título normalizado.
 
 O que sobrou depois dessas duas passadas foi caçado uma a uma por `tools/fetch_images_extra.py`,
 que tem os 138 links verificados à mão num dicionário no topo: GameBrew, TheGamesDB,
@@ -265,12 +265,12 @@ no repositório.
 
 As listas de Xbox 360 e Xbox original vêm das listas da Wikipédia em inglês (`List of Xbox 360
 games (A–L)` / `(M–Z)`, `List of Xbox games`, `List of Xbox games compatible with Xbox 360`),
-raspadas por script — não digitadas à mão. 
+raspadas por script, não digitadas à mão. 
 As **tags de modo de jogo** são de qualidade desigual, e o campo `tags.confidence` diz qual é qual:
 
-- `high` — veio do campo *modes* da infobox do artigo, ou foi conferido à mão.
-- `medium` — inferido do texto do artigo (seções de gameplay/multiplayer).
-- `low` — inferido do gênero, ou o jogo nem tem artigo na Wikipédia.
+- `high`: veio do campo *modes* da infobox do artigo, ou foi conferido à mão.
+- `medium`: inferido do texto do artigo (seções de gameplay/multiplayer).
+- `low`: inferido do gênero, ou o jogo nem tem artigo na Wikipédia.
 
 Ou seja: `singlePlayer`/`multiplayer` são confiáveis; **co-op vs. versus e o número exato de
 jogadores são estimativas** para a cauda longa do catálogo. Os títulos mais conhecidos foram
@@ -279,14 +279,14 @@ revisados manualmente. Se achar um erro, corrija o `data/tags-*.json` e rode o `
 Uma convenção que vale saber: nos jogos de **Xbox original**, `maxPlayersOnline` guarda o
 número de jogadores **em rede**, que na prática costuma ser System Link (LAN), já que o Xbox
 Live só existiu a partir de novembro de 2002. Por isso um jogo pode ter `multiplayerOnline:
-false` e `maxPlayersOnline: 16` — é o caso do Halo: Combat Evolved, que fazia 16 jogadores
+false` e `maxPlayersOnline: 16`, que é o caso do Halo: Combat Evolved, que fazia 16 jogadores
 ligando consoles em rede local. O site só mostra a tag "ONLINE" quando `multiplayerOnline` é
 true, então nada aparece indevidamente.
 
-Nos **homebrews**, 211 das 300 entradas são emuladores, dashboards e utilitários — não são
+Nos **homebrews**, 211 das 300 entradas são emuladores, dashboards e utilitários, que não são
 jogos, e saem com todas as tags de modo zeradas de propósito. Só os 55 ports, os 20 jogos
 autorais e 14 emuladores de arcade (que rodam jogos de 2 jogadores no mesmo console) têm
 modo de jogo.
 
-A lista de homebrew não tem fonte canônica — é uma compilação pesquisada, e cada entrada traz um
+A lista de homebrew não tem fonte canônica: é uma compilação pesquisada, e cada entrada traz um
 campo `verified` indicando a confiança.
