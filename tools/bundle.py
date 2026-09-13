@@ -186,6 +186,9 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     x360db = load("x360db.json", {})
     screens = load("screens.json", {})
     tus = load("tu.json", {})
+    # add-ons do Marketplace. A lista e a pagina que ficou arquivada, nao o
+    # catalogo completo: a listagem original era paginada.
+    dlcs = load("dlc.json", {})
     # Tamanho do download em GB, do Marketplace arquivado. E o download real, e
     # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
     # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
@@ -235,7 +238,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
                 coopados += 1
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
-        g.pop("tu", None); g.pop("tempo", None); g.pop("tamanho", None)
+        g.pop("tu", None); g.pop("tempo", None); g.pop("dlc", None)
+        dl = dlcs.get(g["id"])
+        if dl:
+            g["dlc"] = dl; g.pop("tamanho", None)
         tp = juntar_tempo(g["id"], tempos, hltb)
         if tp:
             g["tempo"] = tp
@@ -274,16 +280,17 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     com_mc = sum(1 for g in games if g.get("mc"))
     com_ur = sum(1 for g in games if g.get("ur"))
     com_tu = sum(1 for g in games if (g.get("tu") or {}).get("n"))
+    com_dlc = sum(1 for g in games if g.get("dlc"))
     com_tempo = sum(1 for g in games if g.get("tempo"))
     tempo_hltb = sum(1 for g in games if (g.get("tempo") or {}).get("fonte") == "hltb")
     tempo_geral = sum(1 for g in games if (g.get("tempo") or {}).get("geral"))
     so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
           "%d com Metacritic | %d com nota de jogador (%d so essa) | "
-          "%d com patch | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
+          "%d com patch | %d com DLC | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
           "%d co-op do Co-Optimus | %d dup" %
           (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
-           com_tu, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
+           com_tu, com_dlc, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 
