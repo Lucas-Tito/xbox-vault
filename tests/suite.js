@@ -301,6 +301,38 @@
       }
     }
 
+    // ---- tamanho do download ----
+    {
+      const comTam = window.XBX_DB.games.filter(g => typeof g.tamanho === 'number');
+      ok('catalogo tem tamanho de download', comTam.length > 1000, comTam.length + ' jogos');
+      ok('tamanho em GB, sempre positivo e plausivel',
+         comTam.every(g => g.tamanho > 0 && g.tamanho < 60));
+      // a regra que a #1 pediu: abaixo de 1 GB o numero sai em MB, e nao em
+      // "0,04 GB", que e o que a mediana do catalogo viraria
+      const casos = [[comTam.find(g => g.tamanho < 1), 'MB'],
+                     [comTam.find(g => g.tamanho > 1), 'GB']];
+      for (const [g, unidade] of casos) {
+        if (!g) { ok('achar jogo para o caso ' + unidade, false); continue; }
+        $('#q').value = g.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === g.id);
+        if (!c) { ok('card de ' + g.title + ' na tela', false); continue; }
+        c.querySelector('.thumb').click(); await wait(400);
+        const lin = $$('#modal-body .li')
+          .find(l => l.querySelector('span') && l.querySelector('span').textContent === 'Tamanho');
+        ok('popup mostra o tamanho', !!lin, g.title + ' = ' + g.tamanho + ' GB');
+        const txt = lin ? lin.querySelector('b').textContent : '';
+        ok('unidade certa para ' + g.tamanho + ' GB', txt.endsWith(unidade), txt);
+        if (unidade === 'MB') {
+          ok('MB bate com o GB guardado',
+             +txt.replace(/\D/g, '') === Math.round(g.tamanho * 1024), txt);
+        }
+        $('#modal-x').click(); await wait(200);
+      }
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
     dcard.querySelector('.thumb').click();

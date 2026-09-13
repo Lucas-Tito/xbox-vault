@@ -49,6 +49,10 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   a emulação: o catálogo abre no Xbox 360 e no Xbox original, e as outras categorias entram
   quando você liga. O peso delas continua vindo no mesmo arquivo, então ligar não baixa nada
   (só a emulação é carregada à parte).
+- **Tamanho do download**: na aba Visão geral do popup, para **2.798 jogos**, vindo das páginas
+  do Marketplace arquivadas no Internet Archive. É o download real, e não a imagem de disco com
+  enchimento, onde quase tudo cairia em 7,30 ou 8,14 GB. Abaixo de 1 GB aparece em MB, porque 83%
+  do catálogo está aí e a mediana é 0,04 GB.
 - **Exportar coleção**: baixa um `.json` com a coleção **e** a wishlist.
 - **Importar**: aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
   **somar** ao que já está aqui ou **substituir** tudo.
@@ -101,6 +105,7 @@ data/
   xbox.json         jogos de Xbox original     <- fonte da verdade
   homebrew.json     homebrews                  <- fonte da verdade
   tags-*.json       modos de jogo + URL da capa, indexado por id
+  tamanho.json      tamanho do download, em GB, do Marketplace arquivado
   tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
   hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
   db.js             tudo acima unido, é o que o site carrega
@@ -151,6 +156,7 @@ JSONs, rode `tools/bundle.py`**: o site lê o `db.js`, não os JSONs.
   "flags": { "xbla": false, "kinect": null, "stereo3d": false, "xboxOne": true },
   "bc360": { "compatible": true, "region": "all", "issues": null },  // só Xbox original
   "image": "images/x360-halo-3.webp",   // arquivo local versionado no repo
+  "tamanho": 0.402,                 // GB do download do Marketplace; o popup mostra em MB abaixo de 1 GB
   "imageRemote": "https://upload.wikimedia.org/...",  // reserva, se o arquivo faltar
   "tags": {
     "singlePlayer": true, "multiplayerLocal": true, "multiplayerOnline": true,

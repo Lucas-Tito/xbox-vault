@@ -1849,6 +1849,207 @@
   "v": 2,
   "via": "plataforma"
  },
+ "emu-gba-contra-advance-the-alien-wars-ex": {
+  "ano": 2002,
+  "cem": 2.4,
+  "hltb": 1913,
+  "main": 0.8,
+  "n": 7,
+  "nome": "Contra Advance: The Alien Wars EX",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-corvette": {
+  "ano": 2003,
+  "hltb": 1938,
+  "main": 3.4,
+  "n": 1,
+  "nome": "Corvette",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crash-bandicoot-2-n-tranced": {
+  "ano": 2003,
+  "cem": 10.5,
+  "hltb": 1971,
+  "main": 4.4,
+  "n": 45,
+  "nome": "Crash Bandicoot 2: N-Tranced",
+  "plus": 6.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crash-bandicoot-blast": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-crash-bandicoot-purple-ripto-s-rampage": {
+  "ano": 2004,
+  "cem": 8.1,
+  "hltb": 1973,
+  "main": 4.1,
+  "n": 23,
+  "nome": "Crash Bandicoot Purple: Ripto's Rampage",
+  "plus": 7.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crash-bandicoot-the-huge-adventure": {
+  "ano": 2002,
+  "cem": 9.0,
+  "hltb": 1974,
+  "main": 2.9,
+  "n": 87,
+  "nome": "Crash Bandicoot: The Huge Adventure",
+  "plus": 4.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crash-nitro-kart": {
+  "ano": 2003,
+  "cem": 10.0,
+  "hltb": 1979,
+  "main": 4.6,
+  "n": 17,
+  "nome": "Crash Nitro Kart",
+  "plus": 6.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crash-of-the-titans": {
+  "ano": 2007,
+  "cem": 9.9,
+  "hltb": 1980,
+  "n": 2,
+  "nome": "Crash of the Titans",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crash-spyro-super-pack-volume-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-crash-spyro-superpack-crash-bandicoot-the-huge-adventure-spyro-season-of-ice": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-crash-spyro-superpack-spyro-orange-the-cortex-conspiracy-crash-bandicoot-purple-ripto-s-rampage": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-crash-spyro-superpack-volume-1-crash-n-tranced-and-spyro-season-of-ice": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-crash-superpack": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-crayon-shin-chan-arashi-o-yobu-cinema-land-no-daibouken": {
+  "ano": 2004,
+  "hltb": 89105,
+  "main": 3.6,
+  "n": 4,
+  "nome": "Crayon Shin-Chan: Arashi o Yobu Cinema-Land no Daibouken!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crayon-shin-chan-densetsu-o-yobu-omake-no-miyako-shukkugaan": {
+  "ano": 2006,
+  "hltb": 95782,
+  "main": 4.5,
+  "n": 2,
+  "nome": "Shin chan: Contra los Muñecos de Shock Gahn",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crazy-chase": {
+  "ano": 1994,
+  "cem": 2.2,
+  "hltb": 4974,
+  "main": 0.9,
+  "n": 7,
+  "nome": "Kid Klown in Crazy Chase",
+  "plus": 0.9,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-crazy-frog-racer": {
+  "ano": 2005,
+  "hltb": 20250,
+  "main": 1.2,
+  "n": 5,
+  "nome": "Crazy Frog Racer",
+  "plus": 0.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crazy-taxi-catch-a-ride": {
+  "ano": 2003,
+  "hltb": 26463,
+  "main": 0.4,
+  "n": 4,
+  "nome": "Crazy Taxi: Catch a Ride",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-creatures": {
+  "ano": 1996,
+  "hltb": 2008,
+  "n": 1,
+  "nome": "Creatures",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-croket-2-yami-no-bank-to-ban-joou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-croket-3-granyuu-oukoku-no-nazo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-croket-4-bank-no-mori-no-mamorigami": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-croket-great-jikuu-no-boukensha": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-croket-yume-no-banker-survival": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-crouching-tiger-hidden-dragon": {
+  "ano": 2003,
+  "hltb": 2050,
+  "main": 2.1,
+  "n": 2,
+  "nome": "Crouching Tiger, Hidden Dragon",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-cruis-n-velocity": {
+  "ano": 2001,
+  "hltb": 17928,
+  "main": 2.1,
+  "n": 2,
+  "nome": "Cruis'n Velocity",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-crushed-baseball": {
+  "ano": 2004,
+  "hltb": 105610,
+  "main": 3.4,
+  "n": 2,
+  "nome": "Crushed Baseball",
+  "v": 2,
+  "via": "plataforma"
+ },
  "emu-gba-ct-special-forces": {
   "ano": 2001,
   "cem": 5.0,
@@ -1879,6 +2080,668 @@
   "nome": "CT Special Forces 3: Bioterror",
   "v": 2,
   "via": "plataforma"
+ },
+ "emu-gba-cubix-robots-for-everyone-clash-n-bash": {
+  "ano": 2002,
+  "hltb": 89039,
+  "main": 1.2,
+  "n": 1,
+  "nome": "Cubix: Robots for Everyone - Clash 'N Bash",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-curious-george": {
+  "ano": 2006,
+  "cem": 6.4,
+  "hltb": 13846,
+  "main": 2.5,
+  "n": 2,
+  "nome": "Curious George",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-custom-robo-gx": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-cyber-drive-zoids-hatakedamono-no-senshi-hugh": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dai-mahjong": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-daisenryaku-for-game-boy-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-daisuki-teddy": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dan-doh-tobase-shouri-no-smile-shot": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-dan-doh-xi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dancing-sword-senkou": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-danny-phantom-the-ultimate-enemy": {
+  "ano": 2005,
+  "cem": 3.0,
+  "hltb": 32138,
+  "main": 2.0,
+  "n": 16,
+  "nome": "Danny Phantom: The Ultimate Enemy",
+  "plus": 2.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-danny-phantom-urban-jungle": {
+  "ano": 2006,
+  "hltb": 24725,
+  "main": 1.2,
+  "n": 1,
+  "nome": "Danny Phantom: Urban Jungle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-daredevil": {
+  "ano": 2003,
+  "cem": 5.7,
+  "hltb": 23867,
+  "main": 1.9,
+  "n": 5,
+  "nome": "Daredevil",
+  "plus": 2.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-darius-r": {
+  "ano": 2002,
+  "cem": 1.2,
+  "hltb": 79767,
+  "main": 0.5,
+  "n": 4,
+  "nome": "Darius R",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dark-arena": {
+  "ano": 2002,
+  "hltb": 22026,
+  "main": 2.6,
+  "n": 4,
+  "nome": "Dark Arena",
+  "plus": 2.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dave-mirra-freestyle-bmx-2": {
+  "ano": 2001,
+  "cem": 25.5,
+  "hltb": 2270,
+  "main": 8.4,
+  "n": 5,
+  "nome": "Dave Mirra Freestyle BMX 2",
+  "plus": 14.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-dave-mirra-freestyle-bmx-3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-david-beckham-soccer": {
+  "ano": 2001,
+  "cem": 3.4,
+  "hltb": 15065,
+  "main": 3.5,
+  "n": 2,
+  "nome": "David Beckham Soccer",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-davis-cup-tennis": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-dead-to-rights": {
+  "ano": 2002,
+  "cem": 13.8,
+  "hltb": 2341,
+  "main": 8.3,
+  "n": 28,
+  "nome": "Dead to Rights",
+  "plus": 10.2,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-deal-or-no-deal": {
+  "ano": 2006,
+  "hltb": 2359,
+  "main": 0.2,
+  "n": 4,
+  "nome": "Deal or No Deal",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-defender": {
+  "ano": 2002,
+  "hltb": 2405,
+  "main": 2.6,
+  "n": 1,
+  "nome": "Defender",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-defender-of-the-crown": {
+  "ano": 1986,
+  "hltb": 2408,
+  "main": 1.1,
+  "n": 5,
+  "nome": "Defender of the Crown",
+  "plus": 6.9,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-demikids-dark-version": {
+  "ano": 2002,
+  "hltb": 2430,
+  "main": 14.4,
+  "n": 7,
+  "nome": "DemiKids: Dark Version",
+  "plus": 16.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-demikids-light-version": {
+  "ano": 2002,
+  "hltb": 2431,
+  "main": 11.8,
+  "n": 7,
+  "nome": "DemiKids: Light Version",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-demon-driver-time-to-burn-rubber": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-denki-blocks": {
+  "ano": 2001,
+  "hltb": 2444,
+  "main": 7.7,
+  "n": 1,
+  "nome": "Denki Blocks!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-densetsu-no-stafy": {
+  "ano": 2002,
+  "cem": 15.7,
+  "hltb": 2446,
+  "main": 3.6,
+  "n": 35,
+  "nome": "Densetsu no Stafy",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-densetsu-no-stafy-2": {
+  "ano": 2003,
+  "cem": 32.8,
+  "hltb": 28593,
+  "main": 7.6,
+  "n": 3,
+  "nome": "Densetsu no Stafy 2",
+  "plus": 18.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-densetsu-no-stafy-3": {
+  "ano": 2004,
+  "cem": 18.6,
+  "hltb": 28594,
+  "main": 6.7,
+  "n": 3,
+  "nome": "Densetsu no Stafy 3",
+  "plus": 18.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-derby-stallion-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-desert-strike-advance": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-dexter-s-laboratory-chess-challenge": {
+  "ano": 2002,
+  "hltb": 116332,
+  "main": 1.7,
+  "n": 1,
+  "nome": "Dexter's Laboratory: Chess Challenge",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dexter-s-laboratory-deesaster-strikes": {
+  "ano": 2001,
+  "cem": 10.0,
+  "hltb": 29190,
+  "main": 6.4,
+  "n": 4,
+  "nome": "Dexter's Laboratory: Deesaster Strikes!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-di-gi-charat-di-gi-communication": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-di-gi-communication-2-datou-black-gemagema-dan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-diadroids-world-evil-teikoku-no-yabou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-die-wilden-fussball-kerle-entscheidung-im-teufelstopf": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-die-wilden-fussball-kerle-gefahr-im-wilde-kerle-land": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-digimon-battle-spirit": {
+  "ano": 2001,
+  "cem": 4.5,
+  "hltb": 2535,
+  "main": 1.5,
+  "n": 24,
+  "nome": "Digimon Battle Spirit",
+  "plus": 1.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-digimon-battle-spirit-2": {
+  "ano": 2003,
+  "hltb": 2536,
+  "main": 2.0,
+  "n": 15,
+  "nome": "Digimon Battle Spirit 2",
+  "plus": 0.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-digimon-racing": {
+  "ano": 2004,
+  "hltb": 22028,
+  "main": 1.9,
+  "n": 12,
+  "nome": "Digimon Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dinotopia-the-timestone-pirates": {
+  "ano": 2002,
+  "hltb": 22029,
+  "main": 3.0,
+  "n": 3,
+  "nome": "Dinotopia: The Timestone Pirates",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-pixar-cars-mater-national-championship": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-disney-princess": {
+  "ano": 2003,
+  "cem": 3.7,
+  "hltb": 23893,
+  "main": 2.4,
+  "n": 6,
+  "nome": "Disney Princess",
+  "plus": 2.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-princess-royal-adventure": {
+  "ano": 2006,
+  "hltb": 23895,
+  "main": 2.3,
+  "n": 2,
+  "nome": "Disney Princess: Royal Adventure",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-aladdin": {
+  "ano": 1993,
+  "cem": 5.2,
+  "hltb": 2608,
+  "main": 1.9,
+  "n": 7,
+  "nome": "Disney's Aladdin",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-american-dragon-jake-long-rise-of-the-huntsclan": {
+  "ano": 2006,
+  "hltb": 22453,
+  "main": 2.2,
+  "n": 3,
+  "nome": "American Dragon: Jake Long",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-atlantis-the-lost-empire": {
+  "ano": 2001,
+  "hltb": 17850,
+  "main": 3.9,
+  "n": 2,
+  "nome": "Atlantis: The Lost Empire",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-brother-bear": {
+  "ano": 2003,
+  "hltb": 2611,
+  "main": 1.9,
+  "n": 9,
+  "nome": "Disney's Brother Bear",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-chicken-little": {
+  "ano": 2005,
+  "cem": 16.5,
+  "hltb": 13810,
+  "main": 2.6,
+  "n": 9,
+  "nome": "Chicken Little",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-cinderella-magical-dreams": {
+  "ano": 2005,
+  "hltb": 46499,
+  "main": 1.0,
+  "n": 3,
+  "nome": "Disney's Cinderella: Magical Dreams",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-extreme-skate-adventure": {
+  "ano": 2003,
+  "cem": 25.0,
+  "hltb": 2613,
+  "main": 5.8,
+  "n": 11,
+  "nome": "Disney's Extreme Skate Adventure",
+  "plus": 23.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-disney-s-herbie-fully-loaded": {
+  "ano": 2005,
+  "hltb": 105628,
+  "main": 0.5,
+  "n": 3,
+  "nome": "Disney's Herbie: Fully Loaded",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-kim-possible-2-drakken-s-demise": {
+  "ano": 2004,
+  "hltb": 24323,
+  "main": 1.4,
+  "n": 2,
+  "nome": "Disney's Kim Possible 2: Drakken's Demise",
+  "plus": 1.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-kim-possible-3-team-possible": {
+  "ano": 2005,
+  "cem": 3.9,
+  "hltb": 24324,
+  "main": 2.8,
+  "n": 3,
+  "nome": "Disney's Kim Possible 3: Team Possible",
+  "plus": 3.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-kim-possible-revenge-of-monkey-fist": {
+  "ano": 2002,
+  "cem": 1.7,
+  "hltb": 15077,
+  "main": 1.0,
+  "n": 5,
+  "nome": "Disney's Kim Possible: Revenge of Monkey Fist",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-lilo-stitch": {
+  "ano": 2002,
+  "cem": 2.8,
+  "hltb": 90925,
+  "main": 1.5,
+  "n": 13,
+  "nome": "Disney's Lilo & Stitch",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-lilo-stitch-2-hamsterviel-havoc": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-disney-s-magical-quest-2-starring-mickey-minnie": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-disney-s-magical-quest-3-starring-mickey-donald": {
+  "ano": 1995,
+  "cem": 4.7,
+  "hltb": 2619,
+  "main": 2.4,
+  "n": 6,
+  "nome": "Disney's Magical Quest 3 Starring Mickey & Donald",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-magical-quest-starring-mickey-minnie": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-disney-s-party": {
+  "ano": 2003,
+  "hltb": 12809,
+  "main": 0.2,
+  "n": 1,
+  "nome": "Disney's Party",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-peter-pan-return-to-never-land": {
+  "ano": 2002,
+  "cem": 12.0,
+  "hltb": 81713,
+  "main": 1.8,
+  "n": 4,
+  "nome": "Disney's Peter Pan: Return to Neverland",
+  "plus": 1.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-tarzan-return-to-the-jungle": {
+  "ano": 2002,
+  "hltb": 32224,
+  "main": 1.7,
+  "n": 2,
+  "nome": "Disney's Tarzan: Return to the Jungle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-the-lion-king-1-1-2": {
+  "ano": 2003,
+  "cem": 3.8,
+  "hltb": 2625,
+  "main": 2.2,
+  "n": 10,
+  "nome": "Disney's The Lion King 1 1/2",
+  "plus": 2.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-the-little-mermaid-magic-in-two-kingdoms": {
+  "ano": 2006,
+  "cem": 1.1,
+  "hltb": 39435,
+  "main": 0.6,
+  "n": 4,
+  "nome": "Disney's The Little Mermaid: Magic in Two Kingdoms",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-s-treasure-planet": {
+  "ano": 2002,
+  "hltb": 2626,
+  "main": 3.5,
+  "n": 3,
+  "nome": "Disney's Treasure Planet",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-sports-basketball": {
+  "ano": 2002,
+  "hltb": 15644,
+  "main": 3.4,
+  "n": 2,
+  "nome": "Disney Sports: Basketball",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-disney-sports-football": {
+  "ano": 2002,
+  "hltb": 15645,
+  "main": 0.8,
+  "n": 4,
+  "nome": "Disney Sports: Soccer",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-disney-sports-motocross": {
+  "ano": 2003,
+  "hltb": 105583,
+  "main": 0.6,
+  "n": 4,
+  "nome": "Disney Sports: Motocross",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-sports-skateboarding": {
+  "ano": 2002,
+  "hltb": 34108,
+  "main": 3.5,
+  "n": 2,
+  "nome": "Disney Sports: Skateboarding",
+  "plus": 4.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-disney-sports-snowboarding": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-disney-sports-soccer": {
+  "ano": 2002,
+  "hltb": 15645,
+  "main": 0.8,
+  "n": 4,
+  "nome": "Disney Sports: Soccer",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-dk-king-of-swing": {
+  "ano": 2005,
+  "cem": 2.5,
+  "hltb": 2649,
+  "main": 4.3,
+  "n": 27,
+  "nome": "DK King of Swing",
+  "plus": 6.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dogz": {
+  "ano": 2006,
+  "hltb": 22770,
+  "main": 4.5,
+  "n": 7,
+  "nome": "Dogz",
+  "plus": 17.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dogz-2": {
+  "ano": 2007,
+  "hltb": 77034,
+  "main": 3.7,
+  "n": 1,
+  "nome": "Dogz 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dogz-fashion": {
+  "ano": 2006,
+  "cem": 4.8,
+  "hltb": 77035,
+  "main": 8.3,
+  "n": 2,
+  "nome": "Dogz Fashion",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dokapon-monster-hunter": {
+  "ano": 2001,
+  "hltb": 2666,
+  "n": 1,
+  "nome": "Dokapon: Monster Hunter",
+  "plus": 27.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-doom": {
+  "ano": 1993,
+  "cem": 4.8,
+  "hltb": 2701,
+  "main": 5.5,
+  "n": 8,
+  "nome": "Doom",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-doom-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
  },
  "emu-ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi": {
   "nao": "sem-resultado",
@@ -5615,9 +6478,402 @@
   "v": 2,
   "via": "plataforma"
  },
+ "emu-ps1-community-pom": {
+  "ano": 1997,
+  "cem": 31.5,
+  "hltb": 30058,
+  "main": 12.0,
+  "n": 8,
+  "nome": "Community Pom",
+  "plus": 14.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-community-pom-omoide-o-dakishimete": {
+  "ano": 1997,
+  "cem": 31.5,
+  "hltb": 30058,
+  "main": 12.0,
+  "n": 8,
+  "nome": "Community Pom",
+  "plus": 14.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-constructor": {
+  "ano": 1997,
+  "hltb": 1905,
+  "main": 10.0,
+  "n": 2,
+  "nome": "Constructor",
+  "plus": 30.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-contender": {
+  "ano": 1998,
+  "hltb": 66969,
+  "main": 11.0,
+  "n": 1,
+  "nome": "Contender",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-contender-2": {
+  "ano": 2000,
+  "hltb": 1908,
+  "n": 1,
+  "nome": "Contender 2",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-contra-legacy-of-war": {
+  "ano": 1996,
+  "cem": 3.2,
+  "hltb": 1918,
+  "main": 1.7,
+  "n": 9,
+  "nome": "Contra: Legacy of War",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cool-boarders": {
+  "ano": 1996,
+  "hltb": 13859,
+  "main": 5.0,
+  "n": 7,
+  "nome": "Cool Boarders",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cool-boarders-2": {
+  "ano": 1997,
+  "hltb": 1930,
+  "main": 4.6,
+  "n": 14,
+  "nome": "Cool Boarders 2",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cool-boarders-2001": {
+  "ano": 2000,
+  "cem": 6.5,
+  "hltb": 1931,
+  "n": 1,
+  "nome": "Cool Boarders 2001",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-cool-boarders-3": {
+  "ano": 1998,
+  "cem": 22.3,
+  "hltb": 11826,
+  "main": 5.6,
+  "n": 16,
+  "nome": "Cool Boarders 3",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cool-boarders-4": {
+  "ano": 1999,
+  "hltb": 17206,
+  "main": 26.0,
+  "n": 1,
+  "nome": "Cool Boarders 4",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cosmic-cookoff-language-arts": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cosmic-cookoff-mathematics": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cosmic-race": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-cosmowarrior-zero": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-countdown-vampires": {
+  "ano": 1999,
+  "hltb": 1952,
+  "main": 10.6,
+  "n": 11,
+  "nome": "Countdown Vampires",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-courier-crisis": {
+  "ano": 1997,
+  "hltb": 14378,
+  "main": 6.8,
+  "n": 1,
+  "nome": "Courier Crisis",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-covert-ops-nuclear-dawn": {
+  "ano": 2000,
+  "cem": 15.0,
+  "hltb": 1961,
+  "main": 9.0,
+  "n": 13,
+  "nome": "Covert Ops: Nuclear Dawn",
+  "plus": 7.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cowboy-bebop": {
+  "ano": 1998,
+  "hltb": 28174,
+  "main": 2.5,
+  "n": 1,
+  "nome": "Cowboy Bebop",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crash-bandicoot": {
+  "ano": 1996,
+  "cem": 12.5,
+  "hltb": 1969,
+  "main": 6.2,
+  "n": 433,
+  "nome": "Crash Bandicoot",
+  "plus": 8.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crash-bandicoot-2-cortex-strikes-back": {
+  "ano": 1997,
+  "cem": 10.9,
+  "hltb": 1970,
+  "main": 5.8,
+  "n": 339,
+  "nome": "Crash Bandicoot 2: Cortex Strikes Back",
+  "plus": 7.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crash-bandicoot-warped": {
+  "ano": 1998,
+  "cem": 15.5,
+  "hltb": 1972,
+  "main": 6.4,
+  "n": 312,
+  "nome": "Crash Bandicoot: Warped",
+  "plus": 8.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crash-bash": {
+  "ano": 2000,
+  "cem": 12.3,
+  "hltb": 1976,
+  "main": 6.8,
+  "n": 99,
+  "nome": "Crash Bash",
+  "plus": 9.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crazy-balloon-2000": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-crazy-climber-2000": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-creative-camp": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-creative-isle": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-creative-journey": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-creative-voyage": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-creature-shock": {
+  "ano": 1994,
+  "hltb": 2007,
+  "n": 1,
+  "nome": "Creature Shock",
+  "plus": 2.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-creatures": {
+  "ano": 1996,
+  "hltb": 2008,
+  "main": 5.6,
+  "n": 2,
+  "nome": "Creatures",
+  "plus": 15.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-creatures-raised-in-space": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-cricket-2000": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-crime-crackers": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-crime-crackers-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-crime-killer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-crisis-beat": {
+  "ano": 2000,
+  "cem": 5.3,
+  "hltb": 2033,
+  "main": 1.4,
+  "n": 23,
+  "nome": "Crisis Beat",
+  "plus": 2.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crisis-city": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-critical-blow": {
+  "ano": 1997,
+  "hltb": 83189,
+  "main": 1.8,
+  "n": 2,
+  "nome": "Critical Blow",
+  "plus": 0.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-critical-depth": {
+  "ano": 1997,
+  "hltb": 2037,
+  "main": 8.0,
+  "n": 1,
+  "nome": "Critical Depth",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-criticom": {
+  "ano": 1995,
+  "hltb": 14234,
+  "main": 1.3,
+  "n": 5,
+  "nome": "Criticom",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-croc-2": {
+  "ano": 1999,
+  "cem": 12.1,
+  "hltb": 2041,
+  "main": 7.4,
+  "n": 22,
+  "nome": "Croc 2",
+  "plus": 15.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-croc-legend-of-the-gobbos": {
+  "ano": 1997,
+  "cem": 11.4,
+  "hltb": 2042,
+  "main": 6.2,
+  "n": 63,
+  "nome": "Croc: Legend of the Gobbos",
+  "plus": 8.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-croket-kindan-no-kinka-box": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cross-romance-koi-to-mahjong-to-hanafuda-to": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cross-tantei-monogatari": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cross-tantei-monogatari-1-kouhen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cross-tantei-monogatari-1-zenpen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-crossroad-crisis": {
+  "ano": 2001,
+  "cem": 2.0,
+  "hltb": 32384,
+  "n": 1,
+  "nome": "Crossroad Crisis",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crusader-no-remorse": {
+  "ano": 1995,
+  "hltb": 2061,
+  "main": 17.0,
+  "n": 1,
+  "nome": "Crusader: No Remorse",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-crusaders-of-might-and-magic": {
+  "ano": 1999,
+  "hltb": 2062,
+  "main": 9.1,
+  "n": 4,
+  "nome": "Crusaders of Might and Magic",
+  "plus": 18.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "emu-ps1-crw-counter-revolution-war": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "emu-ps1-crypt-killer": {
+  "ano": 1997,
+  "cem": 2.0,
+  "hltb": 2066,
+  "main": 1.0,
+  "n": 4,
+  "nome": "Crypt Killer",
+  "v": 2,
+  "via": "plataforma"
  },
  "emu-ps1-ct-special-forces": {
   "ano": 2001,
@@ -5650,6 +6906,1277 @@
  },
  "emu-ps1-ctr-crash-team-racing": {
   "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-cu-on-pa": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-cubix-robots-for-everyone-race-n-robots": {
+  "ano": 2001,
+  "hltb": 95987,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Cubix: Robots For Everyone - Race 'N Robots",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-culdcept-cepter-s-guild-vol-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-culdcept-cepter-s-guild-vol-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-culdcept-expansion": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-culdcept-expansion-plus": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-curiosity-kills-the-cat-koukishin-wa-neko-wo-korosu-ka": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cyber-daisenryaku-shutsugeki-haruka-tai": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cyber-egg-battle-champion": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-cyber-org": {
+  "ano": 2002,
+  "cem": 44.9,
+  "hltb": 2117,
+  "n": 1,
+  "nome": "Cyber Org",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cyber-war": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-cyberbots-fullmetal-madness": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cyberia": {
+  "ano": 1994,
+  "hltb": 2122,
+  "main": 3.7,
+  "n": 1,
+  "nome": "Cyberia",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cybernetic-empire": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-cybersled": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-cyberspeed": {
+  "hltb": 32388,
+  "main": 3.2,
+  "n": 1,
+  "nome": "Cyberspeed",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-cybertiger": {
+  "ano": 1999,
+  "hltb": 16431,
+  "main": 1.4,
+  "n": 2,
+  "nome": "CyberTiger",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-d": {
+  "ano": 1995,
+  "cem": 2.3,
+  "hltb": 2134,
+  "main": 1.9,
+  "n": 28,
+  "nome": "D",
+  "plus": 1.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dai-2-ji-super-robot-taisen": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-dai-2-kai-quiz-darake-no-jinsei-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dai-3-ji-super-robot-taisen": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-dai-4-ji-super-robot-taisen-s": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-daibouken-deluxe-harukanaru-umi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-daikoukai-jidai-gaiden": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-daikoukai-jidai-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-daikoukai-jidai-iv-porto-estado": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-daiobake-yashiki-hamamura-jun-no-jitsuwa-kaidan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-daisenryaku-master-combat": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-daisenryaku-player-s-spirit": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dakar-97": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dalmatians-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-damdam-stompland": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dance-dance-dance": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-dance-dance-revolution": {
+  "ano": 1998,
+  "cem": 0.8,
+  "hltb": 2156,
+  "main": 1.4,
+  "n": 8,
+  "nome": "Dance Dance Revolution",
+  "plus": 0.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-2nd-remix": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dance-dance-revolution-2nd-remix-append-club-version-vol-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dance-dance-revolution-2nd-remix-append-club-version-vol-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dance-dance-revolution-3rd-mix": {
+  "ano": 1999,
+  "hltb": 2161,
+  "main": 8.2,
+  "n": 2,
+  "nome": "Dance Dance Revolution 3rdMix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-4th-mix": {
+  "ano": 2000,
+  "hltb": 2162,
+  "main": 7.0,
+  "n": 1,
+  "nome": "Dance Dance Revolution 4thMix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-5th-mix": {
+  "ano": 2001,
+  "hltb": 2163,
+  "main": 7.5,
+  "n": 2,
+  "nome": "Dance Dance Revolution 5thMix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-best-hits": {
+  "ano": 2000,
+  "hltb": 2165,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Dance Dance Revolution Best Hits",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-disney-mix": {
+  "ano": 2000,
+  "hltb": 2167,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Dance Dance Revolution Disney Mix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-extra-mix": {
+  "ano": 2001,
+  "hltb": 2168,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Dance Dance Revolution Extra Mix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-konamix": {
+  "ano": 2002,
+  "cem": 125.7,
+  "hltb": 2175,
+  "main": 6.0,
+  "n": 3,
+  "nome": "Dance Dance Revolution Konamix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dance-dance-revolution-usa": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dance-uk": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dance-uk-extra-trax": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dancing-blade-katteni-momotenshi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dancing-blade-katteni-momotenshi-ii-tears-of-eden": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dancing-stage-euro-mix": {
+  "ano": 2001,
+  "cem": 8.0,
+  "hltb": 26544,
+  "main": 5.0,
+  "n": 3,
+  "nome": "Dancing Stage EuroMIX",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dancing-stage-featuring-dreams-come-true": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-dancing-stage-featuring-true-kiss-destination": {
+  "ano": 1999,
+  "hltb": 108324,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Dancing Stage featuring True Kiss Destination",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dancing-stage-fever": {
+  "ano": 2003,
+  "cem": 2.6,
+  "hltb": 19994,
+  "main": 1.4,
+  "n": 2,
+  "nome": "Dancing Stage Fever",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dancing-stage-fusion": {
+  "ano": 2005,
+  "cem": 2.1,
+  "hltb": 19995,
+  "n": 1,
+  "nome": "Dancing Stage Fusion",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dancing-stage-party-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dangan": {
+  "ano": 2000,
+  "hltb": 25212,
+  "main": 1.1,
+  "n": 1,
+  "nome": "Dangan",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-danger-girl": {
+  "ano": 2000,
+  "cem": 7.8,
+  "hltb": 25213,
+  "main": 5.2,
+  "n": 4,
+  "nome": "Danger Girl",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dare-devil-derby-3d": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-darius-gaiden": {
+  "ano": 1994,
+  "cem": 2.8,
+  "hltb": 2198,
+  "main": 1.6,
+  "n": 2,
+  "nome": "Darius Gaiden",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dark-hunter-ge-youma-no-mori": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dark-hunter-jou-ijigen-gakuen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dark-seed": {
+  "ano": 1992,
+  "cem": 2.1,
+  "hltb": 2221,
+  "main": 1.5,
+  "n": 15,
+  "nome": "Dark Seed",
+  "plus": 2.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-dark-seed-ii": {
+  "ano": 1995,
+  "cem": 5.5,
+  "hltb": 2222,
+  "main": 3.8,
+  "n": 5,
+  "nome": "Dark Seed II",
+  "plus": 4.8,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-dark-tales-from-the-lost-soul": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-darklight-conflict": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-darkstalkers-3": {
+  "ano": 1998,
+  "hltb": 2251,
+  "main": 0.8,
+  "n": 13,
+  "nome": "Darkstalkers 3",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-darkstalkers-the-night-warriors": {
+  "ano": 1994,
+  "hltb": 2253,
+  "main": 1.0,
+  "n": 18,
+  "nome": "Darkstalkers: The Night Warriors",
+  "plus": 4.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-darkstone-evil-reigns": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dave-mirra-freestyle-bmx": {
+  "ano": 2000,
+  "cem": 12.0,
+  "hltb": 2269,
+  "main": 7.9,
+  "n": 6,
+  "nome": "Dave Mirra Freestyle BMX",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dave-mirra-freestyle-bmx-maximum-remix": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-david-beckham-soccer": {
+  "ano": 2001,
+  "hltb": 15065,
+  "main": 2.0,
+  "n": 1,
+  "nome": "David Beckham Soccer",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-davis-cup-complete-tennis": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dbz-dead-ball-zone": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dead-in-the-water": {
+  "ano": 1999,
+  "hltb": 16483,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Dead in the Water",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dead-or-alive": {
+  "ano": 1996,
+  "cem": 22.1,
+  "hltb": 2312,
+  "main": 0.7,
+  "n": 38,
+  "nome": "Dead or Alive",
+  "plus": 9.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-deadheat-road": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-deadly-skies": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-death-mask": {
+  "ano": 1996,
+  "cem": 9.0,
+  "hltb": 460,
+  "main": 4.3,
+  "n": 2,
+  "nome": "Angel Devoid: Face of the Enemy",
+  "plus": 4.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-deathtrap-dungeon": {
+  "ano": 1998,
+  "cem": 13.6,
+  "hltb": 15812,
+  "main": 11.0,
+  "n": 5,
+  "nome": "Deathtrap Dungeon",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-debut-21": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-deception-iii-dark-delusion": {
+  "ano": 1999,
+  "cem": 35.0,
+  "hltb": 2382,
+  "main": 10.2,
+  "n": 12,
+  "nome": "Deception III: Dark Delusion",
+  "plus": 11.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-deep-freeze": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-deep-sea-adventure-kaitei-kyuu-pantarassa-no-nazo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-defcon-5-peace-has-a-price": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dekiru-game-center": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-delta-force-urban-warfare": {
+  "ano": 2002,
+  "hltb": 2424,
+  "main": 4.6,
+  "n": 5,
+  "nome": "Delta Force: Urban Warfare",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-demo-1-version-5": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-demo-one-version-2-sces-00120": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-demodemo-playstation-vol-5": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-demolition-racer": {
+  "ano": 1999,
+  "cem": 4.9,
+  "hltb": 14838,
+  "main": 4.7,
+  "n": 6,
+  "nome": "Demolition Racer",
+  "plus": 7.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dengeki-construction-ochige-yarouze": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-denki-groove-jigoku-v": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-denpa-shounenteki-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-densha-daisuki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-densha-de-go": {
+  "ano": 1997,
+  "hltb": 65893,
+  "main": 2.5,
+  "n": 1,
+  "nome": "Densha de Go!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-densha-de-go-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-densha-de-go-nagoya-tetsudou-hen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-densha-de-go-professional-shiyou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-derby-jockey-2001": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-derby-jockey-r": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-descent": {
+  "ano": 1995,
+  "hltb": 2455,
+  "main": 11.2,
+  "n": 2,
+  "nome": "Descent",
+  "plus": 16.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-descent-ii": {
+  "ano": 1997,
+  "cem": 8.2,
+  "hltb": 25218,
+  "n": 2,
+  "nome": "Descent Maximum",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-descent-maximum": {
+  "ano": 1997,
+  "cem": 8.2,
+  "hltb": 25218,
+  "n": 2,
+  "nome": "Descent Maximum",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-deserted-island": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-destrega": {
+  "ano": 1998,
+  "hltb": 2474,
+  "main": 1.9,
+  "n": 12,
+  "nome": "Destrega",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-destruction-derby": {
+  "ano": 1995,
+  "hltb": 2480,
+  "main": 4.9,
+  "n": 14,
+  "nome": "Destruction Derby",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-destruction-derby-2": {
+  "ano": 1996,
+  "hltb": 2481,
+  "main": 3.2,
+  "n": 8,
+  "nome": "Destruction Derby 2",
+  "plus": 25.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-destruction-derby-raw": {
+  "ano": 2000,
+  "hltb": 2482,
+  "main": 10.1,
+  "n": 2,
+  "nome": "Destruction Derby Raw",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-destructo-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-detana-twinbee-yahoo-deluxe-pack": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-detective-barbie-the-mystery-cruise": {
+  "ano": 2000,
+  "hltb": 71698,
+  "main": 1.6,
+  "n": 4,
+  "nome": "Detective Barbie: The Mystery Cruise",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-detective-mouse": {
+  "ano": 2003,
+  "cem": 1.0,
+  "hltb": 110197,
+  "n": 1,
+  "nome": "Detective Mouse",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-devicereign": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-devil-dice": {
+  "ano": 1998,
+  "hltb": 2494,
+  "main": 3.0,
+  "n": 2,
+  "nome": "Devil Dice",
+  "plus": 9.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-devil-summoner-soul-hackers": {
+  "ano": 1997,
+  "cem": 49.2,
+  "hltb": 8431,
+  "main": 29.5,
+  "n": 4,
+  "nome": "Shin Megami Tensei: Devil Summoner - Soul Hackers",
+  "plus": 38.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-devilman": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dexter-s-laboratory-mandark-s-lab": {
+  "ano": 2002,
+  "cem": 3.2,
+  "hltb": 2507,
+  "main": 2.1,
+  "n": 9,
+  "nome": "Dexter's Laboratory: Mandark's Lab?",
+  "plus": 1.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dezaemon-kids": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dezaemon-plus": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-diablo": {
+  "ano": 1997,
+  "cem": 38.8,
+  "hltb": 2511,
+  "main": 13.6,
+  "n": 36,
+  "nome": "Diablo",
+  "plus": 17.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dice-de-chocobo": {
+  "ano": 2002,
+  "hltb": 32416,
+  "main": 6.7,
+  "n": 1,
+  "nome": "Chocobo Land: A Game of Dice",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-die-hard-trilogy": {
+  "ano": 1996,
+  "cem": 7.9,
+  "hltb": 2526,
+  "main": 8.1,
+  "n": 28,
+  "nome": "Die Hard Trilogy",
+  "plus": 11.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-die-hard-trilogy-2-viva-las-vegas": {
+  "ano": 2000,
+  "cem": 11.5,
+  "hltb": 14283,
+  "n": 5,
+  "nome": "Die Hard Trilogy 2: Viva Las Vegas",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-digcro-digital-number-crossword": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digical-league": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digimon-digital-card-battle": {
+  "ano": 1999,
+  "cem": 54.8,
+  "hltb": 2537,
+  "main": 12.5,
+  "n": 22,
+  "nome": "Digimon Digital Card Battle",
+  "plus": 28.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-digimon-rumble-arena": {
+  "ano": 2001,
+  "cem": 10.2,
+  "hltb": 20573,
+  "main": 2.1,
+  "n": 55,
+  "nome": "Digimon Rumble Arena",
+  "plus": 5.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-digimon-tamers-pocket-culumon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digimon-world": {
+  "ano": 1999,
+  "cem": 110.0,
+  "hltb": 2539,
+  "main": 31.2,
+  "n": 73,
+  "nome": "Digimon World",
+  "plus": 50.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-digimon-world-2": {
+  "ano": 2000,
+  "cem": 62.5,
+  "hltb": 2540,
+  "main": 66.2,
+  "n": 25,
+  "nome": "Digimon World 2",
+  "plus": 82.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-digimon-world-3": {
+  "ano": 2002,
+  "cem": 96.2,
+  "hltb": 2541,
+  "main": 43.9,
+  "n": 41,
+  "nome": "Digimon World 3",
+  "plus": 72.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-digimon-world-digital-card-battle": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-ehon-vol-1-imadoki-no-momotarou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-ehon-vol-2-imadoki-no-kaguyahime": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-ehon-vol-3-imadoki-no-saru-kani": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-ehon-vol-4-imadoki-no-hanasaka-jiisan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-ehon-vol-5-imadoki-no-urashima-tarou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-figure-iina": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-digital-glider-airman": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dino-crisis": {
+  "ano": 1999,
+  "cem": 10.6,
+  "hltb": 2561,
+  "main": 6.6,
+  "n": 224,
+  "nome": "Dino Crisis",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dino-crisis-2": {
+  "ano": 2000,
+  "cem": 17.0,
+  "hltb": 2562,
+  "main": 5.6,
+  "n": 169,
+  "nome": "Dino Crisis 2",
+  "plus": 8.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dinomaster-party": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dinosaurs": {
+  "ano": 2003,
+  "cem": 1.3,
+  "hltb": 25244,
+  "n": 1,
+  "nome": "Dinosaurs",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dioramos": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dirt-jockey-heavy-equipment-operator": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-disc-derby-meiba-o-tsukurou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-discworld": {
+  "ano": 1995,
+  "cem": 13.6,
+  "hltb": 2589,
+  "main": 11.6,
+  "n": 12,
+  "nome": "Discworld",
+  "plus": 12.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-discworld-ii-mortality-bytes": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-discworld-noir": {
+  "ano": 1999,
+  "hltb": 2591,
+  "main": 25.0,
+  "n": 1,
+  "nome": "Discworld Noir",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-learning-mickey": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-pixar-a-bug-s-life": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-pixar-monsters-inc-scream-team": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-pixar-s-buzz-lightyear-of-star-command": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-pixar-s-toy-story-2-buzz-lightyear-to-the-rescue": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-pixar-s-toy-story-racer": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-presents-tigger-s-honey-hunt": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-s-101-dalmatians-ii-patch-s-london-adventure": {
+  "ano": 2003,
+  "hltb": 65279,
+  "main": 2.6,
+  "n": 5,
+  "nome": "Disney's 101 Dalmatians II: Patch's London Adventure",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-102-dalmatians-puppies-to-the-rescue": {
+  "ano": 2000,
+  "cem": 7.5,
+  "hltb": 40,
+  "main": 5.8,
+  "n": 28,
+  "nome": "102 Dalmatians: Puppies to the Rescue",
+  "plus": 6.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-aladdin-in-nasira-s-revenge": {
+  "ano": 2000,
+  "cem": 15.0,
+  "hltb": 23044,
+  "main": 6.7,
+  "n": 17,
+  "nome": "Disney's Aladdin in Nasira's Revenge",
+  "plus": 9.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-atlantis-the-lost-empire": {
+  "ano": 2001,
+  "cem": 7.9,
+  "hltb": 17850,
+  "main": 6.4,
+  "n": 27,
+  "nome": "Atlantis: The Lost Empire",
+  "plus": 8.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-dinosaur": {
+  "ano": 2000,
+  "hltb": 2612,
+  "main": 6.4,
+  "n": 5,
+  "nome": "Disney's Dinosaur",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-donald-duck-goin-quackers": {
+  "ano": 2000,
+  "cem": 4.2,
+  "hltb": 2678,
+  "main": 3.0,
+  "n": 56,
+  "nome": "Disney's Donald Duck: Goin' Quackers",
+  "plus": 3.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-goofy-s-fun-house": {
+  "ano": 2001,
+  "cem": 2.0,
+  "hltb": 20444,
+  "main": 1.2,
+  "n": 12,
+  "nome": "Disney's Goofy's Fun House",
+  "plus": 1.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-hercules-action-game": {
+  "ano": 1997,
+  "cem": 6.5,
+  "hltb": 2615,
+  "main": 2.8,
+  "n": 84,
+  "nome": "Disney's Hercules Action Game",
+  "plus": 6.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-lilo-stitch": {
+  "ano": 2002,
+  "cem": 2.4,
+  "hltb": 2616,
+  "main": 2.0,
+  "n": 31,
+  "nome": "Lilo & Stitch: Trouble in Paradise",
+  "plus": 2.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-peter-pan-in-return-to-never-land": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-s-pooh-s-party-game-in-search-of-the-treasure": {
+  "ano": 2001,
+  "cem": 2.0,
+  "hltb": 100334,
+  "main": 1.0,
+  "n": 6,
+  "nome": "Party Time with Winnie the Pooh",
+  "plus": 1.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-story-studio-mulan": {
+  "ano": 1999,
+  "cem": 5.5,
+  "hltb": 64371,
+  "main": 3.0,
+  "n": 6,
+  "nome": "Disney's Story Studio: Mulan",
+  "plus": 4.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-the-emperor-s-new-groove": {
+  "ano": 2000,
+  "cem": 9.4,
+  "hltb": 17851,
+  "main": 6.4,
+  "n": 22,
+  "nome": "The Emperor's New Groove",
+  "plus": 5.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-the-lion-king-simba-s-mighty-adventure": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-disney-s-the-little-mermaid-ii": {
+  "ano": 2000,
+  "cem": 2.5,
+  "hltb": 16166,
+  "main": 1.5,
+  "n": 12,
+  "nome": "The Little Mermaid 2",
+  "plus": 2.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disney-s-treasure-planet": {
+  "ano": 2002,
+  "cem": 4.7,
+  "hltb": 2626,
+  "main": 3.1,
+  "n": 8,
+  "nome": "Disney's Treasure Planet",
+  "plus": 4.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-disruptor": {
+  "ano": 1996,
+  "cem": 5.0,
+  "hltb": 2627,
+  "main": 4.4,
+  "n": 23,
+  "nome": "Disruptor",
+  "plus": 5.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-diver-s-dream": {
+  "ano": 1999,
+  "hltb": 30532,
+  "main": 4.8,
+  "n": 2,
+  "nome": "Diver's Dream",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-docchi-mecha": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dodgem-arena": {
+  "ano": 1998,
+  "hltb": 19239,
+  "main": 2.0,
+  "n": 2,
+  "nome": "Dodgem Arena",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dodonpachi": {
+  "ano": 1997,
+  "hltb": 2658,
+  "main": 0.4,
+  "n": 3,
+  "nome": "DoDonPachi",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dokapon-ikari-no-tetsuken": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doki-doki-on-air": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doki-doki-on-air2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doki-doki-poyatchio": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-doki-doki-pretty-league": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doki-doki-pretty-league-lovely-star": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doki-doki-pretty-league-nekketsu-otome-seishunki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doom": {
+  "ano": 1993,
+  "cem": 5.8,
+  "hltb": 2701,
+  "main": 6.5,
+  "n": 13,
+  "nome": "Doom",
+  "plus": 12.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dx-hyakunin-isshu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-jinsei-game-ii-the-game-of-life": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-jinsei-game-iii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-jinsei-game-iv": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-jinsei-game-the-game-of-life": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-jinsei-game-v": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-monopoly": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-dx-nippon-tokkyuu-ryokou-game-let-s-travel-in-japan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-okuman-chouja-game-ii-the-money-battle": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-okumanchouja-game-the-money-battle": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dx-shachou-game": {
+  "nao": "sem-resultado",
   "v": 2
  },
  "emu-ps1-playstation-demo-disc-spring-2000": {
@@ -7212,5 +9739,449 @@
   "nome": "Columns",
   "v": 2,
   "via": "plataforma"
+ },
+ "emu-snes-computer-nouryoku-kaiseki-ultra-baken": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-congo-s-caper": {
+  "ano": 1992,
+  "cem": 4.0,
+  "hltb": 1893,
+  "main": 1.8,
+  "n": 23,
+  "nome": "Congo's Caper",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-contra-iii-the-alien-wars": {
+  "ano": 1992,
+  "cem": 5.8,
+  "hltb": 1915,
+  "main": 1.6,
+  "n": 163,
+  "nome": "Contra III: The Alien Wars",
+  "plus": 2.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-conveni-wars-barcode-battler-senki-super-senshi-shutsugeki-seyo": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-cool-spot": {
+  "ano": 1993,
+  "hltb": 1932,
+  "main": 2.1,
+  "n": 18,
+  "nome": "Cool Spot",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-cool-world": {
+  "ano": 1992,
+  "cem": 1.6,
+  "hltb": 12699,
+  "main": 3.3,
+  "n": 4,
+  "nome": "Cool World",
+  "plus": 1.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-corn-buster": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-coron-land": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-cosmo-gang-the-puzzle": {
+  "ano": 1992,
+  "cem": 7.0,
+  "hltb": 31235,
+  "main": 0.8,
+  "n": 2,
+  "nome": "Cosmo Gang: The Puzzle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-cosmo-gang-the-video": {
+  "ano": 1992,
+  "hltb": 31236,
+  "main": 0.7,
+  "n": 3,
+  "nome": "Cosmo Gang: The Video",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-cosmo-police-galivan-ii-arrow-of-justice": {
+  "ano": 1993,
+  "hltb": 41869,
+  "main": 1.4,
+  "n": 1,
+  "nome": "Cosmo Police Galivan II: Arrow of Justice",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-crayon-shin-chan-2-dai-maou-no-gyakushu": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-crayon-shin-chan-arashi-o-yobu-enji": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-crayon-shin-chan-nagagutsu-dobon": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-crystal-beans-from-dungeon-explorer": {
+  "ano": 1995,
+  "hltb": 18168,
+  "main": 7.0,
+  "n": 1,
+  "nome": "Crystal Beans: From Dungeon Explorer",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-cu-on-pa-sfc": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-cutthroat-island": {
+  "ano": 1995,
+  "cem": 0.6,
+  "hltb": 14406,
+  "main": 0.6,
+  "n": 4,
+  "nome": "Cutthroat Island",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-cyber-knight": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-cyber-knight-ii-chikyuu-teikoku-no-yabou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-cyber-spin": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-cybernator": {
+  "ano": 1992,
+  "cem": 3.9,
+  "hltb": 2125,
+  "main": 1.9,
+  "n": 32,
+  "nome": "Cybernator",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-cyborg-009": {
+  "ano": 1994,
+  "hltb": 2128,
+  "main": 3.2,
+  "n": 1,
+  "nome": "Cyborg 009",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-d-force": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-daffy-duck-the-marvin-missions": {
+  "ano": 1993,
+  "cem": 1.8,
+  "hltb": 2143,
+  "main": 1.8,
+  "n": 6,
+  "nome": "Daffy Duck: The Marvin Missions",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dai-3-ji-super-robot-taisen": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dai-4-ji-super-robot-taisen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-daibakushou-jinsei-gekijou": {
+  "ano": 1992,
+  "hltb": 116240,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Daibakushou: Jinsei Gekijou",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-daibakushou-jinsei-gekijou-dokidoki-seishun-hen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-daibakushou-jinsei-gekijou-ooedo-nikki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-daibakushou-jinsei-gekijou-zukkoke-salaryman-hen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-daikaijuu-monogatari": {
+  "ano": 1994,
+  "hltb": 30728,
+  "main": 33.0,
+  "n": 3,
+  "nome": "Super Shell Monsters Story",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-daikaijuu-monogatari-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-daisenryaku-expert": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-daisenryaku-expert-wwii-war-in-europe": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-darius-twin": {
+  "ano": 1991,
+  "cem": 1.7,
+  "hltb": 2199,
+  "main": 1.5,
+  "n": 23,
+  "nome": "Darius Twin",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dark-half": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dark-kingdom": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-dark-law-meaning-of-death": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-date-kimiko-no-virtual-tennis": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-david-crane-s-amazing-tennis": {
+  "ano": 1992,
+  "hltb": 41901,
+  "main": 1.1,
+  "n": 1,
+  "nome": "David Crane's Amazing Tennis",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-daze-before-christmas": {
+  "ano": 1994,
+  "hltb": 2291,
+  "main": 1.7,
+  "n": 14,
+  "nome": "Daze Before Christmas",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-deae-tonosama-appare-ichiban": {
+  "ano": 1995,
+  "cem": 0.8,
+  "hltb": 31249,
+  "main": 0.7,
+  "n": 3,
+  "nome": "Deae Tonosama Appare Ichiban",
+  "plus": 0.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dear-boys": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dekitate-high-school": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-demolition-man": {
+  "ano": 1995,
+  "cem": 2.3,
+  "hltb": 2433,
+  "main": 1.5,
+  "n": 8,
+  "nome": "Demolition Man",
+  "plus": 2.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-demon-s-crest": {
+  "ano": 1994,
+  "cem": 6.0,
+  "hltb": 2438,
+  "main": 3.1,
+  "n": 95,
+  "nome": "Demon's Crest",
+  "plus": 4.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dennis-the-menace": {
+  "ano": 1993,
+  "hltb": 2445,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Dennis the Menace",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-der-langrisser": {
+  "ano": 1994,
+  "hltb": 2452,
+  "main": 32.9,
+  "n": 2,
+  "nome": "Der Langrisser",
+  "plus": 42.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-derby-jockey-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-derby-jockey-kishu-ou-he-no-michi": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-derby-stallion-96": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-derby-stallion-98": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-derby-stallion-ii": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-derby-stallion-iii": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-desert-strike-return-to-the-gulf": {
+  "ano": 1992,
+  "hltb": 2465,
+  "main": 4.2,
+  "n": 4,
+  "nome": "Desert Strike: Return to the Gulf",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dharma-doujou": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dig-spike-volleyball": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dino-dini-s-soccer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dinocity": {
+  "ano": 1992,
+  "hltb": 2568,
+  "main": 2.1,
+  "n": 7,
+  "nome": "DinoCity",
+  "plus": 3.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dirt-racer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dirt-trax-fx": {
+  "ano": 1995,
+  "hltb": 16061,
+  "main": 2.1,
+  "n": 3,
+  "nome": "Dirt Trax FX",
+  "plus": 1.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-disney-s-aladdin": {
+  "ano": 1993,
+  "cem": 3.2,
+  "hltb": 2608,
+  "main": 1.7,
+  "n": 207,
+  "nome": "Disney's Aladdin",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-disney-s-beauty-and-the-beast": {
+  "ano": 1994,
+  "hltb": 23697,
+  "main": 1.0,
+  "n": 2,
+  "nome": "Disney's Beauty and the Beast",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-disney-s-goof-troop": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-disney-s-pinocchio": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dokapon-3-2-1-arashi-o-yobu-yuujou": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dokapon-gaiden-honoo-no-audition": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-doom": {
+  "ano": 1993,
+  "cem": 10.9,
+  "hltb": 2701,
+  "main": 5.7,
+  "n": 9,
+  "nome": "Doom",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-doremi-fantasy-milon-no-dokidoki-daibouken": {
+  "nao": "nenhum-casou",
+  "v": 2
  }
 }

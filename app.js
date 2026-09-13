@@ -553,6 +553,16 @@ function lbFechar() {
 
 function kb(v) { return v >= 1024 ? (v / 1024).toFixed(1) + " MB" : v + " KB"; }
 
+/* O coletor guarda GB porque e a unidade da pagina do Marketplace, mas mostrar
+   tudo em giga esconde o catalogo: 83% dos jogos tem menos de 1 GB, 1.948 deles
+   tem menos de 100 MB e a mediana e 0,04 GB. "0,04 GB" seria a leitura normal, e
+   nao a excecao. Abaixo de 1 GB, portanto, sai em MB. */
+function tamanhoTexto(gb) {
+  if (typeof gb !== "number" || gb <= 0) return null;
+  if (gb < 1) return Math.round(gb * 1024).toLocaleString("pt-BR") + " MB";
+  return gb.toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " GB";
+}
+
 function horas(v) {
   if (typeof v !== "number") return null;
   if (v < 1) return Math.round(v * 60) + " min";
@@ -696,6 +706,7 @@ function abasDetalhe(g) {
   if (tempo) geral += "<h4>Tempo de jogo</h4>" + tempo;
   /* Kinect fica aqui e nao com os modos: nos 132 jogos que EXIGEM o sensor ele
      responde a mesma pergunta que a retrocompatibilidade, se roda no seu setup. */
+  geral += linha("Tamanho", tamanhoTexto(g.tamanho));
   if (f.kinect) geral += linha("Kinect", f.kinect === "required" ? "obrigatório" : "opcional");
   geral += bcHtml(g);
   if (geral) abas.push(["Visão geral", geral]);

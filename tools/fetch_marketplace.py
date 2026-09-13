@@ -91,7 +91,20 @@ def ler_tamanho(h):
 
 
 def ler_dlc(h):
-    """Nomes dos add-ons listados, sem preco e sem endereco de compra."""
+    """Nomes dos add-ons listados na pagina.
+
+    O nome NAO sai do texto corrido. Cada entrada e assim:
+
+        The Vines Pack 01  2.75 out of 5 stars from 34 reviews
+        Release date: 7/13/2010  Size: 90.53 MB  Description | Share this ...
+
+    e tentar pegar o que vem antes da nota engole a descricao do item anterior,
+    porque nao ha delimitador a esquerda. O sinal bom e o link que cada entrada
+    carrega: /Product/<slug>/<guid>. O slug e o nome, ja delimitado pelas barras.
+
+    A lista e paginada ("841 - 900 of 1.867"), entao o que sai daqui e a pagina
+    que ficou arquivada, nao o catalogo completo de add-ons do jogo.
+    """
     t = texto(h)
     i = t.find("All Game Add-ons")
     if i < 0:
@@ -102,11 +115,13 @@ def ler_dlc(h):
     corte = re.search(r"All Games |All Game Demos|All Videos|All Themes", resto[16:])
     if corte:
         resto = resto[:corte.start() + 16]
-    nomes = []
-    for m in re.finditer(r"(?:^|\s)([A-Z][^|]{3,70}?)\s+(?:Sign in to rate|[\d.,]+ out of 5)", resto):
-        nome = m.group(1).strip(" -–—")
-        if 3 < len(nome) < 70 and nome not in nomes:
-            nomes.append(nome)
+    nomes, vistos = [], set()
+    for m in re.finditer(r"/Product/([^/\s]{2,90})/[0-9a-fA-F-]{8,}", resto):
+        nome = urllib.parse.unquote(m.group(1)).replace("-", " ").strip()
+        nome = re.sub(r"\s+", " ", nome)
+        ch = nome.lower()
+        if 2 < len(nome) < 80 and ch not in vistos:
+            vistos.add(ch); nomes.append(nome)
     return nomes or None
 
 

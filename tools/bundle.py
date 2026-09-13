@@ -186,6 +186,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     x360db = load("x360db.json", {})
     screens = load("screens.json", {})
     tus = load("tu.json", {})
+    # Tamanho do download em GB, do Marketplace arquivado. E o download real, e
+    # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
+    # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
+    tamanhos = load("tamanho.json", {})
     # Tempo de jogo: duas fontes que nao se pisam. data/tempo.json e curadoria a
     # mao (ver o cabecalho de la); os hltb*.json sao do coletor, um arquivo por
     # alvo para dois processos em paralelo nao se apagarem. Quem ganha e decidido
@@ -231,7 +235,7 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
                 coopados += 1
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
-        g.pop("tu", None); g.pop("tempo", None)
+        g.pop("tu", None); g.pop("tempo", None); g.pop("tamanho", None)
         tp = juntar_tempo(g["id"], tempos, hltb)
         if tp:
             g["tempo"] = tp
@@ -242,6 +246,9 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         ns = screens.get(g["id"])
         if isinstance(ns, int) and ns > 0:
             g["screens"] = ns
+        tm = tamanhos.get(g["id"])
+        if isinstance(tm, (int, float)) and tm > 0:
+            g["tamanho"] = tm
         r = x360db.get(g["id"])
         if r:
             if isinstance(r.get("ur"), (int, float)):
