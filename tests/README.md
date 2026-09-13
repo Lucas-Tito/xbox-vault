@@ -23,7 +23,20 @@ node tests/netcheck.mjs "file://$PWD/index.html"
 node tests/netcheck.mjs "file://$PWD/index.html" emu
 ```
 
-69 + 13 + 2 asserções, mais a auditoria de rede. Elas já pegaram seis bugs reais:
+```bash
+# precedência do tempo de jogo: prova que o coletor não apaga curadoria à mão
+python3 tests/tempo.py
+```
+
+69 + 13 + 2 asserções no navegador, 8 em Python, mais a auditoria de rede.
+
+O teste de Python é de natureza diferente dos outros: não dirige o site, exercita a função do
+`bundle.py` que decide entre `data/tempo.json` (escrito por uma pessoa) e `data/hltb*.json`
+(escrito por um robô que roda por horas sem ninguém olhando). Está testado porque esse erro não
+apareceria na tela — o site mostraria um número plausível, só que o errado, e a curadoria teria
+sumido sem aviso.
+
+As do navegador já pegaram seis bugs reais:
 
 - `Array.prototype.slice.call(owned)` com um `Set` devolve `[]` — a exportação gravava
   uma lista vazia enquanto o contador na tela mostrava o número certo. Só apareceu porque

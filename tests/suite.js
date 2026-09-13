@@ -109,6 +109,26 @@
     ok('procedencia das outras tags preservada',
        comCoop.every(g => g.tags.coopSource === 'co-optimus' && g.tags.source !== 'co-optimus'));
     // o inverso: quem tem co-op sem conferencia precisa dizer isso
+    // o aviso vale nos dois lados: quem diz ter co-op sem conferencia, e quem
+    // diz nao ter -- calar no segundo caso faz parecer que a ausencia foi checada
+    const semCoopNemInfo = window.XBX_DB.games.filter(g =>
+      !g.tags.coop && !g.coopInfo && g.tags.source !== 'not-a-game' && g.tags.singlePlayer);
+    ok('existem jogos sem co-op e sem conferencia', semCoopNemInfo.length > 0,
+       semCoopNemInfo.length + ' jogos');
+    {
+      const sn = semCoopNemInfo[0];
+      $('#q').value = sn.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 0, 6000); await wait(300);
+      const cn = cards().find(c => c.dataset.id === sn.id);
+      if (cn) {
+        cn.querySelector('.thumb').click(); await wait(400);
+        ok('avisa que a ausencia de co-op nao foi conferida',
+           $('#modal-body').textContent.includes('ausência de co-op não foi conferida'), sn.title);
+        $('#modal-x').click(); await wait(200);
+      }
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
     const semConf = window.XBX_DB.games.filter(g => g.tags.coop && !g.coopInfo);
     ok('existem jogos com co-op nao conferido', semConf.length > 0, semConf.length + ' jogos');
     if (semConf.length) {
@@ -119,7 +139,7 @@
       if (cx) {
         cx.querySelector('.thumb').click(); await wait(400);
         const mx = $('#modal-body').textContent;
-        ok('modal avisa que o co-op nao foi conferido', mx.includes('não conferido no Co-Optimus'));
+        ok('modal avisa que o co-op nao foi conferido', mx.includes('não conferido'));
         ok('e nao mostra o bloco do Co-Optimus', !mx.includes('Co-op segundo o Co-Optimus'));
         $('#modal-x').click(); await wait(200);
       } else ok('card do jogo sem conferencia', false, 'nao achei ' + sc.id);

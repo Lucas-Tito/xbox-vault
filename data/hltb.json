@@ -1,0 +1,4745 @@
+{
+ "x360-0-d-beat-drop": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-0-day-attack-on-earth": {
+  "ano": 2009,
+  "cem": 1.5,
+  "hltb": 12372,
+  "main": 2.8,
+  "n": 4,
+  "nome": "0 Day Attack on Earth",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-007-legends": {
+  "ano": 2012,
+  "cem": 9.9,
+  "hltb": 27,
+  "main": 6.0,
+  "n": 19,
+  "nome": "007 Legends",
+  "plus": 8.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-007-quantum-of-solace": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-1-vs-100": {
+  "ano": 2009,
+  "cem": 0.2,
+  "hltb": 21829,
+  "main": 0.3,
+  "n": 6,
+  "nome": "1 vs. 100",
+  "plus": 2.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-11eyes-crossover": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-1942-joint-strike": {
+  "ano": 2008,
+  "hltb": 55,
+  "main": 0.9,
+  "n": 5,
+  "nome": "1942: Joint Strike",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-2006-fifa-world-cup": {
+  "ano": 2006,
+  "hltb": 15162,
+  "main": 4.0,
+  "n": 4,
+  "nome": "2006 FIFA World Cup",
+  "plus": 15.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-2010-fifa-world-cup-south-africa": {
+  "ano": 2010,
+  "hltb": 60,
+  "main": 7.7,
+  "n": 3,
+  "nome": "2010 FIFA World Cup South Africa",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-2014-fifa-world-cup-brazil": {
+  "ano": 2014,
+  "hltb": 17881,
+  "main": 5.5,
+  "n": 8,
+  "nome": "2014 FIFA World Cup Brazil",
+  "plus": 37.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-3-on-3-nhl-arcade": {
+  "ano": 2009,
+  "cem": 5.5,
+  "hltb": 63,
+  "main": 1.5,
+  "n": 7,
+  "nome": "3 on 3 NHL Arcade",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-3d-ultra-minigolf-adventures": {
+  "ano": 2007,
+  "cem": 4.9,
+  "hltb": 71,
+  "main": 3.9,
+  "n": 8,
+  "nome": "3D Ultra MiniGolf Adventures",
+  "plus": 4.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-3d-ultra-minigolf-adventures-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-50-cent-blood-on-the-sand": {
+  "ano": 2009,
+  "cem": 10.3,
+  "hltb": 85,
+  "main": 5.5,
+  "n": 37,
+  "nome": "50 Cent: Blood on the Sand",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-a-r-e-s-extinction-agenda-ex": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-a-train-hx": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-absolute-blazing-infinity": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-abyss-odyssey": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-ac-dc-live-rock-band-track-pack": {
+  "ano": 2008,
+  "cem": 4.0,
+  "hltb": 163,
+  "main": 3.8,
+  "n": 9,
+  "nome": "Rock Band Track Pack: AC/DC Live",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ace-combat-6-fires-of-liberation": {
+  "ano": 2007,
+  "cem": 35.9,
+  "hltb": 170,
+  "main": 8.5,
+  "n": 59,
+  "nome": "Ace Combat 6: Fires of Liberation",
+  "plus": 14.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ace-combat-assault-horizon": {
+  "ano": 2011,
+  "cem": 80.0,
+  "hltb": 173,
+  "main": 8.7,
+  "n": 17,
+  "nome": "Ace Combat: Assault Horizon",
+  "plus": 8.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-aces-of-the-galaxy": {
+  "ano": 2008,
+  "cem": 3.0,
+  "hltb": 11947,
+  "main": 0.8,
+  "n": 4,
+  "nome": "Aces of the Galaxy",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-adidas-micoach": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-adrenalin-misfits": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-adventure-time-explore-the-dungeon-because-i-don-t-know": {
+  "ano": 2013,
+  "hltb": 11936,
+  "main": 6.5,
+  "n": 2,
+  "nome": "Adventure Time: Explore the Dungeon Because I Don't Know!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-adventure-time-finn-and-jake-investigations": {
+  "ano": 2015,
+  "cem": 8.5,
+  "hltb": 31804,
+  "main": 8.0,
+  "n": 3,
+  "nome": "Adventure Time: Finn & Jake Investigations",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-adventure-time-the-secret-of-the-nameless-kingdom": {
+  "ano": 2014,
+  "hltb": 21245,
+  "main": 8.0,
+  "n": 2,
+  "nome": "Adventure Time: The Secret of the Nameless Kingdom",
+  "plus": 12.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-aegis-wing": {
+  "ano": 2007,
+  "cem": 9.0,
+  "hltb": 232,
+  "main": 2.6,
+  "n": 26,
+  "nome": "Aegis Wing",
+  "plus": 4.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-afl-live": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-afl-live-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-afro-samurai": {
+  "ano": 2009,
+  "cem": 16.5,
+  "hltb": 250,
+  "main": 7.2,
+  "n": 18,
+  "nome": "Afro Samurai",
+  "plus": 9.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-after-burner-climax": {
+  "ano": 2010,
+  "cem": 4.4,
+  "hltb": 253,
+  "main": 0.3,
+  "n": 14,
+  "nome": "After Burner Climax",
+  "plus": 2.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-age-of-booty": {
+  "ano": 2008,
+  "cem": 12.4,
+  "hltb": 264,
+  "n": 6,
+  "nome": "Age of Booty",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-air-conflicts-pacific-carriers": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-air-conflicts-secret-wars": {
+  "ano": 2011,
+  "hltb": 295,
+  "n": 1,
+  "nome": "Air Conflicts: Secret Wars",
+  "plus": 4.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-air-conflicts-vietnam": {
+  "ano": 2013,
+  "hltb": 13919,
+  "main": 5.0,
+  "n": 5,
+  "nome": "Air Conflicts: Vietnam",
+  "plus": 11.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-airmech-arena": {
+  "ano": 2014,
+  "hltb": 20567,
+  "main": 2.0,
+  "n": 2,
+  "nome": "AirMech Arena",
+  "plus": 24.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-akai-katana-shin": {
+  "ano": 2011,
+  "hltb": 308,
+  "main": 0.7,
+  "n": 25,
+  "nome": "Akai Katana",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-akatsuki-no-amaneka-to-aoi-kyojin": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-alan-wake": {
+  "ano": 2010,
+  "cem": 24.5,
+  "hltb": 319,
+  "main": 11.2,
+  "n": 439,
+  "nome": "Alan Wake",
+  "plus": 14.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alan-wake-s-american-nightmare": {
+  "ano": 2012,
+  "cem": 9.0,
+  "hltb": 320,
+  "main": 4.0,
+  "n": 128,
+  "nome": "Alan Wake's American Nightmare",
+  "plus": 4.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alarm-for-cobra-11-crash-time": {
+  "ano": 2008,
+  "cem": 11.0,
+  "hltb": 28776,
+  "main": 8.0,
+  "n": 2,
+  "nome": "Crash Time: Autobahn Pursuit",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alice-madness-returns": {
+  "ano": 2011,
+  "cem": 24.4,
+  "hltb": 340,
+  "main": 14.3,
+  "n": 70,
+  "nome": "Alice: Madness Returns",
+  "plus": 16.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-breed-2-assault": {
+  "ano": 2010,
+  "hltb": 346,
+  "main": 5.1,
+  "n": 2,
+  "nome": "Alien Breed 2: Assault",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-breed-3-descent": {
+  "ano": 2010,
+  "hltb": 347,
+  "n": 1,
+  "nome": "Alien Breed 3: Descent",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-breed-evolution": {
+  "ano": 2009,
+  "hltb": 14017,
+  "main": 10.0,
+  "n": 3,
+  "nome": "Alien Breed: Evolution",
+  "plus": 13.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-hominid-hd": {
+  "ano": 2007,
+  "cem": 6.8,
+  "hltb": 355,
+  "main": 5.1,
+  "n": 22,
+  "nome": "Alien Hominid HD",
+  "plus": 7.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-isolation": {
+  "ano": 2014,
+  "hltb": 16638,
+  "main": 20.6,
+  "n": 10,
+  "nome": "Alien: Isolation",
+  "plus": 19.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-rage": {
+  "ano": 2013,
+  "cem": 10.4,
+  "hltb": 13716,
+  "main": 6.1,
+  "n": 6,
+  "nome": "Alien Rage",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alien-spidy": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-aliens-colonial-marines": {
+  "ano": 2013,
+  "cem": 15.0,
+  "hltb": 382,
+  "main": 6.8,
+  "n": 49,
+  "nome": "Aliens: Colonial Marines",
+  "plus": 9.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-aliens-vs-predator": {
+  "ano": 2010,
+  "cem": 23.5,
+  "hltb": 381,
+  "main": 8.3,
+  "n": 50,
+  "nome": "Aliens vs. Predator",
+  "plus": 10.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-all-pro-football-2k8": {
+  "ano": 2007,
+  "hltb": 389,
+  "main": 13.0,
+  "n": 2,
+  "nome": "All-Pro Football 2K8",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-all-round-hunter": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-all-zombies-must-die": {
+  "ano": 2011,
+  "cem": 10.4,
+  "hltb": 387,
+  "n": 4,
+  "nome": "All Zombies Must Die!",
+  "plus": 11.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alone-in-the-dark": {
+  "ano": 2008,
+  "cem": 16.3,
+  "hltb": 394,
+  "main": 8.1,
+  "n": 18,
+  "nome": "Alone in the Dark",
+  "plus": 11.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alpha-protocol": {
+  "ano": 2010,
+  "cem": 26.5,
+  "hltb": 401,
+  "main": 13.2,
+  "n": 46,
+  "nome": "Alpha Protocol",
+  "plus": 18.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-altered-beast": {
+  "ano": 1988,
+  "cem": 1.4,
+  "hltb": 409,
+  "main": 1.1,
+  "n": 8,
+  "nome": "Altered Beast",
+  "plus": 1.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-alvin-and-the-chipmunks-chipwrecked": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-amaneka-of-dawn-and-the-deep-blue-golem": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-america-s-army-true-soldiers": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-american-mcgee-s-alice": {
+  "ano": 2000,
+  "cem": 17.2,
+  "hltb": 432,
+  "main": 10.3,
+  "n": 25,
+  "nome": "American McGee's Alice",
+  "plus": 13.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-american-mensa-academy": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-amped-3": {
+  "ano": 2005,
+  "cem": 12.5,
+  "hltb": 443,
+  "main": 7.2,
+  "n": 8,
+  "nome": "Amped 3",
+  "plus": 10.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-amy": {
+  "ano": 2012,
+  "cem": 7.1,
+  "hltb": 446,
+  "main": 4.6,
+  "n": 3,
+  "nome": "Amy",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-anarchy-reigns": {
+  "ano": 2013,
+  "cem": 23.5,
+  "hltb": 453,
+  "main": 5.8,
+  "n": 26,
+  "nome": "Anarchy Reigns",
+  "plus": 8.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ancients-of-ooga": {
+  "ano": 2011,
+  "cem": 9.0,
+  "hltb": 455,
+  "n": 1,
+  "nome": "Ancients of Ooga",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-angry-birds-star-wars": {
+  "ano": 2012,
+  "cem": 24.4,
+  "hltb": 470,
+  "main": 5.2,
+  "n": 20,
+  "nome": "Angry Birds Star Wars",
+  "plus": 9.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-angry-birds-trilogy": {
+  "ano": 2012,
+  "hltb": 471,
+  "main": 21.0,
+  "n": 4,
+  "nome": "Angry Birds Trilogy",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-anna-extended-edition": {
+  "ano": 2013,
+  "cem": 12.0,
+  "hltb": 29048,
+  "main": 3.9,
+  "n": 2,
+  "nome": "Anna: Extended Edition",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-anomaly-warzone-earth": {
+  "ano": 2011,
+  "cem": 12.1,
+  "hltb": 496,
+  "main": 6.2,
+  "n": 4,
+  "nome": "Anomaly: Warzone Earth",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-apache-air-assault": {
+  "ano": 2010,
+  "cem": 37.7,
+  "hltb": 515,
+  "main": 8.5,
+  "n": 2,
+  "nome": "Apache: Air Assault",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-apocalypse-desire-next": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-apples-to-apples": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-aqua": {
+  "ano": 2010,
+  "hltb": 526,
+  "n": 2,
+  "nome": "Aqua",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-aquazone-life-simulator": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-arcana-heart-3": {
+  "ano": 2009,
+  "cem": 11.8,
+  "hltb": 554,
+  "main": 0.4,
+  "n": 5,
+  "nome": "Arcana Heart 3",
+  "plus": 0.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-arcania-gothic-4": {
+  "ano": 2010,
+  "cem": 49.5,
+  "hltb": 556,
+  "main": 16.3,
+  "n": 17,
+  "nome": "ArcaniA: Gothic 4",
+  "plus": 22.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-arcania-the-complete-tale": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-are-you-smarter-than-a-5th-grader-game-time": {
+  "ano": 2009,
+  "hltb": 118851,
+  "main": 0.9,
+  "n": 1,
+  "nome": "Are You Smarter Than a 5th Grader? - Game Time",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-are-you-smarter-than-a-5th-grader-make-the-grade": {
+  "ano": 2008,
+  "cem": 0.9,
+  "hltb": 86694,
+  "main": 0.5,
+  "n": 2,
+  "nome": "Are You Smarter Than a 5th Grader? - Make the Grade",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-arkadian-warriors": {
+  "ano": 2007,
+  "cem": 17.0,
+  "hltb": 14544,
+  "main": 4.0,
+  "n": 9,
+  "nome": "Arkadian Warriors",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-arkanoid-live": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-armored-core-4": {
+  "ano": 2006,
+  "cem": 61.2,
+  "hltb": 598,
+  "main": 10.1,
+  "n": 18,
+  "nome": "Armored Core 4",
+  "plus": 12.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-army-of-two": {
+  "ano": 2008,
+  "cem": 12.4,
+  "hltb": 622,
+  "main": 6.9,
+  "n": 108,
+  "nome": "Army of Two",
+  "plus": 8.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-army-of-two-the-40th-day": {
+  "ano": 2010,
+  "cem": 18.1,
+  "hltb": 623,
+  "main": 7.4,
+  "n": 62,
+  "nome": "Army of Two: The 40th Day",
+  "plus": 10.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-army-of-two-the-devil-s-cartel": {
+  "ano": 2013,
+  "cem": 21.9,
+  "hltb": 624,
+  "main": 8.3,
+  "n": 55,
+  "nome": "Army of Two: The Devil's Cartel",
+  "plus": 12.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ascend-hand-of-kul": {
+  "ano": 2013,
+  "cem": 44.6,
+  "hltb": 13882,
+  "main": 22.8,
+  "n": 6,
+  "nome": "Ascend: Hand of Kul",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ashes-cricket-2009": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-assassin-s-creed": {
+  "ano": 2007,
+  "cem": 31.8,
+  "hltb": 649,
+  "main": 15.9,
+  "n": 540,
+  "nome": "Assassin's Creed",
+  "plus": 20.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assassin-s-creed-brotherhood": {
+  "ano": 2010,
+  "cem": 43.5,
+  "hltb": 661,
+  "main": 15.9,
+  "n": 421,
+  "nome": "Assassin's Creed: Brotherhood",
+  "plus": 25.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assassin-s-creed-ii": {
+  "ano": 2009,
+  "cem": 35.1,
+  "hltb": 651,
+  "main": 19.5,
+  "n": 671,
+  "nome": "Assassin's Creed II",
+  "plus": 26.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assassin-s-creed-iii": {
+  "ano": 2012,
+  "cem": 55.5,
+  "hltb": 655,
+  "main": 16.7,
+  "n": 437,
+  "nome": "Assassin's Creed III",
+  "plus": 30.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assassin-s-creed-iv-black-flag": {
+  "ano": 2013,
+  "cem": 58.3,
+  "hltb": 12707,
+  "main": 23.1,
+  "n": 276,
+  "nome": "Assassin's Creed IV: Black Flag",
+  "plus": 38.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assassin-s-creed-liberation-hd": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-assassin-s-creed-revelations": {
+  "ano": 2011,
+  "cem": 34.0,
+  "hltb": 664,
+  "main": 12.7,
+  "n": 335,
+  "nome": "Assassin's Creed: Revelations",
+  "plus": 21.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assassin-s-creed-rogue": {
+  "ano": 2014,
+  "cem": 36.5,
+  "hltb": 21246,
+  "main": 11.3,
+  "n": 150,
+  "nome": "Assassin's Creed: Rogue",
+  "plus": 21.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assault-heroes": {
+  "ano": 2006,
+  "cem": 6.0,
+  "hltb": 667,
+  "main": 2.2,
+  "n": 12,
+  "nome": "Assault Heroes",
+  "plus": 3.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-assault-heroes-2": {
+  "ano": 2008,
+  "cem": 4.0,
+  "hltb": 668,
+  "main": 3.3,
+  "n": 8,
+  "nome": "Assault Heroes 2",
+  "plus": 5.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-asterix-at-the-olympic-games": {
+  "ano": 2007,
+  "cem": 8.3,
+  "hltb": 675,
+  "main": 5.5,
+  "n": 3,
+  "nome": "Asterix at the Olympic Games",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-asteroids-asteroids-deluxe": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-astropop": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-asura-s-wrath": {
+  "ano": 2012,
+  "cem": 13.3,
+  "hltb": 688,
+  "main": 7.1,
+  "n": 182,
+  "nome": "Asura's Wrath",
+  "plus": 9.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-attack-of-the-movies-3d": {
+  "ano": 2010,
+  "hltb": 12317,
+  "main": 0.9,
+  "n": 1,
+  "nome": "Attack Of The Movies 3D",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-autobahn-polizei": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-avatar-famestar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-avatar-the-last-airbender-the-burning-earth": {
+  "ano": 2007,
+  "cem": 3.8,
+  "hltb": 742,
+  "main": 4.5,
+  "n": 29,
+  "nome": "Avatar: The Last Airbender - The Burning Earth",
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-awesomenauts": {
+  "ano": 2012,
+  "cem": 50.0,
+  "hltb": 756,
+  "main": 30.0,
+  "n": 2,
+  "nome": "Awesomenauts",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-axel-and-pixel": {
+  "ano": 2009,
+  "cem": 4.7,
+  "hltb": 758,
+  "main": 3.0,
+  "n": 12,
+  "nome": "Axel & Pixel",
+  "plus": 3.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-babel-rising": {
+  "ano": 2009,
+  "cem": 7.8,
+  "hltb": 773,
+  "main": 2.8,
+  "n": 7,
+  "nome": "Babel Rising",
+  "plus": 5.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-back-to-the-future-the-game": {
+  "ano": 2010,
+  "cem": 13.3,
+  "hltb": 778,
+  "main": 11.0,
+  "n": 9,
+  "nome": "Back to the Future: The Game",
+  "plus": 13.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-backbreaker": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-backbreaker-vengeance": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-backyard-football-2010": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-backyard-sports-rookie-rush": {
+  "ano": 2010,
+  "cem": 5.2,
+  "hltb": 14024,
+  "main": 4.0,
+  "n": 4,
+  "nome": "Backyard Sports: Rookie Rush",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-backyard-sports-sandlot-sluggers": {
+  "ano": 2010,
+  "hltb": 21613,
+  "main": 3.6,
+  "n": 1,
+  "nome": "Backyard Sports: Sandlot Sluggers",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-baja-edge-of-control": {
+  "ano": 2008,
+  "hltb": 16909,
+  "main": 15.5,
+  "n": 1,
+  "nome": "Baja: Edge of Control",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bakugan-battle-brawlers": {
+  "ano": 2009,
+  "hltb": 804,
+  "main": 7.4,
+  "n": 6,
+  "nome": "Bakugan Battle Brawlers",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bakugan-defenders-of-the-core": {
+  "ano": 2010,
+  "hltb": 21331,
+  "main": 7.1,
+  "n": 3,
+  "nome": "Bakugan: Defenders of the Core",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-band-hero": {
+  "ano": 2009,
+  "cem": 22.0,
+  "hltb": 827,
+  "main": 6.5,
+  "n": 13,
+  "nome": "Band Hero",
+  "plus": 11.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-band-of-bugs": {
+  "ano": 2007,
+  "hltb": 828,
+  "n": 3,
+  "nome": "Band of Bugs",
+  "plus": 5.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bandfuse-rock-legends": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-bang-bang-racing": {
+  "ano": 2011,
+  "hltb": 830,
+  "main": 3.5,
+  "n": 1,
+  "nome": "Bang Bang Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bangai-o-hd-missile-fury": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-banjo-kazooie": {
+  "ano": 1998,
+  "cem": 13.6,
+  "hltb": 834,
+  "main": 11.4,
+  "n": 167,
+  "nome": "Banjo-Kazooie",
+  "plus": 14.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-banjo-kazooie-nuts-and-bolts": {
+  "ano": 2008,
+  "cem": 35.0,
+  "hltb": 836,
+  "main": 16.4,
+  "n": 51,
+  "nome": "Banjo-Kazooie: Nuts & Bolts",
+  "plus": 24.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-banjo-tooie": {
+  "ano": 2000,
+  "cem": 23.8,
+  "hltb": 837,
+  "main": 16.5,
+  "n": 69,
+  "nome": "Banjo-Tooie",
+  "plus": 24.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bankshot-billiards-2": {
+  "ano": 2005,
+  "hltb": 839,
+  "n": 1,
+  "nome": "Bankshot Billiards 2",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-barbie-and-her-sisters-puppy-rescue": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-bass-pro-shops-the-hunt": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-bass-pro-shops-the-strike": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-bastion": {
+  "ano": 2011,
+  "cem": 14.4,
+  "hltb": 869,
+  "main": 6.7,
+  "n": 88,
+  "nome": "Bastion",
+  "plus": 7.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-batman-arkham-asylum": {
+  "ano": 2009,
+  "cem": 27.5,
+  "hltb": 881,
+  "main": 13.4,
+  "n": 303,
+  "nome": "Batman: Arkham Asylum",
+  "plus": 17.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-batman-arkham-city": {
+  "ano": 2011,
+  "cem": 44.5,
+  "hltb": 882,
+  "main": 13.9,
+  "n": 282,
+  "nome": "Batman: Arkham City",
+  "plus": 22.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-batman-arkham-origins": {
+  "ano": 2013,
+  "cem": 38.0,
+  "hltb": 12676,
+  "main": 12.9,
+  "n": 170,
+  "nome": "Batman: Arkham Origins",
+  "plus": 20.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-batman-arkham-origins-blackgate-deluxe-edition": {
+  "ano": 2014,
+  "hltb": 151290,
+  "main": 6.0,
+  "n": 4,
+  "nome": "Batman: Arkham Origins Blackgate - Deluxe Edition",
+  "plus": 11.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-batman-the-telltale-series": {
+  "ano": 2016,
+  "cem": 9.8,
+  "hltb": 38801,
+  "main": 8.6,
+  "n": 16,
+  "nome": "Batman: The Telltale Series",
+  "plus": 10.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battle-academy": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-battle-fantasia": {
+  "ano": 2007,
+  "hltb": 911,
+  "main": 1.3,
+  "n": 6,
+  "nome": "Battle Fantasia",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battle-los-angeles": {
+  "ano": 2011,
+  "cem": 2.9,
+  "hltb": 928,
+  "main": 1.1,
+  "n": 17,
+  "nome": "Battle: Los Angeles",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battle-vs-chess": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-battleblock-theater": {
+  "ano": 2013,
+  "cem": 60.0,
+  "hltb": 929,
+  "main": 9.8,
+  "n": 42,
+  "nome": "BattleBlock Theater",
+  "plus": 16.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-1943": {
+  "ano": 2009,
+  "cem": 28.9,
+  "hltb": 934,
+  "main": 8.4,
+  "n": 15,
+  "nome": "Battlefield 1943",
+  "plus": 19.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-2-modern-combat": {
+  "ano": 2005,
+  "cem": 5.8,
+  "hltb": 939,
+  "main": 6.3,
+  "n": 9,
+  "nome": "Battlefield 2: Modern Combat",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-3": {
+  "ano": 2011,
+  "cem": 62.9,
+  "hltb": 941,
+  "main": 6.7,
+  "n": 179,
+  "nome": "Battlefield 3",
+  "plus": 13.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-4": {
+  "ano": 2013,
+  "cem": 20.7,
+  "hltb": 942,
+  "main": 6.8,
+  "n": 43,
+  "nome": "Battlefield 4",
+  "plus": 7.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-bad-company": {
+  "ano": 2008,
+  "cem": 71.0,
+  "hltb": 945,
+  "main": 7.5,
+  "n": 131,
+  "nome": "Battlefield: Bad Company",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-bad-company-2": {
+  "ano": 2010,
+  "cem": 18.6,
+  "hltb": 946,
+  "main": 7.2,
+  "n": 160,
+  "nome": "Battlefield: Bad Company 2",
+  "plus": 10.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlefield-hardline": {
+  "ano": 2015,
+  "hltb": 21620,
+  "main": 8.6,
+  "n": 13,
+  "nome": "Battlefield Hardline",
+  "plus": 9.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battleship": {
+  "ano": 2012,
+  "cem": 7.5,
+  "hltb": 951,
+  "main": 3.6,
+  "n": 8,
+  "nome": "Battleship",
+  "plus": 5.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlestar-galactica": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-battlestations-midway": {
+  "ano": 2007,
+  "hltb": 952,
+  "n": 1,
+  "nome": "Battlestations: Midway",
+  "plus": 8.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlestations-pacific": {
+  "ano": 2009,
+  "hltb": 953,
+  "main": 13.4,
+  "n": 1,
+  "nome": "Battlestations: Pacific",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-battlezone": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-bayonetta": {
+  "ano": 2009,
+  "cem": 43.8,
+  "hltb": 966,
+  "main": 11.8,
+  "n": 276,
+  "nome": "Bayonetta",
+  "plus": 17.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-beat-n-groovy": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-beautiful-katamari": {
+  "ano": 2007,
+  "cem": 86.7,
+  "hltb": 989,
+  "main": 5.7,
+  "n": 64,
+  "nome": "Beautiful Katamari",
+  "plus": 14.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bee-movie-game": {
+  "ano": 2007,
+  "hltb": 993,
+  "main": 7.0,
+  "n": 2,
+  "nome": "Bee Movie Game",
+  "plus": 5.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-beijing-2008": {
+  "ano": 2008,
+  "hltb": 998,
+  "main": 3.2,
+  "n": 3,
+  "nome": "Beijing 2008",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bejeweled-2": {
+  "ano": 2004,
+  "cem": 216.0,
+  "hltb": 1000,
+  "main": 1.4,
+  "n": 5,
+  "nome": "Bejeweled 2",
+  "plus": 4.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bejeweled-3": {
+  "ano": 2010,
+  "cem": 15.0,
+  "hltb": 1001,
+  "main": 4.0,
+  "n": 5,
+  "nome": "Bejeweled 3",
+  "plus": 8.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bejeweled-blitz-live": {
+  "ano": 2011,
+  "cem": 40.0,
+  "hltb": 20472,
+  "main": 2.4,
+  "n": 3,
+  "nome": "Bejeweled Blitz LIVE",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-bellator-mma-onslaught": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ben-10-alien-force-the-rise-of-hex": {
+  "ano": 2010,
+  "cem": 5.1,
+  "hltb": 13323,
+  "main": 4.5,
+  "n": 3,
+  "nome": "Ben 10 Alien Force: The Rise of Hex",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ben-10-alien-force-vilgax-attacks": {
+  "ano": 2009,
+  "cem": 7.8,
+  "hltb": 16911,
+  "main": 5.5,
+  "n": 5,
+  "nome": "Ben 10 Alien Force: Vilgax Attacks",
+  "plus": 4.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ben-10-galactic-racing": {
+  "ano": 2011,
+  "cem": 56.8,
+  "hltb": 16910,
+  "n": 2,
+  "nome": "Ben 10: Galactic Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ben-10-omniverse": {
+  "ano": 2012,
+  "hltb": 13945,
+  "main": 5.2,
+  "n": 2,
+  "nome": "Ben 10: Omniverse",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-beyond-good-and-evil-hd": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-big-league-sports": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-black-college-football-the-xperience": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-blazing-birds": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-bliss-island": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-blood-of-the-werewolf": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-bloodbath": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-body-and-brain-connection": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-bomberman-live-battlefest": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-boogie-bunnies": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-boulder-dash-xl": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-brave": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-breach": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-brian-lara-international-cricket-2007": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-cabela-s-alaskan-adventures": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-cabela-s-big-game-hunter-hunting-party": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-cabela-s-big-game-hunter-pro-hunts": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-cabela-s-hunting-expeditions": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-cabela-s-north-american-adventures": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-capcom-arcade-cabinet": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-capcom-digital-collection": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-centipede-and-millipede": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-champion-jockey-g1-jockey-and-gallop-racer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-championship-manager-2007": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-chaos-head-love-chu-chu": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-chivalry-medieval-warfare": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-choplifter-hd": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-civilization-revolution": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-cobalt": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-coffeetime-crosswords": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-combat-wings-the-great-battles-of-world-war-ii": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-constant-c": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-country-dance-all-stars": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-crash-time-ii-burning-wheels": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-crash-time-iii-highway-nights": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-crash-time-iv-the-syndicate": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-crash-time-v-undercover": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-crazy-machines-elements": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-crazy-mouse": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-create": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-cross-channel-in-memory-of-all-people": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-cross-edge-dash": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-cyber-troopers-virtual-on": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-cyber-troopers-virtual-on-force": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-cyberball-2072": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-damage-inc-pacific-squadron-ww2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-dance-dance-revolution": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-dance-dance-revolution-universe": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-dance-evolution-dancemasters-in-na": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-dance-it-s-your-stage": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-dance-paradise": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-darwinia-plus": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-days-of-thunder-arcade": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-dead-block": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-deadliest-catch-alaskan-storm": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-deadliest-catch-sea-of-chaos": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-deadliest-warrior-ancient-combat": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-deadliest-warrior-battlegrounds": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-death-by-cube": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-death-tank": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-deca-sports-freedom-sports-island-freedom-in-pal-region": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-deepak-chopra-s-leela": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-defenders-of-ardania": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-defense-technica": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-diario-rebirth-moon-legend": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-discs-of-tron": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-disney-sing-it": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-disney-sing-it-high-school-musical-3-senior-year": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-do-don-pachi-dai-fukkatsu": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-do-don-pachi-dai-fukkatsu-black-label": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-domino-master": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-doodle-jump-for-kinect": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-double-d-dodgeball": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-dream-chronicles": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-dream-club": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-dreamcast-collection": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-droplitz": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-duck-dynasty": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-ea-sports-fantasy-football-live-draft-tracker": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-ea-sports-fantasy-football-live-score-tracker": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-earthworm-jim-hd": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-encleverment-experiment": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-entaku-no-seito-students-of-round": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ever17": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-every-party": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-everyone-sing": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-exit-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-f-e-a-r": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-falling-skies-the-game": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-fallout-3-game-add-on-pack-broken-steel-and-point-lookout": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-fallout-3-game-add-on-pack-the-pitt-and-operation-anchorage": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-family-feud-2012": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-fantastic-pets": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-farming-simulator": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-fatal-fury-special": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-fifa-18-legacy-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-fifa-19-legacy-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-fighters-uncaged": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-final-fantasy-xi-seekers-of-adoulin": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-final-fantasy-xi-wings-of-the-goddess": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-fire-pro-wrestling": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-fireburst": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-football-manager-2006": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-football-manager-2007": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-football-manager-2008": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-freefall-racers": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-fret-nice": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-frogger-hyper-arcade-edition": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-frozen-free-fall-snowball-fight": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-funtown-mahjong": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-fusion-genesis": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-g-force": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-galaga-legions": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ge-sen-love-plus-pengo": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-gel-set-and-match": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-geometry-wars-3-dimensions": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-get-fit-with-mel-b": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-gin-rummy": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-go-go-break-steady": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-goat-simulator-mmore-goatz-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-golden-fantasia-x-ougon-musou-kyoku-x": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-goldeneye-007-xbla": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-greed-corp": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-greg-hastings-paintball-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-guncraft-blocked-and-loaded": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-hail-to-the-chimp": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-handball-16": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-hardwood-hearts": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-hardwood-spades": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-harley-pasternak-s-hollywood-workout": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-harry-potter-and-the-deathly-hallows-part-i": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-harry-potter-and-the-deathly-hallows-part-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-battleship": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-boggle": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-connect-4x4": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-connect-four": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-jenga": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-pictureka": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-scrabble": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-sorry": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-sorry-sliders": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hasbro-family-game-night-yahtzee": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-hexic-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-hexodius": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-history-great-battles-medieval": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-hole-in-the-wall": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-hole-in-the-wall-deluxe-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-home-run-stars": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-how-to-train-your-dragon-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-hulk-hogan-s-main-event": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-hunter-s-trophy-2-europa": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-hybrid": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ihf-handball-challenge-14": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-indianapolis-500-evolution": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-inferno-pool": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-instant-brain": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-invincible-tiger-the-legend-of-han-tao": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-jam-live-music-arcade": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-janline": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-jasf-jane-s-advanced-strike-fighters": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-jeopardy-america-s-favorite-quiz-show": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-jet-car-stunts": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-jillian-michaels-fitness-adventure": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-jojo-s-bizarre-adventure-hd-ver": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-jonah-lomu-rugby-challenge": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-just-dance-disney-party": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-just-dance-disney-party-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-just-dance-greatest-hits": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-just-dance-kids-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kameo": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-karaoke": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-karaoke-revolution": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-karaoke-revolution-glee-volume-3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-karaoke-revolution-presents-american-idol-encore": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-karaoke-revolution-presents-american-idol-encore-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-ketsui-kizuna-jigoku-tachi-extra": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-fun-labs": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-kinect-joy-ride": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kinect-nat-geo-tv": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kinect-playfit": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kinect-sesame-street-tv": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-10-frame-bowling": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-3-point-contest": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-boxing-fight": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-darts-vs-zombies": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-field-goal-contest": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-penalty-saver": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-ping-pong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-prize-driver": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-reaction-rally": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-gems-ski-race": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinect-sports-ultimate-collection": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-kinectimals-now-with-bears": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-king-s-quest-the-complete-collection": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-konami-classics-vol-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-kung-fu-strike-the-warrior-s-rise": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-le-tour-de-france-2009-the-official-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-leedmees": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-legend-of-kay-anniversary": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-legends-of-war": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-let-s-cheer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-let-s-dance-with-mel-b": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-let-s-sing-and-dance": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lips-canta-en-espanol": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lips-deutsche-partyknaller": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-lips-i-love-the-80-s": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lips-number-one-hits": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lips-party-classics": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-little-league-world-series-baseball-2010": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lost-cities": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-lost-planet-extreme-condition-colonies-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-love-tore-bitter-a-k-a-love-tra": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-love-tore-chocolate-love-tore-trilogy-set-a-k-a-love-tra": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-love-tore-mint-a-k-a-love-tra": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-love-tore-sweet-a-k-a-love-tra": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lucha-fury": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-lucha-libre-aaa-2010-heroes-del-ring": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-machi-ing-maker-4": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-mad-riders": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-magic-the-gathering-2012": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-magic-the-gathering-2013": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-magic-the-gathering-2014": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-magic-the-gathering-2015": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-magnacarta-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-mahjong-dream-c-club": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-maji-ten-maji-de-tenshi-o-tsukutte-mita": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-major-league-baseball-2k13": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-mamoru-kun-wa-norowarete-shimatta": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-man-vs-wild-with-bear-grylls": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-marathon-durandal": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-masquerade-the-baubles-of-doom": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-meikyuu-cross-blood-reloaded": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-mercury-hg": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-merv-griffin-s-crosswords": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-meteos-wars": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-might-and-magic-clash-of-heroes-hd": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-might-and-magic-duel-of-champions-forgotten-wars": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-mighty-no-9": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-minecraft-xbox-360-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-minesweeper-flags": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-mini-ninjas-adventures": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-minute-to-win-it": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-mlb-bobblehead-battle": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-mlb-bobblehead-pros": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-mlb-front-office-manager": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-mlb-stickball": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-mobile-ops-the-one-year-war": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-moe-moe-2-ji-daisenryaku-ultra-deluxe": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-momotarou-dentetsu-16-gold": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-monkey-island-2-special-edition-lechuck-s-revenge": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g10": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g5": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g6": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g7": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g8": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-g9": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-gg": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-monster-hunter-frontier-z": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-moon-diver": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-motion-explosion": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-motionsports": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-motionsports-adrenaline": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-motogp-09-10": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-motogp-10-11": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-motogp-15": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-motorcycle-club": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-mr-driller-online": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-muchi-muchi-pork-and-pink-sweets-ibara-sore-kara": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-muv-luv-alternative-total-eclipse": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-muvluv": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-muvluv-alternative": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-my-body-coach-3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-mysims-skyheroes": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-n-plus": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-namco-museum-virtual-arcade": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nascar-08": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nascar-09": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nascar-14": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nascar-15": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nascar-15-victory-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-nascar-the-game-2011": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-nascar-the-game-inside-line": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-national-geo-challenge": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-naval-assault-the-killing-tide": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nba-2k17": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nba-2k18": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nba-baller-beats": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nba-unrivaled": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ncaa-basketball-09-march-madness-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-ncaa-basketball-10": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-ncaa-march-madness-07": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ncaa-march-madness-08": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ncis-the-game": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-need-for-speed-shift-2-unleashed": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-nexuiz": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nfl-head-coach-09": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nhl-07": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nhl-2k9": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nhl-legacy-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nickelodeon-dance": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nickelodeon-dance-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nike-plus-kinect-training": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-novadrome": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-nppl-championship-paintball-2009": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-nurarihyon-no-mago-hyakki-ryouran-taisen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-obut-petanque-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-orc-attack-flatulent-rebellion": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-ore-no-yome-anata-dake-no-hanayome": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-pac-man": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-pac-man-museum-includes-nine-pac-man-games": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-pdc-world-championship-darts-pro-tour": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-penguins-of-madagascar-dr-blowhole-returns-again": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-one": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-two": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-phantom-breaker": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-phantom-breaker-extra": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-phantom-phantom-of-inferno": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-pia-carrot-e-youkoso-4-natsu-no-koikatsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-planet-51": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-planets-under-attack": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-poker-smash": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-power-gig-rise-of-the-sixstring": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-powerup-forever": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-prison-architect-xbox-360-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-prize-driver": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-pro-evolution-soccer-2017": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-pro-yakyu-spirits-3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-puddle": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-puzzle-arcade": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-puzzle-bobble-a-k-a-bust-a-move-live": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-puzzlegeddon": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-qix-plus-plus": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-qubed": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-r-b-i-baseball-14": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-r-i-p-d-rest-in-peace-department-the-game": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-r-u-s-e": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-rabbids-invasion-the-interactive-tv-show": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-race-pro": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-rainbow-islands-towering-adventure": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-rapala-for-kinect": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-rapala-pro-bass-fishing": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-rapala-tournament-fishing": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-raystorm-hd": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-reaction-rally": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-realms-of-ancient-war-a-k-a-r-a-w": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-record-of-agarest-war-re-appearance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-red-bull-crashed-ice-kinect": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-red-bull-x-fighters": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-red-johnson-s-chronicles-one-against-all": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rekoil-liberator": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-retro-city-rampage-retro-city-rampage-dx": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-rhythm-party-boom-boom-dance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-rise-of-the-guardians": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-risk": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-robotics-notes": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rock-band-classic-rock-track-pack": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-rocketbowl": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-rocketmen-axis-of-evil": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-rocksmith-2014-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-root-double-before-crime-after-days": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rugby-15": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rugby-challenge-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rugby-league-live": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rugby-league-live-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-rugby-league-live-3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-rugby-world-cup-2015": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-runner2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-sakura-flamingo-archives": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-saw": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-sbk-08-superbike-world-championship": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-sbk-09-superbike-world-championship": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-sbk-2011-superbike-world-championship": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-sbk-x-superbike-world-championship": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-scene-it-movie-night": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-schizoid": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-screwjumper": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-sega-vintage-collection-alex-kidd-and-co-alex-kidd-in-miracle-world-super-hang-on-the-revenge-of-shinobi": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-sega-vintage-collection-streets-of-rage-streets-of-rage-2-3": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-self-defense-training-camp": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-sengoku-hime-2-senran-no-yo-gunyuu-arashi-no-gotoku": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-sharin-no-kuni-the-girl-among-the-sunflowers": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-shiei-no-sona-nyl-refrain-what-a-beautiful-memories": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-shikigami-no-shiro-iii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-shin-sangokumusou-4-special": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-shinobi": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-shooting-love-10-shuunen-xiizeal-and-deltazeal": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-shooting-love-200x": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-shotest-shogi": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-shrek-n-roll": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-shrek-the-third": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-ski-race": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-skullgirls-skullgirls-encore": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-skulls-of-the-shogun": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-skydive-proximity-flight": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-smash-court-tennis-3": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-snipers": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-soltrio-solitaire": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-sonic-the-hedgehog-2-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-sonic-the-hedgehog-3": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-sonic-the-hedgehog-4-episode-i": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-sonic-the-hedgehog-4-episode-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-soulcalibur-ii-hd-online": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-space-ark": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-special-forces-team-x-stx": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-star-raiders": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-star-trek-dac": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-star-wars-pinball-heroes-within": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-star-wars-pinball-the-force-awakens": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-steins-gate-hiyoku-renri-no-darling": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-stoked": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-stoked-big-air-edition": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-strania": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-street-fighter-ii-hyper-fighting": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-street-fighter-iii-3rd-strike-online-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-street-trace-nyc": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-strike-witches-shirogane-no-tsubasa": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-summer-athletics-2009": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-summer-athletics-the-ultimate-challenge": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-summer-challenge-athletics-tournament": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-super-robot-wars-xo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-superstar-karaoke": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-teenage-mutant-ninja-turtles-training-lair": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-tengai-makyou-ziria-haruka-naru-jipang": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-terraria-xbox-360-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-tetris-evolution": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-adventures-of-shuggy": {
+  "ano": 2011,
+  "cem": 8.5,
+  "hltb": 9755,
+  "main": 7.0,
+  "n": 5,
+  "nome": "The Adventures of Shuggy",
+  "plus": 7.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-adventures-of-tintin-the-secret-of-the-unicorn": {
+  "ano": 2011,
+  "hltb": 9756,
+  "main": 7.8,
+  "n": 5,
+  "nome": "The Adventures of Tintin: The Game",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-amazing-spider-man": {
+  "ano": 2012,
+  "cem": 17.7,
+  "hltb": 9759,
+  "main": 9.9,
+  "n": 54,
+  "nome": "The Amazing Spider-Man",
+  "plus": 12.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-amazing-spider-man-2": {
+  "ano": 2014,
+  "cem": 18.7,
+  "hltb": 15665,
+  "main": 7.5,
+  "n": 20,
+  "nome": "The Amazing Spider-Man 2",
+  "plus": 11.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-beatles-rock-band": {
+  "ano": 2009,
+  "cem": 12.3,
+  "hltb": 9778,
+  "main": 3.5,
+  "n": 34,
+  "nome": "The Beatles: Rock Band",
+  "plus": 7.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-biggest-loser-ultimate-workout": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-black-eyed-peas-experience": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-bluecoats-north-vs-south": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-the-conveni-200x": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-history-channel-great-battles-medieval": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-the-idolmaster-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-the-idolmaster-live-for-you": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-path-of-go": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-pinball-arcade": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-the-price-is-right-the-decades": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-the-splatters": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-voice-i-want-you": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-walking-dead": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-the-walking-dead-michonne-a-telltale-miniseries": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-the-walking-dead-season-two": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-the-warriors-street-brawl": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-the-x-factor": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ticket-to-ride": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-tiger-woods-pga-tour-06": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-tiqal": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-tomoyo-after-it-s-a-wonderful-life-cs-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-tony-hawk-ride": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-tony-hawk-shred": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-top-gun-hard-lock": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-top-hand-rodeo-tour": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-tour-de-france-2011": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-tour-de-france-2012": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-tour-de-france-2014": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-track-and-field": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-trivial-pursuit-live": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-tropico-5-hostile-takeover": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-trouble-witches-neo": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-tsurugi-no-machi-no-ihoujin-shiro-no-oukyuu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-tsuushin-taisen-mahjong-touryuumon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-turbo-super-stunt-squad": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-twister-mania": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-ufc-personal-trainer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-up": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-victorious-time-to-shine": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-virtua-fighter-5-online": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-voltron-defender-of-the-universe": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-voodoo-dice": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-w-l-o-sekai-renai-kiko": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-war-world": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-watchmen-the-end-is-nigh-part-i": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-watchmen-the-end-is-nigh-part-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-watchmen-the-end-is-nigh-parts-1-and-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-who-wants-to-be-a-millionaire-2012-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-wing-commander-arena": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-winning-post-world-2010": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-winter-sports-2-the-next-challenge": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-winter-sports-2010": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-winter-sports-2011": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-wipeout-create-and-crash": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-wits-and-wagers": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-world-championship-poker-featuring-howard-lederer-all-in": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-world-of-outlaws-sprint-cars": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-world-series-of-poker-2008-battle-for-the-bracelets": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-world-series-of-poker-tournament-of-champions": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-world-snooker-championship-2007": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-wrc-5": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-wreckateer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-wsc-real-09-world-snooker-championship": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-wsc-real-11-world-snooker-championship": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-xotic": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-yaris": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-yie-ar-kung-fu": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-yo-ho-kablammo": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-yoostar-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-yoostar-on-mtv": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-yosumin-live": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-yu-gi-oh-5d-s-decade-duels": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "x360-yu-gi-oh-millennium-duels": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-zegapain-not": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-zegapain-xor": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-zeit2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-zen-pinball-2-super-league-football": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-zeno-clash-ii": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-zeno-clash-ultimate-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "x360-zoids-infinity-ex-neo": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-zoo-tycoon": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-zumba-fitness-core": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "x360-zumba-fitness-rush": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-zumba-fitness-world-party": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "x360-zumba-kids": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-2006-fifa-world-cup": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-afl-live-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-afl-live-premiership-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-afl-premiership": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-all-star-baseball-2004": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-all-star-baseball-2005": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-amf-bowling-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-and-1-streetball": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-angelic-concert": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-aoi-namida": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-arena-football": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-army-men-major-malfunction": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-atari-anthology": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-backyard-wrestling-2-there-goes-the-neighborhood": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-bass-pro-shops-trophy-bass-2007": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-bass-pro-shops-trophy-hunter-2007": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-bicycle-casino": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-big-mutha-truckers": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-bionicle": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-bistro-cupid": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-bistro-cupid-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-blowout": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-bmx-xxx": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-braveknight": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-break-nine-world-billiards-tournament": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-breeders-cup-world-thoroughbred-championships": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-burger-king-games": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-c-a-t-cyber-attack-team": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-cabela-s-big-game-hunter-2005-adventures": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-capcom-classics-collection-vol-1": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-capcom-classics-collection-vol-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-carmen-sandiego-the-secret-of-the-stolen-drums": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-carve": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-catwoman": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-championship-bowling": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-championship-manager-5": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-championship-manager-season-01-02": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-chessmaster": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-club-football": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-club-football-2005": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-college-hoops-2k6": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-college-hoops-2k7": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-commandos-2-men-of-courage": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-crash-n-burn": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-cricket-2005": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-crime-life-gang-wars": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-crouching-tiger-hidden-dragon": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-crusty-demons": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-daemon-vector-gui-yi": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-dance-dance-revolution-ultramix-4": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-dance-uk": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-dead-or-alive-1-ultimate": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-dead-or-alive-2-ultimate": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-dennou-taisen-dronez": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-dinosaur-hunting": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-drihoo": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-england-international-football": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-espn-college-hoops": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-espn-nba-2night-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-espn-nfl-primetime-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-espn-nhl-hockey": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-espn-winter-x-games-snowboarding-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-exaskeleton": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-f1-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-fahrenheit": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-fatal-frame-ii-crimson-butterfly-director-s-cut": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-fila-world-tour-tennis": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-flight-academy": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ford-mustang-the-legend-lives": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ford-vs-chevy": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-frogger-ancient-shadow": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-future-tactics-the-uprising": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-galaxy-angel": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-gene-troopers": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ghost-master-the-gravenville-chronicles": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-gotcha": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-grand-theft-auto-double-pack": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-grand-theft-auto-the-trilogy": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-gravity-games-bike-street-vert-dirt": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-greg-hastings-tournament-paintball": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-guilty-gear-isuka": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-halo-2-multiplayer-map-pack": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-he-man-defender-of-grayskull": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-high-heat-major-league-baseball-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-high-rollers-casino": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-i-ninja": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-ihra-drag-racing-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ihra-drag-racing-sportsman-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ihra-professional-drag-racing-2005": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-indycar-series": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-innocent-tears": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-inside-pitch-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-international-superstar-soccer-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-iron-phoenix": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-jacked": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-james-bond-007-from-russia-with-love": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-james-cameron-s-dark-angel": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-jikkyo-world-soccer-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-jockey-s-road": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-kao-the-kangaroo-round-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-karaoke-revolution": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-karaoke-revolution-party": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-kikou-heidan-j-phoenix-plus": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-knight-s-apprentice-memorick-s-adventures": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-knights-of-the-temple-ii": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-knockout-kings-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-kof-maximum-impact-maniax": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-l-a-rush": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-links-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-lma-manager-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-lma-manager-2004": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-lma-manager-2005": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-lma-manager-2006": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-madden-nfl-07": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-magi-death-fight-mahou-gakuen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-major-league-baseball-2k5-world-series-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-manchester-united-manager-2005": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-marvel-vs-capcom-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-mashed-drive-to-survive": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-melbourne-cup-challenge": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-midway-arcade-treasures": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-mike-tyson-heavyweight-boxing": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-mlb-slugfest-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-mlb-slugfest-2006": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-mlb-slugfest-loaded": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-mojo": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-monopoly-party": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-monster-4x4-world-circuit": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-motocross-mania-3": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-motogp-ultimate-racing-technology-3": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-mtv-music-generator-3": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-mtx-mototrax": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-muzzle-flash": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-mvp-baseball-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-mx-world-tour-featuring-jamie-little": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-myst-iii-exile": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-n-u-d-e-natural-ultimate-digital-experiment": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nakajima-tetsuya-no-othello-seminar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-narc": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nascar-06-total-team-control": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nascar-07": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nascar-heat-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nascar-thunder-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nascar-thunder-2003": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nascar-thunder-2004": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nba-2k2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nba-2k3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nba-2k6": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nba-inside-drive-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nba-inside-drive-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nba-inside-drive-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nba-jam": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nba-live-07": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nba-starting-five": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ncaa-college-basketball-2k3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ncaa-college-football-2k3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ncaa-football-07": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-football-08": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-football-2003": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-football-2004": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-football-2005": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-march-madness-06": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-march-madness-2004": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ncaa-march-madness-2005": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nfl-2k2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nfl-blitz-pro": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nfl-fever-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nfl-fever-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nfl-fever-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nfl-head-coach": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nhl-06": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nhl-07": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nhl-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nhl-2004": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nhl-2005": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nhl-2k3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nhl-2k6": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nhl-rivals-2004": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-nightcaster-ii-equinox": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-nobunaga-no-yabo-ranseiki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-on-flux": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-open-season": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-operation-flashpoint-elite": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-outlaw-golf-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-outlaw-golf-9-holes-of-x-mas": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-outlaw-tennis": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-outlaw-volleyball-red-hot": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-petit-copter": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-phantasy-star-online-episode-i-and-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-pilot-down-behind-enemy-lines": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-pinball-hall-of-fame": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-plus-plumb-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-pool-shark-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-powerdrome": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-pro-cast-sports-fishing": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-pro-fishing-challenge": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-prostroke-golf-world-tour-2007": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-psyvariar-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-pump-it-up-exceed": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-pure-pinball": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-puyo-pop-fever": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-real-world-golf": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-redcard-2003": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-richard-burns-rally": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-robot-wars-extreme-destruction": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-rolling": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-room-zoom": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-rugby-06": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-rugby-2005": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-rugby-challenge-2006": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-rugby-league-2": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-run-like-hell": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-samurai-jack-the-shadow-of-aku": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-scar-squadra-corse-alfa-romeo": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-sega-gt-online": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-sensible-soccer-2006": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-sentou-yousei-yukikaze-yousei-no-mau-sora": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-shamu-s-deep-sea-adventures": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-shikigami-no-shiro": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-shikigami-no-shiro-evolution": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-shikigami-no-shiro-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-shinchou-mahjong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-showdown-legends-of-wrestling": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-ski-racing-2005": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-ski-racing-2006": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-special-forces-nemesis-strike": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-spikeout-battle-street": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-spyhunter": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-spyhunter-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-spyhunter-nowhere-to-run": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-stacked-with-daniel-negreanu": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-stake-fortune-fighters": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-star-wars-starfighter-special-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-steel-battalion-line-of-contact": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-stolen": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-street-hoops": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-strike-force-bowling": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-super-bubble-pop": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-taito-legends-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-takahashi-junko-no-mahjong-seminar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-tecmo-classic-arcade": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-tenerezza": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-tennis-masters-series-2003": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-the-baseball-2002-battle-ball-park-sengen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-the-cat-in-the-hat": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-the-dukes-of-hazzard-return-of-the-general-lee": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-the-godfather": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-the-guy-game": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-the-hustle-detroit-streets": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-the-italian-job": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-the-king-of-fighters-2003": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-the-wild-rings": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-thousand-land": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-tiger-woods-pga-tour-06": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-tiger-woods-pga-tour-07": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-top-gear-rpm-tuning": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-torino-2006": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-total-club-manager-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-total-club-manager-2005": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-touge-r": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-tour-de-france": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-toxic-grind": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-transworld-snowboarding": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-triangle-again": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-triangle-again-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-trigger-man": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-triple-play-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-trivial-pursuit-unhinged": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-uefa-champions-league-2004-2005": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-uefa-euro-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ufc-tapout": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ultimate-beach-soccer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-ultimate-pro-pinball": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-umezawa-yukari-no-igo-seminar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-virtual-pool-tournament-edition": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-volvo-drive-for-life": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-wakeboarding-unleashed-featuring-shaun-murray": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-warpath": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-whiteout": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-championship-poker": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-championship-poker-2-featuring-howard-lederer": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-world-championship-pool-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-championship-rugby": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-world-championship-snooker-2003": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-championship-snooker-2004": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-poker-tour": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-racing": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "xbox-world-series-baseball": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-world-series-baseball-2k3": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-world-series-of-poker": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-world-war-ii-combat-iwo-jima": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-xbox-music-mixer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-xyanide": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "xbox-yonenaga-kunio-no-shougi-seminar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "xbox-yourself-fitness": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "xbox-zillernet": {
+  "nao": "sem-resultado",
+  "v": 2
+ }
+}

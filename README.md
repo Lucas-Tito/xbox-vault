@@ -95,12 +95,15 @@ data/
   xbox.json         jogos de Xbox original     <- fonte da verdade
   homebrew.json     homebrews                  <- fonte da verdade
   tags-*.json       modos de jogo + URL da capa, indexado por id
+  tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
+  hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
   db.js             tudo acima unido, é o que o site carrega
 tools/
   wikilib.py        acesso à API da Wikipédia (com cache em disco) + parser de wikitext
   taglib.py         extração de modos de jogo a partir do artigo
   build_*.py        geram os data/*.json das listas
   tag_*.py          geram os data/tags-*.json
+  fetch_hltb.py     tempo de jogo do HowLongToBeat (resumível)
   bundle.py         une os JSONs em data/db.js
 images/             capas em WebP (240px, q72), uma por jogo, versionadas no repo
 cache/              respostas da API da Wikipédia (pode apagar; será rebaixado)
@@ -118,6 +121,9 @@ python3 tools/tag_homebrew.py
 python3 tools/fetch_images.py   # baixa e comprime as capas em images/ (resumível)
 python3 tools/fetch_images_launchbox.py  # completa as que a Wikipédia não tem
 python3 tools/fetch_images_extra.py      # links verificados à mão para o resto
+python3 tools/fetch_hltb.py xbox         # tempo de jogo: 360 + Xbox original
+python3 tools/fetch_hltb.py emu          # idem, catálogo de emulação
+python3 tools/fetch_hltb.py indies       # idem, XBLIG
 python3 tools/bundle.py         # <- sempre por último: escreve data/db.js
 ```
 
@@ -193,6 +199,39 @@ jogo). 79% das notas saíram pelo casamento por URL, que é o mais confiável.
 
 A distribuição das 2.223 notas serve de sanidade: curva em sino centrada em **69,5**, com só 93
 jogos acima de 90 — o formato da distribuição real do Metacritic.
+
+### De onde vem o tempo de jogo
+
+Quanto tempo um jogo leva não está na Wikipédia, nem no x360db, nem no Metacritic. Esse número só
+existe porque milhares de jogadores anotaram o próprio tempo, e o lugar onde isso está agregado é
+o [HowLongToBeat](https://howlongtobeat.com/), em três medidas que são exatamente as três que o
+`data/tempo.json` já previa: história principal, principal + extras, e 100%.
+
+**Duas fontes, uma regra de precedência.** `data/tempo.json` é curadoria à mão e manda no que
+estiver lá — número conferido por uma pessoa não é substituído por média de internet. A única
+exceção é a entrada marcada `"fonte": "aproximado"`, que o próprio cabeçalho do arquivo define
+como estimativa posta para a interface ter o que mostrar: essa cede a vez assim que o coletor
+trouxer número de verdade. Quem decide é o `juntar_tempo()` do `bundle.py`, e a regra é testada em
+`tests/tempo.py`, não só documentada — um erro ali apagaria curadoria em silêncio, mostrando na
+tela um número plausível só que errado.
+
+**A contagem de relatos vai junto, e não é enfeite.** Portal 2 tem 5.533 relatos e a média vale;
+um obscuro de PS1 com 1 relato é o tempo de *uma pessoa*, que não é média de nada. As duas coisas
+são a mesma frase — "8h" — com valor muito diferente, então o popup mostra os dois números e avisa
+quando a amostra tem menos de 5 relatos. Quem lê decide.
+
+**O casamento é estrito de propósito.** Exige título normalizado idêntico (ao nome ou ao *alias*
+do site) **e** a nossa plataforma presente na lista da entrada. "Halo: Combat Evolved" e "Halo:
+Combat Evolved - Anniversary" são dois jogos com tempos diferentes; "A.R.E.S.: Extinction Agenda"
+e o "EX" também. O preço disso é perder casos legítimos — *Abyss Odyssey* existe no site mas sem
+Xbox 360 na lista de plataformas, e *Quantum of Solace* está lá sem o prefixo "007:" que o nosso
+catálogo usa. Esses descartes ficam gravados com motivo separado (`so-outra-plataforma`) em vez de
+virarem um "não achei" opaco, justamente para dar para medir o tamanho do prejuízo depois sem
+rodar a coleta de novo.
+
+O ano **não** reprova um casamento, só desempata: o ano do HowLongToBeat é o do lançamento
+mundial e o nosso costuma ser o da versão que catalogamos. *Crysis* é 2007 lá e 2011 aqui, porque
+o que temos é a porta de Xbox 360. Quem usa ano como filtro perde toda porta tardia.
 
 ## Nenhuma requisição externa
 

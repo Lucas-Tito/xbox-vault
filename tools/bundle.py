@@ -90,6 +90,51 @@ def aplicar_coop(g, t, co):
     return True
 
 
+def juntar_tempo(gid, manuais, coletados):
+    """Tempo de jogo do jogo: a curadoria a mao e o HowLongToBeat, nessa ordem.
+
+    Quem manda e data/tempo.json -- numero conferido a mao nao pode ser
+    substituido por media de internet. A UNICA excecao e a entrada marcada
+    "aproximado", que o proprio cabecalho do tempo.json define como estimativa
+    posta para a interface ter o que mostrar: essa cede a vez assim que o
+    coletor trouxer numero de verdade.
+
+    Do lado coletado vai junto a contagem de relatos. Ela nao e enfeite: 8h6min
+    apoiado em 5.533 relatos e uma medida, a mesma frase apoiada em 1 relato e o
+    tempo de uma pessoa so. O popup mostra os dois numeros para quem le poder
+    fazer essa distincao sozinho.
+    """
+    MEDIDAS = ("main", "plus", "cem")
+    man = manuais.get(gid) or {}
+    aut = coletados.get(gid) or {}
+    tem = lambda d: any(isinstance(d.get(k), (int, float)) for k in MEDIDAS)
+    if tem(man) and not (man.get("fonte") == "aproximado" and tem(aut)):
+        out = {k: man[k] for k in MEDIDAS if isinstance(man.get(k), (int, float))}
+        out["fonte"] = man.get("fonte") or "manual"
+        return out
+    if not tem(aut):
+        return None
+    out = {k: aut[k] for k in MEDIDAS if isinstance(aut.get(k), (int, float))}
+    out["fonte"] = "hltb"
+    # "n" tem duas formas em disco enquanto a coleta migra da versao 1 para a 2:
+    # um dicionario por medida (v1) e um inteiro so (v2). Sao horas de coleta em
+    # que os arquivos convivem misturados, entao o leitor tem de aceitar as duas
+    # -- exigir so a nova quebra o bundle no meio da migracao.
+    n = aut.get("n")
+    if isinstance(n, dict):
+        n = max(n.values()) if n else 0
+    if n:
+        out["n"] = int(n)
+    # Testa "nao e plataforma" em vez de "e geral" de proposito: o registro da v1
+    # nao tem o campo "via" e o numero dele SOMA todas as versoes. Com o teste
+    # invertido ele passaria sem marca, e o popup diria "de quem jogou no Xbox
+    # 360" sobre um numero que nao e daquela versao. A ausencia cai no lado
+    # seguro. Mesmo tratamento que "mcGeral" ja recebe.
+    if aut.get("via") != "plataforma":
+        out["geral"] = True
+    return out
+
+
 def norm_image(url):
     """Normaliza URL de capa: tira os ?utm_* que a API anexa e usa o host canonico.
     Os dois hosts respondem 200, mas manter um formato so evita URL suja no JSON."""
@@ -141,8 +186,14 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     x360db = load("x360db.json", {})
     screens = load("screens.json", {})
     tus = load("tu.json", {})
-    # tempo de jogo e curadoria manual: ver o cabecalho de data/tempo.json
+    # Tempo de jogo: duas fontes que nao se pisam. data/tempo.json e curadoria a
+    # mao (ver o cabecalho de la); os hltb*.json sao do coletor, um arquivo por
+    # alvo para dois processos em paralelo nao se apagarem. Quem ganha e decidido
+    # em juntar_tempo() -- o coletor nunca escreve no arquivo manual.
     tempos = load("tempo.json", {}).get("jogos", {})
+    hltb = {}
+    for arq in ("hltb.json", "hltb-indies.json", "hltb-emu.json"):
+        hltb.update(load(arq, {}))
     seen, dupes, tagged, imaged, localed, wide, coopados = set(), 0, 0, 0, 0, 0, 0
     for g in games:
         if g["id"] in seen:
@@ -181,8 +232,8 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
         g.pop("tu", None); g.pop("tempo", None)
-        tp = tempos.get(g["id"])
-        if tp and any(isinstance(tp.get(k), (int, float)) for k in ("main", "plus", "cem")):
+        tp = juntar_tempo(g["id"], tempos, hltb)
+        if tp:
             g["tempo"] = tp
         t_u = tus.get(g["id"])
         if t_u is not None:
@@ -217,12 +268,15 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     com_ur = sum(1 for g in games if g.get("ur"))
     com_tu = sum(1 for g in games if (g.get("tu") or {}).get("n"))
     com_tempo = sum(1 for g in games if g.get("tempo"))
+    tempo_hltb = sum(1 for g in games if (g.get("tempo") or {}).get("fonte") == "hltb")
+    tempo_geral = sum(1 for g in games if (g.get("tempo") or {}).get("geral"))
     so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
           "%d com Metacritic | %d com nota de jogador (%d so essa) | "
-          "%d com patch | %d com tempo | %d co-op do Co-Optimus | %d dup" %
+          "%d com patch | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
+          "%d co-op do Co-Optimus | %d dup" %
           (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
-           com_tu, com_tempo, coopados, dupes))
+           com_tu, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 

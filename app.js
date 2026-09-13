@@ -489,11 +489,15 @@ function modosHtml(g) {
   var h = "<ul class=\"modos\">" + out.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
   if (CONFNOTA[t.confidence])
     h += '<p class="nota">Confiança <b>' + esc(t.confidence) + "</b> — " + CONFNOTA[t.confidence] + ".</p>";
-  // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. Não estar lá não
-  // prova que o jogo não tem — mas vale dizer que o número não passou por
-  // conferência humana, porque é aí que moram os erros.
-  if (t.coop && !g.coopInfo)
-    h += '<p class="nota">Co-op não conferido no Co-Optimus.</p>';
+  // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. O aviso vale nos
+  // DOIS casos: quando dizemos que tem co-op, porque o número foi inferido do
+  // texto de um artigo e é aí que moram os erros; e quando dizemos que não tem,
+  // porque calar faz o leitor concluir que a ausência foi verificada, e não foi.
+  if (!g.coopInfo)
+    h += '<p class="nota">' + (t.coop
+      ? "Co-op não conferido: este jogo não consta no Co-Optimus."
+      : "Não consta no Co-Optimus, então a ausência de co-op não foi conferida.") +
+      "</p>";
   return h;
 }
 
@@ -520,22 +524,48 @@ function horas(v) {
   return h + "h" + (m ? " " + m + "min" : "");
 }
 
-/* Tempo de jogo. Vem de data/tempo.json, preenchido a mao -- ver o cabecalho de
-   la para o porque de nao ser coletado automaticamente. */
+/* Tempo de jogo. Duas fontes, já resolvidas pelo tools/bundle.py antes de
+   chegar aqui: data/tempo.json (curadoria à mão, que manda no que estiver lá) e
+   os data/hltb*.json do tools/fetch_hltb.py, que são a média dos relatos do
+   HowLongToBeat. O número de relatos fica à vista de propósito: "8h" apoiado em
+   5.533 relatos e "8h" apoiado em 1 são a mesma frase com valor muito diferente,
+   e quem lê merece poder fazer essa distinção sozinho. */
+var POUCOS_RELATOS = 10;   /* abaixo disso o popup avisa; ver tempoHtml */
 function tempoHtml(g) {
   var t = g.tempo;
   if (!t) return "";
   var li = [];
-  [["main", "História principal"], ["plus", "Principal + extras"],
+  [["main", "Hist\u00f3ria principal"], ["plus", "Principal + extras"],
    ["cem", "Completar 100%"]].forEach(function (par) {
     var v = horas(t[par[0]]);
-    if (v) li.push('<li><span>' + par[1] + "</span><b>" + esc(v) + "</b></li>");
+    if (v) li.push("<li><span>" + par[1] + "</span><b>" + esc(v) + "</b></li>");
   });
   if (!li.length) return "";
+  var nota = "";
+  if (t.fonte === "aproximado") {
+    nota = "Valor aproximado, preenchido \u00e0 m\u00e3o \u2014 corrija em data/tempo.json.";
+  } else if (t.fonte === "hltb") {
+    var n = typeof t.n === "number" ? t.n : null;
+    var versao = g.system || PLATNOME[g.platform] || "";
+    nota = "HowLongToBeat" +
+      (n === null ? "" : " \u2014 " + n.toLocaleString("pt-BR") +
+        (n === 1 ? " relato" : " relatos")) +
+      (t.geral
+        /* o numero soma todas as versoes do jogo. Avisar disso e o mesmo que o
+           catalogo ja faz com a nota do Metacritic que nao e da plataforma. */
+        ? ", somando todas as vers\u00f5es do jogo" +
+          (versao ? ", n\u00e3o s\u00f3 a de " + esc(versao) : "")
+        : versao ? " de quem jogou no " + esc(versao) : "") + ".";
+    /* Abaixo de POUCOS_RELATOS o numero deixa de ser media e vira o tempo de
+       umas poucas pessoas. O corte e 10 e nao 5 por causa de um caso concreto:
+       Black Ops III no Xbox 360 tem exatamente 5 relatos, de uma campanha que
+       aquela versao nem tem -- com o corte em 5 ele passaria sem aviso. */
+    if (n !== null && n < POUCOS_RELATOS) {
+      nota += " Poucos relatos \u2014 \u00e9 o tempo de um punhado de pessoas, n\u00e3o uma m\u00e9dia.";
+    }
+  }
   return "<h4>Tempo de jogo</h4><ul class=\"tempo\">" + li.join("") + "</ul>" +
-    (t.fonte === "aproximado"
-      ? '<p class="nota">Valor aproximado, preenchido à mão — corrija em data/tempo.json.</p>'
-      : "");
+    (nota ? '<p class="nota">' + nota + "</p>" : "");
 }
 
 /* Lista de Title Updates, recolhida. Só versão, data e tamanho: é para saber o

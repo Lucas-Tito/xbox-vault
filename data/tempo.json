@@ -9,19 +9,33 @@
     "  fonte = de onde veio o numero. Use 'manual' para o que voce mediu ou",
     "          conferiu, e 'aproximado' para estimativa a corrigir depois.",
     "",
-    "Por que a mao: o HowLongToBeat tem exatamente esses numeros, mas o",
-    "robots.txt deles (Ziff Davis) proibe raspagem automatizada e, nas palavras",
-    "deles, 'creating data sets containing our content or sharing it with",
-    "others' -- que e o que este repositorio publico seria. Entao nada daqui e",
-    "coletado de la por script.",
-    "",
     "As entradas marcadas 'aproximado' abaixo sao chute de ordem de grandeza,",
     "postas so para a interface ter o que mostrar. Corrija a vontade."
   ],
   "jogos": {
-    "x360-halo-3": { "main": 9, "plus": 12, "cem": 35, "fonte": "aproximado" },
-    "x360-portal-2": { "main": 8.5, "plus": 11, "cem": 21, "fonte": "aproximado" },
-    "x360-fallout-3": { "main": 23, "plus": 50, "cem": 120, "fonte": "aproximado" },
-    "x360-braid": { "main": 5, "plus": 7, "cem": 12, "fonte": "aproximado" }
+    "x360-halo-3": {
+      "main": 9,
+      "plus": 12,
+      "cem": 35,
+      "fonte": "aproximado"
+    },
+    "x360-portal-2": {
+      "main": 8.5,
+      "plus": 11,
+      "cem": 21,
+      "fonte": "aproximado"
+    },
+    "x360-fallout-3": {
+      "main": 23,
+      "plus": 50,
+      "cem": 120,
+      "fonte": "aproximado"
+    },
+    "x360-braid": {
+      "main": 5,
+      "plus": 7,
+      "cem": 12,
+      "fonte": "aproximado"
+    }
   }
 }

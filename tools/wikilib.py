@@ -5,7 +5,7 @@ Cache em disco: cache/  (nunca refetch do que ja foi baixado).
 """
 import json, os, re, shutil, sys, tempfile, time, urllib.parse, urllib.request, hashlib
 
-UA = "XbxListBuilder/1.0 (lucas.tito@virtual360.io) python-urllib"
+UA = "XbxListBuilder/1.0 (lucassga500@gmail.com) python-urllib"
 API = "https://en.wikipedia.org/w/api.php"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "cache")
