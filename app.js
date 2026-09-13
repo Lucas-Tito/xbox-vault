@@ -225,7 +225,11 @@ function tagsHtml(g) {
     pl = t.maxPlayersOnline ? t.maxPlayersOnline + "P" : "";
     h.push('<span class="tag onl">ONLINE' + (pl ? " " + pl : "") + "</span>");
   }
-  if (t.coop) h.push('<span class="tag co">CO-OP' + (t.coopLocal ? " LOCAL" : "") + "</span>");
+  if (t.coop) {
+    var cp = Math.max(t.coopLocalMax || 0, t.coopOnlineMax || 0);
+    h.push('<span class="tag co">CO-OP' + (t.coopLocal ? " LOCAL" : "") +
+      (cp ? " " + cp + "P" : "") + "</span>");
+  }
   if (t.versus) h.push('<span class="tag vs">VS</span>');
 
   if (g.platform === "xbox") {
@@ -406,6 +410,11 @@ var COOPEXTRA = {
   "drop in / drop out": "Entra e sai no meio da partida",
   "splitscreen": "Tela dividida",
   "split-screen": "Tela dividida",
+  "split screen": "Tela dividida",
+  "co-op specific content": "Conteúdo exclusivo do co-op",
+  "drop-in / drop-out": "Entra e sai no meio da partida",
+  "drop-in/drop-out": "Entra e sai no meio da partida",
+  "import": "Só em versão importada",
   "downloadable only": "Só em versão digital",
   "online play": "Jogo online",
   "local play": "Jogo local",

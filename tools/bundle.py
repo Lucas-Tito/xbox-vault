@@ -48,7 +48,8 @@ def aplicar_coop(g, t, co):
         # zerado e sinal de leitura incompleta, nao de ausencia de co-op
         return False
 
-    if "local" in dito:
+    cabo = dito.get("lan", 0) > 0 and g.get("platform") == "emu"
+    if "local" in dito and not cabo:
         t["coopLocal"] = dito["local"] > 0
         if dito["local"] > 0:
             t["coopLocalMax"] = dito["local"]
@@ -61,8 +62,18 @@ def aplicar_coop(g, t, co):
             t["multiplayerOnline"] = True
             t["maxPlayersOnline"] = max(t.get("maxPlayersOnline") or 0, dito["online"])
     if dito.get("lan", 0) > 0:
-        t["multiplayerOnline"] = True
-        t["maxPlayersOnline"] = max(t.get("maxPlayersOnline") or 0, dito["lan"])
+        # System Link num cartucho de GBA/SNES/PS1 e cabo link, ou seja, co-op
+        # LOCAL. O Co-Optimus cataloga esses jogos como "LAN or System Link" e
+        # marca "Local Co-Op: Not Supported" -- tratar isso como online
+        # anunciaria um cartucho de Game Boy como jogo pela internet.
+        if g.get("platform") == "emu":
+            t["coopLocal"] = True
+            t["multiplayerLocal"] = True
+            t["coopLocalMax"] = max(t.get("coopLocalMax") or 0, dito["lan"])
+            t["maxPlayersLocal"] = max(t.get("maxPlayersLocal") or 0, dito["lan"])
+        else:
+            t["multiplayerOnline"] = True
+            t["maxPlayersOnline"] = max(t.get("maxPlayersOnline") or 0, dito["lan"])
 
     t["coop"] = True
     # nunca abaixa: o total pode vir de versus, que o Co-Optimus desconhece

@@ -1,4 +1,685 @@
 {
+ "emu-gba-justice-league-chronicles": {
+  "combo": 0,
+  "exp": "Using a link cable, another player can take control of the second character.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/15638/",
+  "lan": 2,
+  "local": 0,
+  "online": 0,
+  "sistema": "GameBoy Advanced [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-ps1-batman-forever-the-arcade-game": {
+  "combo": 0,
+  "exp": "Two players, playing as Batman and Robin, fight Two-Face, the Riddler, and numerous henchmen.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/5227/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20241215",
+  "v": 2
+ },
+ "emu-ps1-captain-commando": {
+  "combo": 0,
+  "exp": "Three players team up in this side scrolling beat em up.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3641/",
+  "lan": 0,
+  "local": 3,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20241222",
+  "v": 2
+ },
+ "emu-ps1-contra-legacy-of-war": {
+  "combo": 0,
+  "exp": "Two player couch co-op is supported throughout the campaign. Each player selects which of 4 characters to play",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/5231/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "emu-ps1-final-doom": {
+  "combo": 0,
+  "exp": "Play locally by linking two consoles together via Serial I/O.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/7846/",
+  "lan": 4,
+  "local": 0,
+  "online": 4,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250220",
+  "v": 2
+ },
+ "emu-ps1-future-cop-l-a-p-d": {
+  "combo": 0,
+  "exp": "Two local co-op players can play through the campaign, called Crime War.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2317/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20241216",
+  "v": 2
+ },
+ "emu-ps1-gauntlet-legends": {
+  "combo": 0,
+  "exp": "Gauntlet Legends brought the Gauntlet series into 3D! Legends features elf, valkyrie, wizard, and warrior, just like the original, but adds many RPG elements like leveling up. Boss monsters like the Djinn and the Chimera were added to make Gauntlet Legends an exciting co-op experience.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2334/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250223",
+  "v": 2
+ },
+ "emu-ps1-jikkyou-oshaberi-parodius-forever-with-me": {
+  "combo": 0,
+  "exp": "As opposed to the original SNES release, this version features simultaneous co-op for two players. Each takes control of one available character.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/15722/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-ps1-metal-slug-super-vehicle-001": {
+  "combo": 0,
+  "exp": "You and a friend take on the roles of Marco and Tarma, two heavily armed soldiers intent on mowing down the bad guys.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/7068/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250224",
+  "v": 2
+ },
+ "emu-ps1-metal-slug-x": {
+  "combo": 0,
+  "exp": "Two players can wreck havoc together.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/7077/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "emu-ps1-parodius": {
+  "combo": 0,
+  "exp": "Fantastic Journey allows for simultaneous co-op with an additional player being able to jump in at any time with another ship. Parodius ' 2-player mode only offers player switching on death/level completion.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/16398/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-ps1-revolution-x": {
+  "combo": 0,
+  "exp": "Players set off to rescue the members of the band Aerosmith from the evil members of New Order Nation.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1425/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "emu-ps1-road-rash-jailbreak": {
+  "combo": 0,
+  "exp": "Participate in violent and illegal street racing with one player taking control of the person in the sidecar.",
+  "fonte": "https://www.co-optimus.com/game/3638/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250602",
+  "v": 2
+ },
+ "emu-ps1-sexy-parodius": {
+  "combo": 0,
+  "exp": "A second player can jump in at any time and help out, choosing from one of the available characters.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/14765/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-ps1-star-wars-demolition": {
+  "combo": 0,
+  "exp": "Both the Battle Mode as well as the Tournament mode can be played together with a friend on your team. Both modes require both players to survive the match in order to win.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/16585/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-ps1-star-wars-episode-i-jedi-power-battles": {
+  "combo": 0,
+  "exp": "The single player campaign can be played in cooperative mode with a second player.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1420/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250119",
+  "v": 2
+ },
+ "emu-ps1-twisted-metal-2": {
+  "combo": 0,
+  "exp": "Play through the game with a friend as over the top cars hell bent on destruction.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2047/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20251009",
+  "v": 2
+ },
+ "emu-ps1-vigilante-8-2nd-offense": {
+  "combo": 0,
+  "exp": "Play through the campaign together with a friend as a team.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/11952/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250523",
+  "v": 2
+ },
+ "emu-ps1-world-s-scariest-police-chases": {
+  "combo": 0,
+  "exp": "One play drives the car while a second fires shots at fleeing vehicles.",
+  "fonte": "https://www.co-optimus.com/game/3639/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Playstation [Classics]",
+  "snapshot": "20250825",
+  "v": 2
+ },
+ "emu-snes-captain-commando": {
+  "combo": 0,
+  "exp": "Players can choose 1 of 4 characters, including Captain Commando.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1896/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20241222",
+  "v": 2
+ },
+ "emu-snes-deae-tonosama-appare-ichiban": {
+  "combo": 0,
+  "exp": "Team up with a friend and play through the game together.",
+  "extras": [
+   "Co-Op Campaign",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/16434/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-snes-donkey-kong-country-3-dixie-kong-s-double-trouble": {
+  "combo": 0,
+  "exp": "In Two Player Team Mode, players can tag team in and out, the other held in reserve.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1673/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250221",
+  "v": 2
+ },
+ "emu-snes-doom-troopers": {
+  "combo": 0,
+  "exp": "Two players battle mutants to save the world and annihilate the Dark Legion.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1743/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250423",
+  "v": 2
+ },
+ "emu-snes-joe-mac": {
+  "combo": 0,
+  "exp": "It has optional 2-player co-op which is the same as the single-player game.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1636/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "emu-snes-jurassic-park-part-2-the-chaos-continues": {
+  "combo": 0,
+  "exp": "Two players return to Jurassic Park to fight off the dinosaurs.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1748/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250115",
+  "v": 2
+ },
+ "emu-snes-knights-of-the-round": {
+  "combo": 0,
+  "exp": "Players choose from one of three knights - Arthur, Lancelot or Percival - each have their own abilities and upgrades.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1961/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "emu-snes-legend": {
+  "combo": 0,
+  "exp": "The story can be expierenced together with a second fighter helping out.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/11154/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250125",
+  "v": 2
+ },
+ "emu-snes-mighty-morphin-power-rangers-the-movie": {
+  "combo": 0,
+  "exp": "Play as the Power Rangers.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2095/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250223",
+  "v": 2
+ },
+ "emu-snes-shounen-ninja-sasuke": {
+  "combo": 0,
+  "exp": "Team up with a friend and play through the game together.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/16431/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-snes-stone-protectors": {
+  "combo": 0,
+  "exp": "A second player can join in as one as the other characters and help kick butt.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/11143/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250815",
+  "v": 2
+ },
+ "emu-snes-sunset-riders": {
+  "combo": 0,
+  "exp": "Two players choose between four characters, equipped with either peacemakers or shotguns, to hunt down the old west's most wanted criminals.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1726/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250225",
+  "v": 2
+ },
+ "emu-snes-super-ninja-boy": {
+  "combo": 0,
+  "exp": "Players control the brothers and share statistics.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2099/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20241209",
+  "v": 2
+ },
+ "emu-snes-super-soccer-champ": {
+  "combo": 0,
+  "exp": "Two players can play against the AI. Each player takes control of a player on the field.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/15686/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "emu-snes-the-combatribes": {
+  "combo": 0,
+  "exp": "Players choose from 3 characters and team up in this classic beat em up style game.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2016/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20251213",
+  "v": 2
+ },
+ "emu-snes-the-peace-keepers": {
+  "combo": 0,
+  "exp": "Team up with three other friends through the game by choosing one of of six characters.",
+  "extras": [
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2014/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250423",
+  "v": 2
+ },
+ "emu-snes-zombies-ate-my-neighbors": {
+  "combo": 0,
+  "exp": "Zombies Ate My Neighbors is a fun co-op title inspired by the shlocky horror films of the 50s and 60s. Two players team up to shoot hordes of the undead, while rescuing their oblivious neighbors. The art direction is truly inspired!",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/965/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "SNES [Classics]",
+  "snapshot": "20250216",
+  "v": 2
+ },
+ "x360-0-day-attack-on-earth": {
+  "combo": 0,
+  "exp": "Team up with friends to stop the impending alien invasion.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1440/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20251203",
+  "v": 2
+ },
+ "x360-50-cent-blood-on-the-sand": {
+  "combo": 0,
+  "exp": "Play as 50 Cent or a member of the G-Unit . Players buy guns, upgrades, finishing moves and taunts as they earn points and combos from working together to kill off enemies.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/355/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250119",
+  "v": 2
+ },
+ "x360-a-world-of-keflings": {
+  "combo": 0,
+  "exp": "Work together to build kingdoms with your friends. You each control your avatar as you have the Keflings do your bidding.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1868/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-abyss-odyssey": {
+  "combo": 0,
+  "exp": "Two players may team up locally or online to battle through a procedurally generated world and attempt to awaken the warlock from his nightmares. Defeating the final boss in the game contributes to a larger community goal that unlocks more content for the game",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3496/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241214",
+  "v": 2
+ },
+ "x360-aegis-wing": {
+  "combo": 0,
+  "exp": "Aegis Wing is a side-scrolling space combat game reminiscent of classic eighties arcade hits. It features alien-busting action, slick graphics, an orchestral soundtrack, and devastating power-ups. Also included is a unique cooperative mode of play in which up to three additional players can \"attach\" to the leader's ship and become independent, 360-degree gun turrets. Best of all, Aegis Wing is available as a free download from Xbox LIVE� Arcade to all Gold and Silver members!",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/54/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241216",
+  "v": 2
+ },
+ "x360-age-of-booty": {
+  "combo": 2,
+  "exp": "Team up with up players to take on AI pirates in different scenario maps. Players need to work together and use strategy to over take towns, plunder booty, and generally just be a badass pirate! While the game ships with maps that are typical for 4 vs. 4 AI there are some community based maps that support 8 player co-op. Players can drop out anytime and join between maps.",
+  "extras": [
+   "Downloadable Only",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/939/",
+  "lan": 4,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250709",
+  "v": 2
+ },
+ "x360-alien-breed-2-assault": {
+  "combo": 0,
+  "exp": "Play through co-op specific missions based on the single player game or kill endless swarms of aliens in a survival mode.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1790/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-alien-breed-3-descent": {
+  "combo": 0,
+  "exp": "Play through co-op specific missions based on the single player game or kill endless swarms of aliens in a survival mode.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1830/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250209",
+  "v": 2
+ },
+ "x360-alien-breed-evolution": {
+  "combo": 0,
+  "exp": "Team up through a separate cooperative campaign with friends.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1276/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20240624",
+  "v": 2
+ },
+ "x360-aqua": {
+  "combo": 0,
+  "exp": "Players can team up through 6 different maps.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1558/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251002",
+  "v": 2
+ },
  "x360-arkadian-warriors": {
   "combo": 0,
   "exp": "Co-op play allows you to play any of the missions online with a buddy. The game plays a bit like Diablo but with a gamepad. You share loot, and can trade weapons between players.",
@@ -10,168 +691,1050 @@
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20150501"
+  "sistema": "Xbox 360",
+  "snapshot": "20251110",
+  "v": 2
  },
- "x360-army-of-two-the-40th-day": {
+ "x360-armored-core-for-answer": {
   "combo": 0,
-  "exp": "Play together with a friend through the various modes.",
+  "exp": "Traditional Mech style play in the 7th installment of the Armored Core series. Online co-op allows drop in and drop out options for a seamless experience. Armored Core for Answer promises epic boss battles, hundreds of weapons, and huge expansive environments.",
   "extras": [
-   "Downloadable Only"
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1093/",
+  "fonte": "https://www.co-optimus.com/game/911/",
   "lan": 0,
   "local": 0,
   "online": 2,
-  "snapshot": "20100316"
+  "sistema": "Xbox 360",
+  "snapshot": "20250813",
+  "v": 2
  },
- "x360-boogie-bunnies": {
+ "x360-armored-core-verdict-day": {
   "combo": 0,
-  "exp": "Help the Boogie Bunnies achieve their dream of superstardom as they shimmy shake their way through exotic, colorful destinations all the way to Hollywood. Only you can ensure they make it. In this revolutionary match-3 puzzle game, Boogie Bunnies lets you match up these wacky disco fur balls from three different sides�left, right, and from the bottom. Score chain combinations and watch them get their groove on. Let's get the party started!",
+  "exp": "All online players either create or join a team, which can have up to 20 members for versus of AI play. Story and Orders missions support 2 player online co-op.",
   "extras": [
-   "Downloadable Only",
    "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/112/",
+  "fonte": "https://www.co-optimus.com/game/3024/",
   "lan": 0,
-  "local": 2,
+  "local": 0,
   "online": 2,
-  "snapshot": "20150501"
+  "sistema": "Xbox 360",
+  "snapshot": "20250104",
+  "v": 2
  },
- "x360-call-of-duty-modern-warfare-2": {
+ "x360-army-of-two": {
   "combo": 0,
-  "exp": "Play through specific co-op scenarios in the Special Forces mode. It's currently being described as similar style missions to the \"Mile High\" mission at the end of Call of Duty 4. Each scenario has different styles of play like survival modes, timed modes, and unique objectives. For instance one player may use a laser designator to target specific areas for another player who is in control of the DC-130 aircraft.",
+  "exp": "Online Co-op is no longer functional. Local split screen only.",
   "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/1194/",
-  "lan": 0,
-  "local": 2,
-  "online": 2,
-  "snapshot": "20100324"
- },
- "x360-crackdown-2": {
-  "combo": 0,
-  "exp": "Sometimes one player is not enough to save the princess, so bring along a friend.",
-  "extras": [
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1208/",
+  "fonte": "https://www.co-optimus.com/game/91/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20110910"
+  "sistema": "Xbox 360",
+  "snapshot": "20250112",
+  "v": 2
  },
- "x360-cyberball-2072": {
-  "combo": 0,
-  "exp": "Two players can be on the same team. Each play the players pick the robot they wish to control (e.g. the quarterback and the receiver).",
+ "x360-army-of-two-the-40th-day": {
+  "combo": 4,
+  "exp": "Once again you'll team up with a buddy through the game's cooperative story. The game promises more freedom in your decisions as well as new cooperative moves. Also new is the four player co-op Extraction mode.",
   "extras": [
-   "Downloadable Only"
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out",
+   "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/10589/",
+  "fonte": "https://www.co-optimus.com/game/1093/",
   "lan": 0,
   "local": 2,
-  "online": 0,
-  "snapshot": "20211020"
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250119",
+  "v": 2
  },
- "x360-damnation": {
+ "x360-army-of-two-the-devil-s-cartel": {
   "combo": 0,
-  "exp": "Play through the game with a partner in this wild west meets Gears of War style game.",
+  "exp": "Two players can play in local split screen or online co-op through the campaign. Each player earns their own individual cash and players are rewarded bonus cash for working together.",
   "extras": [
    "Co-Op Campaign",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/1055/",
+  "fonte": "https://www.co-optimus.com/game/2686/",
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20100408"
+  "sistema": "Xbox 360",
+  "snapshot": "20250408",
+  "v": 2
  },
- "x360-dance-paradise": {
-  "sem_dado": true,
-  "snapshot": "20211130"
+ "x360-attack-of-the-movies-3d": {
+  "combo": 0,
+  "exp": "Four players wear 3D glasses and shoot pretty much anything that moves.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1522/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-avatar-the-last-airbender-the-burning-earth": {
+  "combo": 0,
+  "exp": "Team up with a friend and play as Aang, Katara, Sokka, and, for the first time, Toph or Jet, as you battle enemies and solve puzzles in your adventures.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/176/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "x360-awesomenauts": {
+  "combo": 3,
+  "exp": "Three players can team up in local, online, or mixed co-op and play against bots. Push down towers to destroy the core and win the game.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2577/",
+  "lan": 0,
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250702",
+  "v": 2
+ },
+ "x360-babel-rising": {
+  "combo": 0,
+  "exp": "Babel Risings co-op mode is a splitscreen control pad only survival mode. You and a friend must survive as long as possible by using your God like powers to crush humans in this Real Time Tower Defence game.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2387/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250529",
+  "v": 2
+ },
+ "x360-band-of-bugs": {
+  "combo": 0,
+  "exp": "Play co-op scenarios with a friend.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/26/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20240522",
+  "v": 2
+ },
+ "x360-bandfuse-rock-legends": {
+  "combo": 0,
+  "exp": "Form bands and play along with your favorite songs, or create original music in real-time with up to 4 players.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2913/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251013",
+  "v": 2
+ },
+ "x360-beautiful-katamari": {
+  "combo": 0,
+  "exp": "The King of all Cosmos and the Prince are back, and now in full, next-generation glory! The classic Katamari experience returns with all-new features set to make this the best roll-up-everything-you-see game ever. Increased processing power means seamless Katamari growth. A brand-new soundtrack full of catchy tunes backs you up throughout the game. Check out the rest of the new levels, and pick your character from a list of over 50, including the Prince and his cousins, old and new. Race with a friend on the same TV, make sure your communication is at its peak as you share one Katamari in Co-Op, or, for the first time, take on other players from around the world online!",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/177/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241216",
+  "v": 2
+ },
+ "x360-binary-domain": {
+  "combo": 0,
+  "exp": "Four players can team up online in Invasion mode. They must work together to defeat progressively harder waves of robot attackers.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2168/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20240414",
+  "v": 2
+ },
+ "x360-birds-of-steel": {
+  "combo": 0,
+  "exp": "Team up with friends in co-op missions.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2127/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250412",
+  "v": 2
+ },
+ "x360-blades-of-time": {
+  "combo": 0,
+  "exp": "The game offers a mode called \"Outbreak\" which is similar to a MOBA (Multiplayer Online Battle Arena) in which two players try to destroy the AIs turrets and enemy base.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2257/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250819",
+  "v": 2
+ },
+ "x360-blazing-angels-squadrons-of-wwii": {
+  "combo": 0,
+  "exp": "All multiplayer modes can be played against the AI. In addition there are historical missions available to tackle with friends.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/180/",
+  "lan": 4,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250124",
+  "v": 2
+ },
+ "x360-blood-knights": {
+  "combo": 0,
+  "exp": "You can play Blood Knights either solo and switch between both characters to use their individual skills, or invite a friend to join your game and fight alongside them.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2714/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-borderlands-2": {
+  "combo": 4,
+  "exp": "Players work together using four different classes of characters to complete quests, gather loot, and trade items. All three systems support online co-op. Local co-op is available on the console versions.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2232/",
+  "lan": 4,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250531",
+  "v": 2
+ },
+ "x360-brink": {
+  "combo": 0,
+  "exp": "Brink promises to blend offline and online co-op into a seamless experience with persistent characters that can join games at anytime.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1219/",
+  "lan": 0,
+  "local": 0,
+  "online": 8,
+  "sistema": "Xbox 360",
+  "snapshot": "20250221",
+  "v": 2
+ },
+ "x360-bullet-soul": {
+  "combo": 0,
+  "exp": "Two players can take on the enemy armada together in the main arcade mode. Each player must select a different ship.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2546/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20260310",
+  "v": 2
+ },
+ "x360-cabela-s-dangerous-hunts-2013": {
+  "combo": 2,
+  "exp": "Take on waves of bloodthirsty beasts in the Maneater mode that pits you and a partner in a split screen survival mode.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2717/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250822",
+  "v": 2
+ },
+ "x360-call-of-duty-modern-warfare-3": {
+  "combo": 0,
+  "exp": "Play with a friend locally or online in 16 Spec-Ops missions, scenarios designed to play in co-op. Also available are survival style missions against infinite waves of enemies. Co-Op gets its own perks and unlocks as well as leaderboards.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2129/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250119",
+  "v": 2
+ },
+ "x360-cars-2": {
+  "combo": 0,
+  "exp": "Up to four players can play locally throughout the campaign and Free Play modes.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2191/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251007",
+  "v": 2
+ },
+ "x360-castle-crashers": {
+  "combo": 4,
+  "exp": "The game allows 4 players each choosing a character to defeat countless hordes of enemies and save the princess.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/253/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250328",
+  "v": 2
+ },
+ "x360-castlestorm": {
+  "combo": 0,
+  "exp": "Two players team up in a survival mode or last stand mode. In survival one of you mans the ballista, whilst the other acts as a hero. Last stand mode sees both of you in acting the hero against endless waves of enemies.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2639/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-charlie-murder": {
+  "combo": 4,
+  "exp": "Four players choose from five characters they can customize, upgrade, and compete in this beat em up.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2549/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-cloudy-with-a-chance-of-meatballs": {
+  "combo": 0,
+  "exp": "A second player can join/leave at anytime to play the role of Flint's companion, the monkey",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2041/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250814",
+  "v": 2
+ },
+ "x360-commanders-attack-of-the-genos": {
+  "combo": 0,
+  "exp": "The co-op mode in this allows players to team up against the AI in skirmish style missions. The game will feature a single player campaign of 15 missions, as well as online and same machine multiplayer play of up to 4 players, with skirmishes and co-op play. Commanders: Attack of the Genos is a turn-based strategy Xbox Live Arcade game developed by Southend Interactive for the Xbox 360, featuring strategic troop placement and head-to-head warfare, using such weaponry as missile launchers, bombers and infantry. The game will feature high-definition graphics featuring a 1930�s art deco style look and feel, inspired by The War of the Worlds.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/232/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250605",
+  "v": 2
+ },
+ "x360-conflict-denied-ops": {
+  "combo": 0,
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/186/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-crackdown-2": {
+  "combo": 0,
+  "exp": "The campaign is playable with 4 players online. Players can revive fallen teammates, collect co-op only orbs, and help complete the host's city while bringing their skill progression back into their own single player game.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1208/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-dance-central-2": {
+  "combo": 0,
+  "exp": "Dance Central 2 now offers full two player tracking where you can team up on scoring to complete songs. Each person can play on their own difficulty and have their own routine.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2266/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "x360-darwinia-plus": {
+  "combo": 0,
+  "exp": "Darwinia+ Offers four players a chance to face off against the AI in specific missions.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1481/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250821",
+  "v": 2
+ },
+ "x360-de-blob-2": {
+  "combo": 0,
+  "exp": "Co-op is somewhat lacking where player two is limited to picking up items and blasting enemies, but little else. Player two is reduced to a reticle that cannot help de Blob paint the world or even earn achievements/trophies in the game. This is a perfect type of co-op for something like a gaming parent and a very young child - otherwise it�s better left single-player.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1907/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-dead-island-riptide": {
+  "combo": 0,
+  "exp": "The co-op experience is identical to the original Dead Island. Four players can drop in and out of each others games and missions. Enemies and loot scale to the individual players.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2722/",
+  "lan": 4,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250514",
+  "v": 2
+ },
+ "x360-dead-rising-2": {
+  "combo": 0,
+  "exp": "Each player takes the role of Chuck, the game's main character - but they can completely customize the look of their character as they take on hordes of zombies together.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1531/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "x360-dead-rising-2-off-the-record": {
+  "combo": 0,
+  "exp": "Two players can play the entire game cooperatively online in both story mode and sandbox mode. �Both characters will earn XP and cash. �Story progress and weapons stay in the host�s game.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2036/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-deadfall-adventures": {
+  "combo": 0,
+  "exp": "Deadfall Adventures features a co-op survival mode.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3174/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250222",
+  "v": 2
+ },
+ "x360-deathspank": {
+  "combo": 0,
+  "exp": "DeathSpank will feature local co-op gameplay, so friends can team up to play both DeathSpank and his trusty sidekick, Sparkles the Wizard.Player 2 is more of a \"helper\" than a full featured co-op partner.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1596/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-defiance": {
+  "combo": 0,
+  "exp": "The servers for this game were closed down in April 2020. Defiance was an MMO, so you could meet and interact with a massive amount of other people. Dozens of players could participate in Arkfall events, but story mission groups and co-op instances were limited to four players.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2838/",
+  "lan": 0,
+  "local": 0,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-diablo-iii": {
+  "combo": 4,
+  "exp": "Choose between five classes (Monk, Witch Doctor, Wizard, Barbarian, and Demon Hunter) and play with four friends locally or online. Players can trade items and complete quests. Difficulty scales based on number of players.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2999/",
+  "lan": 4,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250220",
+  "v": 2
+ },
+ "x360-diabolical-pitch": {
+  "combo": 0,
+  "exp": "Two players team up locally to battle monsters via baseball pitches and special moves.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2311/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250413",
+  "v": 2
+ },
+ "x360-diner-dash": {
+  "combo": 0,
+  "exp": "Team up locally or online to play through the game's \"endless\" mode with a friend. You'll work together waiting tables and trying to keep customers happy.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1406/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-disney-infinity": {
+  "combo": 4,
+  "exp": "Two player local co-op via split screen and four players can play online co-op. Co-Op can be played in mini-games, the ToyBox, and Playsets. Playsets are limited to characters of the same universe.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2844/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241226",
+  "v": 2
  },
  "x360-dj-hero": {
   "combo": 0,
   "extras": [
+   "Co-Op Specific Content",
    "Splitscreen"
   ],
   "fonte": "https://www.co-optimus.com/game/1193/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20100329"
+  "sistema": "Xbox 360",
+  "snapshot": "20250222",
+  "v": 2
  },
- "x360-do-don-pachi-dai-fukkatsu-black-label": {
+ "x360-dragon-ball-xenoverse": {
   "combo": 0,
-  "exp": "Two players team up to stop NEXY.",
+  "exp": "Three players battle online versus AI opponents.",
   "extras": [
    "Co-Op Campaign",
-   "Drop In/Drop Out"
+   "Co-Op Specific Content"
   ],
-  "fonte": "https://www.co-optimus.com/game/11399/",
+  "fonte": "https://www.co-optimus.com/game/3773/",
   "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220518"
+  "local": 0,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
  },
- "x360-dynasty-warriors-gundam-2": {
-  "sem_dado": true,
-  "snapshot": "20100402"
- },
- "x360-eragon": {
+ "x360-dragon-ball-z-battle-of-z": {
   "combo": 0,
-  "exp": "Combine forces with Brom or Murtagh at any point in two-player drop-in/drop out, co-op mode.",
+  "exp": "Four players per team can use various fighters from the Dragonball Z universe in head to head combat.",
+  "fonte": "https://www.co-optimus.com/game/3038/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250221",
+  "v": 2
+ },
+ "x360-duke-nukem-3d": {
+  "combo": 0,
+  "exp": "Take down those bastard aliens with 8 people in the online co-op mode.",
   "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/895/",
+  "lan": 8,
+  "local": 0,
+  "online": 8,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-dungeon-defenders": {
+  "combo": 4,
+  "exp": "Team up as one of four characters each with their own unique abilities and traps to conquer dungeons in this tower defense action/RPG hybrid.",
+  "extras": [
+   "Downloadable Only",
    "Co-Op Campaign",
-   "Drop In/Drop Out"
-  ],
-  "fonte": "https://www.co-optimus.com/game/11566/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220517"
- },
- "x360-eternal-sonata": {
-  "combo": 0,
-  "exp": "Play local co-op in every mode. Co-op play lets you play with a friend, and ramps up the intensity as players do their best to coordinate and survive.",
-  "extras": [
-   "Downloadable Only"
-  ],
-  "fonte": "https://www.co-optimus.com/game/107/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20100420"
- },
- "x360-f1-2013": {
-  "combo": 0,
-  "exp": "Two players can do a championship on the same team. While only one can win the title of course, there is still room to work together e.g. to get the Constructors’ title for your chosen team and help each other to get on the podium in general.",
-  "extras": [
+   "Co-Op Specific Content",
+   "Drop In/Drop Out",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/11679/",
+  "fonte": "https://www.co-optimus.com/game/1773/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241214",
+  "v": 2
+ },
+ "x360-dynasty-warriors-6-empires": {
+  "combo": 0,
+  "exp": "Players can play the action stages in split screen co-op. To Play Co-Op: In Ruler mode, you just have to have at least (not including your self) one other officer. Then at the Deploy Officers screen, the person just has to press start. In officer mode, you have to befriend a charicter before you can place them as a fellow officer, but once you have at least one officer (again, not including yourself) befriended, your brother would just has to press start at the Allies screen, after you put the character in as an officer.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1270/",
   "lan": 0,
   "local": 2,
-  "online": 2,
-  "snapshot": "20220519"
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250825",
+  "v": 2
  },
- "x360-fairytale-fights": {
-  "sem_dado": true,
-  "snapshot": "20110911"
- },
- "x360-frogger": {
+ "x360-earth-defense-force-insect-armageddon": {
   "combo": 0,
-  "exp": "In the Co-Op mode the screen splits and both players work together to achieve a combined high score.",
+  "exp": "3 players can team up through the campaign while 6 players can team up for a survival mode!",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1788/",
+  "lan": 0,
+  "local": 2,
+  "online": 6,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-earthworm-jim-hd": {
+  "combo": 0,
+  "exp": "Each player takes the role of a Earthworm Jim character through co-op specific levels.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1573/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-elements-of-destruction": {
+  "combo": 0,
+  "exp": "Players must use forces of nature to destroy buildings and objects. In the Co-Op mode both players have control over their own forces and work together to create destruction as quickly as possible.",
   "extras": [
    "Downloadable Only",
    "Co-Op Campaign",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/1050/",
+  "fonte": "https://www.co-optimus.com/game/657/",
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20160810"
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-epic-mickey-2-the-power-of-two": {
+  "combo": 0,
+  "exp": "Join Mickey and Oswald in an epic battle to save the magical world of Wasteland and change it forever.",
+  "extras": [
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2682/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250121",
+  "v": 2
+ },
+ "x360-eternal-sonata": {
+  "combo": 0,
+  "exp": "Each players can control a character during the game's realtime battle system.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/107/",
+  "lan": 0,
+  "local": 3,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241227",
+  "v": 2
+ },
+ "x360-fable-heroes": {
+  "combo": 4,
+  "exp": "Up to four people can brawl together in any combination of online and offline players, dropping in or out at any time. Empty spots are filled by AI players. While the combat is cooperative, players ordinarily compete to earn gold for themselves. Enabling Family mode shares the gold evenly across the group.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2514/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250717",
+  "v": 2
+ },
+ "x360-fairytale-fights": {
+  "combo": 0,
+  "exp": "Team up with a friend to hack and slash you way through fairytale inspired worlds.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1147/",
+  "lan": 4,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250710",
+  "v": 2
+ },
+ "x360-family-guy-back-to-the-multiverse": {
+  "combo": 0,
+  "exp": "Play as Stewie and Brian in local 2 player split screen co-op throughout the campaign and/or in a series of challenges.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2601/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241216",
+  "v": 2
+ },
+ "x360-fantasia-music-evolved": {
+  "combo": 2,
+  "exp": "Up to two players create and alter music utilizing the Kinect.",
+  "fonte": "https://www.co-optimus.com/game/3342/",
+  "lan": 2,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250709",
+  "v": 2
+ },
+ "x360-fantastic-four-rise-of-the-silver-surfer": {
+  "combo": 0,
+  "exp": "Marvel's first superhero family must face its greatest challenge yet - the mysterious Silver Surfer! Follow an all-new plot as you chase the Surfer around the world and face the unlikely return of the Fantastic 4's mortal enemy, Dr. Doom. Combine powers to create devastating team attacks against your enemies. Play as any member of the team and use their specific abilities to solve puzzles and destroy opposition. Take on more than just the Silver Surfer - battle Red Ghost, Terrax, and Super Skrull as you try to save the world from destruction!",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/200/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250609",
+  "v": 2
+ },
+ "x360-far-cry-3": {
+  "combo": 2,
+  "exp": "Four players can can battle through 6 co-op missions with various objectives. Players will earn experience and can unlock abilities, weapons and more.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2610/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241219",
+  "v": 2
+ },
+ "x360-feeding-frenzy-2-shipwreck-showdown": {
+  "combo": 0,
+  "exp": "Two players can play local co-op throughout the story mode or a number of minigames.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/916/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250124",
+  "v": 2
+ },
+ "x360-fifa-15": {
+  "combo": 0,
+  "exp": "Up to four players can play against an AI-controlled team in both exhibition matches and in the game's Manager Mode.",
+  "extras": [
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3876/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250408",
+  "v": 2
+ },
+ "x360-final-exam": {
+  "combo": 0,
+  "exp": "In cooperative mode, up to four players (local and online) team up to survive. Split up to fill your objectives as fast as possible, or stay together in a cohesive team to increase your chances of survival.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2894/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241223",
+  "v": 2
+ },
+ "x360-fist-of-the-north-star-ken-s-rage-2": {
+  "combo": 0,
+  "exp": "Two online players use super martial arts to destroy post apocalyptic gangs.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2779/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241224",
+  "v": 2
+ },
+ "x360-flock": {
+  "combo": 0,
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/885/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-forza-horizon-2": {
+  "combo": 0,
+  "exp": "Team up with another player online to tackle a variety of challenges on the \"Co-Op Bucket List\"",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/5293/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250225",
+  "v": 2
+ },
+ "x360-foul-play": {
+  "combo": 0,
+  "exp": "Foul Play supports two player online and local co-op. Two players team up as Baron Dashforth and Mr. Swampwick to brawl with daemons using their arsenal of abilities and tag team moves.",
+  "extras": [
+   "Downloadable Only",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2710/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20240615",
+  "v": 2
+ },
+ "x360-front-mission-evolved": {
+  "combo": 0,
+  "exp": "Co-Op is only available via a piece of premium DLC called the \"Last Stand.\"Endless swarms of the enemy are invading. Can you and your team hold them off? Multiplayer co-op mode.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1853/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-fuse": {
+  "combo": 4,
+  "exp": "Engage in lethal co-op in this sqaud-based shooter. Fuse supports two player local co-op, four player online co-op, and combo co-op in both the main campaign and the wave-based Echelon mode.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2203/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250129",
+  "v": 2
  },
  "x360-g-i-joe-the-rise-of-cobra": {
   "combo": 0,
@@ -184,64 +1747,159 @@
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20100408"
+  "sistema": "Xbox 360",
+  "snapshot": "20250221",
+  "v": 2
  },
- "x360-gel-set-and-match": {
+ "x360-gatling-gears": {
   "combo": 0,
-  "exp": "Two players control helicopters to shoot down various enemy ships, turrets, and tanks.",
+  "exp": "Take control of a customized mech and destroy enemies with a friend.",
   "extras": [
    "Downloadable Only",
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1183/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20210307"
- },
- "x360-grand-theft-auto-san-andreas": {
-  "sem_dado": true,
-  "snapshot": "20101028"
- },
- "x360-guitar-hero-5": {
-  "combo": 0,
-  "exp": "Guitar Hero 5 continues the Guitar Hero legacy with full band support as well as something new, drop-in and drop-out play for band members.",
-  "extras": [
-   "Co-Op Campaign",
-   "Drop In/Drop Out",
-   "Splitscreen"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1180/",
-  "lan": 0,
-  "local": 4,
-  "online": 4,
-  "snapshot": "20100519"
- },
- "x360-guitar-hero-ii": {
-  "combo": 0,
-  "exp": "There are two options for co-op play in SpellForce 3: co-op campaign, and playing in the multiplayer against A.I. bots. Co-Op Campaign: Up to three players online or via LAN can team up to play through the entire campaign together. The host can determine what the players can do within the game, for example, putting one player in charge of building , and the other controls army units, and all campaign progress is kept with the host. Multiplayer Co-Op: Up to three players online or via LAN can form a team against A.I. controlled opponents. This is also known as \"comp stomping.\"",
-  "extras": [
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1044/",
-  "lan": 3,
-  "local": 0,
-  "online": 3,
-  "snapshot": "20200815"
- },
- "x360-guitar-hero-iii-legends-of-rock": {
-  "combo": 0,
-  "exp": "Offers local co-op and battle modes as well as online equivalents.",
-  "extras": [
-   "Co-Op Campaign",
-   "Splitscreen"
-  ],
-  "fonte": "https://www.co-optimus.com/game/102/",
+  "fonte": "https://www.co-optimus.com/game/1974/",
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20200815"
+  "sistema": "Xbox 360",
+  "snapshot": "20250423",
+  "v": 2
+ },
+ "x360-gauntlet": {
+  "combo": 0,
+  "exp": "One to four players play together on Xbox Live multiplayer game mode.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/32/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-geometry-wars-retro-evolved-2": {
+  "combo": 0,
+  "exp": "Certain scoring modes contain co-op.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/874/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250221",
+  "v": 2
+ },
+ "x360-ghostbusters-sanctum-of-slime": {
+  "combo": 0,
+  "exp": "Players can team up as their own character and work together to bring down ghosts and large bosses.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1863/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250423",
+  "v": 2
+ },
+ "x360-god-mode": {
+  "combo": 0,
+  "exp": "Team up with friends to earn customizations for your character.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2826/",
+  "lan": 4,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-grease-dance": {
+  "combo": 0,
+  "exp": "Game includes Dance Mode and Karaoke Mode with both featuring versus and co-operative play.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2369/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-green-day-rock-band": {
+  "combo": 0,
+  "exp": "Solid four-player co-op with the same vocal harmonies as The Beatles Rock Band.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1508/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250121",
+  "v": 2
+ },
+ "x360-guacamelee-super-turbo-championship-edition": {
+  "combo": 0,
+  "exp": "A Mexican-themed 2 player local co-op-multiplayer dimension-swapping Metroid-vania beat-em-up platformer",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3485/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250219",
+  "v": 2
+ },
+ "x360-guitar-hero-van-halen": {
+  "combo": 0,
+  "exp": "Play through the game's song as a drummer, guitar, bass or singer just like the real band. Long hair not required or included!",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1303/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250224",
+  "v": 2
+ },
+ "x360-guitar-hero-world-tour": {
+  "combo": 0,
+  "exp": "Four players, three instruments plus vocals = rock the house.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/515/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250219",
+  "v": 2
  },
  "x360-gunstar-heroes": {
   "combo": 0,
@@ -255,33 +1913,103 @@
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20150327"
+  "sistema": "Xbox 360",
+  "snapshot": "20241205",
+  "v": 2
  },
- "x360-hellboy-the-science-of-evil": {
+ "x360-halo-3-odst": {
+  "combo": 2,
+  "exp": "A brand new entry into the Halo universe as players take the role of an OSDT Marine. Players can play through the campaign or choose a survival mode called FireFight.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/949/",
+  "lan": 4,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250429",
+  "v": 2
+ },
+ "x360-happy-wars": {
   "combo": 0,
-  "exp": "A friend can join in at any time and help you through the campaign.",
+  "exp": "Until the servers were shut down on 12/16/18 a team of up to 15 players could comp stomp AI teams in a series of three increasingly difficult matches. Co-op moves include building towers and other structures together, healing and resurrecting team mates, and Team Skills that require multiple participants to perform.",
   "extras": [
    "Downloadable Only",
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1051/",
+  "fonte": "https://www.co-optimus.com/game/2316/",
   "lan": 0,
-  "local": 2,
+  "local": 0,
   "online": 0,
-  "snapshot": "20110911"
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
  },
- "x360-instant-brain": {
+ "x360-hard-corps-uprising": {
   "combo": 0,
-  "exp": "The included version of DoDonPachi allows for two players to play through the whole game together.",
+  "exp": "Run and gun with a buddy either online or off.",
   "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/11451/",
+  "fonte": "https://www.co-optimus.com/game/1913/",
   "lan": 0,
   "local": 2,
-  "online": 0,
-  "snapshot": "20220519"
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20240723",
+  "v": 2
+ },
+ "x360-harms-way": {
+  "combo": 0,
+  "exp": "Harms Way is a fast paced, action packed race where both drivers and snipers need to team up to win the race. As the sniper, you need to blow-up the competition. As a driver you need to finish 3 laps first.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1877/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250121",
+  "v": 2
+ },
+ "x360-hunted-the-demon-s-forge": {
+  "combo": 0,
+  "exp": "Contro E'larra or Caddoc through this action fantasy game.Combine E’lara’s ranged attacks with Caddoc’s melee expertise to pull off gruesome co-op kill moves, perform special attacks, and heal one another regardless of where they in relation to one another on the battlefield. The characters’ differing combat methods allow player strategy to vary from one playthrough to the next.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1505/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241216",
+  "v": 2
+ },
+ "x360-ikaruga": {
+  "combo": 0,
+  "exp": "With the unique light and dark system, the co-op experience requires players to work together to maximize score, and stay alive longer!",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/368/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
  },
  "x360-interpol-the-trail-of-dr-chaos": {
   "combo": 0,
@@ -294,95 +2022,619 @@
   "lan": 0,
   "local": 4,
   "online": 4,
-  "snapshot": "20161203"
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
  },
- "x360-invincible-tiger-the-legend-of-han-tao": {
+ "x360-inversion": {
   "combo": 0,
-  "exp": "Team up with a fellow Invincible Tiger and beat down ninjas like a crazy fool.",
-  "extras": [
-   "Downloadable Only",
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1061/",
-  "lan": 0,
-  "local": 2,
-  "online": 2,
-  "snapshot": "20191015"
- },
- "x360-kung-fu-panda": {
-  "combo": 0,
-  "fonte": "https://www.co-optimus.com/game/1080/",
-  "lan": 0,
-  "local": 4,
-  "online": 0,
-  "snapshot": "20100430"
- },
- "x360-left-4-dead-2": {
-  "combo": 0,
-  "exp": "The game features an asymmetrical co-op system with one player on land as the cat and the other as the fish in the water. Teammates must work together to defeat end-of-level bosses and solve puzzles across a range of natural-world environments",
-  "extras": [
-   "Downloadable Only",
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1206/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20110910"
- },
- "x360-lego-star-wars-ii-the-original-trilogy": {
-  "combo": 0,
-  "exp": "A second player can jump in at any time and take control of the second character.",
+  "exp": "Players can play through the campaign in 2-player online co-op as either Davis Russel or Leo Delgado as they fight off the Lutadore invaders. Alternatively, players can team up in a 4-player survival mode.",
   "extras": [
    "Co-Op Campaign",
-   "Drop In/Drop Out"
+   "Co-Op Specific Content"
   ],
-  "fonte": "https://www.co-optimus.com/game/11441/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220518"
+  "fonte": "https://www.co-optimus.com/game/1431/",
+  "lan": 2,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250415",
+  "v": 2
  },
- "x360-lode-runner": {
+ "x360-ion-assault": {
   "combo": 0,
-  "exp": "Lode Runner features 2 player co-op \"journey\" campaigns. More info as it's available.",
+  "exp": "Play the campaign with a friend in Co-op mode",
   "extras": [
-   "Downloadable Only"
+   "Downloadable Only",
+   "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/1138/",
+  "fonte": "https://www.co-optimus.com/game/2401/",
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20141203"
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
  },
- "x360-lost-planet-2": {
-  "sem_dado": true,
-  "snapshot": "20101019"
- },
- "x360-marvel-ultimate-alliance-2": {
+ "x360-iron-brigade": {
   "combo": 0,
-  "exp": "Search for the Loch Ness monster together.",
+  "exp": "Team up with three other players and show off your customized Trenched Mech as you work together. The game also features a revive mechanic and will scale difficulty based on the number of players.",
   "extras": [
-   "Downloadable Only"
+   "Downloadable Only",
+   "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/1096/",
+  "fonte": "https://www.co-optimus.com/game/2003/",
   "lan": 0,
   "local": 0,
   "online": 4,
-  "snapshot": "20111103"
+  "sistema": "Xbox 360",
+  "snapshot": "20250117",
+  "v": 2
  },
- "x360-mercenaries-2-world-in-flames": {
+ "x360-juju": {
   "combo": 0,
-  "exp": "Background: World powers with deep pockets are willing to pay you to create chaos and do their dirty work. Mercenaries 2 features the latest and most dangerous in civilian and military tech, everything from tanks, APCs, boats, shiny new sports cars, to even a satellite-guided bunker-busting mini-nuke. These are your tools, use them well. You are not a soldier. You are a mercenary. Everyone will try and screw you, given the chance. They think they can get away with it, because they don't know rule number one: Everybody pays. Play the main campaign with the help of your friends. Jump in and out of a game at any time.",
+  "exp": "Grab a friend or family member for two-player cooperative play. JUJU is enjoyable for all skill-levels and allows the second player to jump in or out any time.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3527/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250426",
+  "v": 2
+ },
+ "x360-just-dance-2019": {
+  "combo": 0,
+  "exp": "Grab a few limber friends and synchronize your dance moves in songs that support two, three, or four simultaneous players",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/5180/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250709",
+  "v": 2
+ },
+ "x360-kane-and-lynch-2-dog-days": {
+  "combo": 0,
+  "exp": "Play as either Kane or Lynch through the campaign.The online co-op modes from the first game return as well.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1413/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20251107",
+  "v": 2
+ },
+ "x360-kane-and-lynch-dead-men": {
+  "combo": 0,
+  "exp": "Players take control of either Kane or Lynch as they play through the single player story in offline co-op.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/67/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250808",
+  "v": 2
+ },
+ "x360-kinect-disneyland-adventures": {
+  "combo": 0,
+  "exp": "Two players can explore the park together, with the main player controlling navigation. Both players can interact with famous Disney characters and participate in the attraction minigames together.",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/108/",
+  "fonte": "https://www.co-optimus.com/game/2364/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241209",
+  "v": 2
+ },
+ "x360-kinect-party": {
+  "combo": 0,
+  "exp": "Kinect Party's minigames can track up to six players at once. Players work together to pop balloons, shoot down enemies, and more. Some minigames work better with less people, as standing in front of each other can cause players to disappear. The game is definitely intended to be played with others though.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2819/",
+  "lan": 0,
+  "local": 6,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-kinect-rush-a-disney-pixar-adventure": {
+  "combo": 0,
+  "exp": "A friend can join in for split-screen play at any time. Both players can take separate pathways to find hidden coins and items, and complete co-op puzzles in order to progress through each level. There are also separate leaderboards for co-op.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2457/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250117",
+  "v": 2
+ },
+ "x360-kinect-star-wars": {
+  "combo": 0,
+  "exp": "Go on a Star Wars adventure together in Jedi Destiny mode, lock lightsabers with opponents in Duels of Fate, smash buildings and droids in Rancor Rampage, and dance along with classic Star Wars characters in the goofy Galactic Dance mode. The second player gets a split-screen in all but Galactic Dance. Each of these modes supports drop-in, drop-out play.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2157/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250119",
+  "v": 2
+ },
+ "x360-kingdom-under-fire-circle-of-doom": {
+  "combo": 0,
+  "exp": "Kingdom Under Fire� Circle of Doom is an action role-playing game set in another dimension with randomly generated maps. Save the world from eternal darkness as you battle hordes of enemies using your skills to build powerful weapon combos for each hero. Take your game online with the seamlessly integrated multiplayer over Xbox LIVE�.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/36/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250416",
+  "v": 2
+ },
+ "x360-lara-croft-and-the-guardian-of-light": {
+  "combo": 0,
+  "exp": "Play as Lara or Totec in this isometric view shooter/puzzle hybrid where players must work together to kill enemies and solve environmental puzzles.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1500/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241229",
+  "v": 2
+ },
+ "x360-leedmees": {
+  "combo": 0,
+  "exp": "Team up with a friend as your whole body controls the platforming elements on the screen.This game requires Kinect.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2268/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-lego-harry-potter-years-1-4": {
+  "combo": 0,
+  "exp": "LEGO meets Harry Potter, what more can be said? The game has a dynamic split screen feature.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1226/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "x360-lego-indiana-jones-2-the-adventure-continues": {
+  "combo": 0,
+  "exp": "LEGO action returns to the Indiana Jones world. New features include split screen co-op and a level editor.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1377/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251011",
+  "v": 2
+ },
+ "x360-lego-indiana-jones-the-original-adventures": {
+  "combo": 0,
+  "exp": "Team up with a buddy and play through the original trilogy of Indiana Jones movies in a style only Lego can do. This family friendly game allows each player to choose a character, or customize their own. The LEGO games mix platform and action elements in a a very family friendly game.",
+  "extras": [
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/283/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251010",
+  "v": 2
+ },
+ "x360-lego-marvel-super-heroes": {
+  "combo": 0,
+  "exp": "Lego Marvel Super Heroes lets you take control of your favorite Marvel heroes with over 100 unlockable characters, including Spider-Man, Iron Man, Wolverine, Captain America, the Hulk, Thor, Black Widow, Hawkeye, Deadpool, Loki and Galactus. 2 player local co-op will be featured throughout the campaign",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2849/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250223",
+  "v": 2
+ },
+ "x360-lego-pirates-of-the-caribbean-the-video-game": {
+  "combo": 0,
+  "exp": "the game will span the stories of the first three films (The Curse of the Black Pearl, Dead Man's Chest and At World's End), as well as the fourth film (On Stranger Tides) and will feature over 70 characters from the franchise. The game will also feature its flagship drop-in, drop-out co-op gameplay mechanic.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1953/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "x360-lego-rock-band": {
+  "combo": 0,
+  "exp": "Jam out with your friends LEGO style, in a more \"pop\" version of the Rock Band franchise. Players use drums, guitar, bass or vocals to play.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1360/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241226",
+  "v": 2
+ },
+ "x360-lego-star-wars-the-complete-saga": {
+  "combo": 0,
+  "exp": "From the Trade Federation's \"negotiations\" with Obi-Wan Kenobi and Qui-Gon Jinn in The Phantom Menace to the space battle above Endor in Return of the Jedi, The Complete Saga allows players to kick some brick through 36 Story Mode levels, including Episode II's newly added high-speed pursuit of bounty hunter Zam Wessell. Traveller�s Tales has revamped levels from the original LEGO Star Wars to match the gameplay evolutions found in LEGO Star Wars II, and Prequel Trilogy characters can now be mixed and matched with those from the Original Trilogy � more than 160 in all. [LucasArts]",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/85/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "x360-lego-the-hobbit": {
+  "combo": 0,
+  "exp": "Play as any of the fellowship in this LEGO creation of The Hobbit.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3205/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251212",
+  "v": 2
+ },
+ "x360-marvel-avengers-battle-for-earth": {
+  "combo": 0,
+  "exp": "Player Campaign or Arcade mode in tag-team co-op. When the active player raises his or her arm, the inactive player jumps in. The inactive player can perform the same super move as the active player to help the active player do more damage. If either player runs out of life, the team loses the round.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2616/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250125",
+  "v": 2
+ },
+ "x360-matt-hazard-blood-bath-and-beyond": {
+  "combo": 0,
+  "exp": "Play on your own as Matt Hazard, or with a buddy as Matt�s old sidekick Dexter Dare in Co-op gameplay mode. Think Contra...on crack.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1393/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-max-payne-3": {
+  "combo": 0,
+  "exp": "In Dead Men Walking co-op mode, fight waves of enemies as Max and Passos, earning Grit, which is used to unlock new areas of the map, weapons, weapon attachments and ammo. This mode was added as paid DLC on 1.22.2013 and is a required add-on for cooperative play.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2857/",
   "lan": 0,
   "local": 0,
   "online": 2,
-  "snapshot": "20100507"
+  "sistema": "Xbox 360",
+  "snapshot": "20250423",
+  "v": 2
+ },
+ "x360-megamind-ultimate-showdown": {
+  "combo": 0,
+  "exp": "The second player takes on the role of trusty Brainbot who is a secondary character to assist in puzzles.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1817/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250413",
+  "v": 2
+ },
+ "x360-microbot": {
+  "combo": 0,
+  "exp": "Team up through the single player missions or take on the challenge missions in a survival style gameplay mode. Players can also tweak their co-op experience using the \"co-op editor.\"",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1902/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250125",
+  "v": 2
+ },
+ "x360-mighty-no-9": {
+  "combo": 0,
+  "exp": "Take on over a dozen missions online with a friend, playing as Beck and his partner, Call! Use Beck and Call’s different powers together in order to defeat these special challenges!",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/8380/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250630",
+  "v": 2
+ },
+ "x360-mindjack": {
+  "combo": 0,
+  "exp": "Mindjack allows players to take control of any character in a game. Co-Op gamers can seamlessly join a friends game to help out as long as the host player is still alive.Other gamers can take control of enemies as well, turning the game into a versus type mode, but you can disable it. This would make it 3vs3",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1820/",
+  "lan": 0,
+  "local": 0,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20241226",
+  "v": 2
+ },
+ "x360-monaco-what-s-yours-is-mine": {
+  "combo": 0,
+  "exp": "Team up with up to four people on the same screen or online to steal everything that isn't nailed down",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2778/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250225",
+  "v": 2
+ },
+ "x360-monday-night-combat": {
+  "combo": 4,
+  "exp": "Team up in Blitz mode where you must defend your money ball against waves of AI enemies. Money earned from destroying the robots can be used to upgrade your character during combat or building different turrets around the base. Players can team up two on a box and play online for four players total.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1471/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "x360-monsters-vs-aliens": {
+  "combo": 0,
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/972/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250116",
+  "v": 2
+ },
+ "x360-moon-diver": {
+  "combo": 0,
+  "exp": "The Diver System allows players to jump in or out at any time, for a maximum of up to four players total. Guest players are awarded experience points for helping out.Combos increase in power and intensity according to the number of players. Collect new combo moves by picking them up on the map or fulfilling certain requirements.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1972/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250711",
+  "v": 2
+ },
+ "x360-ms-splosion-man": {
+  "combo": 0,
+  "exp": "The sequel to the platformer 'Splosion Man. Blast through levels with up to three other people either locally or online.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2183/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "x360-mushihimesama": {
+  "combo": 0,
+  "exp": "A second player can join in at any time and shoot away.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/9994/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-mutant-storm-empire": {
+  "combo": 0,
+  "exp": "There's this evil emperor, see, and � well, he's evil. Now someone has decided to put a stop to the whole evilness thing, and that someone is you. It's the right thing to do! Besides, in Mutant Storm Empire, it'll be fun. Battle through line after line of the emperor's minion horde, destroying absolutely everything you can! Blast through bunches of robots, crush colonies of aquatic monsters, smash swarms of UFOs, and demolish devastating bosses. It's a continuous adventure through four immense, strikingly vibrant worlds, and you can fight alone or join forces with a friend in two-player cooperative mode. Enjoy the frenzy!",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/39/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-mutant-storm-reloaded": {
+  "combo": 0,
+  "exp": "Mutant Storm Reloaded features the official training grounds for those who wish to master Blastikkidoo�the Art of Blasting. Just as in martial arts, you begin with a white belt and earn higher belts as you progress. As you move to higher belts, the difficulty increases, which in turn hones your skill. Your goal is simple: Blast through 89 levels inhabited by an array of nasty beasties and live to brag about it. Survive, and you could earn the elusive black belt. Play single player, or two-player cooperative on the same console in either Adventure Mode or Tally Mode.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/40/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-neverdead": {
+  "combo": 0,
+  "exp": "Up to four players can take on Neverdead's online missions together. Of the 13 on-disc missions, 8 are co-op and 5 are competitive. Co-op mission types include Arena Onslaught (defeat waves of enemies in an enclosed arena), Search and Rescue (escort civilians to safety), and Onslaught (clear enemies out of a large level). Experience earned in multiplayer carries over to the main game.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2173/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-ninja-gaiden-3": {
+  "combo": 0,
+  "exp": "Team up with a friend through co-op missions inspired by the game's single player campaign.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2402/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20251017",
+  "v": 2
+ },
+ "x360-omega-five": {
+  "combo": 0,
+  "exp": "Omega Five is a true next-gen, high-definition shooter, with the most awe-inspiring graphics around. Fly through dangerous 3-D environments in this side-scroller as enemies come at you from all sides, even the background. Grab an extra controller, choose your merc, and engage in two-player local co-op play for more action.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/70/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250426",
+  "v": 2
  },
  "x360-onechanbara-bikini-samurai-squad": {
   "combo": 0,
@@ -395,139 +2647,931 @@
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20130331"
+  "sistema": "Xbox 360",
+  "snapshot": "20250503",
+  "v": 2
  },
- "x360-raiden-fighters-aces": {
+ "x360-otomedius-excellent": {
   "combo": 0,
-  "exp": "Fight side by side in a traditional vertical scrolling shooter.",
+  "exp": "Play with up to three players on one console or via Xbox Live. Set the starting level, wave, and difficulty, and then do your best! If the first player runs out of lives, it's game over for everyone. In online games, players two and three must wait for player one to reach checkpoints before they can respawn.",
   "extras": [
-   "Co-Op Campaign",
-   "Drop In/Drop Out"
+   "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/1098/",
+  "fonte": "https://www.co-optimus.com/game/2276/",
   "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20100528"
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
  },
- "x360-raiden-iv": {
+ "x360-outland": {
   "combo": 0,
-  "exp": "Team up with other players to solve puzzles and defeat bosses! You can even form an Armada with friends to confront Honkai together... on a bigger scale! Normal raids can be tackled by up to three players while team raids allow for up to 12 players to work together.",
+  "exp": "Story co-op and co-op challenge rooms for two online players.",
   "extras": [
    "Downloadable Only",
-   "Drop In/Drop Out"
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
   ],
-  "fonte": "https://www.co-optimus.com/game/1202/",
-  "lan": 0,
-  "local": 0,
-  "online": 12,
-  "snapshot": "20100528"
- },
- "x360-saints-row": {
-  "combo": 0,
-  "exp": "The game only offers two missions (three with the DLC) designed for two players. Outside of these missions no co-op options are available.",
-  "fonte": "https://www.co-optimus.com/game/10459/",
+  "fonte": "https://www.co-optimus.com/game/2024/",
   "lan": 0,
   "local": 0,
   "online": 2,
-  "snapshot": "20210922"
+  "sistema": "Xbox 360",
+  "snapshot": "20250806",
+  "v": 2
  },
- "x360-shin-sangokumusou-4-special": {
+ "x360-overlord": {
   "combo": 0,
-  "exp": "Co-Op Play is via Split Screen and allows you to team up with a buddy to conquer the endless hordes of baddies.",
+  "exp": "Each player takes the role of an Overlord in the co-op mode. Free DLC is required to enable split screen play.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/359/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20251010",
+  "v": 2
+ },
+ "x360-overlord-ii": {
+  "combo": 0,
+  "exp": "Arena Survival � Two players, both as overlords with their own minions, help each other stay alive as they battle against wave after wave of enemies coming at them in an arena setting. Kill A General � Two players, both as overlords with their own minions, go through a series of lands together on a mission to kill a Glorious Empire general.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1220/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-perfect-dark-zero": {
+  "combo": 2,
+  "exp": "Joanna Dark returns in this prequel to the award-winning Perfect Dark, in a first-person shooter exclusively for Xbox 360. When a routine bounty-hunting mission reveals a vast conspiracy, Joanna is sucked into the battle for global domination. Mold Joanna into the perfect agent as you navigate a murky world of corporate intrigue and espionage. Many weapons, vehicles, and gadgets from the original game return. Hordes of new ones are added, creating a massive arsenal that includes jetpacks, motorcycles, hovercraft, and other cutting-edge weapons technology. Max out replayability with single-player, four-player splitscreen, co-op, and other multiplayer options.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/89/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "x360-phantom-breaker-battle-grounds": {
+  "combo": 0,
+  "exp": "Battle through the game in 4-player co-op.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2645/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241215",
+  "v": 2
+ },
+ "x360-pid": {
+  "combo": 0,
+  "exp": "In Pid's local co-op mode, each player controls a single beam of his or her own. That means they have to work together to cross gaps and avoid hazards.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2428/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-power-gig-rise-of-the-sixstring": {
+  "combo": 0,
+  "exp": "The game offers three player co-op - lead guitar, vocals and drums. Co-Op play is available through the game's \"story\" mode.",
   "extras": [
    "Co-Op Campaign",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/10918/",
+  "fonte": "https://www.co-optimus.com/game/1806/",
+  "lan": 0,
+  "local": 3,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251029",
+  "v": 2
+ },
+ "x360-pro-evolution-soccer-2018": {
+  "combo": 3,
+  "exp": "Team up with two other players online to take on a computer controlled team. The console version of the game allows for a second local player in the co-op mode, and also supports combo co-op, i.e., two players locally and one online",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/4713/",
+  "lan": 0,
+  "local": 2,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250805",
+  "v": 2
+ },
+ "x360-radirgy-noa-massive": {
+  "combo": 0,
+  "exp": "Two local players can team up to take on enemies.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Import"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2647/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20220121"
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
  },
- "x360-sonic-s-ultimate-genesis-collection": {
-  "sem_dado": true,
-  "snapshot": "20110910"
- },
- "x360-spider-man-friend-or-foe": {
+ "x360-rage": {
   "combo": 0,
-  "exp": "Two players, taking on the role of Claire and Miller, can punch their way through the game together.",
+  "exp": "Legends of the Wasteland is a 9 mission separate co-op campaign.",
   "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1286/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241107",
+  "v": 2
+ },
+ "x360-raiden-iv": {
+  "combo": 0,
+  "exp": "Team up with a fellow fighter pilot as you collect powerups and dodge bullets in this traditional top down vertical shooter.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1202/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250715",
+  "v": 2
+ },
+ "x360-renegade-ops": {
+  "combo": 0,
+  "exp": "Team up online with up to four people for destructive co-op action.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2110/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-resident-evil-5": {
+  "combo": 0,
+  "exp": "The entire Resident Evil 5 campaign supports two player, drop-in/drop-out co-op either locally (i.e., couch co-op), via system link or online. Co-op is also supported in the story DLC, \"Lost in Nightmares\" and \"Desperate Escape.\" Additionally, two player local or online co-op is supported in the \"Mercenaries United\" mode.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/483/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-resident-evil-6": {
+  "combo": 4,
+  "exp": "Team up through the game's story with one of 6 different characters (3 stories, 2 characters each) and team up for four player co-op through specific intersection moments. The game also supports a two player co-op mercenary mode.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2464/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241103",
+  "v": 2
+ },
+ "x360-rock-revolution": {
+  "combo": 0,
+  "exp": "Play either drums, lead guitar or bass guitar in Konami's entry into the rhythm and music wars. Release your inner rockstar or allow your friends the privilege of picking up guitar, bass, drums, and microphone peripherals to 40 rock and roll tracks. Online and offline multiplayer, versus, coop and band battle with rehearsal mode and career mode. [KONAMI]",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/986/",
+  "lan": 0,
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250224",
+  "v": 2
+ },
+ "x360-rocketmen-axis-of-evil": {
+  "combo": 0,
+  "exp": "The game features customizable characters and up to 4 players in co-op, either online or off. Update: On May 14th, 2008 Capcom has released an expansion pack titled Rocketmen: It Came from Your Uranus for $4.95. The add-on adds 5 new weapons and 3 new levels and allows you to upgrade your character even further. Players will join the heroes of the Alliance of Free Planets in their white-knuckled, frenzied struggle to free the Solar System from the tyrannical grip of the Legion of Terra. Up to four players will be able to cooperatively shoot their way through multiple levels, powering up their weapons, picking up bonuses and laying waste to anything that moves.",
+  "extras": [
+   "Downloadable Only",
    "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/117/",
+  "fonte": "https://www.co-optimus.com/game/305/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-sacred-2-fallen-angel": {
+  "combo": 2,
+  "exp": "You have the option of running co-op campaigns, where you and a few friends (up to 4) can go through the main story of the game, leave it open in a free for all where only secondary quests can be played and the entire map is available to explore, and arena modes where the same groups can fight waves of enemies or each other. Enemies scale up and down as players drop in or out, keeping the balance even. You don't have to keep playing with the group if you want to be alone, just go to your own game and come back when you are ready for more multiplayer action. In Depth Details of the Online Play can be found here.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/872/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-sacred-3": {
+  "combo": 4,
+  "exp": "Team up in four player co-op through the campaign. Utilize weapon spirits to maximize your co-op team and buff teammates with unique abilities.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2732/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250428",
+  "v": 2
+ },
+ "x360-sacred-citadel": {
+  "combo": 0,
+  "exp": "Up to three players can join forces in local or online co-op throughout the entire campaign.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2699/",
+  "lan": 0,
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250423",
+  "v": 2
+ },
+ "x360-saints-row-2": {
+  "combo": 0,
+  "exp": "The sandbox just got larger with a totally transformed and expanded city of Stilwater, offering all new locations to explore with new vehicles, including motorcycles, boats, helicopters and planes. Saints Row 2 will be playable online in 2-player co-op through the entire single-player campaign or in the all new open-world competitive multiplayer mode never before seen in the genre.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/273/",
+  "lan": 2,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250119",
+  "v": 2
+ },
+ "x360-saints-row-iv": {
+  "combo": 0,
+  "exp": "Play through the entire game with a friend - bring in your own character with all of your customizations and upgrades. Both players keep the spoils of the Saints.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2917/",
+  "lan": 2,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250223",
+  "v": 2
+ },
+ "x360-sanctum-2": {
+  "combo": 0,
+  "exp": "Sanctum 2 is a sequel 2009's Sanctum, a hybrid FPS/Tower Defense game. To succeed you have to construct and upgrade defensive structures. What makes Sanctum unique from other tower defenses is that when the havoc starts, you jump right into the action with your own weapons and play a key role in the defense.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2499/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250223",
+  "v": 2
+ },
+ "x360-scarygirl": {
+  "combo": 0,
+  "exp": "The entire game supports drop-in, drop-out co-op. The second player controls Bunniguru, ScaryGirl's martial artist sidekick. An offensive character with unique martial arts moves, he can't grapple enemies or the environment like Scarygirl. Together they can perform team up moves.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2473/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20110910"
+  "sistema": "Xbox 360",
+  "snapshot": "20250419",
+  "v": 2
+ },
+ "x360-schizoid": {
+  "combo": 0,
+  "exp": "Schizoid is a co-op action game in which teamwork matters like never before, as gamers and their friend or AI ally protect each other from barrages of glowing enemies. Co-op gameplay to the max: No other multiplayer co-op game has such tight cooperative gameplay. The two players (or one player with a computer A.I. partner, or one player controlling both ships in Uberschizoid) must work together closely in order to defeat the hordes on each level.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/152/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241213",
+  "v": 2
+ },
+ "x360-scourge-outbreak": {
+  "combo": 0,
+  "exp": "Players team up for the game's campaign, each taken a role as a different character. Character abilities differ slightly and cut scenes are specific to a character's viewpoint.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2596/",
+  "lan": 4,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-serious-sam-3-bfe": {
+  "combo": 0,
+  "exp": "Team up through the campaign friends for frantic, old school, shooting action.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2587/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241224",
+  "v": 2
+ },
+ "x360-shank": {
+  "combo": 0,
+  "exp": "Shank has a 2 player co-op campaign with scenarios and bosses specifically designed for co-op.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1632/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241219",
+  "v": 2
+ },
+ "x360-shank-2": {
+  "combo": 0,
+  "exp": "Two players can play locally or online in Shank 2's Survival Mode.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2319/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-shoot-many-robots": {
+  "combo": 2,
+  "exp": "Two to four players, either locally or online, can team up for run and gun fun against armies of deadly robots. Each player is awarded loot and nuts at the end of every level.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2253/",
+  "lan": 0,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250826",
+  "v": 2
+ },
+ "x360-shooting-love-200x": {
+  "combo": 0,
+  "exp": "Featured games include support for two-player simultaneous play. Select modes enable four-player co-op.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3835/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-shrek-forever-after": {
+  "combo": 0,
+  "exp": "Play with up to four people in drop-in/drop-out local co-op",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2198/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241209",
+  "v": 2
+ },
+ "x360-skate-3": {
+  "combo": 0,
+  "exp": "Players can Freeskate together, completing challenges, learning the courses, and creating customs parks.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1398/",
+  "lan": 0,
+  "local": 0,
+  "online": 6,
+  "sistema": "Xbox 360",
+  "snapshot": "20250118",
+  "v": 2
+ },
+ "x360-skylanders-giants": {
+  "combo": 0,
+  "exp": "Two local players can each use a different Skylander figure with a single Portal of Power to play through the main campaign.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2490/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250220",
+  "v": 2
+ },
+ "x360-skylanders-spyro-s-adventure": {
+  "combo": 0,
+  "exp": "Play through the game's single player adventure with a friend. They can bring their own character(s) and jump in at any time.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2160/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241215",
+  "v": 2
+ },
+ "x360-skylanders-swap-force": {
+  "combo": 0,
+  "exp": "Team up with a friend in local co-op or survival mode for the third installment of the Skylanders series.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2877/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251128",
+  "v": 2
+ },
+ "x360-sniper-elite-v2": {
+  "combo": 0,
+  "exp": "Two players can take on the entire campaign together online. Co-op mechanics include the ability to revive a fallen comrade or spot enemies with your binoculars, marking their locations for both players. Other co-op modes include Killy Tally (survive 10 waves of enemies), Bombing Run (hunt for vehicle parts before time runs out), and Overwatch (one player snipes while the other spots enemies and carries out objectives).",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2535/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250319",
+  "v": 2
+ },
+ "x360-snoopy-flying-ace": {
+  "combo": 0,
+  "exp": "Complete co-op challenges with a friend in this arcade flying game featuring Peanuts characters.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1581/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250118",
+  "v": 2
+ },
+ "x360-south-park-tenorman-s-revenge": {
+  "combo": 0,
+  "exp": "Play as one of South Park's favorite sons in four player local or online co-op.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2361/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-spec-ops-the-line": {
+  "combo": 0,
+  "exp": "A series of objective-based cooperative multiplayer scenarios set in Dubai after a series of cataclysmic sandstorms have wrecked the city. It includes four fast-paced missions, each with its own unique objectives, environments and playable characters.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1601/",
+  "lan": 2,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241228",
+  "v": 2
+ },
+ "x360-spelunky": {
+  "combo": 0,
+  "exp": "Four players can explore the world of Spelunky together in local co-op play.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2182/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "x360-star-trek": {
+  "combo": 0,
+  "exp": "Play through the entire campaign as Kirk and Spock in two player local or online co-op.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2492/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241213",
+  "v": 2
  },
  "x360-star-trek-dac": {
   "combo": 0,
   "exp": "The game is a top down shooter featuring a co-op multiplayer mode. Any combination of human and AI players may be used up to 12 via LAN.",
   "extras": [
-   "Downloadable Only"
+   "Downloadable Only",
+   "Co-Op Specific Content"
   ],
   "fonte": "https://www.co-optimus.com/game/1139/",
   "lan": 6,
   "local": 0,
   "online": 6,
-  "snapshot": "20190916"
+  "sistema": "Xbox 360",
+  "snapshot": "20250811",
+  "v": 2
  },
- "x360-star-wars-the-clone-wars-republic-heroes": {
-  "sem_dado": true,
-  "snapshot": "20100415"
- },
- "x360-teenage-mutant-ninja-turtles-turtles-in-time-re-shelled": {
+ "x360-star-trek-legacy": {
   "combo": 0,
-  "exp": "Players take control of one of the Teenage Mutant Ninja Turtles in a journey through time with epic boss battles and more.",
+  "exp": "Forget seeking out new life and exploring strange new worlds. Star Trek: Legacy is all about battles as you boldly blast your way through the entire Star Trek universe! Take command of Starfleet, concoct a battle strategy, and test your tactics in real-time combat set in dynamic, 3D space environments. Legacy draws from every Star Trek series, including Next Generation, Voyager, Deep Space Nine, Enterprise, and the original series. Fight Star Trek's most storied battles in single player. Lead Federation, Klingon, Borg, or Romulan fleets in massive multi-player campaigns. Victories bring Command Points, which you can use to customize your fleet and captains. Beam us up!",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/211/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20260311",
+  "v": 2
+ },
+ "x360-steel-battalion-heavy-armor": {
+  "combo": 0,
+  "exp": "Four players stomp the battlegrounds together on a variety of maps, earning new unlockable items with which to customize their Vertical Tanks.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2563/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20251007",
+  "v": 2
+ },
+ "x360-supreme-commander": {
+  "combo": 0,
+  "fonte": "https://www.co-optimus.com/game/696/",
+  "lan": 0,
+  "local": 0,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250124",
+  "v": 2
+ },
+ "x360-switchball": {
+  "combo": 0,
+  "exp": "Team up with another friend through the game's co-op specific levels.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/47/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20240616",
+  "v": 2
+ },
+ "x360-takedown-red-sabre": {
+  "combo": 0,
+  "exp": "Team up with other players as a squad in five single missions or in terrorist hunt on the game's maps.",
   "extras": [
    "Downloadable Only",
    "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/1209/",
-  "lan": 0,
-  "local": 4,
-  "online": 4,
-  "snapshot": "20150304"
+  "fonte": "https://www.co-optimus.com/game/3001/",
+  "lan": 6,
+  "local": 0,
+  "online": 6,
+  "sistema": "Xbox 360",
+  "snapshot": "20250426",
+  "v": 2
  },
- "x360-terminator-salvation": {
+ "x360-tales-of-vesperia": {
   "combo": 0,
-  "exp": "Terminator Salvation feature split screen co-op support through this third person action game. Background In Terminator: Salvation, you are John Connor, a soldier in this post-apocalyptic world, and it's up to you to lead your squad of loyal fighters in a desperate battle for survival against the superior forces of Skynet and its deadly Terminators. Use the environment and objects in it to provide cover and protection as the T-600 and T-7T shoot relentlessly at you and your squad from all angles and the lethal Aerostat blasts you from above.",
-  "extras": [
-   "Co-Op Campaign",
-   "Splitscreen"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1101/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20170329"
- },
- "x360-the-beatles-rock-band": {
-  "combo": 0,
-  "exp": "A second ship can enter at any time and help defeat all those aliens.",
+  "exp": "During the normal single player experience, you can use other controllers to control the other characters in the real time combat. Everything takes place on the same screen, but the camera zooms out so that all human-controlled characters can be seen.All you have to do is plug in additional controllers and set the control type for a given character to �semi-auto� or �manual�. Outside of combat, Player One controls the action. Thanks Razor Ace for the information",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1094/",
+  "fonte": "https://www.co-optimus.com/game/905/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250221",
+  "v": 2
+ },
+ "x360-tenchu-z": {
+  "combo": 0,
+  "exp": "Create your own fully customizable ninja with different skills, clothes, and other features and play with up to four people on-line or through system link to complete mission objectives",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/560/",
+  "lan": 4,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-test-drive-unlimited-2": {
+  "combo": 0,
+  "exp": "There are two co-op modes to play - Keep the Distance You will have to stay within the distance of a couple of yards with car next to you, or if you’re the leader then the car behind you. Yes, it sounds dashing! The faster your team will go, the more points you earn. Follow the Leader In every race, the leader can see the next checkpoint. Once he has crossed that checkpoint the team members will be given a certain amount of time to cross that checkpoint. Difficulty of this mode depends on the leader of the pack.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2007/",
+  "lan": 0,
+  "local": 0,
+  "online": 8,
+  "sistema": "Xbox 360",
+  "snapshot": "20250119",
+  "v": 2
+ },
+ "x360-the-adventures-of-shuggy": {
+  "combo": 0,
+  "exp": "Play 36 twisted two-player levels in the offline co-op mode, with puzzles that can only be completed through cunning and teamwork.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2177/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20100516"
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
+ },
+ "x360-the-beatles-rock-band": {
+  "combo": 0,
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1094/",
+  "lan": 0,
+  "local": 6,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250222",
+  "v": 2
+ },
+ "x360-the-black-eyed-peas-experience": {
+  "combo": 0,
+  "exp": "Play with up to 2 dancers and 2 singers in the Black Eyed Peas Deluxe Mode.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2367/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250416",
+  "v": 2
+ },
+ "x360-the-cave": {
+  "combo": 0,
+  "exp": "Two to three local co-op players work together to solve puzzles in this adventure platformer.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2598/",
+  "lan": 0,
+  "local": 3,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241213",
+  "v": 2
+ },
+ "x360-the-crew": {
+  "combo": 0,
+  "exp": "Team up with friends or random players to complete missions and drive across a massive amount of realistic terrain.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3534/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250122",
+  "v": 2
+ },
+ "x360-the-cursed-crusade": {
+  "combo": 0,
+  "exp": "A Middle Age bromance with two demon-cursed heroes, this Crusade really is Cursed.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1823/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250104",
+  "v": 2
+ },
+ "x360-the-darkness-ii": {
+  "combo": 0,
+  "exp": "The Vendettas co-op mode is a separate story in which players can choose from four different characters and level them up in co-op play.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2419/",
+  "lan": 0,
+  "local": 0,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
  },
  "x360-the-dishwasher-dead-samurai": {
   "combo": 0,
   "exp": "The Dishwasher has arcade co-op, drop-in solo campaign co-op, and drop-in solo phantom guitar co-op using the guitar peripheral. Phantom guitar players can unload electric death by playing wicked solos, perform basic movement, and use the guitar's motion control to rip through enemies with a razor-sharp headstock.",
   "extras": [
    "Downloadable Only",
-   "Co-Op Campaign"
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
   ],
   "fonte": "https://www.co-optimus.com/game/1113/",
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20160427"
+  "sistema": "Xbox 360",
+  "snapshot": "20241213",
+  "v": 2
+ },
+ "x360-the-outfit": {
+  "combo": 0,
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/171/",
+  "lan": 2,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "x360-the-smurfs-2": {
+  "combo": 0,
+  "exp": "Four-Player Co-op: Play with four players on the screen simultaneously. Jump in and jump out seamlessly.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2993/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251026",
+  "v": 2
  },
  "x360-the-warriors-street-brawl": {
   "combo": 0,
@@ -540,171 +3584,594 @@
   "lan": 0,
   "local": 4,
   "online": 4,
-  "snapshot": "20171101"
+  "sistema": "Xbox 360",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "x360-thunder-wolves": {
+  "combo": 0,
+  "exp": "Take control of a mercenary helicopter with local 2 player co-op. One player pilots while the other shoots as the gunner through the full Thunder Wolves campaign.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2739/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250812",
+  "v": 2
+ },
+ "x360-tiqal": {
+  "combo": 0,
+  "exp": "The Co-Op mode allows you to play through the adventure mode of the game with a friend. In TiQal, you have been chosen to make an epic journey through many obstacles to seek the help of the gods. The village of TiQal is in deep trouble! Destroy the block walls in your way by moving your magic Dropper left and right, rotating blocks, and dropping them into place to create squares of color. Build up multiple squares to score bonus points and unlock helpful power-ups. Do you have the skill and courage to complete your quest and save TiQal from certain destruction? [XBox.com]",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/350/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241218",
+  "v": 2
+ },
+ "x360-tom-clancy-s-rainbow-six-vegas-2": {
+  "combo": 0,
+  "exp": "The game features two co-op modes: Co-op Story : You and one other player take on the terrorists together as elite Rainbow members. The host player (Bishop) controls the AI teammates, and the guest (Knight) plays along in the story. You can invite a friend to your single-player campaign at any time. Co-op Terrorist Hunt : You and up to three other players cooperate to locate and eliminate all terrorists in the map",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/4243/",
+  "lan": 4,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250808",
+  "v": 2
  },
  "x360-tom-clancy-s-splinter-cell-double-agent": {
   "combo": 0,
-  "exp": "A few of the games allowother players to enter and play through the campaign/the levels together.",
+  "exp": "Unlike the full story mode of the Xbox version, the 360 version's co-op is only a \"sub mode\" of the Spies vs Mercenaries mode in which you and two friends can take on AI Bots.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1029/",
+  "lan": 3,
+  "local": 0,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250104",
+  "v": 2
+ },
+ "x360-too-human": {
+  "combo": 0,
+  "exp": "Play with up to 2 players online with drop-in/drop-out co-op support. The entire game was designed from the ground up for co-op including co-op specific character perks, item trading, character classes, and more. The game is an action RPG combining Norse mythology with cyberpunk tech. It's been touted as the evolution of Diablo. Be sure to read our Interview for more details!",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1029/",
+  "fonte": "https://www.co-optimus.com/game/219/",
   "lan": 0,
-  "local": 4,
-  "online": 0,
-  "snapshot": "20101029"
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250123",
+  "v": 2
  },
- "x360-uno-rush": {
+ "x360-top-spin-3": {
   "combo": 0,
-  "exp": "Destroy crowds of enemies together with your friends.",
+  "exp": "Take on the computer in doubles matches with your co-op partner or select mini games.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/977/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241209",
+  "v": 2
+ },
+ "x360-tornado-outbreak": {
+  "combo": 0,
+  "exp": "Based on preliminary information, the co-op mode is separate from the main campaign.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1295/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20241215",
+  "v": 2
+ },
+ "x360-toy-soldiers-cold-war": {
+  "combo": 0,
+  "exp": "Join forces with your friends and play onthe couch or over Xbox LIVE in Campaign or Survival modes.",
   "extras": [
    "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2002/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241212",
+  "v": 2
+ },
+ "x360-transformers-fall-of-cybertron": {
+  "combo": 0,
+  "exp": "Until the servers were shut down, four players could team up for the online Escalation mode.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2330/",
+  "lan": 0,
+  "local": 0,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250913",
+  "v": 2
+ },
+ "x360-transformers-rise-of-the-dark-spark": {
+  "combo": 0,
+  "exp": "Until the servers where shut down, Players could play together in Escalation, which delivers wave-based, survival-style gameplay for up to four players online cooperatively. It features new, upgradeable defense systems, recognizable adversaries from the lore, and an expanded roster of playable characters from past and present.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3280/",
+  "lan": 0,
+  "local": 0,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250222",
+  "v": 2
+ },
+ "x360-trine-2": {
+  "combo": 3,
+  "exp": "A side-scrolling puzzle-platforming game featuring up to three players working together to complete the campaign.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1883/",
+  "lan": 0,
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "x360-tron": {
+  "combo": 0,
+  "exp": "The arcade classic is back! And Tron is even better this time around with enhanced graphics, CD-quality sound and two-person multiplayer. Battle as mighty video warrior Tron against the insidious Master Control Program and his ruthless right-hand man, Sark. Tron offers a retro-futuristic test of gaming ability. Race life cycles, demolish tanks, dodge grid bugs, and even face off against the MCP himself to find out who truly rules the computer world! [Xbox.com]",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/148/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250220",
+  "v": 2
+ },
+ "x360-ugly-americans-apocalypsegeddon": {
+  "combo": 4,
+  "exp": "Four players can co-op online, locally, or any combination of online and local play.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2260/",
+  "lan": 0,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250503",
+  "v": 2
+ },
+ "x360-undertow": {
+  "combo": 0,
+  "exp": "Undertow is a fast-paced action-shooter that sends you underwater as you battle up to 16 players for control of the oceans! Non-stop conquest-style battles push the envelope of onscreen effects and combat action and boast some of the most stunning graphics ever seen in an Xbox LIVE� Arcade title. Undertow features 16-player multiplayer battles and two-player co-op modes.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
    "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/51/",
+  "lan": 0,
+  "local": 2,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20241211",
+  "v": 2
+ },
+ "x360-uno-rush": {
+  "combo": 2,
+  "exp": "Play 2-player Team Rush against the computer or real players.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
+   "Splitscreen"
   ],
   "fonte": "https://www.co-optimus.com/game/1189/",
   "lan": 0,
-  "local": 0,
-  "online": 4,
-  "snapshot": "20150327"
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20241217",
+  "v": 2
  },
- "x360-warriors-legends-of-troy": {
+ "x360-viva-pinata-trouble-in-paradise": {
   "combo": 0,
-  "exp": "Connect with our community online to explore the RSR galaxy with four people simultaneously! Progress with your friends and unlock the secrets of the galaxy as a team. Along with exclusive multiplayer content, there will always be something new to discover. Couch Co-op! Having a friend over? Team up with them the old fashioned way! Share a screen and blast your way through the RSR universe.",
   "extras": [
-   "Downloadable Only"
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1210/",
+  "fonte": "https://www.co-optimus.com/game/438/",
+  "lan": 4,
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox 360",
+  "snapshot": "20250825",
+  "v": 2
+ },
+ "x360-warface": {
+  "combo": 0,
+  "exp": "Play through co-op specific scenarios with your friends.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3146/",
+  "lan": 0,
+  "local": 0,
+  "online": 5,
+  "sistema": "Xbox 360",
+  "snapshot": "20250124",
+  "v": 2
+ },
+ "x360-warhammer-40-000-kill-team": {
+  "combo": 0,
+  "exp": "Team up against enemies with a friend. Choose from 4 classes: Sternguard Veteran ,Techmarine, Vanguard Veteran and Librarian",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2139/",
   "lan": 0,
   "local": 2,
-  "online": 4,
-  "snapshot": "20100516"
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251215",
+  "v": 2
+ },
+ "x360-wolf-of-the-battlefield-commando-3": {
+  "combo": 0,
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/329/",
+  "lan": 0,
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20241217",
+  "v": 2
+ },
+ "x360-world-gone-sour": {
+  "combo": 0,
+  "exp": "Two players can play the entire adventure together locally- sharing mini Sour Patch Kid followers, solving puzzles, and teaming up to take down enemies. An \"MVP\" is awarded at the end of each level for collecting the most points for the team.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2438/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20251004",
+  "v": 2
+ },
+ "x360-wwe-12": {
+  "combo": 0,
+  "exp": "Play 2 vs AI in Tag Team, Triple Threat and variations of these. Plays 3 vs AI in 6-Man matches and variations of it.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2406/",
+  "lan": 0,
+  "local": 3,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250416",
+  "v": 2
+ },
+ "x360-wwe-13": {
+  "combo": 0,
+  "exp": "Two players can wrassle or sportingly entertain the masses in local tag matches.",
+  "extras": [
+   "Co-Op Specific Content"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2791/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250207",
+  "v": 2
+ },
+ "x360-yar-s-revenge": {
+  "combo": 0,
+  "exp": "Two player local co-op.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1844/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox 360",
+  "snapshot": "20250126",
+  "v": 2
+ },
+ "x360-young-justice-legacy": {
+  "combo": 0,
+  "exp": "Play as your favorite character from the Young Justice: Legacy with up to two of your friends as you battle some of their greatest foes",
+  "fonte": "https://www.co-optimus.com/game/3214/",
+  "lan": 0,
+  "local": 3,
+  "online": 3,
+  "sistema": "Xbox 360",
+  "snapshot": "20251006",
+  "v": 2
+ },
+ "x360-zeno-clash-ii": {
+  "combo": 0,
+  "exp": "Play through the game's single player experience in co-op in this first person brawler. Ghat can now be joined by his sister Rimat.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2618/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox 360",
+  "snapshot": "20250223",
+  "v": 2
  },
  "x360-zombie-apocalypse": {
   "combo": 0,
   "exp": "Four players can kill the zombie horde either locally or online in this Left 4 Dead meets Arcade game.",
   "extras": [
    "Downloadable Only",
-   "Co-Op Campaign"
+   "Co-Op Campaign",
+   "Co-Op Specific Content"
   ],
   "fonte": "https://www.co-optimus.com/game/1124/",
   "lan": 0,
   "local": 4,
   "online": 4,
-  "snapshot": "20150131"
+  "sistema": "Xbox 360",
+  "snapshot": "20240716",
+  "v": 2
  },
- "xblig-creed-arena": {
-  "combo": 0,
-  "exp": "The game allows two players to play through co-op tournaments either in local split-screen or online.",
+ "x360-zombie-apocalypse-never-die-alone": {
+  "combo": 4,
+  "exp": "Up to four players can play shared screen or online (or combination) co-op a series of loosely connected maps.",
   "extras": [
    "Downloadable Only",
+   "Co-Op Campaign",
+   "Drop In/Drop Out",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/10287/",
+  "fonte": "https://www.co-optimus.com/game/2236/",
   "lan": 0,
-  "local": 2,
-  "online": 2,
-  "snapshot": "20210730"
- },
- "xblig-dual-zone": {
-  "combo": 0,
-  "exp": "Each of the space ships is controlled by a player.",
-  "extras": [
-   "Downloadable Only"
-  ],
-  "fonte": "https://www.co-optimus.com/game/11500/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220519"
- },
- "xblig-the-co-op-zombie-game": {
-  "combo": 0,
-  "exp": "Up to four people can kill their way through the zombie hordes.",
-  "extras": [
-   "Downloadable Only",
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/10284/",
-  "lan": 4,
-  "local": 0,
+  "local": 4,
   "online": 4,
-  "snapshot": "20210730"
+  "sistema": "Xbox 360",
+  "snapshot": "20241219",
+  "v": 2
  },
- "xblig-the-co-op-zombie-game-2": {
+ "x360-zombie-wranglers": {
   "combo": 0,
-  "exp": "Up to four people can kill their way through the zombie hordes.",
-  "extras": [
-   "Downloadable Only",
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/10285/",
-  "lan": 4,
-  "local": 0,
-  "online": 4,
-  "snapshot": "20210802"
- },
- "xblig-the-great-paper-adventure": {
-  "combo": 0,
-  "exp": "A second player can drop in at any time with their own ship and help fight the enemies.",
+  "exp": "This top down/3rd person shoot has a unique twist to your traditional zombie game. You'll be sucking up various type of zombies instead of exploding them. All while working with 3 of your buddies. Challenges are completed cooperatively.",
   "extras": [
    "Downloadable Only",
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/12098/",
+  "fonte": "https://www.co-optimus.com/game/915/",
   "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220706"
- },
- "xblig-zombie-defense-squad": {
-  "combo": 0,
-  "exp": "Up to four people can kill their way through the zombie hordes.",
-  "extras": [
-   "Downloadable Only"
-  ],
-  "fonte": "https://www.co-optimus.com/game/10286/",
-  "lan": 4,
-  "local": 0,
+  "local": 4,
   "online": 4,
-  "snapshot": "20210728"
+  "sistema": "Xbox 360",
+  "snapshot": "20241217",
+  "v": 2
  },
- "xbox-combat-elite-wwii-paratroopers": {
+ "xblig-beat-hazard": {
   "combo": 0,
-  "exp": "The screen is centered between both characters and they need to stay on the same screen while shooting all those pesky Nazis.",
+  "exp": "Team up with a friend and groove out/shoot down foes to your favorite tracks",
   "extras": [
    "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/10178/",
+  "fonte": "https://www.co-optimus.com/game/2072/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20210801"
+  "sistema": "Xbox Live Indie Games",
+  "snapshot": "20250222",
+  "v": 2
  },
- "xbox-darkwatch": {
+ "xblig-castleminer-z": {
   "combo": 0,
-  "exp": "Designed for co-op play, frantic combat encounters with the horrifying creatures of the storm will test your teamwork. Work together to defend and repair the ship, combine item effects in powerful combos and make sure you have your shipmate’s back if you don’t want to become fish food.",
+  "exp": "Play online with up to 7 friends in CastleMiner Z's infinite world in a variety of modes. Go for endurance, survival, or creative mode as you build structures, craft weapons, and explore the world.",
   "extras": [
    "Downloadable Only"
   ],
-  "fonte": "https://www.co-optimus.com/game/1160/",
+  "fonte": "https://www.co-optimus.com/game/3274/",
+  "lan": 0,
+  "local": 0,
+  "online": 8,
+  "sistema": "Xbox Live Indie Games",
+  "snapshot": "20250124",
+  "v": 2
+ },
+ "xblig-explosionade": {
+  "combo": 0,
+  "exp": "Grab a buddy for some two player local co-op. Drop-in and drop-out of explosive action in this short, but polished indie game",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2073/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox Live Indie Games",
+  "snapshot": "20250223",
+  "v": 2
+ },
+ "xblig-octagon": {
+  "combo": 0,
+  "exp": "Use the color attraction mechanic to pull enemies away from a buddy in need, and keep an eye on your energy gauge to make sure you don't spoil it for you both",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2029/",
   "lan": 0,
   "local": 2,
   "online": 2,
-  "snapshot": "20090530"
+  "sistema": "Xbox Live Indie Games",
+  "snapshot": "20241211",
+  "v": 2
  },
- "xbox-delta-force-black-hawk-down": {
-  "exp": "Complete unique missions and goals with a team of friends.",
+ "xbox-187-ride-or-die": {
+  "combo": 0,
+  "exp": "Get together in the car with a friend - one drives, the other shoots -, and play either Whip Races (\"normal\" races), Deathmatch or Minefield (races with mines instead of power-ups) against the AI. You have to unlock the stages in Story mode first however which can also be done with a friend.",
   "extras": [
-   "Drop In/Drop Out",
-   "Splitscreen"
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1162/",
+  "fonte": "https://www.co-optimus.com/game/16256/",
+  "lan": 2,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "xbox-baldur-s-gate-dark-alliance": {
+  "combo": 0,
+  "exp": "Two players could work together, sharing the same screen and making sure to cover each other's back. As is always the case, the fun factor multiplies greatly when you've got a buddy along for the ride. Deciding on the best strategies to defeat the bosses and dividing up the loot drops for maximum effectiveness were just two ways that cooperation and teamwork made the entire heroic experience that much smoother and more enjoyable.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/3427/",
   "lan": 0,
   "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250519",
+  "v": 2
+ },
+ "xbox-baldur-s-gate-dark-alliance-ii": {
+  "combo": 0,
+  "exp": "Two players could work together, sharing the same screen and making sure to cover each other's back.",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/8305/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250512",
+  "v": 2
+ },
+ "xbox-batman-rise-of-sin-tzu": {
+  "combo": 0,
+  "exp": "The single-player story mode can be played in co-op with 2 players. Additionally, there is a challenge mode that can also be played co-op (also has a competitive option).",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1620/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20240719",
+  "v": 2
+ },
+ "xbox-battle-engine-aquila": {
+  "combo": 0,
+  "exp": "While you can't play the campaign together once you've unlocked the missions you can go through them with a second player in local split-screen coop.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/9301/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20241225",
+  "v": 2
+ },
+ "xbox-brothers-in-arms-earned-in-blood": {
+  "combo": 0,
+  "exp": "Take on the enemy with a friend by your side. Work together and utilize each other's squads or face certain death.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/9570/",
+  "lan": 2,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20240416",
+  "v": 2
+ },
+ "xbox-conflict-global-terror": {
+  "combo": 0,
+  "exp": "Share weapons and ammo, as you team up through the game's missions in this tactical shooter.",
+  "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1401/",
+  "lan": 0,
+  "local": 4,
   "online": 4,
-  "snapshot": "20100414"
+  "sistema": "Xbox",
+  "snapshot": "20250126",
+  "v": 2
  },
  "xbox-destroy-all-humans-2": {
   "combo": 0,
@@ -717,68 +4184,67 @@
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20101028"
+  "sistema": "Xbox",
+  "snapshot": "20250120",
+  "v": 2
  },
- "xbox-dragon-ball-z-sagas": {
+ "xbox-digimon-world-4": {
   "combo": 0,
-  "exp": "The co-op mode allows two players to play through the chapters of the single player game together. To account for the second player, the difficulty level is increased.",
-  "fonte": "https://www.co-optimus.com/game/11475/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220519"
- },
- "xbox-dynasty-warriors-3": {
-  "combo": 0,
-  "exp": "For the first time in the series battle through the missions side-by-side in local splitscreen-mode.",
+  "exp": "Up to four players can team up and play through the game together. Each player creates/calls their own Digimon they then take control over.",
   "extras": [
-   "Co-Op Campaign",
-   "Splitscreen"
+   "Co-Op Campaign"
   ],
-  "fonte": "https://www.co-optimus.com/game/10956/",
+  "fonte": "https://www.co-optimus.com/game/16767/",
   "lan": 0,
-  "local": 2,
+  "local": 4,
   "online": 0,
-  "snapshot": "20220121"
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
  },
- "xbox-dynasty-warriors-4": {
+ "xbox-dungeons-and-dragons-heroes": {
   "combo": 0,
-  "exp": "Battle through the missions side-by-side in local splitscreen-mode.",
-  "extras": [
-   "Co-Op Campaign",
-   "Splitscreen"
-  ],
-  "fonte": "https://www.co-optimus.com/game/10961/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220121"
- },
- "xbox-dynasty-warriors-5": {
-  "combo": 0,
-  "exp": "Battle through the missions side-by-side in local splitscreen-mode.",
-  "extras": [
-   "Co-Op Campaign",
-   "Splitscreen"
-  ],
-  "fonte": "https://www.co-optimus.com/game/10976/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220119"
- },
- "xbox-gauntlet-dark-legacy": {
-  "combo": 0,
-  "exp": "With up to 3 of your friends, embark on a quest to collect the mythic 13 rune stones and battle the evil wizard Garm.",
+  "exp": "Bring your character into the game with four different roles (Fighter,Wizard, Cleric or Thief) and hack and slash your way through the game's story.",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/10559/",
+  "fonte": "https://www.co-optimus.com/game/1314/",
   "lan": 0,
   "local": 4,
   "online": 0,
-  "snapshot": "20210922"
+  "sistema": "Xbox",
+  "snapshot": "20251009",
+  "v": 2
+ },
+ "xbox-espn-nba-2night-2002": {
+  "combo": 0,
+  "exp": "Up to four players can play on the same team against a computer-controlled opponent. Jumping in and out is possible at any time.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/14994/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20241214",
+  "v": 2
+ },
+ "xbox-full-spectrum-warrior": {
+  "combo": 0,
+  "exp": "Play cooperatively through the single player game as each player controls a fire team",
+  "extras": [
+   "Co-Op Campaign"
+  ],
+  "fonte": "https://www.co-optimus.com/game/5048/",
+  "lan": 0,
+  "local": 0,
+  "online": 2,
+  "sistema": "Xbox",
+  "snapshot": "20250126",
+  "v": 2
  },
  "xbox-gauntlet-seven-sorrows": {
   "combo": 0,
@@ -789,49 +4255,23 @@
   "lan": 0,
   "local": 4,
   "online": 4,
-  "snapshot": "20100829"
+  "sistema": "Xbox",
+  "snapshot": "20241211",
+  "v": 2
  },
- "xbox-greg-hastings-tournament-paintball-max-d": {
+ "xbox-halo-2": {
   "combo": 0,
-  "exp": "While playing in career mode, you can invite up to 3 of your friends or family to join your team and help your career along. In the Team Manager screen, \"check in\" additional players. As a co-op player, you inherit all of your teammate's gear and attributes.",
   "extras": [
    "Co-Op Campaign",
-   "Drop In/Drop Out",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/11935/",
+  "fonte": "https://www.co-optimus.com/game/191/",
   "lan": 0,
-  "local": 4,
+  "local": 2,
   "online": 0,
-  "snapshot": "20220706"
- },
- "xbox-harry-potter-and-the-goblet-of-fire": {
-  "combo": 0,
-  "exp": "Players team up as Harry, Ron, and Hermione. Teamwork spells are particularly fun.",
-  "extras": [
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1131/",
-  "lan": 0,
-  "local": 3,
-  "online": 0,
-  "snapshot": "20100825"
- },
- "xbox-hunter-the-reckoning": {
-  "combo": 0,
-  "exp": "Choose one of four different monster hunter characters with their own strengths and abilities as you team up with your partner.",
-  "extras": [
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1022/",
-  "lan": 0,
-  "local": 4,
-  "online": 0,
-  "snapshot": "20100420"
- },
- "xbox-hunter-the-reckoning-redeemer": {
-  "sem_dado": true,
-  "snapshot": "20100724"
+  "sistema": "Xbox",
+  "snapshot": "20251011",
+  "v": 2
  },
  "xbox-justice-league-heroes": {
   "combo": 0,
@@ -844,43 +4284,54 @@
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20100829"
+  "sistema": "Xbox",
+  "snapshot": "20251017",
+  "v": 2
  },
- "xbox-lego-star-wars-the-video-game": {
+ "xbox-medal-of-honor-rising-sun": {
   "combo": 0,
-  "exp": "A second player can jump in at any time and take control of the second character.",
+  "exp": "This WWII FPS takes place in the Pacific. Play through the campaign with a friend in splitscreen.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2107/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250803",
+  "v": 2
+ },
+ "xbox-men-of-valor": {
+  "combo": 0,
+  "exp": "Play through the entire game in split screen co-op.",
+  "extras": [
+   "Co-Op Campaign",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/1240/",
+  "lan": 0,
+  "local": 2,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250127",
+  "v": 2
+ },
+ "xbox-metal-slug-3": {
+  "combo": 0,
+  "exp": "Team up with another player to play through the entire campaign.",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/11430/",
+  "fonte": "https://www.co-optimus.com/game/7128/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20220517"
- },
- "xbox-namco-museum": {
-  "combo": 0,
-  "exp": "Players can team up on the couch in those titles that support it.",
-  "extras": [
-   "Co-Op Campaign"
-  ],
-  "fonte": "https://www.co-optimus.com/game/12151/",
-  "lan": 0,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220809"
- },
- "xbox-rogue-trooper": {
-  "combo": 0,
-  "extras": [
-   "Splitscreen"
-  ],
-  "fonte": "https://www.co-optimus.com/game/1073/",
-  "lan": 0,
-  "local": 2,
-  "online": 4,
-  "snapshot": "20100525"
+  "sistema": "Xbox",
+  "snapshot": "20250319",
+  "v": 2
  },
  "xbox-serious-sam-2": {
   "combo": 0,
@@ -892,127 +4343,223 @@
   "lan": 4,
   "local": 0,
   "online": 4,
-  "snapshot": "20100829"
+  "sistema": "Xbox",
+  "snapshot": "20250209",
+  "v": 2
  },
- "xbox-taito-legends": {
+ "xbox-shadow-ops-red-mercury": {
   "combo": 0,
-  "exp": "A few of the games allow a second player to enter and play through the campaign/the levels together.",
+  "exp": "Play through ten co-op levels in two player splitscreen.",
   "extras": [
-   "Co-Op Campaign",
-   "Drop In/Drop Out"
+   "Co-Op Specific Content",
+   "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/10214/",
+  "fonte": "https://www.co-optimus.com/game/1668/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20210728"
+  "sistema": "Xbox",
+  "snapshot": "20250113",
+  "v": 2
  },
- "xbox-taito-legends-2": {
+ "xbox-shrek-2": {
   "combo": 0,
-  "exp": "A few of the games allowother players to enter and play through the campaign/the levels together.",
+  "exp": "Four players choose from ten characters in an action adventure game based on the movie of the same name.",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/10300/",
+  "fonte": "https://www.co-optimus.com/game/1762/",
   "lan": 0,
   "local": 4,
   "online": 0,
-  "snapshot": "20210922"
+  "sistema": "Xbox",
+  "snapshot": "20241219",
+  "v": 2
  },
- "xbox-tenchu-return-from-darkness": {
+ "xbox-star-wars-jedi-starfighter": {
   "combo": 0,
-  "exp": "Play through special co-op missions together with a friend. This was also possible online via Xbox Live until the servers were shut down.",
+  "exp": "Sequel to Starfighter, allows for split screen. At times you are in individual ships, other times the second player is turret based in your fighter.",
   "extras": [
+   "Co-Op Campaign",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/11483/",
+  "fonte": "https://www.co-optimus.com/game/231/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20220517"
+  "sistema": "Xbox",
+  "snapshot": "20250225",
+  "v": 2
  },
- "xbox-the-warriors": {
+ "xbox-star-wars-the-clone-wars": {
   "combo": 0,
-  "exp": "Team up in this gang themed brawler with a friend at anytime.",
+  "exp": "Both variants (ground and vehicle) of the game mode Jedi Academy can be played with four players. Its a wave-based mode in which you team up and survive as long as possible. There are so-called gladiator/elimination rounds where everyone has to fight everyone and at the end of a session the player with the highest score is crowned the winner, but the main part of the game mode is co-op focused.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/15540/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "xbox-teen-titans": {
+  "combo": 0,
+  "exp": "Up to four players choose from the available roster of characters and play through the story mode together.",
   "extras": [
    "Co-Op Campaign",
    "Drop In/Drop Out"
   ],
-  "fonte": "https://www.co-optimus.com/game/1020/",
+  "fonte": "https://www.co-optimus.com/game/16771/",
   "lan": 0,
-  "local": 2,
+  "local": 4,
   "online": 0,
-  "snapshot": "20100829"
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
  },
- "xbox-timesplitters-2": {
+ "xbox-teenage-mutant-ninja-turtles-3-mutant-nightmare": {
   "combo": 0,
-  "exp": "Timesplitters 2 is an FPS whose co-op mode is the same as its single-player mode, except with up 2 players with lowered health.",
+  "exp": "All four turtles can be controlled by a player both in the main game and Turtles in Time.",
+  "extras": [
+   "Co-Op Campaign",
+   "Drop In/Drop Out"
+  ],
+  "fonte": "https://www.co-optimus.com/game/2303/",
+  "lan": 0,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250120",
+  "v": 2
+ },
+ "xbox-timesplitters-future-perfect": {
+  "combo": 0,
+  "exp": "Co-Op is available in a variety of modes and gameplay.",
   "extras": [
    "Co-Op Campaign",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/10770/",
+  "fonte": "https://www.co-optimus.com/game/1313/",
   "lan": 0,
   "local": 2,
   "online": 0,
-  "snapshot": "20211130"
+  "sistema": "Xbox",
+  "snapshot": "20250119",
+  "v": 2
  },
- "xbox-tom-clancy-s-ghost-recon-island-thunder": {
+ "xbox-tom-clancy-s-ghost-recon": {
   "combo": 0,
+  "exp": "The game offers three co-op modes: Firefight (randomly placed enemies that have to be defeated), Mission (the single player campaign missions) and Recon (get from the insertion zone to the extraction zone). Two players can play in split-screen. Graphics are diminished and some objects removed to handle the extra rendering. Using system link up to 6 players can play together.",
   "extras": [
+   "Co-Op Specific Content",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/11217/",
-  "lan": 5,
+  "fonte": "https://www.co-optimus.com/game/1577/",
+  "lan": 6,
   "local": 2,
   "online": 0,
-  "snapshot": "20220120"
+  "sistema": "Xbox",
+  "snapshot": "20250117",
+  "v": 2
  },
- "xbox-tom-clancy-s-rainbow-six-3": {
-  "combo": 0,
-  "exp": "Strategize with 3 friends in co-op missions via system link.",
-  "fonte": "https://www.co-optimus.com/game/10889/",
-  "lan": 4,
-  "local": 0,
-  "online": 0,
-  "snapshot": "20220121"
- },
- "xbox-tom-clancy-s-rainbow-six-critical-hour": {
-  "combo": 0,
-  "exp": "The game modes Practice Mission (play through the single player missions) and Terrorist Hunt (kill all terrorists) are available for two players in split-screen mode.",
+ "xbox-tom-clancy-s-ghost-recon-2-summit-strike": {
+  "combo": 4,
+  "exp": "Four players can play the campaign or one of the several co-op modes. Co-op can be played in splitscreen, online, or both.",
   "extras": [
+   "Co-Op Campaign",
+   "Co-Op Specific Content",
    "Splitscreen"
   ],
-  "fonte": "https://www.co-optimus.com/game/10890/",
+  "fonte": "https://www.co-optimus.com/game/1665/",
   "lan": 4,
-  "local": 2,
-  "online": 0,
-  "snapshot": "20220121"
+  "local": 4,
+  "online": 4,
+  "sistema": "Xbox",
+  "snapshot": "20241211",
+  "v": 2
  },
  "xbox-tom-clancy-s-rainbow-six-lockdown": {
   "combo": 0,
   "exp": "Practice Mission (the single-player missions) as well as Terrorist Hunt (Hunt all terrorists in a level) are available for two players in split-screen or up to four using system link. Xbox Live was also available but the service has been shut down.",
   "extras": [
+   "Co-Op Specific Content",
    "Splitscreen"
   ],
   "fonte": "https://www.co-optimus.com/game/10891/",
   "lan": 4,
   "local": 2,
   "online": 0,
-  "snapshot": "20220121"
+  "sistema": "Xbox",
+  "snapshot": "20250123",
+  "v": 2
  },
- "xbox-x-men-legends": {
+ "xbox-tom-clancy-s-splinter-cell-double-agent": {
   "combo": 0,
-  "exp": "You and three buds can take on the roles of the X-Men, a legendary mutant team from the comic books.",
+  "exp": "The Xbox version is BackCompat and features the return of the two agent co-op, which the Xbox 360 version lacks.",
+  "extras": [
+   "Co-Op Specific Content",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/214/",
+  "lan": 0,
+  "local": 2,
+  "online": 2,
+  "sistema": "Xbox",
+  "snapshot": "20250125",
+  "v": 2
+ },
+ "xbox-unreal-championship": {
+  "combo": 0,
+  "exp": "Take on a team of bots with friends both in the available team-modes in local splitscreen or using system link.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/16402/",
+  "lan": 4,
+  "local": 4,
+  "online": 0,
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "xbox-unreal-championship-2-the-liandri-conflict": {
+  "combo": 0,
+  "exp": "Take on bots with friends in the team-based modes both in local splitscreen, using system link or over Xbox Live.",
+  "extras": [
+   "Downloadable Only",
+   "Co-Op Specific Content",
+   "Drop In/Drop Out",
+   "Splitscreen"
+  ],
+  "fonte": "https://www.co-optimus.com/game/16401/",
+  "lan": 4,
+  "local": 2,
+  "online": 4,
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
+ },
+ "xbox-xiaolin-showdown": {
+  "combo": 0,
+  "exp": "You can play all game modes with up to three friends. If no human is available, the will AI will take over. Each takes control of one of the available characters. However only one character at a time can equip the same Shen Gong Wu (basically power-ups for your character).",
   "extras": [
    "Co-Op Campaign",
-   "Drop In/Drop Out"
+   "Co-Op Specific Content"
   ],
-  "fonte": "https://www.co-optimus.com/game/1151/",
+  "fonte": "https://www.co-optimus.com/game/16765/",
   "lan": 0,
   "local": 4,
   "online": 0,
-  "snapshot": "20100414"
+  "sistema": "Xbox",
+  "snapshot": "20250502",
+  "v": 2
  }
 }
