@@ -44,8 +44,12 @@ function rebuildSets() {
   rebuildSets();
 })();
 
+/* XBLIG e homebrew nascem desmarcados junto com a emulacao: o catalogo abre no
+   que quase todo mundo veio ver, 360 e Xbox original, e as outras categorias
+   entram quando a pessoa pedir. Os 3.450 indies sozinhos passavam na frente de
+   tudo por ano de lancamento. */
 var F = {
-  q: "", own: "all", plats: ["x360", "xblig", "xbox", "homebrew"], modes: [], flags: [],
+  q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
   systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "",
   mcMin: 0, genres: [], sort: "year-desc"
 };
@@ -975,7 +979,7 @@ function ligarEventos() {
   $("#modal").addEventListener("click", function (e) { if (e.target.id === "modal") closeModal(); });
   $("#btn-filters").onclick = function () { $("#side").classList.toggle("open"); };
   $("#btn-reset").onclick = function () {
-    F = { q: "", own: "all", plats: ["x360", "xblig", "xbox", "homebrew"], modes: [], flags: [],
+    F = { q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
           systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all",
           cat: "", mcMin: 0, genres: [], sort: "year-desc" };
     saveF(); location.reload();

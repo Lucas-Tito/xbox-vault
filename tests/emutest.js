@@ -37,7 +37,12 @@
   const exib = +$('#s-shown').textContent.replace(/\D/g,'');
   const normal = g=>g.releaseType==='Released'||g.releaseType==='Vazado';
   const oficiais = window.XBX_EMU.games.filter(normal).length;
-  ok('oficiais + vazados por padrao', exib === base + oficiais, exib + ' = ' + base + ' + ' + oficiais);
+  // XBLIG e homebrew nascem desmarcados, entao o catalogo principal na tela nao
+  // e o db.js inteiro: e so o que as plataformas ligadas trazem.
+  const ligadas = $$('.f-plat').filter(c=>c.checked).map(c=>c.value);
+  const principais = window.XBX_DB.games.filter(g=>ligadas.indexOf(g.platform)>=0).length;
+  ok('oficiais + vazados por padrao', exib === principais + oficiais,
+     exib + ' = ' + principais + ' + ' + oficiais);
 
   // cancelados sem build jogavel foram removidos do catalogo
   const naoLancados = window.XBX_EMU.games.filter(g=>g.releaseType==='Unreleased').length;
@@ -61,7 +66,8 @@
 
   $('#f-reltype').value='all'; fire($('#f-reltype')); await wait(700);
   ok('"tudo" inclui ROM hacks',
-     +$('#s-shown').textContent.replace(/\D/g,'') === base + window.XBX_EMU.games.length);
+     +$('#s-shown').textContent.replace(/\D/g,'') === principais + window.XBX_EMU.games.length,
+     $('#s-shown').textContent + ' = ' + principais + ' + ' + window.XBX_EMU.games.length);
 
   // sub-filtro por sistema
   $('#f-reltype').value='oficial'; fire($('#f-reltype'));

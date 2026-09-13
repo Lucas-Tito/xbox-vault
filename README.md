@@ -43,7 +43,10 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
 - **Filtros** (coluna da esquerda) — coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
-  Os filtros ficam salvos entre visitas.
+  Os filtros ficam salvos entre visitas. **Indie (XBLIG) e homebrew nascem desmarcados**, como
+  a emulação: o catálogo abre no Xbox 360 e no Xbox original, e as outras categorias entram
+  quando você liga. O peso delas continua vindo no mesmo arquivo, então ligar não baixa nada
+  (só a emulação é carregada à parte).
 - **Exportar coleção** — baixa um `.json` com a coleção **e** a wishlist.
 - **Importar** — aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
   **somar** ao que já está aqui ou **substituir** tudo.

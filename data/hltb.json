@@ -137,6 +137,17 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-a-world-of-keflings": {
+  "ano": 2010,
+  "cem": 13.5,
+  "hltb": 146,
+  "main": 7.4,
+  "n": 34,
+  "nome": "A World of Keflings",
+  "plus": 13.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-absolute-blazing-infinity": {
   "nao": "sem-medida",
   "v": 2
@@ -14627,17 +14638,291 @@
   "v": 2,
   "via": "geral"
  },
+ "x360-space-invaders-infinity-gene": {
+  "ano": 2009,
+  "hltb": 8857,
+  "main": 6.5,
+  "n": 3,
+  "nome": "Space Invaders Infinity Gene",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spare-parts": {
+  "ano": 2011,
+  "cem": 8.7,
+  "hltb": 8886,
+  "main": 4.0,
+  "n": 2,
+  "nome": "Spare Parts",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spartacus-legends": {
+  "ano": 2013,
+  "cem": 40.0,
+  "hltb": 12785,
+  "main": 14.3,
+  "n": 2,
+  "nome": "Spartacus Legends",
+  "plus": 20.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-spec-ops-the-line": {
+  "ano": 2012,
+  "cem": 14.0,
+  "hltb": 8898,
+  "main": 6.1,
+  "n": 188,
+  "nome": "Spec Ops: The Line",
+  "plus": 8.1,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-special-forces-team-x-stx": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-spectral-force-3-innocent-rage": {
+  "ano": 2006,
+  "hltb": 8901,
+  "main": 51.9,
+  "n": 2,
+  "nome": "Spectral Force 3: Innocent Rage",
+  "plus": 47.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-speedball-2-brutal-deluxe": {
+  "ano": 1990,
+  "cem": 13.3,
+  "hltb": 8912,
+  "main": 2.7,
+  "n": 4,
+  "nome": "Speedball 2: Brutal Deluxe",
+  "plus": 12.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-spelunky": {
+  "ano": 2012,
+  "hltb": 8932,
+  "main": 15.8,
+  "n": 5,
+  "nome": "Spelunky",
+  "plus": 15.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spider-man-3": {
+  "ano": 2007,
+  "hltb": 8943,
+  "main": 8.4,
+  "n": 11,
+  "nome": "Spider-Man 3",
+  "plus": 11.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spider-man-edge-of-time": {
+  "ano": 2011,
+  "cem": 9.6,
+  "hltb": 8946,
+  "main": 7.0,
+  "n": 18,
+  "nome": "Spider-Man: Edge of Time",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spider-man-friend-or-foe": {
+  "ano": 2007,
+  "cem": 11.8,
+  "hltb": 8947,
+  "main": 6.4,
+  "n": 22,
+  "nome": "Spider-Man: Friend or Foe",
+  "plus": 9.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spider-man-shattered-dimensions": {
+  "ano": 2010,
+  "cem": 23.0,
+  "hltb": 8949,
+  "main": 10.2,
+  "n": 51,
+  "nome": "Spider-Man: Shattered Dimensions",
+  "plus": 12.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spider-man-web-of-shadows": {
+  "ano": 2008,
+  "cem": 21.6,
+  "hltb": 8952,
+  "main": 10.1,
+  "n": 41,
+  "nome": "Spider-Man: Web of Shadows",
+  "plus": 12.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-splatterhouse": {
+  "ano": 2010,
+  "cem": 16.3,
+  "hltb": 8970,
+  "main": 8.6,
+  "n": 32,
+  "nome": "Splatterhouse",
+  "plus": 11.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-split-second": {
+  "ano": 2010,
+  "cem": 20.0,
+  "hltb": 8976,
+  "main": 9.6,
+  "n": 24,
+  "nome": "Split/Second",
+  "plus": 13.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-splosion-man": {
+  "ano": 2009,
+  "cem": 17.2,
+  "hltb": 18,
+  "main": 7.7,
+  "n": 55,
+  "nome": "'Splosion Man",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spongebob-heropants": {
+  "ano": 2015,
+  "cem": 7.2,
+  "hltb": 24011,
+  "main": 3.4,
+  "n": 3,
+  "nome": "SpongeBob HeroPants",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spongebob-s-surf-and-skate-roadtrip": {
+  "ano": 2011,
+  "hltb": 68027,
+  "main": 3.1,
+  "n": 2,
+  "nome": "Spongebob's Surf & Skate Roadtrip",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-spongebob-s-truth-or-square": {
+  "ano": 2009,
+  "cem": 8.3,
+  "hltb": 15960,
+  "main": 4.3,
+  "n": 27,
+  "nome": "SpongeBob's Truth or Square",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spongebob-squarepants-plankton-s-robotic-revenge": {
+  "ano": 2013,
+  "cem": 10.0,
+  "hltb": 14072,
+  "main": 2.7,
+  "n": 3,
+  "nome": "SpongeBob SquarePants: Plankton's Robotic Revenge",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spongebob-squarepants-underpants-slam": {
+  "ano": 2007,
+  "hltb": 119209,
+  "main": 1.0,
+  "n": 4,
+  "nome": "SpongeBob SquarePants: Underpants Slam!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-spyglass-board-games": {
+  "ano": 2007,
+  "cem": 11.0,
+  "hltb": 22655,
+  "main": 1.0,
+  "n": 3,
+  "nome": "Spyglass Board Games",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ssx": {
+  "ano": 2012,
+  "cem": 31.4,
+  "hltb": 9017,
+  "main": 8.0,
+  "n": 30,
+  "nome": "SSX",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-stacking": {
+  "ano": 2011,
+  "cem": 8.9,
+  "hltb": 9024,
+  "main": 4.0,
+  "n": 39,
+  "nome": "Stacking",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-star-ocean-the-last-hope": {
+  "ano": 2009,
+  "cem": 167.6,
+  "hltb": 9046,
+  "main": 50.2,
+  "n": 54,
+  "nome": "Star Ocean: The Last Hope",
+  "plus": 77.1,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-star-raiders": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-star-trek": {
+  "ano": 2013,
+  "cem": 11.2,
+  "hltb": 9054,
+  "main": 8.8,
+  "n": 12,
+  "nome": "Star Trek",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-star-trek-dac": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-star-trek-legacy": {
+  "ano": 2006,
+  "cem": 14.5,
+  "hltb": 9061,
+  "main": 9.2,
+  "n": 10,
+  "nome": "Star Trek: Legacy",
+  "plus": 10.6,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-star-wars-pinball-heroes-within": {
   "nao": "sem-resultado",
@@ -14647,9 +14932,83 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-star-wars-the-clone-wars-republic-heroes": {
+  "ano": 2009,
+  "cem": 10.8,
+  "hltb": 9128,
+  "main": 6.5,
+  "n": 9,
+  "nome": "Star Wars: The Clone Wars - Republic Heroes",
+  "plus": 9.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-star-wars-the-force-unleashed": {
+  "ano": 2008,
+  "cem": 18.4,
+  "hltb": 9132,
+  "main": 8.0,
+  "n": 175,
+  "nome": "Star Wars: The Force Unleashed",
+  "plus": 11.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-star-wars-the-force-unleashed-ii": {
+  "ano": 2010,
+  "cem": 13.1,
+  "hltb": 9136,
+  "main": 5.6,
+  "n": 134,
+  "nome": "Star Wars: The Force Unleashed II",
+  "plus": 7.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-state-of-decay": {
+  "ano": 2013,
+  "cem": 50.2,
+  "hltb": 9184,
+  "main": 15.3,
+  "n": 39,
+  "nome": "State of Decay",
+  "plus": 22.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-steel-battalion-heavy-armor": {
+  "ano": 2012,
+  "hltb": 26649,
+  "main": 16.0,
+  "n": 1,
+  "nome": "Steel Battalion: Heavy Armor",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-steins-gate": {
+  "ano": 2009,
+  "hltb": 9207,
+  "main": 28.0,
+  "n": 2,
+  "nome": "Steins;Gate",
+  "plus": 38.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-steins-gate-hiyoku-renri-no-darling": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-steins-gate-linear-bounded-phenogram": {
+  "ano": 2013,
+  "cem": 28.5,
+  "hltb": 50151,
+  "main": 21.6,
+  "n": 54,
+  "nome": "Steins;Gate: Linear Bounded Phenogram",
+  "plus": 28.3,
+  "v": 2,
+  "via": "geral"
  },
  "x360-stoked": {
   "nao": "nenhum-casou",
@@ -14658,6 +15017,36 @@
  "x360-stoked-big-air-edition": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-storm": {
+  "ano": 2013,
+  "cem": 13.9,
+  "hltb": 13179,
+  "main": 2.7,
+  "n": 2,
+  "nome": "Storm",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-stormrise": {
+  "ano": 2009,
+  "hltb": 9219,
+  "main": 11.0,
+  "n": 1,
+  "nome": "Stormrise",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-stranglehold": {
+  "ano": 2007,
+  "cem": 15.0,
+  "hltb": 9220,
+  "main": 6.6,
+  "n": 43,
+  "nome": "Stranglehold",
+  "plus": 7.9,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-strania": {
   "nao": "nenhum-casou",
@@ -14671,13 +15060,66 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-street-fighter-iv": {
+  "ano": 2009,
+  "hltb": 9244,
+  "main": 3.2,
+  "n": 34,
+  "nome": "Street Fighter IV",
+  "plus": 18.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-street-fighter-x-tekken": {
+  "ano": 2012,
+  "cem": 26.9,
+  "hltb": 9246,
+  "main": 1.5,
+  "n": 14,
+  "nome": "Street Fighter X Tekken",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-street-trace-nyc": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-streets-of-rage-2": {
+  "ano": 1992,
+  "cem": 2.6,
+  "hltb": 9258,
+  "main": 1.4,
+  "n": 9,
+  "nome": "Streets of Rage 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-strider": {
+  "ano": 2014,
+  "cem": 15.0,
+  "hltb": 16794,
+  "main": 5.0,
+  "n": 8,
+  "nome": "Strider",
+  "plus": 7.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-strike-witches-shirogane-no-tsubasa": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-stuntman-ignition": {
+  "ano": 2007,
+  "cem": 9.3,
+  "hltb": 9288,
+  "main": 5.1,
+  "n": 11,
+  "nome": "Stuntman: Ignition",
+  "plus": 12.3,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-summer-athletics-2009": {
   "nao": "so-outra-plataforma",
@@ -14691,29 +15133,475 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-summer-stars-2012": {
+  "ano": 2012,
+  "hltb": 20599,
+  "main": 11.0,
+  "n": 1,
+  "nome": "Summer Stars 2012",
+  "plus": 12.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-super-contra": {
+  "ano": 1988,
+  "hltb": 14096,
+  "main": 2.2,
+  "n": 3,
+  "nome": "Super Contra",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-super-meat-boy": {
+  "ano": 2010,
+  "cem": 36.3,
+  "hltb": 9389,
+  "main": 9.3,
+  "n": 55,
+  "nome": "Super Meat Boy",
+  "plus": 16.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-super-puzzle-fighter-ii-turbo-hd-remix": {
+  "ano": 2007,
+  "hltb": 9414,
+  "main": 2.4,
+  "n": 7,
+  "nome": "Super Puzzle Fighter II Turbo HD Remix",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-super-robot-wars-xo": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "x360-super-street-fighter-ii-turbo-hd-remix": {
+  "ano": 2008,
+  "cem": 8.0,
+  "hltb": 9459,
+  "main": 1.0,
+  "n": 14,
+  "nome": "Super Street Fighter II Turbo HD Remix",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-super-street-fighter-iv": {
+  "ano": 2010,
+  "hltb": 9462,
+  "main": 2.0,
+  "n": 16,
+  "nome": "Super Street Fighter IV",
+  "plus": 22.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-super-street-fighter-iv-arcade-edition": {
+  "ano": 2010,
+  "cem": 115.0,
+  "hltb": 9464,
+  "main": 2.5,
+  "n": 18,
+  "nome": "Super Street Fighter IV: Arcade Edition",
+  "plus": 14.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-super-time-force": {
+  "ano": 2014,
+  "cem": 7.2,
+  "hltb": 18587,
+  "main": 4.1,
+  "n": 4,
+  "nome": "Super Time Force",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-superman-returns": {
+  "ano": 2006,
+  "cem": 21.1,
+  "hltb": 9477,
+  "main": 7.3,
+  "n": 16,
+  "nome": "Superman Returns",
+  "plus": 10.8,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-superstar-karaoke": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-superstars-v8-next-challenge": {
+  "ano": 2010,
+  "cem": 7.0,
+  "hltb": 9481,
+  "n": 1,
+  "nome": "Superstars V8 Next Challenge",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-superstars-v8-racing": {
+  "ano": 2009,
+  "cem": 13.0,
+  "hltb": 9482,
+  "n": 1,
+  "nome": "Superstars V8 Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-supremacy-mma": {
+  "ano": 2011,
+  "hltb": 119222,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Supremacy MMA",
+  "plus": 3.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-supreme-commander": {
+  "ano": 2007,
+  "cem": 50.6,
+  "hltb": 9483,
+  "main": 18.7,
+  "n": 16,
+  "nome": "Supreme Commander",
+  "plus": 38.9,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-supreme-commander-2": {
+  "ano": 2010,
+  "hltb": 9484,
+  "n": 1,
+  "nome": "Supreme Commander 2",
+  "plus": 23.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-surf-s-up": {
+  "ano": 2007,
+  "cem": 7.1,
+  "hltb": 9487,
+  "main": 2.2,
+  "n": 9,
+  "nome": "Surf's Up",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-swarm": {
+  "ano": 2011,
+  "cem": 6.5,
+  "hltb": 9496,
+  "n": 2,
+  "nome": "Swarm",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-switchball": {
+  "ano": 2007,
+  "cem": 10.0,
+  "hltb": 13534,
+  "n": 1,
+  "nome": "Switchball",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-syberia": {
+  "ano": 2002,
+  "cem": 12.1,
+  "hltb": 9521,
+  "main": 9.6,
+  "n": 310,
+  "nome": "Syberia",
+  "plus": 11.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-syberia-ii": {
+  "ano": 2004,
+  "cem": 12.0,
+  "hltb": 9522,
+  "n": 1,
+  "nome": "Syberia II",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-syndicate": {
+  "ano": 2012,
+  "cem": 33.0,
+  "hltb": 9534,
+  "main": 6.3,
+  "n": 56,
+  "nome": "Syndicate",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-takedown-red-sabre": {
+  "ano": 2013,
+  "cem": 12.0,
+  "hltb": 13631,
+  "n": 1,
+  "nome": "Takedown: Red Sabre",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tales-from-space-mutant-blobs-attack": {
+  "ano": 2012,
+  "cem": 6.6,
+  "hltb": 9580,
+  "n": 3,
+  "nome": "Tales from Space: Mutant Blobs Attack",
+  "plus": 4.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tales-from-the-borderlands": {
+  "ano": 2014,
+  "cem": 10.4,
+  "hltb": 22804,
+  "main": 10.6,
+  "n": 14,
+  "nome": "Tales from the Borderlands",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tales-of-vesperia": {
+  "ano": 2008,
+  "cem": 148.2,
+  "hltb": 9608,
+  "main": 51.8,
+  "n": 251,
+  "nome": "Tales of Vesperia",
+  "plus": 74.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tayutama-kiss-on-my-deity": {
+  "ano": 2008,
+  "cem": 3.5,
+  "hltb": 76808,
+  "n": 1,
+  "nome": "Tayutama: Kiss on my Deity",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tecmo-bowl-throwback": {
+  "ano": 2010,
+  "hltb": 23028,
+  "main": 4.0,
+  "n": 2,
+  "nome": "Tecmo Bowl Throwback",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-teenage-mutant-ninja-turtles": {
+  "ano": 2013,
+  "cem": 10.0,
+  "hltb": 14364,
+  "main": 3.3,
+  "n": 9,
+  "nome": "Teenage Mutant Ninja Turtles",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-teenage-mutant-ninja-turtles-2": {
+  "ano": 2013,
+  "cem": 10.0,
+  "hltb": 14364,
+  "main": 3.3,
+  "n": 9,
+  "nome": "Teenage Mutant Ninja Turtles",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-teenage-mutant-ninja-turtles-danger-of-the-ooze": {
+  "ano": 2014,
+  "cem": 5.1,
+  "hltb": 21261,
+  "n": 2,
+  "nome": "Teenage Mutant Ninja Turtles: Danger of the Ooze",
+  "plus": 4.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-teenage-mutant-ninja-turtles-mutants-in-manhattan": {
+  "ano": 2016,
+  "cem": 10.6,
+  "hltb": 37426,
+  "main": 5.1,
+  "n": 34,
+  "nome": "Teenage Mutant Ninja Turtles: Mutants in Manhattan",
+  "plus": 6.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-teenage-mutant-ninja-turtles-out-of-the-shadows": {
+  "ano": 2013,
+  "hltb": 13288,
+  "main": 5.5,
+  "n": 1,
+  "nome": "Teenage Mutant Ninja Turtles: Out of the Shadows",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-teenage-mutant-ninja-turtles-training-lair": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-teenage-mutant-ninja-turtles-turtles-in-time-re-shelled": {
+  "ano": 2009,
+  "cem": 4.5,
+  "hltb": 9660,
+  "main": 1.9,
+  "n": 28,
+  "nome": "Teenage Mutant Ninja Turtles: Turtles in Time Re-Shelled",
+  "plus": 2.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tekken-6": {
+  "ano": 2007,
+  "cem": 26.7,
+  "hltb": 9669,
+  "main": 7.2,
+  "n": 40,
+  "nome": "Tekken 6",
+  "plus": 16.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tekken-tag-tournament-2": {
+  "ano": 2012,
+  "cem": 45.4,
+  "hltb": 9673,
+  "main": 2.0,
+  "n": 37,
+  "nome": "Tekken Tag Tournament 2",
+  "plus": 24.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tempest": {
+  "ano": 1981,
+  "cem": 0.9,
+  "hltb": 19314,
+  "main": 0.7,
+  "n": 10,
+  "nome": "Tempest",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-tenchu-z": {
+  "ano": 2006,
+  "cem": 50.7,
+  "hltb": 9687,
+  "main": 16.9,
+  "n": 16,
+  "nome": "Tenchu Z",
+  "plus": 10.9,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-tengai-makyou-ziria-haruka-naru-jipang": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-terminator-salvation": {
+  "ano": 2009,
+  "cem": 6.3,
+  "hltb": 9701,
+  "main": 4.6,
+  "n": 25,
+  "nome": "Terminator Salvation",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-terraria-xbox-360-edition": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-test-drive-ferrari-racing-legends": {
+  "ano": 2012,
+  "cem": 37.5,
+  "hltb": 13526,
+  "main": 21.2,
+  "n": 3,
+  "nome": "Test Drive: Ferrari Racing Legends",
+  "plus": 110.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-test-drive-unlimited": {
+  "ano": 2006,
+  "cem": 110.0,
+  "hltb": 9712,
+  "main": 28.0,
+  "n": 17,
+  "nome": "Test Drive Unlimited",
+  "plus": 42.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-test-drive-unlimited-2": {
+  "ano": 2011,
+  "hltb": 9713,
+  "main": 25.3,
+  "n": 5,
+  "nome": "Test Drive Unlimited 2",
+  "plus": 45.2,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-tetris-evolution": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-tetris-splash": {
+  "ano": 2007,
+  "hltb": 9724,
+  "n": 1,
+  "nome": "Tetris Splash",
+  "plus": 0.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tetris-the-grand-master-ace": {
+  "ano": 2005,
+  "hltb": 119223,
+  "main": 0.1,
+  "n": 1,
+  "nome": "Tetris: The Grand Master Ace",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-texas-cheat-em": {
+  "ano": 2009,
+  "cem": 10.0,
+  "hltb": 24843,
+  "n": 1,
+  "nome": "Texas Cheat'em",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-texas-hold-em": {
+  "ano": 2006,
+  "hltb": 28878,
+  "main": 5.7,
+  "n": 4,
+  "nome": "Texas Hold'em",
+  "plus": 25.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-the-adventures-of-shuggy": {
   "ano": 2011,
@@ -15384,9 +16272,39 @@
   "v": 2,
   "via": "plataforma"
  },
+ "x360-the-spiderwick-chronicles": {
+  "ano": 2008,
+  "cem": 12.0,
+  "hltb": 10209,
+  "main": 4.7,
+  "n": 3,
+  "nome": "The Spiderwick Chronicles",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-the-splatters": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-the-testament-of-sherlock-holmes": {
+  "ano": 2012,
+  "cem": 12.8,
+  "hltb": 10227,
+  "main": 13.8,
+  "n": 10,
+  "nome": "The Testament of Sherlock Holmes",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-undergarden": {
+  "ano": 2010,
+  "cem": 12.5,
+  "hltb": 10242,
+  "n": 2,
+  "nome": "The UnderGarden",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-the-voice-i-want-you": {
   "nao": "sem-medida",
@@ -15404,13 +16322,107 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-the-walking-dead-survival-instinct": {
+  "ano": 2013,
+  "cem": 15.7,
+  "hltb": 10258,
+  "main": 5.4,
+  "n": 23,
+  "nome": "The Walking Dead: Survival Instinct",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-war-of-the-worlds": {
+  "ano": 2011,
+  "hltb": 10259,
+  "main": 6.4,
+  "n": 2,
+  "nome": "The War of the Worlds",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-the-warriors-street-brawl": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-the-witcher-2-assassins-of-kings": {
+  "ano": 2011,
+  "cem": 55.5,
+  "hltb": 10268,
+  "main": 27.5,
+  "n": 174,
+  "nome": "The Witcher 2: Assassins of Kings",
+  "plus": 35.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-the-wolf-among-us": {
+  "ano": 2013,
+  "cem": 11.3,
+  "hltb": 14013,
+  "main": 8.5,
+  "n": 54,
+  "nome": "The Wolf Among Us",
+  "plus": 9.1,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-the-x-factor": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-thief": {
+  "ano": 2014,
+  "cem": 37.2,
+  "hltb": 16232,
+  "main": 12.2,
+  "n": 28,
+  "nome": "Thief",
+  "plus": 21.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-things-on-wheels": {
+  "ano": 2010,
+  "cem": 4.0,
+  "hltb": 53935,
+  "n": 3,
+  "nome": "Things on Wheels",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-thor-god-of-thunder": {
+  "ano": 2011,
+  "cem": 28.6,
+  "hltb": 10307,
+  "main": 7.5,
+  "n": 6,
+  "nome": "Thor: God of Thunder",
+  "plus": 10.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-thrillville-off-the-rails": {
+  "ano": 2007,
+  "hltb": 10315,
+  "main": 8.1,
+  "n": 4,
+  "nome": "Thrillville: Off the Rails",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-thunder-wolves": {
+  "ano": 2013,
+  "cem": 12.6,
+  "hltb": 11951,
+  "main": 3.5,
+  "n": 23,
+  "nome": "Thunder Wolves",
+  "plus": 6.2,
+  "v": 2,
+  "via": "geral"
  },
  "x360-ticket-to-ride": {
   "nao": "sem-medida",
@@ -15420,9 +16432,315 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-tiger-woods-pga-tour-07": {
+  "ano": 2006,
+  "cem": 151.3,
+  "hltb": 16352,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 07",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tiger-woods-pga-tour-08": {
+  "ano": 2007,
+  "hltb": 23575,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 08",
+  "plus": 37.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-tiger-woods-pga-tour-09": {
+  "ano": 2008,
+  "hltb": 10333,
+  "main": 50.0,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 09",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tiger-woods-pga-tour-10": {
+  "ano": 2009,
+  "hltb": 13664,
+  "main": 12.0,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 10",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tiger-woods-pga-tour-11": {
+  "ano": 2010,
+  "cem": 15.0,
+  "hltb": 13665,
+  "main": 12.0,
+  "n": 2,
+  "nome": "Tiger Woods PGA Tour 11",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tiger-woods-pga-tour-12-the-masters": {
+  "ano": 2011,
+  "hltb": 12256,
+  "main": 19.0,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 12: The Masters",
+  "plus": 21.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-tiger-woods-pga-tour-13": {
+  "ano": 2012,
+  "hltb": 10334,
+  "main": 7.5,
+  "n": 2,
+  "nome": "Tiger Woods PGA Tour 13",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tiger-woods-pga-tour-14": {
+  "ano": 2013,
+  "hltb": 10335,
+  "main": 44.8,
+  "n": 2,
+  "nome": "Tiger Woods PGA Tour 14",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-time-leap": {
+  "ano": 2007,
+  "cem": 1.5,
+  "hltb": 70103,
+  "n": 1,
+  "nome": "Time Leap",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-time-pilot": {
+  "ano": 1982,
+  "hltb": 10355,
+  "main": 1.0,
+  "n": 2,
+  "nome": "Time Pilot",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-timeshift": {
+  "ano": 2007,
+  "hltb": 10361,
+  "main": 8.3,
+  "n": 28,
+  "nome": "TimeShift",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-tiqal": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-titanfall": {
+  "ano": 2014,
+  "cem": 85.0,
+  "hltb": 16621,
+  "main": 8.6,
+  "n": 16,
+  "nome": "Titanfall",
+  "plus": 35.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tmnt": {
+  "ano": 2007,
+  "cem": 6.5,
+  "hltb": 10383,
+  "main": 5.1,
+  "n": 27,
+  "nome": "TMNT",
+  "plus": 5.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tna-impact": {
+  "ano": 2008,
+  "cem": 45.2,
+  "hltb": 10384,
+  "main": 8.3,
+  "n": 11,
+  "nome": "TNA Impact!",
+  "plus": 32.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tnt-racers": {
+  "ano": 2010,
+  "hltb": 24622,
+  "main": 2.5,
+  "n": 1,
+  "nome": "TNT Racers",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-endwar": {
+  "ano": 2008,
+  "hltb": 10424,
+  "main": 9.3,
+  "n": 4,
+  "nome": "Tom Clancy's EndWar",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-ghost-recon-advanced-warfighter": {
+  "ano": 2006,
+  "cem": 16.3,
+  "hltb": 10428,
+  "main": 7.6,
+  "n": 40,
+  "nome": "Tom Clancy's Ghost Recon Advanced Warfighter",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-ghost-recon-advanced-warfighter-2": {
+  "ano": 2007,
+  "cem": 25.0,
+  "hltb": 10431,
+  "main": 8.7,
+  "n": 29,
+  "nome": "Tom Clancy's Ghost Recon Advanced Warfighter 2",
+  "plus": 11.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-ghost-recon-future-soldier": {
+  "ano": 2012,
+  "cem": 33.4,
+  "hltb": 10434,
+  "main": 11.0,
+  "n": 52,
+  "nome": "Tom Clancy's Ghost Recon: Future Soldier",
+  "plus": 14.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-h-a-w-x": {
+  "ano": 2009,
+  "cem": 35.0,
+  "hltb": 10439,
+  "main": 8.0,
+  "n": 11,
+  "nome": "Tom Clancy's H.A.W.X",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-h-a-w-x-2": {
+  "ano": 2010,
+  "cem": 20.0,
+  "hltb": 10441,
+  "main": 8.6,
+  "n": 4,
+  "nome": "Tom Clancy's H.A.W.X 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-rainbow-six-vegas": {
+  "ano": 2006,
+  "cem": 125.0,
+  "hltb": 10455,
+  "main": 8.9,
+  "n": 48,
+  "nome": "Tom Clancy's Rainbow Six: Vegas",
+  "plus": 12.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-rainbow-six-vegas-2": {
+  "ano": 2008,
+  "cem": 33.0,
+  "hltb": 10456,
+  "main": 9.4,
+  "n": 47,
+  "nome": "Tom Clancy's Rainbow Six: Vegas 2",
+  "plus": 13.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-splinter-cell-blacklist": {
+  "ano": 2013,
+  "cem": 28.0,
+  "hltb": 12651,
+  "main": 10.3,
+  "n": 70,
+  "nome": "Tom Clancy's Splinter Cell: Blacklist",
+  "plus": 19.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-splinter-cell-conviction": {
+  "ano": 2010,
+  "cem": 24.7,
+  "hltb": 10462,
+  "main": 7.9,
+  "n": 151,
+  "nome": "Tom Clancy's Splinter Cell: Conviction",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tom-clancy-s-splinter-cell-double-agent": {
+  "ano": 2006,
+  "cem": 29.0,
+  "hltb": 10463,
+  "main": 11.7,
+  "n": 36,
+  "nome": "Tom Clancy's Splinter Cell: Double Agent",
+  "plus": 11.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tomb-raider": {
+  "ano": 2013,
+  "cem": 21.9,
+  "hltb": 10469,
+  "main": 12.5,
+  "n": 401,
+  "nome": "Tomb Raider",
+  "plus": 15.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tomb-raider-anniversary": {
+  "ano": 2007,
+  "cem": 21.4,
+  "hltb": 10476,
+  "main": 11.9,
+  "n": 46,
+  "nome": "Tomb Raider: Anniversary",
+  "plus": 15.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tomb-raider-legend": {
+  "ano": 2006,
+  "cem": 18.8,
+  "hltb": 10477,
+  "main": 7.0,
+  "n": 62,
+  "nome": "Tomb Raider: Legend",
+  "plus": 9.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tomb-raider-underworld": {
+  "ano": 2008,
+  "cem": 18.8,
+  "hltb": 10482,
+  "main": 10.0,
+  "n": 46,
+  "nome": "Tomb Raider: Underworld",
+  "plus": 13.9,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-tomoyo-after-it-s-a-wonderful-life-cs-edition": {
   "nao": "sem-resultado",
@@ -15432,9 +16750,74 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-tony-hawk-s-american-wasteland": {
+  "ano": 2005,
+  "cem": 22.5,
+  "hltb": 10489,
+  "main": 10.5,
+  "n": 17,
+  "nome": "Tony Hawk's American Wasteland",
+  "plus": 11.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tony-hawk-s-pro-skater-5": {
+  "ano": 2015,
+  "cem": 10.0,
+  "hltb": 33090,
+  "main": 3.7,
+  "n": 7,
+  "nome": "Tony Hawk's Pro Skater 5",
+  "plus": 9.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-tony-hawk-s-pro-skater-hd": {
+  "ano": 2012,
+  "cem": 13.2,
+  "hltb": 10497,
+  "main": 3.5,
+  "n": 13,
+  "nome": "Tony Hawk's Pro Skater HD",
+  "plus": 9.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tony-hawk-s-project-8": {
+  "ano": 2006,
+  "cem": 119.5,
+  "hltb": 10498,
+  "main": 13.9,
+  "n": 17,
+  "nome": "Tony Hawk's Project 8",
+  "plus": 18.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tony-hawk-s-proving-ground": {
+  "ano": 2007,
+  "hltb": 10501,
+  "main": 5.2,
+  "n": 5,
+  "nome": "Tony Hawk's Proving Ground",
+  "plus": 16.6,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-tony-hawk-shred": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-too-human": {
+  "ano": 2008,
+  "cem": 77.9,
+  "hltb": 10507,
+  "main": 13.1,
+  "n": 48,
+  "nome": "Too Human",
+  "plus": 23.3,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-top-gun-hard-lock": {
   "nao": "sem-medida",
@@ -15444,6 +16827,65 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-top-spin-2": {
+  "ano": 2006,
+  "cem": 23.0,
+  "hltb": 10521,
+  "main": 10.0,
+  "n": 5,
+  "nome": "Top Spin 2",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-top-spin-3": {
+  "ano": 2008,
+  "hltb": 10522,
+  "n": 1,
+  "nome": "Top Spin 3",
+  "plus": 31.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-top-spin-4": {
+  "ano": 2011,
+  "hltb": 10523,
+  "main": 24.5,
+  "n": 4,
+  "nome": "Top Spin 4",
+  "plus": 27.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-torchlight": {
+  "ano": 2009,
+  "cem": 21.0,
+  "hltb": 10527,
+  "main": 10.5,
+  "n": 50,
+  "nome": "Torchlight",
+  "plus": 16.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tornado-outbreak": {
+  "ano": 2009,
+  "hltb": 10534,
+  "main": 4.9,
+  "n": 2,
+  "nome": "Tornado Outbreak",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-totemball": {
+  "ano": 2006,
+  "hltb": 10551,
+  "main": 1.7,
+  "n": 1,
+  "nome": "TotemBall",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-tour-de-france-2011": {
   "nao": "sem-resultado",
   "v": 2
@@ -15452,17 +16894,277 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-tour-de-france-2013-100-edition": {
+  "ano": 2013,
+  "cem": 12.0,
+  "hltb": 77946,
+  "n": 1,
+  "nome": "Le Tour de France 2013 - 100th Edition",
+  "v": 2,
+  "via": "geral"
+ },
  "x360-tour-de-france-2014": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-tower-bloxx-deluxe": {
+  "ano": 2008,
+  "hltb": 10569,
+  "main": 3.7,
+  "n": 1,
+  "nome": "Tower Bloxx Deluxe",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-toy-soldiers": {
+  "ano": 2010,
+  "cem": 21.4,
+  "hltb": 10585,
+  "main": 6.8,
+  "n": 24,
+  "nome": "Toy Soldiers",
+  "plus": 11.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-toy-soldiers-cold-war": {
+  "ano": 2011,
+  "cem": 11.6,
+  "hltb": 10586,
+  "main": 4.2,
+  "n": 26,
+  "nome": "Toy Soldiers: Cold War",
+  "plus": 8.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-toy-story-3-the-video-game": {
+  "ano": 2010,
+  "cem": 16.5,
+  "hltb": 10589,
+  "main": 4.1,
+  "n": 26,
+  "nome": "Toy Story 3: The Video Game",
+  "plus": 7.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-toy-story-mania": {
+  "ano": 2009,
+  "cem": 3.8,
+  "hltb": 22177,
+  "n": 3,
+  "nome": "Toy Story Mania!",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-toybox-turbos": {
+  "ano": 2014,
+  "cem": 7.0,
+  "hltb": 22652,
+  "main": 2.9,
+  "n": 12,
+  "nome": "Toybox Turbos",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-track-and-field": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-transformers-dark-of-the-moon": {
+  "ano": 2011,
+  "cem": 7.8,
+  "hltb": 10609,
+  "main": 5.4,
+  "n": 14,
+  "nome": "Transformers: Dark of the Moon",
+  "plus": 8.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-transformers-devastation": {
+  "ano": 2015,
+  "cem": 41.4,
+  "hltb": 26764,
+  "main": 6.2,
+  "n": 9,
+  "nome": "Transformers: Devastation",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-transformers-fall-of-cybertron": {
+  "ano": 2012,
+  "cem": 12.9,
+  "hltb": 10610,
+  "main": 8.2,
+  "n": 39,
+  "nome": "Transformers: Fall of Cybertron",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-transformers-revenge-of-the-fallen": {
+  "ano": 2009,
+  "cem": 31.7,
+  "hltb": 10612,
+  "main": 5.8,
+  "n": 14,
+  "nome": "Transformers: Revenge of the Fallen",
+  "plus": 7.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-transformers-rise-of-the-dark-spark": {
+  "ano": 2014,
+  "hltb": 19523,
+  "main": 5.6,
+  "n": 4,
+  "nome": "Transformers: Rise of the Dark Spark",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-transformers-the-game": {
+  "ano": 2007,
+  "cem": 18.3,
+  "hltb": 10613,
+  "main": 5.8,
+  "n": 13,
+  "nome": "Transformers: The Game",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-transformers-war-for-cybertron": {
+  "ano": 2010,
+  "cem": 16.3,
+  "hltb": 10615,
+  "main": 9.6,
+  "n": 43,
+  "nome": "Transformers: War for Cybertron",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-trials-evolution": {
+  "ano": 2012,
+  "cem": 27.8,
+  "hltb": 10641,
+  "main": 9.4,
+  "n": 35,
+  "nome": "Trials Evolution",
+  "plus": 26.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-trials-fusion": {
+  "ano": 2014,
+  "hltb": 17507,
+  "main": 6.0,
+  "n": 5,
+  "nome": "Trials Fusion",
+  "plus": 17.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-trials-hd": {
+  "ano": 2009,
+  "cem": 19.5,
+  "hltb": 10642,
+  "main": 5.6,
+  "n": 35,
+  "nome": "Trials HD",
+  "plus": 8.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-triggerheart-exelica": {
+  "ano": 2006,
+  "hltb": 10648,
+  "main": 1.5,
+  "n": 7,
+  "nome": "Triggerheart Exelica",
+  "plus": 4.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-trine-2": {
+  "ano": 2011,
+  "cem": 16.8,
+  "hltb": 10652,
+  "main": 9.0,
+  "n": 7,
+  "nome": "Trine 2",
+  "plus": 9.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-trivial-pursuit": {
+  "ano": 2009,
+  "cem": 11.5,
+  "hltb": 10660,
+  "main": 1.1,
+  "n": 8,
+  "nome": "Trivial Pursuit",
+  "plus": 8.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-trivial-pursuit-live": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-tron": {
+  "ano": 1982,
+  "hltb": 19316,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Tron",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tron-evolution": {
+  "ano": 2010,
+  "hltb": 10669,
+  "main": 7.6,
+  "n": 18,
+  "nome": "Tron: Evolution",
+  "plus": 8.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tropico-3": {
+  "ano": 2009,
+  "hltb": 10672,
+  "main": 24.5,
+  "n": 2,
+  "nome": "Tropico 3",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tropico-4": {
+  "ano": 2011,
+  "cem": 75.7,
+  "hltb": 10674,
+  "n": 1,
+  "nome": "Tropico 4",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-tropico-5": {
+  "ano": 2014,
+  "cem": 85.4,
+  "hltb": 18854,
+  "main": 22.6,
+  "n": 63,
+  "nome": "Tropico 5",
+  "plus": 41.1,
+  "v": 2,
+  "via": "geral"
  },
  "x360-tropico-5-hostile-takeover": {
   "nao": "sem-resultado",
@@ -15471,6 +17173,23 @@
  "x360-trouble-witches-neo": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-truck-racer": {
+  "ano": 2013,
+  "cem": 9.0,
+  "hltb": 14268,
+  "n": 1,
+  "nome": "Truck Racer",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-truth-or-lies": {
+  "cem": 1.6,
+  "hltb": 14025,
+  "n": 3,
+  "nome": "Truth or Lies",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-tsurugi-no-machi-no-ihoujin-shiro-no-oukyuu": {
   "nao": "sem-resultado",
@@ -15484,25 +17203,439 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-turning-point-fall-of-liberty": {
+  "ano": 2008,
+  "cem": 20.0,
+  "hltb": 10703,
+  "main": 4.9,
+  "n": 15,
+  "nome": "Turning Point: Fall of Liberty",
+  "plus": 5.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-turok": {
+  "ano": 2008,
+  "cem": 10.0,
+  "hltb": 10704,
+  "main": 7.9,
+  "n": 19,
+  "nome": "Turok",
+  "plus": 8.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-twister-mania": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-two-worlds": {
+  "ano": 2007,
+  "cem": 73.1,
+  "hltb": 10731,
+  "main": 10.0,
+  "n": 16,
+  "nome": "Two Worlds",
+  "plus": 23.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-two-worlds-ii": {
+  "ano": 2010,
+  "cem": 46.5,
+  "hltb": 10732,
+  "main": 31.4,
+  "n": 12,
+  "nome": "Two Worlds II",
+  "plus": 34.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-udraw-pictionary": {
+  "ano": 2011,
+  "cem": 9.0,
+  "hltb": 18212,
+  "n": 1,
+  "nome": "Pictionary: Ultimate Edition",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-udraw-studio-instant-artist": {
+  "ano": 2011,
+  "cem": 6.0,
+  "hltb": 18211,
+  "main": 3.9,
+  "n": 3,
+  "nome": "uDraw Studio: Instant Artist",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-uefa-champions-league-2006-2007": {
+  "ano": 2007,
+  "hltb": 15163,
+  "main": 6.0,
+  "n": 1,
+  "nome": "UEFA Champions League 2006-2007",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-uefa-euro-2008": {
+  "ano": 2008,
+  "hltb": 10746,
+  "n": 1,
+  "nome": "UEFA Euro 2008",
+  "plus": 4.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-ufc-2009-undisputed": {
+  "ano": 2009,
+  "cem": 35.0,
+  "hltb": 10747,
+  "main": 16.6,
+  "n": 7,
+  "nome": "UFC 2009 Undisputed",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-ufc-personal-trainer": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-ufc-undisputed-2010": {
+  "ano": 2010,
+  "hltb": 10749,
+  "main": 19.1,
+  "n": 5,
+  "nome": "UFC Undisputed 2010",
+  "plus": 19.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ufc-undisputed-3": {
+  "ano": 2012,
+  "cem": 19.5,
+  "hltb": 10750,
+  "main": 13.1,
+  "n": 12,
+  "nome": "UFC Undisputed 3",
+  "plus": 18.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ugly-americans-apocalypsegeddon": {
+  "ano": 2011,
+  "cem": 12.0,
+  "hltb": 15880,
+  "n": 1,
+  "nome": "Ugly Americans: Apocalypsegeddon",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ultimate-marvel-vs-capcom-3": {
+  "ano": 2011,
+  "hltb": 10779,
+  "main": 1.0,
+  "n": 25,
+  "nome": "Ultimate Marvel Vs. Capcom 3",
+  "plus": 10.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ultimate-mortal-kombat-3": {
+  "ano": 1995,
+  "cem": 11.2,
+  "hltb": 10781,
+  "main": 1.0,
+  "n": 9,
+  "nome": "Ultimate Mortal Kombat 3",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-ultra-street-fighter-iv": {
+  "ano": 2014,
+  "cem": 155.0,
+  "hltb": 19348,
+  "main": 2.1,
+  "n": 18,
+  "nome": "Ultra Street Fighter IV",
+  "plus": 14.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-unbound-saga": {
+  "ano": 2009,
+  "cem": 2.0,
+  "hltb": 10794,
+  "main": 2.3,
+  "n": 6,
+  "nome": "Unbound Saga",
+  "plus": 3.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-under-defeat-hd-deluxe-edition": {
+  "ano": 2006,
+  "cem": 17.5,
+  "hltb": 12735,
+  "n": 2,
+  "nome": "Under Defeat",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-undertow": {
+  "ano": 2007,
+  "cem": 11.2,
+  "hltb": 10808,
+  "main": 3.6,
+  "n": 9,
+  "nome": "Undertow",
+  "plus": 1.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-universe-at-war-earth-assault": {
+  "ano": 2007,
+  "hltb": 10818,
+  "main": 14.7,
+  "n": 9,
+  "nome": "Universe at War: Earth Assault",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-uno": {
+  "ano": 2006,
+  "cem": 12.4,
+  "hltb": 10823,
+  "main": 3.1,
+  "n": 25,
+  "nome": "Uno",
+  "plus": 5.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-uno-rush": {
+  "ano": 2009,
+  "cem": 3.0,
+  "hltb": 15433,
+  "n": 2,
+  "nome": "Uno Rush",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-unreal-tournament-3": {
+  "ano": 2007,
+  "cem": 39.0,
+  "hltb": 10833,
+  "main": 9.0,
+  "n": 8,
+  "nome": "Unreal Tournament 3",
+  "plus": 12.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-up": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "x360-valiant-hearts-the-great-war": {
+  "ano": 2014,
+  "cem": 8.4,
+  "hltb": 19503,
+  "main": 6.3,
+  "n": 12,
+  "nome": "Valiant Hearts: The Great War",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-vampire-rain": {
+  "ano": 2007,
+  "hltb": 10888,
+  "main": 11.3,
+  "n": 7,
+  "nome": "Vampire Rain",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-vancouver-2010": {
+  "ano": 2010,
+  "hltb": 21559,
+  "main": 1.2,
+  "n": 1,
+  "nome": "Vancouver 2010",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-vandal-hearts-flames-of-judgment": {
+  "ano": 2010,
+  "cem": 12.4,
+  "hltb": 10897,
+  "main": 9.5,
+  "n": 11,
+  "nome": "Vandal Hearts: Flames of Judgment",
+  "plus": 13.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-vanquish": {
+  "ano": 2010,
+  "cem": 30.9,
+  "hltb": 10899,
+  "main": 6.3,
+  "n": 161,
+  "nome": "Vanquish",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-velvet-assassin": {
+  "ano": 2009,
+  "cem": 12.5,
+  "hltb": 10909,
+  "main": 9.4,
+  "n": 7,
+  "nome": "Velvet Assassin",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-venetica": {
+  "ano": 2011,
+  "cem": 41.1,
+  "hltb": 10911,
+  "main": 21.9,
+  "n": 9,
+  "nome": "Venetica",
+  "plus": 24.5,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-victorious-time-to-shine": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-vigilante-8-arcade": {
+  "ano": 2008,
+  "cem": 6.6,
+  "hltb": 33537,
+  "main": 1.5,
+  "n": 2,
+  "nome": "Vigilante 8 Arcade",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-viking-battle-for-asgard": {
+  "ano": 2008,
+  "cem": 22.7,
+  "hltb": 10942,
+  "main": 15.6,
+  "n": 19,
+  "nome": "Viking: Battle for Asgard",
+  "plus": 18.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-virtua-fighter-2": {
+  "ano": 1995,
+  "cem": 7.7,
+  "hltb": 10949,
+  "main": 1.2,
+  "n": 13,
+  "nome": "Virtua Fighter 2",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-virtua-fighter-5-final-showdown": {
+  "ano": 2010,
+  "cem": 2.0,
+  "hltb": 10954,
+  "main": 0.7,
+  "n": 22,
+  "nome": "Virtua Fighter 5: Final Showdown",
+  "plus": 3.6,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-virtua-fighter-5-online": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-virtua-striker": {
+  "ano": 1995,
+  "cem": 0.8,
+  "hltb": 71717,
+  "main": 20.0,
+  "n": 4,
+  "nome": "Virtua Striker",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-virtua-tennis-2009": {
+  "ano": 2009,
+  "hltb": 10964,
+  "main": 30.0,
+  "n": 2,
+  "nome": "Virtua Tennis 2009",
+  "plus": 36.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-virtua-tennis-3": {
+  "ano": 2007,
+  "hltb": 10965,
+  "main": 11.6,
+  "n": 6,
+  "nome": "Virtua Tennis 3",
+  "plus": 20.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-virtua-tennis-4": {
+  "ano": 2011,
+  "hltb": 10966,
+  "main": 10.0,
+  "n": 2,
+  "nome": "Virtua Tennis 4",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-viva-pinata": {
+  "ano": 2006,
+  "cem": 50.5,
+  "hltb": 10976,
+  "main": 19.0,
+  "n": 43,
+  "nome": "Viva Piñata",
+  "plus": 31.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-viva-pinata-party-animals": {
+  "ano": 2007,
+  "cem": 11.7,
+  "hltb": 10977,
+  "main": 0.7,
+  "n": 8,
+  "nome": "Viva Piñata: Party Animals",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-viva-pinata-trouble-in-paradise": {
+  "ano": 2008,
+  "cem": 31.7,
+  "hltb": 10979,
+  "main": 32.1,
+  "n": 12,
+  "nome": "Viva Piñata: Trouble in Paradise",
+  "plus": 46.5,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-voltron-defender-of-the-universe": {
   "nao": "sem-medida",
@@ -15516,9 +17649,204 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-wall-e": {
+  "ano": 2008,
+  "cem": 7.5,
+  "hltb": 11009,
+  "main": 3.5,
+  "n": 5,
+  "nome": "WALL-E",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-1-fright-of-the-bumblebees": {
+  "ano": 2009,
+  "cem": 2.3,
+  "hltb": 98493,
+  "main": 1.7,
+  "n": 4,
+  "nome": "Wallace & Gromit's Grand Adventures - Ep 1: Fright of the Bumblebees",
+  "plus": 1.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-2-the-last-resort": {
+  "ano": 2009,
+  "cem": 2.3,
+  "hltb": 98492,
+  "n": 3,
+  "nome": "Wallace & Gromit's Grand Adventures - Ep 2: The Last Resort",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-3-muzzled": {
+  "ano": 2009,
+  "cem": 2.4,
+  "hltb": 98491,
+  "n": 4,
+  "nome": "Wallace & Gromit's Grand Adventures - Ep 3: Muzzled!",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-4-the-bogey-man": {
+  "ano": 2009,
+  "cem": 2.4,
+  "hltb": 98490,
+  "n": 3,
+  "nome": "Wallace & Gromit's Grand Adventures - Ep 4: The Bogey Man",
+  "plus": 1.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wanted-weapons-of-fate": {
+  "ano": 2009,
+  "cem": 15.0,
+  "hltb": 11020,
+  "main": 4.5,
+  "n": 24,
+  "nome": "Wanted: Weapons of Fate",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-war-world": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-warface": {
+  "ano": 2013,
+  "cem": 30.0,
+  "hltb": 19016,
+  "main": 12.0,
+  "n": 3,
+  "nome": "Warface",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-warhammer-40-000-kill-team": {
+  "ano": 2011,
+  "cem": 7.8,
+  "hltb": 11049,
+  "main": 4.3,
+  "n": 12,
+  "nome": "Warhammer 40,000: Kill Team",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warhammer-40-000-space-marine": {
+  "ano": 2011,
+  "cem": 24.2,
+  "hltb": 11050,
+  "main": 8.5,
+  "n": 46,
+  "nome": "Warhammer 40,000: Space Marine",
+  "plus": 11.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warhammer-battle-march": {
+  "ano": 2008,
+  "hltb": 11055,
+  "main": 20.0,
+  "n": 1,
+  "nome": "Warhammer: Battle March",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warlords": {
+  "ano": 2008,
+  "hltb": 11083,
+  "main": 0.7,
+  "n": 1,
+  "nome": "Warlords",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-warlords-2012": {
+  "ano": 2008,
+  "hltb": 11083,
+  "main": 0.7,
+  "n": 1,
+  "nome": "Warlords",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-warp": {
+  "ano": 2012,
+  "cem": 18.0,
+  "hltb": 11086,
+  "n": 4,
+  "nome": "Warp",
+  "plus": 7.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warriors-legends-of-troy": {
+  "ano": 2011,
+  "hltb": 15501,
+  "main": 7.1,
+  "n": 4,
+  "nome": "Warriors: Legends of Troy",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warriors-orochi": {
+  "ano": 2007,
+  "cem": 32.7,
+  "hltb": 11090,
+  "main": 8.1,
+  "n": 8,
+  "nome": "Warriors Orochi",
+  "plus": 14.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warriors-orochi-2": {
+  "ano": 2008,
+  "cem": 45.0,
+  "hltb": 11091,
+  "main": 16.2,
+  "n": 5,
+  "nome": "Warriors Orochi 2",
+  "plus": 25.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-warriors-orochi-3": {
+  "ano": 2012,
+  "hltb": 11092,
+  "main": 24.8,
+  "n": 4,
+  "nome": "Warriors Orochi 3",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wartech-senko-no-ronde": {
+  "ano": 2006,
+  "cem": 101.0,
+  "hltb": 11097,
+  "main": 0.9,
+  "n": 8,
+  "nome": "WarTech: Senko no Ronde",
+  "plus": 2.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-watch-dogs": {
+  "ano": 2014,
+  "cem": 51.1,
+  "hltb": 11101,
+  "main": 19.4,
+  "n": 56,
+  "nome": "Watch Dogs",
+  "plus": 31.3,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-watchmen-the-end-is-nigh-part-i": {
   "nao": "nenhum-casou",
@@ -15532,9 +17860,89 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "x360-way-of-the-dogg": {
+  "ano": 2013,
+  "hltb": 15881,
+  "main": 1.3,
+  "n": 1,
+  "nome": "Way of the Dogg",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-way-of-the-samurai-3": {
+  "ano": 2008,
+  "hltb": 11114,
+  "main": 7.9,
+  "n": 2,
+  "nome": "Way of the Samurai 3",
+  "plus": 21.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wet": {
+  "ano": 2009,
+  "cem": 10.5,
+  "hltb": 11127,
+  "main": 6.7,
+  "n": 53,
+  "nome": "Wet",
+  "plus": 8.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wheel-of-fortune": {
+  "ano": 2012,
+  "cem": 29.0,
+  "hltb": 15046,
+  "n": 1,
+  "nome": "Wheel of Fortune",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wheelman": {
+  "ano": 2009,
+  "cem": 23.5,
+  "hltb": 11134,
+  "main": 9.1,
+  "n": 9,
+  "nome": "Vin Diesel's Wheelman",
+  "plus": 11.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-where-the-wild-things-are": {
+  "ano": 2009,
+  "cem": 10.0,
+  "hltb": 11140,
+  "main": 3.5,
+  "n": 2,
+  "nome": "Where the Wild Things Are",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-who-wants-to-be-a-millionaire-2012-edition": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-who-wants-to-be-a-millionaire-special-editions": {
+  "ano": 2011,
+  "cem": 1.9,
+  "hltb": 30070,
+  "n": 3,
+  "nome": "Who Wants To Be A Millionaire: Special Editions",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wik-and-the-fable-of-souls": {
+  "ano": 2004,
+  "cem": 9.3,
+  "hltb": 11161,
+  "main": 5.1,
+  "n": 6,
+  "nome": "Wik and the Fable of Souls",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-wing-commander-arena": {
   "nao": "sem-medida",
@@ -15556,25 +17964,147 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-winter-stars": {
+  "ano": 2011,
+  "cem": 23.0,
+  "hltb": 18209,
+  "main": 14.0,
+  "n": 1,
+  "nome": "Winter Stars",
+  "plus": 18.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-wipeout-2": {
+  "ano": 2014,
+  "hltb": 13554,
+  "main": 1.1,
+  "n": 1,
+  "nome": "Wipeout 2",
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-wipeout-3": {
+  "ano": 2012,
+  "cem": 1.6,
+  "hltb": 12620,
+  "main": 0.9,
+  "n": 2,
+  "nome": "Wipeout 3",
+  "plus": 1.1,
+  "v": 2,
+  "via": "geral"
+ },
  "x360-wipeout-create-and-crash": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-wipeout-in-the-zone": {
+  "ano": 2011,
+  "hltb": 68028,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Wipeout: In the Zone",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-wits-and-wagers": {
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-wolf-of-the-battlefield-commando-3": {
+  "ano": 2008,
+  "hltb": 15882,
+  "main": 0.8,
+  "n": 3,
+  "nome": "Wolf of the Battlefield: Commando 3",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wolfenstein": {
+  "ano": 2009,
+  "cem": 11.0,
+  "hltb": 11249,
+  "main": 8.7,
+  "n": 45,
+  "nome": "Wolfenstein",
+  "plus": 12.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wolfenstein-3d": {
+  "ano": 1992,
+  "cem": 8.8,
+  "hltb": 11250,
+  "main": 5.1,
+  "n": 14,
+  "nome": "Wolfenstein 3D",
+  "plus": 8.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wolfenstein-the-new-order": {
+  "ano": 2014,
+  "cem": 25.9,
+  "hltb": 16886,
+  "main": 13.1,
+  "n": 35,
+  "nome": "Wolfenstein: The New Order",
+  "plus": 16.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-word-puzzle": {
+  "ano": 2007,
+  "hltb": 119276,
+  "n": 1,
+  "nome": "Word Puzzle",
+  "plus": 2.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-world-championship-poker-featuring-howard-lederer-all-in": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-world-gone-sour": {
+  "ano": 2011,
+  "cem": 8.0,
+  "hltb": 15883,
+  "main": 4.0,
+  "n": 2,
+  "nome": "World Gone Sour",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-world-of-outlaws-sprint-cars": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "x360-world-of-tanks": {
+  "ano": 2011,
+  "hltb": 11285,
+  "main": 200.1,
+  "n": 2,
+  "nome": "World of Tanks",
+  "plus": 350.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-world-series-of-poker-2008-battle-for-the-bracelets": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "x360-world-series-of-poker-full-house-pro": {
+  "ano": 2013,
+  "hltb": 13699,
+  "main": 5.0,
+  "n": 2,
+  "nome": "World Series of Poker: Full House Pro",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-world-series-of-poker-tournament-of-champions": {
   "nao": "sem-medida",
@@ -15584,13 +18114,123 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "x360-worms": {
+  "ano": 2007,
+  "cem": 5.0,
+  "hltb": 11300,
+  "main": 2.5,
+  "n": 11,
+  "nome": "Worms",
+  "plus": 6.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-worms-2-armageddon": {
+  "ano": 2009,
+  "cem": 15.0,
+  "hltb": 11302,
+  "main": 11.0,
+  "n": 2,
+  "nome": "Worms 2: Armageddon",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-worms-revolution": {
+  "ano": 2012,
+  "cem": 49.9,
+  "hltb": 11315,
+  "main": 18.9,
+  "n": 9,
+  "nome": "Worms: Revolution",
+  "plus": 32.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-worms-ultimate-mayhem": {
+  "ano": 2011,
+  "hltb": 11316,
+  "main": 6.1,
+  "n": 1,
+  "nome": "Worms: Ultimate Mayhem",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wrc-2-fia-world-rally-championship": {
+  "ano": 2011,
+  "cem": 31.8,
+  "hltb": 15107,
+  "main": 20.9,
+  "n": 5,
+  "nome": "WRC 2: FIA World Rally Championship",
+  "plus": 22.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-wrc-3-fia-world-rally-championship": {
+  "ano": 2012,
+  "cem": 48.0,
+  "hltb": 12833,
+  "main": 32.0,
+  "n": 2,
+  "nome": "WRC 3: FIA World Rally Championship",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wrc-4-fia-world-rally-championship": {
+  "ano": 2013,
+  "cem": 23.0,
+  "hltb": 14642,
+  "main": 20.0,
+  "n": 2,
+  "nome": "WRC 4: FIA World Rally Championship",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-wrc-5": {
   "nao": "nenhum-casou",
   "v": 2
  },
+ "x360-wrc-fia-world-rally-championship": {
+  "ano": 2010,
+  "cem": 39.0,
+  "hltb": 11320,
+  "main": 22.4,
+  "n": 6,
+  "nome": "WRC: FIA World Rally Championship",
+  "plus": 33.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "x360-wrc-powerslide": {
+  "ano": 2014,
+  "cem": 6.0,
+  "hltb": 16649,
+  "n": 1,
+  "nome": "WRC Powerslide",
+  "v": 2,
+  "via": "plataforma"
+ },
  "x360-wreckateer": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-wrecked-revenge-revisited": {
+  "ano": 2012,
+  "hltb": 11324,
+  "main": 3.0,
+  "n": 1,
+  "nome": "Wrecked: Revenge Revisited",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wrestle-kingdom": {
+  "ano": 2005,
+  "hltb": 112531,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Wrestle Kingdom",
+  "v": 2,
+  "via": "plataforma"
  },
  "x360-wsc-real-09-world-snooker-championship": {
   "nao": "nenhum-casou",
@@ -15599,6 +18239,196 @@
  "x360-wsc-real-11-world-snooker-championship": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "x360-wwe-12": {
+  "ano": 2011,
+  "cem": 45.0,
+  "hltb": 11330,
+  "main": 11.2,
+  "n": 14,
+  "nome": "WWE '12",
+  "plus": 27.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-13": {
+  "ano": 2012,
+  "cem": 13.0,
+  "hltb": 11331,
+  "main": 7.5,
+  "n": 18,
+  "nome": "WWE '13",
+  "plus": 17.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-2k14": {
+  "ano": 2013,
+  "cem": 307.1,
+  "hltb": 14346,
+  "main": 9.8,
+  "n": 20,
+  "nome": "WWE 2K14",
+  "plus": 40.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-2k15": {
+  "ano": 2014,
+  "hltb": 22466,
+  "main": 23.0,
+  "n": 2,
+  "nome": "WWE 2K15",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-2k16": {
+  "ano": 2015,
+  "hltb": 31850,
+  "main": 15.0,
+  "n": 3,
+  "nome": "WWE 2K16",
+  "plus": 35.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-2k17": {
+  "ano": 2016,
+  "hltb": 40488,
+  "main": 15.0,
+  "n": 2,
+  "nome": "WWE 2K17",
+  "plus": 50.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-all-stars": {
+  "ano": 2011,
+  "cem": 17.0,
+  "hltb": 11332,
+  "main": 3.7,
+  "n": 3,
+  "nome": "WWE All Stars",
+  "plus": 12.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-legends-of-wrestlemania": {
+  "ano": 2009,
+  "cem": 11.2,
+  "hltb": 11333,
+  "main": 7.6,
+  "n": 8,
+  "nome": "WWE Legends of WrestleMania",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-smackdown-vs-raw-2007": {
+  "ano": 2006,
+  "hltb": 11337,
+  "main": 11.2,
+  "n": 7,
+  "nome": "WWE SmackDown vs. Raw 2007",
+  "plus": 33.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-smackdown-vs-raw-2008": {
+  "ano": 2007,
+  "cem": 32.4,
+  "hltb": 11338,
+  "main": 11.9,
+  "n": 6,
+  "nome": "WWE SmackDown vs. Raw 2008",
+  "plus": 20.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-smackdown-vs-raw-2009": {
+  "ano": 2008,
+  "cem": 30.0,
+  "hltb": 11339,
+  "main": 8.3,
+  "n": 8,
+  "nome": "WWE SmackDown vs. Raw 2009",
+  "plus": 17.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-smackdown-vs-raw-2010": {
+  "ano": 2009,
+  "cem": 32.5,
+  "hltb": 11340,
+  "main": 13.5,
+  "n": 6,
+  "nome": "WWE SmackDown vs. Raw 2010",
+  "plus": 22.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-wwe-smackdown-vs-raw-2011": {
+  "ano": 2010,
+  "hltb": 11341,
+  "main": 18.8,
+  "n": 5,
+  "nome": "WWE SmackDown vs. Raw 2011",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-x-blades": {
+  "ano": 2009,
+  "cem": 10.0,
+  "hltb": 11361,
+  "main": 7.8,
+  "n": 10,
+  "nome": "X-Blades",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-x-men": {
+  "ano": 1992,
+  "cem": 3.9,
+  "hltb": 11369,
+  "main": 0.7,
+  "n": 25,
+  "nome": "X-Men",
+  "plus": 1.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-xcom-enemy-unknown": {
+  "ano": 2012,
+  "cem": 47.0,
+  "hltb": 11397,
+  "main": 25.9,
+  "n": 43,
+  "nome": "XCOM: Enemy Unknown",
+  "plus": 37.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-xcom-enemy-within": {
+  "ano": 2013,
+  "cem": 51.0,
+  "hltb": 14323,
+  "main": 25.0,
+  "n": 20,
+  "nome": "XCOM: Enemy Within",
+  "plus": 38.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "x360-xevious": {
+  "ano": 1982,
+  "cem": 3.7,
+  "hltb": 11408,
+  "main": 1.2,
+  "n": 26,
+  "nome": "Xevious",
+  "plus": 1.3,
+  "v": 2,
+  "via": "geral"
  },
  "x360-xotic": {
   "nao": "so-outra-plataforma",
