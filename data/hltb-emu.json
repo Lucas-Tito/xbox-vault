@@ -2786,6 +2786,640 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "emu-gba-dora-the-explorer-dora-s-world-adventure": {
+  "ano": 2006,
+  "cem": 0.3,
+  "hltb": 86695,
+  "main": 0.3,
+  "n": 10,
+  "nome": "Dora the Explorer: Dora's World Adventure",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dora-the-explorer-double-pack": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dora-the-explorer-super-spies": {
+  "ano": 2004,
+  "hltb": 22608,
+  "main": 1.3,
+  "n": 6,
+  "nome": "Dora The Explorer: Super Spies",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dora-the-explorer-super-star-adventures": {
+  "ano": 2004,
+  "cem": 0.5,
+  "hltb": 74943,
+  "main": 0.5,
+  "n": 6,
+  "nome": "Dora the Explorer: Super Star Adventures",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dora-the-explorer-the-search-for-pirate-pig-s-treasure": {
+  "ano": 2002,
+  "cem": 1.5,
+  "hltb": 2715,
+  "main": 1.3,
+  "n": 8,
+  "nome": "Dora the Explorer: The Search for Pirate Pig's Treasure",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-doraemon-dokodemo-walker": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-doraemon-midori-no-wakusei-doki-doki-daikyuushuutsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-double-dragon-advance": {
+  "ano": 2003,
+  "cem": 3.8,
+  "hltb": 2723,
+  "main": 1.7,
+  "n": 19,
+  "nome": "Double Dragon Advance",
+  "plus": 2.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-doubutsujima-no-chobi-gurumi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-doubutsujima-no-chobi-gurumi-2-tama-chan-monogatari": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-downforce": {
+  "ano": 2002,
+  "cem": 2.2,
+  "hltb": 15080,
+  "n": 1,
+  "nome": "Downforce",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dr-muto": {
+  "ano": 2002,
+  "hltb": 2744,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Dr. Muto",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dr-seuss-green-eggs-and-ham": {
+  "ano": 2003,
+  "cem": 1.0,
+  "hltb": 104623,
+  "main": 0.6,
+  "n": 2,
+  "nome": "Dr. Seuss' Green Eggs and Ham",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dr-seuss-the-cat-in-the-hat": {
+  "ano": 2005,
+  "cem": 2.5,
+  "hltb": 170090,
+  "main": 2.0,
+  "n": 3,
+  "nome": "Dr. Seuss' The Cat in the Hat",
+  "plus": 2.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dr-sudoku": {
+  "ano": 2006,
+  "hltb": 15224,
+  "main": 98.5,
+  "n": 2,
+  "nome": "Dr. Sudoku",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-advanced-adventure": {
+  "ano": 2004,
+  "cem": 15.1,
+  "hltb": 2803,
+  "main": 3.2,
+  "n": 141,
+  "nome": "Dragon Ball: Advanced Adventure",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-gt-transformation": {
+  "ano": 2005,
+  "hltb": 13275,
+  "main": 2.2,
+  "n": 15,
+  "nome": "Dragon Ball GT: Transformation",
+  "plus": 3.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-z-buu-s-fury": {
+  "ano": 2004,
+  "cem": 38.4,
+  "hltb": 2788,
+  "main": 11.6,
+  "n": 61,
+  "nome": "Dragon Ball Z: Buu's Fury",
+  "plus": 12.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-z-collectible-card-game": {
+  "ano": 2002,
+  "hltb": 66687,
+  "main": 10.0,
+  "n": 3,
+  "nome": "Dragon Ball Z: Collectible Card Game",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-z-supersonic-warriors": {
+  "ano": 2004,
+  "cem": 9.0,
+  "hltb": 13329,
+  "main": 2.5,
+  "n": 30,
+  "nome": "Dragon Ball Z: Supersonic Warriors",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-z-taiketsu": {
+  "ano": 2003,
+  "cem": 5.6,
+  "hltb": 24255,
+  "main": 1.2,
+  "n": 15,
+  "nome": "Dragon Ball Z: Taiketsu",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-z-the-legacy-of-goku": {
+  "ano": 2002,
+  "cem": 8.6,
+  "hltb": 2798,
+  "main": 7.0,
+  "n": 86,
+  "nome": "Dragon Ball Z: The Legacy of Goku",
+  "plus": 10.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-ball-z-the-legacy-of-goku-i-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-dragon-ball-z-the-legacy-of-goku-ii": {
+  "ano": 2003,
+  "cem": 29.3,
+  "hltb": 2800,
+  "main": 14.0,
+  "n": 78,
+  "nome": "Dragon Ball Z: The Legacy of Goku II",
+  "plus": 13.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-drive-world-d-break": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dragon-quest-characters-torneko-no-daibouken-2-advance-fushigi-no-dungeon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dragon-quest-characters-torneko-no-daibouken-3-advance-fushigi-no-dungeon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-dragon-quest-monsters-caravan-heart": {
+  "ano": 2003,
+  "hltb": 2818,
+  "main": 26.4,
+  "n": 5,
+  "nome": "Dragon Quest Monsters: Caravan Heart",
+  "plus": 42.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dragon-s-rock": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-dragon-tales-dragon-adventures": {
+  "ano": 2004,
+  "hltb": 92547,
+  "n": 1,
+  "nome": "Dragon Tales: Dragon Adventures",
+  "plus": 3.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-drake-josh": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-drill-dozer": {
+  "ano": 2005,
+  "cem": 10.9,
+  "hltb": 2883,
+  "main": 6.2,
+  "n": 56,
+  "nome": "Drill Dozer",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-driv3r": {
+  "ano": 2004,
+  "hltb": 2885,
+  "main": 7.9,
+  "n": 2,
+  "nome": "Driv3r",
+  "plus": 16.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-driven": {
+  "ano": 2002,
+  "hltb": 38977,
+  "main": 3.0,
+  "n": 3,
+  "nome": "Driven",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-driver-2-advance": {
+  "ano": 2002,
+  "cem": 2.1,
+  "hltb": 34164,
+  "main": 2.1,
+  "n": 5,
+  "nome": "Driver 2 Advance",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-drome-racers": {
+  "ano": 2002,
+  "hltb": 31593,
+  "main": 1.2,
+  "n": 1,
+  "nome": "Drome Racers",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-droopy-s-tennis-open": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-dual-blades": {
+  "ano": 2002,
+  "hltb": 2900,
+  "main": 0.5,
+  "n": 5,
+  "nome": "Dual Blades",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-duel-masters-2-invincible-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-duel-masters-2-kirifuda-shoubu-version": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-duel-masters-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-duel-masters-advance": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-duel-masters-kaijudo-showdown": {
+  "ano": 2004,
+  "hltb": 45074,
+  "main": 20.8,
+  "n": 3,
+  "nome": "Duel Masters: Kaijudo Showdown",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-duel-masters-sempai-legends": {
+  "ano": 2004,
+  "hltb": 20180,
+  "main": 7.4,
+  "n": 4,
+  "nome": "Duel Masters: Sempai Legends",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-duel-masters-shadow-of-the-code": {
+  "ano": 2005,
+  "hltb": 23354,
+  "main": 30.0,
+  "n": 1,
+  "nome": "Duel Masters: Shadow of the Code",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-duke-nukem-advance": {
+  "ano": 2002,
+  "cem": 6.1,
+  "hltb": 2923,
+  "main": 3.2,
+  "n": 11,
+  "nome": "Duke Nukem Advance",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dungeons-dragons-eye-of-the-beholder": {
+  "ano": 2002,
+  "hltb": 17866,
+  "main": 9.6,
+  "n": 6,
+  "nome": "Dungeons & Dragons: Eye of the Beholder",
+  "plus": 14.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-dynasty-warriors-advance": {
+  "ano": 2005,
+  "cem": 100.0,
+  "hltb": 3008,
+  "main": 8.0,
+  "n": 5,
+  "nome": "Dynasty Warriors Advance",
+  "plus": 26.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-e-reader-balloon-fight": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-baseball": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-clu-clu-land": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-donkey-kong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-donkey-kong-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-donkey-kong-jr": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-excitebike": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-golf": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-ice-climber": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-mario-bros": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-e-reader-pinball": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-tennis": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-reader-urban-champion": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-e-t-the-extra-terrestrial": {
+  "ano": 2001,
+  "cem": 2.6,
+  "hltb": 78883,
+  "main": 2.3,
+  "n": 2,
+  "nome": "E.T. The Extra-Terrestrial",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-earthworm-jim": {
+  "ano": 1994,
+  "hltb": 3036,
+  "main": 3.0,
+  "n": 2,
+  "nome": "Earthworm Jim",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-earthworm-jim-2": {
+  "ano": 1995,
+  "cem": 4.6,
+  "hltb": 3037,
+  "main": 2.9,
+  "n": 53,
+  "nome": "Earthworm Jim 2",
+  "plus": 3.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-ecks-vs-sever": {
+  "ano": 2001,
+  "hltb": 17959,
+  "main": 6.0,
+  "n": 8,
+  "nome": "Ecks vs. Sever",
+  "plus": 5.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-ed-edd-n-eddy-jawbreakers": {
+  "ano": 2002,
+  "hltb": 58562,
+  "main": 4.3,
+  "n": 1,
+  "nome": "Ed, Edd n Eddy: Jawbreakers!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-ed-edd-n-eddy-the-mis-edventures": {
+  "ano": 2005,
+  "cem": 5.0,
+  "hltb": 3056,
+  "main": 2.1,
+  "n": 5,
+  "nome": "Ed, Edd n Eddy: The Mis-Edventures",
+  "plus": 4.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-egg-mania": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-elemix": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-elevator-action-old-new": {
+  "ano": 2002,
+  "hltb": 63976,
+  "main": 1.6,
+  "n": 2,
+  "nome": "Elevator Action Old & New",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-elf-bowling-1-2": {
+  "ano": 2005,
+  "cem": 3.1,
+  "hltb": 49037,
+  "main": 0.2,
+  "n": 10,
+  "nome": "Elf Bowling 1 & 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-elf-the-movie": {
+  "ano": 2004,
+  "cem": 1.5,
+  "hltb": 3084,
+  "main": 1.0,
+  "n": 22,
+  "nome": "Elf: The Movie",
+  "plus": 1.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-elite-redux": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-enchanted-once-upon-andalasia": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-eragon": {
+  "ano": 2006,
+  "hltb": 3144,
+  "main": 11.9,
+  "n": 4,
+  "nome": "Eragon",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-erementar-gerad-huuin-sarashi-kyou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-espn-final-round-golf-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-espn-great-outdoor-games-bass-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-espn-international-winter-sports-2002": {
+  "ano": 2002,
+  "hltb": 12268,
+  "main": 1.0,
+  "n": 2,
+  "nome": "ESPN International Winter Sports 2002",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-espn-winter-x-games-snowboarding-2002": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-espn-x-games-skateboarding": {
+  "ano": 2001,
+  "cem": 2.2,
+  "hltb": 3176,
+  "main": 3.9,
+  "n": 2,
+  "nome": "ESPN X Games: Skateboarding",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-european-super-league": {
+  "ano": 2001,
+  "hltb": 101153,
+  "main": 0.4,
+  "n": 1,
+  "nome": "European Super League",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-evergirl": {
+  "ano": 2005,
+  "hltb": 64803,
+  "main": 1.5,
+  "n": 4,
+  "nome": "everGirl",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-ex-monopoly": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-ez-talk-shokyuuhen-1": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-ez-talk-shokyuuhen-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-ez-talk-shokyuuhen-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-ez-talk-shokyuuhen-4": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-ez-talk-shokyuuhen-5": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-ez-talk-shokyuuhen-6": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi": {
   "nao": "sem-resultado",
   "v": 2
@@ -8215,6 +8849,307 @@
   "v": 2,
   "via": "plataforma"
  },
+ "emu-ps1-dora-the-explorer-barnyard-buddies": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-doraemon-2-sos-otogi-no-kuni": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doraemon-3-makai-no-dungeon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doraemon-nobitaito-fukkatsu-no-hoshi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dosukoi-densetsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dotsubo-chan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-double-dragon": {
+  "ano": 1995,
+  "cem": 2.7,
+  "hltb": 22101,
+  "main": 1.0,
+  "n": 10,
+  "nome": "Double Dragon",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-double-eagle": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-doubutsu-chara-navi-uranai-2-kosei-shinrigaku-ren-ai-uranai-puzzle": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-douga-de-puzzle-da-puppukupuu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-doukyuusei-2": {
+  "ano": 1995,
+  "cem": 80.0,
+  "hltb": 117747,
+  "main": 12.7,
+  "n": 1,
+  "nome": "Doukyuusei 2",
+  "plus": 12.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-doukyuusei-mahjong": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-doumu-no-yabou-2-the-race-of-champions": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-downhill-snow": {
+  "ano": 1998,
+  "hltb": 32418,
+  "main": 2.5,
+  "n": 1,
+  "nome": "Downhill Snow",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dr-rin-ni-kiite-mite-koi-no-happy-four-seasons": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dr-seuss-the-cat-in-the-hat": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-dr-slump": {
+  "ano": 1999,
+  "hltb": 88326,
+  "main": 8.8,
+  "n": 7,
+  "nome": "Dr. Slump",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dracula-the-last-sanctuary": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-dracula-the-resurrection": {
+  "ano": 1999,
+  "cem": 4.8,
+  "hltb": 2753,
+  "main": 4.0,
+  "n": 8,
+  "nome": "Dracula: The Resurrection",
+  "plus": 3.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-ball-gt-final-bout": {
+  "ano": 1997,
+  "cem": 5.4,
+  "hltb": 2770,
+  "main": 2.3,
+  "n": 49,
+  "nome": "Dragon Ball GT: Final Bout",
+  "plus": 6.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-ball-z-idainaru-dragon-ball-densetsu": {
+  "ano": 1996,
+  "cem": 7.7,
+  "hltb": 2790,
+  "main": 4.7,
+  "n": 12,
+  "nome": "Dragon Ball Z: Idainaru Dragon Ball Densetsu",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-ball-z-ultimate-battle-22": {
+  "ano": 1995,
+  "cem": 4.9,
+  "hltb": 2801,
+  "main": 4.3,
+  "n": 26,
+  "nome": "Dragon Ball Z: Ultimate Battle 22",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-beat-legend-of-pinball": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dragon-drive-tactics-break": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dragon-knight-4": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-dragon-money": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dragon-quest-iv-michibikareshi-mono-tachi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dragon-quest-monsters-1-2-hoshifuri-no-yuusha-to-bokujou-no-nakamatachi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dragon-seeds": {
+  "ano": 1998,
+  "hltb": 2852,
+  "main": 12.8,
+  "n": 1,
+  "nome": "Dragonseeds",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-tales-dragon-seek": {
+  "ano": 2000,
+  "hltb": 104167,
+  "main": 0.4,
+  "n": 3,
+  "nome": "Dragon Tales: Dragon Seek",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-valor": {
+  "ano": 1999,
+  "hltb": 2831,
+  "main": 7.7,
+  "n": 19,
+  "nome": "Dragon Valor",
+  "plus": 15.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragon-warrior-vii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dragonheart-fire-steel": {
+  "ano": 1996,
+  "hltb": 17005,
+  "main": 2.0,
+  "n": 2,
+  "nome": "Dragonheart: Fire & Steel",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dragstars": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dream-circus": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dream-generation-koi-ka-shigoto-ka": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dreams": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-driver-2-the-wheelman-is-back": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-driver-you-are-the-wheelman": {
+  "ano": 1999,
+  "cem": 20.9,
+  "hltb": 2886,
+  "main": 11.6,
+  "n": 80,
+  "nome": "Driver",
+  "plus": 14.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-druid-yami-e-no-tsuisekisha": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dual-shock-demo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-ducati-world-racing-challenge": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-duke-nukem-land-of-the-babes": {
+  "ano": 2000,
+  "cem": 9.0,
+  "hltb": 2927,
+  "main": 6.3,
+  "n": 10,
+  "nome": "Duke Nukem: Land of the Babes",
+  "plus": 6.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-duke-nukem-time-to-kill": {
+  "ano": 1998,
+  "cem": 10.2,
+  "hltb": 2929,
+  "main": 7.4,
+  "n": 19,
+  "nome": "Duke Nukem: Time to Kill",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-duke-nukem-total-meltdown": {
+  "ano": 1997,
+  "cem": 11.3,
+  "hltb": 24552,
+  "main": 13.7,
+  "n": 5,
+  "nome": "Duke Nukem: Total Meltdown",
+  "plus": 9.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dune-2000": {
+  "ano": 1998,
+  "cem": 40.0,
+  "hltb": 2936,
+  "main": 30.0,
+  "n": 6,
+  "nome": "Dune 2000",
+  "plus": 30.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-dungeon-creator": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dungeon-shoutenkai-densetsu-no-ken-hajimemashita": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-ps1-dx-hyakunin-isshu": {
   "nao": "sem-resultado",
   "v": 2
@@ -8256,6 +9191,514 @@
   "v": 2
  },
  "emu-ps1-dx-shachou-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dynamite-soccer-2000": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dynamite-soccer-2002": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dynamite-soccer-2004-final": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dynamite-soccer-98": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-dynasty-warriors": {
+  "ano": 1997,
+  "hltb": 2994,
+  "main": 2.8,
+  "n": 18,
+  "nome": "Dynasty Warriors",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-e-t-the-extra-terrestrial-interplanetary-mission": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eagle-one-harrier-attack": {
+  "ano": 2000,
+  "hltb": 32419,
+  "main": 6.5,
+  "n": 2,
+  "nome": "Eagle One: Harrier Attack",
+  "plus": 20.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-earthworm-jim-2": {
+  "ano": 1995,
+  "hltb": 3037,
+  "main": 2.3,
+  "n": 2,
+  "nome": "Earthworm Jim 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-east-end-x-yuri-eexy-life": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-easter-bunny-s-big-day": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eberouge": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-eberouge-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eberouge-special-koi-to-mahou-no-gakuen-seikatsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-ebisu-yoshikazu-no-ooana-keiti": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-echo-night": {
+  "ano": 1998,
+  "cem": 6.5,
+  "hltb": 3047,
+  "main": 5.4,
+  "n": 66,
+  "nome": "Echo Night",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-echo-night-2-the-lord-of-nightmares": {
+  "ano": 1999,
+  "cem": 10.7,
+  "hltb": 27850,
+  "main": 8.5,
+  "n": 20,
+  "nome": "Echo Night 2: The Lord of Nightmares",
+  "plus": 8.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-econo-kids-ta-ga-tame-ni-kane-ha-naru": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-ecsaform": {
+  "ano": 1999,
+  "hltb": 25272,
+  "main": 19.6,
+  "n": 1,
+  "nome": "Ecsaform",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-ecw-anarchy-rulz": {
+  "ano": 2000,
+  "hltb": 65159,
+  "main": 4.8,
+  "n": 2,
+  "nome": "ECW Anarchy Rulz",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-ecw-hardcore-revolution": {
+  "ano": 2000,
+  "hltb": 12464,
+  "main": 5.8,
+  "n": 2,
+  "nome": "ECW Hardcore Revolution",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-efficus-kono-omoi-wo-kimi-ni": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-egg": {
+  "ano": 1998,
+  "hltb": 153116,
+  "main": 3.0,
+  "n": 1,
+  "nome": "Egg",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-eggs-of-steel-charlie-s-eggcellent-adventure": {
+  "ano": 1998,
+  "hltb": 3062,
+  "main": 4.0,
+  "n": 3,
+  "nome": "Eggs of Steel: Charlie's Eggcellent Adventure",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-egypt-1156-b-c-tomb-of-the-pharaoh": {
+  "ano": 1999,
+  "cem": 3.3,
+  "hltb": 34896,
+  "n": 1,
+  "nome": "Egypt: 1156 B.C. - Tomb of the Pharaoh",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-egypt-ii-the-heliopolis-prophecy": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-ehrgeiz-god-bless-the-ring": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eidos": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-eikan-wa-kimini-4": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-einhander": {
+  "ano": 1997,
+  "cem": 4.4,
+  "hltb": 3065,
+  "main": 2.5,
+  "n": 41,
+  "nome": "Einhander",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-eisei-meijin": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-eisei-meijin-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eisei-meijin-iii-game-creator-yoshimura-nobuhiro-no-zunou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eithea": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-eko-eko-azarak-wizard-of-darkness": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-elan": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-elder-gate": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-elemental-gearbolt": {
+  "ano": 1997,
+  "hltb": 3077,
+  "main": 1.0,
+  "n": 14,
+  "nome": "Elemental Gearbolt",
+  "plus": 3.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-elemental-pinball": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-elf-o-karu-monotachi-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-elf-wo-karu-mono-tachi-hanafuda-hen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-elf-wo-karu-monotachi-kanzenhan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-elfin-paradise": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eliminator": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-emit-value-pack": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-emmyrea": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-end-sector": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-enen-angel": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-engacho": {
+  "ano": 1999,
+  "hltb": 32422,
+  "main": 8.5,
+  "n": 1,
+  "nome": "Engacho!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-enigma": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-entertainment-jansou-that-s-pon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eos-edge-of-skyhigh": {
+  "ano": 1997,
+  "hltb": 25294,
+  "main": 0.6,
+  "n": 1,
+  "nome": "EOS: Edge of Skyhigh",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-epidemic": {
+  "ano": 1996,
+  "hltb": 25295,
+  "main": 3.4,
+  "n": 3,
+  "nome": "Epidemic",
+  "plus": 4.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-eps-series-vol-1-because-i-love-you-yukiko-morikawa": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eps-series-vol-2-moonlight-to-daybreak-yukie-nakama": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eps-series-vol-3-come-and-kiss-me-tomomi-tsunoda": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eps-series-vol-4-noise-reduction-tomoa-yamamoto": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eps-series-vol-5-believer-dreamer-junko-mizutani": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-equestrian-showcase": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-espn-extreme-games": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-espn-mls-gamenight": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-espn-x-games-pro-boarder": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eternal-eyes": {
+  "ano": 2000,
+  "hltb": 3181,
+  "main": 13.5,
+  "n": 11,
+  "nome": "Eternal Eyes",
+  "plus": 17.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-eternal-melody": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-euro-demo-02-01-ger": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-euro-demo-03-01": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-euro-demo-08b": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-europe-racer": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-european-super-league": {
+  "ano": 2001,
+  "hltb": 101153,
+  "main": 0.4,
+  "n": 1,
+  "nome": "European Super League",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-eve-the-fatal-attraction": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-eve-the-lost-one": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-eve-zero-ark-of-the-matter": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-evergreen-avenue": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-4": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-5": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-6": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-every-child-can-succeed-7": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-evil-dead-hail-to-the-king": {
+  "ano": 2000,
+  "cem": 6.6,
+  "hltb": 3240,
+  "main": 6.3,
+  "n": 13,
+  "nome": "Evil Dead: Hail to the King",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-evil-zone": {
+  "ano": 1999,
+  "hltb": 3244,
+  "main": 0.8,
+  "n": 11,
+  "nome": "Evil Zone",
+  "plus": 5.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-evo-s-space-adventures": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-exalegiuse": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-excalibur-2555-a-d": {
+  "cem": 10.5,
+  "hltb": 3256,
+  "n": 1,
+  "nome": "Excalibur 2555 AD",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-exclusive-playstation-racing-demos": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-exector": {
+  "ano": 1995,
+  "hltb": 25296,
+  "main": 1.7,
+  "n": 2,
+  "nome": "Exector",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-exodus-guilty": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-expendable": {
+  "ano": 1999,
+  "cem": 6.0,
+  "hltb": 16984,
+  "main": 4.0,
+  "n": 7,
+  "nome": "Millennium Soldier: Expendable",
+  "plus": 4.2,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-expert": {
+  "ano": 1996,
+  "hltb": 25297,
+  "main": 4.5,
+  "n": 2,
+  "nome": "Expert",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-explosive-racing": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-extra-bright": {
+  "ano": 1996,
+  "hltb": 25298,
+  "main": 0.7,
+  "n": 1,
+  "nome": "Extra Bright",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-extreme-500": {
   "nao": "sem-resultado",
   "v": 2
  },
@@ -10313,8 +11756,493 @@
   "v": 2,
   "via": "plataforma"
  },
+ "emu-snes-doom-troopers": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-doomsday-warrior": {
+  "ano": 1993,
+  "cem": 5.5,
+  "hltb": 88311,
+  "main": 0.6,
+  "n": 8,
+  "nome": "Doomsday Warrior",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-doraemon-2-nobita-no-toys-land-daibouken": {
+  "ano": 1993,
+  "hltb": 118042,
+  "main": 4.1,
+  "n": 1,
+  "nome": "Doraemon 2: Nobita no Toys Land Daibouken",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-doraemon-3-nobita-to-toki-no-hougyoku": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-doraemon-4-nobita-to-tsuki-no-oukoku": {
+  "ano": 1995,
+  "hltb": 150113,
+  "main": 2.3,
+  "n": 1,
+  "nome": "Doraemon 4: Nobita to Tsuki no Oukoku",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-doraemon-nobita-to-yousei-no-kuni": {
+  "ano": 1993,
+  "hltb": 116106,
+  "main": 3.7,
+  "n": 1,
+  "nome": "Doraemon: Nobita to Yousei no Kuni",
+  "v": 2,
+  "via": "plataforma"
+ },
  "emu-snes-doremi-fantasy-milon-no-dokidoki-daibouken": {
   "nao": "nenhum-casou",
   "v": 2
+ },
+ "emu-snes-dossun-ganseki-battle": {
+  "ano": 1994,
+  "hltb": 31251,
+  "main": 4.8,
+  "n": 1,
+  "nome": "Dossun! Ganseki Battle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-double-dragon-v-the-shadow-falls": {
+  "ano": 1994,
+  "hltb": 2728,
+  "main": 0.7,
+  "n": 8,
+  "nome": "Double Dragon V: The Shadow Falls",
+  "plus": 1.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-doukyuusei-2": {
+  "ano": 1995,
+  "cem": 80.0,
+  "hltb": 117747,
+  "main": 12.7,
+  "n": 1,
+  "nome": "Doukyuusei 2",
+  "plus": 12.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-down-the-world-mervil-s-ambition": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-downtown-nekketsu-baseball-monogatari-yakyuu-de-shoubu-da-kunio-kun": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dr-mario": {
+  "ano": 1990,
+  "cem": 10.0,
+  "hltb": 2740,
+  "main": 1.7,
+  "n": 5,
+  "nome": "Dr. Mario",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dragon-ball-z-hyper-dimension": {
+  "ano": 1996,
+  "cem": 2.5,
+  "hltb": 2789,
+  "main": 0.7,
+  "n": 7,
+  "nome": "Dragon Ball Z: Hyper Dimension",
+  "plus": 1.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dragon-ball-z-super-butouden": {
+  "ano": 1993,
+  "cem": 1.6,
+  "hltb": 24248,
+  "main": 0.4,
+  "n": 15,
+  "nome": "Dragon Ball Z: Super Butōden",
+  "plus": 4.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dragon-ball-z-super-butouden-2": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dragon-ball-z-super-butouden-3": {
+  "ano": 1994,
+  "cem": 3.8,
+  "hltb": 2777,
+  "main": 2.7,
+  "n": 6,
+  "nome": "Dragon Ball Z: Super Butouden 3",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dragon-ball-z-super-goku-den-kakusei-hen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dragon-ball-z-super-goku-den-totsugeki-hen": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dragon-ball-z-super-saiya-densetsu": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dragon-knight-4": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dragon-quest-i-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dragon-quest-iii-soshite-densetsu-e": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dragon-quest-v-tenkuu-no-hanayome": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dragon-quest-vi-maboroshi-no-daichi": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-dragon-s-earth": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-dragon-s-lair": {
+  "ano": 1983,
+  "cem": 3.1,
+  "hltb": 2847,
+  "main": 0.9,
+  "n": 98,
+  "nome": "Dragon's Lair",
+  "plus": 2.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-dragon-slayer-eiyuu-densetsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dragon-slayer-eiyuu-densetsu-ii": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dragon-the-bruce-lee-story": {
+  "ano": 1994,
+  "hltb": 2849,
+  "main": 0.9,
+  "n": 8,
+  "nome": "Dragon: The Bruce Lee Story",
+  "plus": 1.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dragon-view": {
+  "ano": 1994,
+  "cem": 12.2,
+  "hltb": 2832,
+  "main": 12.4,
+  "n": 11,
+  "nome": "Dragon View",
+  "plus": 16.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-drakkhen": {
+  "ano": 1989,
+  "cem": 4.0,
+  "hltb": 2869,
+  "main": 6.5,
+  "n": 13,
+  "nome": "Drakkhen",
+  "plus": 7.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dream-basketball-dunk-hoop": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dream-t-v": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-drift-king-shutokou-battle-2-tsuchiya-keiichi-bandou-masaaki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-drift-king-shutokou-battle-94-tsuchiya-keiichi-bandou-masaaki": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dual-orb-ii": {
+  "ano": 1994,
+  "hltb": 2902,
+  "main": 20.0,
+  "n": 2,
+  "nome": "Dual Orb II",
+  "plus": 25.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dual-orb-seirei-tama-densetsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-dun-quest-majin-fuuin-no-densetsu": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dungeon-master": {
+  "ano": 1987,
+  "hltb": 2952,
+  "main": 21.6,
+  "n": 3,
+  "nome": "Dungeon Master",
+  "plus": 28.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-dynamaite-the-las-vegas": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dynami-tracer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-dynamic-stadium": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-e-v-o-search-for-eden": {
+  "ano": 1992,
+  "cem": 10.2,
+  "hltb": 3020,
+  "main": 8.1,
+  "n": 52,
+  "nome": "E.V.O.: Search for Eden",
+  "plus": 8.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-earth-defense-force": {
+  "ano": 1991,
+  "cem": 1.1,
+  "hltb": 3031,
+  "main": 1.8,
+  "n": 21,
+  "nome": "Earth Defense Force",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-earth-light": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-earth-light-luna-strike": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-earthbound": {
+  "ano": 1994,
+  "cem": 38.9,
+  "hltb": 3034,
+  "main": 27.0,
+  "n": 449,
+  "nome": "EarthBound",
+  "plus": 31.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-earthworm-jim": {
+  "ano": 1994,
+  "cem": 3.7,
+  "hltb": 3036,
+  "main": 3.3,
+  "n": 29,
+  "nome": "Earthworm Jim",
+  "plus": 6.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-earthworm-jim-2": {
+  "ano": 1995,
+  "cem": 4.1,
+  "hltb": 3037,
+  "main": 3.1,
+  "n": 22,
+  "nome": "Earthworm Jim 2",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-edo-no-kiba": {
+  "ano": 1993,
+  "hltb": 42147,
+  "main": 0.7,
+  "n": 1,
+  "nome": "Edo no Kiba",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-eek-the-cat": {
+  "ano": 1994,
+  "hltb": 53549,
+  "main": 3.4,
+  "n": 1,
+  "nome": "Eek! the Cat",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-eien-no-filena": {
+  "ano": 1995,
+  "cem": 16.0,
+  "hltb": 77712,
+  "main": 16.0,
+  "n": 2,
+  "nome": "Eien no Filena",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-elfaria-a-fantasic-theater": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-elfaria-ii": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-elite-soccer": {
+  "ano": 1994,
+  "hltb": 106013,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Elite Soccer",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-emerald-dragon": {
+  "ano": 1989,
+  "cem": 15.4,
+  "hltb": 3097,
+  "main": 16.7,
+  "n": 17,
+  "nome": "Emerald Dragon",
+  "plus": 17.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-emit-vol-1-toki-no-maigo": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-emit-vol-2-inochigake-no-tabi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-emit-vol-3-watashi-ni-sayonara-o": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-emmitt-smith-football": {
+  "ano": 1995,
+  "hltb": 116290,
+  "main": 0.6,
+  "n": 1,
+  "nome": "Emmitt Smith Football",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-energy-breaker": {
+  "ano": 1996,
+  "cem": 40.0,
+  "hltb": 23716,
+  "main": 36.5,
+  "n": 5,
+  "nome": "Energy Breaker",
+  "plus": 27.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-equinox": {
+  "ano": 1993,
+  "cem": 19.1,
+  "hltb": 3143,
+  "main": 17.1,
+  "n": 9,
+  "nome": "Equinox",
+  "plus": 30.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-esparks-ijikuu-kara-no-raihousha": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-espn-baseball-tonight": {
+  "ano": 1994,
+  "hltb": 3165,
+  "main": 0.8,
+  "n": 1,
+  "nome": "ESPN Baseball Tonight",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-espn-national-hockey-night": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-espn-speedworld": {
+  "ano": 1994,
+  "hltb": 116291,
+  "main": 1.2,
+  "n": 1,
+  "nome": "ESPN SpeedWorld",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-espn-sunday-night-nfl": {
+  "ano": 1994,
+  "hltb": 3175,
+  "main": 1.0,
+  "n": 1,
+  "nome": "ESPN Sunday Night NFL",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-europe-sensen": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-exertainment-mountain-bike-rally-speed-racer": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-extra-innings": {
+  "ano": 1992,
+  "hltb": 30441,
+  "main": 1.2,
+  "n": 1,
+  "nome": "Extra Innings",
+  "v": 2,
+  "via": "plataforma"
  }
 }

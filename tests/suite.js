@@ -203,7 +203,9 @@
         ok('galeria tem o numero certo de imagens',
            sh && sh.querySelectorAll('img').length === alvo.screens);
         if (alvo.tu && alvo.tu.n)
-          ok('popup mostra a atualizacao oficial', /atualiza[çc][ãa]o|atualiza[çc][õo]es/.test(mb.textContent));
+          ok('popup mostra quantos TUs o jogo teve',
+             new RegExp(alvo.tu.n + ' TUs? conhecidos?').test(mb.textContent),
+             alvo.tu.n + ' patches');
 
         // visualizador: a miniatura amplia por cima da ficha, sem abrir outra aba
         if (sh) {

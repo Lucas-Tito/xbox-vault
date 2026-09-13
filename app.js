@@ -589,12 +589,12 @@ function tempoHtml(g) {
   if (!li.length) return "";
   var nota = "";
   if (t.fonte === "aproximado") {
-    nota = "Valor aproximado, preenchido \u00e0 m\u00e3o \u2014 corrija em data/tempo.json.";
+    nota = "Valor aproximado, preenchido \u00e0 m\u00e3o. Corrija em data/tempo.json.";
   } else if (t.fonte === "hltb") {
     var n = typeof t.n === "number" ? t.n : null;
     var versao = g.system || PLATNOME[g.platform] || "";
     nota = "HowLongToBeat" +
-      (n === null ? "" : " \u2014 " + n.toLocaleString("pt-BR") +
+      (n === null ? "" : ", " + n.toLocaleString("pt-BR") +
         (n === 1 ? " relato" : " relatos")) +
       (t.geral
         /* o numero soma todas as versoes do jogo. Avisar disso e o mesmo que o
@@ -610,7 +610,7 @@ function tempoHtml(g) {
     if (n === 1) {
       nota += " \u00c9 o tempo de uma pessoa s\u00f3, n\u00e3o uma m\u00e9dia.";
     } else if (n !== null && n < POUCOS_RELATOS) {
-      nota += " Poucos relatos \u2014 o n\u00famero ainda oscila bastante.";
+      nota += " Poucos relatos: o n\u00famero ainda oscila bastante.";
     }
   }
   return "<ul class=\"tempo\">" + li.join("") + "</ul>" +
@@ -629,10 +629,12 @@ function tuHtml(g) {
       (u.d ? '<span class="tu-d">' + esc(fmtDate(u.d)) + "</span>" : "") +
       (u.kb ? '<span class="tu-kb">' + esc(kb(u.kb)) + "</span>" : "") + "</li>";
   }).join("");
+  /* "conhecidos", e nao "lancados" nem "disponiveis": a lista vem do arquivo do
+     Xbox Unity e sabemos que ela tem buraco -- em 152 dos 689 jogos com patch a
+     numeracao comeca no TU2, ou seja, o primeiro nao foi arquivado. E nada aqui
+     e baixavel: os servidores sairam do ar com a Xbox LIVE do 360. */
   return '<details class="tu"><summary>' + t.n +
-    (t.n > 1 ? " atualizações oficiais" : " atualização oficial") +
-    (t.ultima ? ", última TU" + t.ultima : "") +
-    (t.data ? " em " + esc(fmtDate(t.data)) : "") +
+    (t.n > 1 ? " TUs conhecidos" : " TU conhecido") +
     "</summary><ul>" + linhas + "</ul></details>";
 }
 
@@ -712,7 +714,7 @@ function abasDetalhe(g) {
   if (geral) abas.push(["Visão geral", geral]);
 
   var coop = coopHtml(g);
-  abas.push(["Modos e co-op", "<h4>Modos de jogo</h4>" + modosHtml(g) +
+  abas.push(["Modos/co-op", "<h4>Modos de jogo</h4>" + modosHtml(g) +
     (coop ? "<h4>Co-Optimus</h4>" + coop : "")]);
 
   var adicional = tuHtml(g);
