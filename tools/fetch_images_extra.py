@@ -31,6 +31,22 @@ UA = ("XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault) Python-urllib")
 
 # id do jogo -> {url, src, [frame], [crop]}
 EXTRA_IMAGES = {
+    # --- README do proprio projeto, escolhidas a mao ---
+    # A primeira imagem do README nao serve como heuristica: no Theseus ela e o
+    # logo do Vulkan e no ButterAndJelly e uma captura de Wii U. Estas quatro
+    # foram conferidas uma a uma; os outros 12 repos nao tem imagem aproveitavel.
+    "hb-theseus-dashboard": {
+        "url": "https://raw.githubusercontent.com/MrMilenko/Theseus/HEAD/docs/images/xbox-dashboard.png",
+        "src": "README do projeto (GitHub)"},
+    "hb-butterandjelly": {
+        "url": "https://raw.githubusercontent.com/MrMilenko/ButterAndJelly/HEAD/docs/screenshots/xbox360-home.png",
+        "src": "README do projeto (GitHub)"},
+    "hb-anarch360": {
+        "url": "https://raw.githubusercontent.com/Fhoughton/Anarch360/HEAD/media/logo_big.png",
+        "src": "README do projeto (GitHub)"},
+    "hb-eineko": {
+        "url": "https://raw.githubusercontent.com/faithvoid/eineko/HEAD/screenshots/1.jpg",
+        "src": "README do projeto (GitHub)"},
     # --- ConsoleMods ---
     "hb-aurora-dash": {
         "url": "https://web.archive.org/web/20250811134942id_/https://consolemods.org/wiki/images/2/23/Aurora-jtag-360-dashboard.png",
