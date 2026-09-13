@@ -1394,24 +1394,6 @@
   "lbFile": "047104b0-32f4-4914-b8d6-bec09e65ba8a.png"
  },
  {
-  "id": "emu-ps1-2x1-nes-master-system",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "2x1: NES & MASTER SYSTEM",
-  "wiki": null,
-  "year": 2000,
-  "genre": "Compilation",
-  "developers": [
-   "Raccoon"
-  ],
-  "publishers": [
-   "Raccoon"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/7151fce0-a207-4418-b8db-67ecba5db71b.jpg",
-  "lbFile": "7151fce0-a207-4418-b8db-67ecba5db71b.jpg"
- },
- {
   "id": "emu-gba-3-game-pack-candy-land-chutes-ladders-original-memory-game",
   "platform": "emu",
   "system": "GBA",
@@ -1840,22 +1822,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/1aa12640-3775-4063-8311-cfb4ac6a926a.jpg",
   "lbFile": "1aa12640-3775-4063-8311-cfb4ac6a926a.jpg"
- },
- {
-  "id": "emu-gba-4x4-off-roaders",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "4x4 Off-Roaders",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "Small Rockets"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-5-star-racing",
@@ -3558,20 +3524,6 @@
   "lbFile": "4657ad22-a299-451b-bdee-e2134e4e1364.png"
  },
  {
-  "id": "emu-gba-adventures-of-mr-bean",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Adventures of Mr. Bean",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-adventures-of-yogi-bear",
   "platform": "emu",
   "system": "SNES",
@@ -3588,22 +3540,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/2feee688-5803-4203-ba05-fc069276cb04.jpg",
   "lbFile": "2feee688-5803-4203-ba05-fc069276cb04.jpg"
- },
- {
-  "id": "emu-ps1-aeon-flux",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Aeon Flux",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Cryo Interactive Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-aero-fighters",
@@ -3812,20 +3748,6 @@
   "releaseType": "ROM Hack",
   "image": "https://images.launchbox-app.com/a3ee18b4-3ff3-45e6-addc-647f60ad8376.png",
   "lbFile": "a3ee18b4-3ff3-45e6-addc-647f60ad8376.png"
- },
- {
-  "id": "emu-ps1-aftershock",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Aftershock",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-agassi-tennis-generation",
@@ -5968,22 +5890,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/8bd40b26-2f22-4659-bc76-9b4152a000fb.jpg",
   "lbFile": "8bd40b26-2f22-4659-bc76-9b4152a000fb.jpg"
- },
- {
-  "id": "emu-gba-animaniacs-hollywood-hypnotics",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Animaniacs: Hollywood Hypnotics",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Full Fat Games"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_cee0230e-03e3-407c-9293-85bbe1db6796.jpg",
-  "lbFile": "r2_cee0230e-03e3-407c-9293-85bbe1db6796.jpg"
  },
  {
   "id": "emu-gba-animaniacs-lights-camera-action",
@@ -8336,22 +8242,6 @@
   "lbFile": "8abe0d4d-3943-40ad-9f06-7e55b593a6e1.jpg"
  },
  {
-  "id": "emu-snes-atmosfear",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Atmosfear",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Beam Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-atomic-betty",
   "platform": "emu",
   "system": "GBA",
@@ -9036,22 +8926,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/d1aa7ef7-f929-4b16-8bd9-81c38677cb99.jpg",
   "lbFile": "d1aa7ef7-f929-4b16-8bd9-81c38677cb99.jpg"
- },
- {
-  "id": "emu-snes-baby-s-day-out",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Baby's Day Out",
-  "wiki": null,
-  "year": null,
-  "genre": "Puzzle",
-  "developers": [
-   "Designer Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/12a8172c-9d94-42fc-9f73-4536870e218c.jpg",
-  "lbFile": "12a8172c-9d94-42fc-9f73-4536870e218c.jpg"
  },
  {
   "id": "emu-ps1-back-guiner-yomigaeru-yuusha-tachi-hishou-hen-uragiri-no-senjou",
@@ -9748,22 +9622,6 @@
   "lbFile": "8e5e468e-87cb-4c75-bb4e-ede16420b3ff.jpg"
  },
  {
-  "id": "emu-ps1-baldur-s-gate",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Baldur's Gate",
-  "wiki": null,
-  "year": null,
-  "genre": "Role-Playing",
-  "developers": [
-   "BioWare"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/9c28cf3b-ed35-4a32-8314-3474a92f7f65.png",
-  "lbFile": "9c28cf3b-ed35-4a32-8314-3474a92f7f65.png"
- },
- {
   "id": "emu-gba-baldur-s-gate-dark-alliance",
   "platform": "emu",
   "system": "GBA",
@@ -10226,22 +10084,6 @@
   "lbFile": "d6b2e843-aa03-4246-b138-a6afe7465aa8.jpg"
  },
  {
-  "id": "emu-snes-barbie-vacation-adventure",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Barbie: Vacation Adventure",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Software Creations"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-bardysh-kromeford-no-juunin",
   "platform": "emu",
   "system": "PS1",
@@ -10654,22 +10496,6 @@
   "lbFile": "4925fd74-0191-43a2-b7c0-49fb602b8c0d.jpg"
  },
  {
-  "id": "emu-snes-batman",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Batman",
-  "wiki": null,
-  "year": null,
-  "genre": "Beat 'em Up",
-  "developers": [
-   "Software Creations"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-batman-robin",
   "platform": "emu",
   "system": "PS1",
@@ -10801,15 +10627,17 @@
   "system": "SNES",
   "title": "Batman: Revenge of the Joker",
   "wiki": null,
-  "year": 1991,
+  "year": 1992,
   "genre": "Action",
   "developers": [
    "ICOM Simulations"
   ],
   "publishers": [],
-  "releaseType": "Unreleased",
+  "releaseType": "Vazado",
   "image": "https://images.launchbox-app.com/48e1b0f6-c20c-4aff-8f75-c939804b1988.png",
-  "lbFile": "48e1b0f6-c20c-4aff-8f75-c939804b1988.png"
+  "lbFile": "48e1b0f6-c20c-4aff-8f75-c939804b1988.png",
+  "nota": "A versao de Super Nintendo foi concluida mas nunca lancada oficialmente; a ROM apareceu online anos depois.",
+  "fonte": "https://en.wikipedia.org/wiki/Batman:_Return_of_the_Joker"
  },
  {
   "id": "emu-gba-batman-rise-of-sin-tzu",
@@ -11582,22 +11410,6 @@
   "lbFile": "2d0c5570-cd10-4df7-8b86-7ca976ced2f0.png"
  },
  {
-  "id": "emu-gba-battletoads",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Battletoads",
-  "wiki": null,
-  "year": 2011,
-  "genre": "Action",
-  "developers": [
-   "Rare"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/bf58b91c-7f0d-4f51-8fe3-98a3841823ba.png",
-  "lbFile": "bf58b91c-7f0d-4f51-8fe3-98a3841823ba.png"
- },
- {
   "id": "emu-snes-battletoads-double-dragon",
   "platform": "emu",
   "system": "SNES",
@@ -11810,22 +11622,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/9dacdf67-4961-4aeb-9943-8cc909d83557.jpg",
   "lbFile": "9dacdf67-4961-4aeb-9943-8cc909d83557.jpg"
- },
- {
-  "id": "emu-ps1-beavis-and-butt-head-do-hollywood",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Beavis and Butt-Head Do Hollywood",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "New Level"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-beavis-and-butt-head-in-virtual-stupidity",
@@ -12448,22 +12244,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/aec101e2-9188-4277-a457-d987f051f56d.jpg",
   "lbFile": "aec101e2-9188-4277-a457-d987f051f56d.jpg"
- },
- {
-  "id": "emu-gba-billy-hatcher-hyper-shoot",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Billy Hatcher: Hyper Shoot",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Sonic Team"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-billy-time",
@@ -13320,22 +13100,6 @@
   "lbFile": "b25c79f2-a72c-4eef-975c-4b66d5be0576.jpg"
  },
  {
-  "id": "emu-snes-black-out",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Black Out",
-  "wiki": null,
-  "year": null,
-  "genre": "Puzzle",
-  "developers": [
-   "Nintendo"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-black-matrix",
   "platform": "emu",
   "system": "PS1",
@@ -13800,20 +13564,6 @@
   "lbFile": "28492a6e-fa40-486b-8bdb-9adf26995908.jpg"
  },
  {
-  "id": "emu-ps1-blockbuster-playstation-challenge",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Blockbuster Playstation Challenge",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-blockids",
   "platform": "emu",
   "system": "PS1",
@@ -13952,24 +13702,6 @@
   ],
   "publishers": [],
   "releaseType": "Homebrew",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-gba-blue-angelo-angels-from-the-shrine",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Blue Angelo: Angels from the Shrine",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Virtual Spaghetti"
-  ],
-  "publishers": [
-   "Shibuya Interactive"
-  ],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -14134,22 +13866,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/eccdae65-14dc-4dce-a2d0-72e45b226f4d.jpg",
   "lbFile": "eccdae65-14dc-4dce-a2d0-72e45b226f4d.jpg"
- },
- {
-  "id": "emu-snes-bobby-s-world",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Bobby's World",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Riedel Software Productions"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/6f223d43-0104-4226-9569-51808b2bd876.png",
-  "lbFile": "6f223d43-0104-4226-9569-51808b2bd876.png"
  },
  {
   "id": "emu-gba-boboboubo-boubobo-9-kiwame-senshi-gyagu-yuugou",
@@ -14980,24 +14696,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/93d93696-aeb9-4460-952a-e8c67a7e3941.jpg",
   "lbFile": "93d93696-aeb9-4460-952a-e8c67a7e3941.jpg"
- },
- {
-  "id": "emu-ps1-bounty-arms",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Bounty Arms",
-  "wiki": null,
-  "year": 1995,
-  "genre": "Platform",
-  "developers": [
-   "Data West"
-  ],
-  "publishers": [
-   "Data West"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/cf9888de-bd9c-4ea8-bb62-0fdc45489b9d.jpg",
-  "lbFile": "cf9888de-bd9c-4ea8-bb62-0fdc45489b9d.jpg"
  },
  {
   "id": "emu-ps1-bounty-hunter-sarah-holy-mountain-no-teiou",
@@ -16298,24 +15996,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/a2319a7b-1c45-431a-b658-2e17ee8bfe4d.jpg",
   "lbFile": "a2319a7b-1c45-431a-b658-2e17ee8bfe4d.jpg"
- },
- {
-  "id": "emu-ps1-bubble-bobble-2",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Bubble Bobble 2",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "EastPoint"
-  ],
-  "publishers": [
-   "Virgin Interactive Entertainment"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/269a29d0-ecf7-48c9-a544-7a33287848a4.jpg",
-  "lbFile": "269a29d0-ecf7-48c9-a544-7a33287848a4.jpg"
  },
  {
   "id": "emu-ps1-bubble-bobble-also-featuring-rainbow-islands",
@@ -23010,22 +22690,6 @@
   "lbFile": "24ff8ce5-76c1-4f53-989f-6c0ac3ce47c5.jpg"
  },
  {
-  "id": "emu-gba-commandos-2",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Commandos 2",
-  "wiki": null,
-  "year": 2002,
-  "genre": null,
-  "developers": [
-   "Toyonaka Studios"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-community-pom",
   "platform": "emu",
   "system": "PS1",
@@ -23096,22 +22760,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/7cabe9ec-8688-4317-8461-8914e42ff2ca.jpg",
   "lbFile": "7cabe9ec-8688-4317-8461-8914e42ff2ca.jpg"
- },
- {
-  "id": "emu-snes-congo-the-movie-the-secret-of-zinj",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Congo: The Movie: The Secret of Zinj",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Visual Concepts"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-conker-s-high-rule-tail",
@@ -23412,22 +23060,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/897043a5-8a40-448d-8bf6-e8e1a1bcfab4.jpg",
   "lbFile": "897043a5-8a40-448d-8bf6-e8e1a1bcfab4.jpg"
- },
- {
-  "id": "emu-snes-cooly-skunk",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Cooly Skunk",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Ukiyotei"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_5f1beb39-2eb7-461d-a057-ea186206a94d.jpg",
-  "lbFile": "r2_5f1beb39-2eb7-461d-a057-ea186206a94d.jpg"
  },
  {
   "id": "emu-snes-copa-brasil-1987",
@@ -24018,24 +23650,6 @@
   "releaseType": "ROM Hack",
   "image": null,
   "lbFile": null
- },
- {
-  "id": "emu-ps1-crash-bandicoot-prototype",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Crash Bandicoot: Prototype",
-  "wiki": null,
-  "year": 1996,
-  "genre": "Platform",
-  "developers": [
-   "Naughty Dog"
-  ],
-  "publishers": [
-   "Universal Interactive"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/2dda0f03-2d19-4153-b440-720ba2d051b1.jpg",
-  "lbFile": "2dda0f03-2d19-4153-b440-720ba2d051b1.jpg"
  },
  {
   "id": "emu-ps1-crash-bandicoot-quality-of-life",
@@ -25642,24 +25256,6 @@
   "lbFile": "289f8e3b-bd7a-4309-aecc-b86ba5aeb9dd.jpg"
  },
  {
-  "id": "emu-snes-d-zero",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "D-Zero",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Desire"
-  ],
-  "publishers": [
-   "Desire"
-  ],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-dbz-dead-ball-zone",
   "platform": "emu",
   "system": "PS1",
@@ -27196,38 +26792,6 @@
   "lbFile": "50330460-6f19-4ad5-9d73-d45452f3c34d.jpg"
  },
  {
-  "id": "emu-gba-dark-eden",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Dark Eden",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Rival Dreams"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-gba-dark-empire",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Dark Empire",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Marvelous Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-dark-half",
   "platform": "emu",
   "system": "SNES",
@@ -28238,22 +27802,6 @@
   "lbFile": "ba0effa0-c17d-4ebd-9032-156e1b7ca477.png"
  },
  {
-  "id": "emu-gba-demons-of-asteborg-dx",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Demons of Asteborg DX",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Neofid Studios"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-dengeki-construction-ochige-yarouze",
   "platform": "emu",
   "system": "PS1",
@@ -28986,22 +28534,6 @@
   "lbFile": "e0f35b5b-af09-466e-9ca9-b9c62f1ed68b.jpg"
  },
  {
-  "id": "emu-ps1-deuce-heart-castle",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Deuce: Heart Castle",
-  "wiki": null,
-  "year": 2000,
-  "genre": "Action",
-  "developers": [
-   "Midway"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/320695b1-2078-4140-a199-418c9f715792.jpg",
-  "lbFile": "320695b1-2078-4140-a199-418c9f715792.jpg"
- },
- {
   "id": "emu-ps1-devicereign",
   "platform": "emu",
   "system": "PS1",
@@ -29270,24 +28802,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/cc73de09-4fc2-4492-8223-61166b409a2e.jpg",
   "lbFile": "cc73de09-4fc2-4492-8223-61166b409a2e.jpg"
- },
- {
-  "id": "emu-gba-diddy-kong-pilot",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Diddy Kong Pilot",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "Rare"
-  ],
-  "publishers": [
-   "Nintendo"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/61531fad-6d9f-4ee6-a7db-ca17f7b3ab98.jpg",
-  "lbFile": "61531fad-6d9f-4ee6-a7db-ca17f7b3ab98.jpg"
  },
  {
   "id": "emu-ps1-die-hard-trilogy",
@@ -32150,20 +31664,6 @@
   "lbFile": "be10f387-3c78-400f-a4ac-d706df395b80.jpg"
  },
  {
-  "id": "emu-gba-donkey-kong-plus",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Donkey Kong Plus",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-donkey-kong-jumpman-returns",
   "platform": "emu",
   "system": "SNES",
@@ -34178,38 +33678,6 @@
   "lbFile": "16c628ba-a269-4a0c-820e-132f9c2148ef.jpg"
  },
  {
-  "id": "emu-ps1-dream-team-basketball",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Dream Team Basketball",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Anvil Incorporated"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-dream-land-of-giants",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Dream: Land of Giants",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Rare"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/bf2b2858-ca1d-4bbb-83dd-fabb2b3a9db5.jpg",
-  "lbFile": "bf2b2858-ca1d-4bbb-83dd-fabb2b3a9db5.jpg"
- },
- {
   "id": "emu-ps1-dreams",
   "platform": "emu",
   "system": "PS1",
@@ -34766,24 +34234,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/761011e2-8aaa-4770-9278-74c97393bbd5.jpg",
   "lbFile": "761011e2-8aaa-4770-9278-74c97393bbd5.jpg"
- },
- {
-  "id": "emu-gba-dune-ornithopter-assault",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Dune: Ornithopter Assault",
-  "wiki": null,
-  "year": null,
-  "genre": "Flight Simulator",
-  "developers": [
-   "Soft Brigade"
-  ],
-  "publishers": [
-   "Cryo Interactive Entertainment"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/6d3805a6-0092-4429-8958-024d647a3955.png",
-  "lbFile": "6d3805a6-0092-4429-8958-024d647a3955.png"
  },
  {
   "id": "emu-ps1-dungeon-creator",
@@ -37526,22 +36976,6 @@
   "lbFile": "855d8c00-158c-4243-8b8f-a871982fd639.jpg"
  },
  {
-  "id": "emu-snes-eurit",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Eurit",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Radical Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-euro-demo-02-01-ger",
   "platform": "emu",
   "system": "PS1",
@@ -39582,22 +39016,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/5133fd04-569a-496b-9a73-9795718f56ef.jpg",
   "lbFile": "5133fd04-569a-496b-9a73-9795718f56ef.jpg"
- },
- {
-  "id": "emu-snes-falcon",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Falcon",
-  "wiki": null,
-  "year": null,
-  "genre": "Flight Simulator",
-  "developers": [
-   "Spectrum Holobyte"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/f8cd65c5-e4ba-4fc7-9e60-c2d3c12b6e77.png",
-  "lbFile": "f8cd65c5-e4ba-4fc7-9e60-c2d3c12b6e77.png"
  },
  {
   "id": "emu-snes-fall-guys-world",
@@ -42548,22 +41966,6 @@
   "lbFile": "d390b4e0-6fe7-42b8-8f3c-7c15f2e6340a.jpg"
  },
  {
-  "id": "emu-gba-fire-eaters-zero-bandits",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Fire Eaters: Zero Bandits",
-  "wiki": null,
-  "year": null,
-  "genre": "Fighting",
-  "developers": [
-   "Lost Boys"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-fire-emblem",
   "platform": "emu",
   "system": "GBA",
@@ -43338,22 +42740,6 @@
   "lbFile": "27afd852-6b73-4a61-a4fc-b7c36fb27f30.jpg"
  },
  {
-  "id": "emu-snes-firearm",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Firearm",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Malibu Interactive"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-firebugs",
   "platform": "emu",
   "system": "PS1",
@@ -43406,22 +42792,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/835a6108-09a9-4257-8798-2eede2e3b40a.jpg",
   "lbFile": "835a6108-09a9-4257-8798-2eede2e3b40a.jpg"
- },
- {
-  "id": "emu-snes-fireteam-rogue",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Fireteam Rogue",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Accolade"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-firo-klawd",
@@ -43733,15 +43103,17 @@
   "system": "GBA",
   "title": "Flashback Legends",
   "wiki": null,
-  "year": 2007,
+  "year": 2002,
   "genre": "Adventure",
   "developers": [
    "Delphine Software International"
   ],
   "publishers": [],
-  "releaseType": "Unreleased",
+  "releaseType": "Vazado",
   "image": "https://images.launchbox-app.com/4f90e127-ddf4-4312-92b3-177fbee762b8.png",
-  "lbFile": "4f90e127-ddf4-4312-92b3-177fbee762b8.png"
+  "lbFile": "4f90e127-ddf4-4312-92b3-177fbee762b8.png",
+  "nota": "Cancelado com a falencia da Delphine no fim de 2002. O prototipo que vazou (21/06/2002) tem os 16 fases do jogo, so com pequenos bugs.",
+  "fonte": "https://en.wikipedia.org/wiki/Fade_to_Black_(video_game)"
  },
  {
   "id": "emu-snes-flashback-the-quest-for-identity",
@@ -45580,22 +44952,6 @@
   "lbFile": "f9f94230-e7eb-4d39-a1b2-e30475dee929.jpg"
  },
  {
-  "id": "emu-gba-fuzz-rocket",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Fuzz & Rocket",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Halfbrick Studios"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-g-darius",
   "platform": "emu",
   "system": "PS1",
@@ -45648,20 +45004,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/8bf47b81-ee50-4511-990b-a2ed11d96d07.jpg",
   "lbFile": "8bf47b81-ee50-4511-990b-a2ed11d96d07.jpg"
- },
- {
-  "id": "emu-gba-g-i-joe-a-real-american-hero",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "G.I. Joe: A Real American Hero",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-g-o-d-pure-growth-or-devolution",
@@ -45786,22 +45128,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/133dd9d0-2e30-476a-835e-6bbc915b02e4.jpg",
   "lbFile": "133dd9d0-2e30-476a-835e-6bbc915b02e4.jpg"
- },
- {
-  "id": "emu-gba-gp-1-racing",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "GP-1 Racing",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "Edge Interact"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-gp-1-part-ii",
@@ -47216,24 +46542,6 @@
   "lbFile": "deae9fb9-6508-438a-8bc4-1da3725b00a5.png"
  },
  {
-  "id": "emu-gba-game-boy-advance-video-sonic-x-volume-2",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Game Boy Advance Video: Sonic X: Volume 2",
-  "wiki": null,
-  "year": null,
-  "genre": "Visual Novel",
-  "developers": [
-   "Majesco"
-  ],
-  "publishers": [
-   "Majesco"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/e3cb5d32-5f5f-4af7-9e51-d8d5b32ba3b4.jpg",
-  "lbFile": "e3cb5d32-5f5f-4af7-9e51-d8d5b32ba3b4.jpg"
- },
- {
   "id": "emu-gba-game-boy-advance-video-spongebob-squarepants-volume-1",
   "platform": "emu",
   "system": "GBA",
@@ -48138,22 +47446,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/c90d5f4d-934d-462d-b731-95dcf751ae2f.jpg",
   "lbFile": "c90d5f4d-934d-462d-b731-95dcf751ae2f.jpg"
- },
- {
-  "id": "emu-gba-gearhead-garage-adventure",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Gearhead Garage Adventure",
-  "wiki": null,
-  "year": null,
-  "genre": "Adventure",
-  "developers": [
-   "Ratloop"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/7f2ef96d-99e1-4b8c-af99-f3d7c0b4373b.png",
-  "lbFile": "7f2ef96d-99e1-4b8c-af99-f3d7c0b4373b.png"
  },
  {
   "id": "emu-ps1-gegege-no-kitarou-gyakushuu-youkai-daikessen",
@@ -50036,22 +49328,6 @@
   "lbFile": "efc71f34-e766-49d0-b4d4-bc1500a32ac1.jpg"
  },
  {
-  "id": "emu-snes-golf-daisuki-o-b-club",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Golf Daisuki! O.B. Club",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Nippon Computer Systems"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-golgo-13-vol-2-mienai-guntai",
   "platform": "emu",
   "system": "PS1",
@@ -50140,22 +49416,6 @@
   "releaseType": "Homebrew",
   "image": "https://images.launchbox-app.com/06d4cf4f-20fb-418b-8264-1ceb7567f5dc.png",
   "lbFile": "06d4cf4f-20fb-418b-8264-1ceb7567f5dc.png"
- },
- {
-  "id": "emu-gba-goodboy-galaxy-demo",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Goodboy Galaxy DEMO",
-  "wiki": null,
-  "year": 2021,
-  "genre": "Platform",
-  "developers": [
-   "Rik Nicol"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/f6fc9f33-a7fe-4461-87f2-6c835c47dcf7.png",
-  "lbFile": "f6fc9f33-a7fe-4461-87f2-6c835c47dcf7.png"
  },
  {
   "id": "emu-snes-goof-troop-space-treasure",
@@ -54376,24 +53636,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/3826a602-ba14-4a3d-9f38-52b9270e669d.jpg",
   "lbFile": "3826a602-ba14-4a3d-9f38-52b9270e669d.jpg"
- },
- {
-  "id": "emu-gba-hi-hi-puffy-amiyumi-puffy-ami-yumi-and-the-manga-madman",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Hi Hi Puffy AmiYumi: Puffy Ami Yumi and the Manga Madman",
-  "wiki": null,
-  "year": 2024,
-  "genre": "Action",
-  "developers": [
-   "Altron"
-  ],
-  "publishers": [
-   "D3Publisher"
-  ],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-hi-no-ouji-yamato-takeru",
@@ -60810,22 +60052,6 @@
   "lbFile": "d138da80-42e3-40d6-bcad-9f5f98e22c2e.jpg"
  },
  {
-  "id": "emu-snes-jeff-s-shoot-em-up",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Jeff's Shoot'Em Up",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Iguana Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-jelly-boy",
   "platform": "emu",
   "system": "SNES",
@@ -60842,24 +60068,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/c8a30309-e5bd-4fc8-9aa7-8241145d1875.png",
   "lbFile": "c8a30309-e5bd-4fc8-9aa7-8241145d1875.png"
- },
- {
-  "id": "emu-snes-jelly-boy-2",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Jelly Boy 2",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Game Freak"
-  ],
-  "publishers": [
-   "Sony Music Entertainment (Japan)"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_dee64e30-6074-4b11-bbc8-79a65a8c8c7a.png",
-  "lbFile": "r2_dee64e30-6074-4b11-bbc8-79a65a8c8c7a.png"
  },
  {
   "id": "emu-ps1-jellyfish-the-healing-friend",
@@ -66482,24 +65690,6 @@
   "lbFile": "3b6bfdcb-770c-45c0-97d2-849b4ec07a31.jpg"
  },
  {
-  "id": "emu-gba-kien",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Kien",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "P.M. Studios"
-  ],
-  "publishers": [
-   "Destination Software"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/afffd845-083b-4cb4-bd30-00c5cb8c4031.jpg",
-  "lbFile": "afffd845-083b-4cb4-bd30-00c5cb8c4031.jpg"
- },
- {
   "id": "emu-ps1-kiganjou",
   "platform": "emu",
   "system": "PS1",
@@ -66678,24 +65868,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/c5be09d4-93a5-4183-b194-48ce170ed97a.jpg",
   "lbFile": "c5be09d4-93a5-4183-b194-48ce170ed97a.jpg"
- },
- {
-  "id": "emu-ps1-killing-time",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Killing Time",
-  "wiki": null,
-  "year": 1997,
-  "genre": "Horror",
-  "developers": [
-   "LJN"
-  ],
-  "publishers": [
-   "3DO"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_989d2ad8-2580-496b-a645-387d004d71b2.png",
-  "lbFile": "r2_989d2ad8-2580-496b-a645-387d004d71b2.png"
  },
  {
   "id": "emu-ps1-killing-zone",
@@ -72150,22 +71322,6 @@
   "lbFile": "6d45aa9f-d7ee-4926-9380-170fe6382548.jpg"
  },
  {
-  "id": "emu-snes-lobo",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Lobo",
-  "wiki": null,
-  "year": null,
-  "genre": "Fighting",
-  "developers": [
-   "Ocean Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-lock-on",
   "platform": "emu",
   "system": "SNES",
@@ -74584,24 +73740,6 @@
   "lbFile": "69b8e65c-6f83-4e85-a578-31ddba4ef681.jpg"
  },
  {
-  "id": "emu-ps1-madden-nfl-96",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Madden NFL 96",
-  "wiki": null,
-  "year": 1995,
-  "genre": "Sports",
-  "developers": [
-   "Visual Concepts"
-  ],
-  "publishers": [
-   "Electronic Arts"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/7146f415-d53a-4285-ba10-09f6342fb2bd.jpg",
-  "lbFile": "7146f415-d53a-4285-ba10-09f6342fb2bd.jpg"
- },
- {
   "id": "emu-ps1-madden-nfl-97",
   "platform": "emu",
   "system": "PS1",
@@ -74744,22 +73882,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/dc4e1be4-4364-4ea2-81f6-b27245f76539.jpg",
   "lbFile": "dc4e1be4-4364-4ea2-81f6-b27245f76539.jpg"
- },
- {
-  "id": "emu-ps1-magic-castle",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Magic Castle",
-  "wiki": null,
-  "year": 2020,
-  "genre": "Adventure",
-  "developers": [
-   "KAIGA"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_f4eff9aa-8632-493f-832b-0d25b4f6dc67.png",
-  "lbFile": "r2_f4eff9aa-8632-493f-832b-0d25b4f6dc67.png"
  },
  {
   "id": "emu-snes-magic-sword",
@@ -75832,22 +74954,6 @@
   "lbFile": "1db56372-7629-42d2-bb5c-3cb223c53dd1.jpg"
  },
  {
-  "id": "emu-gba-mandrake-the-magician",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Mandrake the Magician",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "7th Sense"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-manga-ka-debut-monogatari-akogare-manga-ka-ikusei-game",
   "platform": "emu",
   "system": "GBA",
@@ -75864,24 +74970,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/67c72cad-d0d1-4c1e-bce2-e4c3bc07c590.jpg",
   "lbFile": "67c72cad-d0d1-4c1e-bce2-e4c3bc07c590.jpg"
- },
- {
-  "id": "emu-ps1-maniac-moons",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Maniac Moons",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Acclaim Entertainment"
-  ],
-  "publishers": [
-   "Acclaim Entertainment"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_9956f8e8-5506-4f52-9379-fc82881a1d1b.png",
-  "lbFile": "r2_9956f8e8-5506-4f52-9379-fc82881a1d1b.png"
  },
  {
   "id": "emu-ps1-manic-game-girl",
@@ -76448,24 +75536,6 @@
    "Niteninja"
   ],
   "releaseType": "ROM Hack",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-gba-mario-kart-xxl",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Mario Kart XXL",
-  "wiki": null,
-  "year": 2004,
-  "genre": "Racing",
-  "developers": [
-   "Denaris Entertainment Software"
-  ],
-  "publishers": [
-   "Nintendo"
-  ],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -78684,22 +77754,6 @@
   "lbFile": "88130cfc-8428-41fd-99dd-786ecbe0bb30.jpg"
  },
  {
-  "id": "emu-gba-mechanic-mechanica",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Mechanic Mechanica",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Art Co. Ltd"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-medabots-ax-metabee-ver",
   "platform": "emu",
   "system": "GBA",
@@ -80612,22 +79666,6 @@
   "lbFile": "9a0b5e11-9bc0-4885-9469-1c0af9a0270c.jpg"
  },
  {
-  "id": "emu-snes-mer-wars",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Mer Wars",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Synergistic Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-meremanoid",
   "platform": "emu",
   "system": "PS1",
@@ -81056,22 +80094,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/58025e23-3e24-4377-ba07-37a61e8fba70.jpg",
   "lbFile": "58025e23-3e24-4377-ba07-37a61e8fba70.jpg"
- },
- {
-  "id": "emu-gba-metal-slug-super-vehicle-001",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Metal Slug: Super Vehicle-001",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "SNK Playmore"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-metal-slug-super-vehicle-001",
@@ -81776,22 +80798,6 @@
   "lbFile": "fb483008-b51a-4195-ad89-c67706746f37.jpg"
  },
  {
-  "id": "emu-snes-mick-mack-as-the-global-gladiators",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Mick & Mack as the Global Gladiators",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Virgin Games"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-mickey-mania-the-timeless-adventures-of-mickey-mouse",
   "platform": "emu",
   "system": "SNES",
@@ -81844,22 +80850,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/6c7df119-a9b9-445c-a499-d1a2e6c05097.png",
   "lbFile": "6c7df119-a9b9-445c-a499-d1a2e6c05097.png"
- },
- {
-  "id": "emu-snes-mickey-s-playtown-adventure-a-day-of-discovery",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Mickey's Playtown Adventure: A Day Of Discovery!",
-  "wiki": null,
-  "year": null,
-  "genre": "Puzzle",
-  "developers": [
-   "Visual Concepts"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/646ae967-eda0-4b9e-98cc-80e3d6023c8d.jpg",
-  "lbFile": "646ae967-eda0-4b9e-98cc-80e3d6023c8d.jpg"
  },
  {
   "id": "emu-snes-mickey-s-ultimate-challenge",
@@ -85272,24 +84262,6 @@
   "lbFile": "538dc556-1e2c-4eca-9b75-88d4b7a0f0ba.png"
  },
  {
-  "id": "emu-gba-motocross-challenge",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Motocross Challenge",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "DHG games"
-  ],
-  "publishers": [
-   "DHG games"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/77d3448b-e4f9-4a40-925e-9696264c9454.jpg",
-  "lbFile": "77d3448b-e4f9-4a40-925e-9696264c9454.jpg"
- },
- {
   "id": "emu-ps1-motocross-mania",
   "platform": "emu",
   "system": "PS1",
@@ -85681,17 +84653,19 @@
   "id": "emu-snes-mr-tuff",
   "platform": "emu",
   "system": "SNES",
-  "title": "Mr Tuff",
+  "title": "Mr. Tuff",
   "wiki": null,
-  "year": null,
+  "year": 1994,
   "genre": "Action",
   "developers": [
    "Sales Curve Interactive"
   ],
   "publishers": [],
-  "releaseType": "Unreleased",
+  "releaseType": "Vazado",
   "image": "https://images.launchbox-app.com/b0aee133-3aa8-48c3-aaca-e5521c05d5da.png",
-  "lbFile": "b0aee133-3aa8-48c3-aaca-e5521c05d5da.png"
+  "lbFile": "b0aee133-3aa8-48c3-aaca-e5521c05d5da.png",
+  "nota": "Terminado para sair em 1994 e engavetado. Duas ROMs de prototipo vazaram entre 2007 e 2022 e o jogo acabou publicado em cartucho em 2023.",
+  "fonte": "https://en.wikipedia.org/wiki/Mr._Tuff"
  },
  {
   "id": "emu-snes-mr-bloppy-saves-the-world",
@@ -85962,22 +84936,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/7aabb563-1176-465c-90a9-c51fe50634cd.jpg",
   "lbFile": "7aabb563-1176-465c-90a9-c51fe50634cd.jpg"
- },
- {
-  "id": "emu-snes-muhammad-ali-heavyweight-boxing",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Muhammad Ali Heavyweight Boxing",
-  "wiki": null,
-  "year": null,
-  "genre": "Fighting",
-  "developers": [
-   "Park Place Productions"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-mujintou-monogatari",
@@ -86958,24 +85916,6 @@
   "lbFile": "a5acb611-3e93-4df3-8ba7-5c4aaf271944.jpg"
  },
  {
-  "id": "emu-ps1-nba-2-ball",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "NBA 2 Ball",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Iguana Entertainment"
-  ],
-  "publishers": [
-   "Acclaim Entertainment"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_f25ecb76-48fd-43fe-bee3-b78a1b9f6d5f.png",
-  "lbFile": "r2_f25ecb76-48fd-43fe-bee3-b78a1b9f6d5f.png"
- },
- {
   "id": "emu-snes-nba-all-star-challenge",
   "platform": "emu",
   "system": "SNES",
@@ -87374,20 +86314,6 @@
   ],
   "publishers": [],
   "releaseType": "ROM Hack",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-nba-jam-xxx",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "NBA Jam XXX",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -88288,22 +87214,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/4107bb9a-667c-4ced-87e7-77799245d6aa.jpg",
   "lbFile": "4107bb9a-667c-4ced-87e7-77799245d6aa.jpg"
- },
- {
-  "id": "emu-snes-nfl-football-proto",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "NFL Football (Proto)",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Sculptured Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/b764d8f8-0d69-4881-9c53-3f87aa9c6757.png",
-  "lbFile": "b764d8f8-0d69-4881-9c53-3f87aa9c6757.png"
  },
  {
   "id": "emu-ps1-nfl-full-contact",
@@ -91990,24 +90900,6 @@
   "lbFile": "28a71c78-17ca-4ead-bf89-eef2dd4a059e.jpg"
  },
  {
-  "id": "emu-snes-nintendo-campus-challenge-92",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Nintendo Campus Challenge '92",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Nintendo"
-  ],
-  "publishers": [
-   "Nintendo"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/f3b5414e-4e6e-4fe9-a855-5e68d24e9e70.jpg",
-  "lbFile": "f3b5414e-4e6e-4fe9-a855-5e68d24e9e70.jpg"
- },
- {
   "id": "emu-snes-nintendo-powerfest-94",
   "platform": "emu",
   "system": "SNES",
@@ -92858,22 +91750,6 @@
   ],
   "publishers": [],
   "releaseType": "Homebrew",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-noughts-crosses",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Noughts & Crosses",
-  "wiki": null,
-  "year": null,
-  "genre": "Board Game",
-  "developers": [
-   "Nintendo Software Technology"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -96496,22 +95372,6 @@
   "lbFile": "c8a6f319-de4c-4805-991e-20c3af5accdf.jpg"
  },
  {
-  "id": "emu-gba-overstorm",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Overstorm",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Quantized Bit"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-oyaji-no-jikan-nechan-mahjong-de-shoubu-ya",
   "platform": "emu",
   "system": "PS1",
@@ -99844,22 +98704,6 @@
   "lbFile": "6fd5d887-beca-43d3-b71f-bcb073e224cf.jpg"
  },
  {
-  "id": "emu-gba-perplexus-diodomin",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Perplexus Diodomin",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "James Boulton"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-persona-2-eternal-punishment",
   "platform": "emu",
   "system": "PS1",
@@ -101148,24 +99992,6 @@
   "lbFile": "a6d86e98-433e-4537-bc1e-1777fead7796.jpg"
  },
  {
-  "id": "emu-ps1-plane-crazy",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Plane Crazy",
-  "wiki": null,
-  "year": 1999,
-  "genre": "Racing",
-  "developers": [
-   "Project Two Interactive"
-  ],
-  "publishers": [
-   "Inner Workings"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/e985f432-2e14-400c-8cfc-ccd42d027407.png",
-  "lbFile": "e985f432-2e14-400c-8cfc-ccd42d027407.png"
- },
- {
   "id": "emu-ps1-planet-dob",
   "platform": "emu",
   "system": "PS1",
@@ -102338,42 +101164,6 @@
   "releaseType": "Homebrew",
   "image": "https://images.launchbox-app.com/dbf6dee8-26d7-4433-8565-8c57ab2a99b0.png",
   "lbFile": "dbf6dee8-26d7-4433-8565-8c57ab2a99b0.png"
- },
- {
-  "id": "emu-gba-pocket-monsters-diamond-pocket-monsters-pearl-manaphy-present-campaign-senyou-cartridge",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Pocket Monsters Diamond: Pocket Monsters Pearl: Manaphy Present Campaign Senyou Cartridge",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Gamefreak"
-  ],
-  "publishers": [
-   "Nintendo"
-  ],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-gba-pocket-monsters-diamond-tomodachi-to-issho-ni-present-campaign-senyou-cartridge",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Pocket Monsters Diamond: Tomodachi to Issho ni!: Present Campaign Senyou Cartridge",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Gamefreak"
-  ],
-  "publishers": [
-   "Nintendo"
-  ],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-pocket-music",
@@ -109370,22 +108160,6 @@
   "lbFile": "9af69777-efcc-4c0b-a15d-034bf714ac00.jpg"
  },
  {
-  "id": "emu-snes-power-slide",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Power Slide",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "MotiveTime"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-power-soukoban",
   "platform": "emu",
   "system": "SNES",
@@ -109526,22 +108300,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/8d2d71c2-7ea9-4c64-a642-14a2082ac13b.png",
   "lbFile": "8d2d71c2-7ea9-4c64-a642-14a2082ac13b.png"
- },
- {
-  "id": "emu-snes-powerfest-94-super-mario-kart",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "PowerFest 94: Super Mario Kart",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Nintendo EAD"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-powermonger",
@@ -109812,22 +108570,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/b8b0e403-c67f-43c4-ac9d-03aede7c67ac.jpg",
   "lbFile": "b8b0e403-c67f-43c4-ac9d-03aede7c67ac.jpg"
- },
- {
-  "id": "emu-snes-prime",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Prime",
-  "wiki": null,
-  "year": null,
-  "genre": "Beat 'em Up",
-  "developers": [
-   "Malibu Interactive"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-prince-of-persia-evolution",
@@ -111094,22 +109836,6 @@
   "lbFile": "ee67ee4c-caa2-457f-a63a-69ce5f2f4e7e.jpg"
  },
  {
-  "id": "emu-snes-puggsy",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Puggsy",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Traveller's Tales (UK)"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-pukupuku-tennen-kairanban",
   "platform": "emu",
   "system": "GBA",
@@ -111698,22 +110424,6 @@
   "lbFile": "4cfd6036-4f18-4834-84b8-379e8cc13e7b.jpg"
  },
  {
-  "id": "emu-gba-quake",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Quake",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Randy Linden"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-quake-ii",
   "platform": "emu",
   "system": "PS1",
@@ -111846,38 +110556,6 @@
   "releaseType": "ROM Hack",
   "image": "https://images.launchbox-app.com/50b3c516-be6e-441b-b80e-378aede075fd.png",
   "lbFile": "50b3c516-be6e-441b-b80e-378aede075fd.png"
- },
- {
-  "id": "emu-snes-quik-the-thunder-rabbit",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Quik the Thunder Rabbit",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Stywox"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-quinty",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Quinty",
-  "wiki": null,
-  "year": null,
-  "genre": "Puzzle",
-  "developers": [
-   "Game Freak Inc."
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-quiz-millionaire-waku-waku-party",
@@ -112278,22 +110956,6 @@
   ],
   "publishers": [],
   "releaseType": "Homebrew",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-rhi-roller-hockey-95",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "RHI Roller Hockey '95",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Radical Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -112834,22 +111496,6 @@
   "lbFile": "19c9ecd5-0776-459d-951f-93cf6b709c3d.jpg"
  },
  {
-  "id": "emu-snes-rally-the-final-round-of-the-world-rally-championship",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Rally: The Final Round of the World Rally Championship",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "JVC"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-ramen-hashi",
   "platform": "emu",
   "system": "PS1",
@@ -113066,22 +111712,6 @@
   "lbFile": "250d2e87-fe65-48a1-a1e9-9a2142946d1b.png"
  },
  {
-  "id": "emu-snes-rap-basketball",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Rap Basketball",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Motown Records"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-rap-jam-volume-one",
   "platform": "emu",
   "system": "SNES",
@@ -113296,22 +111926,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/1735de8f-905a-488f-9954-fcf77265fdcb.jpg",
   "lbFile": "1735de8f-905a-488f-9954-fcf77265fdcb.jpg"
- },
- {
-  "id": "emu-snes-rayman",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Rayman",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Ludimedia"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-rayman-10th-anniversary-collection",
@@ -113652,22 +112266,6 @@
   "releaseType": "ROM Hack",
   "image": "https://images.launchbox-app.com/7e6cbea3-e145-4996-9d85-2489b897fe03.jpg",
   "lbFile": "7e6cbea3-e145-4996-9d85-2489b897fe03.jpg"
- },
- {
-  "id": "emu-snes-reactor",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Reactor",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Argonaut Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-ready-2-rumble-boxing",
@@ -114364,40 +112962,6 @@
   "releaseType": "Homebrew",
   "image": "https://images.launchbox-app.com/r2_f3e3c0f8-7633-43ae-8492-122746006860.png",
   "lbFile": "r2_f3e3c0f8-7633-43ae-8492-122746006860.png"
- },
- {
-  "id": "emu-ps1-resident-evil-1-5",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Resident Evil 1.5",
-  "wiki": null,
-  "year": null,
-  "genre": "Horror",
-  "developers": [
-   "Capcom"
-  ],
-  "publishers": [
-   "Capcom"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/06cdc1d2-3df3-4ed2-ad6f-15b3b70f0110.png",
-  "lbFile": "06cdc1d2-3df3-4ed2-ad6f-15b3b70f0110.png"
- },
- {
-  "id": "emu-gba-resident-evil-2",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Resident Evil 2",
-  "wiki": null,
-  "year": null,
-  "genre": "Horror",
-  "developers": [
-   "Raylight Studios"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/f56f6f2a-f1d8-459e-89e5-137cdde71431.jpg",
-  "lbFile": "f56f6f2a-f1d8-459e-89e5-137cdde71431.jpg"
  },
  {
   "id": "emu-ps1-resident-evil-2",
@@ -115622,22 +114186,6 @@
   "lbFile": "0279586e-a45e-4eed-ace1-c0601b2e218b.jpg"
  },
  {
-  "id": "emu-snes-road-runner-ii-wile-e-s-revenge",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Road Runner II: Wile E's Revenge",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Software Creations"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-road-runner-s-death-valley-rally",
   "platform": "emu",
   "system": "SNES",
@@ -115814,24 +114362,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/8167da0a-b855-4349-9d58-030f602c2072.jpg",
   "lbFile": "8167da0a-b855-4349-9d58-030f602c2072.jpg"
- },
- {
-  "id": "emu-gba-robocop",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "RoboCop",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Planet Interactive Development"
-  ],
-  "publishers": [
-   "Titus Interactive"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/bf2aafca-a3de-46fe-bfc6-57cabc7ad484.png",
-  "lbFile": "bf2aafca-a3de-46fe-bfc6-57cabc7ad484.png"
  },
  {
   "id": "emu-snes-robocop-3",
@@ -118300,38 +116830,6 @@
   "lbFile": "7bff5e98-8454-4a20-bf76-13726d49cba1.jpg"
  },
  {
-  "id": "emu-snes-snes-burn-in-test-cartridge",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "SNES Burn-in Test Cartridge",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Nintendo"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-snsp-aging-cassette",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "SNSP Aging Cassette",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Nintendo"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-sos",
   "platform": "emu",
   "system": "SNES",
@@ -120232,22 +118730,6 @@
   "lbFile": "deed3b87-ebe0-4fef-a31c-d143dfa67f6b.jpg"
  },
  {
-  "id": "emu-ps1-scooby-doo-night-of-100-frights",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Scooby-Doo! Night of 100 Frights",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Heavy Iron Studios"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_6bb2406b-f38e-47df-ae36-9c52231f31ec.png",
-  "lbFile": "r2_6bb2406b-f38e-47df-ae36-9c52231f31ec.png"
- },
- {
   "id": "emu-gba-scooby-doo-unmasked",
   "platform": "emu",
   "system": "GBA",
@@ -120406,22 +118888,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/6bbbcbb8-70d7-4e3a-a13c-23de6d889a9a.jpg",
   "lbFile": "6bbbcbb8-70d7-4e3a-a13c-23de6d889a9a.jpg"
- },
- {
-  "id": "emu-gba-sea-boy",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Sea Boy",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Rival Dreams"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-sea-trader-rise-of-taipan",
@@ -121830,22 +120296,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/79341134-3b04-4567-8d3a-f30769e4eee2.jpg",
   "lbFile": "79341134-3b04-4567-8d3a-f30769e4eee2.jpg"
- },
- {
-  "id": "emu-snes-shadowhawk",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Shadowhawk",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Studio E"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-shadowrun",
@@ -124036,22 +122486,6 @@
   ],
   "publishers": [],
   "releaseType": "Homebrew",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-shooter",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Shooter",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Punk Development"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -128256,20 +126690,6 @@
   "lbFile": "87fb7147-0f08-45f1-bb60-eed0fe2413d2.jpg"
  },
  {
-  "id": "emu-snes-snake-blasters",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Snake Blasters",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-snakes",
   "platform": "emu",
   "system": "GBA",
@@ -129722,22 +128142,6 @@
   "lbFile": "ddee79cb-1a9f-4428-ac4d-2c6ac8adcaf9.jpg"
  },
  {
-  "id": "emu-snes-sound-factory",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Sound Factory",
-  "wiki": null,
-  "year": null,
-  "genre": "Education",
-  "developers": [
-   "Nintendo"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-sound-novel-evolution-1-otogirisou-sosei-hen",
   "platform": "emu",
   "system": "PS1",
@@ -130564,22 +128968,6 @@
   "lbFile": "f4ae10bc-7865-4275-beec-7a405b22815c.jpg"
  },
  {
-  "id": "emu-snes-special-tee-shot",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Special Tee Shot",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "HAL Laboratory"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_0c604efd-0ac0-4c04-9d8b-1f10eb8df3a5.jpg",
-  "lbFile": "r2_0c604efd-0ac0-4c04-9d8b-1f10eb8df3a5.jpg"
- },
- {
   "id": "emu-ps1-spectral-blade",
   "platform": "emu",
   "system": "PS1",
@@ -130866,22 +129254,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/b615736a-f8f3-420e-833b-cd2675ba221c.jpg",
   "lbFile": "b615736a-f8f3-420e-833b-cd2675ba221c.jpg"
- },
- {
-  "id": "emu-snes-spellcraft-aspects-of-valor",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Spellcraft: Aspects of Valor",
-  "wiki": null,
-  "year": null,
-  "genre": "Strategy",
-  "developers": [
-   "Ybarra Productions"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-spice-world",
@@ -131474,22 +129846,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/242ac2e4-3dd5-4f20-9760-59cddc900454.jpg",
   "lbFile": "242ac2e4-3dd5-4f20-9760-59cddc900454.jpg"
- },
- {
-  "id": "emu-snes-spot-goes-to-hollywood",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Spot Goes to Hollywood",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Virgin Interactive Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-spout-gba",
@@ -132626,22 +130982,6 @@
   "lbFile": "29a0d5a3-608d-47d4-a3b8-9f443b5e8980.jpg"
  },
  {
-  "id": "emu-ps1-starcon",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "StarCon",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Accolade"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/7f34aa53-556a-4e81-b7c2-b203ebcc2dc7.jpg",
-  "lbFile": "7f34aa53-556a-4e81-b7c2-b203ebcc2dc7.jpg"
- },
- {
   "id": "emu-ps1-starborders",
   "platform": "emu",
   "system": "PS1",
@@ -133088,22 +131428,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/085d5c4f-9926-4fbb-9913-7903b7c2b64c.jpg",
   "lbFile": "085d5c4f-9926-4fbb-9913-7903b7c2b64c.jpg"
- },
- {
-  "id": "emu-snes-steven-seagal-is-the-final-option",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Steven Seagal is The Final Option",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Tekmagic"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-stock-car-racer",
@@ -136030,22 +134354,6 @@
   "lbFile": "c1f8a468-5f04-49a0-9cd7-ba66b0f5f006.jpg"
  },
  {
-  "id": "emu-snes-super-donkey",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Super Donkey",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Nintendo"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/94216443-64b5-4140-a16d-7c4d6e27f364.png",
-  "lbFile": "94216443-64b5-4140-a16d-7c4d6e27f364.png"
- },
- {
   "id": "emu-snes-super-double-dragon",
   "platform": "emu",
   "system": "SNES",
@@ -136776,22 +135084,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/9037197d-c333-4c52-93af-b0d833dff392.png",
   "lbFile": "9037197d-c333-4c52-93af-b0d833dff392.png"
- },
- {
-  "id": "emu-snes-super-full-metal-planet",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Super Full Metal Planet",
-  "wiki": null,
-  "year": null,
-  "genre": "Strategy",
-  "developers": [
-   "Infogrames"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-super-gachapon-world-sd-gundam-x",
@@ -138068,24 +136360,6 @@
   "lbFile": null
  },
  {
-  "id": "emu-snes-super-mario-bros",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Super Mario Bros.",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "infidelity"
-  ],
-  "publishers": [
-   "infidelity"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/bc5c5155-df77-4433-b833-71463989d5a9.png",
-  "lbFile": "bc5c5155-df77-4433-b833-71463989d5a9.png"
- },
- {
   "id": "emu-snes-super-mario-bros-1x",
   "platform": "emu",
   "system": "SNES",
@@ -138282,22 +136556,6 @@
   "releaseType": "ROM Hack",
   "image": "https://images.launchbox-app.com/120ad347-024f-414c-b9ce-1c3f2413efdc.jpg",
   "lbFile": "120ad347-024f-414c-b9ce-1c3f2413efdc.jpg"
- },
- {
-  "id": "emu-snes-super-mario-bros-maker",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Super Mario Bros. Maker",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "infidelity"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/05653968-3abf-4630-be8a-bb5df08b8a8c.png",
-  "lbFile": "05653968-3abf-4630-be8a-bb5df08b8a8c.png"
  },
  {
   "id": "emu-snes-super-mario-bros-plus",
@@ -139238,22 +137496,6 @@
   "releaseType": "ROM Hack",
   "image": "https://images.launchbox-app.com/8cb081e7-47b0-4c28-b9af-a75feb97ae85.jpg",
   "lbFile": "8cb081e7-47b0-4c28-b9af-a75feb97ae85.jpg"
- },
- {
-  "id": "emu-snes-super-mario-world-prototype",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Super Mario World Prototype",
-  "wiki": null,
-  "year": 1990,
-  "genre": "Platform",
-  "developers": [
-   "Nintendo EAD"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-super-mario-world-random-revolution-x",
@@ -144210,22 +142452,6 @@
   "lbFile": "856fda35-3fcc-43d1-8d7a-809172ec883e.png"
  },
  {
-  "id": "emu-snes-super-shadow-of-the-beast",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Super Shadow of the Beast",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "International Games System"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-super-sheffy-world-2-the-quest-for-5-shells",
   "platform": "emu",
   "system": "SNES",
@@ -145110,20 +143336,6 @@
   "releaseType": "Unlicensed",
   "image": "https://images.launchbox-app.com/8e6cbaf2-0436-4bb9-8be7-5c5ec8f82750.jpg",
   "lbFile": "8e6cbaf2-0436-4bb9-8be7-5c5ec8f82750.jpg"
- },
- {
-  "id": "emu-gba-super-tux",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Super Tux",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/r2_6a5dc354-a2b9-4f0c-a4d3-71e81b01c58c.jpg",
-  "lbFile": "r2_6a5dc354-a2b9-4f0c-a4d3-71e81b01c58c.jpg"
  },
  {
   "id": "emu-snes-super-uno",
@@ -146560,40 +144772,6 @@
   "lbFile": "fc4d5a36-063c-46f7-b784-12f8152b3d31.jpg"
  },
  {
-  "id": "emu-ps1-superman",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Superman",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "BlueSky Software"
-  ],
-  "publishers": [
-   "Titus France"
-  ],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-superman",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Superman",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Sunsoft"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/0ff58ebf-3e04-4d9c-b9ff-f68bdb51d595.png",
-  "lbFile": "0ff58ebf-3e04-4d9c-b9ff-f68bdb51d595.png"
- },
- {
   "id": "emu-gba-superman-returns-fortress-of-solitude",
   "platform": "emu",
   "system": "GBA",
@@ -147118,22 +145296,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/02384d5c-9fed-48d5-85e8-dfa5832f999e.jpg",
   "lbFile": "02384d5c-9fed-48d5-85e8-dfa5832f999e.jpg"
- },
- {
-  "id": "emu-snes-sylvester-tweety",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Sylvester & Tweety",
-  "wiki": null,
-  "year": null,
-  "genre": "Adventure",
-  "developers": [
-   "Visual Concepts"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-symbol-merged",
@@ -148800,22 +146962,6 @@
    "Twin Eagles Group"
   ],
   "releaseType": "ROM Hack",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-snes-tarzan-lord-of-the-jungle",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Tarzan: Lord of the Jungle",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Manley & Associates"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },
@@ -152552,24 +150698,6 @@
   "lbFile": "c364aea8-0943-49c3-840a-a7a0868fcc04.jpg"
  },
  {
-  "id": "emu-gba-the-haunted-mansion",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "The Haunted Mansion",
-  "wiki": null,
-  "year": 2003,
-  "genre": "Action",
-  "developers": [
-   "Pocket Studios"
-  ],
-  "publishers": [
-   "TDK Mediactive"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/04e5c2cd-d8f9-4226-9811-80fa6228174b.jpg",
-  "lbFile": "04e5c2cd-d8f9-4226-9811-80fa6228174b.jpg"
- },
- {
   "id": "emu-ps1-the-heiwa-otenki-studio",
   "platform": "emu",
   "system": "PS1",
@@ -154610,22 +152738,6 @@
   "lbFile": "136bace9-d32d-4409-8260-aae6fd8eef4b.jpg"
  },
  {
-  "id": "emu-gba-the-phantom-the-ghost-who-walks",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "The Phantom: The Ghost Who Walks",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "7th Sense"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-the-pinball-of-the-dead",
   "platform": "emu",
   "system": "GBA",
@@ -155240,22 +153352,6 @@
   "releaseType": "ROM Hack",
   "image": "https://images.launchbox-app.com/18a87521-477d-4729-b2a1-c5b6d0ff92dd.jpg",
   "lbFile": "18a87521-477d-4729-b2a1-c5b6d0ff92dd.jpg"
- },
- {
-  "id": "emu-snes-the-shadow",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "The Shadow",
-  "wiki": null,
-  "year": null,
-  "genre": "Beat 'em Up",
-  "developers": [
-   "Ocean Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-the-shinri-game",
@@ -156673,9 +154769,11 @@
   "publishers": [
    "Virgin Interactive Entertainment"
   ],
-  "releaseType": "Unreleased",
+  "releaseType": "Vazado",
   "image": "https://images.launchbox-app.com/0840d7cd-f740-4b4b-bc7a-e4f586624f85.jpg",
-  "lbFile": "0840d7cd-f740-4b4b-bc7a-e4f586624f85.jpg"
+  "lbFile": "0840d7cd-f740-4b4b-bc7a-e4f586624f85.jpg",
+  "nota": "Estava 99% pronto quando a EA cancelou por causa da violencia, semanas antes do lancamento. A ISO vazou e e jogavel inteira.",
+  "fonte": "https://en.wikipedia.org/wiki/Thrill_Kill"
  },
  {
   "id": "emu-gba-thunder-alley",
@@ -157142,22 +155240,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/r2_667620f1-7d60-455e-9938-9e1b2001238e.jpg",
   "lbFile": "r2_667620f1-7d60-455e-9938-9e1b2001238e.jpg"
- },
- {
-  "id": "emu-snes-time-killers",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Time Killers",
-  "wiki": null,
-  "year": null,
-  "genre": "Fighting",
-  "developers": [
-   "Incredible Technologies"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/bf22b61b-9572-41a9-9a0e-dee9d59bd33d.png",
-  "lbFile": "bf22b61b-9572-41a9-9a0e-dee9d59bd33d.png"
  },
  {
   "id": "emu-snes-time-pilot",
@@ -158608,22 +156690,6 @@
   "lbFile": "5097b4f2-fb21-49cb-aaad-cf77ed9ab078.jpg"
  },
  {
-  "id": "emu-snes-tom-vs-jerry-the-chase-is-on",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Tom Vs Jerry: The Chase Is On!",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "Software Creations"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-snes-tom-and-jerry",
   "platform": "emu",
   "system": "SNES",
@@ -159504,20 +157570,6 @@
   "lbFile": "79b0dcc1-53e4-4f71-8e1e-af2e6c065c88.jpg"
  },
  {
-  "id": "emu-ps1-torc-legend-of-the-ogre-crown",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Torc: Legend of the Ogre Crown",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/ce79a503-216f-4f5d-aa39-47e302183f09.png",
-  "lbFile": "ce79a503-216f-4f5d-aa39-47e302183f09.png"
- },
- {
   "id": "emu-snes-toride",
   "platform": "emu",
   "system": "SNES",
@@ -159676,22 +157728,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/1553f6f3-5b60-4aa0-96fd-a8eacebac7a4.jpg",
   "lbFile": "1553f6f3-5b60-4aa0-96fd-a8eacebac7a4.jpg"
- },
- {
-  "id": "emu-snes-total-football",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Total Football",
-  "wiki": null,
-  "year": null,
-  "genre": "Sports",
-  "developers": [
-   "Domark Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-total-jotary-world",
@@ -160368,22 +158404,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/73feca25-2f36-4c4d-8a3a-768661c807f7.png",
   "lbFile": "73feca25-2f36-4c4d-8a3a-768661c807f7.png"
- },
- {
-  "id": "emu-gba-travis-pastrana-s-pro-moto-x",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Travis Pastrana's Pro Moto X",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "Small Rockets"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-snes-treasure-conflix",
@@ -161408,20 +159428,6 @@
   "lbFile": "r2_3dab587f-af1e-495c-abd1-bc480ba6ad07.jpg"
  },
  {
-  "id": "emu-gba-turok-advance",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Turok Advance",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-gba-turok-evolution",
   "platform": "emu",
   "system": "GBA",
@@ -161934,24 +159940,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/19e709d6-3f01-4d1e-ab71-3606791bd21d.jpg",
   "lbFile": "19e709d6-3f01-4d1e-ab71-3606791bd21d.jpg"
- },
- {
-  "id": "emu-gba-tyrian-2000",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Tyrian 2000",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "World Tree Games Productions"
-  ],
-  "publishers": [
-   "Symmetry Entertainment"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/b160b77f-6a5b-4f3f-95af-5c74fafb7403.jpg",
-  "lbFile": "b160b77f-6a5b-4f3f-95af-5c74fafb7403.jpg"
  },
  {
   "id": "emu-snes-u-f-o-kamen-yakisoban-kettler-no-kuroi-inbou",
@@ -163474,22 +161462,6 @@
   "lbFile": "37e51e7d-0b6f-46fb-a15a-acde87792c19.jpg"
  },
  {
-  "id": "emu-snes-universal-soldier",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Universal Soldier",
-  "wiki": null,
-  "year": null,
-  "genre": "Action",
-  "developers": [
-   "The Code Monkeys"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-universal-virtua-pachi-slot-hisshou-kouryakuhou",
   "platform": "emu",
   "system": "PS1",
@@ -163560,22 +161532,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/d99ad038-a6a3-47b7-bbbb-dd59e55e6f40.jpg",
   "lbFile": "d99ad038-a6a3-47b7-bbbb-dd59e55e6f40.jpg"
- },
- {
-  "id": "emu-snes-untitled-racing-game",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Untitled Racing Game",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "Virgin Games"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-uprising-x",
@@ -164664,22 +162620,6 @@
   "lbFile": "0757d514-a41d-4142-8fb3-02e94e747494.jpg"
  },
  {
-  "id": "emu-gba-viewpoint",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Viewpoint",
-  "wiki": null,
-  "year": null,
-  "genre": null,
-  "developers": [
-   "In-Cubus"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
- },
- {
   "id": "emu-ps1-viewpoint",
   "platform": "emu",
   "system": "PS1",
@@ -165108,24 +163048,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/5692a758-caec-4228-80aa-5cec74206ed8.jpg",
   "lbFile": "5692a758-caec-4228-80aa-5cec74206ed8.jpg"
- },
- {
-  "id": "emu-ps1-virtuoso",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "Virtuoso",
-  "wiki": null,
-  "year": 1995,
-  "genre": null,
-  "developers": [
-   "Data East"
-  ],
-  "publishers": [
-   "Data East"
-  ],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/0e8157fd-78be-485f-9260-a3e88655cb1f.jpg",
-  "lbFile": "0e8157fd-78be-485f-9260-a3e88655cb1f.jpg"
  },
  {
   "id": "emu-ps1-virus-it-is-aware",
@@ -165890,22 +163812,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/3ffc36dc-03aa-42cf-bf7d-b6a355433abd.jpg",
   "lbFile": "3ffc36dc-03aa-42cf-bf7d-b6a355433abd.jpg"
- },
- {
-  "id": "emu-snes-wacky-races",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "Wacky Races",
-  "wiki": null,
-  "year": null,
-  "genre": "Racing",
-  "developers": [
-   "Eden Entertainment Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-gba-wade-hixton-s-counter-punch",
@@ -170384,22 +168290,6 @@
   "lbFile": "r2_78ddc50f-0791-4600-b2f1-a464028c1457.jpg"
  },
  {
-  "id": "emu-snes-x",
-  "platform": "emu",
-  "system": "SNES",
-  "title": "X",
-  "wiki": null,
-  "year": null,
-  "genre": "Shooter",
-  "developers": [
-   "Argonaut Software"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": "https://images.launchbox-app.com/66a8f1ad-1bb2-4654-93ed-c77abf9130e6.png",
-  "lbFile": "66a8f1ad-1bb2-4654-93ed-c77abf9130e6.png"
- },
- {
   "id": "emu-snes-x-zone",
   "platform": "emu",
   "system": "SNES",
@@ -170682,22 +168572,6 @@
   "releaseType": "Released",
   "image": "https://images.launchbox-app.com/4acfeadd-d221-4cb6-a010-54972c9645d8.jpg",
   "lbFile": "4acfeadd-d221-4cb6-a010-54972c9645d8.jpg"
- },
- {
-  "id": "emu-ps1-x-po-2089-cyber-revolution",
-  "platform": "emu",
-  "system": "PS1",
-  "title": "X-PO: 2089 Cyber-Revolution",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Kalisto Entertainment"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
-  "image": null,
-  "lbFile": null
  },
  {
   "id": "emu-ps1-x2-no-relief",
@@ -171770,22 +169644,6 @@
   ],
   "publishers": [],
   "releaseType": "ROM Hack",
-  "image": null,
-  "lbFile": null
- },
- {
-  "id": "emu-gba-yoshi-game-boy-advance-tech-demo",
-  "platform": "emu",
-  "system": "GBA",
-  "title": "Yoshi Game Boy Advance Tech Demo",
-  "wiki": null,
-  "year": null,
-  "genre": "Platform",
-  "developers": [
-   "Nintendo EAD"
-  ],
-  "publishers": [],
-  "releaseType": "Unreleased",
   "image": null,
   "lbFile": null
  },

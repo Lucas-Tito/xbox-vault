@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .DS_Store
 images/*.tmp
+
+# backups automaticos do save atomico em tools/wikilib.py
+*.json.bak

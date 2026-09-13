@@ -131,6 +131,7 @@ select:focus{border-color:var(--green)}
 .tag.nobc{color:var(--dim2);opacity:.75}
 .tag.plat{background:transparent}
 .tag.emu{color:var(--purple);border-color:rgba(167,123,212,.35);background:rgba(167,123,212,.1)}
+.tag.vaz{color:var(--amber);border-color:rgba(217,164,65,.5);background:rgba(217,164,65,.14)}
 
 .marks{position:absolute;top:8px;right:8px;z-index:3;display:flex;flex-direction:column;gap:6px}
 .own-btn,.wish-btn{
@@ -241,3 +242,13 @@ ul.modos li{color:var(--txt)}
 .det-mc{display:flex;align-items:center;gap:9px;margin:2px 0 14px}
 .det-mc .mc{position:static;min-width:34px;height:34px;font-size:16px;border-radius:6px}
 .det-mc span:last-child{color:var(--dim2);font-size:12.5px}
+
+/* nota do Metacritic que nao e da plataforma do jogo */
+.mc.geral{opacity:.82}
+.mc i{font-style:normal;font-size:9px;vertical-align:super;margin-left:1px;opacity:.8}
+.det-vaz{margin:0 0 14px;padding:10px 12px;font-size:12.5px;line-height:1.5;
+  color:var(--txt);background:rgba(217,164,65,.09);
+  border:1px solid rgba(217,164,65,.32);border-left-width:3px;border-radius:6px}
+.det-vaz b{color:var(--amber)}
+.det-aviso{margin:16px 0 0;padding-top:12px;border-top:1px solid var(--line);
+  color:var(--dim2);font-size:11px;line-height:1.5}

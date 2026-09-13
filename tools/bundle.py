@@ -41,20 +41,31 @@ def load(name, default):
         return json.load(f)
 
 
-def montar(lista_arquivos, tag_arquivos, rotulo):
+def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     """Junta listas + tags e devolve os jogos prontos, com capa local quando existir."""
     games = []
     for fn, label in lista_arquivos:
         lst = load(fn, [])
         print("  %-16s %5d" % (label, len(lst)))
         games.extend(lst)
-    notas = load("metacritic.json", {})
+    notas = {}
+    for arq in ("metacritic.json", "metacritic-indies.json", "metacritic-emu.json"):
+        notas.update(load(arq, {}))
     tags = {}
     for fn in tag_arquivos:
         t = load(fn, {})
         if isinstance(t, list):
             t = {x["id"]: x for x in t if "id" in x}
         tags.update(t)
+    # jogos cancelados que ficaram prontos e vazaram: entram pela curadoria manual
+    # de data/vazados.json, com as tags escritas a mao junto da entrada.
+    for g in (extras or []):
+        t = g.pop("tags", None)
+        if t:
+            tags[g["id"]] = t
+        games.append(g)
+    if extras:
+        print("  %-16s %5d" % ("vazados", len(extras)))
     print("  %-16s %5d" % ("tags", len(tags)))
 
     seen, dupes, tagged, imaged, localed, wide = set(), 0, 0, 0, 0, 0
@@ -88,8 +99,14 @@ def montar(lista_arquivos, tag_arquivos, rotulo):
             g["image"] = None
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         n = notas.get(g["id"])
+        g.pop("mcGeral", None); g.pop("mcPlats", None)
         if n and isinstance(n.get("score"), int):
             g["mc"] = n["score"]
+            if n.get("geral"):
+                # nota que NAO e da plataforma do jogo: o site avisa no popup
+                g["mcGeral"] = True
+                if n.get("plats"):
+                    g["mcPlats"] = n["plats"]
         else:
             g.pop("mc", None)
     com_mc = sum(1 for g in games if g.get("mc"))
@@ -116,7 +133,7 @@ def main():
         [("x360.json", "Xbox 360"), ("xblig.json", "Indie (XBLIG)"),
          ("xbox.json", "Xbox original"), ("homebrew.json", "Homebrew")],
         ["tags-x360.json", "tags-xblig.json", "tags-xbox.json", "tags-homebrew.json"],
-        "principal")
+        "principal", extras=load("vazados.json", {}).get("catalogo", []))
     escrever("db.js", "XBX_DB", {
         "generated": datetime.datetime.now().isoformat(timespec="seconds"),
         "counts": counts, "games": games})

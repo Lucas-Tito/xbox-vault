@@ -13,7 +13,7 @@
   ok('emulacao vem DESLIGADA', emuBox && !emuBox.checked);
   ok('subfiltros escondidos', $('#g-emu').hidden);
   const base = window.XBX_DB.games.length;
-  ok('catalogo base sem emulacao', base === 6900, base + ' jogos');
+  ok('catalogo base sem emulacao', base > 6000 && !window.XBX_EMU, base + ' jogos');
 
   // liga -> deve baixar sob demanda
   emuBox.checked = true; fire(emuBox);
@@ -22,22 +22,43 @@
   await until(()=>cards().length>0); await wait(600);
   ok('subfiltros aparecem', !$('#g-emu').hidden);
 
-  // por padrao so oficiais
+  // por padrao so oficiais + os cancelados que vazaram jogaveis
   ok('filtro de tipo comeca em oficiais', $('#f-reltype').value === 'oficial');
   const exib = +$('#s-shown').textContent.replace(/\D/g,'');
-  const oficiais = window.XBX_EMU.games.filter(g=>g.releaseType==='Released').length;
-  ok('so oficiais por padrao', exib === 6900 + oficiais, exib + ' = 6900 + ' + oficiais);
+  const normal = g=>g.releaseType==='Released'||g.releaseType==='Vazado';
+  const oficiais = window.XBX_EMU.games.filter(normal).length;
+  ok('oficiais + vazados por padrao', exib === base + oficiais, exib + ' = ' + base + ' + ' + oficiais);
+
+  // cancelados sem build jogavel foram removidos do catalogo
+  const naoLancados = window.XBX_EMU.games.filter(g=>g.releaseType==='Unreleased').length;
+  ok('nenhum cancelado injogavel sobrou', naoLancados === 0, naoLancados + ' Unreleased');
+  const vaz = window.XBX_EMU.games.filter(g=>g.releaseType==='Vazado');
+  ok('vazados jogaveis presentes', vaz.length === 4, vaz.map(g=>g.title).join(', '));
+  ok('todo vazado explica o motivo', vaz.every(g=>g.nota && g.fonte));
+  ok('vazados aparecem no filtro padrao',
+     vaz.every(g=>window.XBX_EMU.games.filter(normal).indexOf(g) >= 0));
+  const ge = window.XBX_DB.games.find(g=>g.id==='x360-goldeneye-007-xbla');
+  ok('GoldenEye do XBLA no catalogo principal', !!ge && ge.releaseType === 'Vazado',
+     ge ? ge.title + ' ' + ge.year : 'ausente');
+
+  // opcao dedicada: mostra os 4 da emulacao + o do 360
+  $('#f-reltype').value='vaz'; fire($('#f-reltype')); await wait(700);
+  ok('filtro "so vazados" mostra so eles',
+     +$('#s-shown').textContent.replace(/\D/g,'') === vaz.length + 1,
+     $('#s-shown').textContent);
+  ok('card de vazado tem etiqueta', cards().some(c=>c.textContent.includes('VAZADO')));
+  $('#f-reltype').value='oficial'; fire($('#f-reltype')); await wait(700);
 
   $('#f-reltype').value='all'; fire($('#f-reltype')); await wait(700);
   ok('"tudo" inclui ROM hacks',
-     +$('#s-shown').textContent.replace(/\D/g,'') === 6900 + window.XBX_EMU.games.length);
+     +$('#s-shown').textContent.replace(/\D/g,'') === base + window.XBX_EMU.games.length);
 
   // sub-filtro por sistema
   $('#f-reltype').value='oficial'; fire($('#f-reltype'));
   $$('.f-plat').forEach(c=>{c.checked = c.value==='emu'; fire(c);}); await wait(800);
   const sn = $$('.f-sys').find(c=>c.value==='SNES');
   sn.checked=true; fire(sn); await wait(800);
-  const so = window.XBX_EMU.games.filter(g=>g.system==='SNES'&&g.releaseType==='Released').length;
+  const so = window.XBX_EMU.games.filter(g=>g.system==='SNES'&&normal(g)).length;
   ok('filtro por sistema (SNES)', +$('#s-shown').textContent.replace(/\D/g,'') === so, so + ' SNES oficiais');
   ok('cards mostram o sistema', cards()[0].textContent.includes('SNES'));
 

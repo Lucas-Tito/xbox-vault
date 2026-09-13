@@ -66,7 +66,20 @@ function esc(s) {
 /* índice de busca pré-computado (título + devs + publishers) */
 function prepararJogo(g) {
   g._s = norm([g.title, (g.developers || []).join(" "), (g.publishers || []).join(" ")].join(" "));
+  g._c = g._s.replace(/[^a-z0-9]/g, "");   // sem espaço nem pontuação, para busca tolerante
   g._t = g.tags || {};
+}
+
+/* Busca tolerante: verifica se as letras da consulta aparecem NA ORDEM, mesmo
+   com outras no meio. Resolve o caso de errar uma letra em nome técnico --
+   "usbsecpatch" acha "UsbdSecPatch". Só entra em ação quando a busca literal
+   não achou nada, e só com 5+ caracteres, senão pescaria meio catálogo. */
+function subsequencia(agulha, palheiro) {
+  var i = 0;
+  for (var j = 0; j < palheiro.length && i < agulha.length; j++) {
+    if (palheiro.charCodeAt(j) === agulha.charCodeAt(i)) i++;
+  }
+  return i === agulha.length;
 }
 GAMES.forEach(prepararJogo);
 
@@ -112,7 +125,9 @@ function maxPlayers(g, scope) {
 
 function match(g, skip) {
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
-  if (F.q && g._s.indexOf(F.q) < 0) return false;
+  if (F.q) {
+    if (g._s.indexOf(F.q) < 0 && !(F.qFrouxa && subsequencia(F.qc, g._c))) return false;
+  }
 
   // "não quero" tira o jogo de todas as listas, menos da lista de escondidos
   if (F.own === "hide") { if (!escondidos.has(g.id)) return false; }
@@ -144,10 +159,15 @@ function match(g, skip) {
   }
   if (F.bc === "yes" && g.platform !== "xbox") return false;
 
+  // Vale para o catálogo inteiro, não só emulação: o GoldenEye do XBLA é um
+  // vazado do próprio 360.
+  if (F.relType === "vaz" && g.releaseType !== "Vazado") return false;
   if (g.platform === "emu") {
     if (F.systems.length && F.systems.indexOf(g.system) < 0) return false;
     // "oficial" = lançamento licenciado; o resto são ROM hacks, homebrew, etc.
-    if (F.relType === "oficial" && g.releaseType !== "Released") return false;
+    // "Vazado" entra junto: é jogo que ficou pronto, não protótipo pela metade.
+    if (F.relType === "oficial" && g.releaseType !== "Released" &&
+        g.releaseType !== "Vazado") return false;
     if (F.relType === "hack" && g.releaseType !== "ROM Hack") return false;
     if (F.relType === "hb" && g.releaseType !== "Homebrew") return false;
   }
@@ -158,6 +178,15 @@ function match(g, skip) {
 
 function filtered(skip) {
   var out = [];
+  if (F.q) {
+    F.qc = F.q.replace(/[^a-z0-9]/g, "");
+    F.qFrouxa = false;
+    var exato = 0;
+    for (var k = 0; k < GAMES.length && exato < 1; k++) {
+      if (GAMES[k]._s.indexOf(F.q) >= 0) exato++;
+    }
+    F.qFrouxa = exato === 0 && F.qc.length >= 5;   // só se o literal não achou nada
+  }
   for (var i = 0; i < GAMES.length; i++) if (match(GAMES[i], skip)) out.push(GAMES[i]);
   return out;
 }
@@ -204,6 +233,10 @@ function tagsHtml(g) {
       ? '<span class="tag bc">RETRO ✓</span>'
       : '<span class="tag nobc">RETRO ✗</span>');
   }
+  if (g.releaseType === "Vazado") {
+    h.push('<span class="tag vaz" title="Cancelado antes de sair, mas ficou pronto e ' +
+      'a build vazou — dá para jogar">VAZADO</span>');
+  }
   var f = g.flags || {};
   if (f.xbla) h.push('<span class="tag">XBLA</span>');
   if (f.kinect) h.push('<span class="tag">KINECT</span>');
@@ -224,7 +257,10 @@ window.XBXimgErr = function (im) {
 
 function cardHtml(g) {
   var mc = typeof g.mc === "number"
-    ? '<span class="mc ' + mcClasse(g.mc) + '" title="Metacritic">' + g.mc + "</span>" : "";
+    ? '<span class="mc ' + mcClasse(g.mc) + (g.mcGeral ? " geral" : "") + '" title="' +
+      (g.mcGeral ? "Metacritic de outra plataforma" : "Metacritic") + '">' + g.mc +
+      (g.mcGeral ? '<i>*</i>' : "") + "</span>"
+    : "";
   var img = g.image
     ? '<img loading="lazy" src="' + esc(g.image) + '"' +
       (g.imageRemote ? ' data-fb="' + esc(g.imageRemote) + '"' : "") +
@@ -412,6 +448,7 @@ function detalheHtml(g) {
     linha("Ano", g.year || null) +
     linha("Gênero", esc(g.genre || "")) +
     linha("Categoria", g.category ? esc(g.category) : null) +
+    linha("Situação", g.releaseType === "Vazado" ? "cancelado — build vazada, jogável" : null) +
     linha("Console", g.console ? esc(g.console === "x360" ? "Xbox 360"
           : g.console === "both" ? "Xbox e Xbox 360" : "Xbox original") : null) +
     linha("Desenvolvedora", esc((g.developers || []).join(", "))) +
@@ -446,6 +483,7 @@ function detalheHtml(g) {
   if (g.wiki) links.push('<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(g.wiki) +
     '" target="_blank" rel="noopener">Wikipédia ↗</a>');
   if (g.url) links.push('<a href="' + esc(g.url) + '" target="_blank" rel="noopener">Página do projeto ↗</a>');
+  if (g.fonte) links.push('<a href="' + esc(g.fonte) + '" target="_blank" rel="noopener">Fonte do cancelamento ↗</a>');
 
   return '<div class="det">' +
     '<div class="det-capa">' + capa + "</div>" +
@@ -454,8 +492,11 @@ function detalheHtml(g) {
       '<div class="det-sub">' + esc([PLATNOME[g.platform], g.year, g.genre || g.category]
         .filter(Boolean).join(" · ")) + "</div>" +
       (typeof g.mc === "number"
-        ? '<div class="det-mc"><span class="mc ' + mcClasse(g.mc) + '">' + g.mc + "</span>" +
-          "<span>Metacritic</span></div>" : "") +
+        ? '<div class="det-mc"><span class="mc ' + mcClasse(g.mc) +
+          (g.mcGeral ? " geral" : "") + '">' + g.mc + (g.mcGeral ? '<i>*</i>' : "") + "</span>" +
+          "<span>Metacritic" + (g.mcGeral ? " *" : "") + "</span></div>" : "") +
+      (g.releaseType === "Vazado" && g.nota
+        ? '<p class="det-vaz"><b>Cancelado, mas jogável.</b> ' + esc(g.nota) + "</p>" : "") +
       (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
       '<div class="det-acoes">' +
         '<button class="btn ' + (o ? "primary" : "") + '" data-mark="own">' +
@@ -472,6 +513,13 @@ function detalheHtml(g) {
       "<h4>Ficha</h4>" + ficha +
       lanc +
       (links.length ? '<div class="det-links">' + links.join("") + "</div>" : "") +
+      (g.mcGeral
+        ? '<p class="det-aviso">* Esta nota do Metacritic não é da versão de ' +
+          esc(PLATNOME[g.platform] || g.platform) + '. Poucos jogos indie tiveram resenhas ' +
+          'de crítica suficientes para gerar uma nota própria no Xbox 360, então mostramos a ' +
+          'nota geral do jogo' +
+          (g.mcPlats ? ' (plataformas: ' + esc(g.mcPlats) + ')' : '') + '.</p>'
+        : "") +
     "</div></div>";
 }
 

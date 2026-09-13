@@ -1184,21 +1184,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-2x1-nes-master-system": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-3-game-pack-candy-land-chutes-ladders-original-memory-game": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -1545,21 +1530,6 @@
   "confidence": "high"
  },
  "emu-ps1-40-winks": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-4x4-off-roaders": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -3029,37 +2999,7 @@
   "source": "launchbox-sem-maxplayers",
   "confidence": "low"
  },
- "emu-gba-adventures-of-mr-bean": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-snes-adventures-of-yogi-bear": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-aeon-flux": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -3253,21 +3193,6 @@
   "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-ps1-aftershock": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-gba-agassi-tennis-generation": {
   "singlePlayer": true,
@@ -5055,21 +4980,6 @@
   "confidence": "high"
  },
  "emu-snes-animaniacs": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-animaniacs-hollywood-hypnotics": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -7064,21 +6974,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-atmosfear": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-atomic-betty": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -7650,21 +7545,6 @@
   "confidence": "low"
  },
  "emu-ps1-baby-universe": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-baby-s-day-out": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -8264,21 +8144,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-baldur-s-gate": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-gba-baldur-s-gate-dark-alliance": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -8669,21 +8534,6 @@
   "source": "launchbox-sem-maxplayers",
   "confidence": "low"
  },
- "emu-snes-barbie-vacation-adventure": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-bardysh-kromeford-no-juunin": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -9015,21 +8865,6 @@
   "confidence": "high"
  },
  "emu-ps1-bastard-utsuro-naru-kamigami-no-utsuwa": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-batman": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -9809,21 +9644,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-battletoads": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-battletoads-double-dragon": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -9990,21 +9810,6 @@
   "confidence": "high"
  },
  "emu-snes-beavis-and-butt-head": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": true,
-  "coopLocal": true,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-beavis-and-butt-head-do-hollywood": {
   "singlePlayer": true,
   "multiplayerLocal": true,
   "multiplayerOnline": false,
@@ -10541,21 +10346,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-billy-hatcher-hyper-shoot": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -11279,21 +11069,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-black-out": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-black-matrix": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -11684,21 +11459,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-blockbuster-playstation-challenge": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-blockids": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -11818,21 +11578,6 @@
   "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-gba-blue-angelo-angels-from-the-shrine": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-blue-breaker-burst-bishou-o-anata-to": {
   "singlePlayer": true,
@@ -11955,21 +11700,6 @@
   "confidence": "high"
  },
  "emu-ps1-bob-the-builder-can-we-fix-it": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-bobby-s-world": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -12688,21 +12418,6 @@
   "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-ps1-bounty-arms": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-bounty-hunter-sarah-holy-mountain-no-teiou": {
   "singlePlayer": true,
@@ -13785,21 +13500,6 @@
   "confidence": "high"
  },
  "emu-snes-brutal-paws-of-fury": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-bubble-bobble-2": {
   "singlePlayer": true,
   "multiplayerLocal": true,
   "multiplayerOnline": false,
@@ -19499,21 +19199,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-commandos-2": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-community-pom": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -19560,21 +19245,6 @@
   "confidence": "high"
  },
  "emu-snes-congo-s-caper": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-congo-the-movie-the-secret-of-zinj": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -19830,21 +19500,6 @@
   "confidence": "high"
  },
  "emu-snes-cool-world": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-cooly-skunk": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -20355,21 +20010,6 @@
   "confidence": "high"
  },
  "emu-snes-crash-bandicoot-and-the-retro-dimension-2-the-crystal-hunt": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-crash-bandicoot-prototype": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -21734,21 +21374,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-d-zero": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-dbz-dead-ball-zone": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -23039,36 +22664,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-dark-eden": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-dark-empire": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-snes-dark-half": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -23924,21 +23519,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-demons-of-asteborg-dx": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-dengeki-construction-ochige-yarouze": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -24554,21 +24134,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-deuce-heart-castle": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-devicereign": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -24791,21 +24356,6 @@
   "maxPlayersLocal": 4,
   "maxPlayersOnline": 0,
   "maxPlayers": 4,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-diddy-kong-pilot": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -27224,21 +26774,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-donkey-kong-plus": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-snes-donkey-kong-jumpman-returns": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -28934,36 +28469,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-dream-team-basketball": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-dream-land-of-giants": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-dreams": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -29428,21 +28933,6 @@
   "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-gba-dune-ornithopter-assault": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-dungeon-creator": {
   "singlePlayer": true,
@@ -31754,21 +31244,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-eurit": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-euro-demo-02-01-ger": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -33506,21 +32981,6 @@
   "maxPlayersLocal": 4,
   "maxPlayersOnline": 0,
   "maxPlayers": 4,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-falcon": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -36074,21 +35534,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-fire-eaters-zero-bandits": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-gba-fire-emblem": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -36779,21 +36224,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-firearm": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-firebugs": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -36836,21 +36266,6 @@
   "maxPlayersLocal": 4,
   "maxPlayersOnline": 0,
   "maxPlayers": 4,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-fireteam-rogue": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -38684,21 +38099,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-fuzz-rocket": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-g-darius": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -38743,21 +38143,6 @@
   "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-gba-g-i-joe-a-real-american-hero": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-g-o-d-pure-growth-or-devolution": {
   "singlePlayer": true,
@@ -38861,21 +38246,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-gp-1-racing": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -40064,21 +39434,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-game-boy-advance-video-sonic-x-volume-2": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-gba-game-boy-advance-video-spongebob-squarepants-volume-1": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -40843,21 +40198,6 @@
   "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-gba-gearhead-garage-adventure": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-gegege-no-kitarou-gyakushuu-youkai-daikessen": {
   "singlePlayer": true,
@@ -42449,21 +41789,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-golf-daisuki-o-b-club": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 4,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 4,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-golgo-13-vol-2-mienai-guntai": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -42525,21 +41850,6 @@
   "confidence": "high"
  },
  "emu-gba-goodboy-galaxy": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-goodboy-galaxy-demo": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -46110,21 +45420,6 @@
   "confidence": "high"
  },
  "emu-gba-hi-hi-puffy-amiyumi-kaznapped": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-hi-hi-puffy-amiyumi-puffy-ami-yumi-and-the-manga-madman": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -51554,37 +50849,7 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-jeff-s-shoot-em-up": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-jelly-boy": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-jelly-boy-2": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -56339,21 +55604,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-kien": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-kiganjou": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -56501,21 +55751,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-killing-time": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -61124,21 +60359,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-lobo": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-lock-on": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -63194,21 +62414,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-madden-nfl-96": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-madden-nfl-97": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -63328,21 +62533,6 @@
   "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-ps1-magic-castle": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-snes-magic-sword": {
   "singlePlayer": true,
@@ -64244,21 +63434,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-mandrake-the-magician": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-manga-ka-debut-monogatari-akogare-manga-ka-ikusei-game": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -64273,21 +63448,6 @@
   "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-ps1-maniac-moons": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-manic-game-girl": {
   "singlePlayer": true,
@@ -64781,21 +63941,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-mario-kart-xxl": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -66689,21 +65834,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-mechanic-mechanica": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-gba-medabots-ax-metabee-ver": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -68354,21 +67484,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-mer-wars": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-meremanoid": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -68726,21 +67841,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-metal-slug-super-vehicle-001": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -69359,21 +68459,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-mick-mack-as-the-global-gladiators": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-mickey-mania-the-timeless-adventures-of-mickey-mouse": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -69416,21 +68501,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-mickey-s-playtown-adventure-a-day-of-discovery": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -72329,21 +71399,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-motocross-challenge": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-motocross-mania": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -72915,21 +71970,6 @@
   "confidence": "high"
  },
  "emu-gba-mugenborg": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-muhammad-ali-heavyweight-boxing": {
   "singlePlayer": true,
   "multiplayerLocal": true,
   "multiplayerOnline": false,
@@ -73769,21 +72809,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-nba-2-ball": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-snes-nba-all-star-challenge": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -74115,21 +73140,6 @@
   "confidence": "high"
  },
  "emu-snes-nba-jam-tournament-edition-double-z-mod": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": true,
-  "coopLocal": true,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-nba-jam-xxx": {
   "singlePlayer": true,
   "multiplayerLocal": true,
   "multiplayerOnline": false,
@@ -74880,21 +73890,6 @@
   "confidence": "low"
  },
  "emu-snes-nfl-football": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-nfl-football-proto": {
   "singlePlayer": true,
   "multiplayerLocal": true,
   "multiplayerOnline": false,
@@ -78044,21 +77039,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-nintendo-campus-challenge-92": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-nintendo-powerfest-94": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -78765,21 +77745,6 @@
   "confidence": "high"
  },
  "emu-gba-notenogram": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-noughts-crosses": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -82019,21 +80984,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-overstorm": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-oyaji-no-jikan-nechan-mahjong-de-shoubu-ya": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -84869,21 +83819,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-perplexus-diodomin": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-persona-2-eternal-punishment": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -85950,21 +84885,6 @@
   "confidence": "high"
  },
  "emu-ps1-pizza-hut-disc-2": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-plane-crazy": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -87060,36 +85980,6 @@
   "confidence": "high"
  },
  "emu-gba-pocket-meat": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-pocket-monsters-diamond-pocket-monsters-pearl-manaphy-present-campaign-senyou-cartridge": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-pocket-monsters-diamond-tomodachi-to-issho-ni-present-campaign-senyou-cartridge": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -93494,21 +92384,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-power-slide": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-power-soukoban": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -93626,21 +92501,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-powerfest-94-super-mario-kart": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -93866,21 +92726,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-prime": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -94949,21 +93794,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-puggsy": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-pukupuku-tennen-kairanban": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -95459,21 +94289,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-quake": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-quake-ii": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -95591,36 +94406,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-quik-the-thunder-rabbit": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-quinty": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -95966,21 +94751,6 @@
   "maxPlayersLocal": 0,
   "maxPlayersOnline": 0,
   "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-rhi-roller-hockey-95": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -96434,21 +95204,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-rally-the-final-round-of-the-world-rally-championship": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-ramen-hashi": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -96629,21 +95384,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-rap-basketball": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-rap-jam-volume-one": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -96810,21 +95550,6 @@
   "confidence": "high"
  },
  "emu-ps1-rayman": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-rayman": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -97123,21 +95848,6 @@
   "maxPlayers": 0,
   "source": "launchbox-sem-maxplayers",
   "confidence": "low"
- },
- "emu-snes-reactor": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
  },
  "emu-ps1-ready-2-rumble-boxing": {
   "singlePlayer": true,
@@ -97710,36 +96420,6 @@
   "confidence": "high"
  },
  "emu-ps1-resident-evil-0-demake": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-resident-evil-1-5": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-resident-evil-2": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -98789,21 +97469,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-road-runner-ii-wile-e-s-revenge": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-road-runner-s-death-valley-rally": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -98953,21 +97618,6 @@
   "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-gba-robocop": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-snes-robocop-3": {
   "singlePlayer": true,
@@ -101069,36 +99719,6 @@
   "source": "launchbox-sem-maxplayers",
   "confidence": "low"
  },
- "emu-snes-snes-burn-in-test-cartridge": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-snsp-aging-cassette": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-snes-sos": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -102704,21 +101324,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-scooby-doo-night-of-100-frights": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-gba-scooby-doo-unmasked": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -102840,21 +101445,6 @@
   "confidence": "high"
  },
  "emu-ps1-sea-bass-fishing-2": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-sea-boy": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -104040,21 +102630,6 @@
   "confidence": "high"
  },
  "emu-ps1-shadow-and-shadow": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-shadowhawk": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -105926,21 +104501,6 @@
   "maxPlayersLocal": 0,
   "maxPlayersOnline": 0,
   "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-shooter": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": true,
-  "coopLocal": true,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -109544,21 +108104,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-snake-blasters": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-snakes": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -110789,21 +109334,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-sound-factory": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-sound-novel-evolution-1-otogirisou-sosei-hen": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -111509,21 +110039,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-special-tee-shot": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-spectral-blade": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -111750,21 +110265,6 @@
   "confidence": "high"
  },
  "emu-snes-speedy-gonzales-los-gatos-bandidos": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-spellcraft-aspects-of-valor": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -112260,21 +110760,6 @@
   "confidence": "high"
  },
  "emu-ps1-spot-goes-to-hollywood": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-spot-goes-to-hollywood": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -113249,21 +111734,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-starcon": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-starborders": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -113636,21 +112106,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-steven-seagal-is-the-final-option": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -116144,21 +114599,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-super-donkey": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-super-double-dragon": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -116768,21 +115208,6 @@
   "coopOnline": false,
   "versus": false,
   "versusLocal": false,
-  "maxPlayersLocal": 4,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 4,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-super-full-metal-planet": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
   "maxPlayersLocal": 4,
   "maxPlayersOnline": 0,
   "maxPlayers": 4,
@@ -117884,21 +116309,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-super-mario-bros": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-super-mario-bros-1x": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -118076,21 +116486,6 @@
   "maxPlayersLocal": 0,
   "maxPlayersOnline": 0,
   "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-super-mario-bros-maker": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -118961,21 +117356,6 @@
   "maxPlayersLocal": 0,
   "maxPlayersOnline": 0,
   "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-super-mario-world-prototype": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -123404,21 +121784,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-super-shadow-of-the-beast": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-super-sheffy-world-2-the-quest-for-5-shells": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -124170,21 +122535,6 @@
   "confidence": "high"
  },
  "emu-snes-super-turrican-director-s-cut": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-super-tux": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -125414,36 +123764,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-superman": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
- "emu-snes-superman": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-superman-returns-fortress-of-solitude": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -125880,21 +124200,6 @@
   "confidence": "high"
  },
  "emu-gba-sylvanian-families-yousei-no-stick-to-fushigi-no-ki-marron-inu-no-onnanoko": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-sylvester-tweety": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -127305,21 +125610,6 @@
   "confidence": "high"
  },
  "emu-snes-tarzan": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-tarzan-lord-of-the-jungle": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -130499,21 +128789,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-the-haunted-mansion": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-the-heiwa-otenki-studio": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -132269,21 +130544,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-the-phantom-the-ghost-who-walks": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-gba-the-pinball-of-the-dead": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -132806,21 +131066,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-the-shadow": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -134429,21 +132674,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-time-killers": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-time-pilot": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -135659,21 +133889,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-tom-vs-jerry-the-chase-is-on": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-tom-and-jerry": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -136409,21 +134624,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-ps1-torc-legend-of-the-ogre-crown": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-snes-toride": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -136556,21 +134756,6 @@
   "maxPlayersLocal": 0,
   "maxPlayersOnline": 0,
   "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-total-football": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": true,
-  "coopLocal": true,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 5,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 5,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -137158,21 +135343,6 @@
   "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-gba-travis-pastrana-s-pro-moto-x": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-snes-treasure-conflix": {
   "singlePlayer": true,
@@ -138029,21 +136199,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-turok-advance": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-gba-turok-evolution": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -138476,21 +136631,6 @@
   "maxPlayersLocal": 2,
   "maxPlayersOnline": 0,
   "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-tyrian-2000": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -139784,21 +137924,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-universal-soldier": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-ps1-universal-virtua-pachi-slot-hisshou-kouryakuhou": {
   "singlePlayer": true,
   "multiplayerLocal": true,
@@ -139856,21 +137981,6 @@
   "maxPlayersLocal": 0,
   "maxPlayersOnline": 0,
   "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-untitled-racing-game": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
  },
@@ -140789,21 +138899,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-gba-viewpoint": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
- },
  "emu-ps1-viewpoint": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -141163,21 +139258,6 @@
   "maxPlayers": 2,
   "source": "launchbox",
   "confidence": "high"
- },
- "emu-ps1-virtuoso": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox-sem-maxplayers",
-  "confidence": "low"
  },
  "emu-ps1-virus-it-is-aware": {
   "singlePlayer": true,
@@ -141810,21 +139890,6 @@
   "confidence": "high"
  },
  "emu-ps1-wacky-races": {
-  "singlePlayer": true,
-  "multiplayerLocal": true,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": true,
-  "versusLocal": true,
-  "maxPlayersLocal": 2,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 2,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-snes-wacky-races": {
   "singlePlayer": true,
   "multiplayerLocal": true,
   "multiplayerOnline": false,
@@ -145634,21 +143699,6 @@
   "source": "launchbox",
   "confidence": "high"
  },
- "emu-snes-x": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
  "emu-snes-x-zone": {
   "singlePlayer": true,
   "multiplayerLocal": false,
@@ -145875,21 +143925,6 @@
   "confidence": "high"
  },
  "emu-gba-x-men-the-official-game": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-ps1-x-po-2089-cyber-revolution": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,
@@ -146805,21 +144840,6 @@
   "confidence": "high"
  },
  "emu-snes-yosamikalo": {
-  "singlePlayer": true,
-  "multiplayerLocal": false,
-  "multiplayerOnline": false,
-  "coop": false,
-  "coopLocal": false,
-  "coopOnline": false,
-  "versus": false,
-  "versusLocal": false,
-  "maxPlayersLocal": 0,
-  "maxPlayersOnline": 0,
-  "maxPlayers": 0,
-  "source": "launchbox",
-  "confidence": "high"
- },
- "emu-gba-yoshi-game-boy-advance-tech-demo": {
   "singlePlayer": true,
   "multiplayerLocal": false,
   "multiplayerOnline": false,

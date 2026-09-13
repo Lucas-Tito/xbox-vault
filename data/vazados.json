@@ -1,0 +1,73 @@
+{
+  "_doc": [
+    "Curadoria manual: jogos CANCELADOS que ficaram prontos (ou a poucos ajustes disso) e",
+    "cujo build vazou, de modo que da para jogar hoje. Cada entrada tem fonte na Wikipedia.",
+    "Cancelado que nao da para jogar NAO entra aqui -- build_emu.py descarta tudo que o",
+    "LaunchBox marca como ReleaseType=Unreleased, menos o que estiver listado em 'emu'.",
+    "Excluidos de proposito, com o motivo: Baby's Day Out (SNES) -- a ROM de SNES esta",
+    "perdida, so sobrou prototipo de Genesis; Resident Evil 1.5 -- build ~40% pronta;",
+    "Diddy Kong Pilot -- modos de jogo nao implementados, virou Banjo-Pilot; Time Killers",
+    "(SNES) -- cancelado cedo, quem ficou pronto foi a versao de Genesis; Baldur's Gate",
+    "(PS1) e Crash Bandicoot: Prototype -- prototipos incompletos.",
+    "Para entrar aqui: precisa de fonte dizendo que a build existente e completa/jogavel."
+  ],
+  "emu": [
+    {
+      "id": "emu-ps1-thrill-kill",
+      "year": 1998,
+      "nota": "Estava 99% pronto quando a EA cancelou por causa da violencia, semanas antes do lancamento. A ISO vazou e e jogavel inteira.",
+      "fonte": "https://en.wikipedia.org/wiki/Thrill_Kill"
+    },
+    {
+      "id": "emu-snes-batman-revenge-of-the-joker",
+      "year": 1992,
+      "nota": "A versao de Super Nintendo foi concluida mas nunca lancada oficialmente; a ROM apareceu online anos depois.",
+      "fonte": "https://en.wikipedia.org/wiki/Batman:_Return_of_the_Joker"
+    },
+    {
+      "id": "emu-snes-mr-tuff",
+      "title": "Mr. Tuff",
+      "year": 1994,
+      "nota": "Terminado para sair em 1994 e engavetado. Duas ROMs de prototipo vazaram entre 2007 e 2022 e o jogo acabou publicado em cartucho em 2023.",
+      "fonte": "https://en.wikipedia.org/wiki/Mr._Tuff"
+    },
+    {
+      "id": "emu-gba-flashback-legends",
+      "year": 2002,
+      "nota": "Cancelado com a falencia da Delphine no fim de 2002. O prototipo que vazou (21/06/2002) tem os 16 fases do jogo, so com pequenos bugs.",
+      "fonte": "https://en.wikipedia.org/wiki/Fade_to_Black_(video_game)"
+    }
+  ],
+  "catalogo": [
+    {
+      "id": "x360-goldeneye-007-xbla",
+      "platform": "x360",
+      "title": "GoldenEye 007 (XBLA)",
+      "wiki": "GoldenEye 007 (1997 video game)",
+      "year": 2008,
+      "genre": "First-person shooter",
+      "developers": ["Rare", "4J Studios"],
+      "publishers": ["Microsoft Game Studios"],
+      "flags": { "xbla": true, "xblig": false, "dl": true, "kinect": null,
+                 "stereo3d": false, "xboxOne": false },
+      "releaseType": "Vazado",
+      "nota": "Remaster do GoldenEye do Nintendo 64 feito pela Rare com a 4J Studios para o Xbox Live Arcade. Faltavam dois meses de trabalho quando Nintendo, MGM e Microsoft nao chegaram a um acordo de licenciamento e o projeto morreu. Em 2021 vazou uma ROM quase final e jogavel, com graficos em 60 fps e a opcao de alternar para o visual original.",
+      "fonte": "https://en.wikipedia.org/wiki/GoldenEye_007_(1997_video_game)",
+      "tags": {
+        "singlePlayer": true,
+        "multiplayerLocal": true,
+        "multiplayerOnline": false,
+        "coop": false,
+        "coopLocal": false,
+        "coopOnline": false,
+        "versus": true,
+        "versusLocal": true,
+        "maxPlayersLocal": 4,
+        "maxPlayersOnline": 0,
+        "maxPlayers": 4,
+        "source": "manual-vazados",
+        "confidence": "high"
+      }
+    }
+  ]
+}

@@ -116,6 +116,18 @@ def main():
         })
         tg[gid] = tags(d)
 
+    # O LaunchBox marca de "Unreleased" tanto jogo que ficou pronto e vazou quanto
+    # prototipo pela metade. Fica so a lista curada a mao em data/vazados.json.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import aplica_vazados
+    jogos, tg, _ = aplica_vazados.aplicar(jogos, tg)
+    vivos = {g["id"] for g in jogos}
+    stat["SNES"] = sum(1 for g in jogos if g["system"] == "SNES")
+    stat["GBA"] = sum(1 for g in jogos if g["system"] == "GBA")
+    stat["PS1"] = sum(1 for g in jogos if g["system"] == "PS1")
+    stat["com_capa"] = sum(1 for g in jogos if g.get("lbFile"))
+    stat["com_ano"] = sum(1 for g in jogos if g.get("year"))
+
     os.makedirs(os.path.join(ROOT, "data"), exist_ok=True)
     for nome, obj in [("emu.json", jogos), ("tags-emu.json", tg)]:
         p = os.path.join(ROOT, "data", nome)
@@ -126,8 +138,8 @@ def main():
     print("  com capa %d (%.0f%%) | com ano %d (%.0f%%)" %
           (stat["com_capa"], stat["com_capa"] / len(jogos) * 100,
            stat["com_ano"], stat["com_ano"] / len(jogos) * 100))
-    print("  por tipo: " + ", ".join("%s %d" % (k[5:], v) for k, v in stat.items()
-                                     if k.startswith("tipo:")))
+    tipos = collections.Counter(g["releaseType"] for g in jogos)
+    print("  por tipo: " + ", ".join("%s %d" % (k, v) for k, v in sorted(tipos.items())))
     mult = sum(1 for v in tg.values() if v["multiplayerLocal"])
     coop = sum(1 for v in tg.values() if v["coop"])
     print("  multiplayer local %d | co-op %d | confianca alta %d" %

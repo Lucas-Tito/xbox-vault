@@ -82,6 +82,21 @@
     } else ok('import soma ids validos', false, 'dialogo ausente');
 
 
+    // ---- busca tolerante a erro de uma letra ----
+    $('#q').value = 'usbsecpatch'; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+    await until(() => cards().length > 0, 6000); await wait(300);
+    ok('busca tolerante acha UsbdSecPatch',
+       cards().some(c => c.textContent.includes('UsbdSecPatch')),
+       cards().length + ' resultado(s)');
+    $('#q').value = 'xexmenu'; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+    await until(() => cards().length > 0, 6000); await wait(300);
+    ok('busca exata continua funcionando', cards().some(c => c.textContent.includes('XeXMenu')));
+    $('#q').value = 'zzzqqqxyw'; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+    await wait(600);
+    ok('busca sem resultado continua vazia', cards().length === 0, cards().length + ' cards');
+    $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+    await until(() => cards().length > 50, 8000); await wait(300);
+
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
     dcard.querySelector('.thumb').click();
