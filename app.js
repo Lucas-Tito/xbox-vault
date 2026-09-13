@@ -511,6 +511,52 @@ function galeriaHtml(g) {
   return '<div class="shots">' + h.join("") + "</div>";
 }
 
+function kb(v) { return v >= 1024 ? (v / 1024).toFixed(1) + " MB" : v + " KB"; }
+
+function horas(v) {
+  if (typeof v !== "number") return null;
+  if (v < 1) return Math.round(v * 60) + " min";
+  var h = Math.floor(v), m = Math.round((v - h) * 60);
+  return h + "h" + (m ? " " + m + "min" : "");
+}
+
+/* Tempo de jogo. Vem de data/tempo.json, preenchido a mao -- ver o cabecalho de
+   la para o porque de nao ser coletado automaticamente. */
+function tempoHtml(g) {
+  var t = g.tempo;
+  if (!t) return "";
+  var li = [];
+  [["main", "História principal"], ["plus", "Principal + extras"],
+   ["cem", "Completar 100%"]].forEach(function (par) {
+    var v = horas(t[par[0]]);
+    if (v) li.push('<li><span>' + par[1] + "</span><b>" + esc(v) + "</b></li>");
+  });
+  if (!li.length) return "";
+  return "<h4>Tempo de jogo</h4><ul class=\"tempo\">" + li.join("") + "</ul>" +
+    (t.fonte === "aproximado"
+      ? '<p class="nota">Valor aproximado, preenchido à mão — corrija em data/tempo.json.</p>'
+      : "");
+}
+
+/* Lista de Title Updates, recolhida. Só versão, data e tamanho: é para saber o
+   que existiu, não para baixar -- por isso nem hash nem endereço saem do
+   coletor. O Xbox Unity não guarda changelog, e a Microsoft nunca publicou um
+   para a maioria dos patches do 360, então não há o que cada um mudou. */
+function tuHtml(g) {
+  var t = g.tu;
+  if (!t || !t.n || !(t.lista || []).length) return "";
+  var linhas = t.lista.map(function (u) {
+    return "<li><b>v" + u.v + "</b>" +
+      (u.d ? '<span class="tu-d">' + esc(fmtDate(u.d)) + "</span>" : "") +
+      (u.kb ? '<span class="tu-kb">' + esc(kb(u.kb)) + "</span>" : "") + "</li>";
+  }).join("");
+  return '<details class="tu"><summary>' + t.n +
+    (t.n > 1 ? " atualizações oficiais" : " atualização oficial") +
+    (t.ultima ? " — última v" + t.ultima : "") +
+    (t.data ? " em " + esc(fmtDate(t.data)) : "") +
+    "</summary><ul>" + linhas + "</ul></details>";
+}
+
 function detalheHtml(g) {
   var o = owned.has(g.id), w = wishlist.has(g.id), t = g.tags || {};
   var capa = g.image
@@ -548,17 +594,7 @@ function detalheHtml(g) {
   var extras = [];
   // Title Updates: a Xbox LIVE do 360 foi desligada, entao saber que patch
   // existiu (e que nunca existiu) importa para quem vai montar o console.
-  if (g.tu) {
-    if (g.tu.n) {
-      extras.push(g.tu.n + (g.tu.n > 1 ? " atualizações oficiais" : " atualização oficial") +
-        (g.tu.ultima ? " — última v" + g.tu.ultima : "") +
-        (g.tu.data ? " em " + fmtDate(g.tu.data) : "") +
-        (g.tu.kb ? " (" + (g.tu.kb >= 1024 ? (g.tu.kb / 1024).toFixed(1) + " MB"
-                                            : g.tu.kb + " KB") + ")" : ""));
-    } else {
-      extras.push("Nunca recebeu atualização oficial");
-    }
-  }
+  if (g.tu && !g.tu.n) extras.push("Nunca recebeu atualização oficial");
   var f = g.flags || {};
   if (f.xbla) extras.push("Xbox Live Arcade");
   if (f.kinect) extras.push("Kinect (" + (f.kinect === "required" ? "obrigatório" : "opcional") + ")");
@@ -599,6 +635,8 @@ function detalheHtml(g) {
       "<h4>Modos de jogo</h4>" + modosHtml(g) + coopHtml(g) +
       (extras.length ? "<h4>Extras</h4><ul class=\"modos\">" +
         extras.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
+      tuHtml(g) +
+      tempoHtml(g) +
       bc +
       "<h4>Ficha</h4>" + ficha +
       lanc +

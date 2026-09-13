@@ -269,6 +269,31 @@ ul.modos li{color:var(--txt)}
 .shots a:hover img{transform:scale(1.04)}
 @media (max-width:560px){ .shots img{height:84px} }
 
+/* Tempo de jogo */
+.tempo{margin:0 0 14px;padding:0;list-style:none}
+.tempo li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  padding:5px 0;font-size:12.5px;color:var(--dim);border-top:1px solid var(--line)}
+.tempo li:first-child{border-top:0}
+.tempo li b{color:var(--txt);font-variant-numeric:tabular-nums}
+
+/* Lista de Title Updates: recolhida, abre no clique */
+.tu{margin:0 0 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg2)}
+.tu summary{cursor:pointer;padding:9px 12px;font-size:12.5px;color:var(--txt);
+  list-style:none;user-select:none}
+.tu summary::-webkit-details-marker{display:none}
+.tu summary::before{content:"▸";display:inline-block;width:14px;color:var(--dim2);
+  transition:transform .15s}
+.tu[open] summary::before{transform:rotate(90deg)}
+.tu summary:hover{background:var(--bg3)}
+.tu ul{margin:0;padding:2px 12px 10px 26px;list-style:none;
+  max-height:230px;overflow-y:auto}
+.tu li{display:flex;align-items:baseline;gap:10px;padding:3px 0;font-size:12px;
+  border-top:1px solid var(--line);color:var(--dim)}
+.tu li:first-child{border-top:0}
+.tu li b{color:var(--txt);min-width:34px}
+.tu-d{flex:1}
+.tu-kb{color:var(--dim2);font-variant-numeric:tabular-nums}
+
 .det-vaz{margin:0 0 14px;padding:10px 12px;font-size:12.5px;line-height:1.5;
   color:var(--txt);background:rgba(217,164,65,.09);
   border:1px solid rgba(217,164,65,.32);border-left-width:3px;border-radius:6px}

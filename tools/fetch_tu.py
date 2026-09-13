@@ -70,15 +70,25 @@ def resumo(bruto):
             updates.append((v, kb, (u.get("UploadDate") or "")[:10]))
     if not updates:
         return None
-    # o mesmo update aparece repetido por media; contar versoes distintas
-    versoes = sorted({v for v, _, _ in updates if v})
-    datas = sorted(d for _, _, d in updates if d)
+    # O mesmo patch aparece repetido em cada MediaID, e as vezes reenviado com
+    # data nova. Agrupar por versao: fica o maior tamanho e a data MAIS ANTIGA,
+    # que e a do lancamento original e nao a do reenvio para o arquivo.
+    por_versao = {}
+    for v, kb, d in updates:
+        e = por_versao.setdefault(v, {"v": v, "kb": 0, "d": None})
+        e["kb"] = max(e["kb"], kb)
+        if d and (e["d"] is None or d < e["d"]):
+            e["d"] = d
+    lista = sorted(por_versao.values(), key=lambda x: -x["v"])
+    datas = sorted(x["d"] for x in lista if x["d"])
     return {
-        "n": len(versoes) or len(updates),      # quantos patches distintos
-        "ultima": versoes[-1] if versoes else None,
+        "n": len(lista),                        # quantos patches distintos
+        "ultima": lista[0]["v"] if lista else None,
         "data": datas[-1] if datas else None,
-        "kb": max((kb for _, kb, _ in updates), default=0),
+        "kb": max((x["kb"] for x in lista), default=0),
         "medias": len(medias),
+        # a lista sai sem hash e sem endereco: e para ler, nao para baixar
+        "lista": [{k: x[k] for k in ("v", "d", "kb") if x[k]} for x in lista],
     }
 
 

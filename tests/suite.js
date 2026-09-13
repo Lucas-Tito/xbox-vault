@@ -172,6 +172,69 @@
       await until(() => cards().length > 50, 8000); await wait(300);
     }
 
+    // ---- tempo de jogo (curadoria manual) ----
+    {
+      const comTempo = window.XBX_DB.games.filter(g => g.tempo);
+      ok('catalogo tem tempo de jogo', comTempo.length > 0, comTempo.length + ' jogos');
+      const alvo = comTempo[0];
+      if (alvo) {
+        $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const cc = cards().find(c => c.dataset.id === alvo.id);
+        if (cc) {
+          cc.querySelector('.thumb').click(); await wait(400);
+          const mb = $('#modal-body');
+          ok('popup mostra o tempo de jogo', mb.textContent.includes('Tempo de jogo'));
+          ok('mostra as tres medidas',
+             mb.textContent.includes('História principal') &&
+             mb.textContent.includes('Principal + extras') &&
+             mb.textContent.includes('Completar 100%'));
+          ok('formata em horas', /\d+h/.test(mb.querySelector('.tempo').textContent),
+             mb.querySelector('.tempo').textContent.trim().slice(0, 40));
+          if (alvo.tempo.fonte === 'aproximado')
+            ok('avisa que o valor e aproximado', mb.textContent.includes('aproximado'));
+          $('#modal-x').click(); await wait(200);
+        }
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
+    }
+
+    // ---- lista de Title Updates ----
+    {
+      const alvo = window.XBX_DB.games.filter(g => g.tu && g.tu.n > 1)
+        .sort((a, b) => b.tu.n - a.tu.n)[0];
+      if (alvo) {
+        $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const cc = cards().find(c => c.dataset.id === alvo.id);
+        if (cc) {
+          cc.querySelector('.thumb').click(); await wait(400);
+          const det = $('#modal-body details.tu'), ul = det && det.querySelector('ul');
+          ok('lista de Title Updates no popup', !!det, alvo.title + ' (' + alvo.tu.n + ')');
+          // getBoundingClientRect do <ul> mente: o layout reporta altura mesmo
+          // com o conteudo pulado por content-visibility. Medir o <details>.
+          ok('comeca recolhida', det && !det.open && !ul.checkVisibility());
+          const fechado = Math.round(det.getBoundingClientRect().height);
+          det.open = true; await wait(150);
+          ok('abre e mostra a lista',
+             ul.checkVisibility() && det.getBoundingClientRect().height > fechado,
+             fechado + 'px -> ' + Math.round(det.getBoundingClientRect().height) + 'px');
+          const lis = det.querySelectorAll('li');
+          ok('um item por patch', lis.length === alvo.tu.n, lis.length + ' itens');
+          ok('cada item traz versao, data e tamanho',
+             [...lis].every(li => /v\d/.test(li.textContent) && /\d{4}/.test(li.textContent)
+                            && /(KB|MB)/.test(li.textContent)), lis[0].textContent.trim());
+          // e para saber o que existiu, nao para baixar
+          ok('sem link de download', det.querySelectorAll('a').length === 0);
+          ok('sem hash exposto', !/[0-9A-F]{20}/.test(det.textContent));
+          $('#modal-x').click(); await wait(200);
+        }
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
+    }
+
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
     dcard.querySelector('.thumb').click();
