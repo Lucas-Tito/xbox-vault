@@ -57,10 +57,15 @@ ALVOS = {
 
 
 def main():
-    alvo = sys.argv[1] if len(sys.argv) > 1 else "xbox"
-    limite = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+    argv = [a for a in sys.argv[1:] if a != "--geral"]
+    # --geral: segunda passada. Nao procura de novo a nota da plataforma; pega os
+    # que ja foram tentados e nao acharam e busca a nota geral do jogo, que o site
+    # exibe com asterisco avisando que e de outra plataforma.
+    modo_geral = "--geral" in sys.argv
+    alvo = argv[0] if argv else "xbox"
+    limite = int(argv[1]) if len(argv) > 1 else 0
     if alvo not in ALVOS:
-        print("uso: fill_metacritic.py [xbox|indies|emu] [limite]")
+        print("uso: fill_metacritic.py [xbox|indies|emu] [limite] [--geral]")
         return 2
     arquivos, usa_geral = ALVOS[alvo]
     saida = os.path.join(ROOT, "data", SAIDAS[alvo])
@@ -90,7 +95,14 @@ def main():
         if comwiki:
             arts = w.batch_wikitext([g["wiki"] for g in comwiki])
         for g in jogos:
-            if g["id"] in ja_feitos:
+            if modo_geral:
+                ja = notas.get(g["id"])
+                # so quem ja foi tentado na plataforma, falhou, e ainda nao passou
+                # por esta segunda passada
+                if (not ja or ja.get("score") is not None
+                        or ja.get("via") == "nao-encontrado-geral"):
+                    continue
+            elif g["id"] in ja_feitos:
                 continue
             plat = plat_fixa or g.get("system")
             if alvo == "emu" and plat == "SNES":
@@ -108,14 +120,15 @@ def main():
     t0 = time.time()
     for i, (g, plat, wt) in enumerate(faltando, 1):
         registrado = False
-        for slug in slugs_possiveis(g, wt, LIMITE_SLUGS):
-            n, info = mcweb.nota(slug, plat, g["title"], g.get("year"))
-            time.sleep(PAUSA)
-            if n is not None:
-                notas[g["id"]] = {"score": n, "via": "metacritic-web"}
-                achou += 1; registrado = True
-                break
-        if not registrado and usa_geral:
+        if not modo_geral:
+            for slug in slugs_possiveis(g, wt, LIMITE_SLUGS):
+                n, info = mcweb.nota(slug, plat, g["title"], g.get("year"))
+                time.sleep(PAUSA)
+                if n is not None:
+                    notas[g["id"]] = {"score": n, "via": "metacritic-web"}
+                    achou += 1; registrado = True
+                    break
+        if not registrado and (usa_geral or modo_geral):
             for slug in slugs_possiveis(g, wt, 1):
                 n, plats = mcweb.nota_geral(slug, g["title"], g.get("year"))
                 time.sleep(PAUSA)
@@ -128,7 +141,8 @@ def main():
         if not registrado:
             # grava a falha: sem isso, reiniciar refaz todos os que ja falharam.
             # bundle.py ignora entradas sem score inteiro, entao nao vira nota.
-            notas[g["id"]] = {"score": None, "via": "nao-encontrado"}
+            notas[g["id"]] = {"score": None,
+                               "via": "nao-encontrado-geral" if modo_geral else "nao-encontrado"}
             erro += 1
         if i % 25 == 0 or i == len(faltando):
             with open(saida, "w", encoding="utf-8") as f:

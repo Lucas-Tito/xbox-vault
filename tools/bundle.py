@@ -20,7 +20,63 @@ D = os.path.join(ROOT, "data")
 
 TAG_KEYS = ["singlePlayer", "multiplayerLocal", "multiplayerOnline", "coop", "coopLocal",
             "coopOnline", "versus", "versusLocal", "maxPlayersLocal", "maxPlayersOnline",
-            "maxPlayers", "confidence", "source"]
+            "maxPlayers", "coopLocalMax", "coopOnlineMax", "coopSource",
+            "confidence", "source"]
+
+
+def aplicar_coop(g, t, co):
+    """Sobrepoe o co-op com o dado do Co-Optimus, que e catalogado a mao.
+
+    Regra: o Co-Optimus manda no que ele cobre, e nao encosta no resto. Ele so
+    cataloga co-op -- nao tem versus, nem single player, nem contagem total de
+    jogadores -- entao nada que venha de outra fonte pode ser apagado por ele.
+
+    Na pratica isso quer dizer:
+      - uma dimensao (local/online) so e sobrescrita se o Co-Optimus falar dela;
+        calado sobre ela, fica o que o catalogo ja tinha;
+      - os numeros deles sao de CO-OP e vao para campos proprios. maxPlayers*
+        e do jogo inteiro (Halo 3: 4 em co-op, 16 em versus), entao so SOBE;
+      - "coop" tambem conta combo e LAN, senao um jogo cujo co-op e so por
+        system link viraria "sem co-op";
+      - source/confidence descrevem as tags que vieram de outra fonte e ficam
+        como estao; a procedencia do co-op vai em coopSource.
+    """
+    dito = {k: co[k] for k in ("local", "online", "combo", "lan")
+            if isinstance(co.get(k), int)}
+    if not dito or not any(v > 0 for v in dito.values()):
+        # nada aproveitavel: o Co-Optimus so lista jogo COM co-op, entao tudo
+        # zerado e sinal de leitura incompleta, nao de ausencia de co-op
+        return False
+
+    if "local" in dito:
+        t["coopLocal"] = dito["local"] > 0
+        if dito["local"] > 0:
+            t["coopLocalMax"] = dito["local"]
+            t["multiplayerLocal"] = True
+            t["maxPlayersLocal"] = max(t.get("maxPlayersLocal") or 0, dito["local"])
+    if "online" in dito:
+        t["coopOnline"] = dito["online"] > 0
+        if dito["online"] > 0:
+            t["coopOnlineMax"] = dito["online"]
+            t["multiplayerOnline"] = True
+            t["maxPlayersOnline"] = max(t.get("maxPlayersOnline") or 0, dito["online"])
+    if dito.get("lan", 0) > 0:
+        t["multiplayerOnline"] = True
+        t["maxPlayersOnline"] = max(t.get("maxPlayersOnline") or 0, dito["lan"])
+
+    t["coop"] = True
+    # nunca abaixa: o total pode vir de versus, que o Co-Optimus desconhece
+    t["maxPlayers"] = max(t.get("maxPlayers") or 0,
+                          t.get("maxPlayersLocal") or 0,
+                          t.get("maxPlayersOnline") or 0)
+    t["coopSource"] = "co-optimus"
+
+    info = {"fonte": co["fonte"], "snapshot": co["snapshot"]}
+    for k in ("local", "online", "combo", "lan", "extras", "exp"):
+        if co.get(k) not in (None, [], ""):
+            info[k] = co[k]
+    g["coopInfo"] = info
+    return True
 
 
 def norm_image(url):
@@ -68,7 +124,8 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         print("  %-16s %5d" % ("vazados", len(extras)))
     print("  %-16s %5d" % ("tags", len(tags)))
 
-    seen, dupes, tagged, imaged, localed, wide = set(), 0, 0, 0, 0, 0
+    coop = load("coop.json", {})
+    seen, dupes, tagged, imaged, localed, wide, coopados = set(), 0, 0, 0, 0, 0, 0
     for g in games:
         if g["id"] in seen:
             dupes += 1
@@ -97,22 +154,28 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
             g["image"] = None
         elif "image" in g:
             g["image"] = None
+        g.pop("coopInfo", None)
+        co = coop.get(g["id"])
+        if co and not co.get("sem_dado"):
+            t = dict(t)
+            if aplicar_coop(g, t, co):
+                coopados += 1
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         n = notas.get(g["id"])
         g.pop("mcGeral", None); g.pop("mcPlats", None)
         if n and isinstance(n.get("score"), int):
             g["mc"] = n["score"]
             if n.get("geral"):
-                # nota que NAO e da plataforma do jogo: o site avisa no popup
+                # nota que NAO e da plataforma do jogo: o site avisa no popup.
+                # A lista de plataformas continua em metacritic*.json ("plats"),
+                # mas nao vai para o db.js: o aviso do popup nao usa mais.
                 g["mcGeral"] = True
-                if n.get("plats"):
-                    g["mcPlats"] = n["plats"]
         else:
             g.pop("mc", None)
     com_mc = sum(1 for g in games if g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
-          "%d com Metacritic | %d dup" %
-          (rotulo, len(games), tagged, imaged, localed, wide, com_mc, dupes))
+          "%d com Metacritic | %d co-op do Co-Optimus | %d dup" %
+          (rotulo, len(games), tagged, imaged, localed, wide, com_mc, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 

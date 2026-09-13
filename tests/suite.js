@@ -97,6 +97,36 @@
     $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
     await until(() => cards().length > 50, 8000); await wait(300);
 
+    // ---- co-op vindo do Co-Optimus ----
+    const comCoop = window.XBX_DB.games.filter(g => g.coopInfo);
+    ok('catalogo tem co-op do Co-Optimus', comCoop.length > 0, comCoop.length + ' jogos');
+    ok('todo coopInfo tem numero util',
+       comCoop.every(g => ['local','online','combo','lan'].some(k => typeof g.coopInfo[k] === 'number')));
+    ok('co-op do Co-Optimus liga a flag coop', comCoop.every(g => g.tags.coop === true));
+    // o Co-Optimus so cataloga co-op: os numeros dele nunca podem baixar o total
+    ok('total de jogadores nunca abaixo do co-op',
+       comCoop.every(g => (g.tags.maxPlayers || 0) >= Math.max(g.tags.coopLocalMax || 0, g.tags.coopOnlineMax || 0)));
+    ok('procedencia das outras tags preservada',
+       comCoop.every(g => g.tags.coopSource === 'co-optimus' && g.tags.source !== 'co-optimus'));
+    const comExp = comCoop.filter(g => g.coopInfo.exp);
+    ok('descricao do co-op presente', comExp.length > 0, comExp.length + ' com texto');
+    if (comExp.length) {
+      const alvo = comExp[0];
+      $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 0, 6000); await wait(300);
+      const cc = cards().find(c => c.dataset.id === alvo.id);
+      if (cc) {
+        cc.querySelector('.thumb').click(); await wait(400);
+        const mb = $('#modal-body');
+        ok('modal mostra o bloco de co-op', mb.textContent.includes('Co-op em detalhe'));
+        ok('modal mostra a descricao', !!mb.querySelector('.coop-exp'));
+        ok('modal nao mostra mais a linha de fonte', !mb.textContent.includes('lido do arquivo de'));
+        $('#modal-x').click(); await wait(200);
+      } else ok('card do jogo com co-op', false, 'nao achei ' + alvo.id);
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
     dcard.querySelector('.thumb').click();

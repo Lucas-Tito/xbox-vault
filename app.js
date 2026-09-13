@@ -399,6 +399,43 @@ var REGIAO = { NA: "América do Norte", EU: "Europa", PAL: "PAL (Europa/Oceania)
                JP: "Japão", AU: "Austrália" };
 var PLATNOME = { x360: "Xbox 360", xblig: "Indie (XBLIG)", xbox: "Xbox original",
                  homebrew: "Homebrew", emu: "Emulação" };
+/* Os rotulos vem em ingles do Co-Optimus; o resto da interface e em portugues. */
+var COOPEXTRA = {
+  "co-op campaign": "Campanha inteira em co-op",
+  "drop in/drop out": "Entra e sai no meio da partida",
+  "drop in / drop out": "Entra e sai no meio da partida",
+  "splitscreen": "Tela dividida",
+  "split-screen": "Tela dividida",
+  "downloadable only": "Só em versão digital",
+  "online play": "Jogo online",
+  "local play": "Jogo local",
+  "co-op modes": "Modos próprios de co-op",
+  "co-op mode": "Modo próprio de co-op",
+  "friendly fire": "Fogo amigo",
+  "bots": "Bots"
+};
+
+function coopHtml(g) {
+  var c = g.coopInfo;
+  if (!c) return "";
+  var li = [], n = function (v) {
+    return v > 0 ? "até " + v + (v > 1 ? " jogadores" : " jogador") : "não tem";
+  };
+  if (c.local != null) li.push("Local — " + n(c.local));
+  if (c.online != null) li.push("Online — " + n(c.online));
+  if (c.combo) li.push("Local + online juntos — " + n(c.combo));
+  if (c.lan) li.push("LAN / System Link — " + n(c.lan));
+  var ex = (c.extras || []).map(function (x) {
+    return COOPEXTRA[x.toLowerCase()] || x;
+  });
+  return "<h4>Co-op em detalhe</h4>" +
+    (li.length ? '<ul class="modos">' + li.map(function (x) {
+      return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
+    (ex.length ? '<ul class="modos coop-ex">' + ex.map(function (x) {
+      return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
+    (c.exp ? '<p class="coop-exp">' + esc(c.exp) + "</p>" : "");
+}
+
 var CONFNOTA = {
   high: "conferido à mão, ou vindo do campo estruturado do artigo",
   medium: "inferido do texto do artigo",
@@ -506,7 +543,7 @@ function detalheHtml(g) {
         '<button class="btn' + (escondidos.has(g.id) ? " muted" : "") + '" data-mark="hide">' +
           (escondidos.has(g.id) ? "⊘ Escondido" : "⊘ Não quero") + "</button>" +
       "</div>" +
-      "<h4>Modos de jogo</h4>" + modosHtml(g) +
+      "<h4>Modos de jogo</h4>" + modosHtml(g) + coopHtml(g) +
       (extras.length ? "<h4>Extras</h4><ul class=\"modos\">" +
         extras.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
       bc +
@@ -515,10 +552,7 @@ function detalheHtml(g) {
       (links.length ? '<div class="det-links">' + links.join("") + "</div>" : "") +
       (g.mcGeral
         ? '<p class="det-aviso">* Esta nota do Metacritic não é da versão de ' +
-          esc(PLATNOME[g.platform] || g.platform) + '. Poucos jogos indie tiveram resenhas ' +
-          'de crítica suficientes para gerar uma nota própria no Xbox 360, então mostramos a ' +
-          'nota geral do jogo' +
-          (g.mcPlats ? ' (plataformas: ' + esc(g.mcPlats) + ')' : '') + '.</p>'
+          esc(PLATNOME[g.platform] || g.platform) + '.</p>'
         : "") +
     "</div></div>";
 }

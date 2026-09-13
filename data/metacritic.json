@@ -8893,15 +8893,15 @@
  },
  "x360-1-vs-100": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-11eyes-crossover": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-absolute-blazing-infinity": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ac-dc-live-rock-band-track-pack": {
   "score": 63,
@@ -8909,11 +8909,11 @@
  },
  "x360-afl-live": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-afl-live-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-after-burner-climax": {
   "score": 72,
@@ -8929,7 +8929,7 @@
  },
  "x360-akatsuki-no-amaneka-to-aoi-kyojin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-alien-spidy": {
   "score": 55,
@@ -8949,7 +8949,7 @@
  },
  "x360-amaneka-of-dawn-and-the-deep-blue-golem": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-american-mensa-academy": {
   "score": 60,
@@ -8961,7 +8961,7 @@
  },
  "x360-apocalypse-desire-next": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-apples-to-apples": {
   "score": 64,
@@ -8969,7 +8969,7 @@
  },
  "x360-aquazone-life-simulator": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-are-you-smarter-than-a-5th-grader-game-time": {
   "score": 40,
@@ -8993,7 +8993,7 @@
  },
  "x360-asterix-at-the-olympic-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-asteroids-asteroids-deluxe": {
   "score": 55,
@@ -9005,15 +9005,15 @@
  },
  "x360-a-train-hx": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-autobahn-polizei": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-avatar-famestar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-back-to-the-future-the-game": {
   "score": 74,
@@ -9033,7 +9033,7 @@
  },
  "x360-backyard-sports-rookie-rush": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-backyard-sports-sandlot-sluggers": {
   "score": 60,
@@ -9045,7 +9045,7 @@
  },
  "x360-barbie-and-her-sisters-puppy-rescue": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-bass-pro-shops-the-hunt": {
   "score": 60,
@@ -9061,15 +9061,17 @@
  },
  "x360-battle-academy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-battle-vs-chess": {
   "score": 90,
   "via": "metacritic-web"
  },
  "x360-battlefield-hardline": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 73,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation 4, PlayStation 3, Xbox 360, Xbox One"
  },
  "x360-battlestar-galactica": {
   "score": 63,
@@ -9077,7 +9079,7 @@
  },
  "x360-battlezone": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-beat-n-groovy": {
   "score": 29,
@@ -9085,7 +9087,7 @@
  },
  "x360-bejeweled-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-bejeweled-3": {
   "score": 78,
@@ -9100,8 +9102,10 @@
   "via": "metacritic-web"
  },
  "x360-ben-10-omniverse": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 43,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii U, Wii, Xbox 360, PlayStation 3, 3DS, DS"
  },
  "x360-ben-10-omniverse-2": {
   "score": 20,
@@ -9113,7 +9117,7 @@
  },
  "x360-big-league-sports": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-biggest-loser-ultimate-workout": {
   "score": 68,
@@ -9121,7 +9125,7 @@
  },
  "x360-black-college-football-the-xperience": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-blood-of-the-werewolf": {
   "score": 75,
@@ -9129,7 +9133,7 @@
  },
  "x360-bloodbath": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-bloodforge": {
   "score": 42,
@@ -9148,20 +9152,22 @@
   "via": "metacritic-web"
  },
  "x360-brian-lara-international-cricket-2007": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 71,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Xbox 360, PC"
  },
  "x360-bullet-soul": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-bullet-soul-infinite-burst": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cabela-s-adventure-camp": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cabela-s-african-adventures": {
   "score": 50,
@@ -9173,7 +9179,7 @@
  },
  "x360-cabela-s-big-game-hunter": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cabela-s-big-game-hunter-2010": {
   "score": 65,
@@ -9185,7 +9191,7 @@
  },
  "x360-cabela-s-big-game-hunter-hunting-party": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cabela-s-big-game-hunter-pro-hunts": {
   "score": 65,
@@ -9197,7 +9203,7 @@
  },
  "x360-cabela-s-hunting-expeditions": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cabela-s-north-american-adventures": {
   "score": 51,
@@ -9205,7 +9211,7 @@
  },
  "x360-cabela-s-outdoor-adventures": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cabela-s-survival-shadows-of-katmai": {
   "score": 50,
@@ -9217,7 +9223,7 @@
  },
  "x360-caladrius": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-capcom-digital-collection": {
   "score": 65,
@@ -9241,11 +9247,11 @@
  },
  "x360-championship-manager-2007": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-chaos-head-love-chu-chu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-chessmaster-live": {
   "score": 76,
@@ -9253,23 +9259,25 @@
  },
  "x360-clannad": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cobalt": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 69,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, Xbox 360, Xbox One"
  },
  "x360-code-18": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-combat-wings-the-great-battles-of-world-war-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-command-and-conquer-red-alert-3-commander-s-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-constant-c": {
   "score": 67,
@@ -9281,7 +9289,7 @@
  },
  "x360-the-conveni-200x": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-crazy-mouse": {
   "score": 28,
@@ -9289,7 +9297,7 @@
  },
  "x360-cross-channel-in-memory-of-all-people": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cross-edge-dash": {
   "score": 52,
@@ -9301,11 +9309,11 @@
  },
  "x360-cyber-troopers-virtual-on": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cyber-troopers-virtual-on-force": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-cyberball-2072": {
   "score": 41,
@@ -9313,7 +9321,7 @@
  },
  "x360-damage-inc-pacific-squadron-ww2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dance-central-3": {
   "score": 86,
@@ -9321,7 +9329,7 @@
  },
  "x360-dance-dance-revolution": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dance-dance-revolution-universe": {
   "score": 74,
@@ -9333,7 +9341,7 @@
  },
  "x360-dance-evolution-dancemasters-in-na": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dance-paradise": {
   "score": 59,
@@ -9373,7 +9381,7 @@
  },
  "x360-deadliest-warrior-battlegrounds": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-death-tank": {
   "score": 66,
@@ -9385,7 +9393,7 @@
  },
  "x360-deca-sports-freedom-sports-island-freedom-in-pal-region": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-deep-black-episode-1": {
   "score": 47,
@@ -9400,8 +9408,10 @@
   "via": "metacritic-web"
  },
  "x360-defense-technica": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "iOS (iPhone/iPad), Xbox 360, PC, PlayStation 3"
  },
  "x360-diablo-iii-reaper-of-souls": {
   "score": 87,
@@ -9409,7 +9419,7 @@
  },
  "x360-diario-rebirth-moon-legend": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dig-dug": {
   "score": 65,
@@ -9429,11 +9439,11 @@
  },
  "x360-disney-sing-it-high-school-musical-3-senior-year": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-disorder-6": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dodonpachi-dai-ou-jou-black-label-extra": {
   "score": 80,
@@ -9441,7 +9451,7 @@
  },
  "x360-dodonpachi-saidaioujou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dogfight-1942": {
   "score": 59,
@@ -9457,7 +9467,7 @@
  },
  "x360-doom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-double-d-dodgeball": {
   "score": 36,
@@ -9477,11 +9487,11 @@
  },
  "x360-dream-club": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dream-club-zero": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dreamworks-super-star-kartz": {
   "score": 85,
@@ -9489,11 +9499,11 @@
  },
  "x360-duck-dynasty": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dunamis-15": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-dungeon-fighter-live-fall-of-hendon-myre": {
   "score": 53,
@@ -9505,11 +9515,11 @@
  },
  "x360-ea-sports-fantasy-football-live-draft-tracker": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ea-sports-fantasy-football-live-score-tracker": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ea-sports-mma": {
   "score": 79,
@@ -9521,7 +9531,7 @@
  },
  "x360-el-chavo-kart": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-elder-scrolls-iv-shivering-isles": {
   "score": 86,
@@ -9533,11 +9543,11 @@
  },
  "x360-entaku-no-seito-students-of-round": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-eschatos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-espgaluda-ii": {
   "score": 89,
@@ -9545,19 +9555,19 @@
  },
  "x360-ever17": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-everyone-sing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-every-party": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-expendables-2-video-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-facebreaker": {
   "score": 54,
@@ -9573,15 +9583,15 @@
  },
  "x360-fallout-3-game-add-on-pack-broken-steel-and-point-lookout": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-fallout-3-game-add-on-pack-the-pitt-and-operation-anchorage": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-family-feud-2012": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-far-cry-classic": {
   "score": 91,
@@ -9605,19 +9615,19 @@
  },
  "x360-fifa-11": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-fifa-13": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-fifa-street": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-final-fight-double-impact-final-fight-magic-sword": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-fire-pro-wrestling": {
   "score": 48,
@@ -9629,15 +9639,15 @@
  },
  "x360-football-manager-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-football-manager-2007": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-football-manager-2008": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-fret-nice": {
   "score": 54,
@@ -9657,7 +9667,7 @@
  },
  "x360-frozen-free-fall-snowball-fight": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-full-house-poker": {
   "score": 77,
@@ -9677,7 +9687,7 @@
  },
  "x360-ge-sen-love-plus-pengo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-galaga": {
   "score": 66,
@@ -9693,7 +9703,7 @@
  },
  "x360-gauntlet": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-generator-rex-agent-of-providence": {
   "score": 60,
@@ -9717,15 +9727,15 @@
  },
  "x360-ginga-force": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-golden-axe": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-golden-fantasia-x-ougon-musou-kyoku-x": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-goosebumps-the-game": {
   "score": 50,
@@ -9733,11 +9743,13 @@
  },
  "x360-grand-theft-auto-episodes-from-liberty-city": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-gray-matter": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 72,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, Xbox 360"
  },
  "x360-grease-dance": {
   "score": 70,
@@ -9773,7 +9785,7 @@
  },
  "x360-handball-16": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-hannah-montana-the-movie": {
   "score": 25,
@@ -9797,15 +9809,19 @@
  },
  "x360-harley-pasternak-s-hollywood-workout": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-hasbro-family-game-night": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii, PlayStation 2, Xbox 360, DS, PlayStation 3"
  },
  "x360-hasbro-family-game-night-2": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, Wii"
  },
  "x360-hasbro-family-game-night-3": {
   "score": 82,
@@ -9813,7 +9829,7 @@
  },
  "x360-hasbro-family-game-night-4-the-game-show": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-hasbro-family-game-night-battleship": {
   "score": 72,
@@ -9828,16 +9844,22 @@
   "via": "metacritic-web"
  },
  "x360-hasbro-family-game-night-connect-4x4": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii, PlayStation 2, Xbox 360, DS, PlayStation 3"
  },
  "x360-hasbro-family-game-night-jenga": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii, PlayStation 2, Xbox 360, DS, PlayStation 3"
  },
  "x360-hasbro-family-game-night-pictureka": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii, PlayStation 2, Xbox 360, DS, PlayStation 3"
  },
  "x360-hasbro-family-game-night-scrabble": {
   "score": 79,
@@ -9857,11 +9879,11 @@
  },
  "x360-haunt": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-haunted-house": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-heavy-fire-shattered-spear": {
   "score": 25,
@@ -9869,7 +9891,7 @@
  },
  "x360-heavy-weapon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-hexic-hd": {
   "score": 79,
@@ -9889,11 +9911,11 @@
  },
  "x360-history-civil-war-secret-missions": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-history-great-battles-medieval": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-hole-in-the-wall": {
   "score": 47,
@@ -9908,8 +9930,10 @@
   "via": "metacritic-web"
  },
  "x360-hot-wheels-world-s-best-driver": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 39,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "iOS (iPhone/iPad), PlayStation 3, Wii U, Xbox 360, 3DS, PC"
  },
  "x360-hour-of-victory": {
   "score": 37,
@@ -9933,19 +9957,19 @@
  },
  "x360-the-idolmaster": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-idolmaster-live-for-you": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-idolmaster-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ihf-handball-challenge-14": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ikaruga": {
   "score": 87,
@@ -9961,7 +9985,7 @@
  },
  "x360-instant-brain": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-intel-discovered": {
   "score": 71,
@@ -9969,7 +9993,7 @@
  },
  "x360-international-cricket-2010": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-iron-sky-invasion": {
   "score": 50,
@@ -9980,8 +10004,10 @@
   "via": "metacritic-web"
  },
  "x360-the-jackbox-party-pack": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 78,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 4, PlayStation 3, Xbox One, PC, Xbox 360, Nintendo Switch"
  },
  "x360-jam-live-music-arcade": {
   "score": 60,
@@ -9989,7 +10015,7 @@
  },
  "x360-janline": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-jasf-jane-s-advanced-strike-fighters": {
   "score": 45,
@@ -9997,15 +10023,17 @@
  },
  "x360-jeopardy-america-s-favorite-quiz-show": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-jeremy-mcgrath-s-offroad": {
   "score": 60,
   "via": "metacritic-web"
  },
  "x360-jet-car-stunts": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 64,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "iOS (iPhone/iPad), PC, PlayStation 4, PlayStation 3, PlayStation Vita,"
  },
  "x360-jewel-quest": {
   "score": 68,
@@ -10025,7 +10053,7 @@
  },
  "x360-juju": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-jurassic-the-hunted": {
   "score": 60,
@@ -10036,24 +10064,32 @@
   "via": "metacritic-web"
  },
  "x360-just-dance-2015": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 70,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox One, PlayStation 4, Wii U, PlayStation 3, Xbox 360, Wii"
  },
  "x360-just-dance-2016": {
   "score": 80,
   "via": "metacritic-web"
  },
  "x360-just-dance-2017": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 72,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox One, Wii U, PlayStation 4, Nintendo Switch, PC, PlayStation 3, Wi"
  },
  "x360-just-dance-2018": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 71,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 4, Xbox One, Nintendo Switch, Xbox 360, PlayStation 3, Wii"
  },
  "x360-just-dance-2019": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 72,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 4, Xbox One, Wii U, Wii, Xbox 360, Nintendo Switch"
  },
  "x360-just-dance-disney-party": {
   "score": 70,
@@ -10061,7 +10097,7 @@
  },
  "x360-just-dance-disney-party-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-just-dance-greatest-hits": {
   "score": 77,
@@ -10073,7 +10109,7 @@
  },
  "x360-just-dance-kids-2014": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-karaoke": {
   "score": 70,
@@ -10081,7 +10117,7 @@
  },
  "x360-karaoke-revolution-glee-volume-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-karaoke-revolution-presents-american-idol-encore": {
   "score": 70,
@@ -10097,11 +10133,11 @@
  },
  "x360-ketsui-kizuna-jigoku-tachi-extra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-kick-ass-2-the-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-kinect-nat-geo-tv": {
   "score": 78,
@@ -10109,7 +10145,7 @@
  },
  "x360-kinect-playfit": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-kinect-sesame-street-tv": {
   "score": 76,
@@ -10129,15 +10165,15 @@
  },
  "x360-king-s-quest-the-complete-collection": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-konami-classics-vol-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-konami-classics-vol-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-krissx": {
   "score": 59,
@@ -10153,7 +10189,7 @@
  },
  "x360-kung-fu-panda-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-kung-fu-panda-showdown-of-legendary-legends": {
   "score": 63,
@@ -10169,7 +10205,7 @@
  },
  "x360-legends-of-war": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-lego-jurassic-world": {
   "score": 90,
@@ -10177,7 +10213,7 @@
  },
  "x360-let-s-cheer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-let-s-dance-with-mel-b": {
   "score": 90,
@@ -10209,7 +10245,7 @@
  },
  "x360-lma-manager-2007": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-lode-runner": {
   "score": 76,
@@ -10217,7 +10253,7 @@
  },
  "x360-lost-cities": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-lost-planet-extreme-condition-colonies-edition": {
   "score": 78,
@@ -10225,23 +10261,23 @@
  },
  "x360-love-football": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-love-tore-bitter-a-k-a-love-tra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-love-tore-chocolate-love-tore-trilogy-set-a-k-a-love-tra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-love-tore-mint-a-k-a-love-tra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-love-tore-sweet-a-k-a-love-tra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-lucha-fury": {
   "score": 37,
@@ -10253,7 +10289,7 @@
  },
  "x360-machi-ing-maker-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-madagascar-3-the-video-game": {
   "score": 45,
@@ -10261,27 +10297,27 @@
  },
  "x360-madden-nfl-25": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-magic-the-gathering-duels-of-the-planeswalkers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-magic-the-gathering-2014": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-mahjong-dream-c-club": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-maji-ten-maji-de-tenshi-o-tsukutte-mita": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-mamoru-kun-wa-norowarete-shimatta": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-man-vs-wild-with-bear-grylls": {
   "score": 50,
@@ -10297,7 +10333,7 @@
  },
  "x360-masquerade-the-baubles-of-doom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-matt-hazard-blood-bath-and-beyond": {
   "score": 63,
@@ -10305,19 +10341,19 @@
  },
  "x360-meikyuu-cross-blood-reloaded": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-memories-off-6-next-relation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-memories-off-6-t-wave": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-memories-off-yubikiri-no-kioku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-men-in-black-alien-crisis": {
   "score": 30,
@@ -10365,7 +10401,7 @@
  },
  "x360-missile-command": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-mlb-bobblehead-battle": {
   "score": 70,
@@ -10377,15 +10413,15 @@
  },
  "x360-moe-moe-2-ji-daisenryaku-ultra-deluxe": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-mobile-ops-the-one-year-war": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-momotarou-dentetsu-16-gold": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monkey-island-2-special-edition-lechuck-s-revenge": {
   "score": 85,
@@ -10393,15 +10429,17 @@
  },
  "x360-monopoly": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monopoly-deal": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monopoly-plus": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 53,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox 360, Xbox One, PlayStation 4, PlayStation 3, PC, Nintendo Switch"
  },
  "x360-monopoly-streets": {
   "score": 66,
@@ -10409,59 +10447,59 @@
  },
  "x360-monster-high-new-ghoul-in-school": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g5": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g6": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g7": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g8": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g9": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-g10": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-gg": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-hunter-frontier-z": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monster-jam-battlegrounds": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-monsters-vs-aliens": {
   "score": 63,
@@ -10484,8 +10522,10 @@
   "via": "metacritic-web"
  },
  "x360-motorcycle-club": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 26,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 4, Xbox 360, PlayStation 3, PC"
  },
  "x360-ms-pac-man": {
   "score": 65,
@@ -10493,7 +10533,7 @@
  },
  "x360-muchi-muchi-pork-and-pink-sweets-ibara-sore-kara": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-mud-fim-motocross-world-championship": {
   "score": 54,
@@ -10501,31 +10541,31 @@
  },
  "x360-mushihimesama": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-mushihime-sama-futari": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-muvluv": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-muvluv-alternative": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-muv-luv-alternative-total-eclipse": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-my-body-coach-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-my-horse-and-me-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-n-plus": {
   "score": 83,
@@ -10537,11 +10577,11 @@
  },
  "x360-nascar-15": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-nascar-15-victory-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-nascar-unleashed": {
   "score": 70,
@@ -10549,11 +10589,11 @@
  },
  "x360-national-geo-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-national-geo-challenge-wild-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ncaa-basketball-09-march-madness-edition": {
   "score": 74,
@@ -10609,7 +10649,7 @@
  },
  "x360-nickelodeon-dance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-nickelodeon-dance-2": {
   "score": 40,
@@ -10621,7 +10661,7 @@
  },
  "x360-nights-into-dreams": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-nin2-jump": {
   "score": 67,
@@ -10629,15 +10669,17 @@
  },
  "x360-no-fate-only-the-power-of-will": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-no-more-heroes-heroes-paradise": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 72,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 3, Xbox 360"
  },
  "x360-nobunaga-no-yabou-tendou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-novadrome": {
   "score": 50,
@@ -10649,15 +10691,15 @@
  },
  "x360-nurarihyon-no-mago-hyakki-ryouran-taisen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-obut-petanque-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-onechanbara-z-kagura": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-orc-attack-flatulent-rebellion": {
   "score": 38,
@@ -10665,7 +10707,7 @@
  },
  "x360-ore-no-yome-anata-dake-no-hanayome": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-otomedius-excellent": {
   "score": 48,
@@ -10673,7 +10715,7 @@
  },
  "x360-otomedius-gorgeous": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-outpost-kaloki-x": {
   "score": 77,
@@ -10705,19 +10747,19 @@
  },
  "x360-pdc-world-championship-darts-pro-tour": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-penguins-of-madagascar-dr-blowhole-returns-again": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-phantom-breaker-extra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-phantom-phantom-of-inferno": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-phineas-and-ferb-quest-for-cool-stuff": {
   "score": 50,
@@ -10729,7 +10771,7 @@
  },
  "x360-pia-carrot-e-youkoso-4-natsu-no-koikatsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-pinball-arcade": {
   "score": 82,
@@ -10777,19 +10819,19 @@
  },
  "x360-the-price-is-right-the-decades": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-prize-driver": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-pro-yakyu-spirits-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-pure-football": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-putty-squad": {
   "score": 50,
@@ -10801,7 +10843,7 @@
  },
  "x360-puzzle-bobble-a-k-a-bust-a-move-live": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-puzzle-chronicles": {
   "score": 57,
@@ -10825,11 +10867,11 @@
  },
  "x360-r-b-i-baseball-14": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rabbids-invasion-the-interactive-tv-show": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-race-pro": {
   "score": 72,
@@ -10841,7 +10883,7 @@
  },
  "x360-radirgy-noa-massive": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-raiden-fighters-aces": {
   "score": 73,
@@ -10857,11 +10899,11 @@
  },
  "x360-rapala-for-kinect": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rapala-pro-bass-fishing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-raven-squad-operation-hidden-dagger": {
   "score": 38,
@@ -10869,7 +10911,7 @@
  },
  "x360-reaction-rally": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-real-steel": {
   "score": 40,
@@ -10877,7 +10919,7 @@
  },
  "x360-realms-of-ancient-war-a-k-a-r-a-w": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-record-of-agarest-war-zero": {
   "score": 67,
@@ -10897,7 +10939,7 @@
  },
  "x360-rhythm-party-boom-boom-dance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rio": {
   "score": 60,
@@ -10905,15 +10947,17 @@
  },
  "x360-risk": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-risk-factions": {
   "score": 77,
   "via": "metacritic-web"
  },
  "x360-risk-urban-assault": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 61,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox One, PlayStation 4, PlayStation 3, Xbox 360"
  },
  "x360-roboblitz": {
   "score": 76,
@@ -10921,7 +10965,7 @@
  },
  "x360-robotics-notes": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-robotron-2084": {
   "score": 65,
@@ -10933,7 +10977,7 @@
  },
  "x360-rock-band-classic-rock-track-pack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rock-band-country-track-pack": {
   "score": 66,
@@ -10941,15 +10985,15 @@
  },
  "x360-rock-band-country-track-pack-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rock-band-metal-track-pack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rock-band-track-pack-volume-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rocket-riot": {
   "score": 80,
@@ -10969,7 +11013,7 @@
  },
  "x360-root-double-before-crime-after-days": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rotastic": {
   "score": 66,
@@ -10977,19 +11021,21 @@
  },
  "x360-r-type-dimensions-r-type-and-r-type-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rugby-challenge-2": {
   "score": 60,
   "via": "metacritic-web"
  },
  "x360-rugby-challenge-3": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 64,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox One, Xbox 360, PlayStation 4, PlayStation 3, PC"
  },
  "x360-rugby-league-live": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rugby-league-live-2": {
   "score": 60,
@@ -10997,11 +11043,13 @@
  },
  "x360-rugby-league-live-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-rugby-world-cup-2015": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 25,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox 360, Xbox One, PlayStation Vita, PlayStation 4, PlayStation 3, PC"
  },
  "x360-rush-n-attack": {
   "score": 58,
@@ -11013,7 +11061,7 @@
  },
  "x360-sakura-flamingo-archives": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sam-and-max-save-the-world": {
   "score": 75,
@@ -11029,15 +11077,15 @@
  },
  "x360-sbk-08-superbike-world-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sbk-09-superbike-world-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sbk-2011-superbike-world-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-scene-it-movie-night": {
   "score": 70,
@@ -11073,31 +11121,31 @@
  },
  "x360-sega-vintage-collection-alex-kidd-and-co-alex-kidd-in-miracle-world-super-hang-on-the-revenge-of-shinobi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sega-vintage-collection-golden-axe-golden-axe-ii-iii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sega-vintage-collection-monster-world-wonder-boy-in-monster-land-wonder-boy-in-monster-world-monster-world-iv": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sega-vintage-collection-streets-of-rage-streets-of-rage-2-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sega-vintage-collection-toejam-and-earl-toejam-and-earl-panic-on-funkotron": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sensible-world-of-soccer-swos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-sengoku-hime-2-senran-no-yo-gunyuu-arashi-no-gotoku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-shank-2": {
   "score": 77,
@@ -11105,7 +11153,7 @@
  },
  "x360-sharin-no-kuni-the-girl-among-the-sunflowers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-shaun-white-snowboarding": {
   "score": 60,
@@ -11117,11 +11165,11 @@
  },
  "x360-shiei-no-sona-nyl-refrain-what-a-beautiful-memories": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-shikigami-no-shiro-iii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-shinobi": {
   "score": 56,
@@ -11129,7 +11177,7 @@
  },
  "x360-shooting-love-10-shuunen-xiizeal-and-deltazeal": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-shooting-love-200x": {
   "score": 30,
@@ -11145,7 +11193,7 @@
  },
  "x360-ski-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-ski-doo-snowmobile-challenge": {
   "score": 70,
@@ -11165,7 +11213,7 @@
  },
  "x360-snipers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-soltrio-solitaire": {
   "score": 59,
@@ -11193,7 +11241,7 @@
  },
  "x360-space-ark": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-space-giraffe": {
   "score": 68,
@@ -11201,7 +11249,7 @@
  },
  "x360-special-forces-team-x-stx": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-spectral-force-3-innocent-rage": {
   "score": 59,
@@ -11244,8 +11292,10 @@
   "via": "metacritic-web"
  },
  "x360-star-wars-pinball-the-force-awakens": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 81,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 3, PlayStation 4, PlayStation Vita, PC, Xbox One, iOS (iPh"
  },
  "x360-steins-gate": {
   "score": 83,
@@ -11253,7 +11303,7 @@
  },
  "x360-steins-gate-linear-bounded-phenogram": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-storm": {
   "score": 64,
@@ -11265,11 +11315,11 @@
  },
  "x360-strike-witches-shirogane-no-tsubasa": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-summer-athletics-2009": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-summer-athletics-the-ultimate-challenge": {
   "score": 48,
@@ -11285,11 +11335,11 @@
  },
  "x360-super-robot-wars-xo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-superstar-karaoke": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-superstars-v8-racing": {
   "score": 62,
@@ -11297,7 +11347,7 @@
  },
  "x360-superstars-v8-next-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-switchball": {
   "score": 78,
@@ -11317,11 +11367,11 @@
  },
  "x360-tayutama-kiss-on-my-deity": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-teenage-mutant-ninja-turtles-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-teenage-mutant-ninja-turtles-danger-of-the-ooze": {
   "score": 50,
@@ -11341,7 +11391,7 @@
  },
  "x360-tengai-makyou-ziria-haruka-naru-jipang": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-tetris-the-grand-master-ace": {
   "score": 85,
@@ -11365,11 +11415,11 @@
  },
  "x360-ticket-to-ride": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-time-leap": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-time-pilot": {
   "score": 63,
@@ -11393,7 +11443,7 @@
  },
  "x360-tomoyo-after-it-s-a-wonderful-life-cs-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-top-hand-rodeo-tour": {
   "score": 40,
@@ -11413,15 +11463,15 @@
  },
  "x360-le-tour-de-france-2009-the-official-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-tour-de-france-2012": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-tour-de-france-2013-100-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-tour-de-france-2014": {
   "score": 60,
@@ -11448,8 +11498,10 @@
   "via": "metacritic-web"
  },
  "x360-trivial-pursuit-live": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Nintendo Switch, Xbox 360, PlayStation 3, PlayStation 4, Xbox One"
  },
  "x360-tron": {
   "score": 43,
@@ -11461,15 +11513,15 @@
  },
  "x360-truck-racer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-tsurugi-no-machi-no-ihoujin-shiro-no-oukyuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-tsuushin-taisen-mahjong-touryuumon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-turbo-super-stunt-squad": {
   "score": 40,
@@ -11481,7 +11533,7 @@
  },
  "x360-udraw-pictionary": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-udraw-studio-instant-artist": {
   "score": 54,
@@ -11513,23 +11565,23 @@
  },
  "x360-victorious-time-to-shine": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-virtua-striker": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-viva-pinata-party-animals": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-voice-i-want-you": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-w-l-o-sekai-renai-kiko": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-the-walking-dead": {
   "score": 32,
@@ -11561,7 +11613,7 @@
  },
  "x360-wheel-of-fortune": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-who-wants-to-be-a-millionaire-2012-edition": {
   "score": 60,
@@ -11577,11 +11629,11 @@
  },
  "x360-winning-post-world-2010": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-winter-sports-2010": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-winter-sports-2011": {
   "score": 80,
@@ -11597,7 +11649,7 @@
  },
  "x360-wipeout-create-and-crash": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-wipeout-in-the-zone": {
   "score": 39,
@@ -11621,7 +11673,7 @@
  },
  "x360-world-snooker-championship-2007": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-wrc-powerslide": {
   "score": 58,
@@ -11629,15 +11681,15 @@
  },
  "x360-wrestle-kingdom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-wsc-real-09-world-snooker-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-wsc-real-11-world-snooker-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-xevious": {
   "score": 56,
@@ -11645,7 +11697,7 @@
  },
  "x360-the-x-factor": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-x-men": {
   "score": 70,
@@ -11697,15 +11749,15 @@
  },
  "x360-yu-gi-oh-millennium-duels": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-zegapain-not": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-zegapain-xor": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-zen-pinball-2-super-league-football": {
   "score": 65,
@@ -11717,7 +11769,7 @@
  },
  "x360-zoids-infinity-ex-neo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "x360-zombie-driver-hd": {
   "score": 64,
@@ -11741,23 +11793,23 @@
  },
  "x360-zumba-kids": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-afl-live-2003": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-afl-live-2004": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-afl-live-premiership-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-afl-premiership": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-american-chopper": {
   "score": 44,
@@ -11773,11 +11825,11 @@
  },
  "xbox-angelic-concert": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-aoi-namida": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-arena-football": {
   "score": 66,
@@ -11801,7 +11853,7 @@
  },
  "xbox-the-baseball-2002-battle-ball-park-sengen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-bass-pro-shops-trophy-bass-2007": {
   "score": 55,
@@ -11812,16 +11864,18 @@
   "via": "metacritic-web"
  },
  "xbox-big-bumpin": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox 360, Xbox"
  },
  "xbox-bistro-cupid": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-bistro-cupid-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-blowout": {
   "score": 55,
@@ -11829,11 +11883,11 @@
  },
  "xbox-braveknight": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-break-nine-world-billiards-tournament": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-breeders-cup-world-thoroughbred-championships": {
   "score": 47,
@@ -11841,11 +11895,11 @@
  },
  "xbox-brian-lara-international-cricket-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-c-a-t-cyber-attack-team": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-cabela-s-big-game-hunter-2005-adventures": {
   "score": 65,
@@ -11865,7 +11919,7 @@
  },
  "xbox-capcom-classics-collection-vol-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-capcom-classics-collection-vol-2": {
   "score": 74,
@@ -11877,19 +11931,19 @@
  },
  "xbox-championship-manager-season-01-02": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-championship-manager-season-02-03": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-championship-manager-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-championship-manager-5": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-chessmaster": {
   "score": 79,
@@ -11901,11 +11955,11 @@
  },
  "xbox-club-football": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-club-football-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-combat-elite-wwii-paratroopers": {
   "score": 56,
@@ -11917,11 +11971,11 @@
  },
  "xbox-conspiracy-weapons-of-mass-destruction": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-cricket-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-curse-the-eye-of-isis": {
   "score": 59,
@@ -11929,7 +11983,7 @@
  },
  "xbox-daemon-vector-gui-yi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-dakar-2-the-world-s-ultimate-rally": {
   "score": 73,
@@ -11949,11 +12003,11 @@
  },
  "xbox-dance-uk": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-dennou-taisen-dronez": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-die-hard-vendetta": {
   "score": 51,
@@ -11961,11 +12015,11 @@
  },
  "xbox-dinosaur-hunting": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-double-s-t-e-a-l-the-second-clash": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-dr-muto": {
   "score": 70,
@@ -11973,7 +12027,7 @@
  },
  "xbox-drihoo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-enclave": {
   "score": 66,
@@ -11981,19 +12035,23 @@
  },
  "xbox-england-international-football": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-exaskeleton": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-f1-2002": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 88,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "GameCube, PC, PlayStation 2, Xbox, Game Boy Advance"
  },
  "xbox-f1-career-challenge": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 70,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Xbox, GameCube, PC"
  },
  "xbox-the-fairly-oddparents-breakin-da-rules": {
   "score": 74,
@@ -12001,15 +12059,15 @@
  },
  "xbox-fila-world-tour-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-flight-academy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-ford-street-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-ford-vs-chevy": {
   "score": 60,
@@ -12025,19 +12083,21 @@
  },
  "xbox-galaxy-angel": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-gauntlet-seven-sorrows": {
   "score": 61,
   "via": "metacritic-web"
  },
  "xbox-gene-troopers": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 46,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation 2, Xbox"
  },
  "xbox-gotcha": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-greg-hastings-tournament-paintball": {
   "score": 74,
@@ -12052,16 +12112,20 @@
   "via": "metacritic-web"
  },
  "xbox-hello-kitty-roller-rescue": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 64,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "GameCube, PC, Xbox, PlayStation 2"
  },
  "xbox-high-rollers-casino": {
   "score": 70,
   "via": "metacritic-web"
  },
  "xbox-the-hobbit": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 61,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "GameCube, PlayStation 2, PC, Xbox, Game Boy Advance"
  },
  "xbox-the-hustle-detroit-streets": {
   "score": 52,
@@ -12073,7 +12137,7 @@
  },
  "xbox-innocent-tears": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-inside-pitch-2003": {
   "score": 58,
@@ -12081,11 +12145,11 @@
  },
  "xbox-intellivision-lives": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-international-superstar-soccer-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-iron-phoenix": {
   "score": 58,
@@ -12093,15 +12157,15 @@
  },
  "xbox-jacked": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-jikkyo-world-soccer-2002": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-jockey-s-road": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-karaoke-revolution": {
   "score": 80,
@@ -12113,15 +12177,15 @@
  },
  "xbox-kikou-heidan-j-phoenix-plus": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-the-king-of-fighters-2002": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-the-king-of-fighters-2003": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-the-king-of-fighters-neowave": {
   "score": 62,
@@ -12129,43 +12193,43 @@
  },
  "xbox-knights-of-the-temple-infernal-crusade": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-largo-winch-empire-under-threat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-lma-manager-2003": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-lma-manager-2004": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-lma-manager-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-lma-manager-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-magatama": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-magi-death-fight-mahou-gakuen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-manchester-united-manager-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-melbourne-cup-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-metal-arms-glitch-in-the-system": {
   "score": 82,
@@ -12177,11 +12241,11 @@
  },
  "xbox-miami-vice": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-micro-machines": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-midway-arcade-treasures-2": {
   "score": 74,
@@ -12221,7 +12285,7 @@
  },
  "xbox-muzzle-flash": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-mvp-baseball-2003": {
   "score": 86,
@@ -12233,11 +12297,11 @@
  },
  "xbox-n-u-d-e-natural-ultimate-digital-experiment": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-nakajima-tetsuya-no-othello-seminar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-narc": {
   "score": 51,
@@ -12269,7 +12333,7 @@
  },
  "xbox-nobunaga-no-yabo-ranseiki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-painkiller-hell-wars": {
   "score": 68,
@@ -12277,23 +12341,25 @@
  },
  "xbox-petit-copter": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-pilot-down-behind-enemy-lines": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-plus-plumb-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-pocketbike-racer": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 54,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox 360, Xbox"
  },
  "xbox-powerdrome": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-pro-cast-sports-fishing": {
   "score": 49,
@@ -12301,7 +12367,7 @@
  },
  "xbox-psyvariar-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-pump-it-up-exceed": {
   "score": 74,
@@ -12325,7 +12391,7 @@
  },
  "xbox-rent-a-hero-no-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-return-to-castle-wolfenstein-tides-of-war": {
   "score": 84,
@@ -12337,7 +12403,7 @@
  },
  "xbox-robot-wars-extreme-destruction": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-rogue-ops": {
   "score": 63,
@@ -12345,7 +12411,7 @@
  },
  "xbox-rolling": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-room-zoom": {
   "score": 65,
@@ -12353,15 +12419,15 @@
  },
  "xbox-rugby-challenge-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-rugby-league": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-rugby-league-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-samurai-shodown-v": {
   "score": 58,
@@ -12369,15 +12435,15 @@
  },
  "xbox-scar-squadra-corse-alfa-romeo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-sensible-soccer-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-sentou-yousei-yukikaze-yousei-no-mau-sora": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-serious-sam": {
   "score": 87,
@@ -12385,7 +12451,7 @@
  },
  "xbox-shadow-of-memories": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-shadow-ops-red-mercury": {
   "score": 61,
@@ -12393,23 +12459,23 @@
  },
  "xbox-shikigami-no-shiro": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-shikigami-no-shiro-evolution": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-shikigami-no-shiro-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-shinchou-mahjong": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-shin-megami-tensei-nine": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-the-sims": {
   "score": 84,
@@ -12417,15 +12483,15 @@
  },
  "xbox-ski-racing-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-ski-racing-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-slam-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-special-forces-nemesis-strike": {
   "score": 60,
@@ -12441,7 +12507,7 @@
  },
  "xbox-takahashi-junko-no-mahjong-seminar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-tecmo-classic-arcade": {
   "score": 55,
@@ -12449,7 +12515,7 @@
  },
  "xbox-tenerezza": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-tennis-masters-series-2003": {
   "score": 67,
@@ -12457,23 +12523,23 @@
  },
  "xbox-thousand-land": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-total-club-manager-2004": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-total-club-manager-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-touge-r": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-tour-de-france": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-toxic-grind": {
   "score": 49,
@@ -12481,11 +12547,11 @@
  },
  "xbox-triangle-again": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-triangle-again-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-trivial-pursuit-unhinged": {
   "score": 58,
@@ -12497,7 +12563,7 @@
  },
  "xbox-uefa-champions-league-2004-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-ultimate-beach-soccer": {
   "score": 39,
@@ -12505,11 +12571,11 @@
  },
  "xbox-ultimate-pro-pinball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-umezawa-yukari-no-igo-seminar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-virtual-pool-tournament-edition": {
   "score": 62,
@@ -12517,11 +12583,11 @@
  },
  "xbox-volvo-drive-for-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-the-wild-rings": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-world-championship-poker": {
   "score": 66,
@@ -12537,19 +12603,19 @@
  },
  "xbox-world-championship-rugby": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-world-championship-snooker-2003": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-world-championship-snooker-2004": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-world-snooker-championship-2005": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-worms-3d": {
   "score": 69,
@@ -12569,11 +12635,11 @@
  },
  "xbox-yetisports-arctic-adventures": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-yonenaga-kunio-no-shougi-seminar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-yu-gi-oh-the-dawn-of-destiny": {
   "score": 53,
@@ -12581,11 +12647,11 @@
  },
  "xbox-zillernet": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-burger-king-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "xbox-grand-theft-auto-double-pack": {
   "score": 96,

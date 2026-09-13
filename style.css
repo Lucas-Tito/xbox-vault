@@ -246,6 +246,9 @@ ul.modos li{color:var(--txt)}
 /* nota do Metacritic que nao e da plataforma do jogo */
 .mc.geral{opacity:.82}
 .mc i{font-style:normal;font-size:9px;vertical-align:super;margin-left:1px;opacity:.8}
+.coop-ex li{color:var(--green2)}
+.coop-exp{margin:8px 0 0;padding:8px 10px;font-size:12.5px;line-height:1.5;font-style:italic;
+  color:var(--dim);background:var(--bg3);border-left:2px solid var(--line);border-radius:0 6px 6px 0}
 .det-vaz{margin:0 0 14px;padding:10px 12px;font-size:12.5px;line-height:1.5;
   color:var(--txt);background:rgba(217,164,65,.09);
   border:1px solid rgba(217,164,65,.32);border-left-width:3px;border-radius:6px}

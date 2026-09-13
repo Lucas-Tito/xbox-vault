@@ -1,19 +1,21 @@
 {
  "emu-ps1-chibi-chara-game-ginga-eiyuu-densetsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chibi-maruko-chan-maruko-enikki-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chicken-run": {
   "score": 75,
   "via": "metacritic-web"
  },
  "emu-gba-chicken-shoot": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 27,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, Game Boy Advance, Wii, DS"
  },
  "emu-gba-chicken-shoot-2": {
   "score": 45,
@@ -21,111 +23,111 @@
  },
  "emu-ps1-chiisana-kyojin-microman": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chiisana-oukoku-erutoria": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chill": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-china": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chinmoku-no-kantai-the-silent-service": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-chobits-atashi-dake-no-hito": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chocobo-collection": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-chocobo-land-a-game-of-dice": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chocobo-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chocobo-stallion": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chocobo-no-fushigi-na-dungeon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chocobo-s-dungeon-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chocolate-kiss": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-choro-q-jet-rainbow-wings": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-choro-q-marine-q-boat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-choro-q-ver-1-02": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-choro-q-wonderful": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-choro-q2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-choro-q3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chou-aniki-kyuukyoku-muteki-ginga-saikyou-otoko": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chou-hatsumei-boy-kanipan-hirameki-wonderland": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chou-mashin-eiyuuden-wataru-another-step": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chou-nazoou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chou-sentou-kyuugi-vanborg": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chou-kousoku-gran-doll": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chris-kamara-s-street-soccer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chronicles-of-the-sword": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chrono-cross": {
   "score": 94,
@@ -133,7 +135,7 @@
  },
  "emu-ps1-chrono-trigger": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-chuchu-rocket": {
   "score": 84,
@@ -141,71 +143,71 @@
  },
  "emu-ps1-chushingura": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cindy-s-caribbean-holiday": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cindy-s-fashion-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cinema-eikaiwa-series-dai-1-dan-tengoku-ni-ikenai-papa": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cinema-eikaiwa-series-dai-2-dan-interceptor": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cinema-eikaiwa-series-dai-3-dan-arashigaoka": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cinema-eikaiwa-series-dai-4-dan-boy-s-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cinema-eikaiwa-series-dai-5-dan-zombie": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cinema-eikaiwa-series-dai-6-dan-ai-no-hate-ni": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cinnamon-fuwafuwa-daibouken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cinnamon-yume-no-daibouken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cinnamoroll-koko-ni-iru-yo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-circadia": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-circuit-beat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-circuit-breakers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-city-bravo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-city-bravo-business-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-civilization-ii": {
   "score": 94,
@@ -213,7 +215,7 @@
  },
  "emu-ps1-civizard-majutsu-no-keifu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-classic-nes-series-bomberman": {
   "score": 55,
@@ -265,51 +267,51 @@
  },
  "emu-ps1-classic-road": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-classic-road-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-classic-road-yuushun-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cleopatra-s-fortune": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-manga-click-no-hi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-manga-dynamic-robot-taisen-1-shutsugeki-kyoui-robot-no-gundan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-manga-dynamic-robot-taisen-2-kyoufu-akuma-zoku-fukkatsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-manga-ginga-eiyuu-densetsu-1-eien-no-yoru-no-naka-de": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-manga-ginga-eiyuu-densetsu-2-iserlohn-kouryaku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-manga-opera-za-no-kaijin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-click-medic": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-clock-tower": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-clock-tower-ii-the-struggle-within": {
   "score": 49,
@@ -317,27 +319,29 @@
  },
  "emu-ps1-clock-tower-the-first-fear": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-clockworks": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cocktail-harmony": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cocoto-kart-racer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cocoto-platform-jumper": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 59,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "GameCube, PlayStation 2, Game Boy Advance, PC, Wii"
  },
  "emu-ps1-codebreaker": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-codename-kids-next-door-operation-s-o-d-a": {
   "score": 56,
@@ -345,11 +349,11 @@
  },
  "emu-ps1-codename-tenka": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-colin-mcrae-rally": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-colin-mcrae-rally-2-0": {
   "score": 80,
@@ -361,7 +365,7 @@
  },
  "emu-ps1-college-slam": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-colony-wars": {
   "score": 91,
@@ -369,7 +373,7 @@
  },
  "emu-ps1-colony-wars-iii-red-sun": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-colony-wars-vengeance": {
   "score": 91,
@@ -377,15 +381,15 @@
  },
  "emu-ps1-colorful-logic": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-colorful-logic-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-colorful-logic-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-columns-crown": {
   "score": 70,
@@ -393,55 +397,59 @@
  },
  "emu-ps1-combat-choro-q": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-combat-choro-q-advance-daisakusen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-combi-mahjong-awase-uchi-with-maboroshi-tsukiyo-characters": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-combination-pro-soccer-j-league-no-kantoku-ni-natte-sekai-o-mezase": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-combo-pack-sonic-advance-sonic-pinball-party": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-comix-zone": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-command-conquer": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 94,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation, PC, Nintendo 64"
  },
  "emu-ps1-command-conquer-red-alert": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 90,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation, iOS (iPhone/iPad)"
  },
  "emu-ps1-command-conquer-red-alert-retaliation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-community-pom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-community-pom-omoide-o-dakishimete": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-constructor": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-contender": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-contender-2": {
   "score": 79,
@@ -453,15 +461,15 @@
  },
  "emu-ps1-contra-legacy-of-war": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cool-boarders": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cool-boarders-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cool-boarders-2001": {
   "score": 56,
@@ -469,11 +477,11 @@
  },
  "emu-ps1-cool-boarders-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cool-boarders-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-corvette": {
   "score": 58,
@@ -481,19 +489,19 @@
  },
  "emu-ps1-cosmic-cookoff-language-arts": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cosmic-cookoff-mathematics": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cosmic-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cosmowarrior-zero": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-countdown-vampires": {
   "score": 41,
@@ -501,39 +509,39 @@
  },
  "emu-ps1-courier-crisis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-covert-ops-nuclear-dawn": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cowboy-bebop": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-spyro-super-pack-volume-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-spyro-superpack-volume-1-crash-n-tranced-and-spyro-season-of-ice": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-spyro-superpack-crash-bandicoot-the-huge-adventure-spyro-season-of-ice": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-spyro-superpack-spyro-orange-the-cortex-conspiracy-crash-bandicoot-purple-ripto-s-rampage": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crash-bandicoot": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crash-bandicoot-2-cortex-strikes-back": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-bandicoot-2-n-tranced": {
   "score": 75,
@@ -541,7 +549,7 @@
  },
  "emu-gba-crash-bandicoot-blast": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-bandicoot-purple-ripto-s-rampage": {
   "score": 67,
@@ -565,35 +573,37 @@
  },
  "emu-gba-crash-superpack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crash-of-the-titans": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 65,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii, PlayStation 2, Xbox 360, DS, Game Boy Advance, PSP"
  },
  "emu-gba-crayon-shin-chan-arashi-o-yobu-cinema-land-no-daibouken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crayon-shin-chan-densetsu-o-yobu-omake-no-miyako-shukkugaan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crazy-balloon-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crazy-chase": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crazy-climber-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crazy-frog-racer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crazy-taxi-catch-a-ride": {
   "score": 48,
@@ -601,27 +611,29 @@
  },
  "emu-ps1-creative-camp": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-creative-isle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-creative-journey": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-creative-voyage": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-creature-shock": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-creatures": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 43,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation, PC"
  },
  "emu-ps1-creatures": {
   "score": 43,
@@ -633,95 +645,97 @@
  },
  "emu-ps1-cricket-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crime-crackers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crime-crackers-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crime-killer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crisis-beat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crisis-city": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-critical-blow": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-critical-depth": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-criticom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-croc-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-croc-legend-of-the-gobbos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-croket-2-yami-no-bank-to-ban-joou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-croket-3-granyuu-oukoku-no-nazo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-croket-4-bank-no-mori-no-mamorigami": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-croket-great-jikuu-no-boukensha": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-croket-kindan-no-kinka-box": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-croket-yume-no-banker-survival": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cross-romance-koi-to-mahjong-to-hanafuda-to": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cross-tantei-monogatari": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cross-tantei-monogatari-1-kouhen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cross-tantei-monogatari-1-zenpen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crossroad-crisis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crouching-tiger-hidden-dragon": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 48,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox, PlayStation 2, GameCube"
  },
  "emu-gba-cruis-n-velocity": {
   "score": 53,
@@ -729,11 +743,11 @@
  },
  "emu-ps1-crusader-no-remorse": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-crusaders-of-might-and-magic": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-crushed-baseball": {
   "score": 38,
@@ -741,39 +755,39 @@
  },
  "emu-ps1-crypt-killer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cu-on-pa": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cubix-robots-for-everyone-clash-n-bash": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cubix-robots-for-everyone-race-n-robots": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-culdcept-expansion-plus": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-culdcept-cepter-s-guild-vol-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-culdcept-cepter-s-guild-vol-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-culdcept-expansion": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-curiosity-kills-the-cat-koukishin-wa-neko-wo-korosu-ka": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-curious-george": {
   "score": 65,
@@ -781,59 +795,59 @@
  },
  "emu-gba-custom-robo-gx": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyber-daisenryaku-shutsugeki-haruka-tai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cyber-drive-zoids-hatakedamono-no-senshi-hugh": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyber-egg-battle-champion": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyber-org": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyber-war": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyberspeed": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cybertiger": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyberbots-fullmetal-madness": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cyberia": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cybernetic-empire": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cybersled": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-d": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dbz-dead-ball-zone": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dk-king-of-swing": {
   "score": 70,
@@ -841,11 +855,11 @@
  },
  "emu-gba-doom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-doom-ii": {
   "score": 77,
@@ -853,123 +867,123 @@
  },
  "emu-ps1-dx-hyakunin-isshu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-jinsei-game-ii-the-game-of-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-jinsei-game-iii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-jinsei-game-iv": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-jinsei-game-v": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-jinsei-game-the-game-of-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-monopoly": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-nippon-tokkyuu-ryokou-game-let-s-travel-in-japan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-okuman-chouja-game-ii-the-money-battle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-okumanchouja-game-the-money-battle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dx-shachou-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dai-2-ji-super-robot-taisen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dai-2-kai-quiz-darake-no-jinsei-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dai-3-ji-super-robot-taisen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dai-4-ji-super-robot-taisen-s": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dai-mahjong": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daibouken-deluxe-harukanaru-umi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daikoukai-jidai-gaiden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daikoukai-jidai-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daikoukai-jidai-iv-porto-estado": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daiobake-yashiki-hamamura-jun-no-jitsuwa-kaidan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-daisenryaku-for-game-boy-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daisenryaku-master-combat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-daisenryaku-player-s-spirit": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-daisuki-teddy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dakar-97": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dalmatians-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-damdam-stompland": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dan-doh-tobase-shouri-no-smile-shot": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dan-doh-xi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dance-dance-revolution": {
   "score": 90,
@@ -977,7 +991,7 @@
  },
  "emu-ps1-dance-dance-revolution-usa": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dance-dance-revolution-2nd-remix": {
   "score": 90,
@@ -1021,55 +1035,55 @@
  },
  "emu-ps1-dance-dance-dance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dance-uk": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dance-uk-extra-trax": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-blade-katteni-momotenshi-ii-tears-of-eden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-blade-katteni-momotenshi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-stage-fever": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-stage-fusion": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-stage-featuring-dreams-come-true": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-stage-featuring-true-kiss-destination": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-stage-euro-mix": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dancing-stage-party-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dancing-sword-senkou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dangan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-danger-girl": {
   "score": 43,
@@ -1085,7 +1099,7 @@
  },
  "emu-ps1-dare-devil-derby-3d": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-daredevil": {
   "score": 50,
@@ -1093,11 +1107,11 @@
  },
  "emu-ps1-darius-gaiden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-darius-r": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dark-arena": {
   "score": 65,
@@ -1105,35 +1119,35 @@
  },
  "emu-ps1-dark-hunter-ge-youma-no-mori": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dark-hunter-jou-ijigen-gakuen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dark-seed": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dark-seed-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dark-tales-from-the-lost-soul": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-darklight-conflict": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-darkstalkers-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-darkstalkers-the-night-warriors": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-darkstone-evil-reigns": {
   "score": 58,
@@ -1165,7 +1179,7 @@
  },
  "emu-ps1-davis-cup-complete-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-davis-cup-tennis": {
   "score": 59,
@@ -1173,55 +1187,59 @@
  },
  "emu-ps1-dead-in-the-water": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dead-or-alive": {
   "score": 84,
   "via": "metacritic-web"
  },
  "emu-gba-dead-to-rights": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 73,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, GameCube, Xbox, PC"
  },
  "emu-ps1-deadheat-road": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-deadly-skies": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-deal-or-no-deal": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 20,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, DS, Game Boy Advance, Wii"
  },
  "emu-ps1-death-mask": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-deathtrap-dungeon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-debut-21": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-deception-iii-dark-delusion": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-deep-freeze": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-deep-sea-adventure-kaitei-kyuu-pantarassa-no-nazo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-defcon-5-peace-has-a-price": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-defender": {
   "score": 73,
@@ -1233,7 +1251,7 @@
  },
  "emu-ps1-dekiru-game-center": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-delta-force-urban-warfare": {
   "score": 70,
@@ -1241,7 +1259,7 @@
  },
  "emu-gba-demikids-dark-version": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-demikids-light-version": {
   "score": 62,
@@ -1249,27 +1267,29 @@
  },
  "emu-ps1-demo-1-version-5": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-demo-one-version-2-sces-00120": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-demodemo-playstation-vol-5": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-demolition-racer": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 77,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation, Dreamcast"
  },
  "emu-gba-demon-driver-time-to-burn-rubber": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dengeki-construction-ochige-yarouze": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-denki-blocks": {
   "score": 77,
@@ -1277,67 +1297,69 @@
  },
  "emu-ps1-denki-groove-jigoku-v": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-denpa-shounenteki-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-densetsu-no-stafy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-densetsu-no-stafy-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-densetsu-no-stafy-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-densha-daisuki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-densha-de-go": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-densha-de-go-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-densha-de-go-nagoya-tetsudou-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-densha-de-go-professional-shiyou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-derby-jockey-2001": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-derby-jockey-r": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-derby-stallion-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-descent": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-descent-ii": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 89,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC"
  },
  "emu-ps1-descent-maximum": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-desert-strike-advance": {
   "score": 66,
@@ -1345,19 +1367,19 @@
  },
  "emu-ps1-deserted-island": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-destrega": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-destruction-derby": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-destruction-derby-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-destruction-derby-raw": {
   "score": 69,
@@ -1365,39 +1387,39 @@
  },
  "emu-ps1-destructo-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-detana-twinbee-yahoo-deluxe-pack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-detective-barbie-the-mystery-cruise": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-detective-mouse": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-devicereign": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-devil-dice": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-devil-summoner-soul-hackers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-devilman": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dexter-s-laboratory-chess-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dexter-s-laboratory-deesaster-strikes": {
   "score": 65,
@@ -1409,55 +1431,57 @@
  },
  "emu-ps1-dezaemon-kids": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dezaemon-plus": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-di-gi-charat-di-gi-communication": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-di-gi-communication-2-datou-black-gemagema-dan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-diadroids-world-evil-teikoku-no-yabou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-diablo": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 94,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation"
  },
  "emu-ps1-dice-de-chocobo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-die-hard-trilogy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-die-hard-trilogy-2-viva-las-vegas": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-die-wilden-fussball-kerle-entscheidung-im-teufelstopf": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-die-wilden-fussball-kerle-gefahr-im-wilde-kerle-land": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digcro-digital-number-crossword": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digical-league": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-digimon-battle-spirit": {
   "score": 60,
@@ -1477,11 +1501,11 @@
  },
  "emu-ps1-digimon-tamers-pocket-culumon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digimon-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digimon-world-2": {
   "score": 42,
@@ -1493,7 +1517,7 @@
  },
  "emu-ps1-digimon-world-digital-card-battle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digimon-digital-card-battle": {
   "score": 51,
@@ -1501,35 +1525,37 @@
  },
  "emu-ps1-digital-ehon-vol-1-imadoki-no-momotarou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digital-ehon-vol-2-imadoki-no-kaguyahime": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digital-ehon-vol-3-imadoki-no-saru-kani": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digital-ehon-vol-4-imadoki-no-hanasaka-jiisan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digital-ehon-vol-5-imadoki-no-urashima-tarou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digital-figure-iina": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-digital-glider-airman": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dino-crisis": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 74,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation, PC, Dreamcast, PlayStation 5, PlayStation 4"
  },
  "emu-ps1-dino-crisis-2": {
   "score": 86,
@@ -1537,11 +1563,11 @@
  },
  "emu-ps1-dinomaster-party": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dinosaurs": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dinotopia-the-timestone-pirates": {
   "score": 64,
@@ -1549,35 +1575,35 @@
  },
  "emu-ps1-dioramos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dirt-jockey-heavy-equipment-operator": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disc-derby-meiba-o-tsukurou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-discworld": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-discworld-ii-mortality-bytes": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-discworld-noir": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-learning-mickey": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-presents-tigger-s-honey-hunt": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-princess": {
   "score": 77,
@@ -1613,7 +1639,7 @@
  },
  "emu-ps1-disney-s-101-dalmatians-ii-patch-s-london-adventure": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-s-102-dalmatians-puppies-to-the-rescue": {
   "score": 70,
@@ -1621,7 +1647,7 @@
  },
  "emu-gba-disney-s-aladdin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-s-aladdin-in-nasira-s-revenge": {
   "score": 61,
@@ -1637,15 +1663,17 @@
  },
  "emu-ps1-disney-s-atlantis-the-lost-empire": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-brother-bear": {
   "score": 80,
   "via": "metacritic-web"
  },
  "emu-gba-disney-s-chicken-little": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 60,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Xbox, GameCube, PC"
  },
  "emu-gba-disney-s-cinderella-magical-dreams": {
   "score": 69,
@@ -1665,7 +1693,7 @@
  },
  "emu-ps1-disney-s-goofy-s-fun-house": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-herbie-fully-loaded": {
   "score": 47,
@@ -1673,7 +1701,7 @@
  },
  "emu-ps1-disney-s-hercules-action-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-kim-possible-2-drakken-s-demise": {
   "score": 77,
@@ -1688,8 +1716,10 @@
   "via": "metacritic-web"
  },
  "emu-gba-disney-s-lilo-stitch": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 54,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation"
  },
  "emu-ps1-disney-s-lilo-stitch": {
   "score": 54,
@@ -1697,7 +1727,7 @@
  },
  "emu-gba-disney-s-lilo-stitch-2-hamsterviel-havoc": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-magical-quest-2-starring-mickey-minnie": {
   "score": 63,
@@ -1709,7 +1739,7 @@
  },
  "emu-gba-disney-s-magical-quest-starring-mickey-minnie": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-party": {
   "score": 44,
@@ -1717,19 +1747,19 @@
  },
  "emu-ps1-disney-s-peter-pan-in-return-to-never-land": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-peter-pan-return-to-never-land": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-s-pooh-s-party-game-in-search-of-the-treasure": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-s-story-studio-mulan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-tarzan-return-to-the-jungle": {
   "score": 68,
@@ -1749,11 +1779,11 @@
  },
  "emu-ps1-disney-s-the-little-mermaid-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-the-little-mermaid-magic-in-two-kingdoms": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-s-treasure-planet": {
   "score": 68,
@@ -1765,7 +1795,7 @@
  },
  "emu-ps1-disney-pixar-a-bug-s-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-disney-pixar-cars-mater-national-championship": {
   "score": 50,
@@ -1773,39 +1803,39 @@
  },
  "emu-ps1-disney-pixar-monsters-inc-scream-team": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-pixar-s-buzz-lightyear-of-star-command": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-pixar-s-toy-story-2-buzz-lightyear-to-the-rescue": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disney-pixar-s-toy-story-racer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-disruptor": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-diver-s-dream": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dodonpachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-docchi-mecha": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dodgem-arena": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dogz": {
   "score": 48,
@@ -1813,7 +1843,7 @@
  },
  "emu-gba-dogz-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dogz-fashion": {
   "score": 48,
@@ -1821,7 +1851,7 @@
  },
  "emu-ps1-dokapon-ikari-no-tetsuken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dokapon-monster-hunter": {
   "score": 70,
@@ -1829,83 +1859,83 @@
  },
  "emu-ps1-doki-doki-on-air": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doki-doki-on-air2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doki-doki-poyatchio": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doki-doki-pretty-league": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doki-doki-pretty-league-lovely-star": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doki-doki-pretty-league-nekketsu-otome-seishunki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doki-doki-shutter-chance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dokidoki-cooking-series-1-komugi-chan-no-happy-cake": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dokidoki-cooking-series-2-gourmet-kitchen-suteki-na-obentou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dokiou-ki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doko-demo-issyo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dokodemo-hamster-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dokodemo-hamster-4-doki-doki-sugoroku-daibouken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dokodemo-hamster-bi-click-tanken-tai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dokodemo-taikyoku-yakuman-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dokomademo-aoku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-domo-kun-no-fushigi-terebi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-don-chan-puzzle-hanabi-de-doon-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-donpachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-donald-duck-adv-nce": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-donkey-kong-country": {
   "score": 78,
@@ -1921,15 +1951,15 @@
  },
  "emu-gba-dora-the-explorer-double-pack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dora-the-explorer-barnyard-buddies": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dora-the-explorer-dora-s-world-adventure": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dora-the-explorer-super-spies": {
   "score": 64,
@@ -1937,7 +1967,7 @@
  },
  "emu-gba-dora-the-explorer-super-star-adventures": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dora-the-explorer-the-search-for-pirate-pig-s-treasure": {
   "score": 73,
@@ -1945,35 +1975,35 @@
  },
  "emu-ps1-doraemon-2-sos-otogi-no-kuni": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doraemon-3-makai-no-dungeon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-doraemon-dokodemo-walker": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-doraemon-midori-no-wakusei-doki-doki-daikyuushuutsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doraemon-nobitaito-fukkatsu-no-hoshi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dosukoi-densetsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dotsubo-chan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-double-dragon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-double-dragon-advance": {
   "score": 75,
@@ -1981,35 +2011,35 @@
  },
  "emu-ps1-double-eagle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doubutsu-chara-navi-uranai-2-kosei-shinrigaku-ren-ai-uranai-puzzle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-doubutsujima-no-chobi-gurumi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-doubutsujima-no-chobi-gurumi-2-tama-chan-monogatari": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-douga-de-puzzle-da-puppukupuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doukyuusei-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doukyuusei-mahjong": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-doumu-no-yabou-2-the-race-of-champions": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-downforce": {
   "score": 69,
@@ -2017,15 +2047,17 @@
  },
  "emu-ps1-downhill-snow": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dr-muto": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 70,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "GameCube, PlayStation 2, Xbox"
  },
  "emu-ps1-dr-rin-ni-kiite-mite-koi-no-happy-four-seasons": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dr-seuss-the-cat-in-the-hat": {
   "score": 40,
@@ -2036,28 +2068,34 @@
   "via": "metacritic-web"
  },
  "emu-ps1-dr-seuss-the-cat-in-the-hat": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 40,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Game Boy Advance, PC, Xbox, GameCube"
  },
  "emu-ps1-dr-slump": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dr-sudoku": {
   "score": 68,
   "via": "metacritic-web"
  },
  "emu-ps1-dracula-the-last-sanctuary": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 68,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "iOS (iPhone/iPad), PC, PlayStation"
  },
  "emu-ps1-dracula-the-resurrection": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 67,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "iOS (iPhone/iPad), PC, PlayStation"
  },
  "emu-ps1-dragon-ball-gt-final-bout": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-ball-gt-transformation": {
   "score": 69,
@@ -2073,7 +2111,7 @@
  },
  "emu-ps1-dragon-ball-z-idainaru-dragon-ball-densetsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-ball-z-supersonic-warriors": {
   "score": 73,
@@ -2089,7 +2127,7 @@
  },
  "emu-gba-dragon-ball-z-the-legacy-of-goku-i-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-ball-z-the-legacy-of-goku-ii": {
   "score": 75,
@@ -2105,55 +2143,55 @@
  },
  "emu-ps1-dragon-beat-legend-of-pinball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-drive-tactics-break": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-drive-world-d-break": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-knight-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-money": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-quest-characters-torneko-no-daibouken-2-advance-fushigi-no-dungeon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-quest-characters-torneko-no-daibouken-3-advance-fushigi-no-dungeon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-quest-iv-michibikareshi-mono-tachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-quest-monsters-1-2-hoshifuri-no-yuusha-to-bokujou-no-nakamatachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-quest-monsters-caravan-heart": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-seeds": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dragon-tales-dragon-adventures": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-tales-dragon-seek": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragon-valor": {
   "score": 57,
@@ -2165,15 +2203,15 @@
  },
  "emu-gba-dragon-s-rock": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragonheart-fire-steel": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dragstars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-drake-josh": {
   "score": 70,
@@ -2181,15 +2219,15 @@
  },
  "emu-ps1-dream-circus": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dream-generation-koi-ka-shigoto-ka": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dreams": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-drill-dozer": {
   "score": 81,
@@ -2221,11 +2259,11 @@
  },
  "emu-gba-droopy-s-tennis-open": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-druid-yami-e-no-tsuisekisha": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dual-blades": {
   "score": 61,
@@ -2233,7 +2271,7 @@
  },
  "emu-ps1-dual-shock-demo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ducati-world-racing-challenge": {
   "score": 68,
@@ -2241,19 +2279,19 @@
  },
  "emu-gba-duel-masters-2-invincible-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-duel-masters-2-kirifuda-shoubu-version": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-duel-masters-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-duel-masters-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-duel-masters-kaijudo-showdown": {
   "score": 66,
@@ -2277,23 +2315,23 @@
  },
  "emu-ps1-duke-nukem-time-to-kill": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-duke-nukem-total-meltdown": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dune-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dungeon-creator": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dungeon-shoutenkai-densetsu-no-ken-hajimemashita": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dungeons-dragons-eye-of-the-beholder": {
   "score": 57,
@@ -2301,23 +2339,23 @@
  },
  "emu-ps1-dynamite-soccer-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dynamite-soccer-2002": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dynamite-soccer-2004-final": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dynamite-soccer-98": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-dynasty-warriors": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-dynasty-warriors-advance": {
   "score": 56,
@@ -2325,59 +2363,59 @@
  },
  "emu-gba-e-reader-balloon-fight": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-baseball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-clu-clu-land": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-donkey-kong": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-donkey-kong-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-donkey-kong-jr": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-excitebike": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-golf": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-ice-climber": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-mario-bros": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-pinball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-reader-urban-champion": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-e-t-the-extra-terrestrial-interplanetary-mission": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-e-t-the-extra-terrestrial": {
   "score": 46,
@@ -2389,35 +2427,35 @@
  },
  "emu-ps1-ecw-hardcore-revolution": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eos-edge-of-skyhigh": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eps-series-vol-1-because-i-love-you-yukiko-morikawa": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eps-series-vol-2-moonlight-to-daybreak-yukie-nakama": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eps-series-vol-3-come-and-kiss-me-tomomi-tsunoda": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eps-series-vol-4-noise-reduction-tomoa-yamamoto": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eps-series-vol-5-believer-dreamer-junko-mizutani": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-espn-extreme-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-espn-final-round-golf-2002": {
   "score": 70,
@@ -2436,8 +2474,10 @@
   "via": "metacritic-web"
  },
  "emu-gba-espn-winter-x-games-snowboarding-2002": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 64,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Xbox, Game Boy Advance"
  },
  "emu-gba-espn-x-games-skateboarding": {
   "score": 67,
@@ -2445,47 +2485,47 @@
  },
  "emu-ps1-espn-x-games-pro-boarder": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eve-the-fatal-attraction": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eve-the-lost-one": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ex-monopoly": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ez-talk-shokyuuhen-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ez-talk-shokyuuhen-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ez-talk-shokyuuhen-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ez-talk-shokyuuhen-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ez-talk-shokyuuhen-5": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ez-talk-shokyuuhen-6": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eagle-one-harrier-attack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-earthworm-jim": {
   "score": 72,
@@ -2497,39 +2537,39 @@
  },
  "emu-ps1-earthworm-jim-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-east-end-x-yuri-eexy-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-easter-bunny-s-big-day": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eberouge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eberouge-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eberouge-special-koi-to-mahou-no-gakuen-seikatsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ebisu-yoshikazu-no-ooana-keiti": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-echo-night": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-echo-night-2-the-lord-of-nightmares": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ecks-vs-sever": {
   "score": 80,
@@ -2537,27 +2577,29 @@
  },
  "emu-ps1-econo-kids-ta-ga-tame-ni-kane-ha-naru": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ecsaform": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ed-edd-n-eddy-jawbreakers": {
   "score": 49,
   "via": "metacritic-web"
  },
  "emu-gba-ed-edd-n-eddy-the-mis-edventures": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 56,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Xbox, GameCube, PC"
  },
  "emu-ps1-efficus-kono-omoi-wo-kimi-ni": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-egg": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-egg-mania": {
   "score": 64,
@@ -2565,31 +2607,31 @@
  },
  "emu-ps1-eggs-of-steel-charlie-s-eggcellent-adventure": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-egypt-1156-b-c-tomb-of-the-pharaoh": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-egypt-ii-the-heliopolis-prophecy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ehrgeiz-god-bless-the-ring": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eidos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eikan-wa-kimini-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-einhander": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-eisei-meijin": {
   "score": null,
@@ -3401,39 +3443,39 @@
  },
  "emu-ps1-playstation-demo-disc-spring-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-playstation-underground-vol-1-issue-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-playstation-underground-vol-2-issue-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-playstation-underground-vol-3-issue-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-98-koshien": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-99-koushien": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-0-kara-no-shogi-shogi-youchien-ayumi-gumi-r": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-0-kara-no-shougi-shougi-youchien-ayumi-gumi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-007-racing": {
   "score": 51,
@@ -3453,219 +3495,219 @@
  },
  "emu-ps1-007-tomorrow-never-dies": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-1-on-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-100-manyen-quiz-hunter": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-100-star": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-10101-will-the-starship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-16-tales-vol-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-16-tales-vol-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-16-tales-vol-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-16-tales-vol-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-19-ji-03-pun-ueno-hatsu-yakou-ressha": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-disney-games-disney-sports-football-disney-sports-skateboarding": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-disney-games-lilo-stitch-2-peter-pan-return-to-neverland": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-game-pack-hot-wheels-stunt-track-challenge-hot-wheels-world-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-disney-princess-disney-s-the-lion-king": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-the-spongebob-squarepants-movie-spongebob-squarepants-and-friends-in-freeze-frame-frenzy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-double-pack-hot-wheels-world-race-hot-wheels-velocity-x": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-double-pack-scooby-doo-scooby-doo-2-monsters-unleashed": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-double-pack-scooby-doo-and-the-cyber-chase-scooby-doo-mystery-mayhem": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-dragon-ball-z-buu-s-fury-dragon-ball-gt-transformation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-brother-bear-the-lion-king": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-cartoon-network-block-party-cartoon-network-speedway": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-columns-crown-chuchu-rocket": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-disney-princess-brother-bear": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-disney-princess-lizzie-mcguire": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-finding-nemo-finding-nemo-the-continuing-adventures": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-finding-nemo-the-incredibles": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-finding-nemo-the-continuing-adventures-the-incredibles": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-gt-3-advance-pro-concept-racing-moto-gp-ultimate-racing-technology": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-golden-nugget-casino-texas-hold-em-poker": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-lego-knights-kingdom-lego-bionicle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-monsters-inc-finding-nemo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-power-rangers-ninja-storm-power-rangers-time-force": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-quad-desert-fury-monster-trucks": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-rugrats-go-wild-spongebob-squarepants-supersponge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-sonic-advance-chuchu-rocket": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-sonic-advance-sonic-battle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-sonic-battle-chuchu-rocket": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-sonic-battle-sonic-pinball-party": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-sonic-pinball-party-columns-crown": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-jimmy-neutron-boy-genius": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-spongebob-squarepants-supersponge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-nicktoons-freeze-frame-frenzy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-battle-for-bikini-bottom-the-fairly-oddparents-breakin-da-rules": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-1-spongebob-squarepants-supersponge-spongebob-squarepants-revenge-of-the-flying-dutchman": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-games-in-one-dr-mario-puzzle-league": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-game-pack-shrek-2-shark-tale": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-game-pack-spider-man-spider-man-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-game-pack-spider-man-mysterio-s-menace-x2-wolverine-s-revenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-game-pack-tony-hawk-s-underground-kelly-slater-s-pro-surfer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-asterix-obelix-bash-them-all-asterix-obelix-xxl": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-v-rally-3-stuntman": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-jeux-en-1-titeuf-ze-gag-machine-titeuf-mega-compet": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-fun-pack-madagascar-operation-penguin-shrek-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-2-in-1-fun-pack-shrek-2-madagascar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-2002-fifa-world-cup": {
   "score": 82,
@@ -3673,111 +3715,111 @@
  },
  "emu-ps1-2xtreme": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-game-pack-candy-land-chutes-ladders-original-memory-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-game-pack-connect-four-perfection-trouble": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-game-pack-ker-plunk-toss-across-tip-it": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-game-pack-mouse-trap-simon-operation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-game-pack-risk-battleship-clue": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-game-pack-the-game-of-life-payday-yahtzee": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-games-in-1-rugrats-i-gotta-go-party-spongebob-squarepants-supersponge-tak-and-the-power-of-the-juju": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-3-in-1-sports-pack": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-360-three-sixty": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-3d-baseball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-3d-shooting-tsukuru": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-3xtreme": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-3x3-eyes-kyuusei-koushu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-3x3-eyes-tenrinougenmu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-4-games-on-one-game-pak-gt-advance-gt-advance-2-gt-advance-3-motogp": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-4-games-on-one-game-pak-movies": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-4-games-on-one-game-pak-nicktoons": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-4-4-2-soccer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-40-winks": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-5-star-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-70-s-robot-anime-geppy-x-the-super-boosted-armor": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a-bug-s-life-activity-centre": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a-collection-of-activision-classic-games-for-the-atari-2600": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a-collection-of-classic-games-from-the-intellivision": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a-ressha-de-ikou-4-evolution": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a-ressha-de-ikou-z-mezase-tairiku-oudan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-a-sound-of-thunder": {
   "score": 65,
@@ -3785,59 +3827,59 @@
  },
  "emu-ps1-a-train-trains-power-money": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a2-racer-iii-europa-tour": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-a5-a-ressha-de-ikou-5": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-advan-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-afl-99": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-mahjong-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-mahjong-selection": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-shogi-2-deluxe": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-shougi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-shougi-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-shougi-selection": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ascii-entertainment-demo-cd": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atv-mania": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atv-racers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-atv-quad-power-racing": {
   "score": 49,
@@ -3849,11 +3891,11 @@
  },
  "emu-gba-atv-thunder-ridge-riders": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-abalaburn": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ace-combat-2": {
   "score": 83,
@@ -3861,11 +3903,11 @@
  },
  "emu-ps1-ace-combat-3-electrosphere": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ace-combat-3-electrosphere-direct-audio-with-appendisc": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ace-combat-advance": {
   "score": 56,
@@ -3873,19 +3915,19 @@
  },
  "emu-gba-ace-lightning": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aces-of-the-air": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-acid": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aconcagua": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-action-bass": {
   "score": 51,
@@ -3893,15 +3935,15 @@
  },
  "emu-ps1-action-man-destruction-x": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-action-man-operation-extreme": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-action-man-robot-atak": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-activision-anthology": {
   "score": 79,
@@ -3909,59 +3951,59 @@
  },
  "emu-ps1-actua-golf-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-actua-ice-hockey": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-actua-ice-hockey-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-actua-soccer-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-actua-soccer-club-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-actua-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ad-lib-ouji-to-fuyukai-na-nakamatachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-addie-no-okurimono-to-moze-from-addie": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-adiboo-paziral-s-secret": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-adibou-et-l-ombre-verte": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-adidas-power-soccer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-adidas-power-soccer-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-adidas-power-soccer-98": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-adidas-power-soccer-international-97": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-advance-guardian-heroes": {
   "score": 65,
@@ -3977,47 +4019,47 @@
  },
  "emu-ps1-advanced-dungeons-dragons-iron-blood-warriors-of-ravenloft": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-advanced-v-g": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-advanced-v-g-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-adventure-of-tokyo-disneysea": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-aero-the-acro-bat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-affect-taikenban-vol-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-afraid-gear": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-afraid-gear-another": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-agassi-tennis-generation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-agent-armstrong": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-agent-hugo-roborumble": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-aggressive-inline": {
   "score": 75,
@@ -4025,27 +4067,27 @@
  },
  "emu-ps1-agile-warrior-f-111x": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ah-nanjarin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ai-to-yuujou-no-neko-monogatari-jingle-cats-love-para-daisakusen-no-maki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-air-combat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-air-hockey": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-air-management-96": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-airforce-delta-storm": {
   "score": 71,
@@ -4053,79 +4095,79 @@
  },
  "emu-ps1-airrace-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-airgrave": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aironauts": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aishiau-koto-shika-dekinai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aitakute-your-smiles-in-my-heart": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aizouban-houshinengi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-aka-chan-doubutsuen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-akagawa-jiro-majo-tachi-no-nemuri-fukkatsusai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-akagawa-jiro-yasoukyoku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-akagawa-jiro-yasoukyoku-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-akagi-touhaiden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-akazu-no-ma": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-akuji-the-heartless": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alabama-pop-de-cute-na-shinri-test": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-albaria-no-otome-uruwashi-no-seikishitachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-aleck-bordon-adventure-tower-and-shaft-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alex-ferguson-s-player-manager-2001": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-alex-ferguson-s-player-manager-2002": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alex-ferguson-s-player-manager-2002": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-alex-rider-stormbreaker": {
   "score": 37,
@@ -4133,23 +4175,25 @@
  },
  "emu-ps1-alexi-lalas-international-soccer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alfred-chicken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alice-in-cyberland": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-alien-hominid": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 78,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox, PlayStation 2, GameCube, Game Boy Advance, Xbox 360"
  },
  "emu-ps1-alien-trilogy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alien-resurrection": {
   "score": 61,
@@ -4161,7 +4205,7 @@
  },
  "emu-ps1-alive": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-all-grown-up-express-yourself": {
   "score": 49,
@@ -4169,35 +4213,35 @@
  },
  "emu-ps1-all-star-action": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-racing-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-soccer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-tennis-99": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-tennis-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-watersports": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-baseball-97-featuring-frank-thomas": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-all-star-baseball-2003": {
   "score": 77,
@@ -4209,7 +4253,7 @@
  },
  "emu-ps1-all-star-mahjong-karei-naru-shoubushi-kara-no-chousen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-all-star-slammin-d-ball": {
   "score": 42,
@@ -4217,19 +4261,19 @@
  },
  "emu-ps1-allied-general": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alnam-no-kiba-fang-of-alnam": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alnam-no-tsubasa-shoujin-no-sora-no-kanata-e": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alone-in-the-dark-one-eyed-jack-s-revenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-alone-in-the-dark-the-new-nightmare": {
   "score": 77,
@@ -4245,11 +4289,11 @@
  },
  "emu-ps1-alundra-2-a-new-legend-begins": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-america-oudan-ultra-quiz": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-american-bass-challenge": {
   "score": 69,
@@ -4261,7 +4305,7 @@
  },
  "emu-ps1-american-pool": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-amerzone-the-explorer-s-legacy": {
   "score": 80,
@@ -4269,83 +4313,83 @@
  },
  "emu-gba-an-american-tail-fievel-s-gold-rush": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-anastasia": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ancient-roman-power-of-dark-side": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-andretti-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angel-blade-neo-tokyo-guardians": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-angel-collection-2-pichimo-ni-narou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-angel-collection-mezase-gakuen-no-fashion-leader": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angel-graffiti-anata-he-no-profile": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-angelique": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angelique-duet": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angelique-special": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angelique-special-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angelique-tenkuu-no-requiem": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-angolmois-99": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-animal-football": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-animal-mania-dokidoki-aishou-check": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-animal-snap-rescue-them-2-by-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-animal-snap-rescue-them-2-by-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-animal-yokochou-doki-doki-kyuushutsu-daisakusen-no-maki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-animal-yokochou-doki-doki-shinkyuu-shiken-no-kan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-animaniacs-lights-camera-action": {
   "score": 43,
@@ -4353,11 +4397,11 @@
  },
  "emu-ps1-animaniacs-ten-pin-alley": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-animetic-story-game-1-cardcaptor-sakura": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-animorphs-shattered-reality": {
   "score": 27,
@@ -4369,35 +4413,37 @@
  },
  "emu-ps1-anna-kournikova-s-smash-court-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ano-ko-doko-no-ko": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ano-ko-doko-no-ko-endless-season": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-another-memories": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-another-mind": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-antz-extreme-racing": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 31,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox, PlayStation 2, PC, Game Boy Advance"
  },
  "emu-gba-ao-zora-to-nakama-tachi-yume-no-bouken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ao-zora-to-nakama-tachi-yume-no-bouken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ape-escape": {
   "score": 90,
@@ -4405,35 +4451,35 @@
  },
  "emu-ps1-apocalypse": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aqua-gt": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aqua-paradise-boku-no-suizokukan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aquanaut-no-kyuujitsu-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aquanaut-no-kyuujitsu-memories-of-summer-1996": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aquanaut-s-holiday": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aquarian-age-tokyo-wars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arc-the-lad": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arc-the-lad-collection": {
   "score": 78,
@@ -4441,147 +4487,155 @@
  },
  "emu-ps1-arc-the-lad-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arc-the-lad-iii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arc-the-lad-monster-game-with-casino-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-crazy-climber": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-frisky-tom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-magical-drop": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-moon-cresta": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-raiden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-shienryuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-soukyuu-gurentai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-hits-wolf-fang": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-party-pak": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-s-greatest-hits-the-atari-collection-1": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-s-greatest-hits-the-atari-collection-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arcade-s-greatest-hits-the-midway-collection-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-archer-maclean-s-3d-pool": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-archer-maclean-s-3d-pool": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-arctic-tale": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 38,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Wii, DS, Game Boy Advance"
  },
  "emu-ps1-are-mo-koremo-momotarou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-area-51": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ark-of-time": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arkana-senki-ludo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arkanoid-r-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arkanoid-returns": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-armed-fighter": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-armored-core": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-armored-core-master-of-arena": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-armored-core-project-phantasma": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-armorines-project-s-w-a-r-m": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-army-men-3d": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-army-men-advance": {
   "score": 57,
   "via": "metacritic-web"
  },
  "emu-ps1-army-men-air-attack": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 77,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation, PC, Nintendo 64"
  },
  "emu-ps1-army-men-air-attack-2": {
   "score": 74,
   "via": "metacritic-web"
  },
  "emu-ps1-army-men-green-rogue": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 39,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, PlayStation"
  },
  "emu-gba-army-men-operation-green": {
   "score": 70,
   "via": "metacritic-web"
  },
  "emu-ps1-army-men-sarge-s-heroes": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 60,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Nintendo 64, PlayStation, Dreamcast, PC"
  },
  "emu-ps1-army-men-sarge-s-heroes-2": {
   "score": 48,
@@ -4589,7 +4643,7 @@
  },
  "emu-gba-army-men-turf-wars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-army-men-world-war": {
   "score": 50,
@@ -4597,7 +4651,7 @@
  },
  "emu-ps1-army-men-world-war-final-front": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-army-men-world-war-land-sea-air": {
   "score": 35,
@@ -4605,7 +4659,7 @@
  },
  "emu-ps1-army-men-world-war-team-assault": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-around-the-world-in-80-days": {
   "score": 40,
@@ -4613,11 +4667,11 @@
  },
  "emu-ps1-art-camion-geijutsuden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-art-camion-sugorokuden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-arthur-and-the-invisibles": {
   "score": 41,
@@ -4625,47 +4679,47 @@
  },
  "emu-ps1-arthur-to-astaroth-no-nazo-maikamura-incredible-toons": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-arthur-ready-to-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ashita-no-joe-masseki-ni-moe-agare": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asonde-aiueo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asonde-chinou-up": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asonde-kazu-suuji": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-assault-rigs": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-assault-suits-valken-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-assault-retribution": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asterix": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asteroids": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-astro-boy-omega-factor": {
   "score": 85,
@@ -4673,39 +4727,39 @@
  },
  "emu-ps1-astronoka": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asterix-obelix-take-on-caesar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-asterix-obelix-xxl": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-asterix-obelix-bash-them-all": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asterix-mega-madness": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asuka-120-burning-fest-excellent": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asuka-120-burning-fest-final": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asuka-120-special-burning-fest": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-asuncia-matsue-no-jubaku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-atari-anniversary-advance": {
   "score": 75,
@@ -4717,35 +4771,35 @@
  },
  "emu-ps1-atari-demo-disk": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atelier-elie-the-alchemist-of-salburg-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atelier-marie-plus-the-alchemist-of-salburg": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atelier-marie-the-alchemist-of-salburg": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-athena-no-kateiban-family-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-athena-awakening-from-the-ordinary-life": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atlantis-the-lost-continent": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-atlantis-the-lost-tales": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-atomic-betty": {
   "score": 62,
@@ -4753,127 +4807,129 @@
  },
  "emu-ps1-attack-of-the-saucerman": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aubirdforce": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aubirdforce-after": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aura-battler-dunbine": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-austin-powers-pinball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-auto-destruct": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-autobahn-raser-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-avatar-the-last-airbender": {
   "score": 64,
   "via": "metacritic-web"
  },
  "emu-gba-avatar-the-last-airbender-the-burning-earth": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 54,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox 360, PlayStation 2, Wii, DS, Game Boy Advance"
  },
  "emu-ps1-ayakashi-ninden-kunoichiban": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ayrton-senna-kart-duel": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ayrton-senna-kart-duel-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ayrton-senna-kart-duel-special": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-azito": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-azito-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-azito-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-aztec-the-curse-in-the-heart-of-the-city-of-gold": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-azumanga-daioh-advance": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-azumanga-donjara-daiou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-azure-dreams": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-b-senjou-no-alice-alice-on-borderlines": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-b-l-u-e-legend-of-water": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bb-ball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bmg-demos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bmx-trick-racer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brahma-force-the-assault-on-beltlogger-9": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-babar-to-the-rescue": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-baby-felix-tennis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-baby-universe": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-back-guiner-yomigaeru-yuusha-tachi-hishou-hen-uragiri-no-senjou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-back-track": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-back-to-stone": {
   "score": 54,
@@ -4881,31 +4937,31 @@
  },
  "emu-ps1-backgainer-yomigaeru-yuusha-tachi-kakusei-hen-gainer-tensei": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-backgammon-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-backstreet-billiards": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-backyard-baseball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-backyard-baseball-2006": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-backyard-basketball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-backyard-football": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-backyard-football-2006": {
   "score": 55,
@@ -4917,7 +4973,7 @@
  },
  "emu-gba-backyard-skateboarding": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-backyard-soccer": {
   "score": 75,
@@ -4928,8 +4984,10 @@
   "via": "metacritic-web"
  },
  "emu-gba-backyard-sports-basketball-2007": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 43,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, Game Boy Advance, GameCube, PlayStation 2"
  },
  "emu-gba-backyard-sports-football-2007": {
   "score": 62,
@@ -4937,59 +4995,59 @@
  },
  "emu-ps1-bakumatsu-roman-gekka-no-kenshi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakuretsu-hunter-mahjong-special": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakuretsu-hunter-sorezore-no-omoi-nowaan-chatte": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakushou-all-yoshimoto-quiz-ou-kettei-sen-dx": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakusou-dekotora-densetsu-2-otoko-jinsei-yume-ichiro": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakusou-dekotora-densetsu-otoko-ippiki-yume-kaidou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakusou-kyoudai-let-s-go-eternal-wings": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bakuten-shoot-beyblade-2002-gekisen-team-battle-kouryuu-no-shou-daichi-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bakuten-shoot-beyblade-2002-gekisen-team-battle-seiryuu-no-shou-takao-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakuten-shoot-beyblade-2002-beybattle-tournament-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bakuten-shoot-beyblade-2002-ikuze-bakutou-chou-jiryoku-battle": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bakuten-shoot-beyblade-bey-battle-tournament": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bakuten-shoot-beyblade-gekitou-saikyou-blade": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-baldies": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-baldur-s-gate-dark-alliance": {
   "score": 76,
@@ -4997,23 +5055,23 @@
  },
  "emu-ps1-ball-breakers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ballblazer-champions": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ballerburg-castle-chaos": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ballistic": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ballistic-ecks-vs-sever": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-banjo-kazooie-grunty-s-revenge": {
   "score": 72,
@@ -5025,7 +5083,7 @@
  },
  "emu-gba-barbie-horse-adventures-blue-ribbon-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-barbie-software-groovy-games": {
   "score": 47,
@@ -5033,7 +5091,7 @@
  },
  "emu-gba-barbie-superpack-secret-agent-barbie-barbie-groovy-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-barbie-and-the-magic-of-pegasus": {
   "score": 62,
@@ -5041,35 +5099,35 @@
  },
  "emu-gba-barbie-as-the-island-princess": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-barbie-in-the-12-dancing-princesses": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-barbie-explorer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-barbie-gotta-have-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-barbie-race-ride": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-barbie-super-sports": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-barbie-the-princess-and-the-pauper": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bardysh-kromeford-no-juunin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-barnyard": {
   "score": 65,
@@ -5077,11 +5135,11 @@
  },
  "emu-ps1-baroque": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-baroque-syndrome": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-baseball-advance": {
   "score": 80,
@@ -5089,55 +5147,57 @@
  },
  "emu-ps1-baseball-navigator": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-baseball-simulation-id-pro-yakyuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bases-loaded-96-double-header": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bass-fisherman-texas": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bass-landing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bass-landing-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bass-tsuri-shiyouze-tournament-wa-senryaku-da": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bass-tsuri-ni-ikou-let-s-go-bassfishing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bassrise": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bassing-beat-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bastard-utsuro-naru-kamigami-no-utsuwa": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-batman-robin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-batman-begins": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 65,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Xbox, GameCube, PlayStation 2, PSP"
  },
  "emu-ps1-batman-beyond-return-of-the-joker": {
   "score": 52,
@@ -5145,15 +5205,17 @@
  },
  "emu-ps1-batman-forever-the-arcade-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-batman-gotham-city-racer": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-batman-rise-of-sin-tzu": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 63,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Xbox, GameCube"
  },
  "emu-gba-batman-vengeance": {
   "score": 68,
@@ -5161,7 +5223,7 @@
  },
  "emu-ps1-battle-arena-nitoushinden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-arena-toshinden": {
   "score": 69,
@@ -5169,23 +5231,23 @@
  },
  "emu-ps1-battle-arena-toshinden-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-arena-toshinden-2-plus": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-arena-toshinden-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-athletess-daiundoukai-alternative": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-athletess-daiundoukai-gto": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-battle-b-daman": {
   "score": 62,
@@ -5197,35 +5259,35 @@
  },
  "emu-ps1-battle-bugs": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-formation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-hunter": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-konchuuden": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-master": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-qix": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battle-stations": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-battle-x-battle-kyodai-gyo-densetsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-battlebots-beyond-the-battlebox": {
   "score": 53,
@@ -5237,39 +5299,39 @@
  },
  "emu-ps1-battlesport": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-battletanx-global-assault": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bealphareth": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-beast-shooter-mezase-beast-king": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-beast-wars-transformers": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-beat-planet-music": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-beatmania": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-beatmania-2nd-mix": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-beavis-and-butt-head-in-virtual-stupidity": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bedlam": {
   "score": 53,
@@ -5277,27 +5339,27 @@
  },
  "emu-ps1-best-buy-demo-cd": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-best-buy-greatest-hits-demo-disc-volume-one": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-best-friends-dogs-cats": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-best-play-pro-yakyuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-best-of-playstation-underground-cd-magazine-year-one": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-beyblade-let-it-rip": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-beyblade-vforce-ultimate-blader-jam": {
   "score": 79,
@@ -5309,19 +5371,19 @@
  },
  "emu-ps1-beyond-the-beyond": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bibi-blocksberg-der-magische-hexenkreis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bibi-und-tina-ferien-auf-dem-martinshof": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-big-air": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-big-bass-fishing": {
   "score": 70,
@@ -5329,155 +5391,161 @@
  },
  "emu-ps1-big-bass-world-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-big-challenge-golf-tokyo-yomiuri-country-club-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-big-league-slugger-baseball": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-big-mutha-truckers": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 62,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, PC, GameCube, Xbox, Game Boy Advance, DS"
  },
  "emu-ps1-big-ol-bass-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-big-strike-bowling": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-billiards": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bio-freaks": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-biohazard-taikenban": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-biohazard-3-last-escape-promotion-ban": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bionicle": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 52,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation 2, Xbox, GameCube"
  },
  "emu-gba-bionicle-heroes": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 59,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation 2, GameCube, DS, Xbox 360, Wii"
  },
  "emu-gba-bionicle-matoran-adventures": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bionicle-maze-of-shadows": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishi-bashi-special": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishi-bashi-special-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishi-bashi-special-3-step-champ": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishoujo-renai-mahjong-series-2nd-shiritsu-houou-gakuen-1-nen-junai-gumi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishoujo-renai-mahjong-series-2nd-shiritsu-houou-gakuen-2-nen-junjou-gumi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishoujo-renai-mahjong-series-karan-koron-gakuen-doki-doki-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishoujo-renai-mahjong-series-karan-koron-gakuen-munekyun-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishoujo-renai-mahjong-series-karan-koron-gakuen-pure-love-hen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bishoujo-senshi-sailor-moon-super-s-shin-shuyaku-soudatsusen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-boundish": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-coloris": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-dialhex": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-digidrive": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-dotstream": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-orbital": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bit-generations-soundvoyager": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-black-bass-with-blue-marlin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-black-belt-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-black-black": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-black-dawn": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-black-jack-vs-matsuda-jun": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-black-matrix-00": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-black-matrix-zero": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-black-matrix": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-blackthorne": {
   "score": 67,
@@ -5485,15 +5553,15 @@
  },
  "emu-ps1-blade": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blade-arts-tasogare-no-miyako-r-lyeh": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blademaker-arms-shop": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-blades-of-thunder": {
   "score": 40,
@@ -5501,43 +5569,43 @@
  },
  "emu-ps1-blast-chamber": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blast-lacrosse": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blast-radius": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blaster-master-blasting-again": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blasto": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blaze-blade-busters": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blaze-blade-eternal-quest": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blazing-dragons": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bleach-advance-kurenai-ni-somaru-soul-society": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blend-x-brand": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-blender-bros": {
   "score": 73,
@@ -5545,67 +5613,67 @@
  },
  "emu-ps1-block-buster": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-block-kuzushi-kowashite-help": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-block-kuzushi-deden-no-gyakushuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-block-wars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blockids": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blood-lines": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blood-omen-legacy-of-kain": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bloody-bride-imodoki-no-vampire": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bloody-roar": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bloody-roar-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blue-breaker-burst-bishou-o-anata-to": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blue-breaker-burst-egao-no-asu-ni": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blue-breaker-egao-no-yakushoku": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blue-forest-story-kaze-no-fuuin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blue-submarine-no-6-antarctica": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-blue-s-clues-blue-s-big-musical": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-board-game-classics": {
   "score": 30,
@@ -5613,31 +5681,31 @@
  },
  "emu-ps1-board-game-top-shop": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bob-the-builder-can-we-fix-it": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boboboubo-boubobo-9-kiwame-senshi-gyagu-yuugou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boboboubo-boubobo-bakutou-hajike-taisen": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boboboubo-boubobo-majide-shinken-shoubu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boboboubo-boubobo-ougi-87-5-bakuretsu-hanage-shinken": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bogey-dead-6": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boktai-2-solar-boy-django": {
   "score": 78,
@@ -5649,59 +5717,61 @@
  },
  "emu-ps1-boku-no-natsuyasumi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-boku-no-choro-q": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boku-no-kabuto-mushi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boku-no-kabuto-kuwagata": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boku-no-kuwagata": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boku-wa-koukuu-kanseikan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-boku-wa-koukuu-kanseikan": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bokujou-monogatari-harvest-moon-for-girl": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bokujyoukeieteki-board-game-umapoly": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bomb-boat": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bomberman-fantasy-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bomberman-jetters": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 70,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "GameCube, PlayStation 2"
  },
  "emu-gba-bomberman-jetters-game-collection": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bomberman-land": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bomberman-max-2-blue-advance": {
   "score": 75,
@@ -5717,11 +5787,11 @@
  },
  "emu-ps1-bomberman-wars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bomberman-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bomberman-party-edition": {
   "score": 79,
@@ -5729,47 +5799,47 @@
  },
  "emu-ps1-bonogurashi-kore-de-kanpeki-disu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-book-worm": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-boombots": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bottom-of-the-9th": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bottom-of-the-9th-97": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bottom-of-the-9th-99": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bouken-yuuki-pluster-world-densetsu-no-plust-gate": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bouken-yuuki-pluster-world-densetsu-no-plust-gate-ex": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bouken-yuuki-pluster-world-pluston-gp": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bouken-ou-beet-busters-road": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boukyaku-no-senritsu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boulder-dash-ex": {
   "score": 79,
@@ -5777,31 +5847,31 @@
  },
  "emu-ps1-boundary-gate-daughter-of-kingdom": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bounty-hunter-sarah-holy-mountain-no-teiou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bounty-sword-first": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bounty-sword-double-edge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bowling": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-boxer-s-road": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-boxing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-boxing-fever": {
   "score": 76,
@@ -5809,15 +5879,15 @@
  },
  "emu-ps1-boys-be": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-boys-be-2nd-season": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brain-dead-13": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bratz": {
   "score": 44,
@@ -5825,7 +5895,7 @@
  },
  "emu-ps1-bratz": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bratz-babyz": {
   "score": 44,
@@ -5849,35 +5919,35 @@
  },
  "emu-ps1-brave-prove": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brave-saga-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brave-sword": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bravo-air-race": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-break-point": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-break-volley": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-breakthru": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-breakout": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-breath-of-fire": {
   "score": 79,
@@ -5889,7 +5959,7 @@
  },
  "emu-ps1-breath-of-fire-iii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-breath-of-fire-iv": {
   "score": 83,
@@ -5897,31 +5967,31 @@
  },
  "emu-ps1-breed-master": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-breeding-stud-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-breeding-stud-bokujou-de-aimashou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brian-lara-cricket": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brigandine-grand-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brigandine-the-legend-of-forsena": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brightis": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-britney-s-dance-beat": {
   "score": 53,
@@ -5929,11 +5999,11 @@
  },
  "emu-ps1-broken-helix": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-broken-sword-ii-the-smoking-mirror": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-broken-sword-the-shadow-of-the-templars": {
   "score": 80,
@@ -5941,7 +6011,7 @@
  },
  "emu-ps1-broken-sword-the-shadow-of-the-templars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bruce-lee-return-of-the-legend": {
   "score": 82,
@@ -5949,15 +6019,15 @@
  },
  "emu-ps1-brunswick-circuit-pro-bowling": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-brunswick-circuit-pro-bowling-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bubble-bobble-also-featuring-rainbow-islands": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-bubble-bobble-old-new": {
   "score": 61,
@@ -5965,11 +6035,11 @@
  },
  "emu-ps1-bubsy-3d": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-buckle-up": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-buffy-the-vampire-slayer-wrath-of-the-darkhul-king": {
   "score": 44,
@@ -5977,7 +6047,7 @@
  },
  "emu-ps1-bugriders-the-race-of-kings": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bugs-bunny-taz-time-busters": {
   "score": 72,
@@ -5985,31 +6055,31 @@
  },
  "emu-ps1-bugs-bunny-lost-in-time": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-builder-s-block": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-building-crush": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-burger-burger-2-hamburger-simulation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-burger-burger-hamburger-simulation": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-burning-road": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-burstrick-wake-boarding": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bushido-blade": {
   "score": 83,
@@ -6017,11 +6087,11 @@
  },
  "emu-ps1-bushido-blade-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bust-a-groove": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bust-a-groove-2": {
   "score": 66,
@@ -6029,23 +6099,25 @@
  },
  "emu-ps1-bust-a-move-99": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-bust-a-move-2-arcade-edition": {
   "score": 73,
   "via": "metacritic-web"
  },
  "emu-ps1-bust-a-move-4": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 79,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PC, PlayStation, Dreamcast"
  },
  "emu-ps1-buster-bros-collection": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-butage-deiin-janai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-butt-ugly-martians-b-k-m-battles": {
   "score": 63,
@@ -6053,7 +6125,7 @@
  },
  "emu-ps1-buttsubushi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-c-12-final-resistance": {
   "score": 63,
@@ -6061,23 +6133,23 @@
  },
  "emu-ps1-c1-circuit": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-c3-racing-car-constructors-championship": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-c-the-contra-adventure": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cart-world-series": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cg-mukashi-banashi-jiisan-2-do-bikkuri": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cima-the-enemy": {
   "score": 70,
@@ -6085,15 +6157,17 @@
  },
  "emu-ps1-crw-counter-revolution-war": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ct-special-forces": {
   "score": 71,
   "via": "metacritic-web"
  },
  "emu-ps1-ct-special-forces": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 71,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "Game Boy Advance, PlayStation"
  },
  "emu-gba-ct-special-forces-2-back-in-the-trenches": {
   "score": 76,
@@ -6101,15 +6175,15 @@
  },
  "emu-ps1-ct-special-forces-3-bioterror": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-ct-special-forces-3-bioterror": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ct-special-forces-back-to-hell": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-ctr-crash-team-racing": {
   "score": 88,
@@ -6117,79 +6191,83 @@
  },
  "emu-gba-cabbage-patch-kids-the-patch-puppy-rescue": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cabela-s-big-game-hunter": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 59,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Game Boy Advance"
  },
  "emu-gba-cabela-s-big-game-hunter-2005-adventures": {
-  "score": null,
-  "via": "nao-encontrado"
+  "score": 65,
+  "via": "metacritic-geral",
+  "geral": true,
+  "plats": "PlayStation 2, Game Boy Advance, Xbox, GameCube, PC"
  },
  "emu-ps1-cabela-s-big-game-hunter-ultimate-challenge": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cabela-s-ultimate-deer-hunt-open-season": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cadillac": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-caesars-palace": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-caesars-palace-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-caesars-palace-advance-millennium-gold-edition": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-caesars-palace-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-calamity-1-the-natural-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-calamity-2-people-and-traditions": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-calamity-3-around-the-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-calciobit": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-calcolo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cali-s-geo-tools-math-tools": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-california-surfing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-california-watersports": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-camp-lazlo-leaky-lake-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-capcom-classics-mini-mix": {
   "score": 66,
@@ -6197,27 +6275,27 @@
  },
  "emu-ps1-capcom-generation-1-dai-1-shuu-gekitsuiou-no-jidai": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-capcom-generation-2-dai-2-shuu-makai-to-kishi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-capcom-generation-3-dai-3-shuu-koko-ni-rekishi-hajimaru": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-capcom-generation-4-dai-4-shuu-kokou-no-eiyuu": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-capcom-generation-dai-5-shuu-kakutouka-tachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-capcom-generations": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-capcom-vs-snk-pro": {
   "score": 74,
@@ -6225,27 +6303,27 @@
  },
  "emu-ps1-captain-commando": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-captain-love": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-captain-tsubasa-j-get-in-the-tomorrow": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-captain-tsubasa-aratanaru-densetsu-joshou": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-captain-tsubasa-eikou-no-kiseki": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-car-driver-presents-grand-tour-racing-98": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-car-battler-joe": {
   "score": 77,
@@ -6253,67 +6331,67 @@
  },
  "emu-ps1-card-captor-sakura-clowcard-magic": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-card-captor-sakura-sakura-card-de-mini-game": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-card-captor-sakura-sakura-card-hen-sakura-card-to-tomodachi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-card-games": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-card-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-card-party": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cardinal-syn": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-care-bears-care-quest": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-carmageddon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-carnage-heart": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-carnage-heart-ez-easy-zapping": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-carnage-heart-extra": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-carom-shot": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-carrera-power-slide": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cars": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-carton-kun": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-cartoon-network-block-party": {
   "score": 52,
@@ -6325,15 +6403,15 @@
  },
  "emu-gba-casper": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-casper": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-casper-friends-around-the-world": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-castlevania-chronicles": {
   "score": 69,
@@ -6361,15 +6439,15 @@
  },
  "emu-ps1-castrol-honda-world-superbike-team-superbike-racing": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-castrol-honda-world-superbike-team-vtr": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cat-the-ripper-13-ninme-no-tanteishi": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-catan-die-erste-insel": {
   "score": 81,
@@ -6381,19 +6459,19 @@
  },
  "emu-gba-catz": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cellophanes": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-center-shiken-trial-eigo-no-tetsujin": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-centipede": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-centipede-breakout-warlords": {
   "score": 56,
@@ -6401,43 +6479,43 @@
  },
  "emu-gba-cesti-to-meigurumi-tachi-no-mahou-no-bouken-kisekko-gurumii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cha-cha-special-04-99-demo": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chakushin-melody-damon": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chakushin-melody-damon-gold": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chakushin-melody-damon-volume-2": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chakushin-melody-damon-volume-3": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chakushin-melody-damon-volume-4": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-champion-wrestler": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-championship-bass": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-championship-manager-quiz": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-championship-motocross-2001-featuring-ricky-carmichael": {
   "score": 70,
@@ -6445,7 +6523,7 @@
  },
  "emu-ps1-championship-motocross-featuring-ricky-carmichael": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-championship-surfer": {
   "score": 57,
@@ -6453,11 +6531,11 @@
  },
  "emu-ps1-chaos-break": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chaos-control": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-charlie-and-the-chocolate-factory": {
   "score": 36,
@@ -6469,27 +6547,27 @@
  },
  "emu-ps1-charumera": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-check-mate": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-checkmate-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-cheesy": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chess": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-ps1-chess-2000": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-chessmaster": {
   "score": 76,
@@ -6497,7 +6575,7 @@
  },
  "emu-ps1-chessmaster-ii": {
   "score": null,
-  "via": "nao-encontrado"
+  "via": "nao-encontrado-geral"
  },
  "emu-gba-final-fight-one": {
   "score": 82,
