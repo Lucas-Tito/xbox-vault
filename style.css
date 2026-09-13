@@ -245,10 +245,30 @@ ul.modos li{color:var(--txt)}
 
 /* nota do Metacritic que nao e da plataforma do jogo */
 .mc.geral{opacity:.82}
+
+/* Nota dos jogadores do Marketplace. De proposito NAO parece a do Metacritic:
+   escala 0-5 com estrela, pilula escura translucida em vez de quadrado colorido.
+   No card so aparece quando nao ha nota da critica; no popup aparecem as duas. */
+.ur{position:absolute;left:8px;bottom:8px;z-index:3;height:22px;padding:0 7px;
+  border-radius:11px;display:flex;align-items:center;gap:3px;
+  font-size:11.5px;font-weight:700;letter-spacing:.2px;
+  background:rgba(13,17,23,.82);color:var(--txt);border:1px solid var(--line);
+  backdrop-filter:blur(4px);box-shadow:0 2px 8px rgba(0,0,0,.45)}
+.ur b{color:var(--amber);font-size:12px;line-height:1}
+.det-mc .ur{position:static;height:28px;min-width:34px;font-size:13px;border-radius:14px}
 .mc i{font-style:normal;font-size:9px;vertical-align:super;margin-left:1px;opacity:.8}
 .coop-ex li{color:var(--green2)}
 .coop-exp{margin:8px 0 0;padding:8px 10px;font-size:12.5px;line-height:1.5;font-style:italic;
   color:var(--dim);background:var(--bg3);border-left:2px solid var(--line);border-radius:0 6px 6px 0}
+/* Galeria: uma faixa que rola na horizontal, para nao empurrar a ficha para baixo */
+.shots{display:flex;gap:6px;overflow-x:auto;margin:0 0 16px;padding-bottom:4px;
+  scrollbar-width:thin}
+.shots a{flex:0 0 auto;line-height:0;border-radius:6px;overflow:hidden;
+  border:1px solid var(--line)}
+.shots img{height:104px;width:auto;display:block;transition:.15s}
+.shots a:hover img{transform:scale(1.04)}
+@media (max-width:560px){ .shots img{height:84px} }
+
 .det-vaz{margin:0 0 14px;padding:10px 12px;font-size:12.5px;line-height:1.5;
   color:var(--txt);background:rgba(217,164,65,.09);
   border:1px solid rgba(217,164,65,.32);border-left-width:3px;border-radius:6px}

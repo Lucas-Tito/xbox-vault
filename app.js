@@ -259,12 +259,20 @@ window.XBXimgErr = function (im) {
   im.parentNode.replaceChild(ph, im);
 };
 
+function urTexto(v) { return (Math.round(v * 100) / 100).toFixed(2); }
+
 function cardHtml(g) {
+  // A nota da critica tem preferencia. A dos jogadores so aparece no card de
+  // quem nao tem Metacritic, e com desenho diferente para ninguem confundir
+  // uma escala de 0-100 com uma de 0-5.
   var mc = typeof g.mc === "number"
     ? '<span class="mc ' + mcClasse(g.mc) + (g.mcGeral ? " geral" : "") + '" title="' +
       (g.mcGeral ? "Metacritic de outra plataforma" : "Metacritic") + '">' + g.mc +
       (g.mcGeral ? '<i>*</i>' : "") + "</span>"
-    : "";
+    : (typeof g.ur === "number"
+      ? '<span class="ur" title="Nota dos jogadores no Xbox Marketplace (0 a 5)">' +
+        "<b>★</b>" + urTexto(g.ur) + "</span>"
+      : "");
   var img = g.image
     ? '<img loading="lazy" src="' + esc(g.image) + '"' +
       (g.imageRemote ? ' data-fb="' + esc(g.imageRemote) + '"' : "") +
@@ -437,7 +445,7 @@ function coopHtml(g) {
   var ex = (c.extras || []).map(function (x) {
     return COOPEXTRA[x.toLowerCase()] || x;
   });
-  return "<h4>Co-op em detalhe</h4>" +
+  return "<h4>Co-op segundo o Co-Optimus</h4>" +
     (li.length ? '<ul class="modos">' + li.map(function (x) {
       return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
     (ex.length ? '<ul class="modos coop-ex">' + ex.map(function (x) {
@@ -481,7 +489,26 @@ function modosHtml(g) {
   var h = "<ul class=\"modos\">" + out.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
   if (CONFNOTA[t.confidence])
     h += '<p class="nota">Confiança <b>' + esc(t.confidence) + "</b> — " + CONFNOTA[t.confidence] + ".</p>";
+  // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. Não estar lá não
+  // prova que o jogo não tem — mas vale dizer que o número não passou por
+  // conferência humana, porque é aí que moram os erros.
+  if (t.coop && !g.coopInfo)
+    h += '<p class="nota">Co-op não conferido no Co-Optimus.</p>';
   return h;
+}
+
+/* Galeria do Marketplace. As imagens so entram no DOM quando o popup e montado,
+   ou seja, no clique -- quem nunca abre uma ficha nao baixa nenhuma. */
+function galeriaHtml(g) {
+  if (!g.screens) return "";
+  var h = [];
+  for (var i = 1; i <= g.screens; i++) {
+    var u = "images/screens/" + g.id + "-" + i + ".webp";
+    h.push('<a href="' + esc(u) + '" target="_blank" rel="noopener">' +
+      '<img loading="lazy" src="' + esc(u) + '" alt="Captura de ' + esc(g.title) +
+      '" onerror="this.parentNode.remove()"></a>');
+  }
+  return '<div class="shots">' + h.join("") + "</div>";
 }
 
 function detalheHtml(g) {
@@ -540,7 +567,10 @@ function detalheHtml(g) {
       (typeof g.mc === "number"
         ? '<div class="det-mc"><span class="mc ' + mcClasse(g.mc) +
           (g.mcGeral ? " geral" : "") + '">' + g.mc + (g.mcGeral ? '<i>*</i>' : "") + "</span>" +
-          "<span>Metacritic" + (g.mcGeral ? " *" : "") + "</span></div>" : "") +
+          "<span>Nota da crítica · Metacritic" + (g.mcGeral ? " *" : "") + "</span></div>" : "") +
+      (typeof g.ur === "number"
+        ? '<div class="det-mc"><span class="ur"><b>★</b>' + urTexto(g.ur) + "</span>" +
+          "<span>Nota dos jogadores · Xbox Marketplace</span></div>" : "") +
       (g.releaseType === "Vazado" && g.nota
         ? '<p class="det-vaz"><b>Cancelado, mas jogável.</b> ' + esc(g.nota) + "</p>" : "") +
       (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
@@ -552,6 +582,7 @@ function detalheHtml(g) {
         '<button class="btn' + (escondidos.has(g.id) ? " muted" : "") + '" data-mark="hide">' +
           (escondidos.has(g.id) ? "⊘ Escondido" : "⊘ Não quero") + "</button>" +
       "</div>" +
+      galeriaHtml(g) +
       "<h4>Modos de jogo</h4>" + modosHtml(g) + coopHtml(g) +
       (extras.length ? "<h4>Extras</h4><ul class=\"modos\">" +
         extras.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +

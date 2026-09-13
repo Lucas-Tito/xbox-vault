@@ -108,6 +108,25 @@
        comCoop.every(g => (g.tags.maxPlayers || 0) >= Math.max(g.tags.coopLocalMax || 0, g.tags.coopOnlineMax || 0)));
     ok('procedencia das outras tags preservada',
        comCoop.every(g => g.tags.coopSource === 'co-optimus' && g.tags.source !== 'co-optimus'));
+    // o inverso: quem tem co-op sem conferencia precisa dizer isso
+    const semConf = window.XBX_DB.games.filter(g => g.tags.coop && !g.coopInfo);
+    ok('existem jogos com co-op nao conferido', semConf.length > 0, semConf.length + ' jogos');
+    if (semConf.length) {
+      const sc = semConf[0];
+      $('#q').value = sc.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 0, 6000); await wait(300);
+      const cx = cards().find(c => c.dataset.id === sc.id);
+      if (cx) {
+        cx.querySelector('.thumb').click(); await wait(400);
+        const mx = $('#modal-body').textContent;
+        ok('modal avisa que o co-op nao foi conferido', mx.includes('não conferido no Co-Optimus'));
+        ok('e nao mostra o bloco do Co-Optimus', !mx.includes('Co-op segundo o Co-Optimus'));
+        $('#modal-x').click(); await wait(200);
+      } else ok('card do jogo sem conferencia', false, 'nao achei ' + sc.id);
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
     const comExp = comCoop.filter(g => g.coopInfo.exp);
     ok('descricao do co-op presente', comExp.length > 0, comExp.length + ' com texto');
     if (comExp.length) {
@@ -118,7 +137,7 @@
       if (cc) {
         cc.querySelector('.thumb').click(); await wait(400);
         const mb = $('#modal-body');
-        ok('modal mostra o bloco de co-op', mb.textContent.includes('Co-op em detalhe'));
+        ok('modal nomeia a fonte do co-op', mb.textContent.includes('Co-op segundo o Co-Optimus'));
         ok('modal mostra a descricao', !!mb.querySelector('.coop-exp'));
         ok('modal nao mostra mais a linha de fonte', !mb.textContent.includes('lido do arquivo de'));
         $('#modal-x').click(); await wait(200);

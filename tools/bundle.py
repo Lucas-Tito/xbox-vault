@@ -136,6 +136,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     print("  %-16s %5d" % ("tags", len(tags)))
 
     coop = load("coop.json", {})
+    # nota dos jogadores do Marketplace: entra ao lado da nota da critica,
+    # nunca no lugar dela
+    x360db = load("x360db.json", {})
+    screens = load("screens.json", {})
     seen, dupes, tagged, imaged, localed, wide, coopados = set(), 0, 0, 0, 0, 0, 0
     for g in games:
         if g["id"] in seen:
@@ -172,6 +176,21 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
             if aplicar_coop(g, t, co):
                 coopados += 1
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
+        g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
+        ns = screens.get(g["id"])
+        if isinstance(ns, int) and ns > 0:
+            g["screens"] = ns
+        r = x360db.get(g["id"])
+        if r:
+            if isinstance(r.get("ur"), (int, float)):
+                g["ur"] = r["ur"]           # 0 a 5, media dos jogadores
+            if r.get("titleId"):
+                g["titleId"] = r["titleId"]
+            # so preenche buraco: o que a Wikipedia ja trouxe tem preferencia
+            if r.get("dev") and not (g.get("developers") or []):
+                g["developers"] = [x.strip() for x in r["dev"].split("/") if x.strip()]
+            if r.get("pub") and not (g.get("publishers") or []):
+                g["publishers"] = [x.strip() for x in r["pub"].split("/") if x.strip()]
         n = notas.get(g["id"])
         g.pop("mcGeral", None); g.pop("mcPlats", None)
         if n and isinstance(n.get("score"), int):
@@ -184,9 +203,13 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         else:
             g.pop("mc", None)
     com_mc = sum(1 for g in games if g.get("mc"))
+    com_ur = sum(1 for g in games if g.get("ur"))
+    so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
-          "%d com Metacritic | %d co-op do Co-Optimus | %d dup" %
-          (rotulo, len(games), tagged, imaged, localed, wide, com_mc, coopados, dupes))
+          "%d com Metacritic | %d com nota de jogador (%d so essa) | "
+          "%d co-op do Co-Optimus | %d dup" %
+          (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
+           coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 
