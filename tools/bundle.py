@@ -140,6 +140,7 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # nunca no lugar dela
     x360db = load("x360db.json", {})
     screens = load("screens.json", {})
+    tus = load("tu.json", {})
     seen, dupes, tagged, imaged, localed, wide, coopados = set(), 0, 0, 0, 0, 0, 0
     for g in games:
         if g["id"] in seen:
@@ -177,6 +178,11 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
                 coopados += 1
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
+        g.pop("tu", None)
+        t_u = tus.get(g["id"])
+        if t_u is not None:
+            # n=0 tambem vale: sabemos que consultamos e o jogo nao teve patch
+            g["tu"] = {k: v for k, v in t_u.items() if v not in (None, 0)} or {"n": 0}
         ns = screens.get(g["id"])
         if isinstance(ns, int) and ns > 0:
             g["screens"] = ns
@@ -204,12 +210,13 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
             g.pop("mc", None)
     com_mc = sum(1 for g in games if g.get("mc"))
     com_ur = sum(1 for g in games if g.get("ur"))
+    com_tu = sum(1 for g in games if (g.get("tu") or {}).get("n"))
     so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
           "%d com Metacritic | %d com nota de jogador (%d so essa) | "
-          "%d co-op do Co-Optimus | %d dup" %
+          "%d com patch | %d co-op do Co-Optimus | %d dup" %
           (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
-           coopados, dupes))
+           com_tu, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 

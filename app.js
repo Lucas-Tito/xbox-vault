@@ -546,6 +546,19 @@ function detalheHtml(g) {
   }
 
   var extras = [];
+  // Title Updates: a Xbox LIVE do 360 foi desligada, entao saber que patch
+  // existiu (e que nunca existiu) importa para quem vai montar o console.
+  if (g.tu) {
+    if (g.tu.n) {
+      extras.push(g.tu.n + (g.tu.n > 1 ? " atualizações oficiais" : " atualização oficial") +
+        (g.tu.ultima ? " — última v" + g.tu.ultima : "") +
+        (g.tu.data ? " em " + fmtDate(g.tu.data) : "") +
+        (g.tu.kb ? " (" + (g.tu.kb >= 1024 ? (g.tu.kb / 1024).toFixed(1) + " MB"
+                                            : g.tu.kb + " KB") + ")" : ""));
+    } else {
+      extras.push("Nunca recebeu atualização oficial");
+    }
+  }
   var f = g.flags || {};
   if (f.xbla) extras.push("Xbox Live Arcade");
   if (f.kinect) extras.push("Kinect (" + (f.kinect === "required" ? "obrigatório" : "opcional") + ")");

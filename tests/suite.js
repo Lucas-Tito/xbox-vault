@@ -146,6 +146,32 @@
       await until(() => cards().length > 50, 8000); await wait(300);
     }
 
+    // ---- screenshots do Marketplace e Title Updates ----
+    const comShot = window.XBX_DB.games.filter(g => g.screens);
+    ok('catalogo tem galeria de screenshots', comShot.length > 1000, comShot.length + ' jogos');
+    const comTu = window.XBX_DB.games.filter(g => g.tu && g.tu.n);
+    ok('catalogo tem Title Updates', comTu.length > 0, comTu.length + ' com patch');
+    {
+      const alvo = comShot.find(g => g.tu && g.tu.n) || comShot[0];
+      $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 0, 6000); await wait(300);
+      const cc = cards().find(c => c.dataset.id === alvo.id);
+      if (cc) {
+        ok('card nao carrega screenshot', !cc.querySelector('.shots'));
+        cc.querySelector('.thumb').click(); await wait(500);
+        const mb = $('#modal-body');
+        const sh = mb.querySelector('.shots');
+        ok('popup monta a galeria', !!sh);
+        ok('galeria tem o numero certo de imagens',
+           sh && sh.querySelectorAll('img').length === alvo.screens);
+        if (alvo.tu && alvo.tu.n)
+          ok('popup mostra a atualizacao oficial', /atualiza[çc][ãa]o|atualiza[çc][õo]es/.test(mb.textContent));
+        $('#modal-x').click(); await wait(200);
+      } else ok('card do jogo com galeria', false, 'nao achei ' + alvo.id);
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
     // ---- popup de detalhes ----
     const dcard = cards()[0], did = dcard.dataset.id;
     dcard.querySelector('.thumb').click();
