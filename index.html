@@ -171,6 +171,15 @@
 </div>
 <input type="file" id="file-in" accept="application/json,.json" hidden>
 
+<!-- visualizador de screenshots, por cima do popup de detalhes -->
+<div class="lb" id="lb" hidden>
+  <button class="lb-x" id="lb-x" title="Fechar (Esc)">&times;</button>
+  <button class="lb-nav" id="lb-prev" title="Anterior (seta esquerda)">&#8249;</button>
+  <img id="lb-img" alt="">
+  <button class="lb-nav" id="lb-next" title="Próxima (seta direita)">&#8250;</button>
+  <div class="lb-n" id="lb-n"></div>
+</div>
+
 <script src="data/db.js"></script>
 <script src="app.js"></script>
 </body>

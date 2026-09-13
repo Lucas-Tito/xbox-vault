@@ -195,6 +195,28 @@
            sh && sh.querySelectorAll('img').length === alvo.screens);
         if (alvo.tu && alvo.tu.n)
           ok('popup mostra a atualizacao oficial', /atualiza[çc][ãa]o|atualiza[çc][õo]es/.test(mb.textContent));
+
+        // visualizador: a miniatura amplia por cima da ficha, sem abrir outra aba
+        if (sh) {
+          const links = [...sh.querySelectorAll('a')];
+          links[0].click(); await wait(300);
+          ok('miniatura abre o visualizador', !$('#lb').hidden);
+          const prim = $('#lb-img').getAttribute('src');
+          ok('visualizador mostra a imagem clicada',
+             prim === links[0].getAttribute('href'), $('#lb-n').textContent);
+          ok('a ficha continua aberta atras', !$('#modal').hidden);
+          if (links.length > 1) {
+            $('#lb-next').click(); await wait(200);
+            ok('a seta avanca', $('#lb-img').getAttribute('src') !== prim, $('#lb-n').textContent);
+            document.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true}));
+            await wait(200);
+            ok('a seta do teclado volta', $('#lb-img').getAttribute('src') === prim, $('#lb-n').textContent);
+          }
+          document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+          await wait(250);
+          ok('Esc fecha o visualizador e devolve a ficha',
+             $('#lb').hidden && !$('#modal').hidden);
+        }
         $('#modal-x').click(); await wait(200);
       } else ok('card do jogo com galeria', false, 'nao achei ' + alvo.id);
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));

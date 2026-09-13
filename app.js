@@ -526,6 +526,34 @@ function galeriaHtml(g) {
   return '<div class="shots">' + h.join("") + "</div>";
 }
 
+/* Visualizador da galeria. Fica por cima do popup de detalhes em vez de
+   substitui-lo: fechar a imagem devolve a ficha aberta, que e o que a pessoa
+   estava lendo. As capturas em disco tem 480x270, entao o CSS limita a 960px. */
+var lbFotos = [], lbI = 0;
+
+function lbIr(i) {
+  if (!lbFotos.length) return;
+  lbI = (i + lbFotos.length) % lbFotos.length;   // da a volta nas duas pontas
+  $("#lb-img").src = lbFotos[lbI];
+  $("#lb-img").alt = "Captura " + (lbI + 1) + " de " + lbFotos.length;
+  $("#lb-n").textContent = (lbI + 1) + " / " + lbFotos.length;
+  var sozinha = lbFotos.length < 2;               // sem para onde navegar
+  $("#lb-prev").hidden = sozinha;
+  $("#lb-next").hidden = sozinha;
+}
+
+function lbAbrir(fotos, i) {
+  lbFotos = fotos;
+  $("#lb").hidden = false;
+  lbIr(i < 0 ? 0 : i);
+}
+
+function lbFechar() {
+  $("#lb").hidden = true;
+  $("#lb-img").removeAttribute("src");   // solta a imagem em vez de deixar montada
+  lbFotos = [];
+}
+
 function kb(v) { return v >= 1024 ? (v / 1024).toFixed(1) + " MB" : v + " KB"; }
 
 function horas(v) {
@@ -967,6 +995,19 @@ function ligarEventos() {
   });
   $("#modal-x").onclick = closeModal;
   $("#modal-body").addEventListener("click", function (e) {
+    var a = e.target.closest(".shots a");
+    if (!a) return;
+    e.preventDefault();
+    var fotos = $$("#modal-body .shots a").map(function (x) { return x.getAttribute("href"); });
+    lbAbrir(fotos, fotos.indexOf(a.getAttribute("href")));
+  });
+  $("#lb-prev").onclick = function () { lbIr(lbI - 1); };
+  $("#lb-next").onclick = function () { lbIr(lbI + 1); };
+  $("#lb-x").onclick = lbFechar;
+  $("#lb").addEventListener("click", function (e) {
+    if (e.target.id === "lb") lbFechar();   // clique no fundo fecha, como no popup
+  });
+  $("#modal-body").addEventListener("click", function (e) {
     var b = e.target.closest("[data-mark]");
     if (!b || !detAtual) return;
     var card = $('.card[data-id="' + (window.CSS && CSS.escape ? CSS.escape(detAtual.id) : detAtual.id) + '"]');
@@ -974,6 +1015,12 @@ function ligarEventos() {
     closeModal();      // marcou pelo popup: a ação está feita, fecha
   });
   document.addEventListener("keydown", function (e) {
+    if (!$("#lb").hidden) {                 // aberto, ele tem a vez: Esc fecha so ele
+      if (e.key === "Escape") lbFechar();
+      else if (e.key === "ArrowLeft") lbIr(lbI - 1);
+      else if (e.key === "ArrowRight") lbIr(lbI + 1);
+      return;
+    }
     if (e.key === "Escape" && !$("#modal").hidden) closeModal();
   });
   $("#modal").addEventListener("click", function (e) { if (e.target.id === "modal") closeModal(); });
