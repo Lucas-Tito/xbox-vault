@@ -185,10 +185,14 @@
           cc.querySelector('.thumb').click(); await wait(400);
           const mb = $('#modal-body');
           ok('popup mostra o tempo de jogo', mb.textContent.includes('Tempo de jogo'));
-          ok('mostra as tres medidas',
-             mb.textContent.includes('História principal') &&
-             mb.textContent.includes('Principal + extras') &&
-             mb.textContent.includes('Completar 100%'));
+          // nem todo jogo tem as tres: o HowLongToBeat so traz a medida que
+          // teve relato. Conferir exatamente as que o registro declara.
+          const rot = {main: 'História principal', plus: 'Principal + extras',
+                       cem: 'Completar 100%'};
+          ok('mostra exatamente as medidas que tem',
+             Object.keys(rot).every(k => (typeof alvo.tempo[k] === 'number') ===
+               mb.querySelector('.tempo').textContent.includes(rot[k])),
+             Object.keys(rot).filter(k => typeof alvo.tempo[k] === 'number').join('+'));
           ok('formata em horas', /\d+h/.test(mb.querySelector('.tempo').textContent),
              mb.querySelector('.tempo').textContent.trim().slice(0, 40));
           if (alvo.tempo.fonte === 'aproximado')

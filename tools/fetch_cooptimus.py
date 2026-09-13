@@ -32,7 +32,10 @@ import html, json, os, re, sys, time, unicodedata, urllib.parse, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "cache")
 UA = "XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault; lucassga500@gmail.com)"
-PAUSA = 1.2
+# 1,2 s durante oito horas levou a um bloqueio do Internet Archive (recusa de
+# conexao, HTTP 000, por varias horas). Com 2,5 s a coleta demora o dobro mas
+# nao esbarra no limite deles.
+PAUSA = 2.5
 VERSAO = 2          # muda quando o parser muda: entradas antigas sao refeitas
 
 # O que a PROPRIA pagina se diz -> de onde o jogo tem de vir no nosso catalogo.
@@ -300,13 +303,32 @@ def main():
         dados = {k: v for k, v in dados.items() if v.get("v") == VERSAO}
 
     # Pre-filtro barato: so vale baixar se algum slug casa com algum titulo
-    # nosso. A familia certa so da para saber depois, lendo a pagina.
-    fila = []
+    # nosso. A familia certa so da para saber depois, lendo a pagina -- por isso
+    # aqui listamos TODOS os jogos nossos a que este id poderia corresponder.
+    def possiveis(e):
+        out = set()
+        for sl in e["slugs"]:
+            t = norm(sl)
+            for fam in titulos.get(t, ()):
+                i = nossos.get((fam, t))
+                if i:
+                    out.add(i)
+        return out
+
+    fila, pulados = [], 0
     for cid, e in jogos.items():
-        if any(norm(s) in titulos for s in e["slugs"]):
-            fila.append((cid, e["ts"], e["url"]))
+        poss = possiveis(e)
+        if not poss:
+            continue
+        # So pula quando TUDO que este id poderia preencher ja esta coletado.
+        # Sem isso o coletor refaz os 2.848 a cada reinicio, porque o teste
+        # contra o que ja existe so acontecia depois de baixar a pagina.
+        if poss <= set(dados):
+            pulados += 1
+            continue
+        fila.append((cid, e["ts"], e["url"]))
     fila.sort(key=lambda x: -int(x[1]))
-    print("candidatos (slug casa com algum titulo do catalogo): %d" % len(fila))
+    print("candidatos: %d na fila, %d ja coletados e pulados" % (len(fila), pulados))
     if limite:
         fila = fila[:limite]
 
