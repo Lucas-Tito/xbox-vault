@@ -454,8 +454,7 @@ function coopHtml(g) {
   var ex = (c.extras || []).map(function (x) {
     return COOPEXTRA[x.toLowerCase()] || x;
   });
-  return "<h4>Co-op segundo o Co-Optimus</h4>" +
-    (li.length ? '<ul class="modos">' + li.map(function (x) {
+  return (li.length ? '<ul class="modos">' + li.map(function (x) {
       return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
     (ex.length ? '<ul class="modos coop-ex">' + ex.map(function (x) {
       return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
@@ -567,7 +566,7 @@ function horas(v) {
    HowLongToBeat. O número de relatos fica à vista de propósito: "8h" apoiado em
    5.533 relatos e "8h" apoiado em 1 são a mesma frase com valor muito diferente,
    e quem lê merece poder fazer essa distinção sozinho. */
-var POUCOS_RELATOS = 10;   /* abaixo disso o popup avisa; ver tempoHtml */
+var POUCOS_RELATOS = 5;    /* abaixo disso o popup avisa; ver tempoHtml */
 function tempoHtml(g) {
   var t = g.tempo;
   if (!t) return "";
@@ -593,15 +592,18 @@ function tempoHtml(g) {
         ? ", somando todas as vers\u00f5es do jogo" +
           (versao ? ", n\u00e3o s\u00f3 a de " + esc(versao) : "")
         : versao ? " de quem jogou no " + esc(versao) : "") + ".";
-    /* Abaixo de POUCOS_RELATOS o numero deixa de ser media e vira o tempo de
-       umas poucas pessoas. O corte e 10 e nao 5 por causa de um caso concreto:
-       Black Ops III no Xbox 360 tem exatamente 5 relatos, de uma campanha que
-       aquela versao nem tem -- com o corte em 5 ele passaria sem aviso. */
-    if (n !== null && n < POUCOS_RELATOS) {
-      nota += " Poucos relatos \u2014 \u00e9 o tempo de um punhado de pessoas, n\u00e3o uma m\u00e9dia.";
+    /* A mediana deste cat\u00e1logo \u00e9 6 relatos por plataforma, ent\u00e3o um aviso \u00fanico
+       dispararia em dois ter\u00e7os dos jogos e viraria ru\u00eddo. Escalonado, ele
+       volta a dizer algo: um relato \u00e9 o tempo de UMA pessoa (18% dos casos),
+       o que \u00e9 diferente de uma m\u00e9dia magra. Acima disso a contagem j\u00e1 est\u00e1 na
+       frase e o leitor julga sozinho. */
+    if (n === 1) {
+      nota += " \u00c9 o tempo de uma pessoa s\u00f3, n\u00e3o uma m\u00e9dia.";
+    } else if (n !== null && n < POUCOS_RELATOS) {
+      nota += " Poucos relatos \u2014 o n\u00famero ainda oscila bastante.";
     }
   }
-  return "<h4>Tempo de jogo</h4><ul class=\"tempo\">" + li.join("") + "</ul>" +
+  return "<ul class=\"tempo\">" + li.join("") + "</ul>" +
     (nota ? '<p class="nota">' + nota + "</p>" : "");
 }
 
@@ -613,23 +615,31 @@ function tuHtml(g) {
   var t = g.tu;
   if (!t || !t.n || !(t.lista || []).length) return "";
   var linhas = t.lista.map(function (u) {
-    return "<li><b>v" + u.v + "</b>" +
+    return "<li><b>TU" + u.v + "</b>" +
       (u.d ? '<span class="tu-d">' + esc(fmtDate(u.d)) + "</span>" : "") +
       (u.kb ? '<span class="tu-kb">' + esc(kb(u.kb)) + "</span>" : "") + "</li>";
   }).join("");
   return '<details class="tu"><summary>' + t.n +
     (t.n > 1 ? " atualizações oficiais" : " atualização oficial") +
-    (t.ultima ? ", última v" + t.ultima : "") +
+    (t.ultima ? ", última TU" + t.ultima : "") +
     (t.data ? " em " + esc(fmtDate(t.data)) : "") +
     "</summary><ul>" + linhas + "</ul></details>";
 }
 
-function detalheHtml(g) {
-  var o = owned.has(g.id), w = wishlist.has(g.id), t = g.tags || {};
-  var capa = g.image
-    ? '<img src="' + esc(g.image) + '" alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") + ">"
-    : '<div class="ph">' + esc(g.title) + "</div>";
+/* Retrocompatibilidade: bloco proprio porque so 995 jogos tem, e para eles e a
+   primeira pergunta, nao um detalhe de rodape. */
+function bcHtml(g) {
+  var c = g.bc360;
+  if (!c) return "";
+  return "<h4>Retrocompatibilidade com o Xbox 360</h4>" +
+    '<p class="' + (c.compatible ? "sim" : "nao") + '">' +
+    (c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360") + "</p>" +
+    (c.compatible ? linha("Região", esc(c.region === "all" ? "todas" : (c.regions || [c.region]).join(", "))) : "") +
+    (c.xboxOriginals ? linha("Xbox Originals", "sim (era vendido digitalmente)") : "") +
+    (c.issues ? '<p class="nota"><b>Problemas conhecidos:</b> ' + esc(c.issues) + "</p>" : "");
+}
 
+function fichaHtml(g) {
   /* Uma data so, a mais antiga entre as regioes: quem abre a ficha quer saber
      quando o jogo saiu, nao em qual loja regional ele saiu primeiro. Quando o
      ano empata e so uma das regioes tem dia e mes, vale a mais precisa. */
@@ -646,8 +656,8 @@ function detalheHtml(g) {
       lancamento = fmtDate(d0);
     }
   }
-
-  var ficha = linha("Plataforma", esc(PLATNOME[g.platform] || g.platform)) +
+  var f = g.flags || {};
+  var h = linha("Plataforma", esc(PLATNOME[g.platform] || g.platform)) +
     linha("Lançamento", lancamento || g.year || null) +
     linha("Gênero", esc(g.genre || "")) +
     linha("Categoria", g.category ? esc(g.category) : null) +
@@ -655,34 +665,71 @@ function detalheHtml(g) {
     linha("Console", g.console ? esc(g.console === "x360" ? "Xbox 360"
           : g.console === "both" ? "Xbox e Xbox 360" : "Xbox original") : null) +
     linha("Desenvolvedora", esc((g.developers || []).join(", "))) +
-    linha("Publicadora", esc((g.publishers || []).join(", ")));
-
-  var bc = "";
-  if (g.platform === "xbox" && g.bc360) {
-    var c = g.bc360;
-    bc = "<h4>Retrocompatibilidade com o Xbox 360</h4>" +
-      '<p class="' + (c.compatible ? "sim" : "nao") + '">' +
-      (c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360") + "</p>" +
-      (c.compatible ? linha("Região", esc(c.region === "all" ? "todas" : (c.regions || [c.region]).join(", "))) : "") +
-      (c.xboxOriginals ? linha("Xbox Originals", "sim (era vendido digitalmente)") : "") +
-      (c.issues ? '<p class="nota"><b>Problemas conhecidos:</b> ' + esc(c.issues) + "</p>" : "");
-  }
-
-  var extras = [];
-  // Title Updates: a Xbox LIVE do 360 foi desligada, entao saber que patch
-  // existiu (e que nunca existiu) importa para quem vai montar o console.
-  if (g.tu && !g.tu.n) extras.push("Nunca recebeu atualização oficial");
-  var f = g.flags || {};
-  if (f.xbla) extras.push("Xbox Live Arcade");
-  if (f.kinect) extras.push("Kinect (" + (f.kinect === "required" ? "obrigatório" : "opcional") + ")");
-  if (f.xboxOne) extras.push("Roda também no Xbox One");
-  if (f.stereo3d) extras.push("Suporte a 3D estereoscópico");
+    linha("Publicadora", esc((g.publishers || []).join(", "))) +
+    /* O que era a gaveta "Extras" virou linha de ficha. A gaveta misturava fato
+       de patch, forma de venda, hardware e recurso de video numa lista so, e
+       cada um deles responde uma pergunta diferente. */
+    (f.xbla ? linha("Distribuição", "Xbox Live Arcade") : "") +
+    (f.xboxOne ? linha("Xbox One", "roda por retrocompatibilidade") : "") +
+    (f.stereo3d ? linha("3D estereoscópico", "suportado") : "") +
+    /* A Xbox LIVE do 360 foi desligada, entao saber que um jogo NUNCA recebeu
+       patch vale tanto quanto saber quais ele recebeu. */
+    (g.tu && !g.tu.n ? linha("Atualizações", "nunca recebeu") : "");
 
   var links = [];
   if (g.wiki) links.push('<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(g.wiki) +
     '" target="_blank" rel="noopener">Wikipédia ↗</a>');
   if (g.url) links.push('<a href="' + esc(g.url) + '" target="_blank" rel="noopener">Página do projeto ↗</a>');
   if (g.fonte) links.push('<a href="' + esc(g.fonte) + '" target="_blank" rel="noopener">Fonte do cancelamento ↗</a>');
+  return h + (links.length ? '<div class="det-links">' + links.join("") + "</div>" : "");
+}
+
+/* As abas da ficha. Aba sem conteudo NAO e desenhada: prometer "Conteudo
+   adicional" e abrir o vazio e pior do que nao ter a aba, e o vazio seria a
+   regra -- dos 4.892 jogos com Title ID, 4.203 nunca receberam patch nenhum. */
+function abasDetalhe(g) {
+  var f = g.flags || {}, abas = [];
+
+  var geral = (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
+    galeriaHtml(g);
+  var tempo = tempoHtml(g);
+  if (tempo) geral += "<h4>Tempo de jogo</h4>" + tempo;
+  /* Kinect fica aqui e nao com os modos: nos 132 jogos que EXIGEM o sensor ele
+     responde a mesma pergunta que a retrocompatibilidade, se roda no seu setup. */
+  if (f.kinect) geral += linha("Kinect", f.kinect === "required" ? "obrigatório" : "opcional");
+  geral += bcHtml(g);
+  if (geral) abas.push(["Visão geral", geral]);
+
+  var coop = coopHtml(g);
+  abas.push(["Modos e co-op", "<h4>Modos de jogo</h4>" + modosHtml(g) +
+    (coop ? "<h4>Co-Optimus</h4>" + coop : "")]);
+
+  var adicional = tuHtml(g);
+  if (adicional) abas.push(["Conteúdo adicional", adicional]);
+
+  abas.push(["Ficha técnica", fichaHtml(g)]);
+  return abas;
+}
+
+function detalheHtml(g) {
+  var o = owned.has(g.id), w = wishlist.has(g.id);
+  var capa = g.image
+    ? '<img src="' + esc(g.image) + '" alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") + ">"
+    : '<div class="ph">' + esc(g.title) + "</div>";
+
+  var abas = abasDetalhe(g), corpo;
+  if (abas.length < 2) {
+    corpo = abas.length ? abas[0][1] : "";   // uma aba so nao e aba, e uma coluna
+  } else {
+    corpo = '<div class="abas" role="tablist">' + abas.map(function (a, i) {
+        return '<button class="aba" role="tab" data-aba="' + i +
+          '" aria-selected="' + (i === 0) + '">' + a[0] + "</button>";
+      }).join("") + "</div>" +
+      abas.map(function (a, i) {
+        return '<div class="pane" data-pane="' + i + '"' + (i ? " hidden" : "") + ">" +
+          a[1] + "</div>";
+      }).join("");
+  }
 
   return '<div class="det">' +
     '<div class="det-capa">' + capa + "</div>" +
@@ -690,16 +737,22 @@ function detalheHtml(g) {
       "<h3>" + esc(g.title) + "</h3>" +
       '<div class="det-sub">' + esc([PLATNOME[g.platform], g.year, g.genre || g.category]
         .filter(Boolean).join(" · ")) + "</div>" +
+      /* O rotulo da nota diz so a fonte. O quadrado colorido e a pilula com
+         estrela ja separam critica de publico, entao escrever "nota da critica"
+         era legendar o que o desenho mostra. */
       (typeof g.mc === "number"
         ? '<div class="det-mc"><span class="mc ' + mcClasse(g.mc) +
           (g.mcGeral ? " geral" : "") + '">' + g.mc + (g.mcGeral ? '<i>*</i>' : "") + "</span>" +
-          "<span>Nota da crítica · Metacritic" + (g.mcGeral ? " *" : "") + "</span></div>" : "") +
+          "<span>Metacritic" + (g.mcGeral ? " *" : "") + "</span></div>" : "") +
       (typeof g.ur === "number"
         ? '<div class="det-mc"><span class="ur"><b>★</b>' + urTexto(g.ur) + "</span>" +
-          "<span>Nota dos jogadores · Xbox Marketplace</span></div>" : "") +
+          "<span>Xbox Marketplace</span></div>" : "") +
+      (g.mcGeral
+        ? '<p class="det-aviso">* Esta nota do Metacritic não é da versão de ' +
+          esc(PLATNOME[g.platform] || g.platform) + '.</p>'
+        : "") +
       (g.releaseType === "Vazado" && g.nota
         ? '<p class="det-vaz"><b>Cancelado, mas jogável.</b> ' + esc(g.nota) + "</p>" : "") +
-      (g.description ? '<p class="desc">' + esc(g.description) + "</p>" : "") +
       '<div class="det-acoes">' +
         '<button class="btn ' + (o ? "primary" : "") + '" data-mark="own">' +
           (o ? "✓ Eu tenho" : "+ Marcar que tenho") + "</button>" +
@@ -707,20 +760,7 @@ function detalheHtml(g) {
           (w ? "★ Na wishlist" : "☆ Pôr na wishlist") + "</button>" +
         '<button class="btn' + (escondidos.has(g.id) ? " muted" : "") + '" data-mark="hide">' +
           (escondidos.has(g.id) ? "⊘ Escondido" : "⊘ Não quero") + "</button>" +
-      "</div>" +
-      galeriaHtml(g) +
-      "<h4>Modos de jogo</h4>" + modosHtml(g) + coopHtml(g) +
-      (extras.length ? "<h4>Extras</h4><ul class=\"modos\">" +
-        extras.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
-      tuHtml(g) +
-      tempoHtml(g) +
-      bc +
-      "<h4>Ficha</h4>" + ficha +
-      (links.length ? '<div class="det-links">' + links.join("") + "</div>" : "") +
-      (g.mcGeral
-        ? '<p class="det-aviso">* Esta nota do Metacritic não é da versão de ' +
-          esc(PLATNOME[g.platform] || g.platform) + '.</p>'
-        : "") +
+      "</div>" + corpo +
     "</div></div>";
 }
 
@@ -1015,6 +1055,17 @@ function ligarEventos() {
     if (e.target.id === "lb") lbFechar();   // clique no fundo fecha, como no popup
   });
   $("#modal-body").addEventListener("click", function (e) {
+    var t = e.target.closest(".aba");
+    if (t) {
+      var raiz = t.closest(".det-info"), i = t.dataset.aba;
+      Array.prototype.forEach.call(raiz.querySelectorAll(".aba"), function (x) {
+        x.setAttribute("aria-selected", x === t);
+      });
+      Array.prototype.forEach.call(raiz.querySelectorAll(".pane"), function (p) {
+        p.hidden = p.dataset.pane !== i;
+      });
+      return;
+    }
     var b = e.target.closest("[data-mark]");
     if (!b || !detAtual) return;
     var card = $('.card[data-id="' + (window.CSS && CSS.escape ? CSS.escape(detAtual.id) : detAtual.id) + '"]');

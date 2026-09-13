@@ -22484,21 +22484,229 @@
   "v": 2,
   "via": "plataforma"
  },
+ "xbox-mega-man-anniversary-collection": {
+  "ano": 2004,
+  "cem": 25.1,
+  "hltb": 5818,
+  "main": 19.9,
+  "n": 4,
+  "nome": "Mega Man Anniversary Collection",
+  "plus": 24.0,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-melbourne-cup-challenge": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-men-of-valor": {
+  "ano": 2004,
+  "hltb": 15413,
+  "main": 10.0,
+  "n": 1,
+  "nome": "Men of Valor",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mercenaries-playground-of-destruction": {
+  "ano": 2005,
+  "cem": 34.8,
+  "hltb": 5890,
+  "main": 14.2,
+  "n": 19,
+  "nome": "Mercenaries: Playground of Destruction",
+  "plus": 22.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-metal-arms-glitch-in-the-system": {
+  "ano": 2003,
+  "hltb": 5895,
+  "main": 14.5,
+  "n": 5,
+  "nome": "Metal Arms: Glitch in the System",
+  "plus": 13.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-metal-dungeon": {
+  "ano": 2002,
+  "cem": 120.0,
+  "hltb": 5898,
+  "main": 24.0,
+  "n": 4,
+  "nome": "Metal Dungeon",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-metal-gear-solid-2-substance": {
+  "ano": 2002,
+  "cem": 30.9,
+  "hltb": 5911,
+  "main": 13.5,
+  "n": 17,
+  "nome": "Metal Gear Solid 2: Substance",
+  "plus": 21.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-metal-slug-3": {
+  "ano": 2000,
+  "cem": 4.6,
+  "hltb": 5932,
+  "main": 1.4,
+  "n": 430,
+  "nome": "Metal Slug 3",
+  "plus": 2.9,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-metal-slug-4": {
+  "ano": 2002,
+  "hltb": 5933,
+  "main": 0.9,
+  "n": 3,
+  "nome": "Metal Slug 4",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-metal-slug-5": {
+  "ano": 2003,
+  "hltb": 5934,
+  "main": 0.6,
+  "n": 2,
+  "nome": "Metal Slug 5",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-metal-wolf-chaos": {
+  "ano": 2004,
+  "hltb": 38283,
+  "main": 7.1,
+  "n": 3,
+  "nome": "Metal Wolf Chaos",
+  "plus": 9.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-miami-vice": {
+  "ano": 2004,
+  "cem": 4.5,
+  "hltb": 57855,
+  "main": 3.2,
+  "n": 2,
+  "nome": "Miami Vice",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-micro-machines": {
+  "ano": 2002,
+  "hltb": 117320,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Micro Machines",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-midnight-club-3-dub-edition": {
+  "ano": 2005,
+  "cem": 48.0,
+  "hltb": 5997,
+  "main": 19.8,
+  "n": 3,
+  "nome": "Midnight Club 3: DUB Edition",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-midnight-club-3-dub-edition-remix": {
+  "ano": 2006,
+  "cem": 29.9,
+  "hltb": 20030,
+  "main": 20.9,
+  "n": 33,
+  "nome": "Midnight Club 3: DUB Edition Remix",
+  "plus": 27.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-midnight-club-ii": {
+  "ano": 2003,
+  "cem": 18.0,
+  "hltb": 5998,
+  "main": 12.7,
+  "n": 3,
+  "nome": "Midnight Club II",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-midtown-madness-3": {
+  "ano": 2003,
+  "cem": 11.3,
+  "hltb": 6010,
+  "main": 7.9,
+  "n": 13,
+  "nome": "Midtown Madness 3",
+  "plus": 9.1,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-midway-arcade-treasures": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-midway-arcade-treasures-2": {
+  "ano": 2004,
+  "hltb": 6013,
+  "main": 8.0,
+  "n": 1,
+  "nome": "Midway Arcade Treasures 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-midway-arcade-treasures-3": {
+  "ano": 2005,
+  "hltb": 6014,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Midway Arcade Treasures 3",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-mike-tyson-heavyweight-boxing": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-minority-report-everybody-runs": {
+  "ano": 2002,
+  "hltb": 6081,
+  "main": 6.3,
+  "n": 2,
+  "nome": "Minority Report: Everybody Runs",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mission-impossible-operation-surma": {
+  "ano": 2003,
+  "hltb": 6095,
+  "main": 7.0,
+  "n": 2,
+  "nome": "Mission: Impossible - Operation Surma",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-mlb-slugfest-2003": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-mlb-slugfest-2004": {
+  "ano": 2003,
+  "hltb": 65921,
+  "main": 1.5,
+  "n": 1,
+  "nome": "MLB Slugfest 2004",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-mlb-slugfest-2006": {
   "nao": "sem-medida",
@@ -22520,9 +22728,80 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-monster-garage": {
+  "ano": 2004,
+  "cem": 7.8,
+  "hltb": 23319,
+  "n": 1,
+  "nome": "Monster Garage",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mortal-kombat-armageddon": {
+  "ano": 2006,
+  "cem": 47.5,
+  "hltb": 6211,
+  "main": 8.2,
+  "n": 9,
+  "nome": "Mortal Kombat: Armageddon",
+  "plus": 16.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mortal-kombat-deadly-alliance": {
+  "ano": 2002,
+  "cem": 31.5,
+  "hltb": 6212,
+  "main": 11.9,
+  "n": 15,
+  "nome": "Mortal Kombat: Deadly Alliance",
+  "plus": 22.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mortal-kombat-deception": {
+  "ano": 2004,
+  "cem": 49.0,
+  "hltb": 6213,
+  "main": 6.1,
+  "n": 14,
+  "nome": "Mortal Kombat: Deception",
+  "plus": 22.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mortal-kombat-shaolin-monks": {
+  "ano": 2005,
+  "cem": 12.9,
+  "hltb": 6214,
+  "main": 6.2,
+  "n": 13,
+  "nome": "Mortal Kombat: Shaolin Monks",
+  "plus": 10.9,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-motocross-mania-3": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-motogp-ultimate-racing-technology": {
+  "ano": 2000,
+  "hltb": 6228,
+  "main": 9.4,
+  "n": 1,
+  "nome": "MotoGP",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-motogp-ultimate-racing-technology-2": {
+  "ano": 2003,
+  "hltb": 6230,
+  "main": 9.3,
+  "n": 1,
+  "nome": "MotoGP 2",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-motogp-ultimate-racing-technology-3": {
   "nao": "nenhum-casou",
@@ -22536,13 +22815,90 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-murakumo-renegade-mech-pursuit": {
+  "ano": 2002,
+  "hltb": 6262,
+  "main": 3.8,
+  "n": 2,
+  "nome": "Murakumo: Renegade Mech Pursuit",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-muzzle-flash": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-mvp-06-ncaa-baseball": {
+  "ano": 2006,
+  "hltb": 6285,
+  "main": 3.0,
+  "n": 1,
+  "nome": "MVP 06: NCAA Baseball",
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-mvp-baseball-2003": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-mvp-baseball-2004": {
+  "ano": 2004,
+  "hltb": 27732,
+  "main": 12.7,
+  "n": 1,
+  "nome": "MVP Baseball 2004",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-mvp-baseball-2005": {
+  "ano": 2005,
+  "cem": 50.0,
+  "hltb": 6286,
+  "main": 4.0,
+  "n": 1,
+  "nome": "MVP Baseball 2005",
+  "plus": 20.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-mx-2002-featuring-ricky-carmichael": {
+  "ano": 2001,
+  "hltb": 28620,
+  "main": 2.7,
+  "n": 1,
+  "nome": "MX 2002",
+  "plus": 4.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-mx-superfly": {
+  "ano": 2002,
+  "hltb": 17068,
+  "main": 3.0,
+  "n": 3,
+  "nome": "MX Superfly",
+  "plus": 4.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-mx-unleashed": {
+  "ano": 2004,
+  "hltb": 15674,
+  "main": 3.5,
+  "n": 4,
+  "nome": "MX Unleashed",
+  "plus": 19.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-mx-vs-atv-unleashed": {
+  "ano": 2005,
+  "hltb": 20750,
+  "main": 8.0,
+  "n": 1,
+  "nome": "MX vs. ATV Unleashed",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-mx-world-tour-featuring-jamie-little": {
   "nao": "sem-medida",
@@ -22552,6 +22908,17 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-myst-iv-revelation": {
+  "ano": 2004,
+  "cem": 16.7,
+  "hltb": 6310,
+  "main": 11.9,
+  "n": 19,
+  "nome": "Myst IV: Revelation",
+  "plus": 15.9,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-n-u-d-e-natural-ultimate-digital-experiment": {
   "nao": "sem-medida",
   "v": 2
@@ -22559,6 +22926,25 @@
  "xbox-nakajima-tetsuya-no-othello-seminar": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "xbox-namco-museum": {
+  "ano": 2005,
+  "hltb": 58064,
+  "main": 2.6,
+  "n": 6,
+  "nome": "Namco Museum",
+  "plus": 17.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-namco-museum-50th-anniversary": {
+  "ano": 2005,
+  "hltb": 6347,
+  "main": 6.5,
+  "n": 2,
+  "nome": "Namco Museum 50th Anniversary",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-narc": {
   "nao": "so-outra-plataforma",
@@ -22571,6 +22957,16 @@
  "xbox-nascar-07": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-nascar-2005-chase-for-the-cup": {
+  "ano": 2004,
+  "cem": 200.0,
+  "hltb": 12278,
+  "main": 42.0,
+  "n": 3,
+  "nome": "NASCAR 2005: Chase for the Cup",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-nascar-heat-2002": {
   "nao": "so-outra-plataforma",
@@ -22600,6 +22996,34 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-nba-2k7": {
+  "ano": 2006,
+  "hltb": 6432,
+  "main": 5.0,
+  "n": 1,
+  "nome": "NBA 2K7",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-nba-ballers": {
+  "ano": 2004,
+  "hltb": 17071,
+  "main": 15.0,
+  "n": 1,
+  "nome": "NBA Ballers",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nba-ballers-phenom": {
+  "ano": 2006,
+  "hltb": 6435,
+  "main": 11.6,
+  "n": 2,
+  "nome": "NBA Ballers: Phenom",
+  "plus": 17.4,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-nba-inside-drive-2002": {
   "nao": "sem-medida",
   "v": 2
@@ -22616,13 +23040,79 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-nba-live-06": {
+  "ano": 2005,
+  "hltb": 11832,
+  "main": 27.5,
+  "n": 6,
+  "nome": "NBA Live 06",
+  "plus": 80.0,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-nba-live-07": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-nba-live-2002": {
+  "hltb": 23607,
+  "main": 5.0,
+  "n": 1,
+  "nome": "NBA Live 2002",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-nba-live-2003": {
+  "ano": 2002,
+  "hltb": 13612,
+  "main": 27.5,
+  "n": 2,
+  "nome": "NBA Live 2003",
+  "plus": 30.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nba-live-2004": {
+  "ano": 2003,
+  "hltb": 6444,
+  "main": 25.0,
+  "n": 1,
+  "nome": "NBA Live 2004",
+  "plus": 30.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nba-live-2005": {
+  "ano": 2004,
+  "hltb": 13014,
+  "main": 6.0,
+  "n": 2,
+  "nome": "NBA Live 2005",
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-nba-starting-five": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-nba-street-v3": {
+  "ano": 2005,
+  "hltb": 13015,
+  "n": 1,
+  "nome": "NBA Street V3",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-nba-street-vol-2": {
+  "ano": 2003,
+  "cem": 11.1,
+  "hltb": 6450,
+  "main": 11.0,
+  "n": 3,
+  "nome": "NBA Street Vol. 2",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-ncaa-college-basketball-2k3": {
   "nao": "sem-medida",
@@ -22631,6 +23121,15 @@
  "xbox-ncaa-college-football-2k3": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-ncaa-football-06": {
+  "ano": 2005,
+  "hltb": 12282,
+  "main": 42.2,
+  "n": 1,
+  "nome": "NCAA Football 06",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-ncaa-football-07": {
   "nao": "so-outra-plataforma",
@@ -22664,9 +23163,109 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-need-for-speed-carbon": {
+  "ano": 2006,
+  "cem": 24.4,
+  "hltb": 6472,
+  "main": 5.4,
+  "n": 5,
+  "nome": "Need for Speed: Carbon",
+  "plus": 15.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-need-for-speed-hot-pursuit-2": {
+  "ano": 2002,
+  "hltb": 6475,
+  "main": 10.8,
+  "n": 5,
+  "nome": "Need for Speed: Hot Pursuit 2",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-need-for-speed-most-wanted": {
+  "ano": 2005,
+  "hltb": 6477,
+  "main": 18.9,
+  "n": 7,
+  "nome": "Need for Speed: Most Wanted",
+  "plus": 25.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-need-for-speed-underground": {
+  "ano": 2003,
+  "cem": 45.0,
+  "hltb": 6485,
+  "main": 15.0,
+  "n": 12,
+  "nome": "Need for Speed: Underground",
+  "plus": 17.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-need-for-speed-underground-2": {
+  "ano": 2004,
+  "cem": 27.2,
+  "hltb": 6486,
+  "main": 20.3,
+  "n": 22,
+  "nome": "Need for Speed: Underground 2",
+  "plus": 24.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-neighbours-from-hell": {
+  "ano": 2003,
+  "cem": 5.4,
+  "hltb": 6489,
+  "main": 3.4,
+  "n": 43,
+  "nome": "Neighbours from Hell",
+  "plus": 4.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-new-legends": {
+  "ano": 2002,
+  "hltb": 15693,
+  "main": 5.6,
+  "n": 1,
+  "nome": "New Legends",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-nfl-2k2": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-nfl-2k3": {
+  "ano": 2002,
+  "hltb": 6547,
+  "n": 1,
+  "nome": "NFL 2K3",
+  "plus": 100.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-nfl-blitz-2002": {
+  "ano": 2002,
+  "hltb": 36854,
+  "main": 2.6,
+  "n": 3,
+  "nome": "NFL Blitz 2002",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nfl-blitz-2003": {
+  "ano": 2002,
+  "hltb": 6550,
+  "main": 1.6,
+  "n": 1,
+  "nome": "NFL Blitz 20-03",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-nfl-blitz-pro": {
   "nao": "sem-medida",
@@ -22688,6 +23287,27 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-nfl-street": {
+  "ano": 2004,
+  "hltb": 6556,
+  "main": 10.6,
+  "n": 4,
+  "nome": "NFL Street",
+  "plus": 11.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nfl-street-2": {
+  "ano": 2004,
+  "cem": 40.0,
+  "hltb": 17644,
+  "main": 14.7,
+  "n": 4,
+  "nome": "NFL Street 2",
+  "plus": 40.0,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-nhl-06": {
   "nao": "sem-medida",
   "v": 2
@@ -22699,6 +23319,15 @@
  "xbox-nhl-2002": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-nhl-2003": {
+  "ano": 2002,
+  "hltb": 12878,
+  "main": 28.2,
+  "n": 1,
+  "nome": "NHL 2003",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-nhl-2004": {
   "nao": "so-outra-plataforma",
@@ -22716,17 +23345,128 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-nhl-2k7": {
+  "ano": 2006,
+  "hltb": 6569,
+  "main": 32.0,
+  "n": 2,
+  "nome": "NHL 2K7",
+  "plus": 128.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nhl-hitz-2002": {
+  "ano": 2001,
+  "hltb": 15647,
+  "main": 7.9,
+  "n": 2,
+  "nome": "NHL Hitz 2002",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nhl-hitz-2003": {
+  "ano": 2002,
+  "cem": 20.0,
+  "hltb": 6579,
+  "n": 1,
+  "nome": "NHL Hitz 2003",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-nhl-hitz-pro": {
+  "ano": 2003,
+  "cem": 20.0,
+  "hltb": 29758,
+  "n": 1,
+  "nome": "NHL Hitz Pro",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-nhl-rivals-2004": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-nickelodeon-party-blast": {
+  "ano": 2002,
+  "cem": 15.0,
+  "hltb": 6587,
+  "main": 4.8,
+  "n": 4,
+  "nome": "Nickelodeon Party Blast",
+  "plus": 14.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-nightcaster-defeat-the-darkness": {
+  "ano": 2002,
+  "hltb": 6596,
+  "main": 21.0,
+  "n": 2,
+  "nome": "NightCaster: Defeat the Darkness",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-nightcaster-ii-equinox": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-ninja-gaiden": {
+  "ano": 2004,
+  "cem": 33.6,
+  "hltb": 6619,
+  "main": 18.3,
+  "n": 35,
+  "nome": "Ninja Gaiden",
+  "plus": 24.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ninja-gaiden-black": {
+  "ano": 2005,
+  "cem": 79.5,
+  "hltb": 6624,
+  "main": 16.9,
+  "n": 48,
+  "nome": "Ninja Gaiden Black",
+  "plus": 25.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-nobunaga-no-yabo-ranseiki": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "xbox-obscure": {
+  "ano": 2004,
+  "hltb": 6692,
+  "main": 3.9,
+  "n": 5,
+  "nome": "ObsCure",
+  "plus": 11.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-oddworld-munch-s-oddysee": {
+  "ano": 2001,
+  "cem": 16.1,
+  "hltb": 6702,
+  "main": 12.5,
+  "n": 13,
+  "nome": "Oddworld: Munch's Oddysee",
+  "plus": 15.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-oddworld-stranger-s-wrath": {
+  "ano": 2005,
+  "cem": 327.0,
+  "hltb": 6703,
+  "main": 12.1,
+  "n": 14,
+  "nome": "Oddworld: Stranger's Wrath",
+  "plus": 24.8,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-on-flux": {
   "nao": "sem-resultado",
@@ -22740,6 +23480,36 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-otogi-2-immortal-warriors": {
+  "ano": 2003,
+  "hltb": 6818,
+  "main": 9.1,
+  "n": 7,
+  "nome": "Otogi 2: Immortal Warriors",
+  "plus": 10.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-otogi-myth-of-demons": {
+  "ano": 2002,
+  "cem": 26.9,
+  "hltb": 6819,
+  "main": 11.1,
+  "n": 18,
+  "nome": "Otogi: Myth of Demons",
+  "plus": 15.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-outlaw-golf": {
+  "ano": 2002,
+  "hltb": 6828,
+  "main": 1.7,
+  "n": 1,
+  "nome": "Outlaw Golf",
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-outlaw-golf-2": {
   "nao": "sem-medida",
   "v": 2
@@ -22748,13 +23518,131 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-outlaw-golf-9-more-holes-of-x-mas": {
+  "ano": 2002,
+  "hltb": 119107,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Outlaw Golf: Holiday Golf",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-outlaw-tennis": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-outlaw-volleyball": {
+  "ano": 2003,
+  "cem": 21.6,
+  "hltb": 6831,
+  "main": 10.0,
+  "n": 2,
+  "nome": "Outlaw Volleyball",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-outlaw-volleyball-red-hot": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-outrun-2": {
+  "ano": 2004,
+  "cem": 24.5,
+  "hltb": 6838,
+  "main": 0.3,
+  "n": 14,
+  "nome": "OutRun 2",
+  "plus": 14.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-outrun-2006-coast-2-coast": {
+  "ano": 2006,
+  "hltb": 6839,
+  "main": 6.8,
+  "n": 2,
+  "nome": "OutRun 2006: Coast 2 Coast",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-over-the-hedge": {
+  "ano": 2006,
+  "hltb": 19262,
+  "main": 6.0,
+  "n": 2,
+  "nome": "Over the Hedge",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-pac-man-world-2": {
+  "ano": 2002,
+  "cem": 13.1,
+  "hltb": 6863,
+  "main": 4.6,
+  "n": 44,
+  "nome": "Pac-Man World 2",
+  "plus": 7.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-pac-man-world-3": {
+  "ano": 2005,
+  "hltb": 6864,
+  "main": 15.0,
+  "n": 3,
+  "nome": "Pac-Man World 3",
+  "plus": 11.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-painkiller-hell-wars": {
+  "ano": 2006,
+  "hltb": 6876,
+  "main": 14.6,
+  "n": 3,
+  "nome": "Painkiller: Hell Wars",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-panzer-dragoon-orta": {
+  "ano": 2002,
+  "cem": 26.7,
+  "hltb": 6902,
+  "main": 4.6,
+  "n": 61,
+  "nome": "Panzer Dragoon Orta",
+  "plus": 6.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-panzer-elite-action-fields-of-glory": {
+  "ano": 2006,
+  "hltb": 21000,
+  "main": 7.5,
+  "n": 2,
+  "nome": "Panzer Elite Action: Fields of Glory",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-pariah": {
+  "ano": 2005,
+  "hltb": 6926,
+  "main": 5.4,
+  "n": 6,
+  "nome": "Pariah",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-peter-jackson-s-king-kong": {
+  "ano": 2005,
+  "cem": 7.0,
+  "hltb": 6981,
+  "main": 5.7,
+  "n": 5,
+  "nome": "Peter Jackson's King Kong",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-petit-copter": {
   "nao": "so-outra-plataforma",
@@ -22764,6 +23652,25 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-phantom-crash": {
+  "ano": 2002,
+  "hltb": 7015,
+  "main": 15.4,
+  "n": 1,
+  "nome": "Phantom Crash",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-phantom-dust": {
+  "ano": 2004,
+  "cem": 19.2,
+  "hltb": 7016,
+  "main": 23.0,
+  "n": 2,
+  "nome": "Phantom Dust",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-pilot-down-behind-enemy-lines": {
   "nao": "so-outra-plataforma",
   "v": 2
@@ -22772,9 +23679,58 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-pirates-of-the-caribbean": {
+  "ano": 2003,
+  "hltb": 7064,
+  "main": 22.9,
+  "n": 4,
+  "nome": "Pirates of the Caribbean",
+  "plus": 43.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-pirates-the-legend-of-black-kat": {
+  "ano": 2002,
+  "cem": 9.0,
+  "hltb": 18880,
+  "main": 6.3,
+  "n": 5,
+  "nome": "Pirates: The Legend of Black Kat",
+  "plus": 16.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-pitfall-the-lost-expedition": {
+  "ano": 2004,
+  "hltb": 7076,
+  "main": 12.0,
+  "n": 1,
+  "nome": "Pitfall: The Lost Expedition",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-playboy-the-mansion": {
+  "ano": 2005,
+  "hltb": 7113,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Playboy: The Mansion",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-plus-plumb-2": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "xbox-pocketbike-racer": {
+  "ano": 2006,
+  "hltb": 7126,
+  "main": 1.8,
+  "n": 2,
+  "nome": "PocketBike Racer",
+  "plus": 4.5,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-pool-shark-2": {
   "nao": "sem-medida",
@@ -22784,21 +23740,155 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-predator-concrete-jungle": {
+  "ano": 2005,
+  "cem": 15.2,
+  "hltb": 21965,
+  "main": 11.1,
+  "n": 9,
+  "nome": "Predator: Concrete Jungle",
+  "plus": 14.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-prince-of-persia-the-sands-of-time": {
+  "ano": 2003,
+  "cem": 9.5,
+  "hltb": 7297,
+  "main": 8.1,
+  "n": 30,
+  "nome": "Prince of Persia: The Sands of Time",
+  "plus": 10.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-prince-of-persia-the-two-thrones": {
+  "ano": 2005,
+  "cem": 25.0,
+  "hltb": 7298,
+  "main": 9.6,
+  "n": 14,
+  "nome": "Prince of Persia: The Two Thrones",
+  "plus": 11.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-prince-of-persia-warrior-within": {
+  "ano": 2004,
+  "cem": 21.0,
+  "hltb": 7299,
+  "main": 12.6,
+  "n": 15,
+  "nome": "Prince of Persia: Warrior Within",
+  "plus": 15.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-prisoner-of-war": {
+  "ano": 2002,
+  "hltb": 7312,
+  "main": 10.2,
+  "n": 1,
+  "nome": "Prisoner of War",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-pro-cast-sports-fishing": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-pro-evolution-soccer-4": {
+  "ano": 2004,
+  "cem": 102.5,
+  "hltb": 14295,
+  "main": 26.2,
+  "n": 6,
+  "nome": "Pro Evolution Soccer 4",
+  "plus": 50.8,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-pro-evolution-soccer-5": {
+  "ano": 2005,
+  "cem": 80.0,
+  "hltb": 7327,
+  "main": 14.2,
+  "n": 5,
+  "nome": "Pro Evolution Soccer 5",
+  "plus": 68.1,
+  "v": 2,
+  "via": "geral"
  },
  "xbox-pro-fishing-challenge": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-project-gotham-racing": {
+  "ano": 2001,
+  "hltb": 7348,
+  "main": 7.0,
+  "n": 11,
+  "nome": "Project Gotham Racing",
+  "plus": 9.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-project-gotham-racing-2": {
+  "ano": 2003,
+  "hltb": 7349,
+  "main": 16.5,
+  "n": 16,
+  "nome": "Project Gotham Racing 2",
+  "plus": 25.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-project-snowblind": {
+  "ano": 2005,
+  "hltb": 7355,
+  "main": 10.8,
+  "n": 2,
+  "nome": "Project: Snowblind",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-prostroke-golf-world-tour-2007": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-psi-ops-the-mindgate-conspiracy": {
+  "ano": 2004,
+  "hltb": 7368,
+  "main": 13.9,
+  "n": 9,
+  "nome": "Psi-Ops: The Mindgate Conspiracy",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-psychonauts": {
+  "ano": 2005,
+  "cem": 16.9,
+  "hltb": 7372,
+  "main": 11.9,
+  "n": 106,
+  "nome": "Psychonauts",
+  "plus": 13.2,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-psyvariar-2": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-pulse-racer": {
+  "ano": 2003,
+  "hltb": 99163,
+  "main": 2.5,
+  "n": 1,
+  "nome": "Pulse Racer",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-pump-it-up-exceed": {
   "nao": "sem-medida",
@@ -22812,21 +23902,289 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-quantum-redshift": {
+  "ano": 2002,
+  "hltb": 7468,
+  "main": 3.7,
+  "n": 3,
+  "nome": "Quantum Redshift",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-r-racing-evolution": {
+  "ano": 2003,
+  "hltb": 7505,
+  "main": 3.5,
+  "n": 6,
+  "nome": "R: Racing Evolution",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rallisport-challenge": {
+  "ano": 2002,
+  "hltb": 7558,
+  "main": 7.1,
+  "n": 6,
+  "nome": "Rallisport Challenge",
+  "plus": 13.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rallisport-challenge-2": {
+  "ano": 2004,
+  "cem": 21.6,
+  "hltb": 7559,
+  "main": 18.0,
+  "n": 6,
+  "nome": "Rallisport Challenge 2",
+  "plus": 18.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rally-fusion-race-of-champions": {
+  "ano": 2002,
+  "hltb": 15676,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Rally Fusion: Race of Champions",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-rapala-pro-fishing": {
+  "ano": 2004,
+  "cem": 1.1,
+  "hltb": 26925,
+  "n": 2,
+  "nome": "Rapala Pro Fishing",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-ratatouille": {
+  "ano": 2007,
+  "cem": 36.0,
+  "hltb": 7584,
+  "n": 1,
+  "nome": "Ratatouille",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rayman-3-hoodlum-havoc": {
+  "ano": 2003,
+  "hltb": 7612,
+  "main": 10.0,
+  "n": 2,
+  "nome": "Rayman 3: Hoodlum Havoc",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rayman-arena": {
+  "ano": 2001,
+  "cem": 5.9,
+  "hltb": 7618,
+  "n": 1,
+  "nome": "Rayman M",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-raze-s-hell": {
+  "ano": 2005,
+  "hltb": 16002,
+  "main": 7.4,
+  "n": 2,
+  "nome": "Raze's Hell",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-real-world-golf": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-red-dead-revolver": {
+  "ano": 2004,
+  "cem": 20.8,
+  "hltb": 7679,
+  "main": 6.7,
+  "n": 28,
+  "nome": "Red Dead Revolver",
+  "plus": 8.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-red-faction-ii": {
+  "ano": 2002,
+  "cem": 6.0,
+  "hltb": 7684,
+  "main": 4.9,
+  "n": 8,
+  "nome": "Red Faction II",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-red-ninja-end-of-honor": {
+  "ano": 2005,
+  "hltb": 7690,
+  "main": 8.5,
+  "n": 2,
+  "nome": "Red Ninja: End of Honor",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-redcard-2003": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "xbox-reign-of-fire": {
+  "ano": 2002,
+  "hltb": 7700,
+  "main": 6.6,
+  "n": 2,
+  "nome": "Reign of Fire",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rent-a-hero-no-1": {
+  "ano": 2000,
+  "hltb": 15709,
+  "main": 14.5,
+  "n": 3,
+  "nome": "Rent-a-Hero No. 1",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-reservoir-dogs": {
+  "ano": 2006,
+  "hltb": 7715,
+  "main": 3.3,
+  "n": 3,
+  "nome": "Reservoir Dogs",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-return-to-castle-wolfenstein-tides-of-war": {
+  "ano": 2003,
+  "cem": 13.5,
+  "hltb": 7766,
+  "main": 9.2,
+  "n": 12,
+  "nome": "Return to Castle Wolfenstein: Tides of War",
+  "plus": 15.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-richard-burns-rally": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-roadkill": {
+  "ano": 2003,
+  "hltb": 21587,
+  "main": 6.0,
+  "n": 2,
+  "nome": "RoadKill",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-robin-hood-defender-of-the-crown": {
+  "ano": 2003,
+  "cem": 8.9,
+  "hltb": 7875,
+  "main": 8.5,
+  "n": 3,
+  "nome": "Robin Hood: Defender of the Crown",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-robocop": {
+  "ano": 2003,
+  "cem": 18.0,
+  "hltb": 24149,
+  "main": 4.6,
+  "n": 3,
+  "nome": "RoboCop",
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-robot-wars-extreme-destruction": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-robotech-battlecry": {
+  "ano": 2002,
+  "hltb": 7898,
+  "main": 5.8,
+  "n": 1,
+  "nome": "Robotech: Battlecry",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-robotech-invasion": {
+  "ano": 2004,
+  "hltb": 7899,
+  "main": 7.9,
+  "n": 3,
+  "nome": "Robotech: Invasion",
+  "plus": 9.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-robots": {
+  "ano": 2005,
+  "hltb": 7906,
+  "main": 6.9,
+  "n": 13,
+  "nome": "Robots",
+  "plus": 8.2,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-rocky": {
+  "ano": 2002,
+  "hltb": 7934,
+  "main": 4.0,
+  "n": 1,
+  "nome": "Rocky",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rocky-legends": {
+  "ano": 2004,
+  "hltb": 7935,
+  "main": 3.8,
+  "n": 2,
+  "nome": "Rocky Legends",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-rogue-ops": {
+  "ano": 2003,
+  "hltb": 7947,
+  "main": 9.0,
+  "n": 4,
+  "nome": "Rogue Ops",
+  "plus": 10.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-rogue-trooper": {
+  "ano": 2006,
+  "hltb": 7949,
+  "main": 6.0,
+  "n": 2,
+  "nome": "Rogue Trooper",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-rollercoaster-tycoon": {
+  "ano": 1999,
+  "cem": 120.0,
+  "hltb": 7958,
+  "n": 1,
+  "nome": "RollerCoaster Tycoon",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-rolling": {
   "nao": "so-outra-plataforma",
@@ -22848,6 +24206,15 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-rugby-league": {
+  "hltb": 7998,
+  "main": 13.5,
+  "n": 3,
+  "nome": "Rugby League",
+  "plus": 55.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-rugby-league-2": {
   "nao": "so-outra-plataforma",
   "v": 2
@@ -22860,13 +24227,140 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-samurai-shodown-v": {
+  "ano": 2003,
+  "cem": 22.1,
+  "hltb": 8131,
+  "main": 0.6,
+  "n": 14,
+  "nome": "Samurai Shodown V",
+  "plus": 4.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-samurai-warriors": {
+  "ano": 2004,
+  "cem": 67.9,
+  "hltb": 8137,
+  "main": 14.9,
+  "n": 10,
+  "nome": "Samurai Warriors",
+  "plus": 31.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-scaler": {
+  "ano": 2004,
+  "hltb": 8167,
+  "main": 6.9,
+  "n": 4,
+  "nome": "Scaler",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-scar-squadra-corse-alfa-romeo": {
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-scarface-the-world-is-yours": {
+  "ano": 2006,
+  "hltb": 8168,
+  "main": 12.0,
+  "n": 5,
+  "nome": "Scarface: The World Is Yours",
+  "plus": 23.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-scooby-doo-mystery-mayhem": {
+  "ano": 2003,
+  "hltb": 8181,
+  "main": 5.8,
+  "n": 3,
+  "nome": "Scooby-Doo! Mystery Mayhem",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-scooby-doo-night-of-100-frights": {
+  "ano": 2002,
+  "hltb": 12610,
+  "main": 6.2,
+  "n": 6,
+  "nome": "Scooby-Doo! Night of 100 Frights",
+  "plus": 10.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-scooby-doo-unmasked": {
+  "ano": 2005,
+  "hltb": 23281,
+  "main": 5.6,
+  "n": 1,
+  "nome": "Scooby-Doo! Unmasked",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-scrapland": {
+  "ano": 2004,
+  "hltb": 8187,
+  "main": 13.0,
+  "n": 1,
+  "nome": "Scrapland",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-seablade": {
+  "ano": 2002,
+  "hltb": 21999,
+  "main": 4.7,
+  "n": 1,
+  "nome": "Seablade",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-second-sight": {
+  "ano": 2004,
+  "cem": 11.7,
+  "hltb": 8206,
+  "main": 10.0,
+  "n": 13,
+  "nome": "Second Sight",
+  "plus": 12.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-secret-weapons-over-normandy": {
+  "ano": 2003,
+  "cem": 6.4,
+  "hltb": 8218,
+  "n": 1,
+  "nome": "Secret Weapons Over Normandy",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sega-gt-2002": {
+  "ano": 2002,
+  "hltb": 8285,
+  "main": 24.4,
+  "n": 7,
+  "nome": "Sega GT 2002",
+  "plus": 95.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-sega-gt-online": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-sega-soccer-slam": {
+  "ano": 2002,
+  "hltb": 8291,
+  "main": 2.8,
+  "n": 1,
+  "nome": "Sega Soccer Slam",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-sensible-soccer-2006": {
   "nao": "so-outra-plataforma",
@@ -22876,9 +24370,98 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "xbox-serious-sam": {
+  "ano": 2002,
+  "cem": 15.6,
+  "hltb": 15910,
+  "main": 9.8,
+  "n": 8,
+  "nome": "Serious Sam",
+  "plus": 12.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-serious-sam-2": {
+  "ano": 2005,
+  "hltb": 8314,
+  "main": 11.3,
+  "n": 5,
+  "nome": "Serious Sam 2",
+  "plus": 13.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shadow-of-memories": {
+  "ano": 2001,
+  "hltb": 8345,
+  "main": 4.9,
+  "n": 1,
+  "nome": "Shadow of Memories",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shadow-ops-red-mercury": {
+  "ano": 2004,
+  "hltb": 13818,
+  "main": 6.5,
+  "n": 4,
+  "nome": "Shadow Ops: Red Mercury",
+  "plus": 12.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shadow-the-hedgehog": {
+  "ano": 2005,
+  "hltb": 8349,
+  "main": 3.4,
+  "n": 6,
+  "nome": "Shadow the Hedgehog",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-shamu-s-deep-sea-adventures": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-shark-tale": {
+  "ano": 2004,
+  "hltb": 8386,
+  "main": 4.5,
+  "n": 2,
+  "nome": "Shark Tale",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shattered-union": {
+  "ano": 2005,
+  "hltb": 8391,
+  "main": 15.0,
+  "n": 2,
+  "nome": "Shattered Union",
+  "plus": 11.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shellshock-nam-67": {
+  "ano": 2004,
+  "hltb": 8399,
+  "main": 3.0,
+  "n": 4,
+  "nome": "Shellshock: Nam '67",
+  "plus": 6.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shenmue-ii": {
+  "ano": 2001,
+  "cem": 36.7,
+  "hltb": 8401,
+  "main": 28.4,
+  "n": 25,
+  "nome": "Shenmue II",
+  "plus": 33.2,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-shikigami-no-shiro": {
   "nao": "so-outra-plataforma",
@@ -22892,6 +24475,15 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-shin-megami-tensei-nine": {
+  "ano": 2002,
+  "hltb": 60155,
+  "main": 42.5,
+  "n": 3,
+  "nome": "Shin Megami Tensei: Nine",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-shinchou-mahjong": {
   "nao": "sem-resultado",
   "v": 2
@@ -22899,6 +24491,86 @@
  "xbox-showdown-legends-of-wrestling": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-shrek": {
+  "ano": 2001,
+  "hltb": 21358,
+  "main": 4.0,
+  "n": 6,
+  "nome": "Shrek",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shrek-2": {
+  "ano": 2004,
+  "cem": 12.0,
+  "hltb": 8489,
+  "main": 5.5,
+  "n": 11,
+  "nome": "Shrek 2",
+  "plus": 5.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shrek-super-party": {
+  "ano": 2002,
+  "hltb": 21226,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Shrek Super Party",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-shrek-superslam": {
+  "ano": 2005,
+  "cem": 14.0,
+  "hltb": 8492,
+  "main": 1.2,
+  "n": 31,
+  "nome": "Shrek SuperSlam",
+  "plus": 4.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-sid-meier-s-pirates": {
+  "ano": 2004,
+  "hltb": 8516,
+  "main": 8.0,
+  "n": 1,
+  "nome": "Sid Meier's Pirates!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-silent-hill-2": {
+  "ano": 2001,
+  "cem": 15.0,
+  "hltb": 8523,
+  "main": 8.6,
+  "n": 31,
+  "nome": "Silent Hill 2",
+  "plus": 13.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-silent-hill-4-the-room": {
+  "ano": 2004,
+  "cem": 30.0,
+  "hltb": 8527,
+  "main": 9.9,
+  "n": 15,
+  "nome": "Silent Hill 4: The Room",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-silent-scope-complete": {
+  "ano": 2004,
+  "hltb": 8540,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Silent Scope Complete",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-ski-racing-2005": {
   "nao": "nenhum-casou",
@@ -22908,13 +24580,226 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-slam-tennis": {
+  "cem": 15.0,
+  "hltb": 15685,
+  "n": 1,
+  "nome": "Slam Tennis",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-smashing-drive": {
+  "ano": 2002,
+  "hltb": 8662,
+  "main": 0.7,
+  "n": 7,
+  "nome": "Smashing Drive",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-sneak-king": {
+  "ano": 2006,
+  "hltb": 8676,
+  "main": 3.5,
+  "n": 3,
+  "nome": "Sneak King",
+  "plus": 7.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sneakers": {
+  "ano": 2002,
+  "hltb": 8677,
+  "main": 3.9,
+  "n": 2,
+  "nome": "Sneakers",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sniper-elite": {
+  "ano": 2005,
+  "hltb": 8678,
+  "main": 18.0,
+  "n": 2,
+  "nome": "Sniper Elite",
+  "plus": 18.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-snk-vs-capcom-svc-chaos": {
+  "ano": 2003,
+  "cem": 5.0,
+  "hltb": 8694,
+  "main": 2.7,
+  "n": 3,
+  "nome": "SNK vs. Capcom: SVC Chaos",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-soldier-of-fortune-ii-double-helix": {
+  "ano": 2002,
+  "hltb": 8725,
+  "main": 10.7,
+  "n": 3,
+  "nome": "Soldier of Fortune II: Double Helix",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sonic-heroes": {
+  "ano": 2003,
+  "hltb": 8764,
+  "main": 13.4,
+  "n": 11,
+  "nome": "Sonic Heroes",
+  "plus": 21.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sonic-mega-collection-plus": {
+  "ano": 2004,
+  "cem": 32.7,
+  "hltb": 14548,
+  "main": 6.7,
+  "n": 3,
+  "nome": "Sonic Mega Collection Plus",
+  "plus": 7.2,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-sonic-riders": {
+  "ano": 2006,
+  "hltb": 8773,
+  "main": 7.1,
+  "n": 2,
+  "nome": "Sonic Riders",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-soulcalibur-ii": {
+  "ano": 2003,
+  "cem": 28.6,
+  "hltb": 8822,
+  "main": 2.9,
+  "n": 21,
+  "nome": "Soulcalibur II",
+  "plus": 12.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spartan-total-warrior": {
+  "ano": 2005,
+  "hltb": 8889,
+  "n": 1,
+  "nome": "Spartan: Total Warrior",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spawn-armageddon": {
+  "ano": 2003,
+  "hltb": 8891,
+  "main": 15.0,
+  "n": 1,
+  "nome": "Spawn: Armageddon",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-special-forces-nemesis-strike": {
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-speed-kings": {
+  "ano": 2003,
+  "hltb": 16098,
+  "main": 1.8,
+  "n": 1,
+  "nome": "Speed Kings",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sphinx-and-the-cursed-mummy": {
+  "ano": 2003,
+  "cem": 18.9,
+  "hltb": 8935,
+  "main": 13.2,
+  "n": 17,
+  "nome": "Sphinx and the Cursed Mummy",
+  "plus": 16.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spider-man": {
+  "ano": 2002,
+  "hltb": 8939,
+  "main": 6.6,
+  "n": 12,
+  "nome": "Spider-Man",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spider-man-2": {
+  "ano": 2004,
+  "hltb": 8940,
+  "main": 7.1,
+  "n": 18,
+  "nome": "Spider-Man 2",
+  "plus": 13.7,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-spikeout-battle-street": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-splashdown": {
+  "ano": 2001,
+  "hltb": 8966,
+  "main": 1.8,
+  "n": 2,
+  "nome": "Splashdown",
+  "plus": 13.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-splat-magazine-renegade-paintball": {
+  "ano": 2005,
+  "hltb": 121601,
+  "main": 4.0,
+  "n": 1,
+  "nome": "Splat Magazine: Renegade Paintball",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spongebob-squarepants-battle-for-bikini-bottom": {
+  "ano": 2003,
+  "cem": 12.4,
+  "hltb": 8978,
+  "main": 12.0,
+  "n": 8,
+  "nome": "SpongeBob SquarePants: Battle for Bikini Bottom",
+  "plus": 19.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spongebob-squarepants-lights-camera-pants": {
+  "ano": 2005,
+  "hltb": 8981,
+  "main": 4.3,
+  "n": 6,
+  "nome": "SpongeBob SquarePants: Lights, Camera, Pants!",
+  "plus": 7.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-spy-vs-spy": {
+  "ano": 2005,
+  "hltb": 21855,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Spy vs. Spy",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-spyhunter": {
   "nao": "sem-resultado",
@@ -22928,6 +24813,45 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "xbox-spyro-a-hero-s-tail": {
+  "ano": 2004,
+  "hltb": 9007,
+  "main": 9.8,
+  "n": 1,
+  "nome": "Spyro: A Hero's Tail",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ssx-3": {
+  "ano": 2003,
+  "hltb": 9018,
+  "main": 17.5,
+  "n": 4,
+  "nome": "SSX 3",
+  "plus": 27.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ssx-on-tour": {
+  "ano": 2005,
+  "hltb": 9020,
+  "main": 16.3,
+  "n": 13,
+  "nome": "SSX on Tour",
+  "plus": 20.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-ssx-tricky": {
+  "ano": 2001,
+  "hltb": 9021,
+  "main": 12.8,
+  "n": 3,
+  "nome": "SSX Tricky",
+  "plus": 6.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-stacked-with-daniel-negreanu": {
   "nao": "sem-medida",
   "v": 2
@@ -22936,41 +24860,407 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-star-trek-shattered-universe": {
+  "ano": 2004,
+  "hltb": 9062,
+  "main": 7.8,
+  "n": 3,
+  "nome": "Star Trek: Shattered Universe",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-star-wars-battlefront": {
+  "ano": 2004,
+  "cem": 12.8,
+  "hltb": 9097,
+  "main": 7.2,
+  "n": 31,
+  "nome": "Star Wars: Battlefront",
+  "plus": 14.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-battlefront-ii": {
+  "ano": 2005,
+  "cem": 67.3,
+  "hltb": 9098,
+  "main": 8.3,
+  "n": 23,
+  "nome": "Star Wars: Battlefront II",
+  "plus": 14.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-episode-iii-revenge-of-the-sith": {
+  "ano": 2005,
+  "hltb": 9083,
+  "main": 4.8,
+  "n": 23,
+  "nome": "Star Wars Episode III: Revenge of the Sith",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-jedi-knight-ii-jedi-outcast": {
+  "ano": 2002,
+  "hltb": 9085,
+  "main": 11.7,
+  "n": 5,
+  "nome": "Star Wars Jedi Knight II: Jedi Outcast",
+  "plus": 23.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-jedi-knight-jedi-academy": {
+  "ano": 2003,
+  "cem": 12.8,
+  "hltb": 9087,
+  "main": 9.6,
+  "n": 19,
+  "nome": "Star Wars Jedi Knight: Jedi Academy",
+  "plus": 12.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-jedi-starfighter": {
+  "ano": 2002,
+  "hltb": 9110,
+  "main": 6.3,
+  "n": 5,
+  "nome": "Star Wars: Jedi Starfighter",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-knights-of-the-old-republic": {
+  "ano": 2003,
+  "cem": 52.6,
+  "hltb": 9111,
+  "main": 30.3,
+  "n": 165,
+  "nome": "Star Wars: Knights of the Old Republic",
+  "plus": 40.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-knights-of-the-old-republic-ii-the-sith-lords": {
+  "ano": 2004,
+  "cem": 52.2,
+  "hltb": 9112,
+  "main": 32.1,
+  "n": 74,
+  "nome": "Star Wars: Knights of the Old Republic II - The Sith Lords",
+  "plus": 42.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-obi-wan": {
+  "ano": 2001,
+  "cem": 11.2,
+  "hltb": 9115,
+  "main": 6.5,
+  "n": 26,
+  "nome": "Star Wars: Obi-Wan",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-star-wars-republic-commando": {
+  "ano": 2005,
+  "cem": 10.9,
+  "hltb": 9119,
+  "main": 8.4,
+  "n": 50,
+  "nome": "Star Wars: Republic Commando",
+  "plus": 9.8,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-star-wars-starfighter-special-edition": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "xbox-star-wars-the-clone-wars": {
+  "ano": 2002,
+  "cem": 9.5,
+  "hltb": 9125,
+  "main": 5.3,
+  "n": 16,
+  "nome": "Star Wars: The Clone Wars",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-starsky-and-hutch": {
+  "ano": 2003,
+  "cem": 16.7,
+  "hltb": 9180,
+  "main": 4.5,
+  "n": 8,
+  "nome": "Starsky & Hutch",
+  "plus": 5.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-state-of-emergency": {
+  "ano": 2002,
+  "hltb": 9185,
+  "main": 5.0,
+  "n": 1,
+  "nome": "State of Emergency",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-steel-battalion": {
+  "ano": 2002,
+  "hltb": 9199,
+  "main": 15.2,
+  "n": 1,
+  "nome": "Steel Battalion",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-steel-battalion-line-of-contact": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-still-life": {
+  "ano": 2005,
+  "hltb": 9211,
+  "main": 7.8,
+  "n": 2,
+  "nome": "Still Life",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-stolen": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-street-fighter-anniversary-collection": {
+  "ano": 2004,
+  "cem": 130.0,
+  "hltb": 16616,
+  "n": 1,
+  "nome": "Street Fighter Anniversary Collection",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-street-hoops": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-street-racing-syndicate": {
+  "ano": 2004,
+  "cem": 16.5,
+  "hltb": 9251,
+  "main": 12.1,
+  "n": 19,
+  "nome": "Street Racing Syndicate",
+  "plus": 12.9,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-strike-force-bowling": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-stubbs-the-zombie-in-rebel-without-a-pulse": {
+  "ano": 2005,
+  "cem": 10.7,
+  "hltb": 9284,
+  "main": 7.2,
+  "n": 17,
+  "nome": "Stubbs the Zombie in Rebel Without a Pulse",
+  "plus": 9.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sudeki": {
+  "ano": 2004,
+  "cem": 25.0,
+  "hltb": 9297,
+  "main": 11.1,
+  "n": 15,
+  "nome": "Sudeki",
+  "plus": 22.1,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-super-bubble-pop": {
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-super-monkey-ball-deluxe": {
+  "ano": 2005,
+  "hltb": 9400,
+  "main": 3.5,
+  "n": 7,
+  "nome": "Super Monkey Ball Deluxe",
+  "plus": 16.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-superman-returns": {
+  "ano": 2006,
+  "cem": 21.6,
+  "hltb": 9477,
+  "main": 7.1,
+  "n": 12,
+  "nome": "Superman Returns",
+  "plus": 9.2,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-superman-the-man-of-steel": {
+  "ano": 2002,
+  "hltb": 15679,
+  "main": 5.0,
+  "n": 2,
+  "nome": "Superman: The Man of Steel",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-swat-global-strike-team": {
+  "ano": 2003,
+  "hltb": 9500,
+  "main": 6.0,
+  "n": 2,
+  "nome": "SWAT: Global Strike Team",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-sx-superstar": {
+  "ano": 2003,
+  "hltb": 21591,
+  "main": 3.7,
+  "n": 2,
+  "nome": "SX Superstar",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-syberia": {
+  "ano": 2002,
+  "cem": 11.4,
+  "hltb": 9521,
+  "main": 12.0,
+  "n": 6,
+  "nome": "Syberia",
+  "plus": 13.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-syberia-ii": {
+  "ano": 2004,
+  "cem": 9.9,
+  "hltb": 9522,
+  "main": 7.6,
+  "n": 194,
+  "nome": "Syberia II",
+  "plus": 9.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-taito-legends": {
+  "ano": 2005,
+  "hltb": 9575,
+  "main": 11.0,
+  "n": 1,
+  "nome": "Taito Legends",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-taito-legends-2": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-tak-2-the-staff-of-dreams": {
+  "ano": 2004,
+  "hltb": 18000,
+  "main": 12.5,
+  "n": 2,
+  "nome": "Tak 2: The Staff of Dreams",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tak-the-great-juju-challenge": {
+  "ano": 2005,
+  "hltb": 20157,
+  "main": 8.8,
+  "n": 1,
+  "nome": "Tak: The Great Juju Challenge",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-takahashi-junko-no-mahjong-seminar": {
   "nao": "sem-resultado",
   "v": 2
  },
+ "xbox-tao-feng-fist-of-the-lotus": {
+  "ano": 2003,
+  "hltb": 9620,
+  "main": 6.2,
+  "n": 1,
+  "nome": "Tao Feng: Fist of the Lotus",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-taz-wanted": {
+  "ano": 2002,
+  "cem": 10.5,
+  "hltb": 9630,
+  "n": 1,
+  "nome": "Taz: Wanted",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-tecmo-classic-arcade": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-teen-titans": {
+  "ano": 2006,
+  "hltb": 9645,
+  "main": 5.0,
+  "n": 1,
+  "nome": "Teen Titans",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-teenage-mutant-ninja-turtles": {
+  "ano": 2003,
+  "hltb": 9646,
+  "main": 3.0,
+  "n": 2,
+  "nome": "Teenage Mutant Ninja Turtles",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-teenage-mutant-ninja-turtles-2-battle-nexus": {
+  "ano": 2004,
+  "hltb": 9649,
+  "main": 7.5,
+  "n": 1,
+  "nome": "Teenage Mutant Ninja Turtles 2: Battle Nexus",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-teenage-mutant-ninja-turtles-3-mutant-nightmare": {
+  "ano": 2005,
+  "hltb": 13507,
+  "main": 4.5,
+  "n": 1,
+  "nome": "Teenage Mutant Ninja Turtles 3: Mutant Nightmare",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tenchu-return-from-darkness": {
+  "ano": 2003,
+  "hltb": 9692,
+  "main": 7.5,
+  "n": 1,
+  "nome": "Tenchu: Wrath of Heaven",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-tenerezza": {
   "nao": "sem-medida",
@@ -22979,6 +25269,62 @@
  "xbox-tennis-masters-series-2003": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-terminator-3-rise-of-the-machines": {
+  "ano": 2003,
+  "cem": 4.9,
+  "hltb": 13842,
+  "main": 3.8,
+  "n": 7,
+  "nome": "Terminator 3: Rise of the Machines",
+  "plus": 4.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-terminator-3-the-redemption": {
+  "ano": 2004,
+  "hltb": 13845,
+  "main": 5.5,
+  "n": 1,
+  "nome": "Terminator 3: The Redemption",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-test-drive": {
+  "ano": 2002,
+  "hltb": 9707,
+  "main": 17.5,
+  "n": 2,
+  "nome": "Test Drive",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-test-drive-eve-of-destruction": {
+  "ano": 2004,
+  "hltb": 14734,
+  "main": 13.4,
+  "n": 1,
+  "nome": "Test Drive: Eve of Destruction",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-test-drive-off-road-wide-open": {
+  "ano": 2001,
+  "cem": 15.0,
+  "hltb": 42526,
+  "n": 1,
+  "nome": "Test Drive: Off-Road Wide Open",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tetris-worlds": {
+  "ano": 2001,
+  "hltb": 9725,
+  "main": 9.5,
+  "n": 2,
+  "nome": "Tetris Worlds",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-the-bard-s-tale": {
   "ano": 2004,
@@ -23236,13 +25582,178 @@
   "v": 2,
   "via": "plataforma"
  },
+ "xbox-the-nightmare-before-christmas-oogie-s-revenge": {
+  "ano": 2004,
+  "hltb": 10114,
+  "main": 10.5,
+  "n": 2,
+  "nome": "The Nightmare Before Christmas: Oogie's Revenge",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-punisher": {
+  "ano": 2005,
+  "hltb": 10140,
+  "main": 8.8,
+  "n": 8,
+  "nome": "The Punisher",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-simpsons-hit-and-run": {
+  "ano": 2003,
+  "cem": 20.1,
+  "hltb": 10178,
+  "main": 10.2,
+  "n": 23,
+  "nome": "The Simpsons Hit & Run",
+  "plus": 12.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-simpsons-road-rage": {
+  "ano": 2001,
+  "cem": 12.5,
+  "hltb": 10179,
+  "main": 8.9,
+  "n": 5,
+  "nome": "The Simpsons Road Rage",
+  "plus": 2.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-sims": {
+  "ano": 2003,
+  "hltb": 10185,
+  "main": 20.4,
+  "n": 2,
+  "nome": "The Sims",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-sims-2": {
+  "ano": 2004,
+  "cem": 108.6,
+  "hltb": 10187,
+  "main": 25.6,
+  "n": 76,
+  "nome": "The Sims 2",
+  "plus": 46.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-the-sims-bustin-out": {
+  "ano": 2003,
+  "cem": 22.3,
+  "hltb": 10198,
+  "n": 1,
+  "nome": "The Sims Bustin' Out",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-spongebob-squarepants-movie": {
+  "ano": 2004,
+  "hltb": 10212,
+  "main": 7.3,
+  "n": 5,
+  "nome": "The SpongeBob SquarePants Movie",
+  "plus": 9.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-suffering": {
+  "ano": 2004,
+  "cem": 11.0,
+  "hltb": 10218,
+  "main": 8.9,
+  "n": 14,
+  "nome": "The Suffering",
+  "plus": 9.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-suffering-ties-that-bind": {
+  "ano": 2005,
+  "cem": 9.2,
+  "hltb": 10219,
+  "main": 9.4,
+  "n": 5,
+  "nome": "The Suffering: Ties That Bind",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-terminator-dawn-of-fate": {
+  "ano": 2002,
+  "cem": 13.5,
+  "hltb": 13843,
+  "main": 5.2,
+  "n": 4,
+  "nome": "The Terminator: Dawn of Fate",
+  "plus": 7.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-thing": {
+  "ano": 2002,
+  "cem": 9.5,
+  "hltb": 10228,
+  "main": 8.8,
+  "n": 10,
+  "nome": "The Thing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-urbz-sims-in-the-city": {
+  "ano": 2004,
+  "cem": 9.4,
+  "hltb": 10246,
+  "main": 8.6,
+  "n": 2,
+  "nome": "The Urbz: Sims in the City",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-the-warriors": {
+  "ano": 2005,
+  "cem": 22.5,
+  "hltb": 10261,
+  "main": 10.4,
+  "n": 14,
+  "nome": "The Warriors",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-the-wild-rings": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-thief-deadly-shadows": {
+  "ano": 2004,
+  "cem": 29.0,
+  "hltb": 10299,
+  "main": 17.4,
+  "n": 11,
+  "nome": "Thief: Deadly Shadows",
+  "plus": 26.5,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-thousand-land": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-thrillville": {
+  "ano": 2006,
+  "hltb": 10314,
+  "main": 5.4,
+  "n": 3,
+  "nome": "Thrillville",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-tiger-woods-pga-tour-06": {
   "nao": "sem-medida",
@@ -23252,13 +25763,355 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-tiger-woods-pga-tour-2003": {
+  "ano": 2002,
+  "hltb": 12291,
+  "main": 11.0,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 2003",
+  "plus": 46.7,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-tiger-woods-pga-tour-2004": {
+  "ano": 2003,
+  "cem": 200.0,
+  "hltb": 13931,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 2004",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tiger-woods-pga-tour-2005": {
+  "ano": 2004,
+  "cem": 200.0,
+  "hltb": 10337,
+  "n": 1,
+  "nome": "Tiger Woods PGA Tour 2005",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-timesplitters-2": {
+  "ano": 2002,
+  "cem": 37.5,
+  "hltb": 10363,
+  "main": 6.5,
+  "n": 20,
+  "nome": "TimeSplitters 2",
+  "plus": 12.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-timesplitters-future-perfect": {
+  "ano": 2005,
+  "cem": 33.8,
+  "hltb": 10364,
+  "main": 6.4,
+  "n": 31,
+  "nome": "TimeSplitters: Future Perfect",
+  "plus": 13.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tmnt-mutant-melee": {
+  "ano": 2005,
+  "hltb": 21592,
+  "main": 5.5,
+  "n": 2,
+  "nome": "Teenage Mutant Ninja Turtles: Mutant Melee",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-toca-race-driver": {
+  "ano": 2002,
+  "hltb": 10392,
+  "n": 1,
+  "nome": "TOCA Race Driver",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-toca-race-driver-2": {
+  "ano": 2004,
+  "hltb": 10393,
+  "n": 1,
+  "nome": "TOCA Race Driver 2",
+  "plus": 13.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-toca-race-driver-3": {
+  "ano": 2006,
+  "hltb": 10394,
+  "main": 36.1,
+  "n": 11,
+  "nome": "TOCA Race Driver 3",
+  "plus": 38.5,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-toejam-and-earl-iii-mission-to-earth": {
+  "ano": 2002,
+  "hltb": 10397,
+  "main": 4.0,
+  "n": 3,
+  "nome": "ToeJam & Earl III: Mission to Earth",
+  "plus": 10.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-and-jerry-in-war-of-the-whiskers": {
+  "ano": 2002,
+  "cem": 24.5,
+  "hltb": 13727,
+  "main": 6.7,
+  "n": 5,
+  "nome": "Tom and Jerry in War of the Whiskers",
+  "plus": 12.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-tom-clancy-s-ghost-recon": {
+  "ano": 2001,
+  "hltb": 10425,
+  "main": 13.1,
+  "n": 7,
+  "nome": "Tom Clancy's Ghost Recon",
+  "plus": 13.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-ghost-recon-2": {
+  "ano": 2004,
+  "hltb": 10426,
+  "main": 8.5,
+  "n": 6,
+  "nome": "Tom Clancy's Ghost Recon 2",
+  "plus": 10.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-ghost-recon-2-summit-strike": {
+  "ano": 2005,
+  "cem": 8.0,
+  "hltb": 10427,
+  "main": 5.3,
+  "n": 4,
+  "nome": "Tom Clancy's Ghost Recon 2: Summit Strike",
+  "plus": 4.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-ghost-recon-advanced-warfighter": {
+  "ano": 2006,
+  "hltb": 10428,
+  "n": 1,
+  "nome": "Tom Clancy's Ghost Recon Advanced Warfighter",
+  "plus": 6.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-ghost-recon-island-thunder": {
+  "ano": 2003,
+  "hltb": 10436,
+  "main": 5.0,
+  "n": 2,
+  "nome": "Tom Clancy's Ghost Recon: Island Thunder",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-rainbow-six-3": {
+  "ano": 2003,
+  "hltb": 10443,
+  "main": 6.6,
+  "n": 7,
+  "nome": "Tom Clancy's Rainbow Six 3",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-rainbow-six-3-black-arrow": {
+  "ano": 2004,
+  "hltb": 10445,
+  "main": 5.1,
+  "n": 4,
+  "nome": "Tom Clancy's Rainbow Six 3: Black Arrow",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-rainbow-six-critical-hour": {
+  "ano": 2006,
+  "hltb": 15913,
+  "main": 3.4,
+  "n": 1,
+  "nome": "Tom Clancy's Rainbow Six: Critical Hour",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-rainbow-six-lockdown": {
+  "ano": 2005,
+  "hltb": 10451,
+  "main": 7.0,
+  "n": 4,
+  "nome": "Tom Clancy's Rainbow Six: Lockdown",
+  "plus": 7.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-splinter-cell": {
+  "ano": 2002,
+  "cem": 19.8,
+  "hltb": 10457,
+  "main": 12.6,
+  "n": 49,
+  "nome": "Tom Clancy's Splinter Cell",
+  "plus": 15.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-splinter-cell-chaos-theory": {
+  "ano": 2005,
+  "cem": 24.3,
+  "hltb": 10461,
+  "main": 12.3,
+  "n": 32,
+  "nome": "Tom Clancy's Splinter Cell: Chaos Theory",
+  "plus": 15.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-splinter-cell-double-agent": {
+  "ano": 2006,
+  "cem": 20.0,
+  "hltb": 10463,
+  "main": 11.5,
+  "n": 13,
+  "nome": "Tom Clancy's Splinter Cell: Double Agent",
+  "plus": 10.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tom-clancy-s-splinter-cell-pandora-tomorrow": {
+  "ano": 2004,
+  "cem": 15.5,
+  "hltb": 10465,
+  "main": 11.1,
+  "n": 36,
+  "nome": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
+  "plus": 13.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tomb-raider-legend": {
+  "ano": 2006,
+  "hltb": 10477,
+  "main": 8.3,
+  "n": 6,
+  "nome": "Tomb Raider: Legend",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-american-wasteland": {
+  "ano": 2005,
+  "cem": 14.1,
+  "hltb": 10489,
+  "main": 4.6,
+  "n": 4,
+  "nome": "Tony Hawk's American Wasteland",
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-pro-skater-2x": {
+  "ano": 2001,
+  "cem": 5.8,
+  "hltb": 10493,
+  "main": 2.2,
+  "n": 6,
+  "nome": "Tony Hawk's Pro Skater 2X",
+  "plus": 9.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-pro-skater-3": {
+  "ano": 2001,
+  "hltb": 10494,
+  "main": 8.4,
+  "n": 5,
+  "nome": "Tony Hawk's Pro Skater 3",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-pro-skater-4": {
+  "ano": 2002,
+  "cem": 12.4,
+  "hltb": 10496,
+  "main": 10.4,
+  "n": 5,
+  "nome": "Tony Hawk's Pro Skater 4",
+  "plus": 11.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-project-8": {
+  "ano": 2006,
+  "hltb": 10498,
+  "main": 15.0,
+  "n": 1,
+  "nome": "Tony Hawk's Project 8",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-underground": {
+  "ano": 2003,
+  "cem": 21.2,
+  "hltb": 10503,
+  "main": 7.3,
+  "n": 9,
+  "nome": "Tony Hawk's Underground",
+  "plus": 9.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-tony-hawk-s-underground-2": {
+  "ano": 2004,
+  "cem": 11.4,
+  "hltb": 10504,
+  "main": 7.0,
+  "n": 13,
+  "nome": "Tony Hawk's Underground 2",
+  "plus": 11.1,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-top-gear-rpm-tuning": {
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-top-spin": {
+  "ano": 2003,
+  "hltb": 10520,
+  "main": 10.0,
+  "n": 1,
+  "nome": "Top Spin",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-torino-2006": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-tork-prehistoric-punk": {
+  "ano": 2005,
+  "cem": 10.4,
+  "hltb": 21359,
+  "main": 11.7,
+  "n": 4,
+  "nome": "Tork: Prehistoric Punk",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-total-club-manager-2004": {
   "nao": "sem-medida",
@@ -23267,6 +26120,34 @@
  "xbox-total-club-manager-2005": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-total-immersion-racing": {
+  "ano": 2002,
+  "hltb": 35147,
+  "main": 10.5,
+  "n": 5,
+  "nome": "Total Immersion Racing",
+  "plus": 24.6,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-total-overdose": {
+  "ano": 2005,
+  "hltb": 10544,
+  "n": 1,
+  "nome": "Total Overdose",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-totaled": {
+  "ano": 2002,
+  "cem": 2.8,
+  "hltb": 31819,
+  "n": 1,
+  "nome": "Totaled!",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-touge-r": {
   "nao": "sem-medida",
@@ -23283,6 +26164,15 @@
  "xbox-transworld-snowboarding": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-transworld-surf": {
+  "ano": 2002,
+  "hltb": 94222,
+  "main": 17.1,
+  "n": 2,
+  "nome": "TransWorld Surf",
+  "v": 2,
+  "via": "geral"
  },
  "xbox-triangle-again": {
   "nao": "sem-resultado",
@@ -23304,6 +26194,74 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-tron-2-0-killer-app": {
+  "ano": 2004,
+  "cem": 12.1,
+  "hltb": 10667,
+  "main": 6.7,
+  "n": 3,
+  "nome": "Tron 2.0: Killer App",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-true-crime-new-york-city": {
+  "ano": 2005,
+  "hltb": 10680,
+  "main": 8.8,
+  "n": 1,
+  "nome": "True Crime: New York City",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-true-crime-streets-of-la": {
+  "ano": 2003,
+  "hltb": 10681,
+  "main": 9.1,
+  "n": 11,
+  "nome": "True Crime: Streets of LA",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-turok-evolution": {
+  "ano": 2002,
+  "hltb": 10708,
+  "main": 12.3,
+  "n": 4,
+  "nome": "Turok: Evolution",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ty-the-tasmanian-tiger": {
+  "ano": 2002,
+  "cem": 13.3,
+  "hltb": 10737,
+  "main": 7.2,
+  "n": 5,
+  "nome": "Ty the Tasmanian Tiger",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ty-the-tasmanian-tiger-2-bush-rescue": {
+  "ano": 2004,
+  "hltb": 10738,
+  "main": 5.6,
+  "n": 2,
+  "nome": "Ty the Tasmanian Tiger 2: Bush Rescue",
+  "plus": 10.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ty-the-tasmanian-tiger-3-night-of-the-quinkan": {
+  "ano": 2005,
+  "cem": 10.3,
+  "hltb": 12734,
+  "main": 7.2,
+  "n": 2,
+  "nome": "Ty the Tasmanian Tiger 3: Night of the Quinkan",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-uefa-champions-league-2004-2005": {
   "nao": "so-outra-plataforma",
   "v": 2
@@ -23316,6 +26274,15 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-ufc-tapout-2": {
+  "ano": 2003,
+  "hltb": 85604,
+  "main": 0.8,
+  "n": 1,
+  "nome": "UFC: Tapout 2",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-ultimate-beach-soccer": {
   "nao": "sem-medida",
   "v": 2
@@ -23324,9 +26291,106 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-ultimate-spider-man": {
+  "ano": 2005,
+  "hltb": 10784,
+  "main": 5.0,
+  "n": 11,
+  "nome": "Ultimate Spider-Man",
+  "plus": 5.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-ultra-bust-a-move": {
+  "ano": 2004,
+  "cem": 3.0,
+  "hltb": 10786,
+  "main": 1.4,
+  "n": 3,
+  "nome": "Ultra Bust-a-Move",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-umezawa-yukari-no-igo-seminar": {
   "nao": "sem-resultado",
   "v": 2
+ },
+ "xbox-unreal-championship": {
+  "ano": 2002,
+  "hltb": 10825,
+  "main": 5.9,
+  "n": 4,
+  "nome": "Unreal Championship",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-unreal-championship-2-the-liandri-conflict": {
+  "ano": 2005,
+  "hltb": 10826,
+  "main": 3.4,
+  "n": 6,
+  "nome": "Unreal Championship 2: The Liandri Conflict",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-unreal-ii-the-awakening": {
+  "ano": 2003,
+  "hltb": 10828,
+  "main": 10.2,
+  "n": 2,
+  "nome": "Unreal II: The Awakening",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-urban-chaos-riot-response": {
+  "ano": 2006,
+  "cem": 12.4,
+  "hltb": 10848,
+  "main": 8.2,
+  "n": 4,
+  "nome": "Urban Chaos: Riot Response",
+  "plus": 7.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-v-rally-3": {
+  "ano": 2002,
+  "hltb": 26026,
+  "main": 4.4,
+  "n": 6,
+  "nome": "V-Rally 3",
+  "plus": 5.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-van-helsing": {
+  "ano": 2004,
+  "hltb": 10893,
+  "main": 3.0,
+  "n": 3,
+  "nome": "Van Helsing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-vexx": {
+  "ano": 2003,
+  "cem": 14.4,
+  "hltb": 10920,
+  "main": 18.0,
+  "n": 2,
+  "nome": "Vexx",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-vietcong-purple-haze": {
+  "ano": 2004,
+  "hltb": 10932,
+  "main": 6.0,
+  "n": 1,
+  "nome": "Vietcong: Purple Haze",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-virtual-pool-tournament-edition": {
   "nao": "sem-medida",
@@ -23336,17 +26400,94 @@
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-voodoo-vince": {
+  "ano": 2003,
+  "cem": 13.2,
+  "hltb": 10987,
+  "main": 8.3,
+  "n": 12,
+  "nome": "Voodoo Vince",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-wakeboarding-unleashed-featuring-shaun-murray": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-wallace-and-gromit-in-project-zoo": {
+  "ano": 2003,
+  "hltb": 21229,
+  "n": 1,
+  "nome": "Wallace & Gromit in Project Zoo",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-wallace-and-gromit-the-curse-of-the-were-rabbit": {
+  "ano": 2005,
+  "hltb": 30649,
+  "n": 1,
+  "nome": "Wallace & Gromit: The Curse of the Were-Rabbit",
+  "plus": 18.0,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-warpath": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-whacked": {
+  "ano": 2002,
+  "cem": 20.0,
+  "hltb": 21360,
+  "main": 5.0,
+  "n": 2,
+  "nome": "Whacked!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-whiplash": {
+  "ano": 2003,
+  "cem": 14.2,
+  "hltb": 11143,
+  "main": 13.2,
+  "n": 5,
+  "nome": "Whiplash",
+  "plus": 13.6,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-whiteout": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-winback-2-project-poseidon": {
+  "ano": 2006,
+  "hltb": 11183,
+  "main": 10.9,
+  "n": 1,
+  "nome": "WinBack 2: Project Poseidon",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-wings-of-war": {
+  "ano": 2004,
+  "hltb": 20760,
+  "main": 8.0,
+  "n": 1,
+  "nome": "Wings of War",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-without-warning": {
+  "ano": 2005,
+  "cem": 12.6,
+  "hltb": 20151,
+  "n": 1,
+  "nome": "Without Warning",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-world-championship-poker": {
   "nao": "sem-medida",
@@ -23380,6 +26521,17 @@
   "nao": "nenhum-casou",
   "v": 2
  },
+ "xbox-world-racing-2": {
+  "ano": 2005,
+  "cem": 29.7,
+  "hltb": 18254,
+  "main": 16.1,
+  "n": 3,
+  "nome": "World Racing 2",
+  "plus": 22.9,
+  "v": 2,
+  "via": "geral"
+ },
  "xbox-world-series-baseball": {
   "nao": "so-outra-plataforma",
   "v": 2
@@ -23392,17 +26544,224 @@
   "nao": "so-outra-plataforma",
   "v": 2
  },
+ "xbox-world-snooker-championship-2005": {
+  "ano": 2005,
+  "hltb": 12447,
+  "main": 3.0,
+  "n": 1,
+  "nome": "World Snooker Championship 2005",
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-world-war-ii-combat-iwo-jima": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-world-war-ii-combat-road-to-berlin": {
+  "ano": 2006,
+  "cem": 3.7,
+  "hltb": 22005,
+  "main": 1.5,
+  "n": 1,
+  "nome": "World War II: Combat - Road to Berlin",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-worms-3d": {
+  "ano": 2004,
+  "cem": 29.1,
+  "hltb": 11303,
+  "main": 15.3,
+  "n": 8,
+  "nome": "Worms 3D",
+  "plus": 16.8,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-worms-4-mayhem": {
+  "ano": 2005,
+  "cem": 20.5,
+  "hltb": 11304,
+  "main": 9.8,
+  "n": 8,
+  "nome": "Worms 4: Mayhem",
+  "plus": 15.3,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-worms-forts-under-siege": {
+  "ano": 2004,
+  "cem": 26.0,
+  "hltb": 24179,
+  "main": 10.6,
+  "n": 4,
+  "nome": "Worms Forts: Under Siege",
+  "plus": 15.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-wrath-unleashed": {
+  "ano": 2004,
+  "hltb": 11319,
+  "main": 10.0,
+  "n": 1,
+  "nome": "Wrath Unleashed",
+  "plus": 20.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-wreckless-the-yakuza-missions": {
+  "ano": 2002,
+  "hltb": 11326,
+  "main": 3.6,
+  "n": 5,
+  "nome": "Wreckless: The Yakuza Missions",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-wta-tour-tennis": {
+  "ano": 2002,
+  "hltb": 100977,
+  "main": 0.7,
+  "n": 2,
+  "nome": "WTA Tour Tennis",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-wwe-raw-2": {
+  "ano": 2003,
+  "cem": 82.0,
+  "hltb": 11335,
+  "main": 15.7,
+  "n": 5,
+  "nome": "WWE Raw 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-wwe-wrestlemania-21": {
+  "ano": 2005,
+  "hltb": 12294,
+  "main": 6.2,
+  "n": 4,
+  "nome": "WWE WrestleMania 21",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-wwf-raw": {
+  "ano": 1994,
+  "hltb": 11348,
+  "main": 1.6,
+  "n": 2,
+  "nome": "WWF Raw",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-x-men-legends": {
+  "ano": 2004,
+  "cem": 20.2,
+  "hltb": 11372,
+  "main": 18.1,
+  "n": 11,
+  "nome": "X-Men Legends",
+  "plus": 20.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-x-men-legends-ii-rise-of-apocalypse": {
+  "ano": 2005,
+  "cem": 24.5,
+  "hltb": 11373,
+  "main": 19.0,
+  "n": 7,
+  "nome": "X-Men Legends II: Rise of Apocalypse",
+  "plus": 19.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-x-men-next-dimension": {
+  "ano": 2002,
+  "hltb": 11382,
+  "main": 5.0,
+  "n": 1,
+  "nome": "X-Men: Next Dimension",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-x-men-the-official-game": {
+  "ano": 2006,
+  "cem": 11.9,
+  "hltb": 11383,
+  "main": 8.2,
+  "n": 19,
+  "nome": "X-Men: The Official Game",
+  "plus": 9.1,
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-x2-wolverine-s-revenge": {
+  "ano": 2003,
+  "hltb": 11388,
+  "n": 1,
+  "nome": "X2: Wolverine's Revenge",
+  "plus": 5.7,
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-xbox-music-mixer": {
   "nao": "sem-medida",
   "v": 2
  },
+ "xbox-xgra-extreme-g-racing-association": {
+  "ano": 2003,
+  "hltb": 11411,
+  "main": 4.5,
+  "n": 3,
+  "nome": "XGRA: Extreme-G Racing Association",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-xiaolin-showdown": {
+  "ano": 2006,
+  "cem": 16.4,
+  "hltb": 11412,
+  "main": 6.0,
+  "n": 3,
+  "nome": "Xiaolin Showdown",
+  "v": 2,
+  "via": "geral"
+ },
+ "xbox-xiii": {
+  "ano": 2003,
+  "cem": 12.0,
+  "hltb": 11413,
+  "main": 9.3,
+  "n": 10,
+  "nome": "XIII",
+  "plus": 11.4,
+  "v": 2,
+  "via": "plataforma"
+ },
  "xbox-xyanide": {
   "nao": "sem-medida",
   "v": 2
+ },
+ "xbox-yager": {
+  "ano": 2004,
+  "hltb": 11420,
+  "main": 12.2,
+  "n": 1,
+  "nome": "Yager",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-yetisports-arctic-adventures": {
+  "ano": 2015,
+  "hltb": 74152,
+  "main": 2.0,
+  "n": 1,
+  "nome": "Yetisports Arctic Adventures",
+  "v": 2,
+  "via": "plataforma"
  },
  "xbox-yonenaga-kunio-no-shougi-seminar": {
   "nao": "sem-resultado",
@@ -23411,6 +26770,35 @@
  "xbox-yourself-fitness": {
   "nao": "so-outra-plataforma",
   "v": 2
+ },
+ "xbox-yu-gi-oh-the-dawn-of-destiny": {
+  "ano": 2004,
+  "hltb": 11498,
+  "main": 6.9,
+  "n": 1,
+  "nome": "Yu-Gi-Oh! The Dawn of Destiny",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-zapper-one-wicked-cricket": {
+  "ano": 2002,
+  "hltb": 11526,
+  "main": 3.1,
+  "n": 1,
+  "nome": "Zapper: One Wicked Cricket",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "xbox-zathura": {
+  "ano": 2005,
+  "cem": 5.0,
+  "hltb": 11889,
+  "main": 4.5,
+  "n": 4,
+  "nome": "Zathura",
+  "plus": 4.5,
+  "v": 2,
+  "via": "geral"
  },
  "xbox-zillernet": {
   "nao": "sem-resultado",

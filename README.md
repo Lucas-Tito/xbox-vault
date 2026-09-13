@@ -20,10 +20,12 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
 
 ## Usando
 
-- **Ver detalhes**: clique no card. Abre um popup com a ficha inteira: descrição completa (a do
-  card é cortada em 2 linhas), modos de jogo com número de jogadores, retrocompatibilidade e os
-  problemas conhecidos, data de lançamento, e links para a Wikipédia e para a página
-  do projeto. `Esc` ou clique fora fecham.
+- **Ver detalhes**: clique no card. Abre um popup em quatro abas. **Visão geral** tem descrição,
+  galeria de capturas, tempo de jogo, Kinect e retrocompatibilidade com os problemas conhecidos.
+  **Modos e co-op** tem os modos com número de jogadores e o que o Co-Optimus sabe do co-op.
+  **Conteúdo adicional** tem os Title Updates. **Ficha técnica** tem ano, gênero, quem fez, quem
+  publicou e os links. Aba sem conteúdo não aparece, então o número de abas muda de jogo para
+  jogo, e jogo com uma aba só abre sem barra de abas. `Esc` ou clique fora fecham.
 - **Marcar que tenho** é coisa do popup, o card não tem botão para isso. Quem tem fica
   destacado em verde, com a borda acesa e a capa em cor cheia, enquanto o resto do catálogo
   aparece levemente dessaturado.

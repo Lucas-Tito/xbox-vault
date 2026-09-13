@@ -232,6 +232,16 @@ ul.modos li{color:var(--txt)}
 .det-info .nota{font-size:12px;color:var(--dim);margin:7px 0 0;line-height:1.5}
 .det-info p.sim{color:var(--green2);font-weight:600;margin:0 0 6px;font-size:13.5px}
 .det-info p.nao{color:var(--dim2);font-weight:600;margin:0 0 6px;font-size:13.5px}
+/* As abas da ficha. Os quatro nomes somam 404px e a coluna tem 405px, entao o
+   espacamento e curto de proposito: com 11px de padding a ultima aba corta. */
+.abas{display:flex;gap:0;border-bottom:1px solid var(--line);margin:14px 0 16px;
+  overflow-x:auto;scrollbar-width:none}
+.abas::-webkit-scrollbar{display:none}
+.aba{background:none;border:0;border-bottom:2px solid transparent;color:var(--dim2);
+  padding:8px;font-size:12.5px;white-space:nowrap;transition:.15s}
+.aba:hover{color:var(--txt)}
+.aba[aria-selected="true"]{color:var(--txt);border-bottom-color:var(--green)}
+
 .det-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:13px}
 
 @media(max-width:640px){

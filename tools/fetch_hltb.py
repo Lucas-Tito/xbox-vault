@@ -86,7 +86,7 @@ SIZE = 20                  # o servidor recusa mais que isso (devolve {} vazio)
 PAGINAS = 3                # so pagina quando a pagina 1 nao casou e ha mais
 VALIDADE = 600             # renova o token antes de ele vencer, por garantia
 VERSAO = 2                 # 2: tempo por PLATAFORMA em vez do agregado
-POUCOS_RELATOS = 10        # mesmo corte do aviso no popup (app.js)
+POUCOS_RELATOS = 5         # mesmo corte do aviso no popup (app.js)
 
 # Como a plataforma se chama la. O casamento exige que uma destas apareca no
 # "profile_platform" da entrada -- e o que separa o Halo de Xbox do de PC.
@@ -584,6 +584,8 @@ def main():
           % (nome_saida, len(dados), len(uteis), poucos, POUCOS_RELATOS))
     print("   tempo da NOSSA versao: %d | agregado de todas as versoes: %d"
           % (propria, len(uteis) - propria))
+    print("   apoiados em UM unico relato: %d"
+          % sum(1 for v in uteis if relatos(v) == 1))
     motivos = {}
     for v in dados.values():
         if v.get("nao"):

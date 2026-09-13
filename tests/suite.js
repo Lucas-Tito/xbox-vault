@@ -12,6 +12,13 @@
   };
   // O card nao tem mais botao de "tenho": marcar e desmarcar so pelo popup,
   // entao o teste percorre o mesmo caminho que o usuario percorre.
+  // O popup agora e em abas: chegar num dado quer dizer abrir a aba dele.
+  const irPara = async (nome) => {
+    const b = [...document.querySelectorAll('#modal-body .aba')]
+      .find(x => x.textContent.trim() === nome);
+    if (b) { b.click(); await wait(150); }
+    return !!b;
+  };
   const toggleOwn = async (card) => {
     card.querySelector('.thumb').click();
     await until(() => !document.getElementById('modal').hidden);
@@ -166,7 +173,9 @@
       if (cc) {
         cc.querySelector('.thumb').click(); await wait(400);
         const mb = $('#modal-body');
-        ok('modal nomeia a fonte do co-op', mb.textContent.includes('Co-op segundo o Co-Optimus'));
+        // o rotulo passou a ser so a fonte, como ja era nas notas e no tempo de jogo
+        ok('modal nomeia a fonte do co-op',
+           [...mb.querySelectorAll('h4')].some(h => h.textContent.trim() === 'Co-Optimus'));
         ok('modal mostra a descricao', !!mb.querySelector('.coop-exp'));
         ok('modal nao mostra mais a linha de fonte', !mb.textContent.includes('lido do arquivo de'));
         $('#modal-x').click(); await wait(200);
@@ -265,6 +274,8 @@
         const cc = cards().find(c => c.dataset.id === alvo.id);
         if (cc) {
           cc.querySelector('.thumb').click(); await wait(400);
+          ok('a aba de conteudo adicional existe quando ha patch',
+             await irPara('Conteúdo adicional'));
           const det = $('#modal-body details.tu'), ul = det && det.querySelector('ul');
           ok('lista de Title Updates no popup', !!det, alvo.title + ' (' + alvo.tu.n + ')');
           // getBoundingClientRect do <ul> mente: o layout reporta altura mesmo
@@ -278,7 +289,7 @@
           const lis = det.querySelectorAll('li');
           ok('um item por patch', lis.length === alvo.tu.n, lis.length + ' itens');
           ok('cada item traz versao, data e tamanho',
-             [...lis].every(li => /v\d/.test(li.textContent) && /\d{4}/.test(li.textContent)
+             [...lis].every(li => /TU\d/.test(li.textContent) && /\d{4}/.test(li.textContent)
                             && /(KB|MB)/.test(li.textContent)), lis[0].textContent.trim());
           // e para saber o que existiu, nao para baixar
           ok('sem link de download', det.querySelectorAll('a').length === 0);
@@ -300,6 +311,19 @@
       const dg = window.XBX_DB.games.find(g => g.id === did);
       ok('popup mostra o titulo', !!dg && sheet.textContent.includes(dg.title),
          dg ? dg.title : 'id do card nao esta no catalogo: ' + JSON.stringify(did));
+      const abas = [...sheet.querySelectorAll('.aba')].map(b => b.textContent.trim());
+      ok('popup vem em abas', abas.length >= 2, abas.join(' | '));
+      ok('a primeira aba ja vem aberta',
+         sheet.querySelector('.aba[aria-selected="true"]') === sheet.querySelector('.aba'));
+      ok('so um painel visivel de cada vez',
+         [...sheet.querySelectorAll('.pane')].filter(p => !p.hidden).length === 1);
+      const segunda = sheet.querySelectorAll('.aba')[1];
+      segunda.click(); await wait(200);
+      ok('clicar na aba troca o painel',
+         segunda.getAttribute('aria-selected') === 'true' &&
+         !sheet.querySelector('.pane[data-pane="1"]').hidden &&
+         sheet.querySelector('.pane[data-pane="0"]').hidden);
+      ok('a palavra Extras sumiu do popup', !/\bExtras\b/.test(sheet.textContent));
       ok('popup tem secao de modos', sheet.textContent.includes('Modos de jogo'));
       ok('popup tem ficha', sheet.textContent.includes('Ficha'));
       if (dg && dg.description)
