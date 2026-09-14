@@ -80,6 +80,12 @@ def casar(nome, exato, roman, prefixos):
     i = roman.get(norm(nome, True))
     if i:
         return i
+    # a thread usa ordem de catalogo em alguns titulos: "Club, The"
+    inv = re.match(r"^(.*),\s*(The|A|An)$", nome, re.I)
+    if inv:
+        i = roman.get(norm("%s %s" % (inv.group(2), inv.group(1)), True))
+        if i:
+            return i
     base = norm(nome, True)
     if len(base) < 6:
         return None

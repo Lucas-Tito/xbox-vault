@@ -1,0 +1,1509 @@
+{
+"x360-1942-joint-strike": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-50-cent-blood-on-the-sand": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-afro-samurai": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-after-burner-climax": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-alan-wake": {
+"aa": "4xAA",
+"h": 544,
+"w": 960
+},
+"x360-alice-madness-returns": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-aliens-colonial-marines": {
+"aa": "no AA",
+"h": 640,
+"w": 1152
+},
+"x360-aliens-vs-predator": {
+"aa": "custom AA",
+"h": 630,
+"w": 1120
+},
+"x360-alone-in-the-dark": {
+"aa": "2xAA",
+"h": 600,
+"w": 1040
+},
+"x360-army-of-two": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-assassin-s-creed": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-assassin-s-creed-ii": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-assassin-s-creed-iii": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-assassin-s-creed-iv-black-flag": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-assassin-s-creed-liberation-hd": {
+"aa": "no AA",
+"h": 384,
+"w": 720
+},
+"x360-avatar-famestar": {
+"aa": "2xAA, black borders",
+"h": 696,
+"w": 1280
+},
+"x360-backbreaker": {
+"aa": "2xAA + blur filter",
+"h": 640,
+"w": 1152
+},
+"x360-banjo-kazooie-nuts-and-bolts": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-batman-arkham-asylum": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-batman-arkham-city": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-batman-arkham-origins": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-battle-fantasia": {
+"aa": "no AA, toggable blur filter",
+"h": 720,
+"w": 1280
+},
+"x360-battlefield-1943": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-battlefield-3": {
+"aa": "FXAA",
+"h": 704,
+"obs": "black bars",
+"w": 1280
+},
+"x360-battlefield-bad-company": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-battlefield-bad-company-2": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-bayonetta": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-beijing-2008": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-beowulf-the-game": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-bionic-commando": {
+"aa": "no AA",
+"h": 640,
+"w": 1120
+},
+"x360-bionic-commando-rearmed": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-bioshock": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-bioshock-2": {
+"aa": "edge blur filter",
+"h": 720,
+"w": 1280
+},
+"x360-bioshock-infinite": {
+"aa": "FXAA",
+"h": 720,
+"w": 1152
+},
+"x360-blacksite-area-51": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-blazblue-calamity-trigger": {
+"aa": "2xAA background, no AA characters",
+"h": 720,
+"w": 1280
+},
+"x360-blazblue-continuum-shift-extend": {
+"aa": "no AA",
+"h": 544,
+"w": 960
+},
+"x360-blue-dragon": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-blur": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-bodycount": {
+"aa": "FXAA",
+"h": 720,
+"w": 1024
+},
+"x360-boogie-bunnies": {
+"aa": "4xAA",
+"h": 1080,
+"w": 1920
+},
+"x360-borderlands": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-borderlands-2": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-brink": {
+"aa": "FXAA, dynamic res",
+"h": 720,
+"w": 1120
+},
+"x360-brutal-legend": {
+"aa": "no AA",
+"h": 720,
+"w": 1200
+},
+"x360-bulletstorm": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-burnout-paradise": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-call-of-duty-3": {
+"aa": "2xAA",
+"h": 624,
+"w": 1040
+},
+"x360-call-of-duty-black-ops": {
+"aa": "2xAA",
+"h": 608,
+"w": 1040
+},
+"x360-call-of-duty-black-ops-ii": {
+"aa": "2xAA",
+"h": 720,
+"w": 880
+},
+"x360-call-of-duty-classic": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-call-of-duty-ghosts": {
+"aa": "2xAA",
+"h": 600,
+"w": 1024
+},
+"x360-call-of-duty-modern-warfare-2": {
+"aa": "2xAA",
+"h": 600,
+"w": 1024
+},
+"x360-call-of-duty-modern-warfare-3": {
+"aa": "2xAA",
+"h": 600,
+"w": 1024
+},
+"x360-call-of-duty-world-at-war": {
+"aa": "2x AA",
+"h": 600,
+"w": 1024
+},
+"x360-call-of-juarez-bound-in-blood": {
+"aa": "4x2 custom edge AA + black borders",
+"h": 672,
+"w": 1280
+},
+"x360-call-of-juarez-the-cartel": {
+"aa": "custom edge AA",
+"h": 720,
+"w": 1200
+},
+"x360-cars-mater-national-championship": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-castlevania-lords-of-shadow-2": {
+"aa": "post-AA",
+"h": 720,
+"w": 1024
+},
+"x360-catherine": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-command-and-conquer-red-alert-3": {
+"aa": "no AA, blur filter",
+"h": 720,
+"w": 1280
+},
+"x360-conan": {
+"aa": "no AA",
+"h": 576,
+"w": 1024
+},
+"x360-condemned-2-bloodshot": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-conflict-denied-ops": {
+"h": 720,
+"obs": "p (2xAA)",
+"w": 1280
+},
+"x360-crackdown": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-crysis": {
+"aa": "TAA + edge post-process",
+"h": 720,
+"w": 1152
+},
+"x360-crysis-2": {
+"aa": "TAA + edge post-process",
+"h": 720,
+"w": 1152
+},
+"x360-crysis-3": {
+"aa": "SMAA T2X",
+"h": 720,
+"w": 1152
+},
+"x360-dante-s-inferno": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-dark-sector": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-dark-souls": {
+"aa": "2xAA",
+"h": 720,
+"w": 1024
+},
+"x360-dark-souls-ii": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-darksiders": {
+"aa": "no AA",
+"h": 640,
+"w": 1152
+},
+"x360-darksiders-ii": {
+"aa": "post-AA",
+"h": 640,
+"w": 1152
+},
+"x360-de-blob-2": {
+"aa": "2xAA",
+"h": 640,
+"w": 1152
+},
+"x360-dead-island": {
+"aa": "custom edge filter",
+"h": 720,
+"w": 1200
+},
+"x360-dead-or-alive-4": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-or-alive-xtreme-2": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-rising": {
+"aa": "up to 4xAA depending on frame rate",
+"h": 720,
+"w": 1280
+},
+"x360-dead-rising-2": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-rising-2-case-zero": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-space": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-space-2": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-space-3": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-dead-to-rights-retribution": {
+"aa": "2xAA",
+"h": 612,
+"w": 1088
+},
+"x360-deus-ex-human-revolution": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-devil-may-cry-4": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-diablo-iii": {
+"aa": "2xAA",
+"h": 584,
+"w": 1120
+},
+"x360-dirt": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dirt-2": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dirt-3": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dragon-age-ii": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dragon-age-origins": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-dragon-ball-raging-blast": {
+"aa": "1x1 edge blur",
+"h": 720,
+"w": 1280
+},
+"x360-dragon-ball-raging-blast-2": {
+"aa": "1x1 blur",
+"h": 720,
+"w": 1280
+},
+"x360-dragon-s-dogma": {
+"aa": "black bars, FXAA",
+"h": 608,
+"w": 1280
+},
+"x360-duke-nukem-forever": {
+"aa": "no AA",
+"h": 640,
+"w": 1152
+},
+"x360-dynasty-warriors-6": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-dynasty-warriors-7": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-dynasty-warriors-strikeforce": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-el-shaddai-ascension-of-the-metatron": {
+"aa": "2xAA",
+"h": 576,
+"w": 1120
+},
+"x360-enslaved-odyssey-to-the-west": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-f-e-a-r": {
+"aa": "2xAA",
+"h": 720,
+"obs": "+ slight blur?",
+"w": 1280
+},
+"x360-f-e-a-r-3": {
+"h": 720,
+"w": 1280
+},
+"x360-f1-2010": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-f1-2011": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-fable-ii": {
+"aa": "blur filter, 2xAA",
+"h": 720,
+"w": 1120
+},
+"x360-facebreaker": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-fallout-3": {
+"aa": "4xAA, certain edges",
+"h": 720,
+"w": 1280
+},
+"x360-fantastic-four-rise-of-the-silver-surfer": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-far-cry-2": {
+"aa": "2xAA, black borders",
+"h": 696,
+"w": 1280
+},
+"x360-far-cry-3": {
+"aa": "post-AA, black border on bottom",
+"h": 704,
+"w": 1280
+},
+"x360-fifa-13": {
+"aa": "2xAA",
+"h": 544,
+"w": 960
+},
+"x360-fifa-street-3": {
+"aa": "4xAA",
+"h": 1080,
+"w": 1920
+},
+"x360-fight-night-round-4": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-final-fantasy-xiii": {
+"aa": "2xAA",
+"h": 576,
+"w": 1024
+},
+"x360-forza-horizon": {
+"aa": "4xAA + FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-forza-motorsport-2": {
+"h": 720,
+"obs": "(2xAA in-game, 4xAA replay & vehicle select)",
+"w": 1280
+},
+"x360-forza-motorsport-3": {
+"h": 720,
+"obs": "(2xAA in-game, 4xAA replay & vehicle select)",
+"w": 1280
+},
+"x360-forza-motorsport-4": {
+"h": 720,
+"obs": "(4xAA in time trial, 2xAA otherwise, 4x in car viewing etc.)",
+"w": 1280
+},
+"x360-fracture": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-gears-of-war": {
+"aa": "HD",
+"h": 720,
+"obs": "960x720 (SD) (2xAA on static objects?)",
+"w": 1280
+},
+"x360-gears-of-war-2": {
+"aa": "2xAA, certain edges unaffected",
+"h": 720,
+"w": 1280
+},
+"x360-gears-of-war-3": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-gears-of-war-judgment": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-golden-axe-beast-rider": {
+"aa": "no AA, blur filter",
+"h": 720,
+"w": 1280
+},
+"x360-grand-theft-auto-iv": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-grand-theft-auto-v": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-guitar-hero-5": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-guitar-hero-aerosmith": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-guitar-hero-iii-legends-of-rock": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-guitar-hero-world-tour": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-halo-3": {
+"aa": "no AA",
+"h": 640,
+"w": 1152
+},
+"x360-halo-3-odst": {
+"aa": "no AA",
+"h": 640,
+"w": 1152
+},
+"x360-halo-4": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-halo-reach": {
+"aa": "2xAA temporal",
+"h": 720,
+"w": 1152
+},
+"x360-halo-wars": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-hard-corps-uprising": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-hitman-absolution": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-homefront": {
+"aa": "no AA",
+"h": 576,
+"w": 1024
+},
+"x360-hydrophobia": {
+"aa": "2xAA",
+"h": 672,
+"w": 960
+},
+"x360-ikaruga": {
+"aa": "4xAA, centered on 1280x720 frame",
+"h": 720,
+"w": 540
+},
+"x360-il-2-sturmovik-birds-of-prey": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-invincible-tiger-the-legend-of-han-tao": {
+"aa": "4xAA, classic mode",
+"h": 720,
+"obs": "640x720 or 1280x360 (S3D mode), see here for more",
+"w": 1280
+},
+"x360-james-bond-007-blood-stone": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-jet-set-radio": {
+"aa": "no AA",
+"h": 544,
+"w": 960
+},
+"x360-juiced-2-hot-import-nights": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-kingdoms-of-amalur-reckoning": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-kung-fu-panda": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-lara-croft-and-the-guardian-of-light": {
+"aa": "2xAA",
+"h": 576,
+"w": 1024
+},
+"x360-left-4-dead": {
+"aa": "no AA, edge blur",
+"h": 720,
+"w": 1280
+},
+"x360-left-4-dead-2": {
+"aa": "no AA, edge blur",
+"h": 720,
+"w": 1280
+},
+"x360-legendary": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-lego-star-wars-iii-the-clone-wars": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-lost-planet-2": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-lumines-live": {
+"aa": "4xAA",
+"h": 544,
+"w": 960
+},
+"x360-madden-nfl-09": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-madden-nfl-13": {
+"aa": "no AA",
+"h": 544,
+"w": 960
+},
+"x360-mafia-ii": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-marvel-ultimate-alliance": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-marvel-ultimate-alliance-2": {
+"aa": "2xAA",
+"h": 576,
+"w": 1024
+},
+"x360-marvel-vs-capcom-3-fate-of-two-worlds": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-mass-effect": {
+"h": 720,
+"obs": "(2xAA, transparencies and effects not AA'd)",
+"w": 1280
+},
+"x360-mass-effect-2": {
+"h": 720,
+"obs": "(2xAA, transparencies and effects not AA'd)",
+"w": 1280
+},
+"x360-mass-effect-3": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-medal-of-honor": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-medal-of-honor-warfighter": {
+"aa": "FXAA",
+"h": 704,
+"w": 1280
+},
+"x360-mercenaries-2-world-in-flames": {
+"aa": "no MSAA, but depth/Z-based edge blur ?",
+"h": 720,
+"w": 1280
+},
+"x360-metal-gear-solid-hd-collection": {
+"aa": "no AA",
+"h": 448,
+"w": 720
+},
+"x360-metal-gear-solid-v-ground-zeroes": {
+"aa": "post-AA",
+"h": 720,
+"w": 992
+},
+"x360-metro-2033": {
+"aa": "post-AA",
+"h": 720,
+"w": 1200
+},
+"x360-metro-last-light": {
+"aa": "post-AA",
+"h": 720,
+"w": 1200
+},
+"x360-michael-jackson-the-experience": {
+"aa": "4xAA?",
+"h": 544,
+"w": 960
+},
+"x360-midnight-club-los-angeles": {
+"aa": "2xAA?",
+"h": 720,
+"w": 1280
+},
+"x360-mirror-s-edge": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-mortal-kombat": {
+"aa": "no AA",
+"h": 384,
+"w": 640
+},
+"x360-mortal-kombat-vs-dc-universe": {
+"aa": "2xAA",
+"h": 624,
+"w": 1040
+},
+"x360-motogp-09-10": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-motogp-10-11": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-mx-vs-atv-alive": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-mx-vs-atv-reflex": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-mx-vs-atv-untamed": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-nail-d": {
+"aa": "4x2 custom edge AA + black borders",
+"h": 672,
+"w": 1280
+},
+"x360-nba-live-08": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-need-for-speed-hot-pursuit": {
+"aa": "2xAA on cars, no AA on environment",
+"h": 720,
+"w": 1280
+},
+"x360-need-for-speed-most-wanted-2012": {
+"aa": "post-AA",
+"h": 704,
+"w": 1280
+},
+"x360-need-for-speed-prostreet": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-need-for-speed-shift": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-need-for-speed-shift-2-unleashed": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-need-for-speed-the-run": {
+"aa": "FXAA",
+"h": 704,
+"obs": "black bars",
+"w": 1280
+},
+"x360-need-for-speed-undercover": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-nexuiz": {
+"aa": "no AA",
+"h": 720,
+"w": 1152
+},
+"x360-nfl-tour": {
+"aa": "4xAA, 60fps",
+"fps": 60,
+"h": 720,
+"w": 1280
+},
+"x360-nhl-09": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-ninja-gaiden-ii": {
+"aa": "2xAA",
+"h": 585,
+"w": 1120
+},
+"x360-overlord": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-overlord-ii": {
+"aa": "custom edge blur, black borders",
+"h": 612,
+"w": 1280
+},
+"x360-perfect-dark-zero": {
+"aa": "no AA",
+"h": 640,
+"w": 1152
+},
+"x360-phantasy-star-universe": {
+"aa": "no AA",
+"h": 648,
+"w": 1152
+},
+"x360-portal-2": {
+"aa": "edge blur",
+"h": 720,
+"w": 1280
+},
+"x360-prince-of-persia": {
+"h": 720,
+"w": 1280
+},
+"x360-prince-of-persia-the-forgotten-sands": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-pro-evolution-soccer-2008": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-pro-evolution-soccer-2010": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-pro-evolution-soccer-2011": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-project-gotham-racing-3": {
+"aa": "2xAA",
+"h": 600,
+"w": 1024
+},
+"x360-project-gotham-racing-4": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-prototype": {
+"aa": "2xAA",
+"h": 640,
+"w": 1120
+},
+"x360-puddle": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-quake-4": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-quake-arena-arcade": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-race-driver-grid": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-race-pro": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-rage": {
+"h": 720,
+"obs": "up to 1280x720 (no AA)",
+"w": 640
+},
+"x360-rayman-origins": {
+"h": 544,
+"w": 960
+},
+"x360-red-dead-redemption": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-red-faction-armageddon": {
+"aa": "2xAA",
+"h": 540,
+"w": 960
+},
+"x360-red-faction-battlegrounds": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-red-faction-guerrilla": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-resident-evil-5": {
+"aa": "dynamic 0-4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-resident-evil-6": {
+"aa": "Post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-rez-hd": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-rise-of-the-argonauts": {
+"h": 720,
+"obs": "(2xAA, however post processing is likely interfering with the AA resolve in certain cases )",
+"w": 1280
+},
+"x360-risen-2-dark-waters": {
+"aa": "no AA",
+"h": 640,
+"w": 1120
+},
+"x360-rock-band": {
+"h": 720,
+"obs": "(2xAA, post-fx or lighting usually resulting in \"no AA\")",
+"w": 1280
+},
+"x360-rock-band-2": {
+"h": 720,
+"obs": "(2xAA, post-fx or lighting usually resulting in \"no AA\")",
+"w": 1280
+},
+"x360-rock-band-blitz": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-sacred-2-fallen-angel": {
+"h": 1080,
+"obs": "for any HD output (including PC res), 1280x960 for 4:3 output, 1376x768 for 480p widescreen (no AA)",
+"w": 1920
+},
+"x360-saints-row-iv": {
+"aa": "2xMSAA material pass",
+"h": 720,
+"w": 1280
+},
+"x360-score-international-baja-1000": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-sega-rally-revo": {
+"aa": "4xAA, alpha to coverage",
+"h": 720,
+"w": 1280
+},
+"x360-sega-superstars-tennis": {
+"aa": "2xAA, 30fps",
+"fps": 30,
+"h": 720,
+"w": 1280
+},
+"x360-shadowrun": {
+"aa": "2xAA",
+"h": 720,
+"obs": "- Gamefest '07",
+"w": 1280
+},
+"x360-shadows-of-the-damned": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-silent-hill-homecoming": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-sine-mora": {
+"aa": "4xAA, black bars",
+"h": 544,
+"obs": "3D: 640x544 (2xAA, black bars, full res HUD)",
+"w": 1280
+},
+"x360-singularity": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-skate": {
+"aa": "2xAA ?",
+"h": 720,
+"w": 1280
+},
+"x360-sleeping-dogs": {
+"aa": "FXAA",
+"h": 720,
+"w": 1200
+},
+"x360-soldier-of-fortune-payback": {
+"aa": "4xAA ?",
+"h": 720,
+"w": 1280
+},
+"x360-sonic-and-all-stars-racing-transformed": {
+"aa": "post-AA",
+"h": 544,
+"w": 1152
+},
+"x360-sonic-unleashed": {
+"aa": "2xAA",
+"h": 720,
+"w": 880
+},
+"x360-soulcalibur-iv": {
+"aa": "no AA, software scaled to 720p",
+"h": 960,
+"w": 1365
+},
+"x360-soulcalibur-v": {
+"aa": "FXAA?",
+"h": 720,
+"w": 1280
+},
+"x360-spider-man-web-of-shadows": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-split-second": {
+"aa": "2xAA",
+"h": 672,
+"w": 1280
+},
+"x360-splosion-man": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-ssx": {
+"aa": "FXAA",
+"h": 585,
+"w": 1120
+},
+"x360-stacking": {
+"aa": "custom edge filter",
+"h": 720,
+"w": 1200
+},
+"x360-star-wars-the-force-unleashed": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-stormrise": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-street-fighter-iv": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-street-fighter-x-tekken": {
+"aa": "no AA",
+"h": 544,
+"obs": "character select, 720x~408 (4xAA) in-game ?",
+"w": 960
+},
+"x360-strider": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-super-street-fighter-iv": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-superstars-v8-next-challenge": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-syndicate": {
+"aa": "FXAA, dynamic res",
+"h": 720,
+"w": 1280
+},
+"x360-tales-of-vesperia": {
+"aa": "2xAA + full screen blur",
+"h": 720,
+"w": 1280
+},
+"x360-tekken-6": {
+"h": 576,
+"obs": "w/motion blur, 1360x768 w/o motion blur (no AA)",
+"w": 1024
+},
+"x360-terminator-salvation": {
+"aa": "blur filter",
+"h": 648,
+"w": 1152
+},
+"x360-test-drive-unlimited": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-test-drive-unlimited-2": {
+"aa": "custom edge filter",
+"h": 720,
+"w": 1280
+},
+"x360-the-club": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-the-darkness": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-the-darkness-ii": {
+"aa": "FXAA",
+"h": 600,
+"w": 1152
+},
+"x360-the-legend-of-spyro-dawn-of-the-dragon": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-the-orange-box": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-tiger-woods-pga-tour-09": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-tiger-woods-pga-tour-11": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-tomb-raider": {
+"aa": "post-AA",
+"h": 720,
+"w": 1280
+},
+"x360-tomb-raider-legend": {
+"aa": "2xAA",
+"h": 600,
+"w": 1024
+},
+"x360-tomb-raider-underworld": {
+"aa": "2xAA",
+"h": 576,
+"obs": "- depth buffer is 1040x576",
+"w": 1024
+},
+"x360-tony-hawk-s-proving-ground": {
+"h": 720,
+"w": 1280
+},
+"x360-top-spin-3": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-top-spin-4": {
+"h": 720,
+"obs": "2D, 640x720 3D (both 2xAA)",
+"w": 1280
+},
+"x360-transformers-revenge-of-the-fallen": {
+"aa": "blur filter",
+"h": 720,
+"w": 1120
+},
+"x360-transformers-war-for-cybertron": {
+"aa": "2xAA",
+"h": 600,
+"w": 1024
+},
+"x360-trials-evolution": {
+"aa": "FXAA",
+"h": 648,
+"w": 1152
+},
+"x360-trials-hd": {
+"aa": "no AA, black borders",
+"h": 680,
+"w": 1280
+},
+"x360-tron": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-turning-point-fall-of-liberty": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-turok": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-uefa-euro-2008": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-ufc-2009-undisputed": {
+"h": 720,
+"obs": "(custom edge AA with 2 colour gradations like 4xAA)",
+"w": 1280
+},
+"x360-unreal-tournament-3": {
+"aa": "2xAA ala Gears...",
+"h": 720,
+"w": 1280
+},
+"x360-vanquish": {
+"aa": "2xAA",
+"h": 720,
+"w": 1024
+},
+"x360-virtua-fighter-5-final-showdown": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-virtua-tennis-2009": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-virtua-tennis-3": {
+"aa": "2xAA",
+"h": 1080,
+"w": 1920
+},
+"x360-virtua-tennis-4": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-wall-e": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-wanted-weapons-of-fate": {
+"aa": "no AA",
+"h": 640,
+"w": 1120
+},
+"x360-warhammer-40-000-space-marine": {
+"aa": "post-AA",
+"h": 720,
+"w": 1200
+},
+"x360-wheelman": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-wolf-of-the-battlefield-commando-3": {
+"aa": "4xAA",
+"h": 720,
+"w": 1280
+},
+"x360-wolfenstein": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-wwe-all-stars": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+},
+"x360-x-men-origins-wolverine": {
+"aa": "2xAA",
+"h": 720,
+"w": 1280
+},
+"x360-xcom-enemy-unknown": {
+"aa": "FXAA",
+"h": 720,
+"w": 1280
+},
+"x360-zone-of-the-enders-hd-collection": {
+"aa": "no AA",
+"h": 720,
+"w": 1280
+}
+}

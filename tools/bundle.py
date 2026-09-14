@@ -193,6 +193,9 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
     # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
     tamanhos = load("tamanho.json", {})
+    # Resolucao nativa, da thread do Beyond3D. Nenhuma outra base do projeto tem
+    # esse numero, e quase nenhum jogo de 360 rodava em 720p de verdade.
+    resolucoes = load("resolucao.json", {})
     # Tempo de jogo: duas fontes que nao se pisam. data/tempo.json e curadoria a
     # mao (ver o cabecalho de la); os hltb*.json sao do coletor, um arquivo por
     # alvo para dois processos em paralelo nao se apagarem. Quem ganha e decidido
@@ -239,7 +242,7 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
         g.pop("tu", None); g.pop("tempo", None); g.pop("dlc", None)
-        g.pop("tamanho", None)
+        g.pop("tamanho", None); g.pop("resolucao", None)
         dl = dlcs.get(g["id"])
         if dl:
             g["dlc"] = dl
@@ -256,6 +259,9 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         tm = tamanhos.get(g["id"])
         if isinstance(tm, (int, float)) and tm > 0:
             g["tamanho"] = tm
+        rs = resolucoes.get(g["id"])
+        if rs and rs.get("w") and rs.get("h"):
+            g["resolucao"] = {k: v for k, v in rs.items() if v}
         r = x360db.get(g["id"])
         if r:
             if isinstance(r.get("ur"), (int, float)):

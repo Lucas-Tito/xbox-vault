@@ -475,8 +475,9 @@ function fmtDate(s) {
   return p[0];
 }
 
-function linha(rot, val) {
-  return val ? '<div class="li"><span>' + rot + "</span><b>" + val + "</b></div>" : "";
+function linha(rot, val, titulo) {
+  return val ? '<div class="li"' + (titulo ? ' title="' + esc(titulo) + '"' : "") +
+    "><span>" + rot + "</span><b>" + val + "</b></div>" : "";
 }
 
 function modosHtml(g) {
@@ -665,6 +666,21 @@ function bcChips(g) {
   return h;
 }
 
+/* Resolucao nativa de render. O campo de anti-aliasing e texto livre de forum:
+   ao lado de "2xAA" e "FXAA" existem coisas como "no MSAA, but depth/Z-based
+   edge blur ?" e "2xAA ala Gears...". So o que for curto entra no parenteses; o
+   resto vai para o hover, junto da fonte, que nao cabe na linha. */
+function resolucaoLinha(g) {
+  var r = g.resolucao;
+  if (!r || !r.w || !r.h) return "";
+  var aa = r.aa || "";
+  var curto = /^no aa$/i.test(aa) ? "sem AA"
+    : (aa && aa.length <= 12 && aa.indexOf(",") < 0 ? aa : "");
+  var fonte = "Resolução medida pela comunidade do fórum Beyond3D" +
+    (aa && !curto ? ". Anti-aliasing: " + aa : "");
+  return linha("Resolução", r.w + " x " + r.h + (curto ? " (" + esc(curto) + ")" : ""), fonte);
+}
+
 function fichaHtml(g) {
   /* Uma data so, a mais antiga entre as regioes: quem abre a ficha quer saber
      quando o jogo saiu, nao em qual loja regional ele saiu primeiro. Quando o
@@ -697,6 +713,7 @@ function fichaHtml(g) {
        catalogo para montar console vai querer copiar daqui. Monoespacada porque
        e codigo, e para 425307D5 nao virar 4253O7D5 na leitura. */
     linha("Title ID", g.titleId ? "<code>" + esc(g.titleId) + "</code>" : null) +
+    resolucaoLinha(g) +
     /* O que era a gaveta "Extras" virou linha de ficha. A gaveta misturava fato
        de patch, forma de venda, hardware e recurso de video numa lista so, e
        cada um deles responde uma pergunta diferente. */

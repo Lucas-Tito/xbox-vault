@@ -375,6 +375,33 @@
       }
     }
 
+    // ---- resolução nativa ----
+    {
+      const comRes = window.XBX_DB.games.filter(g => g.resolucao);
+      ok('catalogo tem resolucao nativa', comRes.length > 100, comRes.length + ' jogos');
+      // o interessante e justamente quem NAO roda em 720p
+      const sub = comRes.find(g => g.resolucao.h < 720 && g.image) || comRes[0];
+      $('#q').value = sub.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 0, 6000); await wait(300);
+      const c = cards().find(x => x.dataset.id === sub.id);
+      if (c) {
+        c.querySelector('.thumb').click(); await wait(400);
+        await irPara('Ficha técnica');
+        const lin = $$('#modal-body .li')
+          .find(l => l.querySelector('span') && l.querySelector('span').textContent === 'Resolução');
+        ok('ficha mostra a resolucao', !!lin,
+           lin ? lin.querySelector('b').textContent : 'sem linha');
+        ok('resolucao bate com o dado',
+           !!lin && lin.querySelector('b').textContent.indexOf(sub.resolucao.w + ' x ' + sub.resolucao.h) === 0,
+           sub.title + ' = ' + sub.resolucao.w + 'x' + sub.resolucao.h);
+        // a fonte e uma thread de forum, entao ela precisa estar dita em algum lugar
+        ok('a fonte vive no hover', !!lin && /Beyond3D/.test(lin.getAttribute('title') || ''));
+        $('#modal-x').click(); await wait(200);
+      } else ok('card do jogo com resolucao', false, sub.id);
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
     // ---- Title ID ----
     {
       const alvo = window.XBX_DB.games.find(g => g.titleId && g.image);
