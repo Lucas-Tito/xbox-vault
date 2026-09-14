@@ -5973,6 +5973,607 @@
   "v": 2,
   "via": "plataforma"
  },
+ "emu-gba-mahjong-keiji": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mahou-sensei-negima-private-lesson-2-ojama-shimasu-parasite-de-chu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mahou-sensei-negima-private-lesson-dame-desu-toshokan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mail-de-cute": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-majesco-s-rec-room-challenge-3-games-in-one-darts-roll-a-ball-shuffle-bowl": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-majokko-cream-chan-gokko-series-1-wan-nyon-idol-gakuen": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-major-league-baseball-2k7": {
+  "ano": 2007,
+  "cem": 265.0,
+  "hltb": 5581,
+  "n": 1,
+  "nome": "Major League Baseball 2K7",
+  "plus": 35.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-manga-ka-debut-monogatari-akogare-manga-ka-ikusei-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-manic-miner": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-gba-marble-madness-klax": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-march-of-the-penguins": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-gba-marie-elie-anis-no-atelier-soyokaze-kara-no-dengon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mario-cart": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mario-golf-advance-tour": {
+  "ano": 2004,
+  "cem": 26.8,
+  "hltb": 5629,
+  "main": 9.2,
+  "n": 40,
+  "nome": "Mario Golf: Advance Tour",
+  "plus": 16.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-kart-super-circuit": {
+  "ano": 2001,
+  "cem": 28.7,
+  "hltb": 5639,
+  "main": 3.5,
+  "n": 175,
+  "nome": "Mario Kart: Super Circuit",
+  "plus": 9.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-luigi-superstar-saga": {
+  "ano": 2003,
+  "cem": 31.1,
+  "hltb": 5622,
+  "main": 18.7,
+  "n": 371,
+  "nome": "Mario & Luigi: Superstar Saga",
+  "plus": 21.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-party-advance": {
+  "ano": 2005,
+  "cem": 16.5,
+  "hltb": 5650,
+  "main": 6.0,
+  "n": 21,
+  "nome": "Mario Party Advance",
+  "plus": 10.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-party-e": {
+  "ano": 2003,
+  "cem": 1.0,
+  "hltb": 107416,
+  "n": 1,
+  "nome": "Mario Party-e",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-pinball-land": {
+  "ano": 2004,
+  "cem": 14.0,
+  "hltb": 5652,
+  "main": 4.6,
+  "n": 22,
+  "nome": "Mario Pinball Land",
+  "plus": 6.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-tennis-power-tour": {
+  "ano": 2005,
+  "cem": 21.5,
+  "hltb": 5659,
+  "main": 7.3,
+  "n": 64,
+  "nome": "Mario Tennis: Power Tour",
+  "plus": 14.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mario-vs-donkey-kong": {
+  "ano": 2004,
+  "cem": 13.5,
+  "hltb": 5660,
+  "main": 5.3,
+  "n": 87,
+  "nome": "Mario vs. Donkey Kong",
+  "plus": 7.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-marvel-s-the-invincible-iron-man": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-marvel-ultimate-alliance": {
+  "ano": 2006,
+  "hltb": 5691,
+  "main": 14.0,
+  "n": 1,
+  "nome": "Marvel: Ultimate Alliance",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mary-kate-and-ashley-girls-night-out": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-mary-kate-and-ashley-sweet-16-licensed-to-drive": {
+  "ano": 2003,
+  "hltb": 72814,
+  "main": 3.2,
+  "n": 2,
+  "nome": "Mary-Kate and Ashley: Sweet 16 - Licensed to Drive",
+  "plus": 4.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-masters-of-the-universe-he-man-power-of-grayskull": {
+  "ano": 2002,
+  "hltb": 23006,
+  "main": 2.4,
+  "n": 3,
+  "nome": "Masters of the Universe - He-Man: Power of Grayskull",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mat-hoffman-s-pro-bmx": {
+  "ano": 2001,
+  "cem": 14.0,
+  "hltb": 5729,
+  "main": 6.8,
+  "n": 4,
+  "nome": "Mat Hoffman's Pro BMX",
+  "plus": 12.0,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-mat-hoffman-s-pro-bmx-2": {
+  "ano": 2002,
+  "hltb": 5730,
+  "main": 6.4,
+  "n": 3,
+  "nome": "Mat Hoffman's Pro BMX 2",
+  "plus": 8.4,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-matantei-loki-ragnarok-gensou-no-labyrinth": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-matchbox-cross-town-heroes": {
+  "ano": 2002,
+  "hltb": 36012,
+  "main": 0.8,
+  "n": 1,
+  "nome": "Matchbox Cross Town Heroes",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-matchbox-missions-air-land-and-sea-rescue-emergency-response": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-math-patrol-the-kleptoid-threat": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-max-payne": {
+  "ano": 2001,
+  "hltb": 5736,
+  "main": 3.8,
+  "n": 10,
+  "nome": "Max Payne",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-maya-the-bee-sweet-gold": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-maya-the-bee-the-great-adventure": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-mazes-of-fate": {
+  "ano": 2006,
+  "cem": 25.0,
+  "hltb": 5746,
+  "main": 14.9,
+  "n": 4,
+  "nome": "Mazes of Fate",
+  "plus": 11.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mech-platoon": {
+  "ano": 2001,
+  "cem": 15.0,
+  "hltb": 5757,
+  "main": 6.2,
+  "n": 2,
+  "nome": "Mech Platoon",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-medabots-ax-metabee-ver": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-medabots-ax-rokusho-ver": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-medabots-metabee": {
+  "ano": 2003,
+  "cem": 41.9,
+  "hltb": 5773,
+  "main": 52.7,
+  "n": 8,
+  "nome": "Medabots: Metabee",
+  "plus": 73.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-medabots-rokusho": {
+  "ano": 2003,
+  "hltb": 5774,
+  "main": 39.7,
+  "n": 4,
+  "nome": "Medabots: Rokusho",
+  "plus": 35.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-medal-of-honor-infiltrator": {
+  "ano": 2003,
+  "hltb": 5786,
+  "main": 2.8,
+  "n": 17,
+  "nome": "Medal of Honor: Infiltrator",
+  "plus": 4.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-medal-of-honor-underground": {
+  "ano": 2000,
+  "hltb": 5789,
+  "main": 3.8,
+  "n": 3,
+  "nome": "Medal of Honor: Underground",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-medarot-g-kabuto-version": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-medarot-g-kuwagata-version": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-gba-medarot-navi-kabuto": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-medarot-navi-kuwagata": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-bass": {
+  "ano": 1998,
+  "cem": 10.2,
+  "hltb": 5804,
+  "main": 5.8,
+  "n": 19,
+  "nome": "Mega Man & Bass",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-battle-chip-challenge": {
+  "ano": 2003,
+  "cem": 55.0,
+  "hltb": 5819,
+  "main": 20.0,
+  "n": 9,
+  "nome": "Mega Man Battle Chip Challenge",
+  "plus": 20.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-battle-network": {
+  "ano": 2001,
+  "cem": 45.2,
+  "hltb": 5820,
+  "main": 13.9,
+  "n": 98,
+  "nome": "Mega Man Battle Network",
+  "plus": 17.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-battle-network-2": {
+  "ano": 2001,
+  "cem": 49.2,
+  "hltb": 5821,
+  "main": 20.6,
+  "n": 48,
+  "nome": "Mega Man Battle Network 2",
+  "plus": 25.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-battle-network-3-blue-version": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-3-white-version": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-4-5-real-operation": {
+  "ano": 2004,
+  "cem": 76.8,
+  "hltb": 101623,
+  "main": 20.0,
+  "n": 2,
+  "nome": "Rockman EXE 4.5 Real Operation",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-battle-network-4-blue-moon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-4-red-sun": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-5-team-colonel": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-5-team-protoman": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-6-cybeast-falzar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-battle-network-6-cybeast-gregar": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mega-man-zero": {
+  "ano": 2002,
+  "cem": 12.0,
+  "hltb": 5855,
+  "main": 4.0,
+  "n": 92,
+  "nome": "Mega Man Zero",
+  "plus": 4.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-zero-2": {
+  "ano": 2003,
+  "cem": 22.4,
+  "hltb": 5856,
+  "main": 3.8,
+  "n": 49,
+  "nome": "Mega Man Zero 2",
+  "plus": 4.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-zero-3": {
+  "ano": 2004,
+  "cem": 6.0,
+  "hltb": 5857,
+  "main": 3.5,
+  "n": 46,
+  "nome": "Mega Man Zero 3",
+  "plus": 4.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mega-man-zero-4": {
+  "ano": 2005,
+  "cem": 5.7,
+  "hltb": 5858,
+  "main": 3.3,
+  "n": 41,
+  "nome": "Mega Man Zero 4",
+  "plus": 6.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-meitantei-conan-akatsuki-no-monument": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-meitantei-conan-nerawareta-tantei": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-men-in-black-the-series": {
+  "ano": 2001,
+  "cem": 5.2,
+  "hltb": 15074,
+  "main": 1.6,
+  "n": 5,
+  "nome": "Men In Black: The Series",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mermaid-melody-pichi-pichi-picchi-pichi-pichitto-live-start": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-mermaid-melody-pichi-pichi-pitch": {
+  "ano": 2003,
+  "hltb": 173709,
+  "main": 0.5,
+  "n": 1,
+  "nome": "Mermaid Melody: Pichi Pichi Pitch",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mermaid-melody-pichipichi-pitch-pichipichi-party": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-metal-max-2-kai": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-metal-slug-advance": {
+  "ano": 2004,
+  "cem": 2.0,
+  "hltb": 5937,
+  "main": 1.7,
+  "n": 59,
+  "nome": "Metal Slug Advance",
+  "plus": 2.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-metalgun-slinger": {
+  "ano": 2002,
+  "hltb": 20147,
+  "main": 3.0,
+  "n": 1,
+  "nome": "Metalgun Slinger",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-metroid-fusion": {
+  "ano": 2002,
+  "cem": 9.0,
+  "hltb": 5950,
+  "main": 5.3,
+  "n": 953,
+  "nome": "Metroid Fusion",
+  "plus": 6.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-metroid-zero-mission": {
+  "ano": 2004,
+  "cem": 8.4,
+  "hltb": 5961,
+  "main": 4.6,
+  "n": 1174,
+  "nome": "Metroid: Zero Mission",
+  "plus": 5.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mezase-koushien": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-micro-machines": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-gba-midnight-club-street-racing": {
+  "ano": 2000,
+  "hltb": 6001,
+  "main": 13.2,
+  "n": 1,
+  "nome": "Midnight Club: Street Racing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-midway-s-greatest-arcade-hits": {
+  "ano": 2000,
+  "cem": 2.0,
+  "hltb": 6016,
+  "n": 1,
+  "nome": "Midway's Greatest Arcade Hits",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-gba-mighty-beanz-pocket-puzzles": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-gba-mike-tyson-boxing": {
+  "ano": 2000,
+  "hltb": 117700,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Mike Tyson Boxing",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-gba-millipede-super-breakout-lunar-lander": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-minami-no-umi-no-odyssey": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-minimoni-mika-no-happy-morning-chatty": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-minimoni-onegaio-hoshisama": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-minna-no-ouji-sama": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-minna-no-shogi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-gba-minna-no-soft-series-minna-no-mahjong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-gba-mlb-slugfest-20-04": {
   "ano": 2003,
   "hltb": 65921,
@@ -17654,6 +18255,329 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "emu-ps1-mahjong-de-asobo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahjong-ganryuujima": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahjong-gokuu-tenjiku": {
+  "ano": 1994,
+  "hltb": 116585,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Mahjong Gokuu Tenjiku",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-mahjong-gokuu-tenjiku-99": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahjong-station-mazin": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahjong-taikai-ii-special": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-mahjong-uranai-fortuna-tsuki-no-megami-tachi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahjong-yarou-ze": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahjong-youchien-tamago-gumi-2-taikai-e-ikou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mahou-shoujo-fancy-coco": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-mahoutsukai-ni-naru-houhou": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-mainichi-nekoyoubi": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-majokko-daisakusen-little-witching-mischiefs": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-makeruna-makendo-2": {
+  "ano": 1995,
+  "cem": 4.9,
+  "hltb": 108473,
+  "main": 1.1,
+  "n": 1,
+  "nome": "Makeruna! Makendou 2: Kimero Youkai Souri",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-manic-game-girl": {
+  "ano": 2002,
+  "hltb": 150730,
+  "main": 8.6,
+  "n": 1,
+  "nome": "Manic Game Girl",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-marble-master": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-marby-baby-story": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-maria-2-jutai-kokuchi-no-nazo": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-maria-kimitachi-ga-umareta-wake": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mario-mushano-no-chou-shougi-juku": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-marionette-company": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-marionette-company-2-chu": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-marl-jong": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-adventure-walkabout-1-the-natural-history-museum": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-adventure-walkabout-2-the-shakespeare-festival": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-adventure-walkabout-3-world-sports-day": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-cosmic-quest-1-city-sights": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-cosmic-quest-2-fairy-tale-island": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-cosmic-quest-3-race-through-france": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-stay-and-play-1-in-the-clubhouse": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-stay-and-play-2-in-mars-bedroom": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mars-moose-stay-and-play-3-in-lonnie-s-classroom": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-martial-beat": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-martial-beat-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-martian-gothic-unification": {
+  "ano": 2000,
+  "hltb": 5676,
+  "main": 16.7,
+  "n": 2,
+  "nome": "Martian Gothic: Unification",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-marvel-super-heroes": {
+  "ano": 1995,
+  "cem": 8.5,
+  "hltb": 5684,
+  "main": 0.9,
+  "n": 25,
+  "nome": "Marvel Super Heroes",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-marvel-super-heroes-vs-street-fighter": {
+  "ano": 1997,
+  "cem": 6.8,
+  "hltb": 5685,
+  "main": 1.1,
+  "n": 19,
+  "nome": "Marvel Super Heroes vs. Street Fighter",
+  "plus": 6.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-marvel-super-heroes-vs-street-fighter-ex-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-marvel-vs-capcom-clash-of-super-heroes": {
+  "ano": 1999,
+  "cem": 8.7,
+  "hltb": 5689,
+  "main": 1.1,
+  "n": 32,
+  "nome": "Marvel vs. Capcom: Clash of Super Heroes",
+  "plus": 3.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mary-kate-and-ashley-crush-course": {
+  "ano": 2001,
+  "cem": 2.0,
+  "hltb": 47369,
+  "main": 3.0,
+  "n": 4,
+  "nome": "Mary-Kate and Ashley: Crush Course",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mary-kate-and-ashley-magical-mystery-mall": {
+  "ano": 2000,
+  "hltb": 95849,
+  "main": 1.6,
+  "n": 6,
+  "nome": "Mary-Kate and Ashley: Magical Mystery Mall",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mary-kate-and-ashley-winners-circle": {
+  "ano": 2001,
+  "hltb": 109689,
+  "main": 2.7,
+  "n": 1,
+  "nome": "Mary-Kate and Ashley: Winners Circle",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mary-king-s-riding-star": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-mass-destruction": {
+  "ano": 1997,
+  "hltb": 5697,
+  "main": 3.0,
+  "n": 1,
+  "nome": "Mass Destruction",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-master-of-monsters-disciples-of-gaia": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-masters-shin-harukanaru-augusta": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-masumon-kids-the-another-world-of-the-master-of-monsters": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mat-hoffman-s-pro-bmx": {
+  "ano": 2001,
+  "cem": 14.0,
+  "hltb": 5729,
+  "main": 8.2,
+  "n": 5,
+  "nome": "Mat Hoffman's Pro BMX",
+  "plus": 12.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-math-gallery-collection-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-math-gallery-collection-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-math-on-the-move-1-addition-subtraction-advanced": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-math-on-the-move-1-addition-subtraction-intermediate": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-math-on-the-move-2-multiplication-division-advanced": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-math-on-the-move-2-multiplication-division-intermediate": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-math-tools-p-k-s-math-studio": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-matsukata-hiroki-no-world-fishing": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-matsumoto-reiji-999-story-of-galaxy-express-999": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mawatte-mucho": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-max-surfing-2nd": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-maximum-force": {
+  "ano": 1997,
+  "hltb": 23783,
+  "main": 0.8,
+  "n": 2,
+  "nome": "Maximum Force",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-maxracer": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-maze-heroes-meikyuu-densetsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-ps1-mdk": {
   "ano": 1997,
   "hltb": 5750,
@@ -17668,7 +18592,475 @@
   "nao": "sem-resultado",
   "v": 2
  },
+ "emu-ps1-mechwarrior-2-31st-century-combat": {
+  "ano": 1995,
+  "hltb": 5764,
+  "main": 2.5,
+  "n": 1,
+  "nome": "MechWarrior 2: 31st Century Combat",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-medal-of-honor": {
+  "ano": 1999,
+  "cem": 8.2,
+  "hltb": 5775,
+  "main": 7.6,
+  "n": 129,
+  "nome": "Medal of Honor",
+  "plus": 9.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-medal-of-honor-underground": {
+  "ano": 2000,
+  "cem": 11.1,
+  "hltb": 5789,
+  "main": 10.1,
+  "n": 67,
+  "nome": "Medal of Honor: Underground",
+  "plus": 11.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-medal-of-honor-underground-double-pack": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-medarot-r": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-medarot-r-parts-collection": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-medievil": {
+  "ano": 1998,
+  "cem": 8.4,
+  "hltb": 5796,
+  "main": 6.7,
+  "n": 153,
+  "nome": "MediEvil",
+  "plus": 8.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-medievil-ii": {
+  "ano": 2000,
+  "cem": 7.0,
+  "hltb": 5797,
+  "main": 7.0,
+  "n": 66,
+  "nome": "MediEvil 2",
+  "plus": 7.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-8-anniversary-edition": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mega-man-battle-chase": {
+  "ano": 1997,
+  "cem": 2.2,
+  "hltb": 15742,
+  "main": 1.3,
+  "n": 10,
+  "nome": "Mega Man Battle & Chase",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-legends": {
+  "ano": 1997,
+  "cem": 15.2,
+  "hltb": 5832,
+  "main": 8.1,
+  "n": 144,
+  "nome": "Mega Man Legends",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-legends-2": {
+  "ano": 2000,
+  "cem": 20.9,
+  "hltb": 5833,
+  "main": 10.8,
+  "n": 71,
+  "nome": "Mega Man Legends 2",
+  "plus": 17.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-x3": {
+  "ano": 1995,
+  "cem": 5.5,
+  "hltb": 5846,
+  "main": 3.6,
+  "n": 14,
+  "nome": "Mega Man X3",
+  "plus": 4.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-x4": {
+  "ano": 1997,
+  "cem": 5.8,
+  "hltb": 5847,
+  "main": 4.0,
+  "n": 146,
+  "nome": "Mega Man X4",
+  "plus": 4.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-x5": {
+  "ano": 2000,
+  "cem": 6.9,
+  "hltb": 5848,
+  "main": 4.4,
+  "n": 93,
+  "nome": "Mega Man X5",
+  "plus": 5.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mega-man-x6": {
+  "ano": 2001,
+  "cem": 6.3,
+  "hltb": 5849,
+  "main": 5.0,
+  "n": 73,
+  "nome": "Mega Man X6",
+  "plus": 6.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-megatudo-2096": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meguri-aishite": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meisha-retsuden-greatest-70-s": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meitantei-conan": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-meitantei-conan-3-nin-no-meisuiri": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-meitantei-conan-saikou-no-partner": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meitantei-conan-trick-trick-vol-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meka-pokeler": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-melty-lancer-the-3rd-planet": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meltylancer-ginga-shoujo-keisatsu-2086": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meltylancer-re-inforce": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memorial-star-series-sunsoft-vol-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memorial-star-series-sunsoft-vol-2": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memorial-star-series-sunsoft-vol-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memorial-star-series-sunsoft-vol-4": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memorial-star-series-sunsoft-vol-5": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memorial-star-series-sunsoft-vol-6": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-memories-off-2nd": {
+  "ano": 2001,
+  "cem": 30.1,
+  "hltb": 84890,
+  "n": 2,
+  "nome": "Memories Off 2nd",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-ps1-men-in-black-the-series-crashdown": {
+  "ano": 2001,
+  "hltb": 45479,
+  "main": 4.0,
+  "n": 2,
+  "nome": "Men in Black - The Series: Crashdown",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-menkyo-wo-torou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meremanoid": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-mermaid-no-kisetsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mermaid-no-kisetsu-curtain-call": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-merriment-carrying-caravan": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-meru-purana": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-meta-ph-list-gamma-x-2297": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-metal-angel-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-metal-gear-solid": {
+  "ano": 1998,
+  "cem": 18.1,
+  "hltb": 5908,
+  "main": 11.2,
+  "n": 1102,
+  "nome": "Metal Gear Solid",
+  "plus": 13.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-metal-gear-solid-integral": {
+  "ano": 1999,
+  "cem": 11.0,
+  "hltb": 20063,
+  "main": 6.1,
+  "n": 6,
+  "nome": "Metal Gear Solid: Integral",
+  "plus": 15.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-metal-gear-solid-vr-missions": {
+  "ano": 1999,
+  "cem": 24.8,
+  "hltb": 5923,
+  "main": 16.8,
+  "n": 25,
+  "nome": "Metal Gear Solid: VR Missions",
+  "plus": 16.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-metal-jacket": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-metal-slug-super-vehicle-001": {
+  "ano": 1996,
+  "cem": 2.7,
+  "hltb": 5928,
+  "main": 1.2,
+  "n": 27,
+  "nome": "Metal Slug",
+  "plus": 1.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-metal-slug-x": {
+  "ano": 1999,
+  "cem": 4.0,
+  "hltb": 5940,
+  "main": 1.3,
+  "n": 57,
+  "nome": "Metal Slug X",
+  "plus": 3.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-metamor-panic-doki-doki-youma-busters": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mezase-meimon-yakyuubu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mezase-senkyuuou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mezase-skymark-challenge-airline-pilot": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
  "emu-ps1-mib-men-in-black-the-game": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-michael-owen-s-world-league-soccer-99": {
+  "ano": 1998,
+  "hltb": 16217,
+  "main": 4.3,
+  "n": 2,
+  "nome": "Michael Owen's World League Soccer '99",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-michael-schumacher-racing-world-kart-2002": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-michelin-rally-masters-race-of-champions": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-michinoku-hitou-koi-monogatari": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-michinoku-hitou-koi-monogatari-kai": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mickey-s-wild-adventure": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-ps1-micro-machines-v3": {
+  "ano": 1998,
+  "hltb": 5987,
+  "main": 6.7,
+  "n": 9,
+  "nome": "Micro Machines V3",
+  "plus": 8.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-micro-maniacs-racing": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-midnight-run-road-fighter-2": {
+  "ano": 1998,
+  "hltb": 53801,
+  "main": 0.5,
+  "n": 2,
+  "nome": "Midnight Run: Road Fighter 2",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-midori-no-makibao": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-mighty-hits": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-mighty-hits-special": {
+  "hltb": 6041,
+  "main": 0.9,
+  "n": 1,
+  "nome": "Mighty Hits Special",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-mikagura-shoujo-tanteidan": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-mike-tyson-boxing": {
+  "ano": 2000,
+  "hltb": 117700,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Mike Tyson Boxing",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-ps1-milano-no-arubaito-collection": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-milky-season": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-ps1-mille-miglia": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-ps1-million-classic": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-minakata-hakudou-toujou": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mini-moni-dice-de-pyon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mini-moni-shakatto-tambourine-dapyon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mini-moni-step-pyon-pyon-pyon": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-mini-yonku-bakusou-kyoudai-let-s-go-wgp-hyper-heat": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-minna-atsumare-igo-kyoushitsu": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-minna-no-kanji-kyoushitsu-chousen-kanji-kentei": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-ps1-minna-no-shiiku-kyoushitsu-kuwagata-hen": {
   "nao": "sem-resultado",
   "v": 2
  },
@@ -22885,6 +24277,558 @@
   "nome": "Magna Braban: Henreki no Yusha",
   "v": 2,
   "via": "plataforma"
+ },
+ "emu-snes-mahjong-club": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mahjong-gokuu-tenjiku": {
+  "ano": 1994,
+  "hltb": 116585,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Mahjong Gokuu Tenjiku",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-mahjong-hanjouki": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mahjong-hishouden-naki-no-ryuu": {
+  "nao": "nenhum-casou",
+  "v": 2
+ },
+ "emu-snes-mahjong-hishouden-shin-naki-no-ryuu": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mahjong-sengoku-monogatari": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mahjong-taikai-ii": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mahou-kishi-rayearth": {
+  "ano": 1995,
+  "cem": 9.6,
+  "hltb": 5527,
+  "main": 6.6,
+  "n": 14,
+  "nome": "Mahou Kishi Rayearth",
+  "plus": 7.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mahou-poi-poi-poitto": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-mahoujin-guruguru": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mahoujin-guruguru-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-majin-tensei": {
+  "ano": 1994,
+  "hltb": 14900,
+  "main": 36.7,
+  "n": 6,
+  "nome": "Majin Tensei",
+  "plus": 49.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-majin-tensei-ii-spiral-nemesis": {
+  "ano": 1995,
+  "cem": 117.5,
+  "hltb": 21015,
+  "main": 48.5,
+  "n": 7,
+  "nome": "Majin Tensei II: Spiral Nemesis",
+  "plus": 70.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-majuu-ou": {
+  "ano": 1995,
+  "cem": 1.8,
+  "hltb": 14075,
+  "main": 1.4,
+  "n": 22,
+  "nome": "King of Demons",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-maka-maka": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-makeruna-makendou-2-kimero-youkai-souridajin": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-manchester-united-championship-soccer": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mario-is-missing": {
+  "ano": 1992,
+  "cem": 2.7,
+  "hltb": 5632,
+  "main": 2.4,
+  "n": 21,
+  "nome": "Mario is Missing!",
+  "plus": 3.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-no-super-picross": {
+  "ano": 1995,
+  "cem": 61.1,
+  "hltb": 5665,
+  "main": 19.5,
+  "n": 59,
+  "nome": "Mario's Super Picross",
+  "plus": 33.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-paint": {
+  "ano": 1992,
+  "cem": 100.8,
+  "hltb": 5640,
+  "main": 9.6,
+  "n": 17,
+  "nome": "Mario Paint",
+  "plus": 19.2,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-s-early-years-fun-with-letters": {
+  "ano": 1994,
+  "cem": 1.4,
+  "hltb": 49111,
+  "main": 1.0,
+  "n": 10,
+  "nome": "Mario's Early Years: Fun With Letters",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-s-early-years-fun-with-numbers": {
+  "ano": 1994,
+  "cem": 0.8,
+  "hltb": 102333,
+  "n": 7,
+  "nome": "Mario's Early Years: Fun with Numbers",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-s-early-years-preschool-fun": {
+  "ano": 1994,
+  "cem": 2.5,
+  "hltb": 95180,
+  "main": 0.4,
+  "n": 4,
+  "nome": "Mario's Early Years: Preschool Fun",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-s-time-machine": {
+  "ano": 1993,
+  "hltb": 5667,
+  "main": 1.8,
+  "n": 6,
+  "nome": "Mario's Time Machine",
+  "plus": 2.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mario-to-wario-mario-wario": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-mark-davis-the-fishing-master": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-marko-s-magic-football": {
+  "ano": 1993,
+  "hltb": 40774,
+  "main": 2.0,
+  "n": 3,
+  "nome": "Marko's Magic Football",
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-marmalade-boy": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-marvel-super-heroes-in-war-of-the-gems": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-marvelous-mouhitotsu-no-takarajima": {
+  "ano": 1996,
+  "cem": 16.2,
+  "hltb": 20716,
+  "main": 13.6,
+  "n": 15,
+  "nome": "Marvelous: Another Treasure Island",
+  "plus": 11.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mary-shelley-s-frankenstein": {
+  "ano": 1994,
+  "cem": 6.4,
+  "hltb": 5695,
+  "main": 5.0,
+  "n": 3,
+  "nome": "Mary Shelley's Frankenstein",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-maten-densetsu-senritsu-no-ooparts": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-math-blaster-episode-1": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-matsukata-hiroki-no-super-trawling": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-matsumura-kunihiro-den-saikyou-no-rekishi-o-nurikaero": {
+  "ano": 1994,
+  "hltb": 116586,
+  "main": 0.9,
+  "n": 1,
+  "nome": "Matsumura Kunihiro Den: Saikyou no Rekishi o Nurikaero!",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-maui-mallard-in-cold-shadow": {
+  "ano": 1995,
+  "hltb": 2680,
+  "main": 2.7,
+  "n": 13,
+  "nome": "Maui Mallard in Cold Shadow",
+  "plus": 3.8,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mazinger-z": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mecarobot-golf": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mechwarrior": {
+  "ano": 1989,
+  "hltb": 5763,
+  "main": 2.5,
+  "n": 2,
+  "nome": "MechWarrior",
+  "plus": 7.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mechwarrior-3050": {
+  "ano": 1994,
+  "cem": 6.8,
+  "hltb": 956,
+  "main": 4.6,
+  "n": 2,
+  "nome": "Battletech",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mega-lo-mania": {
+  "ano": 1991,
+  "cem": 4.9,
+  "hltb": 5802,
+  "n": 1,
+  "nome": "Mega Lo Mania",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mega-man-7": {
+  "ano": 1995,
+  "cem": 4.6,
+  "hltb": 5814,
+  "main": 4.3,
+  "n": 105,
+  "nome": "Mega Man 7",
+  "plus": 5.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mega-man-soccer": {
+  "ano": 1994,
+  "cem": 4.0,
+  "hltb": 5837,
+  "main": 3.4,
+  "n": 7,
+  "nome": "Mega Man Soccer",
+  "plus": 2.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mega-man-x": {
+  "ano": 1993,
+  "cem": 4.2,
+  "hltb": 5843,
+  "main": 3.6,
+  "n": 393,
+  "nome": "Mega Man X",
+  "plus": 4.3,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mega-man-x2": {
+  "ano": 1994,
+  "cem": 5.0,
+  "hltb": 5845,
+  "main": 4.6,
+  "n": 164,
+  "nome": "Mega Man X2",
+  "plus": 5.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mega-man-x3": {
+  "ano": 1995,
+  "cem": 6.0,
+  "hltb": 5846,
+  "main": 4.7,
+  "n": 118,
+  "nome": "Mega Man X3",
+  "plus": 5.4,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-melfand-stories": {
+  "ano": 1994,
+  "cem": 1.9,
+  "hltb": 23728,
+  "main": 1.3,
+  "n": 12,
+  "nome": "Melfand Stories",
+  "plus": 0.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-metal-combat-falcon-s-revenge": {
+  "ano": 1994,
+  "hltb": 39557,
+  "main": 1.0,
+  "n": 4,
+  "nome": "Metal Combat: Falcon's Revenge",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-metal-marines": {
+  "ano": 1993,
+  "hltb": 25079,
+  "main": 7.5,
+  "n": 1,
+  "nome": "Metal Marines",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-metal-max-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-metal-max-returns": {
+  "ano": 1995,
+  "hltb": 5926,
+  "main": 18.8,
+  "n": 5,
+  "nome": "Metal Max Returns",
+  "plus": 25.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-metal-morph": {
+  "ano": 1994,
+  "hltb": 31318,
+  "main": 1.0,
+  "n": 1,
+  "nome": "Metal Morph",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-metal-slader-glory-director-s-cut": {
+  "ano": 2000,
+  "cem": 7.5,
+  "hltb": 59200,
+  "main": 4.0,
+  "n": 2,
+  "nome": "Metal Slader Glory: Director's Cut",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-metal-warriors": {
+  "ano": 1995,
+  "cem": 6.8,
+  "hltb": 5944,
+  "main": 4.1,
+  "n": 16,
+  "nome": "Metal Warriors",
+  "plus": 5.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-michael-andretti-s-indy-car-challenge": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-michael-jordan-chaos-in-the-windy-city": {
+  "ano": 1994,
+  "cem": 17.0,
+  "hltb": 5976,
+  "main": 4.4,
+  "n": 9,
+  "nome": "Michael Jordan: Chaos in the Windy City",
+  "plus": 5.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mickey-mania-the-timeless-adventures-of-mickey-mouse": {
+  "ano": 1994,
+  "cem": 3.4,
+  "hltb": 5978,
+  "main": 1.8,
+  "n": 18,
+  "nome": "Mickey Mania: The Timeless Adventures of Mickey Mouse",
+  "plus": 2.9,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mickey-no-tokyo-disneyland-daibouken": {
+  "ano": 1994,
+  "hltb": 53407,
+  "main": 6.5,
+  "n": 2,
+  "nome": "Mickey no Tokyo Disneyland Daibouken",
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mickey-s-ultimate-challenge": {
+  "ano": 1994,
+  "cem": 0.5,
+  "hltb": 5983,
+  "main": 0.8,
+  "n": 12,
+  "nome": "Mickey's Ultimate Challenge",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mickey-to-donald-magical-adventure-3": {
+  "nao": "sem-resultado",
+  "v": 2
+ },
+ "emu-snes-micro-machines": {
+  "ano": 1991,
+  "hltb": 5984,
+  "n": 1,
+  "nome": "Micro Machines",
+  "plus": 10.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-micro-machines-2-turbo-tournament": {
+  "ano": 1994,
+  "cem": 1.0,
+  "hltb": 5985,
+  "main": 1.0,
+  "n": 3,
+  "nome": "Micro Machines 2: Turbo Tournament",
+  "plus": 2.0,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-might-and-magic-book-ii": {
+  "ano": 1988,
+  "cem": 80.9,
+  "hltb": 6025,
+  "main": 40.6,
+  "n": 10,
+  "nome": "Might and Magic II: Gates to Another World",
+  "plus": 61.2,
+  "v": 2,
+  "via": "geral"
+ },
+ "emu-snes-might-and-magic-ii": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-might-and-magic-iii-isles-of-terra": {
+  "ano": 1991,
+  "hltb": 6026,
+  "n": 1,
+  "nome": "Might and Magic III: Isles of Terra",
+  "plus": 50.5,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mighty-morphin-power-rangers": {
+  "ano": 1994,
+  "cem": 1.3,
+  "hltb": 15217,
+  "main": 1.2,
+  "n": 62,
+  "nome": "Mighty Morphin Power Rangers",
+  "plus": 1.6,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mighty-morphin-power-rangers-the-fighting-edition": {
+  "ano": 1995,
+  "hltb": 6045,
+  "main": 0.5,
+  "n": 33,
+  "nome": "Mighty Morphin Power Rangers: The Fighting Edition",
+  "plus": 1.1,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-mighty-morphin-power-rangers-the-movie": {
+  "ano": 1994,
+  "cem": 1.7,
+  "hltb": 6046,
+  "main": 1.3,
+  "n": 34,
+  "nome": "Mighty Morphin Power Rangers: The Movie",
+  "plus": 1.7,
+  "v": 2,
+  "via": "plataforma"
+ },
+ "emu-snes-milandra": {
+  "nao": "so-outra-plataforma",
+  "v": 2
+ },
+ "emu-snes-mini-yonku-let-s-go-power-wgp-2": {
+  "nao": "sem-medida",
+  "v": 2
+ },
+ "emu-snes-mini-yonku-shining-scorpion-let-s-go": {
+  "nao": "sem-medida",
+  "v": 2
  },
  "emu-snes-mlbpa-baseball": {
   "ano": 1994,

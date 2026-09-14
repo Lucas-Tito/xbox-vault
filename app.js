@@ -646,7 +646,11 @@ function chip(rot, val, classe) {
 function bcChips(g) {
   var c = g.bc360;
   if (!c) return "";
-  var h = chip("", c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360",
+  /* A regiao entra dentro do veredito em vez de virar pilula propria: ela
+     qualifica o "roda", e solta nao se explicava. */
+  var regs = (c.regions || []).join(", ");
+  var h = chip("", (c.compatible ? "✓ Roda no Xbox 360" : "✗ Não roda no Xbox 360") +
+    (c.compatible && regs ? " (" + esc(regs) + ")" : ""),
     c.compatible ? "sim" : "nao");
   if (c.compatible) {
     /* A lista da Microsoft era por REGIAO do disco: o perfil de compatibilidade
@@ -654,11 +658,8 @@ function bcChips(g) {
        build_xbox.py grava "all" tambem quando a tabela da Wikipedia nao traz
        selo nenhum, o que e o caso de 425 dos 466 compativeis. Mostrar "todas"
        ali seria transformar silencio da fonte em afirmacao, que e exatamente o
-       que o aviso de co-op existe para evitar. So falamos quando a fonte falou. */
-    /* "Disco" e nao "Regiao": o campo diz qual versao FISICA o 360 aceita, e e o
-       disco que a pessoa tem na mao. "Regiao NA" solto nao se explica. */
-    var regs = (c.regions || []).join(", ");
-    h += chip("Disco", esc(regs));
+       que o aviso de co-op existe para evitar. So falamos quando a fonte falou,
+       o que sao 41 jogos. */
     if (c.xboxOriginals) h += chip("", "Xbox Originals", "");
   }
   return h;
@@ -740,11 +741,25 @@ function abasDetalhe(g) {
   abas.push(["Modos/co-op", "<h4>Modos de jogo</h4>" + modosHtml(g) +
     (coop ? "<h4>Co-Optimus</h4>" + coop : "")]);
 
-  var adicional = tuHtml(g);
+  var adicional = dlcHtml(g) + tuHtml(g);
   if (adicional) abas.push(["Conteúdo adicional", adicional]);
 
   abas.push(["Ficha técnica", fichaHtml(g)]);
   return abas;
+}
+
+/* Add-ons do Marketplace. "Conhecidos" pelo mesmo motivo dos Title Updates: a
+   listagem da loja era paginada e o que ficou no Internet Archive e a pagina
+   arquivada, nao o catalogo inteiro de add-ons do jogo. E nada disso se compra
+   mais, a loja fechou em 2024 -- por isso o coletor nem guarda preco ou link. */
+function dlcHtml(g) {
+  var d = g.dlc;
+  if (!d || !d.length) return "";
+  return '<details class="tu"><summary>' + d.length +
+    (d.length > 1 ? " add-ons conhecidos" : " add-on conhecido") +
+    "</summary><ul>" + d.map(function (x) {
+      return '<li><span class="tu-d">' + esc(x) + "</span></li>";
+    }).join("") + "</ul></details>";
 }
 
 function detalheHtml(g) {

@@ -239,9 +239,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
         g.pop("tu", None); g.pop("tempo", None); g.pop("dlc", None)
+        g.pop("tamanho", None)
         dl = dlcs.get(g["id"])
         if dl:
-            g["dlc"] = dl; g.pop("tamanho", None)
+            g["dlc"] = dl
         tp = juntar_tempo(g["id"], tempos, hltb)
         if tp:
             g["tempo"] = tp

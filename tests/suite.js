@@ -282,7 +282,10 @@
           cc.querySelector('.thumb').click(); await wait(400);
           ok('a aba de conteudo adicional existe quando ha patch',
              await irPara('Conteúdo adicional'));
-          const det = $('#modal-body details.tu'), ul = det && det.querySelector('ul');
+          // a aba tem dois details.tu quando o jogo tem DLC: pegar o dos patches
+          const det = [...$$('#modal-body details.tu')]
+            .find(d => /TUs? conhecidos?/.test(d.querySelector('summary').textContent));
+          const ul = det && det.querySelector('ul');
           ok('lista de Title Updates no popup', !!det, alvo.title + ' (' + alvo.tu.n + ')');
           // getBoundingClientRect do <ul> mente: o layout reporta altura mesmo
           // com o conteudo pulado por content-visibility. Medir o <details>.
@@ -338,6 +341,38 @@
       }
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
       await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
+    // ---- DLC do Marketplace ----
+    {
+      const comDlc = window.XBX_DB.games.filter(g => (g.dlc || []).length);
+      ok('catalogo tem lista de DLC', comDlc.length > 100, comDlc.length + ' jogos');
+      const alvo = comDlc.filter(g => g.image).sort((a,b) => b.dlc.length - a.dlc.length)[0];
+      if (alvo) {
+        $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === alvo.id);
+        if (c) {
+          c.querySelector('.thumb').click(); await wait(400);
+          ok('aba de conteudo adicional existe quando ha DLC',
+             await irPara('Conteúdo adicional'));
+          const det = [...$$('#modal-body details.tu')]
+            .find(d => /add-ons? conhecidos?/.test(d.querySelector('summary').textContent));
+          ok('popup lista os add-ons', !!det,
+             det ? det.querySelector('summary').textContent.trim() : 'sem details de DLC');
+          if (det) {
+            det.open = true; await wait(150);
+            ok('um item por add-on', det.querySelectorAll('li').length === alvo.dlc.length,
+               det.querySelectorAll('li').length + ' de ' + alvo.dlc.length);
+            // e para saber o que existiu: a loja fechou em 2024
+            ok('sem link e sem preco no DLC',
+               !det.querySelector('a') && !/R\$|US\$|\d+[.,]\d\d\b/.test(det.textContent));
+          }
+          $('#modal-x').click(); await wait(200);
+        } else ok('card do jogo com DLC', false, alvo.id);
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
     }
 
     // ---- Title ID ----
