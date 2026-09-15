@@ -397,12 +397,12 @@
           ok('aba de conteudo adicional existe quando ha DLC',
              await irPara('Conteúdo adicional'));
           const det = [...$$('#modal-body details.tu')]
-            .find(d => /add-ons? conhecidos?/.test(d.querySelector('summary').textContent));
-          ok('popup lista os add-ons', !!det,
+            .find(d => /DLCs? conhecidos?/.test(d.querySelector('summary').textContent));
+          ok('popup lista os DLCs', !!det,
              det ? det.querySelector('summary').textContent.trim() : 'sem details de DLC');
           if (det) {
             det.open = true; await wait(150);
-            ok('um item por add-on', det.querySelectorAll('li').length === alvo.dlc.length,
+            ok('um item por DLC', det.querySelectorAll('li').length === alvo.dlc.length,
                det.querySelectorAll('li').length + ' de ' + alvo.dlc.length);
             // e para saber o que existiu: a loja fechou em 2024
             ok('sem link e sem preco no DLC',

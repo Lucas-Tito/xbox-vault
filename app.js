@@ -759,7 +759,6 @@ function fichaHtml(g) {
        de patch, forma de venda, hardware e recurso de video numa lista so, e
        cada um deles responde uma pergunta diferente. */
     (f.xbla ? linha("Distribuição", "Xbox Live Arcade") : "") +
-    (f.xboxOne ? linha("Xbox One", "roda por retrocompatibilidade") : "") +
     (f.stereo3d ? linha("3D estereoscópico", "suportado") : "") +
     /* A Xbox LIVE do 360 foi desligada, entao saber que um jogo NUNCA recebeu
        patch vale tanto quanto saber quais ele recebeu. */
@@ -814,7 +813,7 @@ function dlcHtml(g) {
   var d = g.dlc;
   if (!d || !d.length) return "";
   return '<details class="tu"><summary>' + d.length +
-    (d.length > 1 ? " add-ons conhecidos" : " add-on conhecido") +
+    (d.length > 1 ? " DLCs conhecidos" : " DLC conhecido") +
     "</summary><ul>" + d.map(function (x) {
       return '<li><span class="tu-d">' + esc(x) + "</span></li>";
     }).join("") + "</ul></details>";

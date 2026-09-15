@@ -4,7 +4,7 @@ Suíte de ponta a ponta que dirige um Chrome de verdade pelo DevTools Protocol e
 o site como um usuário: filtros, busca, marcar "tenho", export e import.
 
 ```bash
-google-chrome --headless=new --disable-gpu --remote-debugging-port=9224 \
+google-chrome --headless=new --disable-gpu --remote-debugging-port=9227 \
   --user-data-dir=/tmp/xbxtest about:blank &
 sleep 4
 node tests/drive.mjs "file://$PWD/index.html" tests/suite.js

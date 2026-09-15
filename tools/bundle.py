@@ -240,6 +240,11 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
             if aplicar_coop(g, t, co):
                 coopados += 1
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
+        # O catalogo e do 360 e do que ele roda. Xbox One entrou de carona na
+        # importacao da Wikipedia e nao faz parte da premissa; o dado continua em
+        # data/x360.json, so nao e publicado. Ver #11.
+        if isinstance(g.get("flags"), dict):
+            g["flags"].pop("xboxOne", None)
         g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
         g.pop("tu", None); g.pop("tempo", None); g.pop("dlc", None)
         g.pop("tamanho", None); g.pop("resolucao", None)
