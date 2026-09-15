@@ -338,9 +338,10 @@ function cardHtml(g) {
   var sub = g.platform === "homebrew"
     ? esc(g.description || g.category || "")
     : esc([g.genre, (g.developers || [])[0]].filter(Boolean).join(" · "));
-  var link = g.wiki
-    ? '<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(g.wiki) + '" target="_blank" rel="noopener">' + esc(g.title) + "</a>"
-    : (g.url ? '<a href="' + esc(g.url) + '" target="_blank" rel="noopener">' + esc(g.title) + "</a>" : esc(g.title));
+  /* Título sem link: clicar no card é para abrir a ficha, e um <a> no meio dele
+     mandava a pessoa para fora do site sem aviso. A Wikipédia e a página do
+     projeto continuam na Ficha técnica, que é onde link é o que se espera. */
+  var link = esc(g.title);
 
   var o = owned.has(g.id), w = wishlist.has(g.id), h = escondidos.has(g.id);
   return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") + (h ? " hide" : "") +

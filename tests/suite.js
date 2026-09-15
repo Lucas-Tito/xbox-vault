@@ -66,6 +66,11 @@
        ' hb=' + $('[data-cnt="plat-homebrew"]').textContent +
        ' emu=' + $('[data-cnt="plat-emu"]').textContent);
 
+    // clicar no card abre a ficha; sair do site so pelos links da Ficha tecnica
+    ok('o titulo do card nao e link',
+       cards().every(c => !c.querySelector('h3 a')),
+       cards().length + ' cards conferidos');
+
     ok('cards renderizaram', cards().length > 50, cards().length + ' cards no 1o lote');
     ok('secoes de ano', $$('.year').length > 0, $$('.year').length + ' secoes');
 
