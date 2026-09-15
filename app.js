@@ -512,7 +512,14 @@ var COOPEXTRA = {
    em lista de marcadores ninguem compara "local 2" com "online 4". */
 function coopHtml(g) {
   var c = g.coopInfo;
-  if (!c) return "";
+  /* A caixa aparece mesmo vazia, e de propósito: calar faria o leitor concluir
+     que a ausência de co-op foi conferida, e ela não foi. O Co-Optimus só
+     cataloga jogo COM co-op, e cobre 905 dos 17.239 títulos do catálogo. */
+  if (!c) {
+    return '<div class="coop-caixa"><div class="coop-topo">' +
+      "<b>Co-op segundo o Co-Optimus</b></div>" +
+      '<div class="coop-corpo"><p class="nota">Jogo não consta no Co-Optimus.</p></div></div>';
+  }
   var cel = function (rot, v) {
     if (v == null) return "";
     return '<div class="num' + (v > 0 ? "" : " zero") + '"><span>' + rot + "</span><b>" +
@@ -616,15 +623,6 @@ function modosHtml(g) {
      O aviso do Co-Optimus fica de fora dela de propósito, porque fala de outra
      coisa, a ausência de conferência do co-op. */
   if (f && f.fraco) h = '<div class="fonte-fraca">' + h + "</div>";
-  // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. O aviso vale nos
-  // DOIS casos: quando dizemos que tem co-op, porque o número foi inferido do
-  // texto de um artigo e é aí que moram os erros; e quando dizemos que não tem,
-  // porque calar faz o leitor concluir que a ausência foi verificada, e não foi.
-  if (!g.coopInfo)
-    h += '<p class="nota">' + (t.coop
-      ? "Co-op não conferido: este jogo não consta no Co-Optimus."
-      : "Não consta no Co-Optimus, então a ausência de co-op não foi conferida.") +
-      "</p>";
   return h;
 }
 

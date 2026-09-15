@@ -182,8 +182,13 @@
       const cn = cards().find(c => c.dataset.id === sn.id);
       if (cn) {
         cn.querySelector('.thumb').click(); await wait(400);
+        // a caixa aparece mesmo vazia: calar faria o leitor concluir que a
+        // ausencia de co-op foi conferida, e ela nao foi
+        const vazia = $('#modal-body .coop-caixa');
         ok('avisa que a ausencia de co-op nao foi conferida',
-           $('#modal-body').textContent.includes('ausência de co-op não foi conferida'), sn.title);
+           !!vazia && /não consta no Co-Optimus/.test(vazia.textContent), sn.title);
+        ok('e a caixa vazia nao inventa numero',
+           !!vazia && !vazia.querySelector('.num'));
         $('#modal-x').click(); await wait(200);
       }
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
@@ -198,9 +203,13 @@
       const cx = cards().find(c => c.dataset.id === sc.id);
       if (cx) {
         cx.querySelector('.thumb').click(); await wait(400);
-        const mx = $('#modal-body').textContent;
-        ok('modal avisa que o co-op nao foi conferido', mx.includes('não conferido'));
-        ok('e nao mostra o bloco do Co-Optimus', !mx.includes('Co-op segundo o Co-Optimus'));
+        // aqui o catalogo AFIRMA co-op e o Co-Optimus nao tem o jogo: a caixa
+        // vazia e o que impede o leitor de achar que alguem conferiu
+        const cxv = $('#modal-body .coop-caixa');
+        ok('modal avisa que o co-op nao foi conferido',
+           !!cxv && /não consta no Co-Optimus/.test(cxv.textContent));
+        ok('e a caixa vazia nao traz numero nem extra',
+           !!cxv && !cxv.querySelector('.num') && !cxv.querySelector('.chip-coop'));
         $('#modal-x').click(); await wait(200);
       } else ok('card do jogo sem conferencia', false, 'nao achei ' + sc.id);
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));

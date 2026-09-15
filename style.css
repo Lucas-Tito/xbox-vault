@@ -335,6 +335,7 @@ ul.modos li{color:var(--txt)}
   color:var(--blue);font-weight:700}
 .coop-topo small{color:var(--dim2);font-size:11px;white-space:nowrap}
 .coop-corpo{padding:11px 12px}
+.coop-corpo > .nota{margin:0}
 /* Os quatro numeros sao a mesma medida em quatro situacoes: em grade da para
    compara-los de relance, em lista de marcadores nao da. */
 .nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
