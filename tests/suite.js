@@ -409,6 +409,17 @@
            n ? n.textContent.trim() : 'sem nota');
         ok('fonte ' + fonte + (alerta ? ' em alerta' : ' sem alerta'),
            !!n && n.classList.contains('alerta') === alerta);
+        // a regua ambar corre ao lado da LISTA, nao so do texto
+        const caixa = pane && pane.querySelector('.fonte-fraca');
+        ok('fonte ' + fonte + (alerta ? ' com regua na lista' : ' sem regua'),
+           !!caixa === alerta && (!alerta || !!caixa.querySelector('ul.modos')));
+        // e o aviso do Co-Optimus fica FORA dela: fala de outra coisa
+        if (alerta) {
+          const coop = [...pane.querySelectorAll('.nota')]
+            .find(x => /Co-Optimus/.test(x.textContent));
+          ok('o aviso do Co-Optimus fica fora da regua',
+             !coop || !caixa.contains(coop));
+        }
         $('#modal-x').click(); await wait(200);
       }
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));

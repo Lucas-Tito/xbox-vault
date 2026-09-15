@@ -254,6 +254,10 @@ ul.modos li{color:var(--txt)}
    chutado. Fato negativo do jogo, como "nao roda no Xbox 360" ou os problemas
    conhecidos, continua neutro -- pintar de alerta faria o certo parecer duvidoso. */
 .det-info .nota.alerta{color:var(--amber)}
+/* A regua corre ao lado da lista de modos inteira, porque e ela que esta sob
+   ressalva. Sem fundo e sem icone: o alerta mais discreto que da para fazer. */
+.fonte-fraca{border-left:2px solid var(--amber);padding-left:12px}
+.fonte-fraca > ul.modos{margin-top:0}
 .det-info p.sim{color:var(--green2);font-weight:600;margin:0 0 6px;font-size:13.5px}
 .det-info p.nao{color:var(--dim2);font-weight:600;margin:0 0 6px;font-size:13.5px}
 /* Faixa de fatos da Visao geral. Pilula em vez de linha para o fato nao se

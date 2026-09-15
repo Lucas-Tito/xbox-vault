@@ -517,20 +517,20 @@ function coopHtml(g) {
 
    "fraco" marca o que é palpite, e só isso ganha cor de alerta. */
 var FONTE = {
-  "wikipedia-infobox": { txt: "Do campo estruturado do artigo da Wikipédia." },
-  "wikipedia-text":    { txt: "Deduzido do texto do artigo da Wikipédia." },
-  "systemlink":        { txt: "Da lista de jogos com System Link da Wikipédia." },
-  "manual":            { txt: "Escrito à mão no coletor, sem fonte registrada.", fraco: true },
-  "manual-vazados":    { txt: "Escrito à mão junto da entrada do jogo vazado.", fraco: true },
+  "wikipedia-infobox": { txt: "Modos do campo estruturado do artigo da Wikipédia." },
+  "wikipedia-text":    { txt: "Modos deduzidos do texto do artigo da Wikipédia." },
+  "systemlink":        { txt: "Modos da lista de jogos com System Link da Wikipédia." },
+  "manual":            { txt: "Modos escritos à mão no coletor, sem fonte registrada.", fraco: true },
+  "manual-vazados":    { txt: "Modos escritos à mão junto da entrada do jogo vazado.", fraco: true },
   "genre-prior":       { txt: "Modos e número de jogadores deduzidos do gênero.", fraco: true },
   "title-hint":        { txt: "Modos deduzidos do título do jogo.", fraco: true },
-  "xblig-default":     { txt: "Padrão do XBLIG: nenhuma fonte descreve este jogo.", fraco: true },
+  "xblig-default":     { txt: "Modos no padrão do XBLIG: nenhuma fonte descreve este jogo.", fraco: true },
   /* A emulação vem do LaunchBox, que é catalogado por gente. Quando ele não traz
      o número de jogadores, isso é ausência declarada pela fonte e não palpite
      nosso: dizer qual é o caso vale mais do que pintar de alerta. */
-  "launchbox":         { txt: "Do LaunchBox Games Database." },
+  "launchbox":         { txt: "Modos do LaunchBox Games Database." },
   "launchbox-sem-maxplayers": {
-    txt: "Do LaunchBox, que não registra o número de jogadores deste jogo." }
+    txt: "Modos do LaunchBox, que não registra o número de jogadores deste jogo." }
 };
 
 /* Há procedência composta, tipo "wikipedia-infobox+systemlink": o que manda é a
@@ -571,6 +571,11 @@ function modosHtml(g) {
   var h = "<ul class=\"modos\">" + out.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
   var f = fonteTag(t);
   if (f) h += '<p class="nota' + (f.fraco ? " alerta" : "") + '">' + f.txt + "</p>";
+  /* Quando a procedência é palpite, a régua âmbar corre ao lado da LISTA e não
+     só do texto: é a lista inteira que está sob ressalva, não uma frase solta.
+     O aviso do Co-Optimus fica de fora dela de propósito, porque fala de outra
+     coisa, a ausência de conferência do co-op. */
+  if (f && f.fraco) h = '<div class="fonte-fraca">' + h + "</div>";
   // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. O aviso vale nos
   // DOIS casos: quando dizemos que tem co-op, porque o número foi inferido do
   // texto de um artigo e é aí que moram os erros; e quando dizemos que não tem,
