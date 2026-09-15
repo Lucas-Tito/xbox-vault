@@ -324,6 +324,29 @@ ul.modos li{color:var(--txt)}
 .ur b{color:var(--amber);font-size:12px;line-height:1}
 .det-mc .ur{position:static;height:28px;min-width:34px;font-size:13px;border-radius:14px}
 .mc i{font-style:normal;font-size:9px;vertical-align:super;margin-left:1px;opacity:.8}
+/* ---------- bloco do Co-Optimus ----------
+   Caixa propria porque o que esta ali dentro veio de fora: catalogo mantido a
+   mao, so de co-op, e nao inferencia nossa como os modos logo acima. */
+.coop-caixa{border:1px solid var(--line);border-radius:8px;background:var(--bg3);
+  overflow:hidden;margin:16px 0 0}
+.coop-topo{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+  padding:7px 12px;background:rgba(90,169,230,.08);border-bottom:1px solid var(--line)}
+.coop-topo b{font-size:10.5px;text-transform:uppercase;letter-spacing:.9px;
+  color:var(--blue);font-weight:700}
+.coop-topo small{color:var(--dim2);font-size:11px;white-space:nowrap}
+.coop-corpo{padding:11px 12px}
+/* Os quatro numeros sao a mesma medida em quatro situacoes: em grade da para
+   compara-los de relance, em lista de marcadores nao da. */
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0 0 10px}
+.num{background:var(--bg2);padding:7px 10px}
+.num span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--dim2)}
+.num b{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
+.num.zero b{color:var(--dim2);font-weight:400;font-size:12.5px}
+.chips-coop{display:flex;flex-wrap:wrap;gap:5px}
+.chip-coop{background:rgba(110,209,92,.1);border:1px solid rgba(110,209,92,.3);
+  color:var(--green2);border-radius:999px;padding:3px 9px;font-size:11.5px}
+.coop-corpo .coop-exp{background:rgba(0,0,0,.22);margin-top:10px}
 .coop-ex li{color:var(--green2)}
 .coop-exp{margin:8px 0 0;padding:8px 10px;font-size:12.5px;line-height:1.5;font-style:italic;
   color:var(--dim);background:var(--bg3);border-left:2px solid var(--line);border-radius:0 6px 6px 0}

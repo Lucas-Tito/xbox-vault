@@ -217,9 +217,19 @@
       if (cc) {
         cc.querySelector('.thumb').click(); await wait(400);
         const mb = $('#modal-body');
-        // o rotulo passou a ser so a fonte, como ja era nas notas e no tempo de jogo
+        // o bloco virou caixa propria, com a fonte no topo e a data do snapshot
+        const cx = mb.querySelector('.coop-caixa');
         ok('modal nomeia a fonte do co-op',
-           [...mb.querySelectorAll('h4')].some(h => h.textContent.trim() === 'Co-Optimus'));
+           !!cx && /Co-Optimus/.test(cx.querySelector('.coop-topo').textContent));
+        ok('a caixa diz de quando e a copia lida',
+           !!cx && /lido em \d{2}\/\d{2}\/\d{4}/.test(cx.querySelector('.coop-topo').textContent),
+           cx ? cx.querySelector('.coop-topo').textContent.trim() : '');
+        // os quatro numeros sao a mesma medida: em grade da para comparar
+        const nums = cx ? [...cx.querySelectorAll('.num')] : [];
+        ok('os numeros de co-op saem em grade', nums.length >= 2,
+           nums.map(n => n.textContent.trim()).join(' | '));
+        ok('e o rotulo e System Link, nao LAN',
+           !/\bLAN\b/.test(cx ? cx.textContent : ''), '');
         ok('modal mostra a descricao', !!mb.querySelector('.coop-exp'));
         ok('modal nao mostra mais a linha de fonte', !mb.textContent.includes('lido do arquivo de'));
         $('#modal-x').click(); await wait(200);

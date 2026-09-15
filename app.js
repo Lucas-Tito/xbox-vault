@@ -503,52 +503,69 @@ var COOPEXTRA = {
   "bots": "Bots"
 };
 
+/* O bloco do Co-Optimus numa caixa propria, e nao como mais uma lista de
+   marcadores igual a dos modos. As duas coisas tem naturezas diferentes: os
+   modos sao inferencia nossa a partir da Wikipedia, o Co-Optimus e catalogo
+   mantido a mao, jogo a jogo, e so de co-op.
+
+   Os quatro numeros vao em grade porque sao a MESMA medida em quatro situacoes:
+   em lista de marcadores ninguem compara "local 2" com "online 4". */
 function coopHtml(g) {
   var c = g.coopInfo;
   if (!c) return "";
-  var li = [], n = function (v) {
-    return v > 0 ? "até " + v + (v > 1 ? " jogadores" : " jogador") : "não tem";
+  var cel = function (rot, v) {
+    if (v == null) return "";
+    return '<div class="num' + (v > 0 ? "" : " zero") + '"><span>' + rot + "</span><b>" +
+      (v > 0 ? v : "não tem") + "</b></div>";
   };
-  if (c.local != null) li.push("Local: " + n(c.local));
-  if (c.online != null) li.push("Online: " + n(c.online));
-  if (c.combo) li.push("Local + online juntos: " + n(c.combo));
-  if (c.lan) li.push("LAN / System Link: " + n(c.lan));
+  var nums = cel("Local", c.local) + cel("Online", c.online) +
+    (c.combo ? cel("Local + online", c.combo) : "") +
+    (c.lan ? cel("System Link", c.lan) : "");
   var ex = (c.extras || []).map(function (x) {
-    return COOPEXTRA[x.toLowerCase()] || x;
-  });
-  return (li.length ? '<ul class="modos">' + li.map(function (x) {
-      return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
-    (ex.length ? '<ul class="modos coop-ex">' + ex.map(function (x) {
-      return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : "") +
-    (c.exp ? '<p class="coop-exp">' + esc(c.exp) + "</p>" : "");
+    return '<span class="chip-coop">' + esc(COOPEXTRA[x.toLowerCase()] || x) + "</span>";
+  }).join("");
+  /* A data diz de quando e a copia do Internet Archive que foi lida. O
+     Co-Optimus vive atras de um desafio da Cloudflare, entao o que temos e
+     sempre um retrato, nunca a pagina de hoje. */
+  var d = /^\d{8}$/.test(String(c.snapshot || ""))
+    ? String(c.snapshot).slice(6, 8) + "/" + String(c.snapshot).slice(4, 6) +
+      "/" + String(c.snapshot).slice(0, 4)
+    : null;
+  return '<div class="coop-caixa"><div class="coop-topo">' +
+    "<b>Co-op segundo o Co-Optimus</b>" +
+    (d ? "<small>lido em " + d + "</small>" : "") + "</div>" +
+    '<div class="coop-corpo">' +
+    (nums ? '<div class="nums">' + nums + "</div>" : "") +
+    (ex ? '<div class="chips-coop">' + ex + "</div>" : "") +
+    (c.exp ? '<p class="coop-exp">' + esc(c.exp) + "</p>" : "") +
+    "</div></div>";
 }
 
 /* De onde saiu o modo de jogo de cada título. Isto era um grau, "confiança
    high/medium/low", e o grau escondia justamente o que importa: "high" juntava
-   campo estruturado do artigo com número digitado de memória numa tabela do
-   coletor, e "low" juntava chute por gênero com um padrão aplicado em bloco a
-   todos os 3.344 indies. Nomear a procedência diz mais e não dá nota a ninguém,
-   que é o mesmo caminho das notas (Metacritic), do tempo (HowLongToBeat) e do
-   co-op (Co-Optimus).
+   ficha do artigo com número digitado sem fonte, e "low" juntava chute por
+   gênero com um padrão aplicado em bloco a todos os 3.344 indies. Nomear a
+   procedência diz mais e não dá nota a ninguém, que é o mesmo caminho das notas
+   (Metacritic), do tempo (HowLongToBeat) e do co-op (Co-Optimus).
 
-   "fraco" marca o que é palpite, e só isso ganha cor de alerta. */
-/* Duas palavras, dois sentidos: "derivados" para o que saiu de uma fonte de
-   verdade, "deduzidos" e "presumidos" para o que e palpite nosso. */
+   Duas palavras, dois sentidos: "derivados" para o que saiu de uma fonte de
+   verdade, "deduzidos" e "presumidos" para o que é palpite nosso. "fraco" marca
+   o palpite, e só ele ganha a régua âmbar. */
 var FONTE = {
   "wikipedia-infobox": { txt: "Modos de jogo derivados da ficha do artigo na Wikipédia." },
   "wikipedia-text":    { txt: "Modos de jogo derivados do texto do artigo na Wikipédia." },
   "systemlink":        { txt: "Modos de jogo derivados da lista de System Link da Wikipédia." },
-  /* "sem fonte registrada" e nao "escrito a mao": quem le nao sabe o que e um
-     coletor, e dizer que foi feito a mao soa como cuidado quando e o contrario.
-     O que importa para quem le e que ninguem pode apontar de onde veio. */
+  /* "sem fonte registrada" e não "escrito à mão": quem lê não sabe o que é um
+     coletor, e dizer que foi feito à mão soa como cuidado quando é o contrário.
+     O que importa para quem lê é que ninguém pode apontar de onde veio. */
   "manual":            { txt: "Modos de jogo sem fonte registrada.", fraco: true },
   "manual-vazados":    { txt: "Modos de jogo sem fonte registrada.", fraco: true },
   "genre-prior":       { txt: "Modos de jogo deduzidos do gênero.", fraco: true },
   "title-hint":        { txt: "Modos de jogo deduzidos do título.", fraco: true },
-  /* O pior caso do catalogo, e sao 3.344 jogos. O coletor procura palavra de
-     multiplayer no TITULO; nao achando nenhuma, grava singlePlayer=true e todo
-     o resto false. Ou seja, o "Single player" desses jogos e presumido, e a
-     ausencia dos outros modos tambem. Dizer isso e o minimo. */
+  /* O pior caso do catálogo, e são 3.344 jogos. O coletor procura palavra de
+     multiplayer no TÍTULO; não achando nenhuma, grava singlePlayer=true e todo
+     o resto false. O "Single player" desses jogos é presumido, e a ausência dos
+     outros modos também. Por isso o card nem mostra etiqueta de modo neles. */
   "xblig-default":     { txt: "Modos de jogo presumidos: nenhuma fonte, e o título não sugere multiplayer.",
                          fraco: true },
   "launchbox":         { txt: "Modos de jogo derivados do LaunchBox." },
@@ -856,8 +873,7 @@ function abasDetalhe(g) {
   if (geral) abas.push(["Visão geral", geral]);
 
   var coop = coopHtml(g);
-  abas.push(["Modos/co-op", "<h4>Modos de jogo</h4>" + modosHtml(g) +
-    (coop ? "<h4>Co-Optimus</h4>" + coop : "")]);
+  abas.push(["Modos/co-op", "<h4>Modos de jogo</h4>" + modosHtml(g) + coop]);
 
   var adicional = dlcHtml(g) + tuHtml(g);
   if (adicional) abas.push(["Conteúdo adicional", adicional]);
