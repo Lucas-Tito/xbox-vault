@@ -78,6 +78,14 @@
   const so = window.XBX_EMU.games.filter(g=>g.system==='SNES'&&normal(g)).length;
   ok('filtro por sistema (SNES)', +$('#s-shown').textContent.replace(/\D/g,'') === so, so + ' SNES oficiais');
   ok('cards mostram o sistema', cards()[0].textContent.includes('SNES'));
+  // e a ficha diz o console por extenso, que e o #17
+  cards()[0].querySelector('.thumb').click(); await wait(500);
+  const pil = [...document.querySelectorAll('#modal-body .chip')]
+    .find(c => c.querySelector('span') && c.querySelector('span').textContent === 'Console');
+  ok('a visao geral mostra o console', !!pil, pil ? pil.textContent.trim() : 'sem pilula');
+  ok('o console sai por extenso', !!pil && /Super Nintendo/.test(pil.textContent),
+     pil ? pil.textContent.trim() : '');
+  document.querySelector('#modal-x').click(); await wait(200);
 
   // tags vindas de campo estruturado
   const comMax = window.XBX_EMU.games.filter(g=>g.tags&&g.tags.maxPlayers>=2).length;

@@ -459,6 +459,11 @@ function updateFacets() {
 }
 
 /* ---------------- detalhes ---------------- */
+/* O console que roda a ROM. O catalogo guarda a sigla, que e o que o filtro
+   usa, mas na ficha ela vira o nome inteiro: "GBA" nao diz nada para quem nao e
+   do meio. */
+var SISTEMA = { SNES: "Super Nintendo", GBA: "Game Boy Advance", PS1: "PlayStation 1" };
+
 var PLATNOME = { x360: "Xbox 360", xblig: "Indie (XBLIG)", xbox: "Xbox original",
                  homebrew: "Homebrew", emu: "Emulação" };
 /* Os rotulos vem em ingles do Co-Optimus; o resto da interface e em portugues. */
@@ -782,7 +787,8 @@ function abasDetalhe(g) {
      midia e a prosa vem depois. Kinect entra aqui e nao com os modos porque nos
      132 jogos que EXIGEM o sensor ele responde a mesma pergunta que a
      retrocompatibilidade, se roda no seu setup. */
-  var fatos = chip("Tamanho", tamanhoTexto(g.tamanho)) +
+  var fatos = chip("Console", g.system ? esc(SISTEMA[g.system] || g.system) : null) +
+    chip("Tamanho", tamanhoTexto(g.tamanho)) +
     chip("Kinect", f.kinect ? (f.kinect === "required" ? "obrigatório" : "opcional") : null) +
     bcChips(g);
   var geral = (fatos ? '<div class="faixa">' + fatos + "</div>" : "") +
