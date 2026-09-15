@@ -507,11 +507,38 @@ function coopHtml(g) {
     (c.exp ? '<p class="coop-exp">' + esc(c.exp) + "</p>" : "");
 }
 
-var CONFNOTA = {
-  high: "conferido à mão, ou vindo do campo estruturado do artigo",
-  medium: "inferido do texto do artigo",
-  low: "inferido do gênero, ou sem artigo de referência"
+/* De onde saiu o modo de jogo de cada título. Isto era um grau, "confiança
+   high/medium/low", e o grau escondia justamente o que importa: "high" juntava
+   campo estruturado do artigo com número digitado de memória numa tabela do
+   coletor, e "low" juntava chute por gênero com um padrão aplicado em bloco a
+   todos os 3.344 indies. Nomear a procedência diz mais e não dá nota a ninguém,
+   que é o mesmo caminho das notas (Metacritic), do tempo (HowLongToBeat) e do
+   co-op (Co-Optimus).
+
+   "fraco" marca o que é palpite, e só isso ganha cor de alerta. */
+var FONTE = {
+  "wikipedia-infobox": { txt: "Do campo estruturado do artigo da Wikipédia." },
+  "wikipedia-text":    { txt: "Deduzido do texto do artigo da Wikipédia." },
+  "systemlink":        { txt: "Da lista de jogos com System Link da Wikipédia." },
+  "manual":            { txt: "Escrito à mão no coletor, sem fonte registrada.", fraco: true },
+  "manual-vazados":    { txt: "Escrito à mão junto da entrada do jogo vazado.", fraco: true },
+  "genre-prior":       { txt: "Modos e número de jogadores deduzidos do gênero.", fraco: true },
+  "title-hint":        { txt: "Modos deduzidos do título do jogo.", fraco: true },
+  "xblig-default":     { txt: "Padrão do XBLIG: nenhuma fonte descreve este jogo.", fraco: true },
+  /* A emulação vem do LaunchBox, que é catalogado por gente. Quando ele não traz
+     o número de jogadores, isso é ausência declarada pela fonte e não palpite
+     nosso: dizer qual é o caso vale mais do que pintar de alerta. */
+  "launchbox":         { txt: "Do LaunchBox Games Database." },
+  "launchbox-sem-maxplayers": {
+    txt: "Do LaunchBox, que não registra o número de jogadores deste jogo." }
 };
+
+/* Há procedência composta, tipo "wikipedia-infobox+systemlink": o que manda é a
+   primeira, que é de onde veio o grosso da informação. */
+function fonteTag(t) {
+  var s = t.source || "";
+  return FONTE[s] || FONTE[s.split("+")[0]] || null;
+}
 
 function fmtDate(s) {
   if (!s) return null;
@@ -542,8 +569,8 @@ function modosHtml(g) {
   if (t.versus) out.push("Versus" + (t.versusLocal ? " (local)" : ""));
   if (!out.length) return '<p class="nota">Sem informação de modo de jogo.</p>';
   var h = "<ul class=\"modos\">" + out.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
-  if (CONFNOTA[t.confidence])
-    h += '<p class="nota">Confiança <b>' + esc(t.confidence) + "</b>: " + CONFNOTA[t.confidence] + ".</p>";
+  var f = fonteTag(t);
+  if (f) h += '<p class="nota' + (f.fraco ? " alerta" : "") + '">' + f.txt + "</p>";
   // O Co-Optimus é catalogado à mão e só cobre jogo COM co-op. O aviso vale nos
   // DOIS casos: quando dizemos que tem co-op, porque o número foi inferido do
   // texto de um artigo e é aí que moram os erros; e quando dizemos que não tem,

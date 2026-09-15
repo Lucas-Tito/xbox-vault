@@ -383,6 +383,38 @@
       await until(() => cards().length > 50, 8000); await wait(300);
     }
 
+    // ---- procedencia das tags de modo ----
+    // O popup dizia "Confianca high: conferido a mao", e "manual" nao e
+    // conferencia: sao numeros digitados de memoria numa tabela do coletor, sem
+    // fonte registrada. O grau virou procedencia, e so o palpite ganha alerta.
+    {
+      const porFonte = (f) => catalogo().find(g => (g.tags||{}).source === f && g.image);
+      const casos = [
+        ['manual', /sem fonte registrada/, true],
+        ['genre-prior', /deduzidos do gênero/, true],
+        ['wikipedia-infobox', /campo estruturado/, false]
+      ];
+      for (const [fonte, esperado, alerta] of casos) {
+        const g = porFonte(fonte);
+        if (!g) { ok('achar jogo com fonte ' + fonte, false); continue; }
+        $('#q').value = g.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === g.id);
+        if (!c) { ok('card de ' + g.title, false); continue; }
+        c.querySelector('.thumb').click(); await wait(400);
+        await irPara('Modos/co-op');
+        const pane = $('#modal-body .pane:not([hidden])');
+        const n = pane && pane.querySelector('.nota');
+        ok('fonte ' + fonte + ' se apresenta pelo que e', !!n && esperado.test(n.textContent),
+           n ? n.textContent.trim() : 'sem nota');
+        ok('fonte ' + fonte + (alerta ? ' em alerta' : ' sem alerta'),
+           !!n && n.classList.contains('alerta') === alerta);
+        $('#modal-x').click(); await wait(200);
+      }
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+      await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
     // ---- DLC do Marketplace ----
     {
       const comDlc = catalogo().filter(g => (g.dlc || []).length);

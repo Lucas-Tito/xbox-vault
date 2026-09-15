@@ -62,7 +62,15 @@ def mk(sp=True, ml=None, mo=False, loc=0, net=0, cl=False, co=False, vl=False, v
         "maxPlayersLocal": int(loc),
         "maxPlayersOnline": int(net),
         "maxPlayers": max(int(loc), int(net)),
-        "source": "manual", "confidence": "high",
+        "source": "manual",
+        # NAO e verificacao. Os numeros da tabela MANUAL foram digitados de
+        # memoria, sem URL, sem referencia e sem registro de conferencia: das
+        # 901 entradas dos dois coletores, nenhuma cita fonte. Alguns estao
+        # certos (Halo 3 com 4 em tela dividida e 16 online e conhecido), mas
+        # nao ha como separar os certos dos errados sem cruzar com uma fonte
+        # de verdade -- e ja houve caso de errar aqui, o 007 Legends com 12
+        # jogadores locais que a auditoria pegou. Por isso nao e "high".
+        "confidence": "medium",
     }
 
 
