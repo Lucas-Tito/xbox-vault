@@ -392,7 +392,7 @@
       const casos = [
         ['manual', /^Modos de jogo sem fonte registrada\.$/, true],
         ['genre-prior', /deduzidos do gênero/, true],
-        ['wikipedia-infobox', /^Modos de jogo da ficha do artigo/, false]
+        ['wikipedia-infobox', /^Modos de jogo derivados da ficha do artigo/, false]
       ];
       for (const [fonte, esperado, alerta] of casos) {
         const g = porFonte(fonte);

@@ -516,10 +516,12 @@ function coopHtml(g) {
    co-op (Co-Optimus).
 
    "fraco" marca o que é palpite, e só isso ganha cor de alerta. */
+/* Duas palavras, dois sentidos: "derivados" para o que saiu de uma fonte de
+   verdade, "deduzidos" e "presumidos" para o que e palpite nosso. */
 var FONTE = {
-  "wikipedia-infobox": { txt: "Modos de jogo da ficha do artigo na Wikipédia." },
+  "wikipedia-infobox": { txt: "Modos de jogo derivados da ficha do artigo na Wikipédia." },
   "wikipedia-text":    { txt: "Modos de jogo derivados do texto do artigo na Wikipédia." },
-  "systemlink":        { txt: "Modos de jogo da lista de System Link da Wikipédia." },
+  "systemlink":        { txt: "Modos de jogo derivados da lista de System Link da Wikipédia." },
   /* "sem fonte registrada" e nao "escrito a mao": quem le nao sabe o que e um
      coletor, e dizer que foi feito a mao soa como cuidado quando e o contrario.
      O que importa para quem le e que ninguem pode apontar de onde veio. */
@@ -533,9 +535,9 @@ var FONTE = {
      ausencia dos outros modos tambem. Dizer isso e o minimo. */
   "xblig-default":     { txt: "Modos de jogo presumidos: nenhuma fonte, e o título não sugere multiplayer.",
                          fraco: true },
-  "launchbox":         { txt: "Modos de jogo do LaunchBox Games Database." },
+  "launchbox":         { txt: "Modos de jogo derivados do LaunchBox." },
   "launchbox-sem-maxplayers": {
-    txt: "Modos de jogo do LaunchBox, que não traz o número de jogadores." }
+    txt: "Modos de jogo derivados do LaunchBox sem número de jogadores." }
 };
 
 /* Há procedência composta, tipo "wikipedia-infobox+systemlink": o que manda é a
