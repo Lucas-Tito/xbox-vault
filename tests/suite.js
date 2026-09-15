@@ -390,9 +390,9 @@
     {
       const porFonte = (f) => catalogo().find(g => (g.tags||{}).source === f && g.image);
       const casos = [
-        ['manual', /sem fonte registrada/, true],
+        ['manual', /^Modos de jogo sem fonte registrada\.$/, true],
         ['genre-prior', /deduzidos do gênero/, true],
-        ['wikipedia-infobox', /campo estruturado/, false]
+        ['wikipedia-infobox', /^Modos de jogo da ficha do artigo/, false]
       ];
       for (const [fonte, esperado, alerta] of casos) {
         const g = porFonte(fonte);

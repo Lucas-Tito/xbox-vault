@@ -517,20 +517,25 @@ function coopHtml(g) {
 
    "fraco" marca o que é palpite, e só isso ganha cor de alerta. */
 var FONTE = {
-  "wikipedia-infobox": { txt: "Modos do campo estruturado do artigo da Wikipédia." },
-  "wikipedia-text":    { txt: "Modos deduzidos do texto do artigo da Wikipédia." },
-  "systemlink":        { txt: "Modos da lista de jogos com System Link da Wikipédia." },
-  "manual":            { txt: "Modos escritos à mão no coletor, sem fonte registrada.", fraco: true },
-  "manual-vazados":    { txt: "Modos escritos à mão junto da entrada do jogo vazado.", fraco: true },
-  "genre-prior":       { txt: "Modos e número de jogadores deduzidos do gênero.", fraco: true },
-  "title-hint":        { txt: "Modos deduzidos do título do jogo.", fraco: true },
-  "xblig-default":     { txt: "Modos no padrão do XBLIG: nenhuma fonte descreve este jogo.", fraco: true },
-  /* A emulação vem do LaunchBox, que é catalogado por gente. Quando ele não traz
-     o número de jogadores, isso é ausência declarada pela fonte e não palpite
-     nosso: dizer qual é o caso vale mais do que pintar de alerta. */
-  "launchbox":         { txt: "Modos do LaunchBox Games Database." },
+  "wikipedia-infobox": { txt: "Modos de jogo da ficha do artigo na Wikipédia." },
+  "wikipedia-text":    { txt: "Modos de jogo derivados do texto do artigo na Wikipédia." },
+  "systemlink":        { txt: "Modos de jogo da lista de System Link da Wikipédia." },
+  /* "sem fonte registrada" e nao "escrito a mao": quem le nao sabe o que e um
+     coletor, e dizer que foi feito a mao soa como cuidado quando e o contrario.
+     O que importa para quem le e que ninguem pode apontar de onde veio. */
+  "manual":            { txt: "Modos de jogo sem fonte registrada.", fraco: true },
+  "manual-vazados":    { txt: "Modos de jogo sem fonte registrada.", fraco: true },
+  "genre-prior":       { txt: "Modos de jogo deduzidos do gênero.", fraco: true },
+  "title-hint":        { txt: "Modos de jogo deduzidos do título.", fraco: true },
+  /* O pior caso do catalogo, e sao 3.344 jogos. O coletor procura palavra de
+     multiplayer no TITULO; nao achando nenhuma, grava singlePlayer=true e todo
+     o resto false. Ou seja, o "Single player" desses jogos e presumido, e a
+     ausencia dos outros modos tambem. Dizer isso e o minimo. */
+  "xblig-default":     { txt: "Modos de jogo presumidos: nenhuma fonte, e o título não sugere multiplayer.",
+                         fraco: true },
+  "launchbox":         { txt: "Modos de jogo do LaunchBox Games Database." },
   "launchbox-sem-maxplayers": {
-    txt: "Modos do LaunchBox, que não registra o número de jogadores deste jogo." }
+    txt: "Modos de jogo do LaunchBox, que não traz o número de jogadores." }
 };
 
 /* Há procedência composta, tipo "wikipedia-infobox+systemlink": o que manda é a
