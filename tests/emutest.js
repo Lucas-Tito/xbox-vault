@@ -13,7 +13,8 @@
   ok('emulacao vem DESLIGADA', emuBox && !emuBox.checked);
   ok('subfiltros escondidos', $('#g-emu').hidden);
   const base = window.XBX_DB.games.length;
-  ok('catalogo base sem emulacao', base > 6000 && !window.XBX_EMU, base + ' jogos');
+  // o db.js agora e so 360 + Xbox original; XBLIG e homebrew tambem sao sob demanda
+  ok('catalogo base sem emulacao', base > 3000 && !window.XBX_EMU, base + ' jogos');
   // zero seria mentira: a categoria tem milhares de jogos, eles e que nao foram
   // baixados ainda. Enquanto o db.js nao trouxer o total, o certo e nao dizer nada.
   const cntEmu = () => $('[data-cnt="plat-emu"]').textContent.trim();

@@ -3,6 +3,24 @@
   const ok = (n, c, d='') => R.push((c?'PASS':'FALL') + ' | ' + n + (d?' | '+d:''));
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const cards = () => $$('.card');
+  // O catalogo virou varios bundles: o db.js traz 360 e Xbox original, e XBLIG,
+  // homebrew e emulacao descem quando a categoria e ligada. Quase todo teste
+  // quer o que o site conhece AGORA, que e a uniao do que ja baixou.
+  const catalogo = () => [].concat(
+    (window.XBX_DB && window.XBX_DB.games) || [],
+    (window.XBX_XBLIG && window.XBX_XBLIG.games) || [],
+    (window.XBX_HB && window.XBX_HB.games) || [],
+    (window.XBX_EMU && window.XBX_EMU.games) || []);
+  // Ja o total do painel conta o catalogo INTEIRO, inclusive o que nao baixou:
+  // o tamanho de cada categoria viaja em counts, no bundle principal.
+  const totalTudo = () => {
+    const c = (window.XBX_DB && window.XBX_DB.counts) || {};
+    let t = catalogo().length;
+    if (!window.XBX_XBLIG) t += c.xblig || 0;
+    if (!window.XBX_HB) t += c.homebrew || 0;
+    if (!window.XBX_EMU) t += c.emu || 0;
+    return t;
+  };
   const fire = (el, t='change') => el.dispatchEvent(new Event(t, {bubbles:true}));
   const wait = ms => new Promise(r => setTimeout(r, ms));
   // espera condicional: evita flake quando a rede esta lenta (CDN frio apos deploy)
@@ -29,8 +47,25 @@
 
   return (async () => {
     // estado de visita anterior nao pode vazar entre execucoes do teste
-    ok('catalogo carregou', window.XBX_DB.games.length > 3000, window.XBX_DB.games.length + ' jogos');
-    ok('stats total confere', $('#s-total').textContent.replace(/\D/g,'') == window.XBX_DB.games.length, $('#s-total').textContent);
+    ok('catalogo carregou', catalogo().length > 3000, catalogo().length + ' jogos');
+    ok('stats total confere',
+       +$('#s-total').textContent.replace(/\D/g,'') === totalTudo(),
+       $('#s-total').textContent + ' na tela, ' + totalTudo() + ' somando os bundles');
+    // ---- catalogos sob demanda ----
+    ok('db.js nao traz XBLIG nem homebrew',
+       !window.XBX_DB.games.some(g => g.platform === 'xblig' || g.platform === 'homebrew'),
+       window.XBX_DB.games.length + ' jogos no bundle principal');
+    ok('nenhum catalogo sob demanda desceu sozinho',
+       !window.XBX_XBLIG && !window.XBX_HB && !window.XBX_EMU);
+    // o total de cada um viaja em counts, senao o filtro exibiria zero
+    ok('o filtro mostra o tamanho da categoria antes de baixar',
+       $('[data-cnt="plat-xblig"]').textContent === String(window.XBX_DB.counts.xblig) &&
+       $('[data-cnt="plat-homebrew"]').textContent === String(window.XBX_DB.counts.homebrew) &&
+       $('[data-cnt="plat-emu"]').textContent === String(window.XBX_DB.counts.emu),
+       'xblig=' + $('[data-cnt="plat-xblig"]').textContent +
+       ' hb=' + $('[data-cnt="plat-homebrew"]').textContent +
+       ' emu=' + $('[data-cnt="plat-emu"]').textContent);
+
     ok('cards renderizaram', cards().length > 50, cards().length + ' cards no 1o lote');
     ok('secoes de ano', $$('.year').length > 0, $$('.year').length + ' secoes');
 
@@ -43,12 +78,17 @@
     // filtro de retrocompatibilidade
     $('#f-bc').value = 'yes'; fire($('#f-bc')); await wait(400);
     const bcShown = +$('#s-shown').textContent.replace(/\D/g,'');
-    const bcReal = window.XBX_DB.games.filter(g => g.platform==='xbox' && g.bc360 && g.bc360.compatible).length;
+    const bcReal = catalogo().filter(g => g.platform==='xbox' && g.bc360 && g.bc360.compatible).length;
     ok('filtro retrocompat', bcShown === bcReal, bcShown + ' exibidos vs ' + bcReal + ' reais');
     $('#f-bc').value = 'all'; fire($('#f-bc'));
     // emulacao fica de fora: ela vem desligada de proposito e ligar dispara o
     // download do catalogo dela, o que mudaria todas as contagens seguintes
-    $$('.f-plat').forEach(c => { c.checked = c.value !== 'emu'; fire(c); }); await wait(400);
+    $$('.f-plat').forEach(c => { c.checked = c.value !== 'emu'; fire(c); });
+    await until(() => window.XBX_XBLIG && window.XBX_HB, 20000); await wait(500);
+    ok('ligar a categoria baixa o bundle dela',
+       !!window.XBX_XBLIG && !!window.XBX_HB,
+       'xblig=' + (((window.XBX_XBLIG||{}).games)||[]).length +
+       ' hb=' + (((window.XBX_HB||{}).games)||[]).length);
 
     // busca
     $('#q').value = 'halo'; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(600);
@@ -72,15 +112,15 @@
     $('#f-own').value = 'yes'; fire($('#f-own')); await wait(400);
     ok('filtro so-tenho', cards().length === 1, cards().length + ' card(s)');
     $('#f-own').value = 'no'; fire($('#f-own')); await wait(400);
-    ok('filtro so-faltam', +$('#s-shown').textContent.replace(/\D/g,'') === window.XBX_DB.games.length - 1, $('#s-shown').textContent);
+    ok('filtro so-faltam', +$('#s-shown').textContent.replace(/\D/g,'') === catalogo().length - 1, $('#s-shown').textContent);
     $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
 
     // persistencia de filtros
     ok('filtros salvos no storage', !!localStorage.getItem('xbx.filters.v1'));
 
     // import: injeta ids conhecidos e valida via fluxo real do app
-    const sample = window.XBX_DB.games.slice(0, 5).map(g => g.id);
-    const wsample = window.XBX_DB.games.slice(10, 13).map(g => g.id);
+    const sample = catalogo().slice(0, 5).map(g => g.id);
+    const wsample = catalogo().slice(10, 13).map(g => g.id);
     const payload = JSON.stringify({app:'xbox-vault', version:2,
       owned: sample.concat(['id-que-nao-existe']), wishlist: wsample});
     const file = new File([payload], 'col.json', {type:'application/json'});
@@ -118,7 +158,7 @@
     await until(() => cards().length > 50, 8000); await wait(300);
 
     // ---- co-op vindo do Co-Optimus ----
-    const comCoop = window.XBX_DB.games.filter(g => g.coopInfo);
+    const comCoop = catalogo().filter(g => g.coopInfo);
     ok('catalogo tem co-op do Co-Optimus', comCoop.length > 0, comCoop.length + ' jogos');
     ok('todo coopInfo tem numero util',
        comCoop.every(g => ['local','online','combo','lan'].some(k => typeof g.coopInfo[k] === 'number')));
@@ -131,7 +171,7 @@
     // o inverso: quem tem co-op sem conferencia precisa dizer isso
     // o aviso vale nos dois lados: quem diz ter co-op sem conferencia, e quem
     // diz nao ter -- calar no segundo caso faz parecer que a ausencia foi checada
-    const semCoopNemInfo = window.XBX_DB.games.filter(g =>
+    const semCoopNemInfo = catalogo().filter(g =>
       !g.tags.coop && !g.coopInfo && g.tags.source !== 'not-a-game' && g.tags.singlePlayer);
     ok('existem jogos sem co-op e sem conferencia', semCoopNemInfo.length > 0,
        semCoopNemInfo.length + ' jogos');
@@ -149,7 +189,7 @@
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
       await until(() => cards().length > 50, 8000); await wait(300);
     }
-    const semConf = window.XBX_DB.games.filter(g => g.tags.coop && !g.coopInfo);
+    const semConf = catalogo().filter(g => g.tags.coop && !g.coopInfo);
     ok('existem jogos com co-op nao conferido', semConf.length > 0, semConf.length + ' jogos');
     if (semConf.length) {
       const sc = semConf[0];
@@ -189,9 +229,9 @@
     }
 
     // ---- screenshots do Marketplace e Title Updates ----
-    const comShot = window.XBX_DB.games.filter(g => g.screens);
+    const comShot = catalogo().filter(g => g.screens);
     ok('catalogo tem galeria de screenshots', comShot.length > 1000, comShot.length + ' jogos');
-    const comTu = window.XBX_DB.games.filter(g => g.tu && g.tu.n);
+    const comTu = catalogo().filter(g => g.tu && g.tu.n);
     ok('catalogo tem Title Updates', comTu.length > 0, comTu.length + ' com patch');
     {
       const alvo = comShot.find(g => g.tu && g.tu.n) || comShot[0];
@@ -240,7 +280,7 @@
 
     // ---- tempo de jogo (curadoria manual) ----
     {
-      const comTempo = window.XBX_DB.games.filter(g => g.tempo);
+      const comTempo = catalogo().filter(g => g.tempo);
       ok('catalogo tem tempo de jogo', comTempo.length > 0, comTempo.length + ' jogos');
       const alvo = comTempo[0];
       if (alvo) {
@@ -272,7 +312,7 @@
 
     // ---- lista de Title Updates ----
     {
-      const alvo = window.XBX_DB.games.filter(g => g.tu && g.tu.n > 1)
+      const alvo = catalogo().filter(g => g.tu && g.tu.n > 1)
         .sort((a, b) => b.tu.n - a.tu.n)[0];
       if (alvo) {
         $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
@@ -312,7 +352,7 @@
 
     // ---- tamanho do download ----
     {
-      const comTam = window.XBX_DB.games.filter(g => typeof g.tamanho === 'number');
+      const comTam = catalogo().filter(g => typeof g.tamanho === 'number');
       ok('catalogo tem tamanho de download', comTam.length > 1000, comTam.length + ' jogos');
       ok('tamanho em GB, sempre positivo e plausivel',
          comTam.every(g => g.tamanho > 0 && g.tamanho < 60));
@@ -345,7 +385,7 @@
 
     // ---- DLC do Marketplace ----
     {
-      const comDlc = window.XBX_DB.games.filter(g => (g.dlc || []).length);
+      const comDlc = catalogo().filter(g => (g.dlc || []).length);
       ok('catalogo tem lista de DLC', comDlc.length > 100, comDlc.length + ' jogos');
       const alvo = comDlc.filter(g => g.image).sort((a,b) => b.dlc.length - a.dlc.length)[0];
       if (alvo) {
@@ -377,7 +417,7 @@
 
     // ---- resolução nativa ----
     {
-      const comRes = window.XBX_DB.games.filter(g => g.resolucao);
+      const comRes = catalogo().filter(g => g.resolucao);
       ok('catalogo tem resolucao nativa', comRes.length > 100, comRes.length + ' jogos');
       // o interessante e justamente quem NAO roda em 720p
       const sub = comRes.find(g => g.resolucao.h < 720 && g.image) || comRes[0];
@@ -404,10 +444,10 @@
 
     // ---- Title ID ----
     {
-      const alvo = window.XBX_DB.games.find(g => g.titleId && g.image);
+      const alvo = catalogo().find(g => g.titleId && g.image);
       ok('catalogo tem Title ID',
-         window.XBX_DB.games.filter(g => g.titleId).length > 1000,
-         window.XBX_DB.games.filter(g => g.titleId).length + ' jogos');
+         catalogo().filter(g => g.titleId).length > 1000,
+         catalogo().filter(g => g.titleId).length + ' jogos');
       if (alvo) {
         $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
         await until(() => cards().length > 0, 6000); await wait(300);
@@ -435,7 +475,7 @@
     const sheet = document.querySelector('.sheet--det');
     ok('clique no card abre o popup', !!sheet && !document.getElementById('modal').hidden);
     if (sheet) {
-      const dg = window.XBX_DB.games.find(g => g.id === did);
+      const dg = catalogo().find(g => g.id === did);
       ok('popup mostra o titulo', !!dg && sheet.textContent.includes(dg.title),
          dg ? dg.title : 'id do card nao esta no catalogo: ' + JSON.stringify(did));
       const abas = [...sheet.querySelectorAll('.aba')].map(b => b.textContent.trim());
@@ -573,12 +613,12 @@
     await buscar('Bayonetta');
     ok('card reflete a remocao vinda de fora', !cards()[0].classList.contains('own'));
 
-    const outro = window.XBX_DB.games[5].id;
+    const outro = catalogo()[5].id;
     await impMarks({app:'xbox-vault', version:3, owned:[], wishlist:[],
                     marks:{[outro]:{s:'wish', t: Date.now() + 60000}}});
     ok('marca externa mais nova entra', lerMarks()[outro]?.s === 'wish');
 
-    const v2alvo = window.XBX_DB.games[9].id;
+    const v2alvo = catalogo()[9].id;
     await impMarks({app:'xbox-vault', version:2, owned:[v2alvo], wishlist:[]});
     ok('arquivo v2 antigo (sem marks) ainda importa', lerMarks()[v2alvo]?.s === 'own');
 
@@ -589,24 +629,24 @@
     $('#f-own').value='all'; fire($('#f-own'));
     $('#q').value=''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
     await until(() => cards().length > 50, 8000); await wait(300);
-    const comMC = window.XBX_DB.games.filter(g => typeof g.mc === 'number');
+    const comMC = catalogo().filter(g => typeof g.mc === 'number');
     ok('catalogo tem notas', comMC.length > 2000, comMC.length + ' jogos com nota');
     ok('notas em faixa valida', comMC.every(g => g.mc >= 0 && g.mc <= 100));
-    const halo = window.XBX_DB.games.find(g => g.id === 'x360-halo-3');
+    const halo = catalogo().find(g => g.id === 'x360-halo-3');
     ok('Halo 3 = 94', halo && halo.mc === 94, String(halo && halo.mc));
 
     $('#f-mc').value='90'; fire($('#f-mc')); await wait(600);
-    const alta = window.XBX_DB.games.filter(g => g.mc >= 90).length;
+    const alta = catalogo().filter(g => g.mc >= 90).length;
     ok('filtro nota 90+', +$('#s-shown').textContent.replace(/\D/g,'') === alta, alta + ' jogos');
     ok('sem nota nao passa no filtro',
-       cards().every(c => { const g = window.XBX_DB.games.find(x => x.id === c.dataset.id);
+       cards().every(c => { const g = catalogo().find(x => x.id === c.dataset.id);
                             return g && g.mc >= 90; }));
     ok('card mostra o badge da nota', !!cards()[0].querySelector('.mc'),
        cards()[0].querySelector('.mc') ? cards()[0].querySelector('.mc').textContent : '');
 
     $('#f-sort').value='mc'; fire($('#f-sort')); await wait(600);
     const notas = cards().slice(0,10).map(c => {
-      const g = window.XBX_DB.games.find(x => x.id === c.dataset.id); return g.mc; });
+      const g = catalogo().find(x => x.id === c.dataset.id); return g.mc; });
     ok('ordenacao por nota (desc)',
        notas.every((n,i) => i===0 || notas[i-1] >= n), JSON.stringify(notas));
     ok('ordenar por nota nao agrupa por ano', document.querySelectorAll('.year').length === 0,
@@ -635,7 +675,7 @@
       ok('export contem a colecao', p.owned.length === cur.length && p.owned.length > 0,
          p.owned.length + ' ids exportados');
       ok('export: count confere', p.count === p.owned.length, 'count=' + p.count);
-      ok('export -> import ida e volta', p.owned.every(i => window.XBX_DB.games.some(g => g.id === i)),
+      ok('export -> import ida e volta', p.owned.every(i => catalogo().some(g => g.id === i)),
          'todos os ids existem no catalogo');
       const curW = JSON.parse(localStorage.getItem('xbx.wishlist.v1') || '[]');
       ok('export inclui a wishlist', Array.isArray(p.wishlist) && p.wishlist.length === curW.length && curW.length > 0,
@@ -648,26 +688,26 @@
     } else ok('export gera JSON valido', false, 'blob nao capturado');
 
     // filtros de tags (so valem quando ha dados de tags)
-    const tagged = window.XBX_DB.games.filter(g => g.tags && Object.keys(g.tags).length);
+    const tagged = catalogo().filter(g => g.tags && Object.keys(g.tags).length);
     if (tagged.length > 100) {
       const coopBox = $$('.f-mode').find(c => c.value === 'coop');
       coopBox.checked = true; fire(coopBox); await wait(500);
       const shown = +$('#s-shown').textContent.replace(/\D/g,'');
-      const real = window.XBX_DB.games.filter(g => g.tags && g.tags.coop).length;
+      const real = catalogo().filter(g => g.tags && g.tags.coop).length;
       ok('filtro co-op', shown === real, shown + ' exibidos vs ' + real + ' reais');
       const lb = $$('.f-mode').find(c => c.value === 'multiplayerLocal');
       lb.checked = true; fire(lb); await wait(500);
-      const both = window.XBX_DB.games.filter(g => g.tags && g.tags.coop && g.tags.multiplayerLocal).length;
+      const both = catalogo().filter(g => g.tags && g.tags.coop && g.tags.multiplayerLocal).length;
       ok('filtros combinam (E logico)', +$('#s-shown').textContent.replace(/\D/g,'') === both, both + ' co-op local');
       coopBox.checked = false; fire(coopBox); lb.checked = false; fire(lb); await wait(400);
 
       $('#f-pl-min').value = '4'; fire($('#f-pl-min')); await wait(500);
-      const p4 = window.XBX_DB.games.filter(g => { const t = g.tags||{};
+      const p4 = catalogo().filter(g => { const t = g.tags||{};
         return Math.max(t.maxPlayersLocal||0, t.maxPlayersOnline||0, t.maxPlayers||0) >= 4; }).length;
       ok('filtro 4+ jogadores', +$('#s-shown').textContent.replace(/\D/g,'') === p4, p4 + ' jogos');
       $('#f-pl-min').value = '0'; fire($('#f-pl-min')); await wait(300);
 
-      const withImg = window.XBX_DB.games.filter(g => g.image).length;
+      const withImg = catalogo().filter(g => g.image).length;
       ok('capas presentes', withImg > tagged.length * 0.5, withImg + ' jogos com imagem');
     } else ok('dados de tags presentes', false, 'apenas ' + tagged.length + ' jogos com tags');
 
@@ -675,6 +715,24 @@
     const before = cards().length;
     window.scrollTo(0, document.body.scrollHeight); await wait(900);
     ok('render progressivo', cards().length > before, before + ' -> ' + cards().length + ' cards');
+
+    // ---- regressao: importar marcacao de categoria nao carregada ----
+    // O applyImport comparava contra o catalogo CARREGADO, entao um backup com
+    // jogos de emulacao perdia essas marcacoes em silencio, e o aviso contava
+    // menos do que perdia. Agora ele baixa o catalogo antes de julgar.
+    {
+      const emuId = 'emu-ps1-resident-evil';
+      ok('o id de emulacao nao esta no bundle principal',
+         !window.XBX_DB.games.some(g => g.id === emuId));
+      ok('e a emulacao nao foi carregada ate aqui', !window.XBX_EMU);
+      await impMarks({app:'xbox-vault', version:3, owned:[], wishlist:[],
+                      marks:{[emuId]:{s:'hide', t: Date.now()}}});
+      await until(() => !!window.XBX_EMU, 20000); await wait(400);
+      const m = JSON.parse(localStorage.getItem('xbx.marks.v3') || '{}');
+      ok('a marcacao de emulacao sobrevive ao import',
+         !!m[emuId] && m[emuId].s === 'hide', JSON.stringify(m[emuId]));
+      ok('o import baixou o catalogo que faltava', !!window.XBX_EMU);
+    }
 
     localStorage.clear();
     return R.join('\n');

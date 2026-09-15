@@ -10,7 +10,9 @@ marcação de "eu tenho" que você exporta e importa como arquivo.
 ## Como abrir
 
 Pelo navegador, é só acessar o link acima. Para rodar local, basta **abrir o `index.html`** no navegador (duplo clique). Não precisa de servidor: os dados são
-carregados via `<script>`, não por `fetch()`, justamente para funcionar em `file://`.
+carregados via `<script>`, não por `fetch()`, justamente para funcionar em `file://`. São quatro
+arquivos: o `db.js` desce sempre, com 2,5 MB, e `db-xblig.js`, `db-hb.js` e `db-emu.js` descem só
+quando você liga a categoria correspondente.
 
 Se preferir servir por HTTP:
 
@@ -34,8 +36,7 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   50–74, vermelho abaixo). Dá para filtrar por nota mínima e ordenar por nota. **2.223 jogos têm
   nota**: 67% do Xbox 360 e 78% do Xbox original; XBLIG e emulação não têm.
 - **Emulação**: desligada por padrão. Ao ligar, o site baixa `data/db-emu.js` (uma vez por
-  visita) com SNES, GBA e PS1, que o 360 roda via homebrew. Quem nunca liga a
-  categoria não paga nada pelo peso dela. Traz um sub-filtro por sistema e outro por tipo de
+  visita) com SNES, GBA e PS1, que o 360 roda via homebrew. Traz um sub-filtro por sistema e outro por tipo de
   lançamento, que começa em **só oficiais**: dos 9.962, apenas 7.976 são jogos licenciados; o
   resto são 1.478 ROM hacks, 222 homebrew, 138 não-licenciados e 136 nunca lançados.
 - **Não quero**: o botão `⊘`. O jogo sai de todas as listas e só reaparece no filtro
@@ -45,10 +46,11 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
 - **Filtros** (coluna da esquerda): coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
-  Os filtros ficam salvos entre visitas. **Indie (XBLIG) e homebrew nascem desmarcados**, como
-  a emulação: o catálogo abre no Xbox 360 e no Xbox original, e as outras categorias entram
-  quando você liga. O peso delas continua vindo no mesmo arquivo, então ligar não baixa nada
-  (só a emulação é carregada à parte).
+  Os filtros ficam salvos entre visitas. **Indie (XBLIG), homebrew e emulação nascem
+  desmarcados**: o catálogo abre no Xbox 360 e no Xbox original, e as outras três entram quando
+  você liga. Cada uma mora num arquivo próprio e só é baixada nesse momento, uma vez por visita,
+  então quem nunca liga não paga o peso delas. O contador ao lado de cada categoria mostra o
+  tamanho dela mesmo antes de baixar, porque esse total viaja no arquivo principal.
 - **Tamanho do download**: na aba Visão geral do popup, para **2.798 jogos**, vindo das páginas
   do Marketplace arquivadas no Internet Archive. É o download real, e não a imagem de disco com
   enchimento, onde quase tudo cairia em 7,30 ou 8,14 GB. Abaixo de 1 GB aparece em MB, porque 83%
@@ -108,14 +110,17 @@ data/
   tamanho.json      tamanho do download, em GB, do Marketplace arquivado
   tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
   hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
-  db.js             tudo acima unido, é o que o site carrega
+  db.js             Xbox 360 + Xbox original, é o que carrega no primeiro byte
+  db-xblig.js       XBLIG, baixado só quando a categoria é ligada
+  db-hb.js          homebrew, idem
+  db-emu.js         emulação, idem
 tools/
   wikilib.py        acesso à API da Wikipédia (com cache em disco) + parser de wikitext
   taglib.py         extração de modos de jogo a partir do artigo
   build_*.py        geram os data/*.json das listas
   tag_*.py          geram os data/tags-*.json
   fetch_hltb.py     tempo de jogo do HowLongToBeat (resumível)
-  bundle.py         une os JSONs em data/db.js
+  bundle.py         une os JSONs nos quatro db*.js
 images/             capas em WebP (240px, q72), uma por jogo, versionadas no repo
 cache/              respostas da API da Wikipédia (pode apagar; será rebaixado)
 ```
@@ -135,7 +140,7 @@ python3 tools/fetch_images_extra.py      # links verificados à mão para o rest
 python3 tools/fetch_hltb.py xbox         # tempo de jogo: 360 + Xbox original
 python3 tools/fetch_hltb.py emu          # idem, catálogo de emulação
 python3 tools/fetch_hltb.py indies       # idem, XBLIG
-python3 tools/bundle.py         # <- sempre por último: escreve data/db.js
+python3 tools/bundle.py         # <- sempre por último: escreve os quatro db*.js
 ```
 
 Todos são idempotentes e usam `cache/`, então re-rodar é barato. **Depois de qualquer edição nos

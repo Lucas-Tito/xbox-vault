@@ -87,39 +87,75 @@ function subsequencia(agulha, palheiro) {
 }
 GAMES.forEach(prepararJogo);
 
-/* ---- catálogo de emulação: carregado só quando o usuário liga a categoria ----
+/* ---- catálogos sob demanda ----
+   O db.js traz só Xbox 360 e Xbox original. XBLIG, homebrew e emulação moram em
+   arquivo próprio e descem quando a categoria é ligada: juntos são mais da
+   metade do peso, e a maioria das visitas nunca abre nenhum dos três.
+
+   Esta tabela é a fonte única de quem carrega o quê. O filtro, o boot e a
+   importação consultam ela, e separar mais uma categoria amanhã é acrescentar
+   uma linha aqui, em vez de espalhar prefixo cravado pelo arquivo.
+
    Injetar um <script> (em vez de fetch) é o que faz isso funcionar também com o
    site aberto direto do arquivo, via file://, onde fetch de arquivo local é bloqueado. */
-var emuCarregado = false, emuCarregando = false;
+var CATALOGOS = {
+  xblig:    { arquivo: "data/db-xblig.js", global: "XBX_XBLIG", prefixo: "xblig-", nome: "os indies" },
+  homebrew: { arquivo: "data/db-hb.js",    global: "XBX_HB",    prefixo: "hb-",    nome: "os homebrews" },
+  emu:      { arquivo: "data/db-emu.js",   global: "XBX_EMU",   prefixo: "emu-",   nome: "a emulação" }
+};
 
-function carregarEmu(pronto) {
-  if (emuCarregado) return pronto();
-  if (emuCarregando) return;
-  emuCarregando = true;
+/* Das plataformas pedidas, quais ainda não estão em GAMES. */
+function pendentes(plats) {
+  return plats.filter(function (p) { return CATALOGOS[p] && !CATALOGOS[p].carregado; });
+}
+
+function carregarCatalogo(chave, pronto) {
+  var c = CATALOGOS[chave];
+  if (!c || c.carregado) return pronto(true);
+  /* Fila em vez de desistir: dois eventos seguidos, como marcar duas categorias
+     de uma vez, faziam o segundo pedido cair no chao sem chamar ninguem de
+     volta, e a corrente parava ali -- a segunda categoria nunca descia. */
+  (c.fila = c.fila || []).push(pronto);
+  if (c.carregando) return;
+  c.carregando = true;
+  var servir = function (ok) {
+    var f = c.fila || []; c.fila = [];
+    f.forEach(function (cb) { cb(ok); });
+  };
   var main = $("#main");
-  if (main) main.innerHTML = '<div class="loading">Carregando o catálogo de emulação…<br>' +
-    '<small>São ~10 mil jogos; isso acontece só uma vez por visita.</small></div>';
+  if (main) main.innerHTML = '<div class="loading">Carregando ' + esc(c.nome) + '…<br>' +
+    '<small>Isso acontece só uma vez por visita.</small></div>';
   var sc = document.createElement("script");
-  sc.src = "data/db-emu.js";
+  sc.src = c.arquivo;
   sc.onload = function () {
-    var lista = (window.XBX_EMU && window.XBX_EMU.games) || [];
+    var lista = (window[c.global] && window[c.global].games) || [];
     lista.forEach(prepararJogo);
     GAMES = GAMES.concat(lista);
-    emuCarregado = true; emuCarregando = false;
+    c.carregado = true; c.carregando = false;
     montarFacetas();          // anos e gêneros mudaram
-    pronto();
+    servir(true);
   };
   sc.onerror = function () {
-    emuCarregando = false;
-    F.plats = F.plats.filter(function (p) { return p !== "emu"; });
-    $$(".f-plat").forEach(function (c) { if (c.value === "emu") c.checked = false; });
-    alert("Não consegui carregar data/db-emu.js. Confira se o arquivo está junto do site.");
-    pronto();
+    c.carregando = false;
+    F.plats = F.plats.filter(function (x) { return x !== chave; });
+    $$(".f-plat").forEach(function (x) { if (x.value === chave) x.checked = false; });
+    alert("Não consegui carregar " + c.arquivo + ". Confira se o arquivo está junto do site.");
+    servir(false);
   };
   document.head.appendChild(sc);
 }
 
-/* ---------------- filtragem ---------------- */
+/* Em sequência, e só então segue: dois <script> concorrentes competiriam pelo
+   mesmo #main e pela mesma remontagem de facetas. */
+function carregarCatalogos(chaves, pronto) {
+  var ok = true;
+  var proximo = function (i) {
+    if (i >= chaves.length) return pronto(ok);
+    carregarCatalogo(chaves[i], function (bom) { ok = ok && bom; proximo(i + 1); });
+  };
+  proximo(0);
+}
+
 function maxPlayers(g, scope) {
   var t = g._t;
   if (scope === "local")  return t.maxPlayersLocal || 0;
@@ -378,28 +414,33 @@ function updateStats(list) {
   });
   $("#s-wish").textContent = wishlist.size.toLocaleString("pt-BR");
   var eh = $("#s-hide"); if (eh) eh.textContent = escondidos.size.toLocaleString("pt-BR");
+  /* Categoria ainda não baixada não tem jogo em GAMES, mas o total dela veio no
+     bundle principal, em counts. Sem esse resgate o painel exibiria zero, que é
+     mentira, e a porcentagem daria um salto na hora que a categoria carregasse. */
+  var totalPlat = function (k) {
+    if (byPlat[k]) return byPlat[k];
+    return CATALOGOS[k] && !CATALOGOS[k].carregado ? ((DB.counts || {})[k] || 0) : 0;
+  };
+  var totalTudo = GAMES.length;
+  pendentes(Object.keys(CATALOGOS)).forEach(function (k) { totalTudo += totalPlat(k); });
+
   $("#s-shown").textContent = list.length.toLocaleString("pt-BR");
-  $("#s-total").textContent = GAMES.length.toLocaleString("pt-BR");
+  $("#s-total").textContent = totalTudo.toLocaleString("pt-BR");
   $("#s-own").textContent = ownCount.toLocaleString("pt-BR");
-  var pct = GAMES.length ? (ownCount / GAMES.length * 100) : 0;
+  var pct = totalTudo ? (ownCount / totalTudo * 100) : 0;
   $("#s-pct").textContent = "(" + pct.toFixed(1) + "%)";
   $("#s-bar").style.width = pct + "%";
   $("#s-breakdown").textContent =
-    "360: " + ownPlat.x360 + "/" + byPlat.x360 +
-    " · Indie: " + ownPlat.xblig + "/" + byPlat.xblig +
-    " · Xbox: " + ownPlat.xbox + "/" + byPlat.xbox +
-    " · Homebrew: " + ownPlat.homebrew + "/" + byPlat.homebrew +
-    (byPlat.emu ? " · Emulação: " + ownPlat.emu + "/" + byPlat.emu : "");
+    "360: " + ownPlat.x360 + "/" + totalPlat("x360") +
+    " · Indie: " + ownPlat.xblig + "/" + totalPlat("xblig") +
+    " · Xbox: " + ownPlat.xbox + "/" + totalPlat("xbox") +
+    " · Homebrew: " + ownPlat.homebrew + "/" + totalPlat("homebrew") +
+    " · Emulação: " + ownPlat.emu + "/" + totalPlat("emu");
   $$("[data-cnt^='plat-']").forEach(function (el) {
-    var k = el.dataset.cnt.slice(5);
-    // A emulacao so entra em GAMES depois do download sob demanda, entao ate la
-    // o numero vem do total que o bundle.py grava no db.js. Bundle velho nao
-    // tem esse campo: nesse caso fica em branco, que mente menos que um zero.
-    if (k === "emu" && !byPlat.emu) {
-      el.textContent = (DB.counts || {}).emu || "";
-      return;
-    }
-    el.textContent = byPlat[k] || 0;
+    var k = el.dataset.cnt.slice(5), n = totalPlat(k);
+    // Bundle velho nao traz o total das categorias sob demanda: nesse caso fica
+    // em branco, que mente menos que um zero.
+    el.textContent = n || (CATALOGOS[k] && !CATALOGOS[k].carregado ? "" : 0);
   });
 }
 
@@ -937,15 +978,50 @@ function parseImport(text) {
   return { owned: str(o), wishlist: str(w), hidden: str(data.hidden || []), marks: m };  // v1/v2 não têm marks
 }
 
-function applyImport(p, mode) {
+function applyImport(p, mode, semConferir) {
+  var todos = Object.keys(p.marks || {}).concat(p.owned, p.wishlist, p.hidden || []);
+
+  /* O filtro abaixo compara contra o catálogo CARREGADO, e as categorias sob
+     demanda não estão nele. Antes de julgar um id como inexistente, baixar o
+     catálogo a que ele pertence. Era assim que importar um backup com a
+     emulação desligada apagava em silêncio as marcações dela, e o aviso ainda
+     contava menos do que perdia, porque só somava owned e wishlist: num caso
+     real, 6 avisados e 18 perdidos, sendo 12 deles "não quero". */
+  if (!semConferir) {
+    var faltam = Object.keys(CATALOGOS).filter(function (k) {
+      if (CATALOGOS[k].carregado) return false;
+      for (var i = 0; i < todos.length; i++) {
+        if (todos[i].indexOf(CATALOGOS[k].prefixo) === 0) return true;
+      }
+      return false;
+    });
+    /* Se o download falhar, guardar vale mais que descartar: a marcação é da
+       pessoa, e um id que não casa com jogo nenhum é inerte, nunca renderiza. */
+    if (faltam.length) {
+      return carregarCatalogos(faltam, function (ok) { applyImport(p, mode, !ok); });
+    }
+  }
+
   var known = new Set(GAMES.map(function (g) { return g.id; }));
-  var keep = function (a) { return a.filter(function (i) { return known.has(i); }); };
+  var deCatalogo = function (id) {
+    for (var k in CATALOGOS) if (id.indexOf(CATALOGOS[k].prefixo) === 0) return true;
+    return false;
+  };
+  var vale = function (id) { return known.has(id) || (semConferir && deCatalogo(id)); };
+  var keep = function (a) { return a.filter(vale); };
   var o = keep(p.owned), w = keep(p.wishlist);
-  var unknown = (p.owned.length - o.length) + (p.wishlist.length - w.length);
+
+  // o aviso conta o arquivo INTEIRO, e nao so as duas listas
+  var vistos = {}, ignorados = 0;
+  todos.forEach(function (id) {
+    if (vistos[id] || vale(id)) return;
+    vistos[id] = 1; ignorados++;
+  });
+
   if (p.marks) {                       // arquivo v3: junta respeitando os timestamps
     if (mode === "replace") { marks = {}; }
     var lim = {};
-    for (var k in p.marks) if (known.has(k)) lim[k] = p.marks[k];
+    for (var k in p.marks) if (vale(k)) lim[k] = p.marks[k];
     if (mode === "replace") { marks = lim; rebuildSets(); }
     else mergeMarks(lim);
   } else {                             // arquivo v1/v2: sem timestamp, assume "agora"
@@ -959,7 +1035,8 @@ function applyImport(p, mode) {
   saveMarks(); render();
   closeModal();
   alert("Importado: " + o.length + " na coleção, " + w.length + " na wishlist" +
-    (unknown ? "\n" + unknown + " id(s) do arquivo não existem neste catálogo e foram ignorados." : "") +
+    (ignorados ? "\n" + ignorados + " id(s) do arquivo não existem no catálogo e foram ignorados." : "") +
+    (semConferir ? "\nNão consegui carregar uma das categorias, então os ids dela entraram sem conferência." : "") +
     "\nAgora: " + owned.size + " que tenho, " + wishlist.size + " na wishlist.");
 }
 
@@ -998,8 +1075,9 @@ function saveF() { try { localStorage.setItem(FILT_KEY, JSON.stringify(F)); } ca
 function onChange() {
   saveF();
   subfiltrosEmu();
-  // ligar a emulação dispara o download do catálogo dela, uma vez por visita
-  if (F.plats.indexOf("emu") >= 0 && !emuCarregado) return carregarEmu(render);
+  // ligar uma categoria sob demanda dispara o download dela, uma vez por visita
+  var faltam = pendentes(F.plats);
+  if (faltam.length) return carregarCatalogos(faltam, render);
   render();
 }
 
@@ -1166,8 +1244,9 @@ if (!GAMES.length) {
 } else {
   initControls();
   render();
-  // Se a emulacao ficou ligada de uma visita anterior, o filtro salvo a pede mas
-  // nada dispara o carregamento no boot -- a lista viria vazia.
-  if (F.plats.indexOf("emu") >= 0 && !emuCarregado) carregarEmu(render);
+  // Se uma categoria sob demanda ficou ligada de uma visita anterior, o filtro
+  // salvo a pede mas nada dispara o carregamento no boot: a lista viria vazia.
+  var faltamNoBoot = pendentes(F.plats);
+  if (faltamNoBoot.length) carregarCatalogos(faltamNoBoot, render);
 }
 })();

@@ -313,32 +313,42 @@ def escrever(caminho, variavel, payload):
 
 
 def main():
+    # O db.js desce no primeiro byte, entao so o que quase todo mundo veio ver
+    # fica nele: Xbox 360 e Xbox original. XBLIG, homebrew e emulacao viram
+    # arquivo proprio e so descem quando a categoria e ligada -- juntos sao mais
+    # da metade do peso, e a maioria das visitas nunca abre nenhum dos tres.
+    #
+    # O TOTAL de cada catalogo sob demanda viaja no bundle principal, dentro de
+    # counts, porque o filtro precisa dizer o tamanho da categoria ANTES de
+    # baixa-la. Sem isso o painel conta os jogos que estao em GAMES, onde eles
+    # ainda nao estao, e exibe um zero falso.
     print("== catalogo principal ==")
     games, counts = montar(
-        [("x360.json", "Xbox 360"), ("xblig.json", "Indie (XBLIG)"),
-         ("xbox.json", "Xbox original"), ("homebrew.json", "Homebrew")],
-        ["tags-x360.json", "tags-xblig.json", "tags-xbox.json", "tags-homebrew.json"],
+        [("x360.json", "Xbox 360"), ("xbox.json", "Xbox original")],
+        ["tags-x360.json", "tags-xbox.json"],
         "principal", extras=load("vazados.json", {}).get("catalogo", []))
-    # Emulacao vai num arquivo separado: a categoria vem desligada e o site so
-    # baixa este arquivo se o usuario ligar. Quem nunca ligar nao paga o peso.
-    # Ela e montada ANTES de escrever o bundle principal so para o total dela
-    # caber la dentro; ver counts["emu"] logo abaixo.
-    print("\n== emulacao (carregada sob demanda) ==")
-    emu, ec = montar([("emu.json", "SNES/GBA/PS1")], ["tags-emu.json"], "emulacao")
 
-    # O tamanho da categoria viaja no bundle principal porque o filtro precisa
-    # dele antes de baixar os 3,9 MB da emulacao. Sem isso o painel contava os
-    # jogos em GAMES, onde a emulacao ainda nao esta, e exibia um zero falso.
-    if emu:
-        counts["emu"] = ec.get("total", len(emu))
+    SOB_DEMANDA = [
+        ("xblig", "db-xblig.js", "XBX_XBLIG",
+         [("xblig.json", "Indie (XBLIG)")], ["tags-xblig.json"]),
+        ("homebrew", "db-hb.js", "XBX_HB",
+         [("homebrew.json", "Homebrew")], ["tags-homebrew.json"]),
+        ("emu", "db-emu.js", "XBX_EMU",
+         [("emu.json", "SNES/GBA/PS1")], ["tags-emu.json"]),
+    ]
+    prontos = []
+    for chave, arquivo, variavel, listas, tags in SOB_DEMANDA:
+        print("\n== %s (sob demanda) ==" % chave)
+        jogos, c = montar(listas, tags, chave)
+        if not jogos:
+            continue
+        counts[chave] = c.get("total", len(jogos))
+        prontos.append((arquivo, variavel, jogos, c))
 
-    escrever("db.js", "XBX_DB", {
-        "generated": datetime.datetime.now().isoformat(timespec="seconds"),
-        "counts": counts, "games": games})
-    if emu:
-        escrever("db-emu.js", "XBX_EMU", {
-            "generated": datetime.datetime.now().isoformat(timespec="seconds"),
-            "counts": ec, "games": emu})
+    agora = datetime.datetime.now().isoformat(timespec="seconds")
+    escrever("db.js", "XBX_DB", {"generated": agora, "counts": counts, "games": games})
+    for arquivo, variavel, jogos, c in prontos:
+        escrever(arquivo, variavel, {"generated": agora, "counts": c, "games": jogos})
     return 0
 
 
