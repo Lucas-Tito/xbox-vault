@@ -283,10 +283,14 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         if n and isinstance(n.get("score"), int):
             g["mc"] = n["score"]
             if n.get("geral"):
-                # nota que NAO e da plataforma do jogo: o site avisa no popup.
-                # A lista de plataformas continua em metacritic*.json ("plats"),
-                # mas nao vai para o db.js: o aviso do popup nao usa mais.
+                # Nota da pagina GERAL do jogo, que cobre varios consoles de uma
+                # vez. Nao quer dizer "de outro console": em 55 dos 198 casos o
+                # console do jogo esta na lista. O que nao da e saber a qual
+                # versao o numero se refere, e por isso a lista vai junto: ela e
+                # o que o popup mostra no hover.
                 g["mcGeral"] = True
+                if n.get("plats"):
+                    g["mcPlats"] = n["plats"]
         else:
             g.pop("mc", None)
     com_mc = sum(1 for g in games if g.get("mc"))

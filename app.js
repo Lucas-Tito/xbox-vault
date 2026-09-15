@@ -323,7 +323,8 @@ function cardHtml(g) {
   // uma escala de 0-100 com uma de 0-5.
   var mc = typeof g.mc === "number"
     ? '<span class="mc ' + mcClasse(g.mc) + (g.mcGeral ? " geral" : "") + '" title="' +
-      (g.mcGeral ? "Metacritic de outra plataforma" : "Metacritic") + '">' + g.mc +
+      (g.mcGeral ? "Nota Geral do Metacritic" + (g.mcPlats ? ": " + g.mcPlats : "")
+        : "Metacritic") + '">' + g.mc +
       (g.mcGeral ? '<i>*</i>' : "") + "</span>"
     : (typeof g.ur === "number"
       ? '<span class="ur" title="Nota dos jogadores no Xbox Marketplace (0 a 5)">' +
@@ -924,17 +925,21 @@ function detalheHtml(g) {
       /* O rotulo da nota diz so a fonte. O quadrado colorido e a pilula com
          estrela ja separam critica de publico, entao escrever "nota da critica"
          era legendar o que o desenho mostra. */
+      /* "Nota Geral" é o que o dado diz de si: ela veio da página geral do
+         jogo no Metacritic, que cobre vários consoles de uma vez. A versão
+         anterior afirmava "não é da versão de X", o que é falso em 55 dos 198
+         casos, porque o console do jogo costuma estar na lista. A lista exata
+         fica no hover, e o asterisco com rodapé sai: legenda no rótulo não
+         obriga o olho a viajar. */
       (typeof g.mc === "number"
-        ? '<div class="det-mc"><span class="mc ' + mcClasse(g.mc) +
-          (g.mcGeral ? " geral" : "") + '">' + g.mc + (g.mcGeral ? '<i>*</i>' : "") + "</span>" +
-          "<span>Metacritic" + (g.mcGeral ? " *" : "") + "</span></div>" : "") +
+        ? '<div class="det-mc"' + (g.mcGeral && g.mcPlats
+            ? ' title="A nota cobre: ' + esc(g.mcPlats) + '"' : "") + ">" +
+          '<span class="mc ' + mcClasse(g.mc) + (g.mcGeral ? " geral" : "") + '">' +
+          g.mc + "</span><span>" +
+          (g.mcGeral ? "Nota Geral do Metacritic" : "Metacritic") + "</span></div>" : "") +
       (typeof g.ur === "number"
         ? '<div class="det-mc"><span class="ur"><b>★</b>' + urTexto(g.ur) + "</span>" +
           "<span>Xbox Marketplace</span></div>" : "") +
-      (g.mcGeral
-        ? '<p class="det-aviso">* Esta nota do Metacritic não é da versão de ' +
-          esc(PLATNOME[g.platform] || g.platform) + '.</p>'
-        : "") +
       (g.releaseType === "Vazado" && g.nota
         ? '<p class="det-vaz"><b>Cancelado, mas jogável.</b> ' + esc(g.nota) + "</p>" : "") +
       '<div class="det-acoes">' +

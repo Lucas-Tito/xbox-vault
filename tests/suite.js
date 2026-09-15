@@ -506,6 +506,39 @@
       }
     }
 
+    // ---- nota geral do Metacritic ----
+    // A frase antiga dizia "não é da versão de X", falso em 55 dos 198 casos, e
+    // num jogo de emulação saía "não é da versão de Emulação". O rótulo agora
+    // nomeia o que o dado é, e a lista de consoles vive no hover.
+    {
+      const gerais = catalogo().filter(g => g.mcGeral);
+      ok('catalogo tem nota geral do Metacritic', gerais.length > 50, gerais.length + ' jogos');
+      ok('e a lista de consoles veio no bundle',
+         gerais.every(g => typeof g.mcPlats === 'string' && g.mcPlats.length > 2));
+      const g = gerais.find(x => x.image);
+      if (g) {
+        $('#q').value = g.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === g.id);
+        if (c) {
+          c.querySelector('.thumb').click(); await wait(400);
+          const bloco = $('#modal-body .det-mc');
+          ok('o rotulo diz que a nota e geral',
+             !!bloco && /Nota Geral do Metacritic/.test(bloco.textContent),
+             bloco ? bloco.textContent.trim() : 'sem bloco');
+          ok('a lista de consoles fica no hover',
+             !!bloco && (bloco.getAttribute('title') || '').includes(g.mcPlats),
+             bloco ? bloco.getAttribute('title') : '');
+          // nada de asterisco nem rodape: o rotulo carrega a ressalva
+          ok('sumiu o asterisco e o rodape',
+             !$('#modal-body .det-aviso') && !/não é da versão de/.test($('#modal-body').textContent));
+          $('#modal-x').click(); await wait(200);
+        } else ok('card do jogo com nota geral', false, g.id);
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
+    }
+
     // ---- resolução nativa ----
     {
       const comRes = catalogo().filter(g => g.resolucao);
