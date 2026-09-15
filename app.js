@@ -256,6 +256,14 @@ function tagsHtml(g) {
   else if (g.platform === "xbox") h.push('<span class="tag plat">XBOX</span>');
   else h.push('<span class="tag plat">HB</span>');
 
+  /* Nos 3.344 jogos de source "xblig-default" o modo nao e fraco, e inventado:
+     o coletor procura palavra de multiplayer no TITULO e, nao achando nenhuma,
+     grava singlePlayer=true com todo o resto false. Etiqueta ali seria o
+     catalogo afirmando 3.344 vezes uma coisa que ninguem apurou, e aviso no
+     card, numa grade de dezenas, ninguem le. O card entao nao diz nada sobre
+     modo, e quem abrir a ficha encontra a frase inteira. */
+  if (t.source === "xblig-default") return h.join("") + extrasHtml(g);
+
   if (t.singlePlayer) h.push('<span class="tag sp">1P</span>');
   if (t.multiplayerLocal) {
     pl = t.maxPlayersLocal ? t.maxPlayersLocal + "P" : "";
@@ -272,6 +280,14 @@ function tagsHtml(g) {
   }
   if (t.versus) h.push('<span class="tag vs">VS</span>');
 
+  return h.join("") + extrasHtml(g);
+}
+
+/* O que nao e modo de jogo: plataforma ja saiu, aqui vem retrocompatibilidade,
+   situacao de vazado, flags e categoria. Fica a parte porque o card de XBLIG
+   sem fonte pula os modos e vem direto para ca. */
+function extrasHtml(g) {
+  var h = [];
   if (g.platform === "xbox") {
     h.push(g.bc360 && g.bc360.compatible
       ? '<span class="tag bc">RETRO ✓</span>'

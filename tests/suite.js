@@ -383,6 +383,30 @@
       await until(() => cards().length > 50, 8000); await wait(300);
     }
 
+    // ---- card nao afirma modo que ninguem apurou ----
+    {
+      const presumidos = catalogo().filter(g => (g.tags||{}).source === 'xblig-default');
+      ok('catalogo tem jogos com modo presumido', presumidos.length > 1000,
+         presumidos.length + ' jogos');
+      const g = presumidos.find(x => x.image);
+      if (g) {
+        ok('o dado ainda diz single player', !!(g.tags||{}).singlePlayer);
+        $('#q').value = g.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === g.id);
+        if (c) {
+          const etiquetas = [...c.querySelectorAll('.tag')].map(t => t.textContent.trim());
+          // o modo foi inventado pelo coletor: o card cala, e a ficha explica
+          ok('o card NAO mostra etiqueta de modo', !etiquetas.includes('1P'),
+             etiquetas.join(' '));
+          ok('mas o card segue mostrando a plataforma', etiquetas.includes('INDIE'),
+             etiquetas.join(' '));
+        } else ok('card do jogo presumido', false, g.id);
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
+    }
+
     // ---- procedencia das tags de modo ----
     // O popup dizia "Confianca high: conferido a mao", e "manual" nao e
     // conferencia: sao numeros digitados de memoria numa tabela do coletor, sem
