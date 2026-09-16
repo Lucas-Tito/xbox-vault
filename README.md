@@ -61,6 +61,12 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   do Marketplace arquivadas no Internet Archive. É o download real, e não a imagem de disco com
   enchimento, onde quase tudo cairia em 7,30 ou 8,14 GB. Abaixo de 1 GB aparece em MB, porque 83%
   do catálogo está aí e a mediana é 0,04 GB.
+- **Tamanho na emulação**: para **6.638 dos 7.976 jogos oficiais** (83%), de fonte diferente: os
+  DATs do No-Intro, para cartucho, e do Redump, para disco, reunidos no `libretro-database`. Aqui
+  o número é o da **ROM extraída**, que é o que ocupa no HD, e não o do arquivo compactado. A
+  mediana no SNES é 1 MB e nenhum PS1 passa de 0,70 GB, porque um CD não passa. Quando o mesmo
+  jogo existe em várias regiões, vale a americana, depois a mundial, a europeia e a japonesa,
+  nessa ordem, e a região escolhida fica gravada.
 - **Exportar coleção**: baixa um `.json` com a coleção **e** a wishlist.
 - **Importar**: aceita esse mesmo arquivo (ou um array puro de ids), perguntando se você quer
   **somar** ao que já está aqui ou **substituir** tudo.
@@ -114,6 +120,9 @@ data/
   homebrew.json     homebrews                  <- fonte da verdade
   tags-*.json       modos de jogo + URL da capa, indexado por id
   tamanho.json      tamanho do download, em GB, do Marketplace arquivado
+  tamanho-emu.json  tamanho da ROM extraída, em GB, dos DATs do No-Intro e do Redump
+  jogadores-emu.json  nº de jogadores da emulação; manda no que o LaunchBox diz
+  divergencia-jogadores.json  onde as duas fontes discordam; não entra no site
   tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
   hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
   db.js             Xbox 360 + Xbox original, é o que carrega no primeiro byte
@@ -127,6 +136,7 @@ tools/
   build_*.py        geram os data/*.json das listas
   tag_*.py          geram os data/tags-*.json
   fetch_hltb.py     tempo de jogo do HowLongToBeat (resumível)
+  fetch_libretro.py tamanho e nº de jogadores da emulação, dos DATs do libretro
   bundle.py         une os JSONs nos quatro db*.js
 images/             capas em WebP (240px, q72), uma por jogo, versionadas no repo
 cache/              respostas da API da Wikipédia (pode apagar; será rebaixado)
@@ -147,6 +157,7 @@ python3 tools/fetch_images_extra.py      # links verificados à mão para o rest
 python3 tools/fetch_hltb.py xbox         # tempo de jogo: 360 + Xbox original
 python3 tools/fetch_hltb.py emu          # idem, catálogo de emulação
 python3 tools/fetch_hltb.py indies       # idem, XBLIG
+python3 tools/fetch_libretro.py          # tamanho e nº de jogadores da emulação
 python3 tools/bundle.py         # <- sempre por último: escreve os quatro db*.js
 ```
 

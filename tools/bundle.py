@@ -21,7 +21,7 @@ D = os.path.join(ROOT, "data")
 TAG_KEYS = ["singlePlayer", "multiplayerLocal", "multiplayerOnline", "coop", "coopLocal",
             "coopOnline", "versus", "versusLocal", "maxPlayersLocal", "maxPlayersOnline",
             "maxPlayers", "coopLocalMax", "coopOnlineMax", "coopSource",
-            "confidence", "source"]
+            "playersSource", "confidence", "source"]
 
 
 def aplicar_coop(g, t, co):
@@ -200,6 +200,13 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
     # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
     tamanhos = load("tamanho.json", {})
+    # Emulacao: o tamanho vem do DAT do No-Intro (cartucho) e do Redump (disco),
+    # ja em GB e da ROM EXTRAIDA. Mora em arquivo proprio porque a fonte e outra,
+    # igual aos metacritic-emu e hltb-emu.
+    tamanhos.update(load("tamanho-emu.json", {}))
+    # Numero de jogadores da emulacao, do metadat/maxusers do libretro-database.
+    # E a fonte PREFERIDA: onde ela fala, o numero dela vale sobre o do LaunchBox.
+    jogadores = load("jogadores-emu.json", {})
     # Resolucao nativa, da thread do Beyond3D. Nenhuma outra base do projeto tem
     # esse numero, e quase nenhum jogo de 360 rodava em 720p de verdade.
     resolucoes = load("resolucao.json", {})
@@ -246,6 +253,19 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
             t = dict(t)
             if aplicar_coop(g, t, co):
                 coopados += 1
+        lb = jogadores.get(g["id"])
+        if lb and lb.get("users"):
+            t = dict(t)
+            n = lb["users"]
+            t["maxPlayersLocal"] = n
+            t["maxPlayers"] = max(n, t.get("maxPlayersOnline") or 0)
+            # Dois controles num SNES sao multiplayer local. Sem esta linha o
+            # jogo passaria no filtro de 2+ jogadores sem dizer na ficha que tem
+            # multiplayer, que e contradicao na cara de quem le. So ACRESCENTA:
+            # nenhum modo que o LaunchBox afirmou e apagado aqui.
+            if n >= 2:
+                t["multiplayerLocal"] = True
+            t["playersSource"] = "libretro"
         g["tags"] = {k: t[k] for k in TAG_KEYS if t.get(k) not in (None, False, "")}
         # O catalogo e do 360 e do que ele roda. Xbox One entrou de carona na
         # importacao da Wikipedia e nao faz parte da premissa; o dado continua em

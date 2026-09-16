@@ -37,7 +37,7 @@ python3 tests/tempo.py
 python3 tests/atomico.py
 ```
 
-176 + 25 + 4 + 15 asserções no navegador, 24 em Python, mais a auditoria de rede.
+176 + 31 + 4 + 15 asserções no navegador, 24 em Python, mais a auditoria de rede.
 
 Os dois de Python são de natureza diferente dos outros: não dirigem o site, exercitam o que roda
 antes dele. O `tempo.py` cobre a função do `bundle.py` que decide entre `data/tempo.json` (escrito

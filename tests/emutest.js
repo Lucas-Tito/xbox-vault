@@ -90,6 +90,34 @@
   // tags vindas de campo estruturado
   const comMax = window.XBX_EMU.games.filter(g=>g.tags&&g.tags.maxPlayers>=2).length;
   ok('tags de jogadores presentes', comMax > 2000, comMax + ' com 2+ jogadores');
+
+  // tamanho e jogadores do libretro-database (DAT do No-Intro e do Redump)
+  const G = window.XBX_EMU.games;
+  const comTam = G.filter(g => typeof g.tamanho === 'number' && g.tamanho > 0);
+  ok('emulacao tem tamanho', comTam.length > 6000, comTam.length + ' jogos');
+  // ROM extraida, nao arquivo compactado: SNES fica na casa do MB e PS1 do CD
+  const snesT = G.filter(g => g.system === 'SNES' && g.tamanho).map(g => g.tamanho * 1024);
+  ok('SNES em MB plausiveis', Math.max(...snesT) <= 64 && Math.min(...snesT) >= 0.03,
+     'de ' + Math.min(...snesT).toFixed(2) + ' a ' + Math.max(...snesT).toFixed(0) + ' MB');
+  const ps1T = G.filter(g => g.system === 'PS1' && g.tamanho);
+  ok('PS1 nao passa de um CD', Math.max(...ps1T.map(g => g.tamanho)) <= 0.9,
+     Math.max(...ps1T.map(g => g.tamanho)).toFixed(2) + ' GB no maior');
+  const src = G.filter(g => g.tags && g.tags.playersSource === 'libretro');
+  ok('o numero de jogadores diz de onde veio', src.length > 2000, src.length + ' com procedencia');
+  // fonte preferida nao pode deixar contradicao: 2+ jogadores sem multiplayer
+  const mudo = src.filter(g => g.tags.maxPlayers >= 2 && !g.tags.multiplayerLocal);
+  ok('2+ jogadores sempre marca multiplayer local', mudo.length === 0, mudo.length + ' calados');
+  // e a ficha mostra o tamanho
+  const alvo = comTam.find(g => g.system === 'SNES' && g.tamanho * 1024 > 1);
+  $('#q').value = alvo.title; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
+  await wait(600);
+  const c0 = cards()[0];
+  if (c0) { c0.querySelector('.thumb').click(); await wait(500); }
+  const chipT = [...document.querySelectorAll('#modal-body .chip')]
+    .find(c => c.querySelector('span') && /Tamanho/.test(c.querySelector('span').textContent));
+  ok('a ficha mostra o tamanho', !!chipT, chipT ? chipT.textContent.trim() : 'sem pilula de tamanho');
+  if ($('#modal-x')) { $('#modal-x').click(); await wait(200); }
+  $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(400);
   localStorage.clear();
   return R.join('\n');
 } catch(e){ return 'ERRO: '+(e&&e.message)+'\n'+(e&&e.stack||'').slice(0,300); } })()
