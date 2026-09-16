@@ -191,6 +191,11 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     dlcs = load("dlc.json", {})
     # numero de discos e formato da midia (XGD2/XGD3), do datfile do Redump
     discos = load("discos.json", {})
+    # descricao da loja, do x360db. So preenche quem nao tem: os 808 homebrews
+    # trazem descricao escrita a mao no proprio homebrew.json, e ela manda.
+    # Hoje nao ha colisao (descricoes.json so tem x360- e xblig-), mas a guarda
+    # fica para que uma fonte nova nao apague texto curado sem ninguem notar.
+    descricoes = load("descricoes.json", {})
     # Tamanho do download em GB, do Marketplace arquivado. E o download real, e
     # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
     # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
@@ -253,6 +258,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         dl = dlcs.get(g["id"])
         if dl:
             g["dlc"] = dl
+        if not (g.get("description") or "").strip():
+            dsc = descricoes.get(g["id"])
+            if dsc:
+                g["description"] = dsc
         g.pop("discos", None); g.pop("midia", None)
         di = discos.get(g["id"])
         if di:
@@ -308,6 +317,7 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     com_tu = sum(1 for g in games if (g.get("tu") or {}).get("n"))
     com_dlc = sum(1 for g in games if g.get("dlc"))
     com_disco = sum(1 for g in games if g.get("discos"))
+    com_desc = sum(1 for g in games if g.get("description"))
     com_midia = sum(1 for g in games if g.get("midia"))
     com_tempo = sum(1 for g in games if g.get("tempo"))
     tempo_hltb = sum(1 for g in games if (g.get("tempo") or {}).get("fonte") == "hltb")
@@ -315,10 +325,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
           "%d com Metacritic | %d com nota de jogador (%d so essa) | "
-          "%d com patch | %d com DLC | %d multidisco | %d com midia | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
+          "%d com patch | %d com DLC | %d com descricao | %d multidisco | %d com midia | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
           "%d co-op do Co-Optimus | %d dup" %
           (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
-           com_tu, com_dlc, com_disco, com_midia, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
+           com_tu, com_dlc, com_desc, com_disco, com_midia, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 
