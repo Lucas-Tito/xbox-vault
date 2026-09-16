@@ -676,10 +676,20 @@ function kb(v) { return v >= 1024 ? (v / 1024).toFixed(1) + " MB" : v + " KB"; }
    tudo em giga esconde o catalogo: 83% dos jogos tem menos de 1 GB, 1.948 deles
    tem menos de 100 MB e a mediana e 0,04 GB. "0,04 GB" seria a leitura normal, e
    nao a excecao. Abaixo de 1 GB, portanto, sai em MB. */
+function mbTexto(mb) {
+  if (typeof mb !== "number" || mb <= 0) return null;
+  if (mb < 1) return Math.round(mb * 1024) + " KB";
+  /* Abaixo de 10 MB a casa decimal ainda diz algo (2,4 MB contra 2 MB); acima
+     dela vira ruído. Os DLCs vão de 20 KB a 3,2 GB, então as três unidades são
+     todas necessárias. */
+  if (mb < 1024) return mb.toLocaleString("pt-BR", { maximumFractionDigits: mb < 10 ? 1 : 0 }) + " MB";
+  return (mb / 1024).toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " GB";
+}
+
+/* O coletor guarda o tamanho do jogo em GB e o do DLC em MB; a régua de unidade
+   é a mesma, então uma converte para a outra em vez de duplicar a regra. */
 function tamanhoTexto(gb) {
-  if (typeof gb !== "number" || gb <= 0) return null;
-  if (gb < 1) return Math.round(gb * 1024).toLocaleString("pt-BR") + " MB";
-  return gb.toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " GB";
+  return typeof gb === "number" ? mbTexto(gb * 1024) : null;
 }
 
 function horas(v) {
@@ -859,8 +869,14 @@ function abasDetalhe(g) {
      midia e a prosa vem depois. Kinect entra aqui e nao com os modos porque nos
      132 jogos que EXIGEM o sensor ele responde a mesma pergunta que a
      retrocompatibilidade, se roda no seu setup. */
+  /* "Tamanho Total" e nao "Tamanho": com a pílula de discos do lado, "Tamanho
+     4,8 GB" mais "Discos 2" convida a multiplicar um pelo outro. São medidas de
+     coisas diferentes -- o disco é a mídia física de 2014, o tamanho é o que o
+     Marketplace mandava pela rede, sem enchimento e sem o conteúdo duplicado
+     entre discos -- e a palavra "Total" fecha essa leitura. */
   var fatos = chip("Console", g.system ? esc(SISTEMA[g.system] || g.system) : null) +
-    chip("Tamanho", tamanhoTexto(g.tamanho)) +
+    chip("Tamanho Total", tamanhoTexto(g.tamanho)) +
+    chip("Discos", g.discos > 1 ? g.discos : null) +
     chip("Kinect", f.kinect ? (f.kinect === "required" ? "obrigatório" : "opcional") : null) +
     bcChips(g);
   var geral = (fatos ? '<div class="faixa">' + fatos + "</div>" : "") +
@@ -889,10 +905,17 @@ function abasDetalhe(g) {
 function dlcHtml(g) {
   var d = g.dlc;
   if (!d || !d.length) return "";
+  /* O coletor passou a devolver {n, mb} onde antes vinha o nome cru, e a coleta
+     ainda está em curso: os dois formatos convivem no mesmo bundle. Ler só o
+     objeto faria os itens antigos sumirem; ler só a string põe "[object
+     Object]" na tela, que foi o que aconteceu. */
   return '<details class="tu"><summary>' + d.length +
     (d.length > 1 ? " DLCs conhecidos" : " DLC conhecido") +
     "</summary><ul>" + d.map(function (x) {
-      return '<li><span class="tu-d">' + esc(x) + "</span></li>";
+      var nome = typeof x === "string" ? x : (x && x.n) || "";
+      var t = x && typeof x === "object" ? mbTexto(x.mb) : null;
+      return '<li><span class="tu-n">' + esc(nome) + "</span>" +
+        (t ? '<span class="tu-mb">' + t + "</span>" : "") + "</li>";
     }).join("") + "</ul></details>";
 }
 

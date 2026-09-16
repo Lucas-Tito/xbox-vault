@@ -393,7 +393,7 @@
         c.querySelector('.thumb').click(); await wait(400);
         // o tamanho virou pilula na faixa de fatos, nao e mais linha de ficha
         const lin = $$('#modal-body .chip')
-          .find(c => c.querySelector('span') && c.querySelector('span').textContent === 'Tamanho');
+          .find(c => c.querySelector('span') && c.querySelector('span').textContent === 'Tamanho Total');
         ok('popup mostra o tamanho', !!lin, g.title + ' = ' + g.tamanho + ' GB');
         const txt = lin ? lin.querySelector('b').textContent : '';
         ok('unidade certa para ' + g.tamanho + ' GB', txt.endsWith(unidade), txt);
@@ -493,6 +493,17 @@
              det ? det.querySelector('summary').textContent.trim() : 'sem details de DLC');
           if (det) {
             det.open = true; await wait(150);
+            // o coletor mudou o formato no meio da coleta: string antiga e
+            // objeto {n, mb} convivem, e nenhum dos dois pode virar [object Object]
+            const textos = [...det.querySelectorAll('li')].map(x => x.textContent);
+            ok('nenhum item sai como objeto cru',
+               textos.every(t => !/\[object/.test(t)), textos[0] || '');
+            const comTam = alvo.dlc.filter(d => d && typeof d === 'object' && d.mb);
+            if (comTam.length) {
+              ok('DLC com tamanho mostra o tamanho',
+                 det.querySelectorAll('.tu-mb').length === comTam.length,
+                 det.querySelectorAll('.tu-mb').length + ' de ' + comTam.length);
+            }
             ok('um item por DLC', det.querySelectorAll('li').length === alvo.dlc.length,
                det.querySelectorAll('li').length + ' de ' + alvo.dlc.length);
             // e para saber o que existiu: a loja fechou em 2024
@@ -564,6 +575,33 @@
       } else ok('card do jogo com resolucao', false, sub.id);
       $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
       await until(() => cards().length > 50, 8000); await wait(300);
+    }
+
+    // ---- jogos multidisco ----
+    {
+      const multi = catalogo().filter(g => g.discos > 1);
+      ok('catalogo tem jogos multidisco', multi.length > 10, multi.length + ' jogos');
+      const g = multi.find(x => x.image);
+      if (g) {
+        $('#q').value = g.title; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 0, 6000); await wait(300);
+        const c = cards().find(x => x.dataset.id === g.id);
+        if (c) {
+          c.querySelector('.thumb').click(); await wait(400);
+          const pil = $$('#modal-body .chip')
+            .find(x => x.querySelector('span') && x.querySelector('span').textContent === 'Discos');
+          ok('a visao geral mostra quantos discos', !!pil && pil.textContent.includes(g.discos),
+             pil ? pil.textContent.trim() : 'sem pilula');
+          // "Tamanho Total" fecha a leitura de multiplicar um pelo outro
+          const tam = $$('#modal-body .chip')
+            .find(x => x.querySelector('span') && x.querySelector('span').textContent === 'Tamanho Total');
+          ok('e o tamanho ao lado dele diz Total', !g.tamanho || !!tam,
+             tam ? tam.textContent.trim() : 'jogo sem tamanho');
+          $('#modal-x').click(); await wait(200);
+        } else ok('card do jogo multidisco', false, g.id);
+        $('#q').value = ''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
+        await until(() => cards().length > 50, 8000); await wait(300);
+      }
     }
 
     // ---- Title ID ----

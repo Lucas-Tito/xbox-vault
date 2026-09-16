@@ -384,6 +384,10 @@ ul.modos li{color:var(--txt)}
    largura solta, "TU3" e "TU27" empurravam a data para posicoes diferentes. */
 .tu li b{color:var(--txt);flex:none;width:52px;font-variant-numeric:tabular-nums}
 .tu-d{flex:1;min-width:0}
+/* Lista de DLC: nome a esquerda, tamanho a direita, mesma gramatica de colunas
+   da lista de patches. */
+.tu-n{flex:1;min-width:0;color:var(--txt)}
+.tu-mb{flex:none;width:78px;text-align:right;color:var(--dim2);font-variant-numeric:tabular-nums}
 .tu-kb{flex:none;width:78px;text-align:right;color:var(--dim2);font-variant-numeric:tabular-nums}
 
 .det-vaz{margin:0 0 14px;padding:10px 12px;font-size:12.5px;line-height:1.5;
