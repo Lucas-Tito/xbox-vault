@@ -691,6 +691,28 @@
     $('#f-own').value = 'wish'; fire($('#f-own')); await wait(400);
     const wlFilter = JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]').length;
     ok('filtro so-wishlist', cards().length === wlFilter, cards().length + ' cards vs ' + wlFilter + ' na wishlist');
+
+    // "so os que eu ainda nao marquei": nem tenho, nem quero, nem escondi.
+    // Nao compara com o tamanho do catalogo (depende de quais bundles ja
+    // desceram): compara com "so os que faltam", que so difere pela wishlist.
+    $('#f-own').value = 'none'; fire($('#f-own')); await wait(400);
+    const semMarca = +$('#s-shown').textContent.replace(/\D/g,'');
+    ok('nao-marcados nao trazem marcado nenhum',
+       !cards().some(c => c.classList.contains('own') || c.classList.contains('wish') ||
+                          c.classList.contains('hide')),
+       semMarca + ' exibidos');
+    $('#f-own').value = 'no'; fire($('#f-own')); await wait(400);
+    const faltam = +$('#s-shown').textContent.replace(/\D/g,'');
+    ok('nao-marcados = faltam menos a wishlist', faltam - semMarca === wlFilter,
+       faltam + ' - ' + semMarca + ' = ' + (faltam - semMarca) + ', wishlist ' + wlFilter);
+
+    // marcar pelo popup enquanto o filtro esta ligado tira o card da tela
+    $('#f-own').value = 'none'; fire($('#f-own')); await wait(400);
+    const nm = cards()[0], nmid = nm.dataset.id, nmAntes = cards().length;
+    await toggleOwn(nm);
+    ok('marcar tira o card dos nao-marcados',
+       cards().length === nmAntes - 1 && !cards().some(c => c.dataset.id === nmid),
+       nmAntes + ' -> ' + cards().length);
     $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
 
     // ---- "nao quero" (esconder) ----

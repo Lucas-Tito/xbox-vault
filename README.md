@@ -44,6 +44,10 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   interessa (shovelware, esporte anual, o que for) num catálogo de 3.450 títulos.
   "Tenho" e "quero" são mutuamente exclusivos: marcar um limpa o outro, porque as duas coisas se
   contradizem e o contrário deixaria o mesmo jogo nas duas listas do arquivo exportado.
+- **Só os que eu ainda não marquei**: na caixa *Coleção*. Mostra o que ainda não passou por
+  nenhuma decisão: nem tenho, nem wishlist, nem escondido. É diferente de *Só os que faltam*,
+  que traz a wishlist junto, e serve para ir varrendo o catálogo sem reencontrar o que você já
+  resolveu. Marcar um jogo com o filtro ligado tira o card da tela na hora.
 - **Filtros** (coluna da esquerda): coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
   Os filtros ficam salvos entre visitas. **Indie (XBLIG), homebrew e emulação nascem

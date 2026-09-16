@@ -175,6 +175,10 @@ function match(g, skip) {
   if (F.own === "yes" && !owned.has(g.id)) return false;
   if (F.own === "no" && owned.has(g.id)) return false;
   if (F.own === "wish" && !wishlist.has(g.id)) return false;
+  // o que ainda não passou por nenhuma decisão: nem tenho, nem quero, nem
+  // escondi (escondido já saiu acima). "Só os que faltam" não serve aqui
+  // porque a wishlist também falta, e ela já foi decidida.
+  if (F.own === "none" && (owned.has(g.id) || wishlist.has(g.id))) return false;
 
   if (skip !== "mode") {
     for (var i = 0; i < F.modes.length; i++) if (!g._t[F.modes[i]]) return false;
