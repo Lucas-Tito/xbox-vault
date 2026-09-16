@@ -112,16 +112,21 @@ def ler_tamanho(h):
 
 
 def ler_dlc(h):
-    """Nomes dos add-ons listados na pagina.
+    """Add-ons da pagina: nome e tamanho de cada um.
 
-    O nome NAO sai do texto corrido. Cada entrada e assim:
+    Cada entrada aparece nesta ordem no texto corrido:
 
         The Vines Pack 01  2.75 out of 5 stars from 34 reviews
-        Release date: 7/13/2010  Size: 90.53 MB  Description | Share this ...
+        Release date: 7/13/2010  Size: 90.53 MB
+        Description | Share this ... /Product/The-Vines-Pack-01/<guid>
 
-    e tentar pegar o que vem antes da nota engole a descricao do item anterior,
-    porque nao ha delimitador a esquerda. O sinal bom e o link que cada entrada
-    carrega: /Product/<slug>/<guid>. O slug e o nome, ja delimitado pelas barras.
+    O nome NAO pode sair do texto: ele nao tem delimitador a esquerda, e pegar o
+    que vem antes da nota engole a descricao do item anterior, com preco e tudo.
+    O sinal bom e o slug do link, ja delimitado pelas barras.
+
+    O par (tamanho, nome) se monta pela ORDEM: o link de cada entrada vem logo
+    depois do "Size:" dela, porque e o link de compartilhar daquele item. Entao
+    para cada "Size:" basta pegar o primeiro /Product/ que aparecer adiante.
 
     A lista e paginada ("841 - 900 of 1.867"), entao o que sai daqui e a pagina
     que ficou arquivada, nao o catalogo completo de add-ons do jogo.
@@ -136,14 +141,31 @@ def ler_dlc(h):
     corte = re.search(r"All Games |All Game Demos|All Videos|All Themes", resto[16:])
     if corte:
         resto = resto[:corte.start() + 16]
-    nomes, vistos = [], set()
-    for m in re.finditer(r"/Product/([^/\s]{2,90})/[0-9a-fA-F-]{8,}", resto):
-        nome = urllib.parse.unquote(m.group(1)).replace("-", " ").strip()
-        nome = re.sub(r"\s+", " ", nome)
-        ch = nome.lower()
-        if 2 < len(nome) < 80 and ch not in vistos:
-            vistos.add(ch); nomes.append(nome)
-    return nomes or None
+
+    tamanhos = [(m.end(), float(m.group(1).replace(",", "")), m.group(2).upper())
+                for m in re.finditer(r"Size:\s*([\d.,]+)\s*(KB|MB|GB)", resto, re.I)]
+    itens, vistos = [], set()
+    for pos, valor, unid in tamanhos:
+        link = re.search(r"/Product/([^/\s]{2,90})/[0-9a-fA-F-]{8,}", resto[pos:pos + 900])
+        if not link:
+            continue
+        nome = re.sub(r"\s+", " ", urllib.parse.unquote(link.group(1)).replace("-", " ")).strip()
+        if not (2 < len(nome) < 80) or nome.lower() in vistos:
+            continue
+        vistos.add(nome.lower())
+        mb = valor * {"KB": 1 / 1024.0, "MB": 1.0, "GB": 1024.0}[unid]
+        reg = {"n": nome}
+        if 0 < mb < 20000:
+            reg["mb"] = round(mb, 2)
+        itens.append(reg)
+
+    # add-on sem tamanho na pagina ainda vale pelo nome
+    if not itens:
+        for m in re.finditer(r"/Product/([^/\s]{2,90})/[0-9a-fA-F-]{8,}", resto):
+            nome = re.sub(r"\s+", " ", urllib.parse.unquote(m.group(1)).replace("-", " ")).strip()
+            if 2 < len(nome) < 80 and nome.lower() not in vistos:
+                vistos.add(nome.lower()); itens.append({"n": nome})
+    return itens or None
 
 
 def indice(tipo):
@@ -192,8 +214,21 @@ def main():
         with open(saida, encoding="utf-8") as f:
             dados = json.load(f)
 
+    def pronto(gid):
+        """So conta como feito o que esta no formato atual.
+
+        O dlc.json antigo guardava lista de strings, sem tamanho. Se essas
+        entradas contassem como prontas, elas nunca ganhariam o campo novo.
+        """
+        v = dados.get(gid, "ausente")
+        if v == "ausente":
+            return False
+        if alvo != "dlc" or not v:
+            return True
+        return isinstance(v[0], dict)
+
     fila = [(por_tid[t], t, ts, u) for t, (ts, u) in idx.items()
-            if t in por_tid and por_tid[t] not in dados]
+            if t in por_tid and not pronto(por_tid[t])]
     fila.sort(key=lambda x: -int(x[2]))
     print("paginas %s arquivadas: %d | casam e faltam: %d (ja feitos: %d)"
           % (tipo, len(idx), len(fila), len(dados)))
@@ -213,7 +248,7 @@ def main():
         else:
             dados[gid] = v
             ok += 1
-        if i % 25 == 0 or i == len(fila):
+        if i % 10 == 0 or i == len(fila):
             salvar(saida, dados)
             print("  %d/%d  com dado=%d sem=%d  %.0f min"
                   % (i, len(fila), ok, vazio, (time.time() - t0) / 60), flush=True)

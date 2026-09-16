@@ -493,17 +493,14 @@
              det ? det.querySelector('summary').textContent.trim() : 'sem details de DLC');
           if (det) {
             det.open = true; await wait(150);
-            // o coletor mudou o formato no meio da coleta: string antiga e
-            // objeto {n, mb} convivem, e nenhum dos dois pode virar [object Object]
+            // guarda contra o defeito que existiu: item renderizado como objeto
             const textos = [...det.querySelectorAll('li')].map(x => x.textContent);
             ok('nenhum item sai como objeto cru',
                textos.every(t => !/\[object/.test(t)), textos[0] || '');
-            const comTam = alvo.dlc.filter(d => d && typeof d === 'object' && d.mb);
-            if (comTam.length) {
-              ok('DLC com tamanho mostra o tamanho',
-                 det.querySelectorAll('.tu-mb').length === comTam.length,
-                 det.querySelectorAll('.tu-mb').length + ' de ' + comTam.length);
-            }
+            const comTam = alvo.dlc.filter(d => d && d.mb);
+            ok('todo DLC com tamanho mostra o tamanho',
+               det.querySelectorAll('.tu-mb').length === comTam.length,
+               det.querySelectorAll('.tu-mb').length + ' de ' + comTam.length);
             ok('um item por DLC', det.querySelectorAll('li').length === alvo.dlc.length,
                det.querySelectorAll('li').length + ' de ' + alvo.dlc.length);
             // e para saber o que existiu: a loja fechou em 2024

@@ -905,16 +905,13 @@ function abasDetalhe(g) {
 function dlcHtml(g) {
   var d = g.dlc;
   if (!d || !d.length) return "";
-  /* O coletor passou a devolver {n, mb} onde antes vinha o nome cru, e a coleta
-     ainda está em curso: os dois formatos convivem no mesmo bundle. Ler só o
-     objeto faria os itens antigos sumirem; ler só a string põe "[object
-     Object]" na tela, que foi o que aconteceu. */
+  /* Cada add-on é {n, mb}: nome e tamanho em MB. Antes era o nome cru, e o
+     render que não acompanhou punha "[object Object]" na tela. */
   return '<details class="tu"><summary>' + d.length +
     (d.length > 1 ? " DLCs conhecidos" : " DLC conhecido") +
     "</summary><ul>" + d.map(function (x) {
-      var nome = typeof x === "string" ? x : (x && x.n) || "";
-      var t = x && typeof x === "object" ? mbTexto(x.mb) : null;
-      return '<li><span class="tu-n">' + esc(nome) + "</span>" +
+      var t = mbTexto(x.mb);
+      return '<li><span class="tu-n">' + esc(x.n || "") + "</span>" +
         (t ? '<span class="tu-mb">' + t + "</span>" : "") + "</li>";
     }).join("") + "</ul></details>";
 }

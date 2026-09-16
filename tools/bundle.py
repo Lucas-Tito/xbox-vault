@@ -189,6 +189,8 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # add-ons do Marketplace. A lista e a pagina que ficou arquivada, nao o
     # catalogo completo: a listagem original era paginada.
     dlcs = load("dlc.json", {})
+    # numero de discos e formato da midia (XGD2/XGD3), do datfile do Redump
+    discos = load("discos.json", {})
     # Tamanho do download em GB, do Marketplace arquivado. E o download real, e
     # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
     # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
@@ -251,6 +253,14 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         dl = dlcs.get(g["id"])
         if dl:
             g["dlc"] = dl
+        g.pop("discos", None); g.pop("midia", None)
+        di = discos.get(g["id"])
+        if di:
+            # 1 disco e o normal e nao merece campo; o que informa e o multidisco
+            if di.get("discos", 1) > 1:
+                g["discos"] = di["discos"]
+            if di.get("midia"):
+                g["midia"] = di["midia"]
         tp = juntar_tempo(g["id"], tempos, hltb)
         if tp:
             g["tempo"] = tp
@@ -297,16 +307,18 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     com_ur = sum(1 for g in games if g.get("ur"))
     com_tu = sum(1 for g in games if (g.get("tu") or {}).get("n"))
     com_dlc = sum(1 for g in games if g.get("dlc"))
+    com_disco = sum(1 for g in games if g.get("discos"))
+    com_midia = sum(1 for g in games if g.get("midia"))
     com_tempo = sum(1 for g in games if g.get("tempo"))
     tempo_hltb = sum(1 for g in games if (g.get("tempo") or {}).get("fonte") == "hltb")
     tempo_geral = sum(1 for g in games if (g.get("tempo") or {}).get("geral"))
     so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
     print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
           "%d com Metacritic | %d com nota de jogador (%d so essa) | "
-          "%d com patch | %d com DLC | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
+          "%d com patch | %d com DLC | %d multidisco | %d com midia | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
           "%d co-op do Co-Optimus | %d dup" %
           (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
-           com_tu, com_dlc, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
+           com_tu, com_dlc, com_disco, com_midia, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}
 
