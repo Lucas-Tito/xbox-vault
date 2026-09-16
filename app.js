@@ -447,6 +447,9 @@ function updateStats(list) {
   pendentes(Object.keys(CATALOGOS)).forEach(function (k) { totalTudo += totalPlat(k); });
 
   $("#s-shown").textContent = list.length.toLocaleString("pt-BR");
+  // o painel de cima fica atras da gaveta no celular, entao o numero de
+  // exibidos precisa aparecer tambem no rodape dela, ao vivo
+  $("#side-n").textContent = list.length.toLocaleString("pt-BR");
   $("#s-total").textContent = totalTudo.toLocaleString("pt-BR");
   $("#s-own").textContent = ownCount.toLocaleString("pt-BR");
   var pct = totalTudo ? (ownCount / totalTudo * 100) : 0;
@@ -1176,6 +1179,17 @@ function importFlow(text) {
 
 /* ---------------- UI ---------------- */
 function saveF() { try { localStorage.setItem(FILT_KEY, JSON.stringify(F)); } catch (e) {} }
+/* A gaveta de filtros do celular cobre a tela inteira, cabecalho incluso: nao ha
+   altura de cabecalho para acertar, e os onze grupos cabem. Como ela esconde o
+   painel de estatisticas, o rodape repete quantos jogos passam pelo filtro, e o
+   fundo para de rolar atras dela. */
+function filtros(abrir) {
+  var side = $("#side");
+  if (abrir === undefined) abrir = !side.classList.contains("open");
+  side.classList.toggle("open", abrir);
+  document.body.classList.toggle("filtros-abertos", abrir);
+}
+
 function onChange() {
   saveF();
   subfiltrosEmu();
@@ -1330,9 +1344,12 @@ function ligarEventos() {
       return;
     }
     if (e.key === "Escape" && !$("#modal").hidden) closeModal();
+    else if (e.key === "Escape" && $("#side").classList.contains("open")) filtros(false);
   });
   $("#modal").addEventListener("click", function (e) { if (e.target.id === "modal") closeModal(); });
-  $("#btn-filters").onclick = function () { $("#side").classList.toggle("open"); };
+  $("#btn-filters").onclick = function () { filtros(); };
+  $("#side-x").onclick = function () { filtros(false); };
+  $("#side-done").onclick = function () { filtros(false); };
   $("#btn-reset").onclick = function () {
     F = { q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
           systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all",

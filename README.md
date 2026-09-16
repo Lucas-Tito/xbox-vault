@@ -48,6 +48,8 @@ python3 -m http.server 8000   # depois acesse http://localhost:8000
   nenhuma decisão: nem tenho, nem wishlist, nem escondido. É diferente de *Só os que faltam*,
   que traz a wishlist junto, e serve para ir varrendo o catálogo sem reencontrar o que você já
   resolveu. Marcar um jogo com o filtro ligado tira o card da tela na hora.
+- **Filtros no celular**: o botão *Filtros* abre uma gaveta de tela cheia, com o número de jogos
+  que passam pelo filtro no rodapé, ao vivo. Fecha pelo `×`, pelo botão do rodapé ou com `Esc`.
 - **Filtros** (coluna da esquerda): coleção, plataforma, modo de jogo, nº de jogadores,
   ano, retrocompatibilidade, extras (XBLA/Kinect/3D/Xbox One), categoria de homebrew, gênero e ordenação.
   Os filtros ficam salvos entre visitas. **Indie (XBLIG), homebrew e emulação nascem

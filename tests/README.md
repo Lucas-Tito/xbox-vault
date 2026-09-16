@@ -18,6 +18,12 @@ node tests/drive.mjs "file://$PWD/index.html" tests/emutest.js
 node tests/drive.mjs "file://$PWD/index.html" tests/bootemu.js
 node tests/drive.mjs "file://$PWD/index.html" tests/bootemu2.js
 
+# gaveta de filtros do celular: precisa de janela ESTREITA, senão não testa nada
+google-chrome --headless=new --disable-gpu --window-size=500,760 \
+  --remote-debugging-port=9227 --user-data-dir=/tmp/xbxmob about:blank &
+sleep 4
+node tests/drive.mjs "file://$PWD/index.html" tests/mobile.js
+
 # auditoria de rede: prova que a página não faz requisição a domínio externo
 node tests/netcheck.mjs "file://$PWD/index.html"
 node tests/netcheck.mjs "file://$PWD/index.html" emu
@@ -31,7 +37,7 @@ python3 tests/tempo.py
 python3 tests/atomico.py
 ```
 
-176 + 25 + 4 asserções no navegador, 24 em Python, mais a auditoria de rede.
+176 + 25 + 4 + 15 asserções no navegador, 24 em Python, mais a auditoria de rede.
 
 Os dois de Python são de natureza diferente dos outros: não dirigem o site, exercitam o que roda
 antes dele. O `tempo.py` cobre a função do `bundle.py` que decide entre `data/tempo.json` (escrito
@@ -47,7 +53,10 @@ condições que a eliminam, uma a uma: formato de saída idêntico ao de antes, 
 diretório do destino (fora dele o `os.replace` deixa de ser atômico), e erro de serialização ou
 `Ctrl+C` no meio sem tocar no arquivo que já estava lá nem deixar lixo.
 
-As do navegador já pegaram seis bugs reais:
+O `mobile.js` é o único que exige uma janela de tamanho específico, e a primeira asserção dele
+confere isso: acima de 820px a media query nem entra, e o arquivo inteiro passaria sem testar nada.
+
+As do navegador já pegaram sete bugs reais:
 
 - `Array.prototype.slice.call(owned)` com um `Set` devolve `[]` — a exportação gravava
   uma lista vazia enquanto o contador na tela mostrava o número certo. Só apareceu porque
@@ -58,6 +67,10 @@ As do navegador já pegaram seis bugs reais:
   vivos no DOM e reativáveis.
 - Ordenar por título ou por nota continuava agrupando os cards por ano, criando dezenas de seções
   de um jogo só.
+- No celular, a coluna de filtros era ancorada em 57px, a altura do cabeçalho no desktop. Numa
+  tela estreita o cabeçalho quebra em várias linhas e chega a 261px, então os primeiros 204px da
+  coluna nasciam atrás dele e o grupo *Coleção* inteiro ficava invisível. Quem abria os filtros no
+  telefone não via o começo deles, e nada indicava que bastava rolar para cima.
 - Com a emulação ligada numa visita anterior, o filtro salvo a pedia mas nada disparava o
   carregamento no boot — e a lista aparecia **vazia**. Esse foi achado por acidente: um script de
   auditoria deixou o estado para trás e a suíte seguinte quebrou.

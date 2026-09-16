@@ -62,6 +62,7 @@ a{color:var(--green2)}
 .side::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:5px}
 .main{flex:1;padding:18px 20px 120px;min-width:0}
 
+.side-top,.side-bot{display:none}
 .fgroup{margin-bottom:18px}
 .fgroup h4{
   margin:0 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:.9px;
@@ -198,9 +199,27 @@ select:focus{border-color:var(--green)}
 
 .mobile-filters{display:none}
 @media(max-width:820px){
-  .side{position:fixed;inset:57px 0 0 auto;right:0;width:280px;background:var(--bg);z-index:40;
-    max-height:none;height:calc(100vh - 57px);transform:translateX(100%);transition:.2s;border-left:1px solid var(--line)}
+  /* Gaveta de tela CHEIA. A versao anterior ancorava em 57px, a altura do
+     cabecalho no desktop; na tela estreita ele quebra em varias linhas e chega
+     a 261px, entao os primeiros 204px da coluna nasciam atras dele (z-index 50
+     contra 40) e o grupo Colecao inteiro ficava invisivel. Cobrindo a tela toda
+     nao ha altura de cabecalho para acertar, e os onze grupos ganham espaco.
+     100dvh, e nao 100vh, porque no celular o vh conta a area embaixo da barra
+     do navegador e o rodape ficaria fora do alcance. */
+  .side{position:fixed;inset:0;width:100%;background:var(--bg);z-index:60;
+    max-height:none;height:100vh;height:100dvh;padding:0;border-right:0;
+    transform:translateX(100%);transition:transform .2s;
+    display:flex;flex-direction:column;overflow:hidden}
   .side.open{transform:none}
+  .side-top{display:flex;align-items:center;justify-content:space-between;flex:none;
+    padding:12px 16px;border-bottom:1px solid var(--line);font-size:16px}
+  .side-x{background:none;border:0;color:var(--fg);font-size:26px;line-height:1;
+    padding:0 6px;cursor:pointer}
+  .side-scroll{flex:1;overflow-y:auto;padding:16px;-webkit-overflow-scrolling:touch}
+  .side-bot{display:block;flex:none;padding:12px 16px;border-top:1px solid var(--line)}
+  .side-bot .btn{width:100%;justify-content:center}
+  /* com a gaveta aberta o fundo nao rola atras dela */
+  body.filtros-abertos{overflow:hidden}
   .mobile-filters{display:inline-flex}
   .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
   .main{padding:14px 12px 100px}
