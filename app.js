@@ -428,11 +428,10 @@ function observe() {
 
 /* ---------------- stats e contadores ---------------- */
 function updateStats(list) {
-  var ownCount = 0, byPlat = { x360: 0, xblig: 0, xbox: 0, homebrew: 0, emu: 0 },
-      ownPlat = { x360: 0, xblig: 0, xbox: 0, homebrew: 0, emu: 0 };
+  var ownCount = 0, byPlat = { x360: 0, xblig: 0, xbox: 0, homebrew: 0, emu: 0 };
   GAMES.forEach(function (g) {
     byPlat[g.platform]++;
-    if (owned.has(g.id)) { ownCount++; ownPlat[g.platform]++; }
+    if (owned.has(g.id)) ownCount++;
   });
   $("#s-wish").textContent = wishlist.size.toLocaleString("pt-BR");
   var eh = $("#s-hide"); if (eh) eh.textContent = escondidos.size.toLocaleString("pt-BR");
@@ -454,13 +453,6 @@ function updateStats(list) {
   $("#s-own").textContent = ownCount.toLocaleString("pt-BR");
   var pct = totalTudo ? (ownCount / totalTudo * 100) : 0;
   $("#s-pct").textContent = "(" + pct.toFixed(1) + "%)";
-  $("#s-bar").style.width = pct + "%";
-  $("#s-breakdown").textContent =
-    "360: " + ownPlat.x360 + "/" + totalPlat("x360") +
-    " · Indie: " + ownPlat.xblig + "/" + totalPlat("xblig") +
-    " · Xbox: " + ownPlat.xbox + "/" + totalPlat("xbox") +
-    " · Homebrew: " + ownPlat.homebrew + "/" + totalPlat("homebrew") +
-    " · Emulação: " + ownPlat.emu + "/" + totalPlat("emu");
   $$("[data-cnt^='plat-']").forEach(function (el) {
     var k = el.dataset.cnt.slice(5), n = totalPlat(k);
     // Bundle velho nao traz o total das categorias sob demanda: nesse caso fica
