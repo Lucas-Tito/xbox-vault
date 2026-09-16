@@ -122,7 +122,6 @@ data/
   tamanho.json      tamanho do download, em GB, do Marketplace arquivado
   tamanho-emu.json  tamanho da ROM extraída, em GB, dos DATs do No-Intro e do Redump
   jogadores-emu.json  nº de jogadores da emulação; manda no que o LaunchBox diz
-  divergencia-jogadores.json  onde as duas fontes discordam; não entra no site
   tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
   hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
   db.js             Xbox 360 + Xbox original, é o que carrega no primeiro byte

@@ -36,8 +36,6 @@ PS1 fica so com o tamanho: a pasta maxusers tem 41 arquivos e nenhum de disco.
 Saida:
     data/tamanho-emu.json          id -> GB (mesmo formato do tamanho.json)
     data/jogadores-emu.json        id -> {"users": n, "regiao": "USA"}
-    data/divergencia-jogadores.json  onde as duas fontes discordam; nao e lido
-                                     pelo bundle, existe para a analise da #24
 
 uso: python3 tools/fetch_libretro.py [--refazer]
 """
@@ -135,7 +133,7 @@ def main():
     refazer = "--refazer" in sys.argv
     jogos = json.load(open(os.path.join(ROOT, "data", "emu.json"), encoding="utf-8"))
 
-    tamanhos, jogadores, diverg = {}, {}, {}
+    tamanhos, jogadores = {}, {}
     for sis, (dat_tam, dat_usr) in FONTES.items():
         print("%s:" % sis, flush=True)
         tam_por_nome = ler_tamanhos(baixar(dat_tam, refazer))
@@ -170,19 +168,10 @@ def main():
                 com_usr += 1
         print("   %d com tamanho, %d com numero de jogadores" % (casou, com_usr))
 
-    # onde o LaunchBox ja tinha numero e o libretro discorda: material da #24
-    tags = json.load(open(os.path.join(ROOT, "data", "tags-emu.json"), encoding="utf-8"))
-    for gid, d in jogadores.items():
-        velho = (tags.get(gid) or {}).get("maxPlayers") or 0
-        if velho and velho != d["users"]:
-            diverg[gid] = {"launchbox": velho, "libretro": d["users"]}
-
     jsonio.salvar(os.path.join(ROOT, "data", "tamanho-emu.json"), tamanhos)
     jsonio.salvar(os.path.join(ROOT, "data", "jogadores-emu.json"), jogadores)
-    jsonio.salvar(os.path.join(ROOT, "data", "divergencia-jogadores.json"), diverg)
     print("\ndata/tamanho-emu.json: %d jogos" % len(tamanhos))
     print("data/jogadores-emu.json: %d jogos" % len(jogadores))
-    print("data/divergencia-jogadores.json: %d discordancias com o LaunchBox" % len(diverg))
     return 0
 
 
