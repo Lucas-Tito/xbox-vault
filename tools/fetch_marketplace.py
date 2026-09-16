@@ -20,9 +20,11 @@ aceita o Size que vem depois dele.
 
 O casamento e por Title ID, que ja temos em data/x360db.json.
 """
-import html, json, os, re, sys, tempfile, time, urllib.error, urllib.parse, urllib.request
+import html, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import jsonio  # noqa: E402
 CACHE = os.path.join(ROOT, "cache")
 UA = "XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault; lucassga500@gmail.com)"
 PAUSA = 2.5          # 1,2s rendeu bloqueio do Archive; ver fetch_cooptimus.py
@@ -30,24 +32,8 @@ ALVOS = {"tamanho": ("Game", "tamanho.json"), "dlc": ("GameAddon", "dlc.json")}
 
 
 def salvar(caminho, obj):
-    """Grava trocando um temporario pelo destino.
-
-    open(caminho, "w") trunca o arquivo antes de o conteudo novo existir, e como
-    este coletor salva a cada 25 itens a janela de arquivo invalido se repete
-    centenas de vezes. Enquanto ninguem lia esses arquivos era inofensivo; com o
-    bundle.py lendo tamanho.json e dlc.json, uma leitura no minuto errado pega
-    JSON quebrado. os.replace e atomico: ou o arquivo antigo, ou o novo inteiro.
-    """
-    d = os.path.dirname(caminho)
-    fd, tmp = tempfile.mkstemp(dir=d, prefix=".tmp-", suffix=".json")
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8") as f:
-            json.dump(obj, f, ensure_ascii=False, indent=0, sort_keys=True)
-            f.flush(); os.fsync(f.fileno())
-        os.replace(tmp, caminho)
-    finally:
-        if os.path.exists(tmp):
-            os.unlink(tmp)
+    """Atalho para o jsonio, que explica por que a gravacao e atomica."""
+    jsonio.salvar(caminho, obj, indent=0)
 
 
 def baixar(url, tries=3):

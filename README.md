@@ -120,6 +120,7 @@ data/
   db-emu.js         emulação, idem
 tools/
   wikilib.py        acesso à API da Wikipédia (com cache em disco) + parser de wikitext
+  jsonio.py         gravação atômica: todo coletor grava por aqui
   taglib.py         extração de modos de jogo a partir do artigo
   build_*.py        geram os data/*.json das listas
   tag_*.py          geram os data/tags-*.json

@@ -17,6 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import wikilib as w
 import mcweb
+import jsonio  # noqa: E402
 
 PAUSA = 1.5
 LIMITE_SLUGS = 3                      # educado: uma requisicao a cada 1,5 s
@@ -145,13 +146,11 @@ def main():
                                "via": "nao-encontrado-geral" if modo_geral else "nao-encontrado"}
             erro += 1
         if i % 25 == 0 or i == len(faltando):
-            with open(saida, "w", encoding="utf-8") as f:
-                json.dump(notas, f, ensure_ascii=False, indent=1)
+            jsonio.salvar(saida, notas, sort_keys=False)
             print("  %d/%d  plataforma=%d geral=%d nao-achou=%d  %.0fs" %
                   (i, len(faltando), achou, geral, erro, time.time() - t0), flush=True)
 
-    with open(saida, "w", encoding="utf-8") as f:
-        json.dump(notas, f, ensure_ascii=False, indent=1)
+    jsonio.salvar(saida, notas, sort_keys=False)
     print("\ntotal agora: %d (+%d da plataforma, +%d gerais)" % (len(notas), achou, geral))
     return 0
 

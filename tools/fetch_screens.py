@@ -18,6 +18,8 @@ import io, json, os, sys, threading, time, urllib.error, urllib.request
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import jsonio  # noqa: E402
 OUT = os.path.join(ROOT, "images", "screens")
 INFO = "https://raw.githubusercontent.com/xenia-manager/x360db/HEAD/titles/%s/info.json"
 UA = "XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault; lucassga500@gmail.com)"
@@ -127,15 +129,13 @@ def main():
                 contagem[gid] = n
             feito += 1
             if feito % 100 == 0 or feito == len(itens):
-                with open(saida, "w", encoding="utf-8") as f:
-                    json.dump(contagem, f, indent=0, sort_keys=True)
+                jsonio.salvar(saida, contagem, indent=0, ensure_ascii=True)
                 print("  %d/%d  jogos=%d pulados=%d sem-galeria=%d falhas=%d | "
                       "%d imgs, %.0f MB | %.0f min"
                       % (feito, len(itens), stat["ok"], stat["pulados"], stat["sem_galeria"],
                          stat["falhas"], stat["imgs"], stat["bytes"] / 1048576,
                          (time.time() - t0) / 60), flush=True)
-    with open(saida, "w", encoding="utf-8") as f:
-        json.dump(contagem, f, indent=0, sort_keys=True)
+    jsonio.salvar(saida, contagem, indent=0, ensure_ascii=True)
     print("\n%d jogos com screenshot | %d imagens | %.0f MB"
           % (len(contagem), stat["imgs"], stat["bytes"] / 1048576))
     return 0

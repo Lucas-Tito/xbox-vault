@@ -26,6 +26,8 @@ socket.getaddrinfo = lambda *a, **k: [x for x in _getaddrinfo(*a, **k)
                                       if x[0] == socket.AF_INET]
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import jsonio  # noqa: E402
 API = "http://xboxunity.net/Resources/Lib/TitleUpdateInfo.php?titleid=%s"
 UA = "Mozilla/5.0 XbxVault/1.0 (catalogo pessoal; lucassga500@gmail.com)"
 PAUSA = 0.5
@@ -125,12 +127,10 @@ def main():
             dados[gid] = {"n": 0}    # consultado e nao tem patch nenhum
             sem += 1
         if i % 100 == 0 or i == len(fila):
-            with open(saida, "w", encoding="utf-8") as f:
-                json.dump(dados, f, ensure_ascii=False, indent=0, sort_keys=True)
+            jsonio.salvar(saida, dados, indent=0)
             print("  %d/%d  com patch=%d sem=%d erro=%d  %.0f min"
                   % (i, len(fila), com, sem, erro, (time.time() - t0) / 60), flush=True)
-    with open(saida, "w", encoding="utf-8") as f:
-        json.dump(dados, f, ensure_ascii=False, indent=0, sort_keys=True)
+    jsonio.salvar(saida, dados, indent=0)
     print("\ndata/tu.json: %d jogos (%d com patch)"
           % (len(dados), sum(1 for v in dados.values() if v.get("n"))))
     return 0

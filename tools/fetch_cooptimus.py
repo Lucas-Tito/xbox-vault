@@ -30,6 +30,8 @@ anterior a 2009 nao tem bloco estruturado e e descartada.
 import html, json, os, re, sys, time, unicodedata, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import jsonio  # noqa: E402
 CACHE = os.path.join(ROOT, "cache")
 UA = "XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault; lucassga500@gmail.com)"
 # 1,2 s durante oito horas levou a um bloqueio do Internet Archive (recusa de
@@ -373,12 +375,10 @@ def main():
                     dados[nosso] = d
                 ok += 1
         if i % 25 == 0 or i == len(fila):
-            with open(saida, "w", encoding="utf-8") as f:
-                json.dump(dados, f, ensure_ascii=False, indent=1, sort_keys=True)
+            jsonio.salvar(saida, dados)
             print("  %d/%d  casou=%d outra-plataforma=%d sem-bloco=%d  %.0fs"
                   % (i, len(fila), ok, fora, vazio, time.time() - t0), flush=True)
-    with open(saida, "w", encoding="utf-8") as f:
-        json.dump(dados, f, ensure_ascii=False, indent=1, sort_keys=True)
+    jsonio.salvar(saida, dados)
     print("\ndata/coop.json: %d jogos" % len(dados))
     return 0
 

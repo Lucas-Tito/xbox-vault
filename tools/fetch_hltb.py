@@ -76,9 +76,11 @@ Resumivel e idempotente: rode de novo e ele continua de onde parou.
 
 uso: fetch_hltb.py [xbox|indies|emu] [limite] [--refazer]
 """
-import json, os, re, sys, tempfile, time, unicodedata, urllib.error, urllib.request
+import json, os, re, sys, time, unicodedata, urllib.error, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import jsonio  # noqa: E402
 BASE = "https://howlongtobeat.com"
 UA = "XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault; lucassga500@gmail.com)"
 PAUSA = 1.5
@@ -459,25 +461,8 @@ def entradas(arquivos):
 
 
 def salvar(caminho, dados):
-    """Grava num temporario e troca com os.replace, que e atomico.
-
-    json.dump direto no arquivo final trunca antes de escrever: quem ler naquele
-    instante -- o bundle.py, ou este mesmo coletor sendo retomado -- pega JSON
-    pela metade. A janela e de fracao de segundo a cada 25 jogos, o que e pouco
-    para acontecer no teste e o bastante para acontecer numa coleta de horas.
-    """
-    d = os.path.dirname(caminho)
-    fd, tmp = tempfile.mkstemp(dir=d, prefix=".tmp-hltb-")
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8") as f:
-            json.dump(dados, f, ensure_ascii=False, indent=1, sort_keys=True)
-            f.flush()
-            os.fsync(f.fileno())
-        os.replace(tmp, caminho)
-    except Exception:
-        if os.path.exists(tmp):
-            os.unlink(tmp)
-        raise
+    """Atalho para o jsonio, que explica por que a gravacao e atomica."""
+    jsonio.salvar(caminho, dados)
 
 
 def main():

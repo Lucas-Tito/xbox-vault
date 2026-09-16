@@ -20,6 +20,8 @@ Nao aproveitamos daqui: tamanho (o x360db nao tem esse campo) e DLC (o campo
 import json, os, re, sys, unicodedata, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import jsonio  # noqa: E402
 FONTE = "https://raw.githubusercontent.com/xenia-manager/x360db/HEAD/games.json"
 UA = "XbxVault/1.0 (https://github.com/Lucas-Tito/xbox-vault; lucassga500@gmail.com)"
 
@@ -79,8 +81,7 @@ def main():
         out[i] = reg
 
     saida = os.path.join(ROOT, "data", "x360db.json")
-    with open(saida, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=1, sort_keys=True)
+    jsonio.salvar(saida, out)
     print("casaram %d jogos (%d sem nota util, %d titulos repetidos)"
           % (len(out), semnota, dup))
     print("   com nota de jogador: %d | com desenvolvedora: %d | com publicadora: %d"

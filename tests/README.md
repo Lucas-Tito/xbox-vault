@@ -26,15 +26,26 @@ node tests/netcheck.mjs "file://$PWD/index.html" emu
 ```bash
 # precedência do tempo de jogo: prova que o coletor não apaga curadoria à mão
 python3 tests/tempo.py
+
+# gravação atômica: prova que coleta interrompida não deixa JSON pela metade
+python3 tests/atomico.py
 ```
 
-176 + 25 + 4 asserções no navegador, 10 em Python, mais a auditoria de rede.
+176 + 25 + 4 asserções no navegador, 24 em Python, mais a auditoria de rede.
 
-O teste de Python é de natureza diferente dos outros: não dirige o site, exercita a função do
-`bundle.py` que decide entre `data/tempo.json` (escrito por uma pessoa) e `data/hltb*.json`
-(escrito por um robô que roda por horas sem ninguém olhando). Está testado porque esse erro não
-apareceria na tela — o site mostraria um número plausível, só que o errado, e a curadoria teria
-sumido sem aviso.
+Os dois de Python são de natureza diferente dos outros: não dirigem o site, exercitam o que roda
+antes dele. O `tempo.py` cobre a função do `bundle.py` que decide entre `data/tempo.json` (escrito
+por uma pessoa) e `data/hltb*.json` (escrito por um robô que roda por horas sem ninguém olhando):
+esse erro não apareceria na tela — o site mostraria um número plausível, só que o errado, e a
+curadoria teria sumido sem aviso.
+
+O `atomico.py` cobre o `tools/jsonio.py`, por onde passa a gravação de todo coletor. O bug que ele
+previne também não aparece rodando o coletor: a janela de arquivo truncado dura uma fração de
+segundo por save, tempo curto demais para o acaso mostrar num teste e longo o bastante para
+acontecer numa coleta de horas. Então em vez de tentar flagrar a janela, o teste afirma as
+condições que a eliminam, uma a uma: formato de saída idêntico ao de antes, temporário no mesmo
+diretório do destino (fora dele o `os.replace` deixa de ser atômico), e erro de serialização ou
+`Ctrl+C` no meio sem tocar no arquivo que já estava lá nem deixar lixo.
 
 As do navegador já pegaram seis bugs reais:
 
