@@ -28,7 +28,7 @@ node tests/netcheck.mjs "file://$PWD/index.html" emu
 python3 tests/tempo.py
 ```
 
-69 + 13 + 2 asserções no navegador, 8 em Python, mais a auditoria de rede.
+176 + 25 + 4 asserções no navegador, 10 em Python, mais a auditoria de rede.
 
 O teste de Python é de natureza diferente dos outros: não dirige o site, exercita a função do
 `bundle.py` que decide entre `data/tempo.json` (escrito por uma pessoa) e `data/hltb*.json`
