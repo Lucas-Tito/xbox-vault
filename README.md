@@ -136,6 +136,7 @@ tools/
   tag_*.py          geram os data/tags-*.json
   fetch_hltb.py     tempo de jogo do HowLongToBeat (resumível)
   fetch_libretro.py tamanho e nº de jogadores da emulação, dos DATs do libretro
+  fetch_screens_libretro.py  uma captura por jogo, dos thumbnails do libretro
   bundle.py         une os JSONs nos quatro db*.js
 images/             capas em WebP (240px, q72), uma por jogo, versionadas no repo
 cache/              respostas da API da Wikipédia (pode apagar; será rebaixado)
@@ -157,6 +158,7 @@ python3 tools/fetch_hltb.py xbox         # tempo de jogo: 360 + Xbox original
 python3 tools/fetch_hltb.py emu          # idem, catálogo de emulação
 python3 tools/fetch_hltb.py indies       # idem, XBLIG
 python3 tools/fetch_libretro.py          # tamanho e nº de jogadores da emulação
+python3 tools/fetch_screens_libretro.py   # captura de gameplay: emulação e Xbox original
 python3 tools/bundle.py         # <- sempre por último: escreve os quatro db*.js
 ```
 
@@ -194,31 +196,38 @@ não ficar gigante. `maxPlayers* = 0` quer dizer **desconhecido**, não "zero jo
 
 ## Números
 
-| | jogos | com capa | com tags |
-|---|---|---|---|
-| Xbox 360 | 2.155 | 1.948 (90%) | 2.155 |
-| Xbox original | 995 (466 retrocompatíveis) | 918 (92%) | 995 |
-| Indie (XBLIG) | 3.450 | 3.450 (100%) | 3.450 |
-| Homebrew | 300 | 130 | 300 |
-| **total** | **6.900** | **6.824 (99%)** | **6.900** |
+| | jogos | com capa | com captura | com tags |
+|---|---|---|---|---|
+| Xbox 360 | 2.156 | 2.147 (100%) | 1.500 (70%) | 2.156 |
+| Xbox original | 995 (466 retrocompatíveis) | 994 (100%) | 828 (83%) | 995 |
+| Indie (XBLIG) | 3.450 | 3.450 (100%) | 3.308 (96%) | 3.450 |
+| Homebrew | 808 | 331 (41%) | 0 | 808 |
+| Emulação (sob demanda) | 9.830 | 8.869 (90%) | 6.516 (66%) | 9.830 |
+| **total** | **17.239** | **15.791 (92%)** | **12.152 (70%)** | **17.239** |
 
-E, carregado **sob demanda**, um catálogo de **emulação** com 9.962 jogos de SNES, Game Boy
-Advance e PlayStation 1, 8.915 deles com capa. No total são **16.862 títulos** e 187 MB de capas
-no repositório.
+No repositório isso são **187 MB de capas** e **286 MB de capturas**, em WebP.
 
-Contando só jogos comerciais, a cobertura é de **3.141 de 3.150, ou 99,7%**. Os 76 sem imagem
-são 67 homebrews (a maioria utilitários de linha de comando que nunca tiveram GUI, logo nem
-screenshot existe) e 9 jogos obscuros.
+Contando só jogos comerciais, ou seja, 360, Xbox original e XBLIG, a cobertura de capa é de
+**6.591 de 6.601, ou 99,8%**: faltam 9 do 360 e 1 do Xbox original. Os buracos de verdade estão
+nas outras duas categorias, e por motivos diferentes. Dos 808 homebrews, 477 não têm capa, e boa
+parte são utilitários de linha de comando que nunca tiveram interface, então nem screenshot
+existe. Na emulação, 961 dos 9.830 ficaram sem, quase todos ROM hack e homebrew.
 
-O total de 2.155 do Xbox 360 bate com o contador da própria Wikipédia, e os 466
-retrocompatíveis batem com a lista oficial final da Microsoft.
+Captura de gameplay tem duas origens: a galeria do Marketplace, que só existiu para 360 e XBLIG, e
+os thumbnails do libretro, que cobrem Xbox original, SNES, GBA e PS1 com uma por jogo. Homebrew
+não tem nenhuma das duas.
+
+Os 466 retrocompatíveis batem com a lista oficial final da Microsoft, e o total do Xbox 360 vem do
+contador da própria Wikipédia.
 
 ## Testes
 
-`tests/` tem duas suítes que dirigem um Chrome headless: 59 asserções sobre filtros, busca, popup
-de detalhes, marcação, wishlist, "não quero", merge por timestamp e export/import; e mais 9 sobre a
-sincronização com arquivo, usando um handle falso em memória (o seletor de arquivo de verdade
-exige interação humana). Veja `tests/README.md`.
+`tests/` dirige um Chrome headless de verdade e exercita o site como um usuário: **226 asserções**
+sobre filtros, busca, popup de detalhes, marcação, wishlist, "não quero", merge por timestamp,
+export/import, emulação sob demanda e a gaveta de filtros do celular. Mais **24 em Python**, que
+cobrem o que não aparece na tela: a precedência entre tempo curado à mão e coletado, e a gravação
+atômica dos coletores. E uma auditoria que falha se a página fizer qualquer requisição externa.
+Veja `tests/README.md`.
 
 ### De onde vem a nota do Metacritic
 
