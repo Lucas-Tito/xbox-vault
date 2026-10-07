@@ -17,8 +17,15 @@
     <label class="search"><input id="q" type="search" placeholder="Buscar jogo, estúdio ou publisher" autocomplete="off"></label>
     <div class="actions">
       <button class="btn mobile-filters" id="btn-filters">Filtros</button>
-      <button class="btn" id="btn-import">Importar</button>
-      <button class="btn primary" id="btn-export">Exportar coleção</button>
+      <!-- Importar e exportar sao as duas pontas da mesma coisa, o arquivo com o
+           que voce marcou: ficam num menu so. -->
+      <div class="menu" id="menu-backup">
+        <button class="btn" id="btn-backup" aria-haspopup="menu" aria-expanded="false">Arquivo <span class="seta" aria-hidden="true"></span></button>
+        <div class="menu-lista" role="menu" hidden>
+          <button role="menuitem" class="menu-item" id="btn-export">Exportar coleção<small>Baixa um arquivo com o que você marcou</small></button>
+          <button role="menuitem" class="menu-item" id="btn-import">Importar coleção<small>Carrega um arquivo exportado antes</small></button>
+        </div>
+      </div>
     </div>
   </div>
 </header>

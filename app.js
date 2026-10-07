@@ -1388,6 +1388,29 @@ function ligarEventos() {
     if (g) openDetail(g);                        // resto do card abre os detalhes
   });
 
+  // Menus do topo: fecham ao escolher, ao clicar fora e no Esc.
+  var menus = $$(".menu");
+  var abrirMenu = function (menu, abre) {
+    menu.querySelector(".menu-lista").hidden = !abre;
+    menu.querySelector("[aria-haspopup]").setAttribute("aria-expanded", abre);
+  };
+  menus.forEach(function (menu) {
+    var lista = menu.querySelector(".menu-lista");
+    menu.querySelector("[aria-haspopup]").onclick = function () {
+      var abre = lista.hidden;
+      menus.forEach(function (m) { abrirMenu(m, false); });
+      abrirMenu(menu, abre);
+    };
+    lista.addEventListener("click", function (e) {
+      if (!e.target.closest('[aria-disabled="true"]')) abrirMenu(menu, false);   // escolheu, fecha
+    });
+  });
+  document.addEventListener("click", function (e) {
+    menus.forEach(function (m) { if (!m.contains(e.target)) abrirMenu(m, false); });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") menus.forEach(function (m) { abrirMenu(m, false); });
+  });
   $("#btn-export").onclick = doExport;
   // Abre o seletor do sistema direto. A tela intermediaria existia so para
   // oferecer o arrastar, e cobrava um clique de todo mundo por isso.

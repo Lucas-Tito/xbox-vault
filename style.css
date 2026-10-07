@@ -73,6 +73,16 @@ a{color:var(--green2)}
   border-radius:5px;white-space:nowrap;color:var(--dim);
 }
 .btn:hover{border-color:var(--green);color:var(--green)}
+/* menu Arquivo */
+.menu{position:relative}
+.btn .seta{display:inline-block;width:6px;height:6px;margin:0 0 3px 6px;
+  border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
+.btn[aria-expanded="true"] .seta{transform:rotate(225deg);margin-bottom:-1px}
+.menu-lista{position:absolute;right:0;top:calc(100% + 6px);z-index:60;min-width:270px;padding:4px;
+  background:var(--bg2);border:1px solid var(--line);border-radius:7px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.menu-item{display:block;width:100%;text-align:left;background:none;border:0;border-radius:4px;
+  padding:8px 10px;color:var(--txt);font-size:13px;text-decoration:none;cursor:pointer}
+.menu-item small{display:block;margin-top:1px;color:var(--dim);font-size:11.5px}
 .btn.primary{background:var(--green);border-color:var(--green);color:var(--on-green);font-weight:600}
 .btn.primary:hover{filter:brightness(1.08);color:var(--on-green)}
 
@@ -287,6 +297,8 @@ select:focus{border-color:var(--green)}
   /* No celular a busca volta a ocupar a sobra da linha, e a contagem desce para
      baixo das abas, que rolam de lado e nao teriam onde dividir espaco. */
   .brand,.actions{flex:none}
+  /* aqui o Arquivo fica a esquerda: o menu abre para a direita, senao sai da tela */
+  .menu-lista{right:auto;left:0}
   .search{flex:1 1 200px;max-width:none}
   .vistas-linha{flex-wrap:wrap;gap:0}
   .vistas{flex-basis:100%}
