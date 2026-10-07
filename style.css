@@ -279,9 +279,9 @@ select:focus{border-color:var(--green)}
 .year .cnt{font-size:13px;color:var(--dim)}
 .year .ln{flex:1;height:1px;background:var(--line)}
 
-/* Card deitado, com a informacao ao lado da capa: no minimo 340px de largura,
-   40px entre linhas e 26px entre colunas. */
-.grid{display:grid;gap:40px 26px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+/* Card deitado, com a informacao ao lado da capa: no minimo 460px de largura,
+   40px entre linhas e 28px entre colunas. */
+.grid{display:grid;gap:40px 28px;grid-template-columns:repeat(auto-fill,minmax(460px,1fr))}
 
 /* ---------- card ---------- */
 .card{
@@ -311,9 +311,9 @@ select:focus{border-color:var(--green)}
 }
 /* A capa se arredonda sozinha, com o raio do card menos a borda: o card nao
    corta mais o que esta dentro dele (ver .card::before). */
-/* A capa e a coluna da esquerda, de 112px, na proporcao do encarte (3:4); se o
+/* A capa e a coluna da esquerda, de 160px, na proporcao do encarte (3:4); se o
    texto da direita for mais alto, ela acompanha e corta as bordas da imagem. */
-.thumb{position:relative;width:112px;min-height:149px;align-self:stretch;background:var(--bg3);overflow:hidden;flex:none;
+.thumb{position:relative;width:160px;min-height:213px;align-self:stretch;background:var(--bg3);overflow:hidden;flex:none;
   border-radius:calc(var(--r) - 1px) 0 0 calc(var(--r) - 1px)}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 /* logo/faixa horizontal em vez de box art: mostra inteiro, sem ampliar */
@@ -326,12 +326,16 @@ select:focus{border-color:var(--green)}
 .card:not(.own) .thumb img{filter:saturate(.75) brightness(.86)}
 .card:hover .thumb img{filter:none}
 
-.body{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
-.card h3{margin:0;font-size:14px;line-height:1.3;font-weight:600}
+.body{padding:16px 18px;display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
+.card h3{margin:0;font-size:16px;line-height:1.3;font-weight:600}
 .card .sub{font-size:12.5px;color:var(--dim);line-height:1.35;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* a nota (so o numero) e o genero na mesma linha */
-.linha{display:flex;align-items:center;gap:7px;min-width:0;font-size:12px;color:var(--dim)}
+.linha{display:flex;align-items:center;gap:8px;min-width:0;font-size:13px;color:var(--dim)}
+/* A descricao fica no meio do espaco entre a nota e as etiquetas: as margens
+   automaticas a centralizam na vertical. Ate tres linhas. */
+.card .desc{margin:auto 0;font-size:13.5px;line-height:1.5;color:#B9C4BE;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .linha .mc,.linha .ur{position:static;box-shadow:none;flex:none}
 .linha .sub{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
@@ -345,15 +349,15 @@ select:focus{border-color:var(--green)}
    etiqueta: esconder a etiqueta inteira tirava informacao demais. */
 .tags{display:flex;flex-wrap:nowrap;gap:4px;margin-top:auto;padding-top:2px;overflow:hidden}
 .tag{flex:none}
-.tag{white-space:nowrap;font-size:10.5px;font-weight:600;letter-spacing:.03em;line-height:1;
+.tag{white-space:nowrap;font-size:11.5px;font-weight:600;letter-spacing:.03em;line-height:1;
   padding:5px 6px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
 .tag.plat,.tag.emu{color:var(--txt);background:rgba(231,237,233,.13)}
 .tag.nobc{color:var(--dim2)}
 .tag.vaz{color:var(--amber);background:rgba(240,192,54,.12)}
 
 /* No canto de cima da CAPA, e nao do card: no card deitado, o canto direito e o
-   do texto, e os botoes tampariam o nome. 112 da capa, menos 30 do botao e 8. */
-.marks{position:absolute;top:8px;left:74px;z-index:3;display:flex;flex-direction:column;gap:5px}
+   do texto, e os botoes tampariam o nome. 160 da capa, menos 30 do botao e 8. */
+.marks{position:absolute;top:8px;left:122px;z-index:3;display:flex;flex-direction:column;gap:5px}
 /* Sobraram dois, entao cabe um alvo maior sem tapar a capa. O "tenho" saiu do
    card de proposito: quem indica o estado e a borda verde com a capa em cor
    cheia, e marcar passou a ser so pelo popup. */
