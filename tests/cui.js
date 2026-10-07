@@ -75,6 +75,7 @@
   ok('dentro da colecao a ordem e alfabetica, sem artigo', titulos.every((t, i) => !i || titulos[i - 1] <= t),
      titulos.join(' | '));
   ok('a uniao nao tem Adicionar nem remover', !$('#cui-add') && !$('.rem-btn'));
+  ok('tem a seta de voltar ao lado da trilha', !!$('.cui-seta'));
   $('#cui-voltar').click(); await wait(400);
 
   // ---- adicionar: rascunho, apagados, Cancelar e Concluir ----

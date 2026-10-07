@@ -124,6 +124,11 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .cui-barra b{color:var(--txt);font-weight:600}
 /* Trilha no tamanho de titulo: "Colecoes / co-op 2 players". O nivel de cima e
    link cinza; o atual, em destaque. */
+/* Seta de voltar ao lado da trilha: volta UM nivel (da colecao para as colecoes;
+   de Adicionar para a colecao, sem gravar o rascunho). */
+.cui-seta{flex:none;width:34px;height:34px;padding:0 0 3px;display:grid;place-items:center;
+  background:var(--bg2);border:1px solid var(--line);border-radius:5px;color:var(--txt);font-size:22px;line-height:1}
+.cui-seta:hover{border-color:var(--green);color:var(--green)}
 .cui-trilha{display:flex;align-items:baseline;flex-wrap:wrap;font-size:20px;line-height:1.3}
 .cui-trilha button{background:none;border:0;padding:0;font-size:inherit;color:var(--dim);font-weight:400}
 .cui-trilha button:hover{color:var(--green)}
