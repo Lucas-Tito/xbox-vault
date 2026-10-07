@@ -9,6 +9,8 @@
 @font-face{font-family:"IBM Plex Sans";font-weight:600;font-display:swap;src:url(fonts/plex-sans-600.woff2) format("woff2")}
 @font-face{font-family:"IBM Plex Mono";font-weight:400;font-display:swap;src:url(fonts/plex-mono-400.woff2) format("woff2")}
 @font-face{font-family:"IBM Plex Mono";font-weight:500;font-display:swap;src:url(fonts/plex-mono-500.woff2) format("woff2")}
+/* So no nome do site: o Plex no logo era o que mais tinha cara de gerado. */
+@font-face{font-family:"Archivo Black";font-weight:400;font-display:swap;src:url(fonts/archivo-black-400.woff2) format("woff2")}
 
 /* Paleta da previa do CollectionUI, que por sua vez copia o app/main.cpp:
    painel, linha, texto, apagado, fraco e o anel de selecao. As cores de aviso
@@ -55,7 +57,8 @@ a{color:var(--green2)}
   position:sticky; top:0; z-index:50; background:rgba(21,27,24,.96);
   border-bottom:1px solid var(--line);
 }
-.topbar-in{display:flex;align-items:center;gap:16px;padding:10px 20px;flex-wrap:wrap}
+/* Topo mais alto, para o nome ter presenca */
+.topbar-in{display:flex;align-items:center;gap:20px;padding:16px 28px;min-height:76px;flex-wrap:wrap}
 /* So o nome, sem bolinha com letra: logo provisorio e o que ela parecia. */
 /* Busca com largura limitada e no centro: nome e botoes dividem a sobra em
    partes iguais (base 0, crescimento 1), entao o campo fica no meio da tela. Ela
@@ -63,16 +66,16 @@ a{color:var(--green2)}
 .lado{flex:1 1 0;display:flex;align-items:center;gap:18px}
 /* O nome do site abre o menu de areas: parece texto, e nao botao, ate o mouse
    chegar nele. */
-.brand{font-weight:600;font-size:16px;white-space:nowrap;background:none;border:0;
-  padding:6px 8px;margin-left:-8px;border-radius:5px;color:var(--txt)}
+.brand{font-family:"Archivo Black",var(--sans);font-weight:400;font-size:23px;letter-spacing:.01em;
+  white-space:nowrap;background:none;border:0;padding:6px 10px;margin-left:-10px;border-radius:5px;color:var(--txt)}
 .brand:hover,.brand[aria-expanded="true"]{background:var(--bg3)}
 .brand .seta{display:inline-block;width:6px;height:6px;margin:0 0 4px 7px;color:var(--dim);
   border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
 .brand[aria-expanded="true"] .seta{transform:rotate(225deg);margin-bottom:-1px}
 .search{flex:0 1 640px;min-width:180px}
 .search input{
-  width:100%;padding:8px 11px;background:var(--bg3);
-  border:1px solid var(--line);border-radius:var(--r-sm);outline:none;
+  width:100%;padding:10px 20px;background:var(--bg3);
+  border:1px solid var(--line);border-radius:999px;outline:none;
 }
 .search input:focus{border-color:var(--green)}
 .actions{flex:1 1 0;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
