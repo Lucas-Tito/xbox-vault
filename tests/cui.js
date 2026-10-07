@@ -77,6 +77,11 @@
   await abrir('The Alfa');
   $('#cui-add').click(); await wait(600);
   ok('Adicionar abre o catalogo com os filtros', document.body.dataset.tela === 'adicionar' && !!filtros());
+  ok('as abas do catalogo aparecem ao adicionar', !!$('#vistas-own').offsetParent);
+  $('.vista[data-own="yes"]').click(); await wait(500);
+  ok('a aba Tenho filtra o rascunho', $$('.card').length === 0 && /Nenhum jogo/.test($('#main').textContent),
+     $$('.card').length + ' cards');
+  $('.vista[data-own="all"]').click(); await wait(500);
   await buscar(alt.title);
   const k = card(alt);
   ok('o jogo fora da colecao vem apagado', k && k.classList.contains('apagado'));

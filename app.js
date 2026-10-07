@@ -207,9 +207,9 @@ function match(g, skip) {
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
   if (!buscaOk(g)) return false;
 
-  // Ao adicionar jogos ao CollectionUI vale o catalogo inteiro, escondido
-  // incluso: um jogo escondido daqui ainda pode estar no console.
-  if (AREA !== "cui") {
+  // Ao adicionar jogos ao CollectionUI as abas do catalogo (tenho, wishlist,
+  // escondidos...) valem igual: e o recorte mais util para montar colecao.
+  if (AREA !== "cui" || cuiTela === "adicionar") {
   // "não quero" tira o jogo de todas as listas, menos da lista de escondidos
   if (F.own === "hide") { if (!escondidos.has(g.id)) return false; }
   else if (escondidos.has(g.id)) return false;
