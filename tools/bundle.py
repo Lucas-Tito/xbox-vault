@@ -272,7 +272,7 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         # data/x360.json, so nao e publicado. Ver #11.
         if isinstance(g.get("flags"), dict):
             g["flags"].pop("xboxOne", None)
-        g.pop("ur", None); g.pop("titleId", None); g.pop("screens", None)
+        g.pop("ur", None); g.pop("titleId", None); g.pop("titleIdAlt", None); g.pop("screens", None)
         g.pop("tu", None); g.pop("tempo", None); g.pop("dlc", None)
         g.pop("tamanho", None); g.pop("resolucao", None)
         dl = dlcs.get(g["id"])
@@ -312,6 +312,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
                 g["ur"] = r["ur"]           # 0 a 5, media dos jogadores
             if r.get("titleId"):
                 g["titleId"] = r["titleId"]
+            # Os outros Title IDs do mesmo jogo (regioes, disco e Arcade): o
+            # CollectionUI guarda o do disco que o console achou, qualquer um.
+            if r.get("outros"):
+                g["titleIdAlt"] = r["outros"]
             # so preenche buraco: o que a Wikipedia ja trouxe tem preferencia
             if r.get("dev") and not (g.get("developers") or []):
                 g["developers"] = [x.strip() for x in r["dev"].split("/") if x.strip()]
@@ -343,11 +347,12 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     tempo_hltb = sum(1 for g in games if (g.get("tempo") or {}).get("fonte") == "hltb")
     tempo_geral = sum(1 for g in games if (g.get("tempo") or {}).get("geral"))
     so_ur = sum(1 for g in games if g.get("ur") and not g.get("mc"))
-    print("  %s: %d jogos | %d com tags | %d com imagem (%d locais, %d paisagem) | "
+    com_tid = sum(1 for g in games if g.get("titleId"))
+    print("  %s: %d jogos | %d com Title ID | %d com tags | %d com imagem (%d locais, %d paisagem) | "
           "%d com Metacritic | %d com nota de jogador (%d so essa) | "
           "%d com patch | %d com DLC | %d com descricao | %d multidisco | %d com midia | %d com tempo (%d do HowLongToBeat, %d somando versoes) | "
           "%d co-op do Co-Optimus | %d dup" %
-          (rotulo, len(games), tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
+          (rotulo, len(games), com_tid, tagged, imaged, localed, wide, com_mc, com_ur, so_ur,
            com_tu, com_dlc, com_desc, com_disco, com_midia, com_tempo, tempo_hltb, tempo_geral, coopados, dupes))
     return games, {"total": len(games), "tagged": tagged, "withImage": imaged,
                    "withLocalImage": localed, "wideImage": wide}

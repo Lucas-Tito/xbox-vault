@@ -35,6 +35,23 @@
   "titleId": "454107E6",
   "ur": 2.75
  },
+ "x360-2010-fifa-world-cup-south-africa": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "pub": "Electronic Arts",
+  "titleId": "454108E4",
+  "ur": 4.25
+ },
+ "x360-2014-fifa-world-cup-brazil": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "outros": [
+   "454189D6"
+  ],
+  "pub": "Electronic Arts Inc",
+  "titleId": "454109D4",
+  "ur": 3.75
+ },
  "x360-3-on-3-nhl-arcade": {
   "dev": "Electronic Arts Canada",
   "pub": "Electronic Arts",
@@ -76,6 +93,12 @@
   "titleId": "584109DB",
   "ur": 4.0
  },
+ "x360-absolute-blazing-infinity": {
+  "aprox": true,
+  "dev": "Idea Factory",
+  "pub": "Idea Factory/InterFM",
+  "titleId": "494607D3"
+ },
  "x360-abyss-odyssey": {
   "dev": "ACE Team",
   "pub": "ATLUS",
@@ -90,6 +113,10 @@
  },
  "x360-ace-combat-assault-horizon": {
   "dev": "BANDAI NAMCO Entertainment Inc.",
+  "outros": [
+   "4E4D084C",
+   "4E4D8849"
+  ],
   "pub": "NAMCO BANDAI Games America",
   "titleId": "4E4D081C",
   "ur": 4.0
@@ -166,11 +193,18 @@
  },
  "x360-air-conflicts-pacific-carriers": {
   "dev": "Games Farm",
+  "outros": [
+   "413387D7"
+  ],
   "pub": "bitComposer Entertainment AG",
   "titleId": "413307D6"
  },
  "x360-air-conflicts-secret-wars": {
   "dev": "Games Farm s.r.o.",
+  "outros": [
+   "413387D4",
+   "4B5907E0"
+  ],
   "pub": "bitComposer Games GmbH",
   "titleId": "413307D3",
   "ur": 4.5
@@ -185,6 +219,16 @@
   "pub": "Ubisoft",
   "titleId": "58411426",
   "ur": 4.0
+ },
+ "x360-akai-katana-shin": {
+  "aprox": true,
+  "dev": "CAVE",
+  "outros": [
+   "435A07DD"
+  ],
+  "pub": "Rising Star Games",
+  "titleId": "545A07D3",
+  "ur": 3.75
  },
  "x360-alan-wake": {
   "dev": "Remedy Games",
@@ -271,6 +315,9 @@
  },
  "x360-alone-in-the-dark": {
   "dev": "Eden Games",
+  "outros": [
+   "494707F2"
+  ],
   "pub": "THQ Nordic",
   "titleId": "494707D1",
   "ur": 3.75
@@ -293,6 +340,13 @@
   "titleId": "4D4A07E4",
   "ur": 3.75
  },
+ "x360-america-s-army-true-soldiers": {
+  "aprox": true,
+  "dev": "High Voltage Software",
+  "pub": "UbiSoft",
+  "titleId": "55530808",
+  "ur": 3.5
+ },
  "x360-american-mensa-academy": {
   "dev": "Silverball Studios Limited",
   "pub": "Square Enix Ltd",
@@ -313,6 +367,9 @@
  },
  "x360-anarchy-reigns": {
   "dev": "PlatinumGames",
+  "outros": [
+   "53458864"
+  ],
   "pub": "SEGA",
   "titleId": "5345083F",
   "ur": 4.0
@@ -331,6 +388,9 @@
  },
  "x360-angry-birds-trilogy": {
   "dev": "Rovio",
+  "outros": [
+   "415688EE"
+  ],
   "pub": "Activision",
   "titleId": "415608E4",
   "ur": 4.0
@@ -349,6 +409,9 @@
  },
  "x360-apache-air-assault": {
   "dev": "Gaijin Entertainment",
+  "outros": [
+   "4156889B"
+  ],
   "pub": "Activision",
   "titleId": "4156088B",
   "ur": 4.0
@@ -372,8 +435,18 @@
  },
  "x360-arcania-gothic-4": {
   "dev": "Spellbound Entertainment AG",
+  "outros": [
+   "4A5787D5"
+  ],
   "pub": "Nordic Games GmbH",
   "titleId": "4A5707D2",
+  "ur": 3.75
+ },
+ "x360-are-you-smarter-than-a-5th-grader-game-time": {
+  "aprox": true,
+  "dev": "ImaginEngine",
+  "pub": "THQ",
+  "titleId": "54510840",
   "ur": 3.75
  },
  "x360-arkadian-warriors": {
@@ -394,25 +467,48 @@
   "titleId": "465307D6",
   "ur": 3.75
  },
+ "x360-armored-core-for-answer": {
+  "aprox": true,
+  "dev": "FromSoftware,Inc.",
+  "pub": "FromSoftware, Inc.",
+  "titleId": "465307DA",
+  "ur": 3.75
+ },
  "x360-armored-core-v": {
   "dev": "FromSoftware, Inc.",
+  "outros": [
+   "465307DF",
+   "465387E1",
+   "4E4D084F"
+  ],
   "pub": "NAMCO Bandai Games Europe",
   "titleId": "4E4D0853"
  },
  "x360-armored-core-verdict-day": {
   "dev": "FromSoftware, Inc.",
+  "outros": [
+   "465307E3",
+   "465387E6"
+  ],
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D0864",
   "ur": 3.75
  },
  "x360-army-of-two": {
   "dev": "Electronic Arts Montreal",
+  "outros": [
+   "4541084C",
+   "4541084F"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454107F8",
   "ur": 4.25
  },
  "x360-army-of-two-the-devil-s-cartel": {
   "dev": "Visceral",
+  "outros": [
+   "454189B0"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454109AB",
   "ur": 4.5
@@ -483,6 +579,20 @@
   "titleId": "584108C3",
   "ur": 3.75
  },
+ "x360-asterix-at-the-olympic-games": {
+  "aprox": true,
+  "dev": "Etranges libellules",
+  "pub": "Atari",
+  "titleId": "494707E1",
+  "ur": 4.0
+ },
+ "x360-asteroids-asteroids-deluxe": {
+  "aprox": true,
+  "dev": "Stainless Games, Ltd",
+  "pub": "Atari",
+  "titleId": "5841084E",
+  "ur": 3.25
+ },
  "x360-astropop": {
   "dev": "PopCap",
   "pub": "Electronic Arts",
@@ -491,12 +601,18 @@
  },
  "x360-asura-s-wrath": {
   "dev": "CyberConnect2 Co.Ltd.",
+  "outros": [
+   "43438825"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "43430817",
   "ur": 4.25
  },
  "x360-attack-of-the-movies-3d": {
   "dev": "Panic Button Games, LLC",
+  "outros": [
+   "464F07EA"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07D9",
   "ur": 3.75
@@ -513,11 +629,25 @@
   "titleId": "584112A9",
   "ur": 3.75
  },
+ "x360-avatar-the-last-airbender-the-burning-earth": {
+  "aprox": true,
+  "dev": "THQ Nordic",
+  "pub": "THQ Nordic",
+  "titleId": "545107E1",
+  "ur": 3.75
+ },
  "x360-awesomenauts": {
   "dev": "Ronimo Games",
   "pub": "dtp entertainment",
   "titleId": "58410B5A",
   "ur": 4.0
+ },
+ "x360-axel-and-pixel": {
+  "aprox": true,
+  "dev": "2K Play / Silver Wish Games",
+  "pub": "2K Games",
+  "titleId": "5841092D",
+  "ur": 3.5
  },
  "x360-babel-rising": {
   "dev": "Mando Productions",
@@ -543,10 +673,31 @@
   "titleId": "4947080B",
   "ur": 3.75
  },
+ "x360-backyard-sports-sandlot-sluggers": {
+  "aprox": true,
+  "dev": "HB Studios",
+  "pub": "Atari",
+  "titleId": "49470806",
+  "ur": 3.75
+ },
  "x360-baja-edge-of-control": {
   "dev": "2XL Games, Inc.",
   "pub": "THQ",
   "titleId": "545107EF",
+  "ur": 4.0
+ },
+ "x360-bakugan-battle-brawlers": {
+  "aprox": true,
+  "dev": "NOW PRODUCTION Company Limited / Premium Agency Inc.",
+  "pub": "Activision",
+  "titleId": "41560857",
+  "ur": 4.0
+ },
+ "x360-bakugan-defenders-of-the-core": {
+  "aprox": true,
+  "dev": "NOW PRODUCTION Co., Ltd.",
+  "pub": "Activision",
+  "titleId": "41560891",
   "ur": 4.0
  },
  "x360-band-hero": {
@@ -611,12 +762,20 @@
  },
  "x360-batman-arkham-city": {
   "dev": "Rocksteady Studios Ltd",
+  "outros": [
+   "57528827"
+  ],
   "pub": "WB Games Inc.",
   "titleId": "57520802",
   "ur": 4.0
  },
  "x360-batman-arkham-origins": {
   "dev": "WB Games Montréal",
+  "outros": [
+   "5752083C",
+   "57528839",
+   "5752883A"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "57520828",
   "ur": 4.75
@@ -629,6 +788,9 @@
  },
  "x360-batman-the-telltale-series": {
   "dev": "Telltale Games",
+  "outros": [
+   "584114BB"
+  ],
   "pub": "Telltale Games",
   "titleId": "443607DB",
   "ur": 4.0
@@ -671,12 +833,19 @@
  },
  "x360-battlefield-3": {
   "dev": "DICE",
+  "outros": [
+   "45418975"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410950",
   "ur": 4.25
  },
  "x360-battlefield-4": {
   "dev": "DICE",
+  "outros": [
+   "454189C7",
+   "454189C8"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454109BA",
   "ur": 4.75
@@ -695,6 +864,9 @@
  },
  "x360-battlefield-hardline": {
   "dev": "Visceral Games",
+  "outros": [
+   "454109ED"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454109E0",
   "ur": 4.5
@@ -713,6 +885,9 @@
  },
  "x360-battlestations-midway": {
   "dev": "EIDOS Hungary",
+  "outros": [
+   "534407F4"
+  ],
   "pub": "Square Enix",
   "titleId": "534307D9",
   "ur": 4.0
@@ -767,6 +942,9 @@
  },
  "x360-bejeweled-3": {
   "dev": "PopCap Games",
+  "outros": [
+   "584111D6"
+  ],
   "pub": "PopCap Games",
   "titleId": "504707D8",
   "ur": 4.25
@@ -782,6 +960,13 @@
   "pub": "345 Games",
   "titleId": "58411203",
   "ur": 3.25
+ },
+ "x360-ben-10-alien-force-the-rise-of-hex": {
+  "aprox": true,
+  "dev": "Black Lantern Studios",
+  "pub": "Konami Digital Entertainment",
+  "titleId": "584109EA",
+  "ur": 3.5
  },
  "x360-ben-10-alien-force-vilgax-attacks": {
   "dev": "PAPAYA STUDIO",
@@ -807,6 +992,20 @@
   "titleId": "44500808",
   "ur": 3.25
  },
+ "x360-ben-10-ultimate-alien-cosmic-destruction": {
+  "aprox": true,
+  "dev": "Papaya Studio",
+  "pub": "D3Publisher of America, Inc.",
+  "titleId": "445007F7",
+  "ur": 4.0
+ },
+ "x360-beowulf-the-game": {
+  "aprox": true,
+  "dev": "UBISOFT",
+  "pub": "UbiSoft",
+  "titleId": "55530801",
+  "ur": 3.5
+ },
  "x360-beyond-good-and-evil-hd": {
   "dev": "Ubisoft",
   "pub": "Ubisoft",
@@ -827,6 +1026,11 @@
  },
  "x360-binary-domain": {
   "dev": "SEGA",
+  "outros": [
+   "393387D1",
+   "393387D3",
+   "393387D6"
+  ],
   "pub": "SEGA",
   "titleId": "5345085C",
   "ur": 4.0
@@ -839,6 +1043,9 @@
  },
  "x360-bionic-commando-rearmed": {
   "dev": "Grin",
+  "outros": [
+   "584108F1"
+  ],
   "pub": "Capcom",
   "titleId": "58410937",
   "ur": 4.5
@@ -857,12 +1064,22 @@
  },
  "x360-bioshock": {
   "dev": "2K Boston, 2K Austraila",
+  "outros": [
+   "5454080E",
+   "5454081F",
+   "54540822"
+  ],
   "pub": "2K Games",
   "titleId": "545407D8",
   "ur": 4.5
  },
  "x360-bioshock-2": {
   "dev": "2K Marin",
+  "outros": [
+   "5454082D",
+   "54540865",
+   "54540867"
+  ],
   "pub": "2K Games",
   "titleId": "54540861",
   "ur": 4.5
@@ -875,6 +1092,9 @@
  },
  "x360-birds-of-steel": {
   "dev": "Gaijin Entertainment",
+  "outros": [
+   "4B4E884A"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0839",
   "ur": 4.0
@@ -904,15 +1124,46 @@
  },
  "x360-blades-of-time": {
   "dev": "Gaijin Entertainment",
+  "outros": [
+   "4B4E884B"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0838",
   "ur": 4.0
+ },
+ "x360-bladestorm-the-hundred-years-war": {
+  "aprox": true,
+  "dev": "KOEI Co., Ltd.",
+  "pub": "KOEI Co., Ltd.",
+  "titleId": "4B4F07D8",
+  "ur": 4.0
+ },
+ "x360-blazblue-calamity-trigger": {
+  "aprox": true,
+  "dev": "ARC SYSTEM WORKS Co.,Ltd.",
+  "pub": "ARC SYSTEM WORKS Co.,Ltd.",
+  "titleId": "415807D5",
+  "ur": 4.25
  },
  "x360-blazblue-continuum-shift-extend": {
   "dev": "ARC SYSTEM WORKS Co.,Ltd.",
   "pub": "Aksys Games Localization, Inc.",
   "titleId": "415707DD",
   "ur": 4.25
+ },
+ "x360-blazing-angels-2-secret-missions-of-wwii": {
+  "aprox": true,
+  "dev": "Ubisoft Romania",
+  "pub": "UbiSoft",
+  "titleId": "555307FE",
+  "ur": 3.75
+ },
+ "x360-blazing-angels-squadrons-of-wwii": {
+  "aprox": true,
+  "dev": "Ubisoft Romania",
+  "pub": "UbiSoft",
+  "titleId": "555307DB",
+  "ur": 3.75
  },
  "x360-blazing-birds": {
   "dev": "Vector 2 Games",
@@ -999,14 +1250,27 @@
  },
  "x360-body-and-brain-connection": {
   "dev": "BANDAI NAMCO Entertainment Inc.",
+  "outros": [
+   "4E4D8843"
+  ],
   "pub": "Namco Bandai Games America, Inc.",
   "titleId": "4E4D0827",
   "ur": 3.75
  },
  "x360-bodycount": {
   "dev": "Codemasters",
+  "outros": [
+   "434D883A"
+  ],
   "pub": "Codemasters",
   "titleId": "434D0839",
+  "ur": 3.75
+ },
+ "x360-bolt": {
+  "aprox": true,
+  "dev": "Avalanche Software",
+  "pub": "Disney Interactive",
+  "titleId": "425607DE",
   "ur": 3.75
  },
  "x360-bomberman-act-zero": {
@@ -1019,6 +1283,13 @@
   "dev": "Backbone Entertainment",
   "pub": "Xbox LIVE Arcade",
   "titleId": "5841083F",
+  "ur": 4.0
+ },
+ "x360-bomberman-live-battlefest": {
+  "aprox": true,
+  "dev": "Pi Studios",
+  "pub": "Hudson Entertainment",
+  "titleId": "584109B2",
   "ur": 4.0
  },
  "x360-boogie-bunnies": {
@@ -1069,6 +1340,13 @@
   "titleId": "584108AE",
   "ur": 3.5
  },
+ "x360-brave-a-warrior-s-tale": {
+  "aprox": true,
+  "dev": "Collision Studios",
+  "pub": "Evolved Games",
+  "titleId": "455607D1",
+  "ur": 2.5
+ },
  "x360-breach": {
   "dev": "Atomic",
   "pub": "Atomic",
@@ -1082,6 +1360,10 @@
  },
  "x360-brink": {
   "dev": "Splash Damage",
+  "outros": [
+   "303407D4",
+   "425307EB"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "425307D9",
   "ur": 4.0
@@ -1094,12 +1376,19 @@
  },
  "x360-brothers-in-arms-hell-s-highway": {
   "dev": "Gearbox Software",
+  "outros": [
+   "55530828",
+   "5553082A"
+  ],
   "pub": "Ubisoft",
   "titleId": "555307EA",
   "ur": 4.0
  },
  "x360-brunswick-pro-bowling": {
   "dev": "FarSight Studios, Inc.",
+  "outros": [
+   "435607DA"
+  ],
   "pub": "505 Games",
   "titleId": "464F07E9"
  },
@@ -1117,30 +1406,46 @@
  },
  "x360-buku-sudoku": {
   "dev": "Absolutist Ltd.",
+  "outros": [
+   "5841091E"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "58410820",
   "ur": 3.25
  },
  "x360-bullet-soul": {
   "dev": "Tachyon Inc.",
+  "outros": [
+   "465607DF",
+   "465687EA"
+  ],
   "pub": "5pb.",
   "titleId": "465607F7",
   "ur": 4.25
  },
  "x360-bullet-soul-infinite-burst": {
   "dev": "Tachyon Inc.",
+  "outros": [
+   "465607F6"
+  ],
   "pub": "5pb.",
   "titleId": "465607F8",
   "ur": 4.25
  },
  "x360-bullet-witch": {
   "dev": "MarvelousAQL",
+  "outros": [
+   "434107D1"
+  ],
   "pub": "XSEED",
   "titleId": "494707DB",
   "ur": 3.75
  },
  "x360-bulletstorm": {
   "dev": "Epic Games / People Can Fly",
+  "outros": [
+   "454188F0"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108EF",
   "ur": 4.5
@@ -1181,6 +1486,34 @@
   "titleId": "415608FA",
   "ur": 3.5
  },
+ "x360-cabela-s-african-safari": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "415607E5",
+  "ur": 3.75
+ },
+ "x360-cabela-s-alaskan-adventures": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "415607DC",
+  "ur": 3.75
+ },
+ "x360-cabela-s-big-game-hunter": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "41560800",
+  "ur": 3.75
+ },
+ "x360-cabela-s-big-game-hunter-2010": {
+  "aprox": true,
+  "dev": "Cauldron",
+  "pub": "Activision",
+  "titleId": "4156085F",
+  "ur": 4.0
+ },
  "x360-cabela-s-big-game-hunter-2012": {
   "dev": "Cauldron",
   "pub": "Activision",
@@ -1193,8 +1526,25 @@
   "titleId": "415608FE",
   "ur": 3.5
  },
+ "x360-cabela-s-dangerous-hunts-2009": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "41560826",
+  "ur": 4.0
+ },
+ "x360-cabela-s-dangerous-hunts-2011": {
+  "aprox": true,
+  "dev": "Cauldron",
+  "pub": "Activision",
+  "titleId": "41560890",
+  "ur": 3.75
+ },
  "x360-cabela-s-dangerous-hunts-2013": {
   "dev": "Cauldron",
+  "outros": [
+   "415688F4"
+  ],
   "pub": "Activision",
   "titleId": "415608DB",
   "ur": 3.5
@@ -1203,6 +1553,20 @@
   "dev": "Fun Labs",
   "pub": "Activision",
   "titleId": "415608DC",
+  "ur": 3.5
+ },
+ "x360-cabela-s-north-american-adventures": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "4156088F",
+  "ur": 3.5
+ },
+ "x360-cabela-s-outdoor-adventures": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "4156085B",
   "ur": 3.5
  },
  "x360-cabela-s-trophy-bucks": {
@@ -1243,30 +1607,47 @@
  },
  "x360-call-of-duty-black-ops": {
   "dev": "Treyarch",
+  "outros": [
+   "4156889D",
+   "415688B3"
+  ],
   "pub": "Activision",
   "titleId": "41560855",
   "ur": 4.25
  },
  "x360-call-of-duty-black-ops-ii": {
   "dev": "Treyarch",
+  "outros": [
+   "415608F2",
+   "415688E7"
+  ],
   "pub": "Activision",
   "titleId": "415608C3",
   "ur": 4.25
  },
  "x360-call-of-duty-black-ops-iii": {
   "dev": "Treyarch",
+  "outros": [
+   "41560929"
+  ],
   "pub": "Activision",
   "titleId": "4156091D",
   "ur": 4.0
  },
  "x360-call-of-duty-classic": {
   "dev": "Infinity Ward",
+  "outros": [
+   "584109CA"
+  ],
   "pub": "Activision",
   "titleId": "58410957",
   "ur": 4.0
  },
  "x360-call-of-duty-ghosts": {
   "dev": "Infinity Ward",
+  "outros": [
+   "41568910"
+  ],
   "pub": "Activision",
   "titleId": "415608FC",
   "ur": 4.75
@@ -1279,6 +1660,10 @@
  },
  "x360-call-of-duty-modern-warfare-3": {
   "dev": "Infinity Ward and Sledgehammer Games",
+  "outros": [
+   "4156088E",
+   "415688E6"
+  ],
   "pub": "Activision",
   "titleId": "415608CB",
   "ur": 4.25
@@ -1327,6 +1712,9 @@
  },
  "x360-capsized": {
   "dev": "IndiePub",
+  "outros": [
+   "58411227"
+  ],
   "pub": "NAMCO BANDAI Games",
   "titleId": "584113F0",
   "ur": 3.0
@@ -1345,12 +1733,20 @@
  },
  "x360-carnival-games-monkey-see-monkey-do": {
   "dev": "Cat Daddy",
+  "outros": [
+   "54540897"
+  ],
   "pub": "2K Play",
   "titleId": "54540890",
   "ur": 3.5
  },
  "x360-carrier-command-gaea-mission": {
   "dev": "Bohemia Interactive",
+  "outros": [
+   "4D4B07D6",
+   "4D4B87D8",
+   "545A87D6"
+  ],
   "pub": "Rising Star Games",
   "titleId": "545A07D5",
   "ur": 3.25
@@ -1366,6 +1762,13 @@
   "titleId": "57520855",
   "ur": 3.75
  },
+ "x360-cars-mater-national-championship": {
+  "aprox": true,
+  "dev": "Rainbow Studios Inc.",
+  "pub": "Disney Interactive Studios",
+  "titleId": "54510801",
+  "ur": 3.75
+ },
  "x360-cars-race-o-rama": {
   "pub": "Disney Interactive Studios",
   "titleId": "54510848",
@@ -1373,6 +1776,9 @@
  },
  "x360-cartoon-network-punch-time-explosion-xl": {
   "dev": "Papaya",
+  "outros": [
+   "4F4707D7"
+  ],
   "pub": "Little Orbit",
   "titleId": "435607DB",
   "ur": 4.0
@@ -1403,12 +1809,19 @@
  },
  "x360-castlevania-lords-of-shadow": {
   "dev": "Mercury Steam Entertainment",
+  "outros": [
+   "4B4E882F"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0809",
   "ur": 4.5
  },
  "x360-castlevania-lords-of-shadow-2": {
   "dev": "Mercury Steam Entertainment",
+  "outros": [
+   "4B4E885A",
+   "4B4E885D"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E084D",
   "ur": 4.25
@@ -1421,6 +1834,9 @@
  },
  "x360-castlevania-symphony-of-the-night": {
   "dev": "Digital Eclipse",
+  "outros": [
+   "5841089D"
+  ],
   "pub": "Konami",
   "titleId": "58410847",
   "ur": 4.5
@@ -1433,6 +1849,13 @@
  },
  "x360-catherine": {
   "dev": "Atlus",
+  "outros": [
+   "415407D5",
+   "415487DB",
+   "453987D0",
+   "4B4D07EA",
+   "4B4D87F1"
+  ],
   "pub": "Atlus",
   "titleId": "415407D7",
   "ur": 4.25
@@ -1443,16 +1866,39 @@
   "titleId": "58410921",
   "ur": 4.0
  },
+ "x360-centipede-and-millipede": {
+  "aprox": true,
+  "dev": "Stainless Games, Ltd.",
+  "pub": "Atari",
+  "titleId": "5841084C",
+  "ur": 3.5
+ },
  "x360-champion-jockey-g1-jockey-and-gallop-racer": {
   "dev": "TOSE CO.,LTD",
+  "outros": [
+   "4B5607D7"
+  ],
   "pub": "TECMO KOEI GAMES CO., LTD.",
   "titleId": "4B5607D5"
+ },
+ "x360-championship-manager-2007": {
+  "aprox": true,
+  "dev": "Gusto Games Limited",
+  "pub": "Eidos",
+  "titleId": "534307D7"
  },
  "x360-chaos-head-noah": {
   "dev": "5pb.",
   "pub": "5pb.",
   "titleId": "465607D3",
   "ur": 4.75
+ },
+ "x360-chaotic-shadow-warriors": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "4156085A",
+  "ur": 4.0
  },
  "x360-charlie-murder": {
   "dev": "Ska Studios",
@@ -1579,6 +2025,13 @@
   "titleId": "435907D2",
   "ur": 4.25
  },
+ "x360-comic-jumper-the-adventures-of-captain-smiley": {
+  "aprox": true,
+  "dev": "Twisted Pixel Games, LLC",
+  "pub": "Microsoft Studios",
+  "titleId": "58410A20",
+  "ur": 3.75
+ },
  "x360-comix-zone": {
   "dev": "Backbone Entertainment",
   "pub": "SEGA",
@@ -1593,6 +2046,9 @@
  },
  "x360-command-and-conquer-red-alert-3": {
   "dev": "Electronic Arts Los Angeles",
+  "outros": [
+   "584109BF"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410860",
   "ur": 4.0
@@ -1605,6 +2061,10 @@
  },
  "x360-conan": {
   "dev": "Nihilistic Software, Inc.",
+  "outros": [
+   "54510812",
+   "54510821"
+  ],
   "pub": "THQ",
   "titleId": "545107DA",
   "ur": 3.5
@@ -1623,6 +2083,10 @@
  },
  "x360-conflict-denied-ops": {
   "dev": "Pivotal Games",
+  "outros": [
+   "534307EF",
+   "534407F7"
+  ],
   "pub": "Eidos",
   "titleId": "534307D3",
   "ur": 3.0
@@ -1657,6 +2121,13 @@
   "titleId": "58411452",
   "ur": 4.0
  },
+ "x360-counter-strike-global-offensive": {
+  "aprox": true,
+  "dev": "Valve Corporation",
+  "pub": "Valve Corporation",
+  "titleId": "5841125A",
+  "ur": 4.0
+ },
  "x360-country-dance-all-stars": {
   "dev": "High Voltage Software",
   "pub": "GameMill Entertainment",
@@ -1686,6 +2157,27 @@
   "pub": "Vivendi Universal Games",
   "titleId": "565507E4",
   "ur": 4.0
+ },
+ "x360-crash-time-autobahn-pursuit": {
+  "aprox": true,
+  "dev": "Synetic",
+  "outros": [
+   "435607D5"
+  ],
+  "pub": "RTL Games",
+  "titleId": "524C07D1"
+ },
+ "x360-crash-time-ii-burning-wheels": {
+  "aprox": true,
+  "dev": "Synetic",
+  "pub": "RTL Games",
+  "titleId": "524C07D6"
+ },
+ "x360-crash-time-iii-highway-nights": {
+  "aprox": true,
+  "dev": "Synetic",
+  "pub": "Playtainment",
+  "titleId": "524C07D9"
  },
  "x360-crazy-machines-elements": {
   "dev": "FAKT software GmbH",
@@ -1730,12 +2222,20 @@
  },
  "x360-crysis-2": {
   "dev": "Crytek",
+  "outros": [
+   "45418943",
+   "45418946",
+   "45418960"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108E3",
   "ur": 4.25
  },
  "x360-crysis-3": {
   "dev": "Crytek",
+  "outros": [
+   "454189AE"
+  ],
   "pub": "Electronic Arts",
   "titleId": "4541098E",
   "ur": 4.5
@@ -1748,6 +2248,9 @@
  },
  "x360-crystal-quest": {
   "dev": "Ranylix",
+  "outros": [
+   "584107EE"
+  ],
   "pub": "Ranylix",
   "titleId": "58550DA4",
   "ur": 3.25
@@ -1760,6 +2263,9 @@
  },
  "x360-csi-fatal-conspiracy": {
   "dev": "Telltale Games",
+  "outros": [
+   "5553886A"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530849",
   "ur": 3.5
@@ -1772,9 +2278,18 @@
  },
  "x360-culdcept-saga": {
   "dev": "Omiyasoft Co,.Ltd./JAMSWORKS Co,. Ltd./Rocket Studio Inc.",
+  "outros": [
+   "424107D2"
+  ],
   "pub": "Bandai",
   "titleId": "424107DD",
   "ur": 4.0
+ },
+ "x360-cyber-troopers-virtual-on-force": {
+  "aprox": true,
+  "dev": "SEGA",
+  "pub": "SEGA",
+  "titleId": "5345084C"
  },
  "x360-cyber-troopers-virtual-on-oratorio-tangram": {
   "dev": "SEGA",
@@ -1796,18 +2311,28 @@
  },
  "x360-dance-central": {
   "dev": "Harmonix Music Systems, Inc.",
+  "outros": [
+   "545687D8"
+  ],
   "pub": "Microsoft/MTV Games",
   "titleId": "545607D3",
   "ur": 4.0
  },
  "x360-dance-central-2": {
   "dev": "Harmonix Music Systems, Inc.",
+  "outros": [
+   "373387D6"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "373307D2",
   "ur": 4.0
  },
  "x360-dance-central-3": {
   "dev": "Harmonix Music Systems, Inc.",
+  "outros": [
+   "373387DB",
+   "373387DC"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "373307D9",
   "ur": 4.25
@@ -1824,8 +2349,21 @@
   "titleId": "4B4E07EF",
   "ur": 3.25
  },
+ "x360-dance-evolution-dancemasters-in-na": {
+  "aprox": true,
+  "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E8835"
+  ],
+  "pub": "Konami Digital Entertainment, Inc.",
+  "titleId": "4B4E081E",
+  "ur": 3.25
+ },
  "x360-dance-paradise": {
   "dev": "Smack Down Productions",
+  "outros": [
+   "5451088C"
+  ],
   "pub": "Mindscape",
   "titleId": "4D5107D1"
  },
@@ -1837,6 +2375,9 @@
  },
  "x360-dark": {
   "dev": "Andrew Russell",
+  "outros": [
+   "4B5907E6"
+  ],
   "pub": "Andrew Russell",
   "titleId": "58550329",
   "ur": 3.25
@@ -1879,15 +2420,37 @@
  },
  "x360-darksiders": {
   "dev": "Vigil Games",
+  "outros": [
+   "4B4E0814"
+  ],
   "pub": "THQ",
   "titleId": "545107E6",
   "ur": 4.5
  },
  "x360-darksiders-ii": {
   "dev": "Vigil Games",
+  "outros": [
+   "574607D4"
+  ],
   "pub": "THQ, Inc.",
   "titleId": "54510896",
   "ur": 4.25
+ },
+ "x360-darkstalkers-resurrection-night-warriors-darkstalkers-revenge-and-vampire-savior": {
+  "aprox": true,
+  "dev": "Iron Galaxy Studios",
+  "outros": [
+   "5841122F"
+  ],
+  "pub": "Capcom",
+  "titleId": "4343083A"
+ },
+ "x360-darkstar-one-broken-alliance": {
+  "aprox": true,
+  "dev": "Gaming Minds Studios",
+  "pub": "Kalypso Media",
+  "titleId": "4B5907DA",
+  "ur": 3.75
  },
  "x360-darwinia-plus": {
   "dev": "Introversion Software",
@@ -1921,12 +2484,18 @@
  },
  "x360-dead-island": {
   "dev": "Techland",
+  "outros": [
+   "53440803"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07DF",
   "ur": 4.25
  },
  "x360-dead-island-riptide": {
   "dev": "Techland",
+  "outros": [
+   "574607D5"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07F2",
   "ur": 4.75
@@ -1939,6 +2508,12 @@
  },
  "x360-dead-or-alive-5": {
   "dev": "TECMO KOEI GAMES.CO.,LTD/Team NINJA",
+  "outros": [
+   "4B5607E8",
+   "4B5687DC",
+   "4B5687DD",
+   "4B5687DE"
+  ],
   "pub": "TECMO KOEI AMERICA Corporation",
   "titleId": "4B5607DA",
   "ur": 4.5
@@ -1957,6 +2532,14 @@
  },
  "x360-dead-rising-2": {
   "dev": "Blue Castle Games Inc.",
+  "outros": [
+   "58410A8D",
+   "58410ABD",
+   "58410B00",
+   "58410B20",
+   "58410B2D",
+   "58410B2E"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "434307EC",
   "ur": 4.5
@@ -1975,12 +2558,19 @@
  },
  "x360-dead-space-2": {
   "dev": "Visceral Games",
+  "outros": [
+   "45410959",
+   "4541893B"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108DF",
   "ur": 4.5
  },
  "x360-dead-space-3": {
   "dev": "Visceral",
+  "outros": [
+   "454189A7"
+  ],
   "pub": "Electronic Arts",
   "titleId": "4541099D",
   "ur": 4.75
@@ -1993,9 +2583,19 @@
  },
  "x360-deadfall-adventures": {
   "dev": "The Farm 51",
+  "outros": [
+   "354887DB"
+  ],
   "pub": "Nordic Games GmbH",
   "titleId": "354807D5",
   "ur": 3.5
+ },
+ "x360-deadliest-catch-alaskan-storm": {
+  "aprox": true,
+  "dev": "Liquid Dragon Studios",
+  "pub": "Greenwave",
+  "titleId": "475707D1",
+  "ur": 4.25
  },
  "x360-deadliest-catch-sea-of-chaos": {
   "dev": "DoubleTap Games",
@@ -2020,6 +2620,13 @@
   "titleId": "58410B5C",
   "ur": 4.0
  },
+ "x360-deadliest-warrior-the-game": {
+  "aprox": true,
+  "dev": "Pipeworks Software",
+  "pub": "Spike",
+  "titleId": "58410A69",
+  "ur": 4.0
+ },
  "x360-deadlight": {
   "dev": "Tequila Works",
   "pub": "Microsoft Studios",
@@ -2028,6 +2635,9 @@
  },
  "x360-deadly-premonition": {
   "dev": "Access Games",
+  "outros": [
+   "494F07D4"
+  ],
   "pub": "Rising Star Games",
   "titleId": "4D5607D1"
  },
@@ -2051,6 +2661,10 @@
  },
  "x360-deathsmiles": {
   "dev": "CAVE",
+  "outros": [
+   "415807D8",
+   "435A07D5"
+  ],
   "pub": "Rising Star Games",
   "titleId": "545A07D1"
  },
@@ -2072,6 +2686,13 @@
   "titleId": "58410A8B",
   "ur": 4.0
  },
+ "x360-deca-sports-freedom-sports-island-freedom-in-pal-region": {
+  "aprox": true,
+  "dev": "Hudson Soft Co., Ltd.",
+  "pub": "Hudson Entertainment, Inc.",
+  "titleId": "485507DF",
+  "ur": 3.5
+ },
  "x360-deep-black-episode-1": {
   "dev": "Biart Company LLC",
   "pub": "505 Games Srl",
@@ -2080,6 +2701,9 @@
  },
  "x360-deepak-chopra-s-leela": {
   "dev": "Curious Pictures",
+  "outros": [
+   "545188A9"
+  ],
   "pub": "THQ Inc.",
   "titleId": "5451086B",
   "ur": 3.5
@@ -2122,12 +2746,22 @@
  },
  "x360-defiance": {
   "dev": "Trion Worlds, Inc.",
+  "outros": [
+   "545907D6",
+   "545987D4"
+  ],
   "pub": "Trion Worlds, Inc.",
   "titleId": "545907D1",
   "ur": 4.5
  },
  "x360-destiny": {
   "dev": "Bungie",
+  "outros": [
+   "4156090E",
+   "4156091C",
+   "41560927",
+   "41560928"
+  ],
   "pub": "Bungie",
   "titleId": "415608F8",
   "ur": 4.75
@@ -2158,6 +2792,10 @@
  },
  "x360-diablo-iii": {
   "dev": "Blizzard Entertainment",
+  "outros": [
+   "394F07D4",
+   "394F87D2"
+  ],
   "pub": "Blizzard Entertainment",
   "titleId": "394F07D1",
   "ur": 4.75
@@ -2167,6 +2805,12 @@
   "pub": "Microsoft Studios",
   "titleId": "58410B3C",
   "ur": 3.5
+ },
+ "x360-diario-rebirth-moon-legend": {
+  "aprox": true,
+  "dev": "Idea Factory",
+  "pub": "Idea Factory/InterFM",
+  "titleId": "494607D2"
  },
  "x360-dig-dug": {
   "dev": "BANDAI NAMCO Entertainment Inc.",
@@ -2206,6 +2850,9 @@
  },
  "x360-dirt-showdown": {
   "dev": "Codemasters Racing",
+  "outros": [
+   "434D8846"
+  ],
   "pub": "Codemasters Software Company Limited",
   "titleId": "434D0845",
   "ur": 3.75
@@ -2218,6 +2865,9 @@
  },
  "x360-dishonored": {
   "dev": "Arkane Studios",
+  "outros": [
+   "425307F3"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "425307E3",
   "ur": 4.5
@@ -2236,6 +2886,9 @@
  },
  "x360-disney-universe": {
   "dev": "Eurocom",
+  "outros": [
+   "4256880C"
+  ],
   "pub": "Disney Interactive Studios",
   "titleId": "42560803",
   "ur": 4.0
@@ -2245,8 +2898,22 @@
   "pub": "株式会社MAGES.",
   "titleId": "465607F4"
  },
+ "x360-divinity-ii-ego-draconis": {
+  "aprox": true,
+  "dev": "Larian Studios",
+  "outros": [
+   "434407D6"
+  ],
+  "pub": "dtp entertainment AG",
+  "titleId": "445407D3",
+  "ur": 3.5
+ },
  "x360-divinity-ii-the-dragon-knight-saga": {
   "dev": "Larian Studio",
+  "outros": [
+   "415407D8",
+   "464587D7"
+  ],
   "pub": "Focus Home Interactive",
   "titleId": "464507D6"
  },
@@ -2264,9 +2931,19 @@
  },
  "x360-dmc-devil-may-cry": {
   "dev": "Ninja Theory",
+  "outros": [
+   "43438837",
+   "43438838"
+  ],
   "pub": "Capcom",
   "titleId": "43430824",
   "ur": 4.25
+ },
+ "x360-dodonpachi-dai-ou-jou-black-label-extra": {
+  "aprox": true,
+  "dev": "CAVE Interactive CO.,LTD.",
+  "pub": "CAVE Interactive CO.,LTD.",
+  "titleId": "435A07DF"
  },
  "x360-dogfight-1942": {
   "dev": "City Interactive",
@@ -2290,6 +2967,13 @@
   "dev": "Big Ant Studios",
   "pub": "Home Entertainment Suppliers Pty Ltd",
   "titleId": "484507D8"
+ },
+ "x360-don-king-presents-prizefighter": {
+  "aprox": true,
+  "dev": "VenomGames",
+  "pub": "2K Sports",
+  "titleId": "545407DC",
+  "ur": 2.75
  },
  "x360-doodle-jump-for-kinect": {
   "dev": "Smoking Gun Interactive / Lima Sky",
@@ -2335,6 +3019,9 @@
  },
  "x360-double-dragon-ii-wander-of-the-dragons": {
   "dev": "Barunson Creative Co., Ltd",
+  "outros": [
+   "5841128D"
+  ],
   "pub": "Barunson Creative Co., Ltd",
   "titleId": "58410A74"
  },
@@ -2350,6 +3037,18 @@
   "titleId": "584111F3",
   "ur": 3.75
  },
+ "x360-dragon-age-ii": {
+  "aprox": true,
+  "dev": "BioWare",
+  "outros": [
+   "45418936",
+   "53440804",
+   "53448805"
+  ],
+  "pub": "Electronic Arts",
+  "titleId": "4541090B",
+  "ur": 4.25
+ },
  "x360-dragon-age-inquisition": {
   "dev": "Bioware",
   "pub": "Electronic Arts",
@@ -2358,12 +3057,25 @@
  },
  "x360-dragon-age-origins": {
   "dev": "BioWare",
+  "outros": [
+   "53440801"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108C0",
   "ur": 4.5
  },
+ "x360-dragon-ball-raging-blast": {
+  "aprox": true,
+  "dev": "Spike Co., Ltd.",
+  "pub": "BANDAI NAMCO Entertainment Inc.",
+  "titleId": "4E4D0803",
+  "ur": 4.25
+ },
  "x360-dragon-ball-raging-blast-2": {
   "dev": "Spike Co. Ltd,",
+  "outros": [
+   "4E4D8836"
+  ],
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D0826",
   "ur": 4.5
@@ -2376,6 +3088,9 @@
  },
  "x360-dragon-ball-z-battle-of-z": {
   "dev": "ARTDINK CORPORATION",
+  "outros": [
+   "4E4D8867"
+  ],
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D0860",
   "ur": 4.75
@@ -2385,6 +3100,13 @@
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D0856",
   "ur": 4.25
+ },
+ "x360-dragon-ball-z-burst-limit": {
+  "aprox": true,
+  "dev": "Dimps Corporation",
+  "pub": "Bandai",
+  "titleId": "424107DC",
+  "ur": 4.0
  },
  "x360-dragon-ball-z-for-kinect": {
   "dev": "Spike Chunsoft Co., Ltd.",
@@ -2400,6 +3122,9 @@
  },
  "x360-dragon-s-dogma-dark-arisen": {
   "dev": "CAPCOM CO., LTD.",
+  "outros": [
+   "43438829"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "43430814",
   "ur": 4.25
@@ -2424,6 +3149,10 @@
  },
  "x360-driver-san-francisco": {
   "dev": "Ubisoft Reflections",
+  "outros": [
+   "5553888E",
+   "5553888F"
+  ],
   "pub": "Ubisoft",
   "titleId": "5553087E",
   "ur": 4.0
@@ -2454,6 +3183,10 @@
  },
  "x360-duke-nukem-forever": {
   "dev": "Gearbox Software",
+  "outros": [
+   "5454084D",
+   "54548893"
+  ],
   "pub": "2K Games",
   "titleId": "5454084E",
   "ur": 4.0
@@ -2466,6 +3199,9 @@
  },
  "x360-dunamis-15": {
   "dev": "5pb.",
+  "outros": [
+   "465687ED"
+  ],
   "pub": "5pb.",
   "titleId": "465607E9"
  },
@@ -2483,9 +3219,26 @@
  },
  "x360-dungeon-siege-iii": {
   "dev": "Obsidian Entertainment",
+  "outros": [
+   "5351880A"
+  ],
   "pub": "Square Enix",
   "titleId": "535107F5",
   "ur": 4.0
+ },
+ "x360-dungeons-and-dragons-chronicles-of-mystara-shadow-over-mystara-and-tower-of-doom": {
+  "aprox": true,
+  "dev": "Iron Galaxy Studios",
+  "pub": "Capcom",
+  "titleId": "584113C3",
+  "ur": 4.0
+ },
+ "x360-dungeons-and-dragons-daggerdale": {
+  "aprox": true,
+  "dev": "Bedlam Games",
+  "pub": "Atari",
+  "titleId": "58410AA2",
+  "ur": 3.5
  },
  "x360-dust-an-elysian-tail": {
   "dev": "Humble Hearts LLC",
@@ -2507,6 +3260,12 @@
  },
  "x360-dynasty-warriors-6": {
   "dev": "TECMO KOEI GAMES Co., Ltd",
+  "outros": [
+   "4B4F07DA",
+   "4B4F07DF",
+   "4B4F07E1",
+   "4B4F07E4"
+  ],
   "pub": "TECMO KOEI AMERICA., LTD.",
   "titleId": "4B4F07E0",
   "ur": 4.0
@@ -2525,6 +3284,9 @@
  },
  "x360-dynasty-warriors-8": {
   "dev": "TECMO KOEI GAMES.CO.,LTD",
+  "outros": [
+   "4B5607E6"
+  ],
   "pub": "TECMO KOEI AMERICA Corporation",
   "titleId": "4B5607E5",
   "ur": 4.5
@@ -2535,11 +3297,32 @@
   "titleId": "4E4D07E5",
   "ur": 4.0
  },
+ "x360-dynasty-warriors-gundam-2": {
+  "aprox": true,
+  "dev": "KOEI",
+  "outros": [
+   "4E4D07FB"
+  ],
+  "pub": "Namco",
+  "titleId": "4E4D0800",
+  "ur": 4.25
+ },
  "x360-dynasty-warriors-gundam-3": {
   "dev": "TECMO KOEI GAMES CO., LTD.",
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D0834",
   "ur": 4.25
+ },
+ "x360-dynasty-warriors-strikeforce": {
+  "aprox": true,
+  "dev": "KOEI Co., Ltd.",
+  "outros": [
+   "4B4F07F1",
+   "4B4F07F2"
+  ],
+  "pub": "KOEI Co., Ltd.",
+  "titleId": "4B4F07FA",
+  "ur": 4.0
  },
  "x360-ea-sports-active-2": {
   "dev": "Electronic Arts Canada",
@@ -2549,6 +3332,9 @@
  },
  "x360-ea-sports-mma": {
   "dev": "EA Tiburon",
+  "outros": [
+   "45418905"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "454108FC",
   "ur": 3.5
@@ -2597,12 +3383,26 @@
  },
  "x360-el-shaddai-ascension-of-the-metatron": {
   "dev": "Ignition Entertainment Ltd.",
+  "outros": [
+   "494F07D9",
+   "494F87E2"
+  ],
   "pub": "Ignition Entertainment Ltd.",
   "titleId": "494F07D1",
   "ur": 4.0
  },
+ "x360-elements-of-destruction": {
+  "aprox": true,
+  "dev": "Frozen Codebase",
+  "pub": "THQ",
+  "titleId": "58410867",
+  "ur": 3.0
+ },
  "x360-enchanted-arms": {
   "dev": "FROM SOFTWARE",
+  "outros": [
+   "465307D2"
+  ],
   "pub": "FROM SOFTWARE",
   "titleId": "555307E6",
   "ur": 4.25
@@ -2619,14 +3419,37 @@
   "titleId": "435907D5",
   "ur": 3.5
  },
+ "x360-enemy-territory-quake-wars": {
+  "aprox": true,
+  "dev": "Nerve Software",
+  "pub": "Activision",
+  "titleId": "415607DF",
+  "ur": 4.0
+ },
  "x360-enslaved-odyssey-to-the-west": {
   "dev": "Ninja Theory Ltd.",
+  "outros": [
+   "4E4D8833"
+  ],
   "pub": "BANDAI NAMCO Entertainment Inc.",
   "titleId": "4E4D07F1",
   "ur": 4.25
  },
+ "x360-epic-mickey-2-the-power-of-two": {
+  "aprox": true,
+  "dev": "Junction Point Studios",
+  "outros": [
+   "4256881A"
+  ],
+  "pub": "Disney Interactive Studios",
+  "titleId": "42560816",
+  "ur": 4.0
+ },
  "x360-eragon": {
   "dev": "Stormfront Studios, Inc",
+  "outros": [
+   "565507D8"
+  ],
   "pub": "Vivendi Universal Games",
   "titleId": "565507E0",
   "ur": 3.5
@@ -2644,6 +3467,10 @@
  },
  "x360-eternal-sonata": {
   "dev": "tri-Crescendo Inc.",
+  "outros": [
+   "4E4D07D5",
+   "4E4D07E4"
+  ],
   "pub": "Namco",
   "titleId": "4E4D07E2",
   "ur": 4.5
@@ -2652,6 +3479,13 @@
   "dev": "株式会社MAGES.",
   "pub": "株式会社サイバーフロント",
   "titleId": "434607D5"
+ },
+ "x360-every-extend-extra-extreme-e4": {
+  "aprox": true,
+  "dev": "Q Entertainment Inc.",
+  "pub": "Microsoft Studios",
+  "titleId": "58410872",
+  "ur": 3.5
  },
  "x360-every-party": {
   "dev": "Game Republic",
@@ -2681,6 +3515,16 @@
   "titleId": "565507D9",
   "ur": 4.25
  },
+ "x360-f-e-a-r-2-project-origin": {
+  "aprox": true,
+  "dev": "Monolith Productions, Inc.",
+  "outros": [
+   "434607D1"
+  ],
+  "pub": "Warner Bros.",
+  "titleId": "575207D3",
+  "ur": 4.25
+ },
  "x360-f-e-a-r-3": {
   "dev": "Day 1 Studios",
   "pub": "WB Games Inc.",
@@ -2707,6 +3551,9 @@
  },
  "x360-f1-2012": {
   "dev": "Codemasters Birmingham",
+  "outros": [
+   "434D8848"
+  ],
   "pub": "Codemasters Software Company Limited",
   "titleId": "434D0847",
   "ur": 4.0
@@ -2725,12 +3572,18 @@
  },
  "x360-f1-race-stars": {
   "dev": "Codemasters Birmingham",
+  "outros": [
+   "434D884D"
+  ],
   "pub": "Codemasters Software Company Limited",
   "titleId": "434D0849",
   "ur": 3.5
  },
  "x360-fable-anniversary": {
   "dev": "Lionhead Studios",
+  "outros": [
+   "4D530854"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530A87",
   "ur": 4.75
@@ -2755,18 +3608,28 @@
  },
  "x360-fable-iii": {
   "dev": "Lionhead Studios",
+  "outros": [
+   "4D5389C2"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "4D5308D6",
   "ur": 4.25
  },
  "x360-fable-the-journey": {
   "dev": "Lionhead Studios",
+  "outros": [
+   "4D538A5B",
+   "4D538A66"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530A1A",
   "ur": 3.5
  },
  "x360-facebreaker": {
   "dev": "EA Canada",
+  "outros": [
+   "58550EBB"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410861",
   "ur": 3.5
@@ -2791,6 +3654,9 @@
  },
  "x360-fallout-new-vegas": {
   "dev": "Obsidian Entertainment",
+  "outros": [
+   "425307EE"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "425307E0",
   "ur": 4.5
@@ -2803,12 +3669,19 @@
  },
  "x360-fantasia-music-evolved": {
   "dev": "Harmonix Music Systems",
+  "outros": [
+   "4256882F",
+   "42568831"
+  ],
   "pub": "Disney Interactive",
   "titleId": "42560824",
   "ur": 3.5
  },
  "x360-fantastic-pets": {
   "dev": "Blitz Games Studios Ltd.",
+  "outros": [
+   "54518892"
+  ],
   "pub": "THQ Inc.",
   "titleId": "5451085E",
   "ur": 3.75
@@ -2843,6 +3716,13 @@
   "titleId": "5841123E",
   "ur": 3.75
  },
+ "x360-far-cry-instincts-predator": {
+  "aprox": true,
+  "dev": "Ubisoft Montreal",
+  "pub": "UbiSoft",
+  "titleId": "555307DC",
+  "ur": 3.75
+ },
  "x360-farming-simulator": {
   "dev": "Giants Software",
   "pub": "Focus Home Interactive",
@@ -2854,6 +3734,13 @@
   "pub": "Focus Home Interactive",
   "titleId": "464507E1",
   "ur": 4.5
+ },
+ "x360-fast-and-furious-showdown": {
+  "aprox": true,
+  "dev": "Firebrand",
+  "pub": "Activision",
+  "titleId": "415608ED",
+  "ur": 3.0
  },
  "x360-fatal-fury-special": {
   "dev": "SNK Playmore",
@@ -2873,11 +3760,25 @@
   "titleId": "584107F1",
   "ur": 3.75
  },
+ "x360-feeding-frenzy-2-shipwreck-showdown": {
+  "aprox": true,
+  "dev": "PopCap",
+  "pub": "PopCap",
+  "titleId": "5841088C",
+  "ur": 4.0
+ },
  "x360-fez": {
   "dev": "Polytron Corporation",
   "pub": "Microsoft Studios",
   "titleId": "584109C0",
   "ur": 4.0
+ },
+ "x360-fifa-06-road-to-fifa-world-cup": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "pub": "Electronic Arts",
+  "titleId": "454107D7",
+  "ur": 3.5
  },
  "x360-fifa-07": {
   "dev": "EA Canada",
@@ -2905,15 +3806,83 @@
  },
  "x360-fifa-12": {
   "dev": "EA Canada",
+  "outros": [
+   "45410973",
+   "45418974"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "45410967",
   "ur": 4.0
  },
  "x360-fifa-14": {
   "dev": "EA Canada",
+  "outros": [
+   "454109C4",
+   "454109CF",
+   "454189CD",
+   "454189CE"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "454109C3",
   "ur": 4.5
+ },
+ "x360-fifa-15": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "outros": [
+   "454109DE",
+   "454109E9",
+   "454189E3",
+   "454189E8"
+  ],
+  "pub": "Electronic Arts Inc.",
+  "titleId": "454109DB",
+  "ur": 4.5
+ },
+ "x360-fifa-16": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "outros": [
+   "454109EF",
+   "454189F0"
+  ],
+  "pub": "Electronic Arts",
+  "titleId": "454109EE",
+  "ur": 4.25
+ },
+ "x360-fifa-17": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "outros": [
+   "454189F7"
+  ],
+  "pub": "Electronic Arts",
+  "titleId": "454109F4",
+  "ur": 4.25
+ },
+ "x360-fifa-18-legacy-edition": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "pub": "Electronic Arts",
+  "titleId": "454109F8",
+  "ur": 4.25
+ },
+ "x360-fifa-19-legacy-edition": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "pub": "Electronic Arts",
+  "titleId": "454109F9"
+ },
+ "x360-fifa-street": {
+  "aprox": true,
+  "dev": "Electronic Arts",
+  "outros": [
+   "4541097F",
+   "4541897D"
+  ],
+  "pub": "Electronic Arts",
+  "titleId": "4541097B",
+  "ur": 4.0
  },
  "x360-fifa-street-3": {
   "dev": "Electronic Arts Canada",
@@ -2923,6 +3892,9 @@
  },
  "x360-fight-night-champion": {
   "dev": "Electronic Arts Canada",
+  "outros": [
+   "4541894F"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "45410915",
   "ur": 4.0
@@ -2971,8 +3943,19 @@
  },
  "x360-final-fantasy-xiii-2": {
   "dev": "Square Enix",
+  "outros": [
+   "53518810",
+   "53518812"
+  ],
   "pub": "Square Enix",
   "titleId": "53510806",
+  "ur": 4.25
+ },
+ "x360-final-fight-double-impact-final-fight-magic-sword": {
+  "aprox": true,
+  "dev": "Proper Games",
+  "pub": "CAPCOM",
+  "titleId": "584109DD",
   "ur": 4.25
  },
  "x360-fire-pro-wrestling": {
@@ -2989,12 +3972,19 @@
  },
  "x360-fist-of-the-north-star-ken-s-rage": {
   "dev": "TECMO KOEI GAMES CO., LTD.",
+  "outros": [
+   "4B4F07F4",
+   "4B4F8801"
+  ],
   "pub": "TECMO KOEI AMERICA Corporation",
   "titleId": "4B4F07FE",
   "ur": 3.75
  },
  "x360-fist-of-the-north-star-ken-s-rage-2": {
   "dev": "TECMO KOEI GAMES.CO.,LTD",
+  "outros": [
+   "4B4F07FF"
+  ],
   "pub": "TECMO KOEI AMERICA Corporation",
   "titleId": "4B5607E3",
   "ur": 3.75
@@ -3004,6 +3994,13 @@
   "pub": "Ubisoft",
   "titleId": "584113FE",
   "ur": 3.5
+ },
+ "x360-flatout-ultimate-carnage": {
+  "aprox": true,
+  "dev": "Bugbear Entertainment",
+  "pub": "Empire Interactive",
+  "titleId": "454D07D2",
+  "ur": 4.5
  },
  "x360-flock": {
   "dev": "Proper Games",
@@ -3034,12 +4031,19 @@
  },
  "x360-forza-horizon": {
   "dev": "Playground Games",
+  "outros": [
+   "4D538A67",
+   "4D538A68"
+  ],
   "pub": "Turn 10 Studios / Microsoft Studios",
   "titleId": "4D5309C9",
   "ur": 4.0
  },
  "x360-forza-horizon-2": {
   "dev": "Sumo Digital Ltd",
+  "outros": [
+   "4D538AB2"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530AA4",
   "ur": 4.5
@@ -3058,6 +4062,10 @@
  },
  "x360-forza-motorsport-4": {
   "dev": "Turn 10",
+  "outros": [
+   "4D5389EF",
+   "4D5389F0"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530910",
   "ur": 4.0
@@ -3142,12 +4150,18 @@
  },
  "x360-full-auto": {
   "dev": "Pseudo Interactive Inc.",
+  "outros": [
+   "534587D8"
+  ],
   "pub": "Sega",
   "titleId": "534507D5",
   "ur": 4.0
  },
  "x360-full-house-poker": {
   "dev": "Microsoft Game Studios",
+  "outros": [
+   "4D530918"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "5841098D",
   "ur": 4.0
@@ -3160,6 +4174,9 @@
  },
  "x360-fuse": {
   "dev": "Insomniac Games",
+  "outros": [
+   "454189A0"
+  ],
   "pub": "Electronic Arts",
   "titleId": "4541096E",
   "ur": 4.0
@@ -3182,6 +4199,13 @@
   "titleId": "425607E8",
   "ur": 3.75
  },
+ "x360-g-i-joe-the-rise-of-cobra": {
+  "aprox": true,
+  "dev": "Double Helix",
+  "pub": "Electronic Arts",
+  "titleId": "4541089B",
+  "ur": 3.75
+ },
  "x360-galaga": {
   "dev": "NAMCO BANDAI Games Inc.",
   "pub": "Namco Bandai",
@@ -3202,6 +4226,9 @@
  },
  "x360-game-of-thrones": {
   "dev": "Cyanide Studio",
+  "outros": [
+   "415407DE"
+  ],
   "pub": "Focus Home Interactive",
   "titleId": "464507DB"
  },
@@ -3237,12 +4264,20 @@
  },
  "x360-gears-of-war-2": {
   "dev": "Epic Games, Inc.",
+  "outros": [
+   "4D530872",
+   "4D5308C8"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "4D53082D",
   "ur": 4.5
  },
  "x360-gears-of-war-3": {
   "dev": "Epic Games, Inc",
+  "outros": [
+   "4D5389B9",
+   "4D538A01"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D5308AB",
   "ur": 4.5
@@ -3252,6 +4287,20 @@
   "pub": "Microsoft Studios",
   "titleId": "4D530A26",
   "ur": 4.5
+ },
+ "x360-gel-set-and-match": {
+  "aprox": true,
+  "dev": "Gastronaut Studios",
+  "pub": "Microsoft Studios",
+  "titleId": "58410908",
+  "ur": 3.5
+ },
+ "x360-generator-rex-agent-of-providence": {
+  "aprox": true,
+  "dev": "Virtuos",
+  "pub": "Activision",
+  "titleId": "415608AD",
+  "ur": 3.75
  },
  "x360-geometry-wars-3-dimensions-evolved": {
   "dev": "Lucid Games Ltd.",
@@ -3282,6 +4331,13 @@
   "pub": "Atari",
   "titleId": "58410A89",
   "ur": 3.75
+ },
+ "x360-ghostbusters-the-video-game": {
+  "aprox": true,
+  "dev": "Terminal Reality",
+  "pub": "Atari",
+  "titleId": "494707F4",
+  "ur": 4.25
  },
  "x360-giana-sisters-twisted-dreams": {
   "dev": "Black Forest Games",
@@ -3338,6 +4394,9 @@
  },
  "x360-goldeneye-007-reloaded": {
   "dev": "Eurocom",
+  "outros": [
+   "415688D0"
+  ],
   "pub": "Activision",
   "titleId": "415608AF",
   "ur": 4.0
@@ -3354,8 +4413,28 @@
   "titleId": "5841149F",
   "ur": 3.25
  },
+ "x360-grand-slam-tennis-2": {
+  "aprox": true,
+  "dev": "Electronic Arts Inc.",
+  "outros": [
+   "45418892"
+  ],
+  "pub": "Electronic Arts Inc.",
+  "titleId": "45410891",
+  "ur": 3.5
+ },
+ "x360-grand-theft-auto-iv": {
+  "aprox": true,
+  "dev": "Rockstar North",
+  "pub": "Rockstar Games",
+  "titleId": "545407F2",
+  "ur": 4.5
+ },
  "x360-grand-theft-auto-san-andreas": {
   "dev": "Rockstar Games",
+  "outros": [
+   "54540841"
+  ],
   "pub": "Rockstar Games",
   "titleId": "545408B8",
   "ur": 4.75
@@ -3368,11 +4447,17 @@
  },
  "x360-gray-matter": {
   "dev": "Wizarbox",
+  "outros": [
+   "445487DD"
+  ],
   "pub": "dtp entertainment AG",
   "titleId": "445407D4"
  },
  "x360-grease-dance": {
   "dev": "Zoë Mode",
+  "outros": [
+   "464F87F5"
+  ],
   "pub": "Published by 505 Games",
   "titleId": "464F07E7",
   "ur": 3.5
@@ -3402,6 +4487,9 @@
  },
  "x360-grid-2": {
   "dev": "Codemasters Racing",
+  "outros": [
+   "434D8850"
+  ],
   "pub": "Codemasters",
   "titleId": "434D0844",
   "ur": 4.0
@@ -3430,6 +4518,20 @@
   "titleId": "58411282",
   "ur": 4.25
  },
+ "x360-guilty-gear-2-overture": {
+  "aprox": true,
+  "dev": "ARC SYSTEM WORKS",
+  "pub": "Aksys Games",
+  "titleId": "415707D1",
+  "ur": 3.75
+ },
+ "x360-guilty-gear-xx-accent-core-plus": {
+  "aprox": true,
+  "dev": "ARC SYSTEM WORKS",
+  "pub": "ARC SYSTEM WORKS",
+  "titleId": "584111DD",
+  "ur": 4.5
+ },
  "x360-guitar-hero-5": {
   "dev": "Neversoft Entertainment",
   "pub": "Activision",
@@ -3448,6 +4550,13 @@
   "titleId": "415607E7",
   "ur": 4.0
  },
+ "x360-guitar-hero-iii-legends-of-rock": {
+  "aprox": true,
+  "dev": "Neversoft Entertainment",
+  "pub": "Activision, Inc",
+  "titleId": "415607F7",
+  "ur": 4.25
+ },
  "x360-guitar-hero-live": {
   "dev": "FreeStyleGames",
   "pub": "Activision",
@@ -3460,10 +4569,24 @@
   "titleId": "41560830",
   "ur": 4.5
  },
+ "x360-guitar-hero-smash-hits": {
+  "aprox": true,
+  "dev": "Beenox, Inc",
+  "pub": "Activision",
+  "titleId": "4156083E",
+  "ur": 3.75
+ },
  "x360-guitar-hero-van-halen": {
   "dev": "Underground Development",
   "pub": "Activision",
   "titleId": "4156083D",
+  "ur": 4.0
+ },
+ "x360-guitar-hero-warriors-of-rock": {
+  "aprox": true,
+  "dev": "Neversoft Entertainment",
+  "pub": "Activision, Inc",
+  "titleId": "41560883",
   "ur": 4.0
  },
  "x360-guitar-hero-world-tour": {
@@ -3522,6 +4645,10 @@
  },
  "x360-halo-3": {
   "dev": "Bungie Studios",
+  "outros": [
+   "4D53082A",
+   "4D530939"
+  ],
   "pub": "Microsoft",
   "titleId": "4D5307E6",
   "ur": 4.5
@@ -3540,6 +4667,9 @@
  },
  "x360-halo-reach": {
   "dev": "Bungie Studios",
+  "outros": [
+   "4D5389D8"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "4D53085B",
   "ur": 4.5
@@ -3562,8 +4692,18 @@
   "titleId": "573607E4",
   "ur": 3.5
  },
+ "x360-hannah-montana-the-movie": {
+  "aprox": true,
+  "dev": "N-Space",
+  "pub": "Disney",
+  "titleId": "425607E9",
+  "ur": 2.5
+ },
  "x360-happy-feet-two-the-video-game": {
   "dev": "KMMG Studios",
+  "outros": [
+   "5752881F"
+  ],
   "pub": "WB Games Inc.",
   "titleId": "5752080D",
   "ur": 4.0
@@ -3576,6 +4716,9 @@
  },
  "x360-happy-wars": {
   "dev": "Toylogic",
+  "outros": [
+   "4D538A61"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "58410AE9",
   "ur": 4.0
@@ -3616,8 +4759,32 @@
   "titleId": "58410A70",
   "ur": 4.25
  },
+ "x360-harry-potter-and-the-deathly-hallows-part-ii": {
+  "aprox": true,
+  "dev": "EA Bright Light",
+  "pub": "Electronic Arts",
+  "titleId": "45410955",
+  "ur": 4.0
+ },
+ "x360-harry-potter-and-the-half-blood-prince": {
+  "aprox": true,
+  "dev": "Electronic Arts",
+  "pub": "Electronic Arts",
+  "titleId": "454107FA",
+  "ur": 3.75
+ },
+ "x360-harry-potter-and-the-order-of-the-phoenix": {
+  "aprox": true,
+  "dev": "Electronic Arts",
+  "pub": "Electronic Arts",
+  "titleId": "45410819",
+  "ur": 3.75
+ },
  "x360-harry-potter-for-kinect": {
   "dev": "Eurocom",
+  "outros": [
+   "57528830"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "57520826",
   "ur": 3.75
@@ -3681,8 +4848,32 @@
   "titleId": "58411402",
   "ur": 3.25
  },
+ "x360-high-school-musical-3-senior-year-dance": {
+  "aprox": true,
+  "dev": "Page 44 Studios LLC.",
+  "pub": "Disney",
+  "titleId": "425607DF",
+  "ur": 2.25
+ },
+ "x360-history-civil-war-secret-missions": {
+  "aprox": true,
+  "dev": "Cauldron",
+  "pub": "Activision",
+  "titleId": "41560825",
+  "ur": 4.0
+ },
+ "x360-history-great-battles-medieval": {
+  "aprox": true,
+  "dev": "Slitherine Software",
+  "pub": "Slitherine Software",
+  "titleId": "535607D1",
+  "ur": 3.5
+ },
  "x360-hitman-absolution": {
   "dev": "IO Interactive",
+  "outros": [
+   "53518813"
+  ],
   "pub": "IO Interactive",
   "titleId": "53510804",
   "ur": 4.25
@@ -3695,6 +4886,9 @@
  },
  "x360-hole-in-the-wall": {
   "dev": "Ludia",
+  "outros": [
+   "55530885"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "58410A1D",
   "ur": 3.75
@@ -3707,12 +4901,20 @@
  },
  "x360-homefront": {
   "dev": "Kaos Studios",
+  "outros": [
+   "54518888",
+   "5451888F",
+   "54518891"
+  ],
   "pub": "THQ Inc.",
   "titleId": "54510846",
   "ur": 4.0
  },
  "x360-hot-wheels-beat-that": {
   "dev": "Eutechnyx",
+  "outros": [
+   "41560811"
+  ],
   "pub": "Activision",
   "titleId": "41560801",
   "ur": 3.75
@@ -3772,6 +4974,9 @@
  },
  "x360-hybrid": {
   "dev": "5th Cell",
+  "outros": [
+   "4D538A1F"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "584109E9",
   "ur": 3.75
@@ -3820,9 +5025,19 @@
  },
  "x360-import-tuner-challenge": {
   "dev": "GENKI",
+  "outros": [
+   "474507D1"
+  ],
   "pub": "UbiSoft",
   "titleId": "555307EE",
   "ur": 4.5
+ },
+ "x360-infernal-hell-s-vengeance": {
+  "aprox": true,
+  "dev": "Metropolis Software/Geniusprogrammer.net",
+  "pub": "Playlogic International N.V.",
+  "titleId": "504307D4",
+  "ur": 2.75
  },
  "x360-inferno-pool": {
   "dev": "Dark Energy Digital",
@@ -3838,6 +5053,9 @@
  },
  "x360-injustice-gods-among-us": {
   "dev": "NetherRealm Studios",
+  "outros": [
+   "57528837"
+  ],
   "pub": "WB Games, Inc.",
   "titleId": "57520829",
   "ur": 4.5
@@ -3850,6 +5068,9 @@
  },
  "x360-instant-brain": {
   "dev": "CAVE Interactive CO.,LTD.",
+  "outros": [
+   "435A87E1"
+  ],
   "pub": "CAVE Interactive CO.,LTD.",
   "titleId": "435A07E0"
  },
@@ -3859,11 +5080,25 @@
   "titleId": "584112BB",
   "ur": 3.5
  },
+ "x360-interpol-the-trail-of-dr-chaos": {
+  "aprox": true,
+  "dev": "TikGames, LLC",
+  "pub": "Microsoft Studios",
+  "titleId": "58410977",
+  "ur": 3.25
+ },
  "x360-inversion": {
   "dev": "Saber Interactive",
   "pub": "NAMCO BANDAI Games",
   "titleId": "4E4D0801",
   "ur": 3.75
+ },
+ "x360-invincible-tiger-the-legend-of-han-tao": {
+  "aprox": true,
+  "dev": "Blitz Arcade",
+  "pub": "NAMCO BANDAI Games America Inc.",
+  "titleId": "58410982",
+  "ur": 3.0
  },
  "x360-ion-assault": {
   "dev": "COREPLAY",
@@ -3912,10 +5147,34 @@
   "titleId": "4156081F",
   "ur": 3.75
  },
+ "x360-james-cameron-s-avatar-the-game": {
+  "aprox": true,
+  "dev": "Ubisoft Montreal",
+  "pub": "Ubisoft",
+  "titleId": "5553083C",
+  "ur": 4.0
+ },
  "x360-janline": {
   "dev": "RECOM",
   "pub": "RECOM",
   "titleId": "524307D1"
+ },
+ "x360-jasf-jane-s-advanced-strike-fighters": {
+  "aprox": true,
+  "dev": "Trickstar Games",
+  "pub": "Evolved Games",
+  "titleId": "455607D6",
+  "ur": 3.25
+ },
+ "x360-jeopardy-america-s-favorite-quiz-show": {
+  "aprox": true,
+  "dev": "Pipeworks",
+  "outros": [
+   "545188B8"
+  ],
+  "pub": "THQ Inc.",
+  "titleId": "545108AE",
+  "ur": 3.5
  },
  "x360-jeremy-mcgrath-s-offroad": {
   "dev": "2XL Games",
@@ -3949,12 +5208,18 @@
  },
  "x360-jillian-michaels-fitness-adventure": {
   "dev": "Majesco Entertainment",
+  "outros": [
+   "464F07F6"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07E5",
   "ur": 3.25
  },
  "x360-jimmie-johnson-s-anything-with-an-engine": {
   "dev": "Isopod Labs & Autumn Games",
+  "outros": [
+   "4B4E8849"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0841",
   "ur": 3.25
@@ -3970,6 +5235,13 @@
   "pub": "Microsoft Studios",
   "titleId": "584111F5",
   "ur": 3.75
+ },
+ "x360-jojo-s-bizarre-adventure-hd-ver": {
+  "aprox": true,
+  "dev": "CAPCOM CO., LTD.",
+  "pub": "CAPCOM CO., LTD.",
+  "titleId": "5841124E",
+  "ur": 3.5
  },
  "x360-jonah-lomu-rugby-challenge": {
   "dev": "Sidhe",
@@ -3989,6 +5261,13 @@
   "titleId": "5841125E",
   "ur": 4.0
  },
+ "x360-juiced-2-hot-import-nights": {
+  "aprox": true,
+  "dev": "Juice Games",
+  "pub": "THQ",
+  "titleId": "545107D5",
+  "ur": 4.0
+ },
  "x360-juju": {
   "dev": "Flying Wild Hog",
   "pub": "Nordic Games",
@@ -3997,6 +5276,9 @@
  },
  "x360-jurassic-park-the-game": {
   "dev": "Telltale Inc.",
+  "outros": [
+   "4B5907E2"
+  ],
   "pub": "Telltale Inc.",
   "titleId": "443607D0",
   "ur": 4.0
@@ -4009,12 +5291,18 @@
  },
  "x360-just-cause": {
   "dev": "Avalanche Studios",
+  "outros": [
+   "534387DD"
+  ],
   "pub": "Square Enix",
   "titleId": "534307D5",
   "ur": 3.75
  },
  "x360-just-cause-2": {
   "dev": "Avalanche Studios",
+  "outros": [
+   "535107F3"
+  ],
   "pub": "Square Enix",
   "titleId": "534307E7",
   "ur": 4.25
@@ -4055,12 +5343,18 @@
  },
  "x360-just-dance-3": {
   "dev": "Ubisoft",
+  "outros": [
+   "555388A8"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530888",
   "ur": 3.75
  },
  "x360-just-dance-4": {
   "dev": "Ubisoft",
+  "outros": [
+   "555388BF"
+  ],
   "pub": "Ubisoft",
   "titleId": "555308B5",
   "ur": 4.0
@@ -4101,8 +5395,18 @@
   "titleId": "4D5307D2",
   "ur": 3.75
  },
+ "x360-kane-and-lynch-2-dog-days": {
+  "aprox": true,
+  "dev": "IO Interactive",
+  "pub": "Square Enix Ltd",
+  "titleId": "534307F8",
+  "ur": 4.0
+ },
  "x360-kane-and-lynch-dead-men": {
   "dev": "IO Interactive",
+  "outros": [
+   "534407F6"
+  ],
   "pub": "Eidos",
   "titleId": "534307E0",
   "ur": 3.75
@@ -4119,6 +5423,20 @@
   "titleId": "4B4E083F",
   "ur": 3.5
  },
+ "x360-karaoke-revolution-presents-american-idol-encore": {
+  "aprox": true,
+  "dev": "Blitz Games",
+  "pub": "Konami",
+  "titleId": "4B4E07E2",
+  "ur": 2.5
+ },
+ "x360-karaoke-revolution-presents-american-idol-encore-2": {
+  "aprox": true,
+  "dev": "Blitz Games",
+  "pub": "Konami",
+  "titleId": "4B4E07F3",
+  "ur": 3.5
+ },
  "x360-karateka": {
   "dev": "Liquid Entertainment",
   "pub": "D3Publisher",
@@ -4130,6 +5448,12 @@
   "pub": "Genki",
   "titleId": "474507D2",
   "ur": 3.5
+ },
+ "x360-kick-ass-2-the-game": {
+  "aprox": true,
+  "dev": "Freedom Factory Studios",
+  "pub": "Freedom Factory Studios",
+  "titleId": "515007D1"
  },
  "x360-killer-is-dead": {
   "dev": "Grasshopper Manufacture, Kadokawa Games",
@@ -4145,61 +5469,149 @@
  },
  "x360-kinect-disneyland-adventures": {
   "dev": "Frontier Developments Ltd.",
+  "outros": [
+   "4D5389FB",
+   "4D538A10"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D5309C1",
   "ur": 3.5
  },
  "x360-kinect-joy-ride": {
   "dev": "MGS",
+  "outros": [
+   "4D53899F",
+   "4D5389B4"
+  ],
   "pub": "MGS",
   "titleId": "4D53093B",
   "ur": 3.75
  },
  "x360-kinect-nat-geo-tv": {
   "dev": "Relentless Software",
+  "outros": [
+   "4D530A47"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D5309CD"
  },
  "x360-kinect-rush-a-disney-pixar-adventure": {
   "dev": "ASOBO STUDIO SARL",
+  "outros": [
+   "4D538A17",
+   "4D538A20"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D5309B6",
   "ur": 3.5
  },
  "x360-kinect-sesame-street-tv": {
   "dev": "Soho Productions",
+  "outros": [
+   "4D530A2D"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D5309DA"
  },
  "x360-kinect-sports": {
   "dev": "Rare",
+  "outros": [
+   "4D5389BA"
+  ],
   "pub": "Microsoft Games Studios",
   "titleId": "4D5308C9",
   "ur": 3.75
  },
+ "x360-kinect-sports-gems-10-frame-bowling": {
+  "aprox": true,
+  "dev": "Rare",
+  "pub": "Microsoft Studios",
+  "titleId": "584112AF",
+  "ur": 3.25
+ },
+ "x360-kinect-sports-gems-3-point-contest": {
+  "aprox": true,
+  "dev": "Rare",
+  "pub": "Microsoft Studios",
+  "titleId": "584112B6",
+  "ur": 3.75
+ },
+ "x360-kinect-sports-gems-boxing-fight": {
+  "aprox": true,
+  "dev": "Rare",
+  "pub": "Microsoft Studios",
+  "titleId": "584112B4",
+  "ur": 3.5
+ },
+ "x360-kinect-sports-gems-darts-vs-zombies": {
+  "aprox": true,
+  "dev": "Rare",
+  "pub": "Microsoft Studios",
+  "titleId": "584112AC",
+  "ur": 3.25
+ },
+ "x360-kinect-sports-gems-field-goal-contest": {
+  "aprox": true,
+  "dev": "Rare",
+  "pub": "Microsoft Studios",
+  "titleId": "584112B1",
+  "ur": 3.5
+ },
+ "x360-kinect-sports-gems-penalty-saver": {
+  "aprox": true,
+  "dev": "Rare",
+  "pub": "Microsoft Studios",
+  "titleId": "584112B2",
+  "ur": 3.25
+ },
  "x360-kinect-sports-season-two": {
   "dev": "Rare",
+  "outros": [
+   "4D5389E6",
+   "4D5389E7",
+   "4D5389F3"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D5309D6",
   "ur": 3.75
  },
  "x360-kinect-sports-ultimate-collection": {
   "dev": "Rare",
+  "outros": [
+   "4D538A56",
+   "4D538A57"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530A55",
   "ur": 3.75
  },
  "x360-kinect-star-wars": {
   "dev": "Terminal Reality",
+  "outros": [
+   "4D538A35",
+   "4D538A37"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D53090E",
   "ur": 3.75
  },
  "x360-kinectimals": {
   "dev": "Frontier Developments Ltd.",
+  "outros": [
+   "4D5389C7",
+   "4D5389EB",
+   "4D5389EE"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "4D5308B3",
   "ur": 3.75
+ },
+ "x360-king-of-fighters-sky-stage": {
+  "aprox": true,
+  "dev": "MOSS CO.,LTD.",
+  "pub": "SNK PLAYMORE CORPORATION",
+  "titleId": "584109AE",
+  "ur": 3.25
  },
  "x360-king-s-quest-the-complete-collection": {
   "dev": "The Odd Gentlemen",
@@ -4207,8 +5619,18 @@
   "titleId": "41560926",
   "ur": 3.25
  },
+ "x360-kingdom-under-fire-circle-of-doom": {
+  "aprox": true,
+  "dev": "Blueside Inc.",
+  "pub": "Microsoft",
+  "titleId": "424507D1",
+  "ur": 3.75
+ },
  "x360-kingdoms-of-amalur-reckoning": {
   "dev": "38 Studios / Big Huge Games",
+  "outros": [
+   "45418983"
+  ],
   "pub": "Electronic Arts, Inc.",
   "titleId": "4541093E",
   "ur": 4.25
@@ -4227,6 +5649,9 @@
  },
  "x360-kung-fu-high-impact": {
   "dev": "Virtual Air Guitar Company",
+  "outros": [
+   "4C5387F0"
+  ],
   "pub": "Ignition Games",
   "titleId": "4C5307ED",
   "ur": 4.0
@@ -4297,6 +5722,13 @@
   "titleId": "354807DD",
   "ur": 4.0
  },
+ "x360-legend-of-the-guardians-the-owls-of-ga-hoole": {
+  "aprox": true,
+  "dev": "Krome Studios",
+  "pub": "WB Games, Inc.",
+  "titleId": "575207F1",
+  "ur": 3.75
+ },
  "x360-legendary": {
   "dev": "Spark Unlimited",
   "pub": "Gamecock Media Group",
@@ -4305,15 +5737,31 @@
  },
  "x360-lego-batman-2-dc-super-heroes": {
   "dev": "TT Games",
+  "outros": [
+   "5752882A"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "57520817",
   "ur": 4.0
  },
  "x360-lego-batman-3-beyond-gotham": {
   "dev": "Traveller's Tale",
+  "outros": [
+   "57528846"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "57520845",
   "ur": 4.25
+ },
+ "x360-lego-batman-the-videogame": {
+  "aprox": true,
+  "dev": "Traveller's Tales (UK), Ltd.",
+  "outros": [
+   "575207DE"
+  ],
+  "pub": "WARNER BROS INTERACTIVE",
+  "titleId": "575207D7",
+  "ur": 4.0
  },
  "x360-lego-dimensions": {
   "dev": "TT Games",
@@ -4327,26 +5775,52 @@
   "titleId": "57520812",
   "ur": 4.0
  },
+ "x360-lego-indiana-jones-2-the-adventure-continues": {
+  "aprox": true,
+  "dev": "Traveller's Tales (UK), Ltd.",
+  "pub": "Disney Interactive Studios",
+  "titleId": "4C4107ED",
+  "ur": 4.0
+ },
+ "x360-lego-indiana-jones-the-original-adventures": {
+  "aprox": true,
+  "dev": "Traveller's Tales (UK), Ltd.",
+  "pub": "LucasArts",
+  "titleId": "4C4107DF",
+  "ur": 4.0
+ },
  "x360-lego-jurassic-world": {
   "dev": "Traveller's Tales",
+  "outros": [
+   "5752884E"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "5752084D",
   "ur": 4.25
  },
  "x360-lego-marvel-s-avengers": {
   "dev": "TT Games",
+  "outros": [
+   "57528850"
+  ],
   "pub": "Warner Bros. Interactive Entertainment Inc.",
   "titleId": "5752084F",
   "ur": 4.0
  },
  "x360-lego-marvel-super-heroes": {
   "dev": "TT Games",
+  "outros": [
+   "5752883E"
+  ],
   "pub": "WB Games",
   "titleId": "57520835",
   "ur": 4.5
  },
  "x360-lego-pirates-of-the-caribbean-the-video-game": {
   "dev": "TT Games",
+  "outros": [
+   "4256880A"
+  ],
   "pub": "Disney Interactive Studios",
   "titleId": "42560802",
   "ur": 4.0
@@ -4365,6 +5839,9 @@
  },
  "x360-lego-star-wars-iii-the-clone-wars": {
   "dev": "Traveller's Tales",
+  "outros": [
+   "4C4187F6"
+  ],
   "pub": "Disney Interactive Studios",
   "titleId": "4C4107F3",
   "ur": 4.0
@@ -4383,18 +5860,35 @@
  },
  "x360-lego-the-hobbit": {
   "dev": "Traveller's Tales",
+  "outros": [
+   "57528847"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "57520844",
   "ur": 3.5
  },
  "x360-lego-the-lord-of-the-rings": {
   "dev": "TT Games",
+  "outros": [
+   "57520831",
+   "5752882E"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "5752081D",
   "ur": 4.0
  },
+ "x360-leisure-suit-larry-box-office-bust": {
+  "aprox": true,
+  "dev": "Team 17 Software Ltd",
+  "pub": "Codemasters Software Company Limited",
+  "titleId": "434D0822",
+  "ur": 3.5
+ },
  "x360-let-s-cheer": {
   "dev": "Cat Daddy Games",
+  "outros": [
+   "5454889C"
+  ],
   "pub": "2K Play",
   "titleId": "54540899",
   "ur": 3.5
@@ -4412,6 +5906,9 @@
  },
  "x360-lightning-returns-final-fantasy-xiii": {
   "dev": "Square Enix",
+  "outros": [
+   "5351881D"
+  ],
   "pub": "Square Enix",
   "titleId": "5351081B",
   "ur": 4.75
@@ -4459,6 +5956,9 @@
  },
  "x360-looney-tunes-acme-arsenal": {
   "dev": "RedTribe",
+  "outros": [
+   "575207D5"
+  ],
   "pub": "N/A",
   "titleId": "575207D2",
   "ur": 4.0
@@ -4487,6 +5987,13 @@
   "titleId": "43430830",
   "ur": 4.5
  },
+ "x360-lost-planet-extreme-condition-colonies-edition": {
+  "aprox": true,
+  "dev": "CAPCOM",
+  "pub": "CAPCOM Co., Ltd.",
+  "titleId": "434307DE",
+  "ur": 4.0
+ },
  "x360-lost-via-domus": {
   "dev": "Ubisoft Montreal",
   "pub": "UbiSoft",
@@ -4498,10 +6005,35 @@
   "pub": "BANDAI NAMCO Entertainment Inc.",
   "titleId": "4E4D07D6"
  },
+ "x360-love-tore-bitter-a-k-a-love-tra": {
+  "aprox": true,
+  "dev": "BOOST ON",
+  "pub": "BOOST ON",
+  "titleId": "324707D3"
+ },
+ "x360-love-tore-mint-a-k-a-love-tra": {
+  "aprox": true,
+  "dev": "BOOST ON",
+  "pub": "BOOST ON",
+  "titleId": "324707D2"
+ },
+ "x360-love-tore-sweet-a-k-a-love-tra": {
+  "aprox": true,
+  "dev": "Developer String",
+  "pub": "Publisher String",
+  "titleId": "324707D1"
+ },
  "x360-lucha-fury": {
   "dev": "Punchers Impact",
   "pub": "Coktel",
   "titleId": "58410B2C",
+  "ur": 3.5
+ },
+ "x360-lucha-libre-aaa-2010-heroes-del-ring": {
+  "aprox": true,
+  "dev": "Immersion Games",
+  "pub": "Slang",
+  "titleId": "475807D1",
   "ur": 3.5
  },
  "x360-lucidity": {
@@ -4534,10 +6066,24 @@
   "titleId": "44500801",
   "ur": 3.75
  },
+ "x360-madagascar-escape-2-africa": {
+  "aprox": true,
+  "dev": "Toys For Bob",
+  "pub": "Activision",
+  "titleId": "4156081D",
+  "ur": 4.0
+ },
  "x360-madagascar-kartz": {
   "dev": "Sidhe",
   "pub": "Activision",
   "titleId": "41560858",
+  "ur": 3.75
+ },
+ "x360-madballs-in-babo-invasion": {
+  "aprox": true,
+  "dev": "Playbrains",
+  "pub": "Microsoft Studios",
+  "titleId": "584109C8",
   "ur": 3.75
  },
  "x360-madden-nfl-06": {
@@ -4578,18 +6124,29 @@
  },
  "x360-madden-nfl-12": {
   "dev": "Tiburon",
+  "outros": [
+   "45410969",
+   "4541895F"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410937",
   "ur": 4.0
  },
  "x360-madden-nfl-13": {
   "dev": "EA SPORTS",
+  "outros": [
+   "4541098C",
+   "45418994"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "4541098B",
   "ur": 4.0
  },
  "x360-madden-nfl-15": {
   "dev": "Electronic Arts - Tiburon",
+  "outros": [
+   "454109DA"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "454109D9",
   "ur": 4.5
@@ -4608,6 +6165,10 @@
  },
  "x360-madden-nfl-25": {
   "dev": "EA Tiburon",
+  "outros": [
+   "454109C2",
+   "454189C5"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454109C1",
   "ur": 4.75
@@ -4620,12 +6181,43 @@
  },
  "x360-mafia-ii": {
   "dev": "2K Czech",
+  "outros": [
+   "5454087D",
+   "5454087E",
+   "54548888"
+  ],
   "pub": "2K Games",
   "titleId": "545407E6",
   "ur": 4.5
  },
+ "x360-magic-the-gathering-2013": {
+  "aprox": true,
+  "dev": "Wizards of the Coast LLC/Stainless Games, Ltd.",
+  "pub": "Microsoft Studios",
+  "titleId": "58411213",
+  "ur": 3.75
+ },
+ "x360-magic-the-gathering-2015": {
+  "aprox": true,
+  "dev": "Wizards of the Coast LLC / Stainless Games Ltd.",
+  "pub": "Microsoft Studios",
+  "titleId": "5841141F",
+  "ur": 3.75
+ },
+ "x360-magic-the-gathering-duels-of-the-planeswalkers": {
+  "aprox": true,
+  "dev": "Wizards of the Coast / Stainless Games",
+  "pub": "Microsoft Studios",
+  "titleId": "58410860",
+  "ur": 4.25
+ },
  "x360-magnacarta-2": {
   "dev": "SOFTMAX CO.,LTD.",
+  "outros": [
+   "4E4D080A",
+   "4E4D080C",
+   "4E4D0811"
+  ],
   "pub": "NAMCO BANDAI Games Inc.",
   "titleId": "4E4D080B",
   "ur": 4.0
@@ -4638,15 +6230,80 @@
  },
  "x360-majin-and-the-forsaken-kingdom": {
   "dev": "Game Republic",
+  "outros": [
+   "4E4D881E"
+  ],
   "pub": "BANDAI NAMCO Entertainment Inc.",
   "titleId": "4E4D0816",
   "ur": 4.0
  },
+ "x360-major-league-baseball-2k10": {
+  "aprox": true,
+  "dev": "Visual Concepts Entertainment",
+  "pub": "Take Two Interactive",
+  "titleId": "54540855",
+  "ur": 4.25
+ },
  "x360-major-league-baseball-2k11": {
   "dev": "Visual Concepts Entertainment",
+  "outros": [
+   "54548892"
+  ],
   "pub": "2K Sports",
   "titleId": "5454088E",
   "ur": 4.0
+ },
+ "x360-major-league-baseball-2k12": {
+  "aprox": true,
+  "dev": "Visual Concepts Entertainment",
+  "outros": [
+   "545488A1"
+  ],
+  "pub": "2K Sports",
+  "titleId": "5454089E",
+  "ur": 3.75
+ },
+ "x360-major-league-baseball-2k13": {
+  "aprox": true,
+  "dev": "Visual Concepts Entertainment",
+  "pub": "2K Sports",
+  "titleId": "545408AB",
+  "ur": 4.25
+ },
+ "x360-major-league-baseball-2k6": {
+  "aprox": true,
+  "dev": "Kush Games",
+  "pub": "2K Games",
+  "titleId": "545407D3",
+  "ur": 3.5
+ },
+ "x360-major-league-baseball-2k7": {
+  "aprox": true,
+  "dev": "Kush Games",
+  "pub": "2K Games",
+  "titleId": "545407FA",
+  "ur": 3.75
+ },
+ "x360-major-league-baseball-2k8": {
+  "aprox": true,
+  "dev": "2K Los Angeles",
+  "pub": "2K Sports",
+  "titleId": "54540817",
+  "ur": 3.75
+ },
+ "x360-major-league-baseball-2k9": {
+  "aprox": true,
+  "dev": "Visual Concepts Entertainment",
+  "pub": "2K Sports",
+  "titleId": "54540842",
+  "ur": 4.0
+ },
+ "x360-mamoru-kun-wa-norowarete-shimatta": {
+  "aprox": true,
+  "dev": "GULTI　CO.,LTD.",
+  "pub": "G.rev Ltd.",
+  "titleId": "475207F6",
+  "ur": 4.75
  },
  "x360-marathon-durandal": {
   "dev": "Freeverse",
@@ -4666,6 +6323,13 @@
   "titleId": "58411228",
   "ur": 4.0
  },
+ "x360-marlow-briggs-and-the-mask-of-death": {
+  "aprox": true,
+  "dev": "Zootfly",
+  "pub": "505 Games",
+  "titleId": "58411403",
+  "ur": 3.25
+ },
  "x360-mars-war-logs": {
   "dev": "Spiders",
   "pub": "Focus Entertainment",
@@ -4674,6 +6338,10 @@
  },
  "x360-marvel-avengers-battle-for-earth": {
   "dev": "Ubisoft Quebec",
+  "outros": [
+   "555388BB",
+   "555388BC"
+  ],
   "pub": "Ubisoft",
   "titleId": "555308AD",
   "ur": 3.75
@@ -4708,11 +6376,25 @@
   "titleId": "4156082F",
   "ur": 4.0
  },
+ "x360-marvel-vs-capcom-2-new-age-of-heroes": {
+  "aprox": true,
+  "dev": "Backbone Emeryville",
+  "pub": "Capcom",
+  "titleId": "58410976",
+  "ur": 4.5
+ },
  "x360-marvel-vs-capcom-origins": {
   "dev": "Iron Galaxy",
   "pub": "Capcom U.S.A., Inc.",
   "titleId": "58411223",
   "ur": 3.75
+ },
+ "x360-masquerade-the-baubles-of-doom": {
+  "aprox": true,
+  "dev": "Big Ant Studios Pty Ltd",
+  "pub": "Home Entertainment Suppliers Pty Ltd",
+  "titleId": "58411495",
+  "ur": 3.5
  },
  "x360-mass-effect": {
   "dev": "BioWare Corp.",
@@ -4722,12 +6404,20 @@
  },
  "x360-mass-effect-2": {
   "dev": "BioWare",
+  "outros": [
+   "4541093D"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108CE",
   "ur": 4.75
  },
  "x360-mass-effect-3": {
   "dev": "BioWare™",
+  "outros": [
+   "45410982",
+   "45418986",
+   "45418987"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "4541095D",
   "ur": 4.5
@@ -4740,12 +6430,18 @@
  },
  "x360-max-payne-3": {
   "dev": "Rockstar Studios",
+  "outros": [
+   "5454889D"
+  ],
   "pub": "Rockstar Games",
   "titleId": "5454086B",
   "ur": 4.0
  },
  "x360-max-the-curse-of-brotherhood": {
   "dev": "Press Play",
+  "outros": [
+   "584112A0"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "5841145E",
   "ur": 3.25
@@ -4764,6 +6460,9 @@
  },
  "x360-medal-of-honor-warfighter": {
   "dev": "Danger Close Games",
+  "outros": [
+   "454189AC"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410993",
   "ur": 4.0
@@ -4792,6 +6491,20 @@
   "titleId": "5451085C",
   "ur": 4.0
  },
+ "x360-memories-off-6-next-relation": {
+  "aprox": true,
+  "dev": "株式会社5pb.",
+  "pub": "株式会社5pb.",
+  "titleId": "465607D6",
+  "ur": 4.75
+ },
+ "x360-memories-off-6-t-wave": {
+  "aprox": true,
+  "dev": "株式会社5pb.",
+  "pub": "株式会社5pb.",
+  "titleId": "465607D5",
+  "ur": 4.75
+ },
  "x360-memories-off-yubikiri-no-kioku": {
   "dev": "5pb.",
   "pub": "SOFTMAX CO., LTD.",
@@ -4802,6 +6515,13 @@
   "pub": "Activision",
   "titleId": "415608D3",
   "ur": 3.5
+ },
+ "x360-mercenaries-2-world-in-flames": {
+  "aprox": true,
+  "dev": "PANDEMIC STUDIOS",
+  "pub": "ELECTRONIC ARTS",
+  "titleId": "45410828",
+  "ur": 4.25
  },
  "x360-mercury-hg": {
   "dev": "Eiconic Games Limited",
@@ -4817,6 +6537,9 @@
  },
  "x360-metal-gear-rising-revengeance": {
   "dev": "PlatinumGames Inc.",
+  "outros": [
+   "4B4E8854"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E080A",
   "ur": 4.5
@@ -4865,12 +6588,19 @@
  },
  "x360-metro-2033": {
   "dev": "4A Games",
+  "outros": [
+   "53440800"
+  ],
   "pub": "Deep Silver",
   "titleId": "54510842",
   "ur": 4.25
  },
  "x360-metro-last-light": {
   "dev": "4A Games",
+  "outros": [
+   "5451089E",
+   "574607D6"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07F5",
   "ur": 4.75
@@ -4883,6 +6613,9 @@
  },
  "x360-michael-phelps-push-the-limit": {
   "dev": "Blitz Games Studios",
+  "outros": [
+   "464F87F1"
+  ],
   "pub": "505 Games",
   "titleId": "464F07E1",
   "ur": 3.25
@@ -4905,6 +6638,20 @@
   "titleId": "5752082F",
   "ur": 3.75
  },
+ "x360-might-and-magic-clash-of-heroes-hd": {
+  "aprox": true,
+  "dev": "Capybara",
+  "pub": "Ubisoft",
+  "titleId": "58410A19",
+  "ur": 4.0
+ },
+ "x360-might-and-magic-duel-of-champions-forgotten-wars": {
+  "aprox": true,
+  "dev": "Ubisoft",
+  "pub": "Ubisoft",
+  "titleId": "58411443",
+  "ur": 3.0
+ },
  "x360-mighty-no-9": {
   "dev": "INTI Creates",
   "pub": "Deep Silver",
@@ -4925,18 +6672,28 @@
  },
  "x360-minecraft-story-mode": {
   "dev": "Telltale Games",
+  "outros": [
+   "5841149E"
+  ],
   "pub": "Telltale Games",
   "titleId": "443607D9",
   "ur": 4.0
  },
  "x360-minecraft-story-mode-season-two": {
   "dev": "Telltale Games",
+  "outros": [
+   "443607DF"
+  ],
   "pub": "Telltale Games",
   "titleId": "584114C6",
   "ur": 4.25
  },
  "x360-minecraft-xbox-360-edition": {
   "dev": "4J Studios / Mojang",
+  "outros": [
+   "584111F7",
+   "58411437"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530A81",
   "ur": 4.5
@@ -4988,6 +6745,13 @@
   "pub": "Konami Digital Entertainment, Inc.",
   "titleId": "58410B7B",
   "ur": 3.75
+ },
+ "x360-mlb-stickball": {
+  "aprox": true,
+  "dev": "Gaia Industries",
+  "pub": "2K",
+  "titleId": "584108B4",
+  "ur": 3.25
  },
  "x360-monaco-what-s-yours-is-mine": {
   "dev": "Pocketwatch Games",
@@ -5049,6 +6813,20 @@
   "titleId": "5841148E",
   "ur": 3.25
  },
+ "x360-monster-jam-path-of-destruction": {
+  "aprox": true,
+  "dev": "Virtuos Holdings",
+  "pub": "Activision Blizzard",
+  "titleId": "4156088C",
+  "ur": 3.75
+ },
+ "x360-monster-madness-battle-for-suburbia": {
+  "aprox": true,
+  "dev": "Artificial Studios",
+  "pub": "SouthPeak Interactive",
+  "titleId": "535007D1",
+  "ur": 3.25
+ },
  "x360-monsters-vs-aliens": {
   "dev": "Beenox",
   "pub": "Activision",
@@ -5093,6 +6871,9 @@
  },
  "x360-motionsports-adrenaline": {
   "dev": "Ubisoft",
+  "outros": [
+   "5553889A"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530887",
   "ur": 3.75
@@ -5129,11 +6910,17 @@
  },
  "x360-motogp-13": {
   "dev": "Milestone srl",
+  "outros": [
+   "513187D3"
+  ],
   "pub": "Milestone srl",
   "titleId": "513107D1"
  },
  "x360-motogp-14": {
   "dev": "Milestone S.r.l.",
+  "outros": [
+   "513187D7"
+  ],
   "pub": "Milestone S.r.l.",
   "titleId": "513107D5",
   "ur": 3.5
@@ -5146,6 +6933,9 @@
  },
  "x360-motorcycle-club": {
   "dev": "Kylotonn Entertainment",
+  "outros": [
+   "573687E5"
+  ],
   "pub": "Bigben Interactive",
   "titleId": "573607E0"
  },
@@ -5169,6 +6959,9 @@
  },
  "x360-mud-fim-motocross-world-championship": {
   "dev": "Milestone S.r.l.",
+  "outros": [
+   "4C5387F2"
+  ],
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4C5307EC",
   "ur": 3.75
@@ -5193,6 +6986,9 @@
  },
  "x360-muv-luv-alternative-total-eclipse": {
   "dev": "Developer String",
+  "outros": [
+   "465687F5"
+  ],
   "pub": "Publisher String",
   "titleId": "465607F0"
  },
@@ -5222,6 +7018,9 @@
  },
  "x360-mxgp-the-official-motocross-videogame": {
   "dev": "Milestone S.r.l.",
+  "outros": [
+   "513187D6"
+  ],
   "pub": "Milestone S.r.l.",
   "titleId": "513107D4",
   "ur": 4.0
@@ -5240,6 +7039,9 @@
  },
  "x360-mysims-skyheroes": {
   "dev": "Artificial Mind & Movement",
+  "outros": [
+   "45418928"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108E5",
   "ur": 3.75
@@ -5252,6 +7054,9 @@
  },
  "x360-nail-d": {
   "dev": "Techland",
+  "outros": [
+   "4B4D87E4"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07E0",
   "ur": 3.75
@@ -5281,18 +7086,27 @@
  },
  "x360-naruto-shippuden-ultimate-ninja-storm-3": {
   "dev": "CyberConnect2 Co., Ltd.",
+  "outros": [
+   "4E4D885F"
+  ],
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D085C",
   "ur": 5.0
  },
  "x360-naruto-shippuden-ultimate-ninja-storm-generations": {
   "dev": "CyberConnect2 Co., Ltd.",
+  "outros": [
+   "4E4D884D"
+  ],
   "pub": "NAMCO BANDAI Games America Inc.",
   "titleId": "4E4D0842",
   "ur": 4.5
  },
  "x360-naruto-shippuden-ultimate-ninja-storm-revolution": {
   "dev": "CyberConnect2 Co., Ltd.",
+  "outros": [
+   "4E4D886B"
+  ],
   "pub": "BANDAI NAMCO Entertainment Inc.",
   "titleId": "4E4D0868",
   "ur": 4.75
@@ -5305,12 +7119,18 @@
  },
  "x360-nascar-08": {
   "dev": "EA Tiburon",
+  "outros": [
+   "4541082D"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410814",
   "ur": 3.5
  },
  "x360-nascar-09": {
   "dev": "EA Tiburon",
+  "outros": [
+   "45410879"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410845",
   "ur": 4.0
@@ -5323,15 +7143,38 @@
  },
  "x360-nascar-15-victory-edition": {
   "dev": "Eutechnyx",
+  "outros": [
+   "4F4887D3"
+  ],
   "pub": "Dusenberry Martin Racing",
   "titleId": "4F4807D1",
   "ur": 4.25
+ },
+ "x360-nascar-the-game-2011": {
+  "aprox": true,
+  "dev": "Eutechnyx",
+  "pub": "Activision",
+  "titleId": "41560893",
+  "ur": 3.75
+ },
+ "x360-nascar-the-game-inside-line": {
+  "aprox": true,
+  "dev": "Eutechnyx",
+  "pub": "Activision",
+  "titleId": "415608D2",
+  "ur": 4.0
  },
  "x360-nascar-unleashed": {
   "dev": "Firebrand Games",
   "pub": "Activision",
   "titleId": "415608BB",
   "ur": 3.5
+ },
+ "x360-national-geo-challenge-wild-life": {
+  "aprox": true,
+  "dev": "Gusto Games Ltd",
+  "pub": "D3 Publisher",
+  "titleId": "445007F8"
  },
  "x360-naughty-bear": {
   "dev": "Artificial Mind & Movement",
@@ -5344,6 +7187,13 @@
   "pub": "505 Games",
   "titleId": "5841127D",
   "ur": 4.0
+ },
+ "x360-naval-assault-the-killing-tide": {
+  "aprox": true,
+  "dev": "Artech Studios",
+  "pub": "505 Games",
+  "titleId": "464F07D9",
+  "ur": 3.25
  },
  "x360-nba-2k10": {
   "dev": "Visual Concepts Entertainment",
@@ -5359,12 +7209,18 @@
  },
  "x360-nba-2k11": {
   "dev": "Visual Concepts Entertainment",
+  "outros": [
+   "5454887F"
+  ],
   "pub": "2K Sports",
   "titleId": "5454087A",
   "ur": 4.25
  },
  "x360-nba-2k12": {
   "dev": "Visual Concepts Entertainment",
+  "outros": [
+   "5454889B"
+  ],
   "pub": "2K Sports",
   "titleId": "54540894",
   "ur": 4.25
@@ -5413,6 +7269,9 @@
  },
  "x360-nba-2k8": {
   "dev": "Visual Concepts Entertainment",
+  "outros": [
+   "54540823"
+  ],
   "pub": "2K Games",
   "titleId": "5454080C",
   "ur": 4.0
@@ -5425,6 +7284,9 @@
  },
  "x360-nba-baller-beats": {
   "dev": "HB-Studios",
+  "outros": [
+   "4D4A87F3"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07E8",
   "ur": 3.5
@@ -5437,6 +7299,9 @@
  },
  "x360-nba-jam": {
   "dev": "Electronic Arts Canada",
+  "outros": [
+   "58410A7D"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "4541094C",
   "ur": 4.5
@@ -5533,18 +7398,29 @@
  },
  "x360-ncaa-football-12": {
   "dev": "Electronic Arts - Tiburon",
+  "outros": [
+   "45418958"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "4541094E",
   "ur": 4.0
  },
  "x360-ncaa-football-13": {
   "dev": "EA Tiburon",
+  "outros": [
+   "45410989",
+   "4541898F"
+  ],
   "pub": "EA SPORTS",
   "titleId": "4541098A",
   "ur": 4.0
  },
  "x360-ncaa-football-14": {
   "dev": "EA Tiburon",
+  "outros": [
+   "454109B8",
+   "454189B7"
+  ],
   "pub": "EA SPORTS",
   "titleId": "454109B6",
   "ur": 4.5
@@ -5569,12 +7445,26 @@
  },
  "x360-need-for-speed-hot-pursuit": {
   "dev": "Criterion Games",
+  "outros": [
+   "45418904",
+   "4541894B"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410903",
   "ur": 4.0
  },
+ "x360-need-for-speed-most-wanted-2005": {
+  "aprox": true,
+  "dev": "EA Black Box™",
+  "pub": "Electronic Arts™",
+  "titleId": "454107D9",
+  "ur": 4.5
+ },
  "x360-need-for-speed-most-wanted-2012": {
   "dev": "Criterion Games",
+  "outros": [
+   "454189B4"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410961",
   "ur": 4.25
@@ -5597,10 +7487,27 @@
   "titleId": "454108B4",
   "ur": 4.25
  },
+ "x360-need-for-speed-shift-2-unleashed": {
+  "aprox": true,
+  "dev": "Slightly Mad Studios",
+  "pub": "EA",
+  "titleId": "45410934",
+  "ur": 4.0
+ },
  "x360-need-for-speed-the-run": {
   "dev": "Black Box",
+  "outros": [
+   "45418979"
+  ],
   "pub": "Electronic Arts",
   "titleId": "4541094A",
+  "ur": 4.0
+ },
+ "x360-need-for-speed-undercover": {
+  "aprox": true,
+  "dev": "EA Black Box™",
+  "pub": "Electronic Arts",
+  "titleId": "45410876",
   "ur": 4.0
  },
  "x360-neogeo-battle-coliseum": {
@@ -5623,6 +7530,10 @@
  },
  "x360-nexuiz": {
   "dev": "Illfonic",
+  "outros": [
+   "545188AC",
+   "58410B82"
+  ],
   "pub": "THQ, Inc.",
   "titleId": "545108AB",
   "ur": 4.75
@@ -5677,18 +7588,30 @@
  },
  "x360-nhl-12": {
   "dev": "Electronic Arts Canada",
+  "outros": [
+   "4541096A",
+   "45418970"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410964",
   "ur": 4.25
  },
  "x360-nhl-14": {
   "dev": "EA SPORTS™",
+  "outros": [
+   "454109BF",
+   "454189C0",
+   "454189CB"
+  ],
   "pub": "Electronic Arts Inc.",
   "titleId": "454109BE",
   "ur": 4.5
  },
  "x360-nhl-15": {
   "dev": "EA SPORTS",
+  "outros": [
+   "454109DF"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454109DC",
   "ur": 3.75
@@ -5723,6 +7646,13 @@
   "titleId": "5454082E",
   "ur": 3.5
  },
+ "x360-nhl-legacy-edition": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "pub": "Electronic Arts",
+  "titleId": "454109EC",
+  "ur": 3.5
+ },
  "x360-nickelodeon-dance": {
   "dev": "High Voltage Software",
   "pub": "2K Play",
@@ -5743,6 +7673,9 @@
  },
  "x360-nier": {
   "dev": "cavia",
+  "outros": [
+   "535107ED"
+  ],
   "pub": "SQUARE ENIX",
   "titleId": "535107E8",
   "ur": 4.0
@@ -5755,6 +7688,9 @@
  },
  "x360-nike-plus-kinect-training": {
   "dev": "Sumo Digital Ltd",
+  "outros": [
+   "4D538A65"
+  ],
   "pub": "Microsoft",
   "titleId": "4D53090F",
   "ur": 3.75
@@ -5773,6 +7709,12 @@
  },
  "x360-ninety-nine-nights-ii": {
   "dev": "feelplus",
+  "outros": [
+   "4B4E0815",
+   "4B4E0816",
+   "4B4E0817",
+   "4B4E0818"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0810",
   "ur": 4.0
@@ -5785,6 +7727,10 @@
  },
  "x360-ninja-gaiden-3": {
   "dev": "TECMO KOEI GAMES.CO.,LTD/Team NINJA",
+  "outros": [
+   "4B5607E4",
+   "4B5687D6"
+  ],
   "pub": "TECMO KOEI AMERICA Corporation",
   "titleId": "4B5607D4",
   "ur": 4.0
@@ -5795,11 +7741,31 @@
   "titleId": "544307D5",
   "ur": 4.5
  },
+ "x360-no-fate-only-the-power-of-will": {
+  "aprox": true,
+  "dev": "株式会社サクセス",
+  "pub": "株式会社アルケミスト",
+  "titleId": "414A07D1"
+ },
+ "x360-no-more-heroes-heroes-paradise": {
+  "aprox": true,
+  "dev": "株式会社フィールプラス",
+  "pub": "株式会社マーベラスエンターテイメント",
+  "titleId": "4D5607D2",
+  "ur": 4.25
+ },
  "x360-novadrome": {
   "dev": "Stainless Games",
   "pub": "Microsoft Studios",
   "titleId": "584107E9",
   "ur": 3.5
+ },
+ "x360-nppl-championship-paintball-2009": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "41560827",
+  "ur": 4.25
  },
  "x360-obut-petanque-2": {
   "dev": "Kylotonn Entertainment",
@@ -5819,6 +7785,9 @@
  },
  "x360-omerta-city-of-gangsters": {
   "dev": "Haemimont Games",
+  "outros": [
+   "4B5987E7"
+  ],
   "pub": "Kalypso Media",
   "titleId": "4B5907E5",
   "ur": 3.5
@@ -5831,8 +7800,18 @@
  },
  "x360-operation-darkness": {
   "dev": "SUCCESS",
+  "outros": [
+   "415407D2"
+  ],
   "pub": "Success",
   "titleId": "535507D1"
+ },
+ "x360-operation-flashpoint-dragon-rising": {
+  "aprox": true,
+  "dev": "Codemasters",
+  "pub": "Codemasters",
+  "titleId": "434D0811",
+  "ur": 4.0
  },
  "x360-operation-flashpoint-red-river": {
   "dev": "Codemasters",
@@ -5852,8 +7831,17 @@
   "titleId": "584111EB",
   "ur": 4.25
  },
+ "x360-ore-no-yome-anata-dake-no-hanayome": {
+  "aprox": true,
+  "dev": "デザインファクトリー株式会社/アイディアファクトリー株式会社",
+  "pub": "Idea Factory Co., Ltd",
+  "titleId": "494607D8"
+ },
  "x360-otomedius-excellent": {
   "dev": "KONAMI",
+  "outros": [
+   "4B4E081A"
+  ],
   "pub": "KONAMI",
   "titleId": "4B4E083A",
   "ur": 4.0
@@ -5870,8 +7858,18 @@
   "titleId": "58410968",
   "ur": 4.0
  },
+ "x360-over-g-fighters": {
+  "aprox": true,
+  "dev": "Seiji Kawakami",
+  "pub": "TAITO CORPORATION",
+  "titleId": "544907D1",
+  "ur": 4.5
+ },
  "x360-overlord": {
   "dev": "Triumph Studios",
+  "outros": [
+   "434D0802"
+  ],
   "pub": "Codemasters Software Company Limited",
   "titleId": "434D07D5",
   "ur": 4.0
@@ -5912,6 +7910,30 @@
   "titleId": "58410A8C",
   "ur": 4.25
  },
+ "x360-pac-man-museum-includes-nine-pac-man-games": {
+  "aprox": true,
+  "dev": "BANDAI NAMCO Entertainment Inc.",
+  "pub": "BANDAI NAMCO Entertainment Inc.",
+  "titleId": "58411410",
+  "ur": 3.75
+ },
+ "x360-pacific-rim-the-video-game": {
+  "aprox": true,
+  "dev": "YUKE'S Co., Ltd.",
+  "pub": "YUKE'S Co., Ltd.",
+  "titleId": "584112C1",
+  "ur": 3.75
+ },
+ "x360-painkiller-hell-and-damnation": {
+  "aprox": true,
+  "dev": "The Farm 51",
+  "outros": [
+   "354887D6"
+  ],
+  "pub": "Nordic Games GmbH",
+  "titleId": "354807D1",
+  "ur": 3.5
+ },
  "x360-panzer-general-allied-assault": {
   "dev": "Petroglyph Games, Inc.",
   "pub": "Ubisoft Entertainment",
@@ -5926,6 +7948,9 @@
  },
  "x360-payday-2": {
   "dev": "OVERKILL Software™",
+  "outros": [
+   "464F8801"
+  ],
   "pub": "505 Games",
   "titleId": "464F0800",
   "ur": 4.5
@@ -5947,6 +7972,20 @@
   "titleId": "58411436",
   "ur": 3.25
  },
+ "x360-penguins-of-madagascar-dr-blowhole-returns-again": {
+  "aprox": true,
+  "dev": "Griptonite Games",
+  "pub": "THQ inc.",
+  "titleId": "54510873",
+  "ur": 3.75
+ },
+ "x360-penny-arcade-adventures-on-the-rain-slick-precipice-of-darkness-episode-two": {
+  "aprox": true,
+  "dev": "Hothead Games",
+  "pub": "Microsoft Studios",
+  "titleId": "58410927",
+  "ur": 4.25
+ },
  "x360-perfect-dark": {
   "dev": "4J Studios",
   "pub": "Microsoft Studios",
@@ -5955,6 +7994,9 @@
  },
  "x360-perfect-dark-zero": {
   "dev": "Rare Ltd.",
+  "outros": [
+   "4D5387DA"
+  ],
   "pub": "Microsoft",
   "titleId": "4D5307D3",
   "ur": 3.25
@@ -5973,6 +8015,10 @@
  },
  "x360-peter-jackson-s-king-kong": {
   "dev": "Ubisoft",
+  "outros": [
+   "55530050",
+   "555387DA"
+  ],
   "pub": "Ubisoft",
   "titleId": "555307D3",
   "ur": 4.25
@@ -5985,12 +8031,19 @@
  },
  "x360-phantasy-star-universe": {
   "dev": "Sonic Team",
+  "outros": [
+   "534507E9"
+  ],
   "pub": "Sega",
   "titleId": "534507E3",
   "ur": 4.25
  },
  "x360-phantom-breaker": {
   "dev": "MAGES.",
+  "outros": [
+   "465607DE",
+   "465687E6"
+  ],
   "pub": "7Sixty",
   "titleId": "535007ED",
   "ur": 4.75
@@ -6010,6 +8063,12 @@
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07F5",
   "ur": 3.25
+ },
+ "x360-pia-carrot-e-youkoso-4-natsu-no-koikatsu": {
+  "aprox": true,
+  "dev": "（株）PIACCI",
+  "pub": "GNソフトウェア",
+  "titleId": "504807D1"
  },
  "x360-pid": {
   "dev": "Might and Delight",
@@ -6035,6 +8094,20 @@
   "titleId": "58410A23",
   "ur": 4.0
  },
+ "x360-pinball-hall-of-fame-the-williams-collection": {
+  "aprox": true,
+  "dev": "FarSight Studios",
+  "pub": "Crave",
+  "titleId": "435607D7",
+  "ur": 4.75
+ },
+ "x360-pirates-of-the-caribbean-at-world-s-end": {
+  "aprox": true,
+  "dev": "Eurocom Developments Ltd",
+  "pub": "Disney",
+  "titleId": "425607D1",
+  "ur": 3.5
+ },
  "x360-planet-51": {
   "dev": "PYRO STUDIOS",
   "pub": "SEGA",
@@ -6055,6 +8128,9 @@
  },
  "x360-plants-vs-zombies-garden-warfare": {
   "dev": "PopCap",
+  "outros": [
+   "454189D1"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454109C9",
   "ur": 4.25
@@ -6089,6 +8165,13 @@
   "titleId": "5841127A",
   "ur": 3.75
  },
+ "x360-port-royale-3-pirates-and-merchants": {
+  "aprox": true,
+  "dev": "Gaming Minds Studios",
+  "pub": "Kalypso Media",
+  "titleId": "4B5907DF",
+  "ur": 3.5
+ },
  "x360-portal-2": {
   "dev": "Valve",
   "pub": "Electronic Arts",
@@ -6115,6 +8198,9 @@
  },
  "x360-powerup-heroes": {
   "dev": "Ubisoft Quebec",
+  "outros": [
+   "55538895"
+  ],
   "pub": "Ubisoft",
   "titleId": "5553086B",
   "ur": 4.0
@@ -6149,6 +8235,13 @@
   "titleId": "584114B0",
   "ur": 3.5
  },
+ "x360-prison-break-the-conspiracy": {
+  "aprox": true,
+  "dev": "ZootFly",
+  "pub": "Deep Silver",
+  "titleId": "4B4D07DE",
+  "ur": 3.75
+ },
  "x360-prize-driver": {
   "dev": "Rare",
   "pub": "Microsoft Studios",
@@ -6157,63 +8250,111 @@
  },
  "x360-pro-evolution-soccer-2009": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E07FA"
+  ],
   "pub": "Konami",
   "titleId": "4B4E07F0",
   "ur": 4.25
  },
  "x360-pro-evolution-soccer-2010": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E0805"
+  ],
   "pub": "Konami Digital Entertainment GmbH",
   "titleId": "4B4E0801",
   "ur": 3.5
  },
  "x360-pro-evolution-soccer-2011": {
   "dev": "Konami Digital Entertainment",
+  "outros": [
+   "4B4E8830",
+   "4B4E8832"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E081D",
   "ur": 3.75
  },
  "x360-pro-evolution-soccer-2013": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E884F",
+   "4B4E8852"
+  ],
   "pub": "Konami Digital Entertainment Co., Ltd.",
   "titleId": "4B4E084C",
   "ur": 4.0
  },
  "x360-pro-evolution-soccer-2014": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E8858",
+   "4B4E8859",
+   "4B4E885B"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0856",
   "ur": 3.75
  },
  "x360-pro-evolution-soccer-2015": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E8860"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E085F",
   "ur": 3.5
  },
  "x360-pro-evolution-soccer-2016": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E8863"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4B4E0861",
   "ur": 3.75
  },
  "x360-pro-evolution-soccer-2017": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4A3087D2"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4A3007D1",
   "ur": 3.75
  },
  "x360-pro-evolution-soccer-2018": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4A3087D4"
+  ],
   "pub": "Konami Digital Entertainment",
   "titleId": "4A3007D3",
   "ur": 3.75
  },
  "x360-pro-evolution-soccer-6": {
   "dev": "Konami Digital Entertainment Co., Ltd.",
+  "outros": [
+   "4B4E07DE"
+  ],
   "pub": "Konami",
   "titleId": "4B4E07DA",
   "ur": 4.25
+ },
+ "x360-project-gotham-racing-3": {
+  "aprox": true,
+  "dev": "Bizarre Creations Ltd",
+  "pub": "Microsoft",
+  "titleId": "4D5307D1",
+  "ur": 4.0
+ },
+ "x360-project-gotham-racing-4": {
+  "aprox": true,
+  "dev": "Bizarre Creations Limited",
+  "pub": "Microsoft",
+  "titleId": "4D5307F9",
+  "ur": 4.0
  },
  "x360-project-sylpheed": {
   "dev": "GAME ARTS / SETA",
@@ -6223,6 +8364,9 @@
  },
  "x360-prototype": {
   "dev": "Radical",
+  "outros": [
+   "565507EF"
+  ],
   "pub": "Activision",
   "titleId": "4156084E",
   "ur": 4.0
@@ -6263,6 +8407,13 @@
   "titleId": "584108A0",
   "ur": 3.5
  },
+ "x360-puzzle-bobble-a-k-a-bust-a-move-live": {
+  "aprox": true,
+  "dev": "TAITO CORPORATION",
+  "pub": "TAITO CORPORATION",
+  "titleId": "584109C1",
+  "ur": 4.0
+ },
  "x360-puzzle-chronicles": {
   "dev": "Infinite Interactive",
   "pub": "Konami",
@@ -6301,6 +8452,9 @@
  },
  "x360-quake-4": {
   "dev": "id Software",
+  "outros": [
+   "415607D7"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "415607D2",
   "ur": 3.75
@@ -6319,6 +8473,11 @@
  },
  "x360-quantum-theory": {
   "dev": "TECMO,LTD.",
+  "outros": [
+   "544307DB",
+   "544387DD",
+   "544387E1"
+  ],
   "pub": "TECMO KOEI GAMES CO., LTD",
   "titleId": "544307DC",
   "ur": 3.0
@@ -6335,14 +8494,27 @@
   "titleId": "5841144E",
   "ur": 3.0
  },
+ "x360-r-i-p-d-rest-in-peace-department-the-game": {
+  "aprox": true,
+  "dev": "Old School Games",
+  "pub": "ATLUS",
+  "titleId": "584113EE",
+  "ur": 3.0
+ },
  "x360-r-u-s-e": {
   "dev": "Eugen Systems",
+  "outros": [
+   "55538863"
+  ],
   "pub": "Ubisoft",
   "titleId": "555307F6",
   "ur": 4.25
  },
  "x360-rabbids-invasion-the-interactive-tv-show": {
   "dev": "Ubisoft",
+  "outros": [
+   "555388D2"
+  ],
   "pub": "Ubisoft",
   "titleId": "555308D0",
   "ur": 3.75
@@ -6366,12 +8538,20 @@
  },
  "x360-rage": {
   "dev": "id Software",
+  "outros": [
+   "425387EF"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "425307EC",
   "ur": 4.0
  },
  "x360-raiden-fighters-aces": {
   "dev": "GULTI CO.,LTD.",
+  "outros": [
+   "445407E3",
+   "4A5707D4",
+   "564707D3"
+  ],
   "pub": "Success",
   "titleId": "535507D4",
   "ur": 4.75
@@ -6399,11 +8579,32 @@
   "titleId": "4541093A",
   "ur": 4.25
  },
+ "x360-rapala-fishing-frenzy-2009": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "41560808",
+  "ur": 3.75
+ },
  "x360-rapala-for-kinect": {
   "dev": "Now Pro",
   "pub": "Activision",
   "titleId": "415608C6",
   "ur": 3.5
+ },
+ "x360-rapala-pro-bass-fishing": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "41560889",
+  "ur": 3.5
+ },
+ "x360-rapala-tournament-fishing": {
+  "aprox": true,
+  "dev": "Fun Labs",
+  "pub": "Activision",
+  "titleId": "415607EB",
+  "ur": 3.75
  },
  "x360-raskulls": {
   "dev": "Halfbrick Studios",
@@ -6416,6 +8617,23 @@
   "titleId": "545107F1",
   "ur": 3.75
  },
+ "x360-raven-squad-operation-hidden-dagger": {
+  "aprox": true,
+  "dev": "Atomic Motion",
+  "pub": "Evolved/XIM",
+  "titleId": "455607D3",
+  "ur": 3.75
+ },
+ "x360-raving-rabbids-alive-and-kicking": {
+  "aprox": true,
+  "dev": "Ubisoft",
+  "outros": [
+   "55538891"
+  ],
+  "pub": "Ubisoft",
+  "titleId": "55530882",
+  "ur": 3.75
+ },
  "x360-rayman-3-hd": {
   "dev": "Ubisoft Shanghai",
   "pub": "Ubisoft",
@@ -6424,12 +8642,18 @@
  },
  "x360-rayman-legends": {
   "dev": "Ubisoft",
+  "outros": [
+   "555388C8"
+  ],
   "pub": "Ubisoft",
   "titleId": "555308C3",
   "ur": 4.5
  },
  "x360-rayman-origins": {
   "dev": "Ubisoft",
+  "outros": [
+   "55538899"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530884",
   "ur": 4.25
@@ -6458,6 +8682,13 @@
   "titleId": "584111E0",
   "ur": 4.0
  },
+ "x360-realms-of-ancient-war-a-k-a-r-a-w": {
+  "aprox": true,
+  "dev": "Wizarbox",
+  "pub": "Focus Home Interactive",
+  "titleId": "584111EE",
+  "ur": 3.5
+ },
  "x360-record-of-agarest-war-zero": {
   "dev": "IDEA FACTORY Co.,Ltd.",
   "pub": "AKSYS GAMES",
@@ -6478,6 +8709,10 @@
  },
  "x360-red-faction-armageddon": {
   "dev": "Volition, Inc.",
+  "outros": [
+   "54518898",
+   "5451889A"
+  ],
   "pub": "THQ Inc.",
   "titleId": "5451085F",
   "ur": 4.25
@@ -6532,6 +8767,10 @@
  },
  "x360-resident-evil-6": {
   "dev": "CAPCOM CO., LTD.",
+  "outros": [
+   "4343882D",
+   "43438836"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "43430819",
   "ur": 4.5
@@ -6550,18 +8789,27 @@
  },
  "x360-resident-evil-revelations": {
   "dev": "CAPCOM CO., LTD.",
+  "outros": [
+   "4343883C"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "43430833",
   "ur": 4.5
  },
  "x360-resident-evil-revelations-2": {
   "dev": "CAPCOM CO., LTD.",
+  "outros": [
+   "5841144C"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "43430840",
   "ur": 4.5
  },
  "x360-resonance-of-fate": {
   "dev": "tri-Ace Inc.",
+  "outros": [
+   "53450832"
+  ],
   "pub": "SEGA",
   "titleId": "53450839",
   "ur": 4.0
@@ -6571,6 +8819,13 @@
   "pub": "Microsoft Studios",
   "titleId": "584108B3",
   "ur": 4.25
+ },
+ "x360-rhythm-party-boom-boom-dance": {
+  "aprox": true,
+  "dev": "Konami Digital Entertainment Co., Ltd.",
+  "pub": "Konami Digital Entertainment, Inc.",
+  "titleId": "58411201",
+  "ur": 3.5
  },
  "x360-ride": {
   "dev": "Milestone S.r.l.",
@@ -6586,12 +8841,18 @@
  },
  "x360-ridge-racer-6": {
   "dev": "NAMCO-HOMETEK, INC.",
+  "outros": [
+   "4E4D87D9"
+  ],
   "pub": "NAMCO-HOMETEK, INC.",
   "titleId": "4E4D07D3",
   "ur": 3.25
  },
  "x360-ridge-racer-unbounded": {
   "dev": "Bugbear Entertainment Ltd.",
+  "outros": [
+   "4E4D8840"
+  ],
   "pub": "NAMCO BANDAI Games Inc.",
   "titleId": "4E4D083E",
   "ur": 3.75
@@ -6604,6 +8865,10 @@
  },
  "x360-rise-of-nightmares": {
   "dev": "SEGA",
+  "outros": [
+   "53458860",
+   "53458862"
+  ],
   "pub": "SEGA",
   "titleId": "53450846",
   "ur": 3.5
@@ -6634,6 +8899,9 @@
  },
  "x360-risen-2-dark-waters": {
   "dev": "Wizarbox",
+  "outros": [
+   "4B4D87F3"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07E6",
   "ur": 3.75
@@ -6662,6 +8930,13 @@
   "titleId": "58411461",
   "ur": 3.75
  },
+ "x360-robert-ludlum-s-the-bourne-conspiracy": {
+  "aprox": true,
+  "dev": "High Moon Studios LLC",
+  "pub": "Vivendi Universal Games",
+  "titleId": "565507D4",
+  "ur": 4.0
+ },
  "x360-roboblitz": {
   "dev": "Naked Sky Entertainment",
   "pub": "Microsoft Studios",
@@ -6688,6 +8963,9 @@
  },
  "x360-rock-band-3": {
   "dev": "Harmonix Music Systems, Inc.",
+  "outros": [
+   "4541891B"
+  ],
   "pub": "Mad Catz",
   "titleId": "45410914",
   "ur": 4.25
@@ -6697,6 +8975,33 @@
   "pub": "Harmonix",
   "titleId": "5841122D",
   "ur": 3.5
+ },
+ "x360-rock-band-classic-rock-track-pack": {
+  "aprox": true,
+  "dev": "Harmonix Music Systems, Inc.",
+  "pub": "Electronic Arts",
+  "titleId": "454108B0",
+  "ur": 4.0
+ },
+ "x360-rock-band-country-track-pack": {
+  "aprox": true,
+  "dev": "Harmonix Music Systems, Inc.",
+  "pub": "Electronic Arts",
+  "titleId": "454108CA",
+  "ur": 4.25
+ },
+ "x360-rock-band-country-track-pack-2": {
+  "aprox": true,
+  "dev": "Harmonix Music Systems, Inc.",
+  "pub": "MTV Games",
+  "titleId": "4541092C"
+ },
+ "x360-rock-band-metal-track-pack": {
+  "aprox": true,
+  "dev": "Harmonix Music Systems, Inc.",
+  "pub": "Electronic Arts",
+  "titleId": "454108CD",
+  "ur": 4.25
  },
  "x360-rock-of-ages": {
   "dev": "ACE Team",
@@ -6712,6 +9017,9 @@
  },
  "x360-rock-revolution": {
   "dev": "Zoë Mode",
+  "outros": [
+   "4B4E07F6"
+  ],
   "pub": "Konami",
   "titleId": "4B4E07E0",
   "ur": 2.25
@@ -6742,6 +9050,9 @@
  },
  "x360-rocksmith": {
   "dev": "Ubisoft - San Francisco",
+  "outros": [
+   "55530898"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530873",
   "ur": 4.0
@@ -6751,6 +9062,13 @@
   "pub": "Ubisoft",
   "titleId": "555308C0",
   "ur": 4.5
+ },
+ "x360-rockstar-games-presents-table-tennis": {
+  "aprox": true,
+  "dev": "Rockstar San Diego",
+  "pub": "Rockstar Games",
+  "titleId": "545407DF",
+  "ur": 3.25
  },
  "x360-rocky-and-bullwinkle": {
   "dev": "Zen Studios",
@@ -6776,6 +9094,15 @@
   "titleId": "5841082D",
   "ur": 3.5
  },
+ "x360-root-double-before-crime-after-days": {
+  "aprox": true,
+  "dev": "レジスタ",
+  "outros": [
+   "553187D2"
+  ],
+  "pub": "イエティ",
+  "titleId": "553107D1"
+ },
  "x360-rotastic": {
   "dev": "Dancing Dots",
   "pub": "Focus Entertainment",
@@ -6800,6 +9127,9 @@
  },
  "x360-rugby-league-live-2": {
   "dev": "Big Ant Studios",
+  "outros": [
+   "484507D9"
+  ],
   "pub": "Home Entertainment Suppliers Pty Ltd",
   "titleId": "484507D5"
  },
@@ -6811,6 +9141,9 @@
  },
  "x360-rugby-world-cup-2011": {
   "dev": "H.B. Studios Multimedia Limited",
+  "outros": [
+   "464F87F3"
+  ],
   "pub": "505 Games",
   "titleId": "464F07ED",
   "ur": 4.0
@@ -6841,6 +9174,9 @@
  },
  "x360-sacred-2-fallen-angel": {
   "dev": "Ascaron Entertainment",
+  "outros": [
+   "534407FF"
+  ],
   "pub": "cdv Software Entertainment",
   "titleId": "4B4D07D1",
   "ur": 4.0
@@ -6859,12 +9195,19 @@
  },
  "x360-saints-row": {
   "dev": "Volition",
+  "outros": [
+   "545107ED",
+   "545107F8"
+  ],
   "pub": "THQ & Koch Media",
   "titleId": "545107D1",
   "ur": 4.25
  },
  "x360-saints-row-2": {
   "dev": "DS Volition",
+  "outros": [
+   "54510836"
+  ],
   "pub": "Koch Media",
   "titleId": "545107FC",
   "ur": 4.25
@@ -6877,12 +9220,20 @@
  },
  "x360-saints-row-iv": {
   "dev": "DS Volition",
+  "outros": [
+   "4B4D07F9",
+   "4B4D87F8"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07F6",
   "ur": 4.75
  },
  "x360-saints-row-the-third": {
   "dev": "DS Volition",
+  "outros": [
+   "545108A5",
+   "545188A0"
+  ],
   "pub": "Koch Media",
   "titleId": "5451086D",
   "ur": 4.5
@@ -6891,6 +9242,20 @@
   "dev": "Klon",
   "pub": "Klon",
   "titleId": "4E5107D2"
+ },
+ "x360-sam-and-max-beyond-time-and-space": {
+  "aprox": true,
+  "dev": "Telltale Games",
+  "pub": "Microsoft Studios",
+  "titleId": "58410999",
+  "ur": 4.0
+ },
+ "x360-samurai-shodown-ii": {
+  "aprox": true,
+  "dev": "SNK PLAYMORE CORPORATION",
+  "pub": "SNK PLAYMORE",
+  "titleId": "584108D0",
+  "ur": 4.0
  },
  "x360-samurai-warriors-2": {
   "dev": "TECMO KOEI GAMES.CO.,LTD",
@@ -6916,6 +9281,26 @@
   "titleId": "4B4E0802",
   "ur": 3.75
  },
+ "x360-saw-ii-flesh-and-blood": {
+  "aprox": true,
+  "dev": "Zombie Studios",
+  "outros": [
+   "4B4E8834"
+  ],
+  "pub": "Konami Digital Entertainment",
+  "titleId": "4B4E0822",
+  "ur": 3.75
+ },
+ "x360-sbk-2011-superbike-world-championship": {
+  "aprox": true,
+  "dev": "Milestone srl",
+  "outros": [
+   "565107D5"
+  ],
+  "pub": "Maximum",
+  "titleId": "4C5307E5",
+  "ur": 4.25
+ },
  "x360-sbk-generations": {
   "dev": "Milestone Srl",
   "pub": "Milestone Srl",
@@ -6926,6 +9311,20 @@
   "pub": "Square Enix",
   "titleId": "58411226",
   "ur": 3.5
+ },
+ "x360-scene-it-box-office-smash": {
+  "aprox": true,
+  "dev": "Krome/Screenlife",
+  "pub": "Microsoft",
+  "titleId": "4D530860",
+  "ur": 4.0
+ },
+ "x360-scene-it-lights-camera-action": {
+  "aprox": true,
+  "dev": "WXP",
+  "pub": "Microsoft",
+  "titleId": "4D530832",
+  "ur": 3.75
  },
  "x360-scene-it-movie-night": {
   "dev": "Sarbakan",
@@ -6938,6 +9337,13 @@
   "pub": "Microsoft Studios",
   "titleId": "584108BE",
   "ur": 3.75
+ },
+ "x360-score-international-baja-1000": {
+  "aprox": true,
+  "dev": "Left Field Productions",
+  "pub": "Activision",
+  "titleId": "41560823",
+  "ur": 3.25
  },
  "x360-scott-pilgrim-vs-the-world-the-game": {
   "dev": "Ubisoft Chengdu",
@@ -6965,6 +9371,10 @@
  },
  "x360-screamride": {
   "dev": "Frontier Developments Plc",
+  "outros": [
+   "4D538AB6",
+   "4D538AB7"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530AA6",
   "ur": 4.0
@@ -7011,17 +9421,45 @@
   "titleId": "58410AC2",
   "ur": 3.75
  },
+ "x360-sega-rally-revo": {
+  "aprox": true,
+  "dev": "SEGA",
+  "pub": "SEGA",
+  "titleId": "534507E6",
+  "ur": 3.5
+ },
  "x360-sega-superstars-tennis": {
   "dev": "Sumo Digital Ltd",
   "pub": "Sega",
   "titleId": "534507F5",
   "ur": 3.75
  },
+ "x360-sega-vintage-collection-alex-kidd-and-co-alex-kidd-in-miracle-world-super-hang-on-the-revenge-of-shinobi": {
+  "aprox": true,
+  "dev": "M2",
+  "pub": "SEGA",
+  "titleId": "58410B70",
+  "ur": 3.5
+ },
+ "x360-sega-vintage-collection-toejam-and-earl-toejam-and-earl-panic-on-funkotron": {
+  "aprox": true,
+  "dev": "M2",
+  "pub": "SEGA",
+  "titleId": "5841124C",
+  "ur": 4.5
+ },
  "x360-self-defense-training-camp": {
   "dev": "Ubisoft",
   "pub": "Ubisoft",
   "titleId": "55530889",
   "ur": 3.25
+ },
+ "x360-sensible-world-of-soccer-swos": {
+  "aprox": true,
+  "dev": "Kuju Entertainment",
+  "pub": "Codemasters",
+  "titleId": "58410869",
+  "ur": 2.75
  },
  "x360-serious-sam-3-bfe": {
   "dev": "Croteam",
@@ -7035,6 +9473,13 @@
   "titleId": "58411249",
   "ur": 3.25
  },
+ "x360-serious-sam-hd-the-first-encounter": {
+  "aprox": true,
+  "dev": "Croteam",
+  "pub": "Majesco Entertainment",
+  "titleId": "584109DA",
+  "ur": 4.25
+ },
  "x360-serious-sam-hd-the-second-encounter": {
   "dev": "Croteam",
   "pub": "Majesco Entertainment",
@@ -7043,6 +9488,9 @@
  },
  "x360-sesame-street-once-upon-a-monster": {
   "dev": "Double Fine Productions",
+  "outros": [
+   "5752881C"
+  ],
   "pub": "WB Games Inc.",
   "titleId": "5752080C",
   "ur": 3.75
@@ -7095,11 +9543,35 @@
   "titleId": "5553081E",
   "ur": 3.75
  },
+ "x360-shellshock-2-blood-trails": {
+  "aprox": true,
+  "dev": "Rebellion",
+  "pub": "Eidos",
+  "titleId": "534307E5",
+  "ur": 3.25
+ },
  "x360-sherlock-holmes-crimes-and-punishments": {
   "dev": "Frogwares",
   "pub": "Focus Home Interactive",
   "titleId": "464507DF",
   "ur": 3.5
+ },
+ "x360-sherlock-holmes-vs-jack-the-ripper": {
+  "aprox": true,
+  "dev": "Frogwares/Spiders",
+  "outros": [
+   "4A5707D3"
+  ],
+  "pub": "Focus Home Interactive",
+  "titleId": "464507D3",
+  "ur": 3.75
+ },
+ "x360-shikigami-no-shiro-iii": {
+  "aprox": true,
+  "dev": "BARNHOUSE EFFECT CO.,LTD.",
+  "pub": "Arc System Works",
+  "titleId": "415707D2",
+  "ur": 4.25
  },
  "x360-shinobi": {
   "dev": "Backbone Entertainment",
@@ -7175,6 +9647,10 @@
  },
  "x360-singularity": {
   "dev": "Raven Software",
+  "outros": [
+   "41560896",
+   "585504CB"
+  ],
   "pub": "Activision",
   "titleId": "415607EF",
   "ur": 4.25
@@ -7187,6 +9663,9 @@
  },
  "x360-skate-2": {
   "dev": "Electronic Arts Vancouver",
+  "outros": [
+   "454108AF"
+  ],
   "pub": "Electronic Arts",
   "titleId": "4541087F",
   "ur": 4.25
@@ -7197,17 +9676,38 @@
   "titleId": "454108E6",
   "ur": 4.25
  },
+ "x360-ski-doo-snowmobile-challenge": {
+  "aprox": true,
+  "dev": "Coldwood Interactive",
+  "pub": "Valcon Games",
+  "titleId": "564707D1",
+  "ur": 3.75
+ },
  "x360-ski-race": {
   "dev": "Rare",
   "pub": "Microsoft Studios",
   "titleId": "584112A1",
   "ur": 3.5
  },
+ "x360-skullgirls-skullgirls-encore": {
+  "aprox": true,
+  "dev": "Lab Zero",
+  "pub": "MarvelousAQL",
+  "titleId": "584111DB",
+  "ur": 4.25
+ },
  "x360-skulls-of-the-shogun": {
   "dev": "17-BIT",
   "pub": "Microsoft Studios",
   "titleId": "584111D8",
   "ur": 3.75
+ },
+ "x360-skydive-proximity-flight": {
+  "aprox": true,
+  "dev": "Gaijin",
+  "pub": "TopWare Interactive AG",
+  "titleId": "584112C8",
+  "ur": 3.25
  },
  "x360-skydrift": {
   "dev": "Digital Reality",
@@ -7241,6 +9741,11 @@
  },
  "x360-sleeping-dogs": {
   "dev": "United Front Games",
+  "outros": [
+   "53510818",
+   "53510819",
+   "53518817"
+  ],
   "pub": "Square Enix",
   "titleId": "53510811",
   "ur": 4.0
@@ -7259,6 +9764,9 @@
  },
  "x360-smash-court-tennis-3": {
   "dev": "（株）バンダイナムコゲームス",
+  "outros": [
+   "4E4D07ED"
+  ],
   "pub": "Namco",
   "titleId": "4E4D07DE"
  },
@@ -7274,8 +9782,18 @@
   "titleId": "4D538802",
   "ur": 3.5
  },
+ "x360-sniper-elite-iii": {
+  "aprox": true,
+  "dev": "Rebellion Developments Ltd",
+  "pub": "505 Games Srl",
+  "titleId": "464F0803",
+  "ur": 4.5
+ },
  "x360-sniper-elite-v2": {
   "dev": "Rebellion Developments Limited",
+  "outros": [
+   "464F87FB"
+  ],
   "pub": "505 Games Srl",
   "titleId": "464F07E8",
   "ur": 4.25
@@ -7288,6 +9806,9 @@
  },
  "x360-sniper-ghost-warrior-2": {
   "dev": "City Interactive",
+  "outros": [
+   "435987D7"
+  ],
   "pub": "City Interactive",
   "titleId": "435907D4",
   "ur": 4.0
@@ -7303,6 +9824,16 @@
   "pub": "Microsoft Studios",
   "titleId": "584109B5",
   "ur": 4.25
+ },
+ "x360-soldier-of-fortune-payback": {
+  "aprox": true,
+  "dev": "Cauldron",
+  "outros": [
+   "41560818"
+  ],
+  "pub": "Activision",
+  "titleId": "41560802",
+  "ur": 4.0
  },
  "x360-soltrio-solitaire": {
   "dev": "Silver Creek Entertainment",
@@ -7322,6 +9853,30 @@
   "titleId": "58411202",
   "ur": 4.5
  },
+ "x360-sonic-and-all-stars-racing-transformed": {
+  "aprox": true,
+  "dev": "Sumo Digital",
+  "outros": [
+   "393387D8"
+  ],
+  "pub": "Sega",
+  "titleId": "5345085D",
+  "ur": 4.0
+ },
+ "x360-sonic-and-knuckles": {
+  "aprox": true,
+  "dev": "Backbone Entertainment",
+  "pub": "SEGA",
+  "titleId": "584109C4",
+  "ur": 4.25
+ },
+ "x360-sonic-and-sega-all-stars-racing": {
+  "aprox": true,
+  "dev": "Sumo Digital Ltd",
+  "pub": "SEGA",
+  "titleId": "53450815",
+  "ur": 4.0
+ },
  "x360-sonic-cd": {
   "dev": "SEGA",
   "pub": "SEGA",
@@ -7330,15 +9885,29 @@
  },
  "x360-sonic-free-riders": {
   "dev": "Sonic Team",
+  "outros": [
+   "5345885B"
+  ],
   "pub": "SEGA",
   "titleId": "5345084D",
   "ur": 3.75
  },
  "x360-sonic-generations": {
   "dev": "SEGA",
+  "outros": [
+   "5345885F",
+   "53458861"
+  ],
   "pub": "SEGA",
   "titleId": "53450848",
   "ur": 4.25
+ },
+ "x360-sonic-s-ultimate-genesis-collection": {
+  "aprox": true,
+  "dev": "Backbone Entertainment",
+  "pub": "Sega",
+  "titleId": "53450810",
+  "ur": 4.0
  },
  "x360-sonic-the-fighters": {
   "dev": "SEGA",
@@ -7384,6 +9953,9 @@
  },
  "x360-soulcalibur": {
   "dev": "NAMCO BANDAI Games America",
+  "outros": [
+   "4E4D083D"
+  ],
   "pub": "Namco",
   "titleId": "58410904",
   "ur": 4.25
@@ -7468,8 +10040,28 @@
  },
  "x360-spec-ops-the-line": {
   "dev": "Yager",
+  "outros": [
+   "545488A0"
+  ],
   "pub": "2K Games",
   "titleId": "54540843",
+  "ur": 4.25
+ },
+ "x360-special-forces-team-x-stx": {
+  "aprox": true,
+  "dev": "Zombie Studios",
+  "pub": "Atari, Inc.",
+  "titleId": "584112AD",
+  "ur": 3.75
+ },
+ "x360-spectral-force-3-innocent-rage": {
+  "aprox": true,
+  "dev": "Xpec",
+  "outros": [
+   "494607D1"
+  ],
+  "pub": "ATLUS INC.",
+  "titleId": "415407D3",
   "ur": 4.25
  },
  "x360-speedball-2-brutal-deluxe": {
@@ -7516,6 +10108,9 @@
  },
  "x360-split-second": {
   "dev": "BlackRock Studios",
+  "outros": [
+   "425687FF"
+  ],
   "pub": "Disney Interactive Studios",
   "titleId": "425607E7",
   "ur": 4.25
@@ -7531,6 +10126,13 @@
   "pub": "Activision",
   "titleId": "41560919",
   "ur": 4.0
+ },
+ "x360-spongebob-s-surf-and-skate-roadtrip": {
+  "aprox": true,
+  "dev": "Blitz Games Studios Ltd.",
+  "pub": "THQ, Inc.",
+  "titleId": "5451089D",
+  "ur": 3.75
  },
  "x360-spongebob-squarepants-plankton-s-robotic-revenge": {
   "dev": "Behaviour",
@@ -7552,6 +10154,9 @@
  },
  "x360-ssx": {
   "dev": "Electronic Arts",
+  "outros": [
+   "45418988"
+  ],
   "pub": "EA SPORTS",
   "titleId": "4541096D",
   "ur": 4.25
@@ -7592,6 +10197,13 @@
   "titleId": "425307D2",
   "ur": 4.25
  },
+ "x360-star-wars-the-clone-wars-republic-heroes": {
+  "aprox": true,
+  "dev": "Krome Studios",
+  "pub": "Disney Interactive Studios",
+  "titleId": "4C4107E2",
+  "ur": 3.5
+ },
  "x360-star-wars-the-force-unleashed": {
   "dev": "LucasArts",
   "pub": "Disney Interactive Studios",
@@ -7600,6 +10212,9 @@
  },
  "x360-star-wars-the-force-unleashed-ii": {
   "dev": "LucasArts",
+  "outros": [
+   "4C4187F5"
+  ],
   "pub": "Disney Interactive Studios",
   "titleId": "4C4107F2",
   "ur": 4.5
@@ -7612,6 +10227,9 @@
  },
  "x360-steel-battalion-heavy-armor": {
   "dev": "From Software Inc.",
+  "outros": [
+   "43438831"
+  ],
   "pub": "CAPCOM CO., LTD.",
   "titleId": "43430816",
   "ur": 3.5
@@ -7636,6 +10254,10 @@
  },
  "x360-storm": {
   "dev": "IndiePub",
+  "outros": [
+   "5841122B",
+   "5855066F"
+  ],
   "pub": "NAMCO BANDAI Games",
   "titleId": "584113F2",
   "ur": 3.0
@@ -7648,9 +10270,20 @@
  },
  "x360-stranglehold": {
   "dev": "Midway Amusement Games, LLC",
+  "outros": [
+   "4D5707E5",
+   "535507D2"
+  ],
   "pub": "Midway Home Entertainment Inc.",
   "titleId": "4D5707D2",
   "ur": 4.0
+ },
+ "x360-street-fighter-ii-hyper-fighting": {
+  "aprox": true,
+  "dev": "Sensory Sweep Studios",
+  "pub": "Capcom",
+  "titleId": "584107F4",
+  "ur": 3.75
  },
  "x360-street-fighter-iv": {
   "dev": "CAPCOM Co., Ltd. / Dimps Corporation",
@@ -7693,8 +10326,17 @@
   "pub": "dtp entertainment AG",
   "titleId": "445407D6"
  },
+ "x360-summer-athletics-the-ultimate-challenge": {
+  "aprox": true,
+  "dev": "49Games GmbH",
+  "pub": "RTL Games GmbH",
+  "titleId": "524C07DE"
+ },
  "x360-summer-stars-2012": {
   "dev": "49Games",
+  "outros": [
+   "4B4D87F0"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07EB",
   "ur": 3.5
@@ -7748,6 +10390,9 @@
  },
  "x360-supreme-commander": {
   "dev": "Hellbent Games",
+  "outros": [
+   "415907D5"
+  ],
   "pub": "Aspyr Media Inc.",
   "titleId": "415907D1",
   "ur": 4.0
@@ -7782,8 +10427,18 @@
   "titleId": "58411405",
   "ur": 3.25
  },
+ "x360-syberia-ii": {
+  "aprox": true,
+  "dev": "© 2015 Anuman Interactive",
+  "pub": "BANDAI NAMCO Entertainement Europe S.A.S.",
+  "titleId": "58411406",
+  "ur": 3.0
+ },
  "x360-syndicate": {
   "dev": "EAP / Starbreeze",
+  "outros": [
+   "45418984"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410923",
   "ur": 4.0
@@ -7802,12 +10457,18 @@
  },
  "x360-tales-from-the-borderlands": {
   "dev": "Telltale Games",
+  "outros": [
+   "5841143A"
+  ],
   "pub": "2K",
   "titleId": "545408B9",
   "ur": 4.25
  },
  "x360-tales-of-vesperia": {
   "dev": "NAMCO BANDAI Games Inc.",
+  "outros": [
+   "4E4D0805"
+  ],
   "pub": "Namco",
   "titleId": "4E4D07E9",
   "ur": 4.5
@@ -7842,6 +10503,20 @@
   "titleId": "584113C2",
   "ur": 4.5
  },
+ "x360-teenage-mutant-ninja-turtles-training-lair": {
+  "aprox": true,
+  "dev": "Float Hybrid, Krome Studios",
+  "pub": "Microsoft Studios",
+  "titleId": "58411459",
+  "ur": 3.0
+ },
+ "x360-teenage-mutant-ninja-turtles-turtles-in-time-re-shelled": {
+  "aprox": true,
+  "dev": "Ubisoft Singapore",
+  "pub": "Ubisoft",
+  "titleId": "584109D2",
+  "ur": 4.0
+ },
  "x360-tekken-6": {
   "dev": "BANDAI NAMCO Entertainment Inc.",
   "pub": "NAMCO BANDAI Games America Inc.",
@@ -7866,6 +10541,12 @@
   "titleId": "465307D7",
   "ur": 4.25
  },
+ "x360-tengai-makyou-ziria-haruka-naru-jipang": {
+  "aprox": true,
+  "dev": "TMZ Productions",
+  "pub": "TMZ Productions",
+  "titleId": "545707D1"
+ },
  "x360-terminator-salvation": {
   "dev": "GRIN",
   "pub": "Evolved/XIM",
@@ -7874,6 +10555,9 @@
  },
  "x360-terraria-xbox-360-edition": {
   "dev": "Engine Software BV",
+  "outros": [
+   "5841128F"
+  ],
   "pub": "505 Games Srl",
   "titleId": "464F0802",
   "ur": 4.5
@@ -7908,6 +10592,12 @@
   "titleId": "5841083B",
   "ur": 3.75
  },
+ "x360-tetris-the-grand-master-ace": {
+  "aprox": true,
+  "dev": "<Insert display string text>",
+  "pub": "AQ INTERACTIVE Inc.",
+  "titleId": "434107D2"
+ },
  "x360-texas-cheat-em": {
   "dev": "Wideload Games, Inc.",
   "pub": "D3",
@@ -7940,6 +10630,9 @@
  },
  "x360-the-biggest-loser-ultimate-workout": {
   "dev": "Blitz Games Studios Ltd",
+  "outros": [
+   "5451888A"
+  ],
   "pub": "THQ",
   "titleId": "54510859",
   "ur": 3.75
@@ -7955,6 +10648,13 @@
   "pub": "2K Games",
   "titleId": "54540830",
   "ur": 4.25
+ },
+ "x360-the-black-eyed-peas-experience": {
+  "aprox": true,
+  "dev": "Ubisoft",
+  "pub": "Ubisoft",
+  "titleId": "5553088D",
+  "ur": 3.75
  },
  "x360-the-bluecoats-north-vs-south": {
   "dev": "© 2015 Anuman Interactive",
@@ -7980,6 +10680,20 @@
   "titleId": "58411238",
   "ur": 4.0
  },
+ "x360-the-chronicles-of-narnia-prince-caspian": {
+  "aprox": true,
+  "dev": "Traveller's Tales",
+  "pub": "Disney",
+  "titleId": "425607DB",
+  "ur": 3.5
+ },
+ "x360-the-chronicles-of-riddick-assault-on-dark-athena": {
+  "aprox": true,
+  "dev": "Starbreeze Studios",
+  "pub": "Atari",
+  "titleId": "494707EE",
+  "ur": 4.0
+ },
  "x360-the-club": {
   "dev": "Bizarre Creations Limited.",
   "pub": "Sega",
@@ -7994,17 +10708,28 @@
  },
  "x360-the-cursed-crusade": {
   "dev": "Kylotonn Games",
+  "outros": [
+   "415407D6",
+   "445487E0"
+  ],
   "pub": "dtp entertainment",
   "titleId": "445407DE"
  },
  "x360-the-darkness": {
   "dev": "Starbreeze",
+  "outros": [
+   "54540804",
+   "5454082A"
+  ],
   "pub": "2K Games",
   "titleId": "545407EE",
   "ur": 4.0
  },
  "x360-the-darkness-ii": {
   "dev": "Digital Extremes",
+  "outros": [
+   "5454889F"
+  ],
   "pub": "2K Games",
   "titleId": "5454088D",
   "ur": 4.25
@@ -8029,6 +10754,9 @@
  },
  "x360-the-evil-within": {
   "dev": "Tango Gameworks",
+  "outros": [
+   "425307F7"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "425307F4",
   "ur": 4.5
@@ -8047,6 +10775,9 @@
  },
  "x360-the-first-templar": {
   "dev": "Haemimont Games",
+  "outros": [
+   "4B5987E3"
+  ],
   "pub": "Kalypso Media",
   "titleId": "4B5907D8",
   "ur": 3.25
@@ -8057,6 +10788,13 @@
   "titleId": "45410866",
   "ur": 4.25
  },
+ "x360-the-godfather-the-game": {
+  "aprox": true,
+  "dev": "Electronic Arts™",
+  "pub": "Electronic Arts",
+  "titleId": "454107E9",
+  "ur": 4.25
+ },
  "x360-the-golden-compass": {
   "dev": "Shiny",
   "pub": "Sega",
@@ -8065,9 +10803,28 @@
  },
  "x360-the-gunstringer": {
   "dev": "Twisted Pixel Games",
+  "outros": [
+   "4D5389E9",
+   "4D5389EA",
+   "58410B1A"
+  ],
   "pub": "Microsoft Game Studios",
   "titleId": "4D5309DF",
   "ur": 3.75
+ },
+ "x360-the-hip-hop-dance-experience": {
+  "aprox": true,
+  "dev": "Ubisoft",
+  "pub": "Ubisoft",
+  "titleId": "555308B4",
+  "ur": 3.5
+ },
+ "x360-the-history-channel-battle-for-the-pacific": {
+  "aprox": true,
+  "dev": "Cauldron",
+  "pub": "Activision",
+  "titleId": "41560805",
+  "ur": 3.5
  },
  "x360-the-incredible-hulk": {
   "dev": "Edge of Reality",
@@ -8095,6 +10852,9 @@
  },
  "x360-the-king-of-fighters-xiii": {
   "dev": "SNK PLAYMORE CORPORATION",
+  "outros": [
+   "534E87DD"
+  ],
   "pub": "SNK PLAYMORE CORPORATION",
   "titleId": "534E07DC",
   "ur": 4.25
@@ -8111,11 +10871,36 @@
   "titleId": "58411447",
   "ur": 4.25
  },
+ "x360-the-legend-of-spyro-dawn-of-the-dragon": {
+  "aprox": true,
+  "dev": "Etranges Libellules",
+  "pub": "Activision",
+  "titleId": "565507F9",
+  "ur": 4.25
+ },
  "x360-the-lego-movie-videogame": {
   "dev": "Traveller's Tales",
+  "outros": [
+   "57528843",
+   "57528849"
+  ],
   "pub": "Warner Brothers Interactive",
   "titleId": "57520841",
   "ur": 3.5
+ },
+ "x360-the-lord-of-the-rings-conquest": {
+  "aprox": true,
+  "dev": "Pandemic Studios LLC",
+  "pub": "Electronic Arts",
+  "titleId": "45410852",
+  "ur": 4.0
+ },
+ "x360-the-lord-of-the-rings-the-battle-for-middle-earth-ii": {
+  "aprox": true,
+  "dev": "Electronic Arts Los Angeles",
+  "pub": "Electronic Arts",
+  "titleId": "454107DF",
+  "ur": 4.25
  },
  "x360-the-lord-of-the-rings-war-in-the-north": {
   "dev": "Snowblind Studios Inc.",
@@ -8159,11 +10944,32 @@
   "titleId": "41560922",
   "ur": 3.75
  },
+ "x360-the-pinball-arcade": {
+  "aprox": true,
+  "dev": "Farsight Studios",
+  "pub": "Crave Games",
+  "titleId": "5841121D",
+  "ur": 4.0
+ },
+ "x360-the-price-is-right-the-decades": {
+  "aprox": true,
+  "dev": "Ludia",
+  "pub": "Ubisoft",
+  "titleId": "55530880",
+  "ur": 4.5
+ },
  "x360-the-saboteur": {
   "dev": "Pandemic Studios",
   "pub": "Electronic Arts",
   "titleId": "4541088F",
   "ur": 4.5
+ },
+ "x360-the-secret-of-monkey-island-special-edition": {
+  "aprox": true,
+  "dev": "LucasArts",
+  "pub": "Disney Interactive Studios",
+  "titleId": "58410995",
+  "ur": 4.25
  },
  "x360-the-simpsons-arcade-game": {
   "dev": "Backbone Entertainment",
@@ -8179,6 +10985,9 @@
  },
  "x360-the-sims-3": {
   "dev": "Edge of Reality",
+  "outros": [
+   "45410962"
+  ],
   "pub": "Electronic Arts",
   "titleId": "454108E2",
   "ur": 4.0
@@ -8189,6 +10998,13 @@
   "titleId": "555308BD",
   "ur": 3.25
  },
+ "x360-the-spiderwick-chronicles": {
+  "aprox": true,
+  "dev": "Stormfront Studios",
+  "pub": "Vivendi Universal Games",
+  "titleId": "565507E6",
+  "ur": 2.5
+ },
  "x360-the-splatters": {
   "dev": "SpikySnail",
   "pub": "Microsoft Studios",
@@ -8197,6 +11013,9 @@
  },
  "x360-the-testament-of-sherlock-holmes": {
   "dev": "Frogwares / Spiders",
+  "outros": [
+   "415407E0"
+  ],
   "pub": "Focus Home Interactive",
   "titleId": "464507D5"
  },
@@ -8208,12 +11027,18 @@
  },
  "x360-the-walking-dead": {
   "dev": "Telltale Games",
+  "outros": [
+   "584111DE"
+  ],
   "pub": "Telltale Games",
   "titleId": "443607D2",
   "ur": 4.5
  },
  "x360-the-walking-dead-season-two": {
   "dev": "Telltale Games",
+  "outros": [
+   "58411413"
+  ],
   "pub": "Telltale Games",
   "titleId": "443607D4",
   "ur": 4.5
@@ -8238,6 +11063,9 @@
  },
  "x360-the-wolf-among-us": {
   "dev": "Telltale Games",
+  "outros": [
+   "58411216"
+  ],
   "pub": "Telltale Games",
   "titleId": "443607D5",
   "ur": 4.25
@@ -8316,18 +11144,30 @@
  },
  "x360-tiger-woods-pga-tour-12-the-masters": {
   "dev": "EA Tiburon",
+  "outros": [
+   "45418953"
+  ],
   "pub": "Electronic Arts",
   "titleId": "4541094D",
   "ur": 3.75
  },
  "x360-tiger-woods-pga-tour-13": {
   "dev": "EA SPORTS",
+  "outros": [
+   "45410980",
+   "45418981",
+   "45418990"
+  ],
   "pub": "Electronic Arts",
   "titleId": "45410972",
   "ur": 3.5
  },
  "x360-tiger-woods-pga-tour-14": {
   "dev": "EA Tiburon",
+  "outros": [
+   "454109AA",
+   "454189B1"
+  ],
   "pub": "EA SPORTS™",
   "titleId": "454109A9",
   "ur": 3.75
@@ -8340,6 +11180,9 @@
  },
  "x360-timeshift": {
   "dev": "Saber Interactive",
+  "outros": [
+   "494787D7"
+  ],
   "pub": "Vivendi Universal Games",
   "titleId": "565507DA",
   "ur": 3.75
@@ -8380,22 +11223,59 @@
   "titleId": "555307D5",
   "ur": 4.0
  },
+ "x360-tom-clancy-s-ghost-recon-advanced-warfighter-2": {
+  "aprox": true,
+  "dev": "Ubisoft",
+  "pub": "Ubisoft",
+  "titleId": "555307F0",
+  "ur": 4.25
+ },
  "x360-tom-clancy-s-ghost-recon-future-soldier": {
   "dev": "Ubisoft Paris",
+  "outros": [
+   "555388A9"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530833",
   "ur": 4.25
  },
  "x360-tom-clancy-s-h-a-w-x-2": {
   "dev": "Ubisoft",
+  "outros": [
+   "55538858"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530848",
   "ur": 3.75
+ },
+ "x360-tom-clancy-s-rainbow-six-vegas": {
+  "aprox": true,
+  "dev": "Ubisoft",
+  "pub": "Ubisoft",
+  "titleId": "555307D6",
+  "ur": 4.25
+ },
+ "x360-tom-clancy-s-rainbow-six-vegas-2": {
+  "aprox": true,
+  "dev": "Ubisoft Montreal",
+  "outros": [
+   "5553081F"
+  ],
+  "pub": "Ubisoft",
+  "titleId": "55530807",
+  "ur": 4.5
  },
  "x360-tom-clancy-s-splinter-cell-blacklist": {
   "dev": "Ubisoft",
   "pub": "Ubisoft",
   "titleId": "555308B6",
+  "ur": 4.5
+ },
+ "x360-tom-clancy-s-splinter-cell-conviction": {
+  "aprox": true,
+  "dev": "Ubisoft Montréal",
+  "pub": "Ubisoft",
+  "titleId": "5553080B",
   "ur": 4.5
  },
  "x360-tom-clancy-s-splinter-cell-double-agent": {
@@ -8409,6 +11289,12 @@
   "titleId": "53510802",
   "ur": 4.5
  },
+ "x360-tomb-raider-anniversary": {
+  "aprox": true,
+  "dev": "Crystal Dynamics",
+  "pub": "Spike Co. Ltd.",
+  "titleId": "534407F5"
+ },
  "x360-tomb-raider-legend": {
   "dev": "Crystal Dynamics",
   "pub": "Eidos",
@@ -8417,6 +11303,9 @@
  },
  "x360-tomb-raider-underworld": {
   "dev": "Crystal Dynamics",
+  "outros": [
+   "534407FA"
+  ],
   "pub": "Square Enix",
   "titleId": "534307EC",
   "ur": 4.25
@@ -8426,6 +11315,13 @@
   "pub": "Activision",
   "titleId": "41560820",
   "ur": 3.75
+ },
+ "x360-tony-hawk-s-american-wasteland": {
+  "aprox": true,
+  "dev": "Neversoft Entertainment",
+  "pub": "Activision",
+  "titleId": "415607D4",
+  "ur": 4.0
  },
  "x360-tony-hawk-s-pro-skater-5": {
   "dev": "Robomodo, Disruptive Games",
@@ -8441,12 +11337,25 @@
  },
  "x360-tony-hawk-s-project-8": {
   "dev": "Neversoft Entertainment",
+  "outros": [
+   "41560810"
+  ],
   "pub": "Activision",
   "titleId": "415607DD",
   "ur": 4.25
  },
+ "x360-tony-hawk-s-proving-ground": {
+  "aprox": true,
+  "dev": "Neversoft Entertainment",
+  "pub": "Activision",
+  "titleId": "415607F0",
+  "ur": 4.0
+ },
  "x360-tony-hawk-shred": {
   "dev": "Robomodo",
+  "outros": [
+   "415688A2"
+  ],
   "pub": "Activision",
   "titleId": "41560888"
  },
@@ -8458,6 +11367,9 @@
  },
  "x360-top-gun-hard-lock": {
   "dev": "Headstrong Games",
+  "outros": [
+   "464F87FA"
+  ],
   "pub": "505 Games Srl",
   "titleId": "464F07EC",
   "ur": 3.75
@@ -8482,6 +11394,9 @@
  },
  "x360-top-spin-4": {
   "dev": "2K Czech",
+  "outros": [
+   "54548891"
+  ],
   "pub": "2K Sports",
   "titleId": "54540859",
   "ur": 3.75
@@ -8516,13 +11431,27 @@
  },
  "x360-toy-soldiers": {
   "dev": "Signal Studios",
+  "outros": [
+   "4D5389F7",
+   "5841099E"
+  ],
   "pub": "Microsoft",
   "titleId": "4D5309F6"
  },
  "x360-toy-soldiers-cold-war": {
   "dev": "Signal Studios",
+  "outros": [
+   "5841125F"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "58410AAC",
+  "ur": 4.0
+ },
+ "x360-toy-story-3-the-video-game": {
+  "aprox": true,
+  "dev": "Avalanche Software",
+  "pub": "Disney Interactive Studios",
+  "titleId": "425607E5",
   "ur": 4.0
  },
  "x360-toy-story-mania": {
@@ -8535,6 +11464,13 @@
   "dev": "Codemasters",
   "pub": "Codemasters",
   "titleId": "58411463",
+  "ur": 3.5
+ },
+ "x360-track-and-field": {
+  "aprox": true,
+  "dev": "Digital Eclipse",
+  "pub": "Konami",
+  "titleId": "5841081B",
   "ur": 3.5
  },
  "x360-transformers-dark-of-the-moon": {
@@ -8551,6 +11487,9 @@
  },
  "x360-transformers-fall-of-cybertron": {
   "dev": "High Moon Studios",
+  "outros": [
+   "415688D9"
+  ],
   "pub": "Activision",
   "titleId": "4156089C",
   "ur": 4.25
@@ -8566,6 +11505,13 @@
   "pub": "Activision",
   "titleId": "415607F1",
   "ur": 4.0
+ },
+ "x360-transformers-war-for-cybertron": {
+  "aprox": true,
+  "dev": "High Moon Studios",
+  "pub": "Activision Blizzard",
+  "titleId": "4156084C",
+  "ur": 4.5
  },
  "x360-trials-evolution": {
   "dev": "RedLynx, Ltd.",
@@ -8617,6 +11563,9 @@
  },
  "x360-tron-evolution": {
   "dev": "Propaganda Games",
+  "outros": [
+   "42560801"
+  ],
   "pub": "Disney Interactive Studios",
   "titleId": "425607ED",
   "ur": 4.0
@@ -8629,6 +11578,10 @@
  },
  "x360-tropico-4": {
   "dev": "Haemimont Games",
+  "outros": [
+   "4B5987E1",
+   "4B5987E4"
+  ],
   "pub": "Kalypso Media",
   "titleId": "4B5907DC",
   "ur": 4.25
@@ -8661,6 +11614,13 @@
   "titleId": "44500806",
   "ur": 3.75
  },
+ "x360-turning-point-fall-of-liberty": {
+  "aprox": true,
+  "dev": "Spark Unlimited",
+  "pub": "Codemasters Software Company Limited",
+  "titleId": "434D07E0",
+  "ur": 3.0
+ },
  "x360-turok": {
   "dev": "Propaganda Games",
   "pub": "Touchstone",
@@ -8669,6 +11629,9 @@
  },
  "x360-twister-mania": {
   "dev": "Naked Sky",
+  "outros": [
+   "4D4A87EB"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07E2",
   "ur": 3.75
@@ -8691,6 +11654,13 @@
   "titleId": "54510899",
   "ur": 4.25
  },
+ "x360-uefa-champions-league-2006-2007": {
+  "aprox": true,
+  "dev": "EA Canada",
+  "pub": "Electronic Arts",
+  "titleId": "45410811",
+  "ur": 4.5
+ },
  "x360-uefa-euro-2008": {
   "dev": "EA Canada",
   "pub": "Electronic Arts",
@@ -8711,6 +11681,11 @@
  },
  "x360-ufc-undisputed-3": {
   "dev": "Yukes",
+  "outros": [
+   "5451887E",
+   "545188AD",
+   "545188B3"
+  ],
   "pub": "THQ Inc",
   "titleId": "5451087D",
   "ur": 4.0
@@ -8733,11 +11708,27 @@
   "titleId": "58410A11",
   "ur": 3.5
  },
+ "x360-under-defeat-hd-deluxe-edition": {
+  "aprox": true,
+  "dev": "G.rev Ltd.",
+  "outros": [
+   "545A07D4"
+  ],
+  "pub": "G.rev Ltd.",
+  "titleId": "475207FC"
+ },
  "x360-undertow": {
   "dev": "Chair Entertainment",
   "pub": "Microsoft Studios",
   "titleId": "58410873",
   "ur": 3.0
+ },
+ "x360-universe-at-war-earth-assault": {
+  "aprox": true,
+  "dev": "Petroglyph Games, Inc.",
+  "pub": "Sega",
+  "titleId": "534507F0",
+  "ur": 3.75
  },
  "x360-uno": {
   "dev": "Carbonated Games",
@@ -8750,6 +11741,16 @@
   "pub": "Microsoft Studios",
   "titleId": "5841089A",
   "ur": 4.0
+ },
+ "x360-unreal-tournament-3": {
+  "aprox": true,
+  "dev": "Epic Games, Inc.",
+  "outros": [
+   "4D5707F3"
+  ],
+  "pub": "Epic Games Inc.",
+  "titleId": "4D5707DB",
+  "ur": 4.25
  },
  "x360-valiant-hearts-the-great-war": {
   "dev": "Ubisoft",
@@ -8777,18 +11778,28 @@
  },
  "x360-vanquish": {
   "dev": "PlatinumGames",
+  "outros": [
+   "53450856",
+   "53458855"
+  ],
   "pub": "SEGA",
   "titleId": "53450841",
   "ur": 4.25
  },
  "x360-velvet-assassin": {
   "dev": "Replay Studios",
+  "outros": [
+   "535007E8"
+  ],
   "pub": "SouthPeak Games",
   "titleId": "475007D5",
   "ur": 3.75
  },
  "x360-venetica": {
   "dev": "Deck 13",
+  "outros": [
+   "445407D1"
+  ],
   "pub": "Evolved Games",
   "titleId": "455607D7",
   "ur": 3.5
@@ -8799,11 +11810,28 @@
   "titleId": "445007FA",
   "ur": 3.5
  },
+ "x360-vigilante-8-arcade": {
+  "aprox": true,
+  "dev": "Isopod Labs",
+  "pub": "Activision",
+  "titleId": "584108A8",
+  "ur": 3.75
+ },
  "x360-virtua-fighter-2": {
   "dev": "SEGA",
   "pub": "SEGA",
   "titleId": "5841129C",
   "ur": 3.75
+ },
+ "x360-virtua-fighter-5-online": {
+  "aprox": true,
+  "dev": "SEGA",
+  "outros": [
+   "584111FE"
+  ],
+  "pub": "Sega",
+  "titleId": "534507EE",
+  "ur": 4.0
  },
  "x360-virtua-striker": {
   "dev": "SEGA",
@@ -8834,6 +11862,20 @@
   "titleId": "4D5307F2",
   "ur": 4.0
  },
+ "x360-viva-pinata-party-animals": {
+  "aprox": true,
+  "dev": "Krome Studios",
+  "pub": "Microsoft Corporation",
+  "titleId": "4D530819",
+  "ur": 3.75
+ },
+ "x360-viva-pinata-trouble-in-paradise": {
+  "aprox": true,
+  "dev": "Rare Ltd.",
+  "pub": "Microsoft Game Studios",
+  "titleId": "4D53085F",
+  "ur": 4.0
+ },
  "x360-voltron-defender-of-the-universe": {
   "dev": "Behaviour",
   "pub": "THQ Inc.",
@@ -8842,18 +11884,49 @@
  },
  "x360-voodoo-dice": {
   "dev": "Exkee",
+  "outros": [
+   "58410A52"
+  ],
   "pub": "Ubisoft",
   "titleId": "58410A85",
   "ur": 3.75
  },
  "x360-wall-e": {
   "dev": "Heavy Iron Studios",
+  "outros": [
+   "54510830"
+  ],
   "pub": "THQ",
   "titleId": "54510824",
   "ur": 4.0
  },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-1-fright-of-the-bumblebees": {
+  "aprox": true,
+  "dev": "Telltale Games",
+  "pub": "Microsoft Studios",
+  "titleId": "5841093C",
+  "ur": 3.75
+ },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-3-muzzled": {
+  "aprox": true,
+  "dev": "Telltale Games",
+  "pub": "Microsoft Studios",
+  "titleId": "5841097A",
+  "ur": 3.75
+ },
+ "x360-wallace-and-gromit-s-grand-adventures-episode-4-the-bogey-man": {
+  "aprox": true,
+  "dev": "Telltale Games",
+  "pub": "Microsoft Studios",
+  "titleId": "5841097B",
+  "ur": 3.75
+ },
  "x360-wanted-weapons-of-fate": {
   "dev": "GRIN",
+  "outros": [
+   "534407FE",
+   "575207E7"
+  ],
   "pub": "Warner Bros. Interactive Entertainment",
   "titleId": "575207DA",
   "ur": 4.0
@@ -8878,6 +11951,9 @@
  },
  "x360-warhammer-40-000-space-marine": {
   "dev": "Relic Entertainment",
+  "outros": [
+   "545188A1"
+  ],
   "pub": "THQ -- HQ",
   "titleId": "5451082C",
   "ur": 4.25
@@ -8890,6 +11966,9 @@
  },
  "x360-warlords": {
   "dev": "Griptonite",
+  "outros": [
+   "58410851"
+  ],
   "pub": "Atari, Inc.",
   "titleId": "58410B27",
   "ur": 3.75
@@ -8920,6 +11999,9 @@
  },
  "x360-warriors-orochi-3": {
   "dev": "TECMO KOEI GAMES.CO.,LTD",
+  "outros": [
+   "4B5607D9"
+  ],
   "pub": "TECMO KOEI AMERICA Corporation",
   "titleId": "4B5607DF",
   "ur": 4.25
@@ -8936,6 +12018,20 @@
   "titleId": "555308B7",
   "ur": 4.75
  },
+ "x360-watchmen-the-end-is-nigh-part-i": {
+  "aprox": true,
+  "dev": "Deadline Games A/S",
+  "pub": "Warner Brothers Interactive Entertainment",
+  "titleId": "5841096E",
+  "ur": 3.75
+ },
+ "x360-watchmen-the-end-is-nigh-part-ii": {
+  "aprox": true,
+  "dev": "Deadline Games A/S",
+  "pub": "Warner Brothers Interactive Entertainment",
+  "titleId": "584109A0",
+  "ur": 3.75
+ },
  "x360-way-of-the-dogg": {
   "dev": "Echo Peak",
   "pub": "505 Games Srl",
@@ -8944,6 +12040,9 @@
  },
  "x360-way-of-the-samurai-3": {
   "dev": "ACQUIRE Corp.",
+  "outros": [
+   "554F07D3"
+  ],
   "pub": "Spike Co.,Ltd. / Gamebridge Ltd.",
   "titleId": "534407FC",
   "ur": 4.0
@@ -8956,6 +12055,9 @@
  },
  "x360-wheel-of-fortune": {
   "dev": "Pipeworks",
+  "outros": [
+   "545188B9"
+  ],
   "pub": "THQ Inc.",
   "titleId": "545108AF",
   "ur": 4.25
@@ -8968,15 +12070,32 @@
  },
  "x360-who-wants-to-be-a-millionaire-special-editions": {
   "dev": "doublesix",
+  "outros": [
+   "58410B55"
+  ],
   "pub": "Deep Silver",
   "titleId": "584113E3",
   "ur": 3.0
+ },
+ "x360-wik-and-the-fable-of-souls": {
+  "aprox": true,
+  "dev": "Reflexive Entertainment Inc.",
+  "pub": "Microsoft Studios",
+  "titleId": "584107DD",
+  "ur": 3.25
  },
  "x360-wing-commander-arena": {
   "dev": "Gaia Industries",
   "pub": "Electronic Arts",
   "titleId": "58410868",
   "ur": 2.5
+ },
+ "x360-winter-sports-2-the-next-challenge": {
+  "aprox": true,
+  "dev": "49Games GmbH",
+  "pub": "Conspiracy",
+  "titleId": "434E07D2",
+  "ur": 3.5
  },
  "x360-winter-sports-2010": {
   "dev": "49Games GmbH",
@@ -8986,11 +12105,17 @@
  },
  "x360-winter-sports-2011": {
   "dev": "49Games GmbH",
+  "outros": [
+   "445487DB"
+  ],
   "pub": "dtp entertainment AG",
   "titleId": "445407DA"
  },
  "x360-winter-stars": {
   "dev": "49Games",
+  "outros": [
+   "4B4D87EE"
+  ],
   "pub": "Deep Silver",
   "titleId": "4B4D07E5",
   "ur": 3.5
@@ -9007,11 +12132,25 @@
   "titleId": "415608DD",
   "ur": 3.75
  },
+ "x360-wipeout-create-and-crash": {
+  "aprox": true,
+  "dev": "Behaviour",
+  "pub": "Activision",
+  "titleId": "415608FF",
+  "ur": 3.75
+ },
  "x360-wipeout-in-the-zone": {
   "dev": "Behaviour Interactive",
   "pub": "Activision",
   "titleId": "415608AE",
   "ur": 3.75
+ },
+ "x360-wits-and-wagers": {
+  "aprox": true,
+  "dev": "Hidden Path Entertainment",
+  "pub": "Microsoft Studios",
+  "titleId": "584108A6",
+  "ur": 2.75
  },
  "x360-wolf-of-the-battlefield-commando-3": {
   "dev": "Backbone Entertainment",
@@ -9027,6 +12166,9 @@
  },
  "x360-wolfenstein-3d": {
   "dev": "id Software",
+  "outros": [
+   "584109A7"
+  ],
   "pub": "Bethesda Softworks",
   "titleId": "584109CB",
   "ur": 4.0
@@ -9043,11 +12185,42 @@
   "titleId": "58410874",
   "ur": 3.25
  },
+ "x360-world-championship-poker-featuring-howard-lederer-all-in": {
+  "aprox": true,
+  "dev": "Point of View, Inc.",
+  "pub": "Crave Entertainment, Inc.",
+  "titleId": "435607D1",
+  "ur": 2.25
+ },
  "x360-world-of-tanks": {
   "dev": "Wargaming.net",
+  "outros": [
+   "4D530A8B"
+  ],
   "pub": "Wargaming.net",
   "titleId": "4D530A8C",
   "ur": 4.25
+ },
+ "x360-world-series-of-poker-2008-battle-for-the-bracelets": {
+  "aprox": true,
+  "dev": "Left Field Productions",
+  "pub": "Activision",
+  "titleId": "41560806",
+  "ur": 4.5
+ },
+ "x360-world-series-of-poker-full-house-pro": {
+  "aprox": true,
+  "dev": "Pipeworks Software®",
+  "pub": "Microsoft Studios",
+  "titleId": "584112B9",
+  "ur": 3.75
+ },
+ "x360-world-series-of-poker-tournament-of-champions": {
+  "aprox": true,
+  "dev": "Left Field Productions",
+  "pub": "Activision",
+  "titleId": "415607D9",
+  "ur": 4.0
  },
  "x360-worms": {
   "dev": "Team 17 Software Ltd",
@@ -9080,11 +12253,26 @@
  },
  "x360-wrc-3-fia-world-rally-championship": {
   "dev": "Milestone srl",
+  "outros": [
+   "4C5387F4"
+  ],
   "pub": "Milestone srl",
   "titleId": "4C5307F3"
  },
+ "x360-wrc-4-fia-world-rally-championship": {
+  "aprox": true,
+  "dev": "Milestone Srl",
+  "outros": [
+   "573687DE"
+  ],
+  "pub": "Bigben Interactive",
+  "titleId": "573607DD"
+ },
  "x360-wrc-fia-world-rally-championship": {
   "dev": "Milestone",
+  "outros": [
+   "4C5387E4"
+  ],
   "pub": "Leader spa",
   "titleId": "4C5307DD",
   "ur": 4.0
@@ -9150,18 +12338,55 @@
  },
  "x360-wwe-all-stars": {
   "dev": "THQ San Deigo",
+  "outros": [
+   "54518887"
+  ],
   "pub": "2K Sports",
   "titleId": "54510866",
   "ur": 4.0
  },
+ "x360-wwe-legends-of-wrestlemania": {
+  "aprox": true,
+  "dev": "\"YUKE�S Co. Ltd.\"",
+  "pub": "2K Sports",
+  "titleId": "54510838",
+  "ur": 3.75
+ },
+ "x360-wwe-smackdown-vs-raw-2008": {
+  "aprox": true,
+  "dev": "YUKE’S Co., Ltd.",
+  "pub": "2K Sports",
+  "titleId": "5451080B",
+  "ur": 4.25
+ },
+ "x360-wwe-smackdown-vs-raw-2009": {
+  "aprox": true,
+  "dev": "\"YUKE�S Co. Ltd.\"",
+  "pub": "2K Sports",
+  "titleId": "54510826",
+  "ur": 4.25
+ },
+ "x360-wwe-smackdown-vs-raw-2010": {
+  "aprox": true,
+  "dev": "YUKE'S CO., LTD.",
+  "pub": "THQ, INC.",
+  "titleId": "54510844",
+  "ur": 4.25
+ },
  "x360-wwe-smackdown-vs-raw-2011": {
   "dev": "YUKE’S Co., Ltd.",
+  "outros": [
+   "54518889"
+  ],
   "pub": "2K Sports",
   "titleId": "5451085D",
   "ur": 4.0
  },
  "x360-x-blades": {
   "dev": "Gaijin Entertainment",
+  "outros": [
+   "535007E5"
+  ],
   "pub": "TopWare Interactive",
   "titleId": "535007DF",
   "ur": 3.5
@@ -9192,6 +12417,9 @@
  },
  "x360-xcom-enemy-unknown": {
   "dev": "Firaxis Games",
+  "outros": [
+   "545488A6"
+  ],
   "pub": "2K Games",
   "titleId": "54540882",
   "ur": 4.5
@@ -9258,6 +12486,9 @@
  },
  "x360-you-don-t-know-jack": {
   "dev": "Jellyvision Inc.",
+  "outros": [
+   "54518894"
+  ],
   "pub": "THQ Inc.",
   "titleId": "54510869",
   "ur": 3.75
@@ -9276,12 +12507,21 @@
  },
  "x360-your-shape-fitness-evolved": {
   "dev": "Ubisoft Montreal",
+  "outros": [
+   "5553086D",
+   "55538867",
+   "55538870"
+  ],
   "pub": "Ubisoft",
   "titleId": "5553084F",
   "ur": 3.75
  },
  "x360-your-shape-fitness-evolved-2012": {
   "dev": "Ubisoft Montreal",
+  "outros": [
+   "5553889F",
+   "555388A4"
+  ],
   "pub": "Ubisoft",
   "titleId": "55530886",
   "ur": 3.75
@@ -9304,11 +12544,31 @@
   "titleId": "58410AA9",
   "ur": 3.5
  },
+ "x360-zeno-clash-ii": {
+  "aprox": true,
+  "dev": "ACE Team",
+  "pub": "ATLUS",
+  "titleId": "58411277",
+  "ur": 3.25
+ },
+ "x360-zeno-clash-ultimate-edition": {
+  "aprox": true,
+  "dev": "ACE Team",
+  "pub": "Atlus U.S.A., Inc.",
+  "titleId": "584109DC",
+  "ur": 3.75
+ },
  "x360-zoids-assault": {
   "dev": "SEM&O Co., Ltd.",
   "pub": "ATLUS INC.",
   "titleId": "415407D1",
   "ur": 3.75
+ },
+ "x360-zoids-infinity-ex-neo": {
+  "aprox": true,
+  "dev": "株式会社翔泳社",
+  "pub": "Tomy Co., LTD.",
+  "titleId": "544F07D1"
  },
  "x360-zombie-apocalypse": {
   "dev": "Nihilistic Software, Inc.",
@@ -9342,6 +12602,9 @@
  },
  "x360-zoo-tycoon": {
   "dev": "Frontier Developments plc",
+  "outros": [
+   "4D538A9A"
+  ],
   "pub": "Microsoft Studios",
   "titleId": "4D530A95",
   "ur": 4.25
@@ -9360,24 +12623,38 @@
  },
  "x360-zumba-fitness": {
   "dev": "Pipeworks",
+  "outros": [
+   "4D4A87E0"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07DA",
   "ur": 3.5
  },
  "x360-zumba-fitness-core": {
   "dev": "Zoe Mode",
+  "outros": [
+   "4D4A87F1",
+   "4D4A87F2"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07F0",
   "ur": 3.5
  },
  "x360-zumba-fitness-rush": {
   "dev": "Zoe Mode",
+  "outros": [
+   "4D4A87EE",
+   "4D4A87EF"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07E7",
   "ur": 3.5
  },
  "x360-zumba-fitness-world-party": {
   "dev": "Zoe Mode",
+  "outros": [
+   "4D4A87F9"
+  ],
   "pub": "Majesco Entertainment",
   "titleId": "4D4A07F4",
   "ur": 3.25
@@ -9447,6 +12724,13 @@
   "pub": "ECHS BACHS",
   "titleId": "58550BBE",
   "ur": 3.0
+ },
+ "xblig-20-games-to-play-with-your-mates": {
+  "aprox": true,
+  "dev": "IndieSkies",
+  "pub": "IndieSkies",
+  "titleId": "58550ACD",
+  "ur": 3.5
  },
  "xblig-2010-a-new-threat": {
   "dev": "Turkey Samwich Games",
@@ -9609,6 +12893,13 @@
   "pub": "The Unallied",
   "titleId": "585509E6",
   "ur": 4.0
+ },
+ "xblig-4-3d-4-moku-narabe-3d": {
+  "aprox": true,
+  "dev": "okui",
+  "pub": "okui",
+  "titleId": "58550928",
+  "ur": 3.5
  },
  "xblig-4-5-trillion-puzzle": {
   "dev": "We Love Hamsters Software",
@@ -9976,6 +13267,13 @@
   "titleId": "58550650",
   "ur": 3.75
  },
+ "xblig-aban-hawkins-the-1000-spikes": {
+  "aprox": true,
+  "dev": "8bits fanatics",
+  "pub": "8bits fanatics",
+  "titleId": "58550780",
+  "ur": 4.0
+ },
  "xblig-abc-fun": {
   "dev": "Bitlogic Studios",
   "pub": "Bitlogic Studios",
@@ -10276,6 +13574,13 @@
   "titleId": "58550C11",
   "ur": 3.0
  },
+ "xblig-ajare-watch": {
+  "aprox": true,
+  "dev": "varga",
+  "pub": "varga",
+  "titleId": "58550CA1",
+  "ur": 2.75
+ },
  "xblig-akane-the-kunoichi": {
   "dev": "Haruneko",
   "pub": "Haruneko",
@@ -10442,6 +13747,13 @@
   "dev": "Alternate Development",
   "pub": "Alternate Development",
   "titleId": "58550707",
+  "ur": 3.0
+ },
+ "xblig-alpha-chimp-episode-1-the-jungle": {
+  "aprox": true,
+  "dev": "Give Up Games",
+  "pub": "Give Up Games",
+  "titleId": "5855069A",
   "ur": 3.0
  },
  "xblig-alpha-morph": {
@@ -10690,6 +14002,20 @@
   "titleId": "5855035F",
   "ur": 3.5
  },
+ "xblig-antigrav-racing-championship-ninja-edition": {
+  "aprox": true,
+  "dev": "UFO Games",
+  "pub": "UFO Games",
+  "titleId": "5855038C",
+  "ur": 3.25
+ },
+ "xblig-antigrav-racing-championship-viking-edition": {
+  "aprox": true,
+  "dev": "UFO Games",
+  "pub": "UFO Games",
+  "titleId": "58550408",
+  "ur": 3.25
+ },
  "xblig-antipole": {
   "dev": "Saturnine Games",
   "pub": "Saturnine Games",
@@ -10701,6 +14027,13 @@
   "pub": "Riddlersoft",
   "titleId": "5855095E",
   "ur": 3.5
+ },
+ "xblig-aphelion-episode-2-wings-of-omega": {
+  "aprox": true,
+  "dev": "Lunatic Studios",
+  "pub": "Lunatic Studios",
+  "titleId": "58550734",
+  "ur": 4.0
  },
  "xblig-apoc-town": {
   "dev": "Chris Antoni",
@@ -11068,6 +14401,13 @@
   "titleId": "58550E9F",
   "ur": 2.75
  },
+ "xblig-astralia-a-real-time-strategy-shooter-experiment": {
+  "aprox": true,
+  "dev": "Astroboid Games",
+  "pub": "Astroboid Games",
+  "titleId": "58550980",
+  "ur": 3.5
+ },
  "xblig-astralis": {
   "dev": "Xyphis",
   "pub": "Xyphis",
@@ -11151,6 +14491,13 @@
   "pub": "GouldFish_Games",
   "titleId": "58550C09",
   "ur": 3.25
+ },
+ "xblig-attack-of-the-50ft-verbose-dinosaur": {
+  "aprox": true,
+  "dev": "AlMra",
+  "pub": "AlMra",
+  "titleId": "585504E2",
+  "ur": 2.75
  },
  "xblig-attack-of-the-evil-androids": {
   "dev": "Wizards Entertainment",
@@ -12208,6 +15555,13 @@
   "titleId": "58550D13",
   "ur": 3.5
  },
+ "xblig-avatars-skate-old-spice-championship": {
+  "aprox": true,
+  "dev": "GouldComputing",
+  "pub": "GouldComputing",
+  "titleId": "5855052A",
+  "ur": 3.0
+ },
  "xblig-avatars-vs-zombies": {
   "dev": "Ianthraxx",
   "pub": "Ianthraxx",
@@ -12225,6 +15579,13 @@
   "pub": "ECHS BACHS",
   "titleId": "58550724",
   "ur": 2.75
+ },
+ "xblig-avatour-miami-hide-seek": {
+  "aprox": true,
+  "dev": "ECHS BACHS",
+  "pub": "ECHS BACHS",
+  "titleId": "58550EEA",
+  "ur": 3.5
  },
  "xblig-avatour-vegas": {
   "dev": "ECHS BACHS",
@@ -12690,6 +16051,9 @@
  },
  "xblig-bible-trivia": {
   "dev": "DualOpAmp29",
+  "outros": [
+   "58550B0B"
+  ],
   "pub": "DualOpAmp29",
   "titleId": "585504C5",
   "ur": 2.5
@@ -12723,6 +16087,13 @@
   "pub": "Msi/Gtr/Jms",
   "titleId": "58550EAD",
   "ur": 2.75
+ },
+ "xblig-billy-the-kidney-bean-vs-the-foo-fighters": {
+  "aprox": true,
+  "dev": "ElvishJumpSuit",
+  "pub": "ElvishJumpSuit",
+  "titleId": "58550A33",
+  "ur": 3.5
  },
  "xblig-bingo": {
   "dev": "Utopioneer Games 2",
@@ -12929,6 +16300,9 @@
  },
  "xblig-block-fight": {
   "dev": "TomK",
+  "outros": [
+   "585503CF"
+  ],
   "pub": "TomK",
   "titleId": "58550151",
   "ur": 2.75
@@ -13203,6 +16577,13 @@
   "titleId": "5855023D",
   "ur": 2.75
  },
+ "xblig-bobtail-the-bunnys-choc-a-riffic-adventure": {
+  "aprox": true,
+  "dev": "ProjectorGames",
+  "pub": "ProjectorGames",
+  "titleId": "58550266",
+  "ur": 2.75
+ },
  "xblig-bomb-disposal-expert": {
   "dev": "Evolution Dreams Studio",
   "pub": "Evolution Dreams Studio",
@@ -13430,6 +16811,13 @@
   "pub": "Zombie Monkey Games",
   "titleId": "58550709",
   "ur": 3.75
+ },
+ "xblig-breath-of-death-vii-the-beginning": {
+  "aprox": true,
+  "dev": "Zeboyd Games",
+  "pub": "Zeboyd Games",
+  "titleId": "585504BD",
+  "ur": 4.25
  },
  "xblig-breeze": {
   "dev": "Null City Software",
@@ -14759,6 +18147,9 @@
  },
  "xblig-crocs-world-3": {
   "dev": "Sprakelsoft",
+  "outros": [
+   "58550EEB"
+  ],
   "pub": "Sprakelsoft",
   "titleId": "58550EF3",
   "ur": 4.0
@@ -14849,6 +18240,9 @@
  },
  "xblig-cubicity": {
   "dev": "Aly Ameen",
+  "outros": [
+   "58550E0A"
+  ],
   "pub": "Aly Ameen",
   "titleId": "58550DEA",
   "ur": 4.0
@@ -15555,6 +18949,13 @@
   "titleId": "585506ED",
   "ur": 3.25
  },
+ "xblig-dokee-and-the-dog-and-the-musical-rain": {
+  "aprox": true,
+  "dev": "Baltico X",
+  "pub": "Baltico X",
+  "titleId": "5855011F",
+  "ur": 3.25
+ },
  "xblig-don-t-be-late-for-your-date": {
   "dev": "SCR Designs",
   "pub": "SCR Designs",
@@ -15602,6 +19003,13 @@
   "pub": "Pigyman",
   "titleId": "5855019F",
   "ur": 3.25
+ },
+ "xblig-doom-destiny": {
+  "aprox": true,
+  "dev": "HeartBit Interactive",
+  "pub": "HeartBit Interactive",
+  "titleId": "5855093E",
+  "ur": 4.0
  },
  "xblig-doomed-zombies": {
   "dev": "Ghere Game Studios",
@@ -15674,6 +19082,13 @@
   "pub": "studio1012",
   "titleId": "58550890",
   "ur": 3.0
+ },
+ "xblig-dr-mazing-in-infinite-energy-crisis": {
+  "aprox": true,
+  "dev": "DarrionCSUSB",
+  "pub": "DarrionCSUSB",
+  "titleId": "5855051B",
+  "ur": 2.25
  },
  "xblig-dr-popper": {
   "dev": "Bill Reiss",
@@ -15962,6 +19377,13 @@
   "pub": "Soulfire Software",
   "titleId": "585501DA",
   "ur": 2.75
+ },
+ "xblig-easy-golf-course-architect": {
+  "aprox": true,
+  "dev": "Barkers Crest Studio",
+  "pub": "Barkers Crest Studio",
+  "titleId": "5855011C",
+  "ur": 3.75
  },
  "xblig-easy-medium-egghead": {
   "dev": "FirePlumStudios",
@@ -17284,6 +20706,9 @@
  },
  "xblig-g": {
   "dev": "株式会社　コナミデジタルエンタテインメント",
+  "outros": [
+   "58550617"
+  ],
   "pub": "株式会社コナミデジタルエンタテインメント",
   "titleId": "4B4E07EE",
   "ur": 4.5
@@ -17335,6 +20760,13 @@
   "pub": "PendantGames",
   "titleId": "58550BEF",
   "ur": 3.25
+ },
+ "xblig-game-35-the-experiment": {
+  "aprox": true,
+  "dev": "Silver Dollar Games Inc._0",
+  "pub": "Silver Dollar Games Inc._0",
+  "titleId": "585506D5",
+  "ur": 3.0
  },
  "xblig-game-about-a-soup-factory": {
   "dev": "WickedWorx",
@@ -17428,6 +20860,9 @@
  },
  "xblig-gateways": {
   "dev": "Smudged Cat Games",
+  "outros": [
+   "58550D44"
+  ],
   "pub": "Smudged Cat Games",
   "titleId": "58550BEA",
   "ur": 3.75
@@ -17710,6 +21145,9 @@
  },
  "xblig-go": {
   "dev": "ZDT Programming",
+  "outros": [
+   "585502C1"
+  ],
   "pub": "ZDT Programming",
   "titleId": "58550678",
   "ur": 3.5
@@ -18446,6 +21884,13 @@
   "titleId": "58550A23",
   "ur": 2.75
  },
+ "xblig-homeslice-the-zombie-bunnies": {
+  "aprox": true,
+  "dev": "Solus",
+  "pub": "Solus",
+  "titleId": "585504CC",
+  "ur": 3.0
+ },
  "xblig-honey-badger-slayer-of-memes": {
   "dev": "dreamwagon",
   "pub": "dreamwagon",
@@ -18661,6 +22106,13 @@
   "pub": "iamrece",
   "titleId": "58550C1D",
   "ur": 4.0
+ },
+ "xblig-i-accidentally-in-space-ep1-hostile-hustle": {
+  "aprox": true,
+  "dev": "Lethal Martini Games",
+  "pub": "Lethal Martini Games",
+  "titleId": "585507F2",
+  "ur": 3.5
  },
  "xblig-i-heart-shift": {
   "dev": "Fronominal",
@@ -19790,6 +23242,13 @@
   "titleId": "58550E4B",
   "ur": 3.5
  },
+ "xblig-legend-of-the-rune-lords-the-quest-for-runic-magia": {
+  "aprox": true,
+  "dev": "Dusk and Dawn Interactive",
+  "pub": "Dusk and Dawn Interactive",
+  "titleId": "5855054D",
+  "ur": 3.25
+ },
  "xblig-legioner": {
   "dev": "bagrationa",
   "pub": "bagrationa",
@@ -19813,6 +23272,13 @@
   "pub": "Kobingo",
   "titleId": "585501F8",
   "ur": 3.75
+ },
+ "xblig-let-s-draw-share": {
+  "aprox": true,
+  "dev": "Kobingo",
+  "pub": "Kobingo",
+  "titleId": "58550921",
+  "ur": 3.5
  },
  "xblig-let-s-get-fiscal": {
   "dev": "Baller Industries",
@@ -20114,6 +23580,13 @@
   "titleId": "58550F04",
   "ur": 4.0
  },
+ "xblig-loot-steal-destroy": {
+  "aprox": true,
+  "dev": "Ludosity Interactive",
+  "pub": "Ludosity Interactive",
+  "titleId": "585504F9",
+  "ur": 2.5
+ },
  "xblig-lootfest": {
   "dev": "Gamefarm",
   "pub": "Gamefarm",
@@ -20137,6 +23610,13 @@
   "pub": "Gamefarm",
   "titleId": "58550D19",
   "ur": 3.5
+ },
+ "xblig-lord-ownage-and-the-thoroughly-unbritish-invasion": {
+  "aprox": true,
+  "dev": "moonkeh",
+  "pub": "moonkeh",
+  "titleId": "58550279",
+  "ur": 2.0
  },
  "xblig-lots-of-guns": {
   "dev": "Stegersaurus Games 2",
@@ -20246,11 +23726,25 @@
   "titleId": "58550DC0",
   "ur": 3.25
  },
+ "xblig-magic-thighs-slightly-phil": {
+  "aprox": true,
+  "dev": "20 Goto 10",
+  "pub": "20 Goto 10",
+  "titleId": "58550E5F",
+  "ur": 3.0
+ },
  "xblig-magicalcube": {
   "dev": "FixedStarWorks",
   "pub": "FixedStarWorks",
   "titleId": "5855046C",
   "ur": 3.25
+ },
+ "xblig-magicians-looters": {
+  "aprox": true,
+  "dev": "Morgopolis Studios",
+  "pub": "Morgopolis Studios",
+  "titleId": "58550D86",
+  "ur": 4.0
  },
  "xblig-magnet-man": {
   "dev": "Chris Antoni",
@@ -20317,6 +23811,13 @@
   "pub": "YUWAKA",
   "titleId": "585503F7",
   "ur": 2.5
+ },
+ "xblig-mama-son-clean-house": {
+  "aprox": true,
+  "dev": "Ludosity Interactive",
+  "pub": "Ludosity Interactive",
+  "titleId": "58550655",
+  "ur": 3.5
  },
  "xblig-mambow": {
   "dev": "Team-Mambow",
@@ -20768,6 +24269,13 @@
   "titleId": "58550B29",
   "ur": 3.5
  },
+ "xblig-milie-telly": {
+  "aprox": true,
+  "dev": "Nitama Naishin",
+  "pub": "Nitama Naishin",
+  "titleId": "585509AB",
+  "ur": 3.25
+ },
  "xblig-military-sniper-sim-3-18": {
   "dev": "reedake2",
   "pub": "reedake2",
@@ -20912,6 +24420,13 @@
   "titleId": "58550B84",
   "ur": 3.25
  },
+ "xblig-mithra-episode-1-the-calling-chapter-1": {
+  "aprox": true,
+  "dev": "Afiction Games",
+  "pub": "Afiction Games",
+  "titleId": "585501BE",
+  "ur": 3.5
+ },
  "xblig-mobius": {
   "dev": "Brian Cosgrove",
   "pub": "Brian Cosgrove",
@@ -20924,8 +24439,18 @@
   "titleId": "58550842",
   "ur": 3.25
  },
+ "xblig-modern-pirate-hunter-ep-1-nashs-revenge": {
+  "aprox": true,
+  "dev": "ZXB Games",
+  "pub": "ZXB Games",
+  "titleId": "5855050F",
+  "ur": 3.25
+ },
  "xblig-moe-mekuri-2-5-2-5": {
   "dev": "Kohei",
+  "outros": [
+   "58550955"
+  ],
   "pub": "Kohei",
   "titleId": "585509CC",
   "ur": 3.75
@@ -21020,6 +24545,13 @@
   "titleId": "58550880",
   "ur": 3.5
  },
+ "xblig-monsters-probably-stole-my-princess": {
+  "aprox": true,
+  "dev": "Mediatonic Ltd",
+  "pub": "Mediatonic Ltd",
+  "titleId": "58550612",
+  "ur": 3.75
+ },
  "xblig-monsters-shoot-n-monsters": {
   "dev": "Monster Bite Games",
   "pub": "Monster Bite Games",
@@ -21043,6 +24575,13 @@
   "pub": "SOG Software",
   "titleId": "585509C6",
   "ur": 3.25
+ },
+ "xblig-moon-taxi-seven-short-stories": {
+  "aprox": true,
+  "dev": "Popcannibal LLC",
+  "pub": "Popcannibal LLC",
+  "titleId": "585504D8",
+  "ur": 3.0
  },
  "xblig-moonlander": {
   "dev": "Bounding Box Games LLC",
@@ -21428,6 +24967,13 @@
   "titleId": "58550489",
   "ur": 3.5
  },
+ "xblig-newton-vs-the-horde-an-old-spice-creation-myth": {
+  "aprox": true,
+  "dev": "R B Games",
+  "pub": "R B Games",
+  "titleId": "585504A8",
+  "ur": 3.0
+ },
  "xblig-nextwar-the-quest-for-earth": {
   "dev": "Micron Game Studios",
   "pub": "Micron Game Studios",
@@ -21523,6 +25069,13 @@
   "pub": "WINGLAY",
   "titleId": "58550A65",
   "ur": 4.0
+ },
+ "xblig-ninja-stg-ninja-bu-takeemon-no-ichiban-nagaika": {
+  "aprox": true,
+  "dev": "AKAGIKEN",
+  "pub": "AKAGIKEN",
+  "titleId": "58550D9D",
+  "ur": 3.0
  },
  "xblig-ninja-stole-my-bike": {
   "dev": "Fourth Dimensional Gaming",
@@ -22210,6 +25763,9 @@
  },
  "xblig-paintball-wars-2": {
   "dev": "Strange Games",
+  "outros": [
+   "58550E73"
+  ],
   "pub": "Strange Games",
   "titleId": "58550E7C",
   "ur": 3.5
@@ -22336,6 +25892,9 @@
  },
  "xblig-pebbledash": {
   "dev": "lutas",
+  "outros": [
+   "585502E0"
+  ],
   "pub": "lutas",
   "titleId": "58550298",
   "ur": 2.5
@@ -22580,6 +26139,13 @@
   "titleId": "585506E2",
   "ur": 3.25
  },
+ "xblig-pig-bullet": {
+  "aprox": true,
+  "dev": "GHXYK2",
+  "pub": "GHXYK2",
+  "titleId": "58550B55",
+  "ur": 2.75
+ },
  "xblig-pigman": {
   "dev": "GDKonsult",
   "pub": "GDKonsult",
@@ -22716,6 +26282,13 @@
   "dev": "Pixelbit Games",
   "pub": "Pixelbit Games",
   "titleId": "585508A2",
+  "ur": 3.75
+ },
+ "xblig-pixelbit-snooker-pool": {
+  "aprox": true,
+  "dev": "Pixelbit Games",
+  "pub": "Pixelbit Games",
+  "titleId": "58550768",
   "ur": 3.75
  },
  "xblig-pixelosity": {
@@ -23284,6 +26857,9 @@
  },
  "xblig-puzzled": {
   "dev": "Resonance Games",
+  "outros": [
+   "58550EB1"
+  ],
   "pub": "Resonance Games",
   "titleId": "58550B7F",
   "ur": 3.25
@@ -23720,6 +27296,13 @@
   "titleId": "58550AA5",
   "ur": 3.25
  },
+ "xblig-red-box-reality-fading-memories": {
+  "aprox": true,
+  "dev": "Von Chrono",
+  "pub": "Von Chrono",
+  "titleId": "585501C6",
+  "ur": 2.5
+ },
  "xblig-red-hot-poker": {
   "dev": "SmoothMoov Games",
   "pub": "SmoothMoov Games",
@@ -24116,6 +27699,13 @@
   "titleId": "58550B91",
   "ur": 3.25
  },
+ "xblig-rock-paper-scissors-xtreme-challenge-of-the-fists": {
+  "aprox": true,
+  "dev": "ChefTeslaCoil",
+  "pub": "ChefTeslaCoil",
+  "titleId": "58550260",
+  "ur": 2.5
+ },
  "xblig-rock4u": {
   "dev": "AAA-Gamez",
   "pub": "AAA-Gamez",
@@ -24186,6 +27776,13 @@
   "dev": "Pocket Starship",
   "pub": "Pocket Starship",
   "titleId": "585507BD",
+  "ur": 3.5
+ },
+ "xblig-rotor-scope-the-secret-of-the-endless-energy": {
+  "aprox": true,
+  "dev": "Nolver Apps",
+  "pub": "Nolver Apps",
+  "titleId": "5855042F",
   "ur": 3.5
  },
  "xblig-rotorize": {
@@ -24878,6 +28475,13 @@
   "titleId": "58550867",
   "ur": 4.0
  },
+ "xblig-skyfish-2-eat-your-peas": {
+  "aprox": true,
+  "dev": "Uplion",
+  "pub": "Uplion",
+  "titleId": "58550B10",
+  "ur": 2.5
+ },
  "xblig-skyfish-forever": {
   "dev": "TGC",
   "pub": "TGC",
@@ -25072,6 +28676,9 @@
  },
  "xblig-snake360": {
   "dev": "yyrGames",
+  "outros": [
+   "585501C2"
+  ],
   "pub": "yyrGames",
   "titleId": "5855011B",
   "ur": 3.5
@@ -25093,6 +28700,20 @@
   "pub": "Eyehook Games LLC",
   "titleId": "58550B1A",
   "ur": 3.5
+ },
+ "xblig-snakez-gunz-ladderz": {
+  "aprox": true,
+  "dev": "jofan",
+  "pub": "jofan",
+  "titleId": "58550AE0",
+  "ur": 3.0
+ },
+ "xblig-snax-lite-cooking-arcade-game": {
+  "aprox": true,
+  "dev": "phased games",
+  "pub": "phased games",
+  "titleId": "58550199",
+  "ur": 3.25
  },
  "xblig-sniper-defense": {
   "dev": "xMONOx",
@@ -25573,6 +29194,13 @@
   "pub": "SRH",
   "titleId": "58550317",
   "ur": 1.75
+ },
+ "xblig-spiders-why-did-it-have-to-be-spiders": {
+  "aprox": true,
+  "dev": "BBQ Games",
+  "pub": "BBQ Games",
+  "titleId": "58550480",
+  "ur": 2.5
  },
  "xblig-spin": {
   "dev": "Betafreak",
@@ -26266,6 +29894,9 @@
  },
  "xblig-super-xblox-360": {
   "dev": "GIGGITYGIGG1TY",
+  "outros": [
+   "58550249"
+  ],
   "pub": "GIGGITYGIGG1TY",
   "titleId": "58550265",
   "ur": 3.25
@@ -26389,6 +30020,13 @@
   "pub": "vDog",
   "titleId": "58550620",
   "ur": 3.75
+ },
+ "xblig-swords-monsters": {
+  "aprox": true,
+  "dev": "Triple A Studios",
+  "pub": "Triple A Studios",
+  "titleId": "58550130",
+  "ur": 2.0
  },
  "xblig-synesthesia-amnesia": {
   "dev": "Ralabaloza Games",
@@ -26584,6 +30222,9 @@
  },
  "xblig-techno-kitten-adventure": {
   "dev": "21 Street Games LLC",
+  "outros": [
+   "5855063E"
+  ],
   "pub": "21 Street Games LLC",
   "titleId": "58550893",
   "ur": 4.25
@@ -26683,6 +30324,13 @@
   "pub": "Samuel H. Potter",
   "titleId": "5855030E",
   "ur": 3.0
+ },
+ "xblig-the-adventures-of-felix-fox-tale-of-the-night": {
+  "aprox": true,
+  "dev": "Kitasia",
+  "pub": "Kitasia",
+  "titleId": "585503CD",
+  "ur": 3.5
  },
  "xblig-the-amazing-rumbling-hypno-disc": {
   "dev": "Aztecgames",
@@ -26882,6 +30530,20 @@
   "titleId": "58550897",
   "ur": 3.25
  },
+ "xblig-the-headsman-deathlike-silence": {
+  "aprox": true,
+  "dev": "David Flook",
+  "pub": "David Flook",
+  "titleId": "585502EE",
+  "ur": 3.5
+ },
+ "xblig-the-hearts-of-men-throne-of-deceit": {
+  "aprox": true,
+  "dev": "COLTRAN Studios",
+  "pub": "COLTRAN Studios",
+  "titleId": "585507E1",
+  "ur": 3.25
+ },
  "xblig-the-heckler": {
   "dev": "Silver Dollar Games Inc._01",
   "pub": "Silver Dollar Games Inc._01",
@@ -26947,6 +30609,13 @@
   "pub": "Sixth Floor Games",
   "titleId": "58550B76",
   "ur": 2.5
+ },
+ "xblig-the-maid-san-s-caving-adventure": {
+  "aprox": true,
+  "dev": "Kohei",
+  "pub": "Kohei",
+  "titleId": "5855078F",
+  "ur": 3.5
  },
  "xblig-the-manly-game-for-manly-men": {
   "dev": "UberGeekGames LLC",
@@ -27590,6 +31259,13 @@
   "titleId": "585507E6",
   "ur": 3.75
  },
+ "xblig-trinity-wars-prologue-spine-of-the-world": {
+  "aprox": true,
+  "dev": "TnT Gaming LLC",
+  "pub": "TnT Gaming LLC",
+  "titleId": "585501B6",
+  "ur": 3.0
+ },
  "xblig-trino": {
   "dev": "trinoteam",
   "pub": "trinoteam",
@@ -27788,6 +31464,13 @@
   "titleId": "585505A4",
   "ur": 3.0
  },
+ "xblig-uk-regions-counties": {
+  "aprox": true,
+  "dev": "JB Marius-Sheridan",
+  "pub": "JB Marius-Sheridan",
+  "titleId": "585509F3",
+  "ur": 2.0
+ },
  "xblig-ultimate-arcade-chat-rooms": {
   "dev": "Raining Talent LLC",
   "pub": "Raining Talent LLC",
@@ -27824,8 +31507,18 @@
   "titleId": "585509EF",
   "ur": 3.25
  },
+ "xblig-ultimate-sacrifice-tattoi-gisei-ultimate-sacrifice": {
+  "aprox": true,
+  "dev": "TEA",
+  "pub": "TEA",
+  "titleId": "58550285",
+  "ur": 2.0
+ },
  "xblig-ultra-aktion": {
   "dev": "Fun Infused Games",
+  "outros": [
+   "58550EDA"
+  ],
   "pub": "Fun Infused Games",
   "titleId": "58550EE1",
   "ur": 3.75
@@ -28064,6 +31757,13 @@
   "titleId": "5855028A",
   "ur": 3.5
  },
+ "xblig-velocity-escape-from-puzzle-hell": {
+  "aprox": true,
+  "dev": "AxB",
+  "pub": "AxB",
+  "titleId": "585502FF",
+  "ur": 2.5
+ },
  "xblig-venatio-creo": {
   "dev": "Urishizu",
   "pub": "Urishizu",
@@ -28232,6 +31932,13 @@
   "titleId": "585502B3",
   "ur": 2.5
  },
+ "xblig-wacky-water-fun-shooting-gallery": {
+  "aprox": true,
+  "dev": "North Squard",
+  "pub": "North Squard",
+  "titleId": "585502A4",
+  "ur": 2.5
+ },
  "xblig-wacky-waving-i-a-f-avatars": {
   "dev": "Bionic-Thumbs",
   "pub": "Bionic-Thumbs",
@@ -28333,6 +32040,13 @@
   "pub": "Gogs",
   "titleId": "585506BF",
   "ur": 2.25
+ },
+ "xblig-wayne-the-brain-and-the-insane-physics-crane": {
+  "aprox": true,
+  "dev": "FourBrosStudio",
+  "pub": "FourBrosStudio",
+  "titleId": "5855049C",
+  "ur": 3.5
  },
  "xblig-we-are-cubes": {
   "dev": "1BK",
@@ -28465,6 +32179,13 @@
   "pub": "Bee In The Car Games",
   "titleId": "58550A8C",
   "ur": 2.75
+ },
+ "xblig-wirral-railway-garden-plants": {
+  "aprox": true,
+  "dev": "JB Marius-Sheridan",
+  "pub": "JB Marius-Sheridan",
+  "titleId": "58550992",
+  "ur": 2.5
  },
  "xblig-wisplisp-array-of-list": {
   "dev": "DK Alpla",
@@ -28616,11 +32337,25 @@
   "titleId": "58550139",
   "ur": 3.0
  },
+ "xblig-world-revolution-the-last-defense": {
+  "aprox": true,
+  "dev": "xPox",
+  "pub": "xPox",
+  "titleId": "58550165",
+  "ur": 3.25
+ },
  "xblig-world-war-toon": {
   "dev": "JeBuS",
   "pub": "JeBuS",
   "titleId": "58550487",
   "ur": 2.5
+ },
+ "xblig-world-wars-2-pacific-conflicts": {
+  "aprox": true,
+  "dev": "Swissplayers Game Studios",
+  "pub": "Swissplayers Game Studios",
+  "titleId": "585509CD",
+  "ur": 3.75
  },
  "xblig-worlds-best-freaking-card-game": {
   "dev": "Gazido Gaming",
@@ -29138,6 +32873,13 @@
   "titleId": "58550CA4",
   "ur": 3.5
  },
+ "xblig-zombie-strippers-stole-my-heart-then-ate-my-brains": {
+  "aprox": true,
+  "dev": "Strange Games",
+  "pub": "Strange Games",
+  "titleId": "58550C5D",
+  "ur": 3.25
+ },
  "xblig-zombie-turkey-outbreak": {
   "dev": "Strange Games",
   "pub": "Strange Games",
@@ -29256,6 +32998,13 @@
   "dev": "Ska Studios",
   "pub": "Ska Studios",
   "titleId": "585501BA",
+  "ur": 4.0
+ },
+ "xblig-zp2kx-zombies-pterodactyls": {
+  "aprox": true,
+  "dev": "Ska Studios",
+  "pub": "Ska Studios",
+  "titleId": "58550732",
   "ur": 4.0
  },
  "xblig-zulu-hour": {

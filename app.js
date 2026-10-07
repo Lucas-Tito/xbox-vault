@@ -877,6 +877,11 @@ function fichaHtml(g) {
        catalogo para montar console vai querer copiar daqui. Monoespacada porque
        e codigo, e para 425307D5 nao virar 4253O7D5 na leitura. */
     linha("Title ID", g.titleId ? "<code>" + esc(g.titleId) + "</code>" : null) +
+    /* Os outros Title IDs do mesmo jogo: outra regiao, disco e Arcade, edicao.
+       O console grava o do disco que ele achou, entao qualquer um pode ser o seu. */
+    linha("Outros Title IDs", (g.titleIdAlt || []).length
+      ? g.titleIdAlt.map(function (t) { return "<code>" + esc(t) + "</code>"; }).join(" ") : null,
+      "Mesmo jogo em outra região, edição ou versão (disco e Arcade)") +
     resolucaoLinha(g) +
     /* O que era a gaveta "Extras" virou linha de ficha. A gaveta misturava fato
        de patch, forma de venda, hardware e recurso de video numa lista so, e

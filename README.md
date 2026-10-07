@@ -123,6 +123,7 @@ data/
   tamanho-emu.json  tamanho da ROM extraída, em GB, dos DATs do No-Intro e do Redump
   jogadores-emu.json  nº de jogadores da emulação; manda no que o LaunchBox diz
   tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
+  x360db.json       Title ID (e os alternativos), nota de jogador e publisher: 360 e indies
   hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
   db.js             Xbox 360 + Xbox original, é o que carrega no primeiro byte
   db-xblig.js       XBLIG, baixado só quando a categoria é ligada
@@ -132,8 +133,10 @@ tools/
   wikilib.py        acesso à API da Wikipédia (com cache em disco) + parser de wikitext
   jsonio.py         gravação atômica: todo coletor grava por aqui
   taglib.py         extração de modos de jogo a partir do artigo
+  titlelib.py       casa o nome curto das bases de Title ID ("GTA IV") com o catálogo
   build_*.py        geram os data/*.json das listas
   tag_*.py          geram os data/tags-*.json
+  fetch_x360db.py   Title ID, nota de jogador e publisher, do x360db (Marketplace do 360)
   fetch_hltb.py     tempo de jogo do HowLongToBeat (resumível)
   fetch_libretro.py tamanho e nº de jogadores da emulação, dos DATs do libretro
   fetch_screens_libretro.py  uma captura por jogo, dos thumbnails do libretro
@@ -154,6 +157,7 @@ python3 tools/tag_homebrew.py
 python3 tools/fetch_images.py   # baixa e comprime as capas em images/ (resumível)
 python3 tools/fetch_images_launchbox.py  # completa as que a Wikipédia não tem
 python3 tools/fetch_images_extra.py      # links verificados à mão para o resto
+python3 tools/fetch_x360db.py            # Title ID do 360 e dos indies
 python3 tools/fetch_hltb.py xbox         # tempo de jogo: 360 + Xbox original
 python3 tools/fetch_hltb.py emu          # idem, catálogo de emulação
 python3 tools/fetch_hltb.py indies       # idem, XBLIG
