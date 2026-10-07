@@ -160,7 +160,10 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
    colecoes chamam: o nome guardado e o do arquivo nao mudam. */
 .cui-tile-txt b{font-size:15px;font-weight:600;color:var(--txt);line-height:1.3;text-transform:uppercase;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.cui-tile-txt i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--dim2)}
+/* Sombra atras do texto: nome e contagem passam por cima das capas, e capa
+   clara apagava a contagem. */
+.cui-tile-txt{text-shadow:0 1px 3px rgba(0,0,0,.9)}
+.cui-tile-txt i{font-style:normal;font-family:var(--mono);font-size:12.5px;font-weight:500;color:#C9D3CD}
 .cui-tile:hover{border-color:var(--green);box-shadow:inset 0 0 0 2px var(--green)}
 .cui-tile-nova{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
   background:var(--bg2)}
@@ -180,9 +183,11 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
   font-size:14px;font-weight:500;animation:aviso-sobe .18s ease-out}
 @keyframes aviso-sobe{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translateX(-50%)}}
 .aviso[hidden]{display:none}
-.aviso span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.aviso button{flex:none;border:0;border-radius:5px;padding:6px 12px;background:var(--green);
-  color:var(--on-green);font-weight:600;font-size:13px}
+/* Texto e botao no mesmo tamanho e na mesma altura de linha: com 14 e 13px as
+   maiusculas de um ficavam mais altas que as do outro, e o par parecia torto. */
+.aviso span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:20px}
+.aviso button{flex:none;border:0;border-radius:5px;padding:5px 12px;background:var(--green);
+  color:var(--on-green);font-weight:600;font-size:14px;line-height:20px}
 .aviso button:hover{filter:brightness(1.08)}
 .card.apagado{opacity:.5}
 .card.apagado:hover{opacity:.85}
