@@ -66,10 +66,14 @@
   ok('abrir mostra so os jogos da colecao', document.body.dataset.tela === 'jogos' &&
      $$('.card').length === 2 && !!card(a) && !!card(b), $$('.card').length + ' cards');
   ok('sem filtros dentro da colecao', !filtros());
+  ok('dentro da colecao nao agrupa por ano', $$('.year').length === 0, $$('.year').length + ' anos');
   ok('id que o catalogo nao conhece aparece na barra', /0BD92375/.test($('#cui-barra').textContent));
   $('#cui-voltar').click(); await wait(400);
   await abrir('Tudo');
   ok('a uniao junta as origens', $$('.card').length === 3, $$('.card').length + ' cards');
+  const titulos = $$('.card h3').map(h => h.textContent.toLowerCase().replace(/^(the|a|an|o|os|as|um|uma) /, ''));
+  ok('dentro da colecao a ordem e alfabetica, sem artigo', titulos.every((t, i) => !i || titulos[i - 1] <= t),
+     titulos.join(' | '));
   ok('a uniao nao tem Adicionar nem remover', !$('#cui-add') && !$('.rem-btn'));
   $('#cui-voltar').click(); await wait(400);
 

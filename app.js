@@ -277,9 +277,20 @@ function filtered(skip) {
   return out;
 }
 
+/* A ordem em vigor. Dentro de uma colecao do CollectionUI e a do console:
+   alfabetica, sem o artigo do comeco e sem diferenciar caixa (biblioteca.cpp).
+   Ao adicionar jogos vale o "Ordenar por" dos filtros, como no catalogo. */
+function ordemAtual() {
+  return AREA === "cui" && cuiTela === "jogos" ? "console" : F.sort;
+}
+
 function sortList(list) {
-  var s = F.sort;
+  var s = ordemAtual();
   return list.sort(function (a, b) {
+    if (s === "console") {
+      var x = semArtigo(a.title), y = semArtigo(b.title);
+      return x < y ? -1 : x > y ? 1 : 0;
+    }
     if (s === "title") return a.title.localeCompare(b.title);
     if (s === "players") return maxPlayers(b, "any") - maxPlayers(a, "any") || a.title.localeCompare(b.title);
     if (s === "mc") return (b.mc || -1) - (a.mc || -1) || a.title.localeCompare(b.title);
@@ -427,7 +438,8 @@ function buildQueue(list) {
   var groups = [], cur = null;
   // Agrupar por ano só faz sentido quando a ordenação É por ano. Ordenando por
   // título ou nota, cada seção viraria um jogo só.
-  if (F.sort !== "year-desc" && F.sort !== "year-asc") {
+  var ordem = ordemAtual();
+  if (ordem !== "year-desc" && ordem !== "year-asc") {
     queue = list.length ? [{ y: null, items: list }] : [];
     qi = 0;
     return;
