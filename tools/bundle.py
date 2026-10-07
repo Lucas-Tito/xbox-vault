@@ -184,6 +184,8 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # nota dos jogadores do Marketplace: entra ao lado da nota da critica,
     # nunca no lugar dela
     x360db = load("x360db.json", {})
+    # Title ID do Xbox original, do xdb do xemu (o x360db nao cobre o console)
+    xemu = load("xemu.json", {})
     screens = load("screens.json", {})
     tus = load("tu.json", {})
     # add-ons do Marketplace. A lista e a pagina que ficou arquivada, nao o
@@ -321,6 +323,11 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
                 g["developers"] = [x.strip() for x in r["dev"].split("/") if x.strip()]
             if r.get("pub") and not (g.get("publishers") or []):
                 g["publishers"] = [x.strip() for x in r["pub"].split("/") if x.strip()]
+        xe = xemu.get(g["id"])
+        if xe and xe.get("titleId"):
+            g["titleId"] = xe["titleId"]
+            if xe.get("outros"):
+                g["titleIdAlt"] = xe["outros"]
         n = notas.get(g["id"])
         g.pop("mcGeral", None); g.pop("mcPlats", None)
         if n and isinstance(n.get("score"), int):

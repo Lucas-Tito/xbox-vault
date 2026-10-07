@@ -1,0 +1,3157 @@
+{
+ "xbox-187-ride-or-die": {
+  "titleId": "55530036"
+ },
+ "xbox-2002-fifa-world-cup": {
+  "titleId": "4541000B"
+ },
+ "xbox-25-to-life": {
+  "titleId": "45530018"
+ },
+ "xbox-4x4-evo-2": {
+  "titleId": "54540001"
+ },
+ "xbox-50-cent-bulletproof": {
+  "titleId": "56550042"
+ },
+ "xbox-advent-rising": {
+  "titleId": "4D4A0009"
+ },
+ "xbox-afl-live-2003": {
+  "titleId": "4143000D"
+ },
+ "xbox-afl-live-2004": {
+  "titleId": "4143001B"
+ },
+ "xbox-afl-live-premiership-edition": {
+  "titleId": "41430023"
+ },
+ "xbox-aggressive-inline": {
+  "titleId": "41430007"
+ },
+ "xbox-airforce-delta-storm": {
+  "titleId": "4B4E0002"
+ },
+ "xbox-alias": {
+  "titleId": "41430016"
+ },
+ "xbox-alien-hominid": {
+  "titleId": "5A440004"
+ },
+ "xbox-aliens-versus-predator-extinction": {
+  "titleId": "56550022"
+ },
+ "xbox-alter-echo": {
+  "titleId": "5451000F"
+ },
+ "xbox-america-s-army-rise-of-a-soldier": {
+  "titleId": "55530043"
+ },
+ "xbox-american-chopper": {
+  "titleId": "4156003D"
+ },
+ "xbox-american-chopper-2-full-throttle": {
+  "titleId": "4156004F"
+ },
+ "xbox-amf-bowling-2004": {
+  "titleId": "42530009"
+ },
+ "xbox-amf-xtreme-bowling": {
+  "titleId": "42530014"
+ },
+ "xbox-amped-2": {
+  "titleId": "4D530041"
+ },
+ "xbox-amped-freestyle-snowboarding": {
+  "titleId": "4D530005"
+ },
+ "xbox-and-1-streetball": {
+  "titleId": "55530056"
+ },
+ "xbox-angelic-concert": {
+  "titleId": "53550007"
+ },
+ "xbox-animaniacs-the-great-edgar-hunt": {
+  "titleId": "494F0003"
+ },
+ "xbox-antz-extreme-racing": {
+  "outros": [
+   "56550009"
+  ],
+  "titleId": "454D0001"
+ },
+ "xbox-aoi-namida": {
+  "titleId": "494C0006"
+ },
+ "xbox-aquaman-battle-for-atlantis": {
+  "titleId": "544D0003"
+ },
+ "xbox-arctic-thunder": {
+  "titleId": "4D570002"
+ },
+ "xbox-area-51": {
+  "titleId": "4D570005"
+ },
+ "xbox-arena-football": {
+  "titleId": "45410094"
+ },
+ "xbox-armed-and-dangerous": {
+  "titleId": "4C41000D"
+ },
+ "xbox-army-men-major-malfunction": {
+  "titleId": "54540088"
+ },
+ "xbox-army-men-sarge-s-war": {
+  "titleId": "54540014"
+ },
+ "xbox-arx-fatalis": {
+  "titleId": "44430002"
+ },
+ "xbox-atari-anthology": {
+  "titleId": "49470079"
+ },
+ "xbox-atv-quad-power-racing-2": {
+  "titleId": "4143000A"
+ },
+ "xbox-auto-modellista": {
+  "titleId": "4343000E"
+ },
+ "xbox-azurik-rise-of-perathia": {
+  "titleId": "4D530007"
+ },
+ "xbox-backyard-wrestling-2-there-goes-the-neighborhood": {
+  "titleId": "45530016"
+ },
+ "xbox-backyard-wrestling-don-t-try-this-at-home": {
+  "titleId": "4553000D"
+ },
+ "xbox-bad-boys-miami-takedown": {
+  "titleId": "454D0016"
+ },
+ "xbox-baldur-s-gate-dark-alliance": {
+  "outros": [
+   "5655001A"
+  ],
+  "titleId": "564E0006"
+ },
+ "xbox-baldur-s-gate-dark-alliance-ii": {
+  "titleId": "4950000A"
+ },
+ "xbox-barbarian": {
+  "titleId": "54530002"
+ },
+ "xbox-barbie-horse-adventures-wild-horse-rescue": {
+  "titleId": "5655002A"
+ },
+ "xbox-bass-pro-shops-trophy-bass-2007": {
+  "titleId": "56550049"
+ },
+ "xbox-bass-pro-shops-trophy-hunter-2007": {
+  "titleId": "56550048"
+ },
+ "xbox-batman-begins": {
+  "titleId": "45410389"
+ },
+ "xbox-batman-dark-tomorrow": {
+  "titleId": "4B420001"
+ },
+ "xbox-batman-rise-of-sin-tzu": {
+  "titleId": "5553001C"
+ },
+ "xbox-batman-vengeance": {
+  "titleId": "55530001"
+ },
+ "xbox-battle-engine-aquila": {
+  "titleId": "49470010"
+ },
+ "xbox-battlefield-2-modern-combat": {
+  "outros": [
+   "4541007F"
+  ],
+  "titleId": "45410062"
+ },
+ "xbox-battlestar-galactica": {
+  "titleId": "5655000F"
+ },
+ "xbox-beat-down-fists-of-vengeance": {
+  "titleId": "43430015"
+ },
+ "xbox-beyond-good-and-evil": {
+  "titleId": "55530018"
+ },
+ "xbox-big-bumpin": {
+  "titleId": "4D5300D2"
+ },
+ "xbox-big-mutha-truckers": {
+  "titleId": "454D0002"
+ },
+ "xbox-big-mutha-truckers-2": {
+  "titleId": "454D0017"
+ },
+ "xbox-bionicle": {
+  "titleId": "45410039"
+ },
+ "xbox-bistro-cupid": {
+  "titleId": "53550001"
+ },
+ "xbox-bistro-cupid-2": {
+  "titleId": "53550008"
+ },
+ "xbox-black": {
+  "titleId": "45410083"
+ },
+ "xbox-black-stone-magic-and-steel": {
+  "titleId": "58490004"
+ },
+ "xbox-blade-ii": {
+  "titleId": "41560005"
+ },
+ "xbox-blazing-angels-squadrons-of-wwii": {
+  "titleId": "55530057"
+ },
+ "xbox-blinx-the-time-sweeper": {
+  "titleId": "4D530013"
+ },
+ "xbox-blitz-the-league": {
+  "titleId": "4D570026"
+ },
+ "xbox-blood-wake": {
+  "titleId": "4D530010"
+ },
+ "xbox-bloodrayne": {
+  "outros": [
+   "56560021"
+  ],
+  "titleId": "4D4A0001"
+ },
+ "xbox-bloodrayne-2": {
+  "titleId": "4D4A000D"
+ },
+ "xbox-bloody-roar-extreme": {
+  "titleId": "48550001"
+ },
+ "xbox-blowout": {
+  "titleId": "4D4A0008"
+ },
+ "xbox-bmx-xxx": {
+  "titleId": "4143000E"
+ },
+ "xbox-break-nine-world-billiards-tournament": {
+  "titleId": "41530001"
+ },
+ "xbox-breakdown": {
+  "titleId": "4E4D0009"
+ },
+ "xbox-breeders-cup-world-thoroughbred-championships": {
+  "titleId": "42530012"
+ },
+ "xbox-brian-lara-international-cricket-2005": {
+  "titleId": "434D004E"
+ },
+ "xbox-broken-sword-the-sleeping-dragon": {
+  "titleId": "5451001D"
+ },
+ "xbox-brothers-in-arms-earned-in-blood": {
+  "titleId": "5553005A"
+ },
+ "xbox-brothers-in-arms-road-to-hill-30": {
+  "outros": [
+   "5553005B"
+  ],
+  "titleId": "5553003C"
+ },
+ "xbox-bruce-lee-quest-of-the-dragon": {
+  "outros": [
+   "56560002"
+  ],
+  "titleId": "56550016"
+ },
+ "xbox-brute-force": {
+  "titleId": "4D53001E"
+ },
+ "xbox-buffy-the-vampire-slayer": {
+  "titleId": "45410012"
+ },
+ "xbox-buffy-the-vampire-slayer-chaos-bleeds": {
+  "titleId": "56550005"
+ },
+ "xbox-burnout": {
+  "titleId": "41430006"
+ },
+ "xbox-burnout-2-point-of-impact": {
+  "titleId": "41430019"
+ },
+ "xbox-burnout-3-takedown": {
+  "titleId": "4541005B"
+ },
+ "xbox-burnout-revenge": {
+  "outros": [
+   "45410081"
+  ],
+  "titleId": "45410076"
+ },
+ "xbox-c-a-t-cyber-attack-team": {
+  "titleId": "4D450001"
+ },
+ "xbox-cabela-s-big-game-hunter-2005-adventures": {
+  "titleId": "4156003E"
+ },
+ "xbox-cabela-s-dangerous-hunts": {
+  "titleId": "41560019"
+ },
+ "xbox-cabela-s-dangerous-hunts-2": {
+  "titleId": "41560052"
+ },
+ "xbox-cabela-s-deer-hunt-2004-season": {
+  "titleId": "41560030"
+ },
+ "xbox-cabela-s-deer-hunt-2005-season": {
+  "titleId": "4156003F"
+ },
+ "xbox-cabela-s-outdoor-adventures": {
+  "titleId": "4156004D"
+ },
+ "xbox-call-of-cthulhu-dark-corners-of-the-earth": {
+  "titleId": "42530007"
+ },
+ "xbox-call-of-duty-2-big-red-one": {
+  "titleId": "41560051"
+ },
+ "xbox-call-of-duty-3": {
+  "titleId": "4156005D"
+ },
+ "xbox-call-of-duty-finest-hour": {
+  "titleId": "4156002A"
+ },
+ "xbox-capcom-classics-collection-vol-1": {
+  "titleId": "43430018"
+ },
+ "xbox-capcom-classics-collection-vol-2": {
+  "titleId": "43430019"
+ },
+ "xbox-capcom-vs-snk-2-eo": {
+  "titleId": "43430008"
+ },
+ "xbox-carmen-sandiego-the-secret-of-the-stolen-drums": {
+  "titleId": "424D0006"
+ },
+ "xbox-carve": {
+  "titleId": "54540010"
+ },
+ "xbox-castlevania-curse-of-darkness": {
+  "titleId": "4B4E002D"
+ },
+ "xbox-catwoman": {
+  "titleId": "4541005C"
+ },
+ "xbox-cel-damage": {
+  "titleId": "45410011"
+ },
+ "xbox-championship-bowling": {
+  "titleId": "584D0003"
+ },
+ "xbox-championship-manager-2006": {
+  "titleId": "53430100"
+ },
+ "xbox-championship-manager-5": {
+  "titleId": "4553001A"
+ },
+ "xbox-championship-manager-season-01-02": {
+  "titleId": "45530002"
+ },
+ "xbox-championship-manager-season-02-03": {
+  "titleId": "4553000C"
+ },
+ "xbox-charlie-and-the-chocolate-factory": {
+  "titleId": "54540081"
+ },
+ "xbox-chase-hollywood-stunt-driver": {
+  "titleId": "424D0001"
+ },
+ "xbox-chessmaster": {
+  "titleId": "55530039"
+ },
+ "xbox-chicago-enforcer": {
+  "titleId": "4B420005"
+ },
+ "xbox-circus-maximus-chariot-wars": {
+  "outros": [
+   "5451000C"
+  ],
+  "titleId": "45430001"
+ },
+ "xbox-classified-the-sentinel-crisis": {
+  "titleId": "5454007D"
+ },
+ "xbox-club-football": {
+  "outros": [
+   "434D000C",
+   "434D0012",
+   "434D0013",
+   "434D0014",
+   "434D0015",
+   "434D0016",
+   "434D0017",
+   "434D0018",
+   "434D0019",
+   "434D001B",
+   "434D001C",
+   "434D001D",
+   "434D001E",
+   "434D001F",
+   "434D0020",
+   "434D0022",
+   "434D0023"
+  ],
+  "titleId": "434D0021"
+ },
+ "xbox-club-football-2005": {
+  "outros": [
+   "434D002F",
+   "434D0030",
+   "434D0031",
+   "434D0032",
+   "434D0033",
+   "434D0035",
+   "434D0036",
+   "434D0037",
+   "434D0038",
+   "434D0039",
+   "434D003A",
+   "434D003B",
+   "434D003C",
+   "434D003D",
+   "434D003E",
+   "434D0040",
+   "434D0041",
+   "434D0042",
+   "434D0043",
+   "434D0044",
+   "434D0045"
+  ],
+  "titleId": "434D003F"
+ },
+ "xbox-codename-kids-next-door-operation-v-i-d-e-o-g-a-m-e": {
+  "titleId": "5454008A"
+ },
+ "xbox-cold-fear": {
+  "titleId": "5553004B"
+ },
+ "xbox-cold-war": {
+  "outros": [
+   "44430006"
+  ],
+  "titleId": "44430004"
+ },
+ "xbox-colin-mcrae-rally-04": {
+  "titleId": "434D0010"
+ },
+ "xbox-colin-mcrae-rally-2005": {
+  "titleId": "434D002B"
+ },
+ "xbox-colin-mcrae-rally-3": {
+  "titleId": "434D0001"
+ },
+ "xbox-college-hoops-2k6": {
+  "titleId": "54540091"
+ },
+ "xbox-college-hoops-2k7": {
+  "titleId": "545400AF"
+ },
+ "xbox-combat-elite-wwii-paratroopers": {
+  "titleId": "53500001"
+ },
+ "xbox-combat-task-force-121": {
+  "titleId": "47560003"
+ },
+ "xbox-commandos-2-men-of-courage": {
+  "titleId": "45530008"
+ },
+ "xbox-commandos-strike-force": {
+  "titleId": "534300F9"
+ },
+ "xbox-conan": {
+  "titleId": "544D0008"
+ },
+ "xbox-conflict-desert-storm": {
+  "outros": [
+   "54540005"
+  ],
+  "titleId": "53430001"
+ },
+ "xbox-conflict-desert-storm-ii": {
+  "titleId": "53430006"
+ },
+ "xbox-conflict-vietnam": {
+  "titleId": "5343000A"
+ },
+ "xbox-conker-live-and-reloaded": {
+  "titleId": "4D530051"
+ },
+ "xbox-conspiracy-weapons-of-mass-destruction": {
+  "titleId": "4F580001"
+ },
+ "xbox-constantine": {
+  "titleId": "5343000F"
+ },
+ "xbox-corvette": {
+  "titleId": "544D000B"
+ },
+ "xbox-counter-strike": {
+  "titleId": "4D530036"
+ },
+ "xbox-crash-bandicoot-the-wrath-of-cortex": {
+  "outros": [
+   "56560001"
+  ],
+  "titleId": "56550003"
+ },
+ "xbox-crash-n-burn": {
+  "titleId": "45530014"
+ },
+ "xbox-crash-nitro-kart": {
+  "titleId": "5655001F"
+ },
+ "xbox-crash-tag-team-racing": {
+  "titleId": "56550041"
+ },
+ "xbox-crash-twinsanity": {
+  "titleId": "56550036"
+ },
+ "xbox-crazy-taxi-3-high-roller": {
+  "outros": [
+   "53450019"
+  ],
+  "titleId": "53450004"
+ },
+ "xbox-cricket-2005": {
+  "titleId": "45410074"
+ },
+ "xbox-crime-life-gang-wars": {
+  "titleId": "4B4E001C"
+ },
+ "xbox-crimson-sea": {
+  "titleId": "4B4F0002"
+ },
+ "xbox-crimson-skies-high-road-to-revenge": {
+  "outros": [
+   "4D53007B"
+  ],
+  "titleId": "4D530021"
+ },
+ "xbox-crouching-tiger-hidden-dragon": {
+  "titleId": "55530020"
+ },
+ "xbox-crusty-demons": {
+  "titleId": "464C0002"
+ },
+ "xbox-csi-crime-scene-investigation": {
+  "titleId": "5553003F"
+ },
+ "xbox-curious-george": {
+  "titleId": "4E4D0019"
+ },
+ "xbox-curse-the-eye-of-isis": {
+  "titleId": "57450005"
+ },
+ "xbox-daemon-vector-gui-yi": {
+  "aprox": true,
+  "titleId": "58500001"
+ },
+ "xbox-dakar-2-the-world-s-ultimate-rally": {
+  "aprox": true,
+  "titleId": "41430017"
+ },
+ "xbox-dance-dance-revolution-ultramix": {
+  "titleId": "4B4E0019"
+ },
+ "xbox-dance-dance-revolution-ultramix-2": {
+  "titleId": "4B4E0021"
+ },
+ "xbox-dance-dance-revolution-ultramix-3": {
+  "titleId": "4B4E0029"
+ },
+ "xbox-dance-dance-revolution-ultramix-4": {
+  "titleId": "4B4E0037"
+ },
+ "xbox-dance-uk": {
+  "titleId": "42420002"
+ },
+ "xbox-dark-summit": {
+  "titleId": "54510004"
+ },
+ "xbox-darkwatch": {
+  "outros": [
+   "5553005C"
+  ],
+  "titleId": "43430016"
+ },
+ "xbox-dave-mirra-freestyle-bmx-2": {
+  "titleId": "41430001"
+ },
+ "xbox-david-beckham-soccer": {
+  "titleId": "52410003"
+ },
+ "xbox-dead-man-s-hand": {
+  "outros": [
+   "49470040"
+  ],
+  "titleId": "49470027"
+ },
+ "xbox-dead-or-alive-1-ultimate": {
+  "titleId": "54430006"
+ },
+ "xbox-dead-or-alive-3": {
+  "outros": [
+   "54430001"
+  ],
+  "titleId": "4D53002D"
+ },
+ "xbox-dead-or-alive-xtreme-beach-volleyball": {
+  "titleId": "54430007"
+ },
+ "xbox-dead-to-rights": {
+  "outros": [
+   "4E4D0005"
+  ],
+  "titleId": "4541002C"
+ },
+ "xbox-dead-to-rights-ii": {
+  "titleId": "4E4D0015"
+ },
+ "xbox-deathrow": {
+  "titleId": "55530004"
+ },
+ "xbox-def-jam-fight-for-ny": {
+  "outros": [
+   "45410067"
+  ],
+  "titleId": "45410049"
+ },
+ "xbox-defender": {
+  "titleId": "4D570006"
+ },
+ "xbox-delta-force-black-hawk-down": {
+  "titleId": "4E4C0002"
+ },
+ "xbox-dennou-taisen-dronez": {
+  "titleId": "4D440003"
+ },
+ "xbox-destroy-all-humans": {
+  "titleId": "54510026"
+ },
+ "xbox-destroy-all-humans-2": {
+  "titleId": "54510106"
+ },
+ "xbox-deus-ex-invisible-war": {
+  "titleId": "45530005"
+ },
+ "xbox-die-hard-vendetta": {
+  "titleId": "56560029"
+ },
+ "xbox-dino-crisis-3": {
+  "titleId": "43430003"
+ },
+ "xbox-dinotopia-the-sunstone-odyssey": {
+  "titleId": "544D000F"
+ },
+ "xbox-disney-s-extreme-skate-adventure": {
+  "titleId": "41560027"
+ },
+ "xbox-doom-3": {
+  "titleId": "41560020"
+ },
+ "xbox-doom-3-resurrection-of-evil": {
+  "titleId": "4156004E"
+ },
+ "xbox-double-s-t-e-a-l-the-second-clash": {
+  "titleId": "42550004"
+ },
+ "xbox-dr-muto": {
+  "titleId": "4D570011"
+ },
+ "xbox-dragon-ball-z-sagas": {
+  "titleId": "4947007A"
+ },
+ "xbox-dragon-s-lair-3d-return-to-the-lair": {
+  "titleId": "55530012"
+ },
+ "xbox-drake-of-the-99-dragons": {
+  "titleId": "4D4A000B"
+ },
+ "xbox-dreamfall-the-longest-journey": {
+  "outros": [
+   "4D580001"
+  ],
+  "titleId": "41590004"
+ },
+ "xbox-drihoo": {
+  "titleId": "48570001"
+ },
+ "xbox-driver-parallel-lines": {
+  "titleId": "4947007F"
+ },
+ "xbox-dungeons-and-dragons-heroes": {
+  "titleId": "49470013"
+ },
+ "xbox-dynasty-warriors-3": {
+  "titleId": "4B4F0003"
+ },
+ "xbox-dynasty-warriors-4": {
+  "titleId": "4B4F0004"
+ },
+ "xbox-dynasty-warriors-5": {
+  "titleId": "4B4F0007"
+ },
+ "xbox-ed-edd-n-eddy-the-mis-edventures": {
+  "titleId": "4D570032"
+ },
+ "xbox-enclave": {
+  "outros": [
+   "5655000E"
+  ],
+  "titleId": "53570001"
+ },
+ "xbox-enter-the-matrix": {
+  "titleId": "49470022"
+ },
+ "xbox-eragon": {
+  "titleId": "56550043"
+ },
+ "xbox-espn-college-hoops": {
+  "titleId": "53450024"
+ },
+ "xbox-espn-college-hoops-2k5": {
+  "titleId": "53450033"
+ },
+ "xbox-espn-international-winter-sports-2002": {
+  "titleId": "4B4E000B"
+ },
+ "xbox-espn-major-league-baseball": {
+  "titleId": "53450028"
+ },
+ "xbox-espn-mls-extratime-2002": {
+  "titleId": "4B4E0005"
+ },
+ "xbox-espn-nba-2k5": {
+  "outros": [
+   "53450080"
+  ],
+  "titleId": "53450031"
+ },
+ "xbox-espn-nba-2night-2002": {
+  "titleId": "4B4E0006"
+ },
+ "xbox-espn-nba-basketball": {
+  "outros": [
+   "5345002E"
+  ],
+  "titleId": "53450023"
+ },
+ "xbox-espn-nfl-2k5": {
+  "titleId": "53450030"
+ },
+ "xbox-espn-nfl-football": {
+  "outros": [
+   "5345002C"
+  ],
+  "titleId": "53450022"
+ },
+ "xbox-espn-nfl-primetime-2002": {
+  "titleId": "4B4E0003"
+ },
+ "xbox-espn-nhl-2k5": {
+  "titleId": "53450032"
+ },
+ "xbox-espn-nhl-hockey": {
+  "outros": [
+   "5345002D"
+  ],
+  "titleId": "53450026"
+ },
+ "xbox-espn-winter-x-games-snowboarding-2002": {
+  "titleId": "4B4E0009"
+ },
+ "xbox-evil-dead-a-fistful-of-boomstick": {
+  "titleId": "5451000B"
+ },
+ "xbox-evil-dead-regeneration": {
+  "titleId": "54510025"
+ },
+ "xbox-exaskeleton": {
+  "titleId": "4B4B0003"
+ },
+ "xbox-f1-2001": {
+  "titleId": "45410007"
+ },
+ "xbox-f1-2002": {
+  "titleId": "45410014"
+ },
+ "xbox-f1-career-challenge": {
+  "titleId": "45410032"
+ },
+ "xbox-fable": {
+  "titleId": "4D53000D"
+ },
+ "xbox-fable-the-lost-chapters": {
+  "titleId": "4D5300D1"
+ },
+ "xbox-fahrenheit": {
+  "titleId": "4947007B"
+ },
+ "xbox-fallout-brotherhood-of-steel": {
+  "titleId": "49500008"
+ },
+ "xbox-family-guy-video-game": {
+  "titleId": "545400B0"
+ },
+ "xbox-far-cry-instincts": {
+  "titleId": "55530008"
+ },
+ "xbox-far-cry-instincts-evolution": {
+  "titleId": "55530060"
+ },
+ "xbox-fatal-frame": {
+  "titleId": "54430004"
+ },
+ "xbox-fatal-frame-ii-crimson-butterfly-director-s-cut": {
+  "aprox": true,
+  "titleId": "5443000A"
+ },
+ "xbox-fifa-07": {
+  "titleId": "454100A6"
+ },
+ "xbox-fifa-football-2004": {
+  "titleId": "4541003B"
+ },
+ "xbox-fifa-street": {
+  "titleId": "45410072"
+ },
+ "xbox-fifa-street-2": {
+  "titleId": "45410085"
+ },
+ "xbox-fight-club": {
+  "titleId": "5655002F"
+ },
+ "xbox-fight-night-2004": {
+  "titleId": "4541004B"
+ },
+ "xbox-fight-night-round-2": {
+  "titleId": "45410055"
+ },
+ "xbox-fight-night-round-3": {
+  "titleId": "45410086"
+ },
+ "xbox-fila-world-tour-tennis": {
+  "titleId": "54510009"
+ },
+ "xbox-final-fight-streetwise": {
+  "titleId": "43430013"
+ },
+ "xbox-fire-blade": {
+  "titleId": "4D570012"
+ },
+ "xbox-flatout": {
+  "titleId": "454D0009"
+ },
+ "xbox-flatout-2": {
+  "outros": [
+   "5A44019D"
+  ],
+  "titleId": "454D0020"
+ },
+ "xbox-flight-academy": {
+  "titleId": "41510002"
+ },
+ "xbox-ford-mustang-the-legend-lives": {
+  "titleId": "54540077"
+ },
+ "xbox-ford-racing-2": {
+  "titleId": "454D0007"
+ },
+ "xbox-ford-racing-3": {
+  "titleId": "454D000D"
+ },
+ "xbox-ford-street-racing": {
+  "titleId": "454D001F"
+ },
+ "xbox-ford-vs-chevy": {
+  "titleId": "54540089"
+ },
+ "xbox-forgotten-realms-demon-stone": {
+  "titleId": "49470074"
+ },
+ "xbox-forza-motorsport": {
+  "outros": [
+   "584C0014"
+  ],
+  "titleId": "4D53006E"
+ },
+ "xbox-freaky-flyers": {
+  "titleId": "4D570007"
+ },
+ "xbox-freedom-fighters": {
+  "outros": [
+   "4541002E"
+  ],
+  "titleId": "4541002A"
+ },
+ "xbox-freestyle-metalx": {
+  "titleId": "4D570017"
+ },
+ "xbox-frogger-ancient-shadow": {
+  "titleId": "4B4E002C"
+ },
+ "xbox-frogger-beyond": {
+  "titleId": "4B4E0013"
+ },
+ "xbox-full-spectrum-warrior": {
+  "titleId": "54510022"
+ },
+ "xbox-full-spectrum-warrior-ten-hammers": {
+  "outros": [
+   "54510102"
+  ],
+  "titleId": "545100F8"
+ },
+ "xbox-furious-karting": {
+  "titleId": "4947000B"
+ },
+ "xbox-futurama": {
+  "outros": [
+   "56550008"
+  ],
+  "titleId": "46490002"
+ },
+ "xbox-future-tactics-the-uprising": {
+  "titleId": "43560007"
+ },
+ "xbox-fuzion-frenzy": {
+  "titleId": "4D530002"
+ },
+ "xbox-galaxy-angel": {
+  "titleId": "42520001"
+ },
+ "xbox-galleon": {
+  "outros": [
+   "5343000B"
+  ],
+  "titleId": "41540004"
+ },
+ "xbox-gauntlet-dark-legacy": {
+  "titleId": "4D57000E"
+ },
+ "xbox-gauntlet-seven-sorrows": {
+  "outros": [
+   "4D570033"
+  ],
+  "titleId": "4D570022"
+ },
+ "xbox-gene-troopers": {
+  "titleId": "544D0011"
+ },
+ "xbox-genma-onimusha": {
+  "outros": [
+   "43430006"
+  ],
+  "titleId": "43430001"
+ },
+ "xbox-ghost-master-the-gravenville-chronicles": {
+  "titleId": "454D0004"
+ },
+ "xbox-gladiator-sword-of-vengeance": {
+  "titleId": "4143001A"
+ },
+ "xbox-gladius": {
+  "titleId": "4C410008"
+ },
+ "xbox-goblin-commander-unleash-the-horde": {
+  "titleId": "4A410005"
+ },
+ "xbox-godzilla-destroy-all-monsters-melee": {
+  "titleId": "49470039"
+ },
+ "xbox-godzilla-save-the-earth": {
+  "titleId": "49470073"
+ },
+ "xbox-goldeneye-rogue-agent": {
+  "titleId": "4541005D"
+ },
+ "xbox-gotcha": {
+  "titleId": "5454007E"
+ },
+ "xbox-grabbed-by-the-ghoulies": {
+  "titleId": "4D530053"
+ },
+ "xbox-grand-theft-auto-iii": {
+  "titleId": "5454000E"
+ },
+ "xbox-grand-theft-auto-san-andreas": {
+  "outros": [
+   "54540086",
+   "54540095",
+   "545400A3",
+   "545400A4"
+  ],
+  "titleId": "54540082"
+ },
+ "xbox-grand-theft-auto-vice-city": {
+  "outros": [
+   "54540073"
+  ],
+  "titleId": "5454000F"
+ },
+ "xbox-gravity-games-bike-street-vert-dirt": {
+  "titleId": "4D57000D"
+ },
+ "xbox-greg-hastings-tournament-paintball": {
+  "titleId": "41560042"
+ },
+ "xbox-greg-hastings-tournament-paintball-max-d": {
+  "titleId": "41560057"
+ },
+ "xbox-grooverider-slot-car-thunder": {
+  "titleId": "45430002"
+ },
+ "xbox-group-s-challenge": {
+  "titleId": "43430005"
+ },
+ "xbox-guilty-gear-isuka": {
+  "titleId": "41570001"
+ },
+ "xbox-gun": {
+  "titleId": "4156004B"
+ },
+ "xbox-gun-metal": {
+  "outros": [
+   "52410008"
+  ],
+  "titleId": "4D4A0003"
+ },
+ "xbox-gungriffon-allied-strike": {
+  "outros": [
+   "5443000C"
+  ],
+  "titleId": "54430009"
+ },
+ "xbox-gunvalkyrie": {
+  "outros": [
+   "5345000B"
+  ],
+  "titleId": "49470017"
+ },
+ "xbox-half-life-2": {
+  "titleId": "45410091"
+ },
+ "xbox-halo-2": {
+  "titleId": "4D530064"
+ },
+ "xbox-halo-2-multiplayer-map-pack": {
+  "outros": [
+   "4D5380CD"
+  ],
+  "titleId": "4D5300CD"
+ },
+ "xbox-halo-combat-evolved": {
+  "outros": [
+   "4D530057"
+  ],
+  "titleId": "4D530004"
+ },
+ "xbox-harry-potter-and-the-chamber-of-secrets": {
+  "titleId": "4541000E"
+ },
+ "xbox-harry-potter-and-the-goblet-of-fire": {
+  "titleId": "45410077"
+ },
+ "xbox-harry-potter-and-the-philosopher-s-stone": {
+  "titleId": "45410037"
+ },
+ "xbox-harry-potter-and-the-prisoner-of-azkaban": {
+  "titleId": "4541004C"
+ },
+ "xbox-harry-potter-quidditch-world-cup": {
+  "titleId": "4541003D"
+ },
+ "xbox-headhunter-redemption": {
+  "titleId": "53450025"
+ },
+ "xbox-hello-kitty-roller-rescue": {
+  "titleId": "58500004"
+ },
+ "xbox-heroes-of-the-pacific": {
+  "titleId": "45430004"
+ },
+ "xbox-high-heat-major-league-baseball-2004": {
+  "titleId": "54440006"
+ },
+ "xbox-high-rollers-casino": {
+  "titleId": "4253000F"
+ },
+ "xbox-hitman-2-silent-assassin": {
+  "titleId": "45530009"
+ },
+ "xbox-hitman-blood-money": {
+  "titleId": "534300FA"
+ },
+ "xbox-hitman-contracts": {
+  "titleId": "45530012"
+ },
+ "xbox-hot-wheels-stunt-track-challenge": {
+  "titleId": "54510089"
+ },
+ "xbox-hulk": {
+  "outros": [
+   "56560008"
+  ],
+  "titleId": "56550011"
+ },
+ "xbox-hummer-badlands": {
+  "titleId": "5454009C"
+ },
+ "xbox-hunter-the-reckoning": {
+  "outros": [
+   "56550007"
+  ],
+  "titleId": "564E0004"
+ },
+ "xbox-hunter-the-reckoning-redeemer": {
+  "titleId": "5655002D"
+ },
+ "xbox-i-ninja": {
+  "titleId": "4E4D000F"
+ },
+ "xbox-ice-age-2-the-meltdown": {
+  "titleId": "5655004B"
+ },
+ "xbox-ihra-drag-racing-2004": {
+  "titleId": "42530006"
+ },
+ "xbox-ihra-drag-racing-sportsman-edition": {
+  "titleId": "42530011"
+ },
+ "xbox-ihra-professional-drag-racing-2005": {
+  "titleId": "4253000C"
+ },
+ "xbox-indiana-jones-and-the-emperor-s-tomb": {
+  "titleId": "4C410007"
+ },
+ "xbox-indycar-series": {
+  "titleId": "434D0006"
+ },
+ "xbox-indycar-series-2005": {
+  "titleId": "434D0024"
+ },
+ "xbox-innocent-tears": {
+  "titleId": "4B550001"
+ },
+ "xbox-inside-pitch-2003": {
+  "titleId": "4D530034"
+ },
+ "xbox-intellivision-lives": {
+  "titleId": "43560006"
+ },
+ "xbox-international-superstar-soccer-2": {
+  "titleId": "4B4E0008"
+ },
+ "xbox-iron-phoenix": {
+  "titleId": "53410003"
+ },
+ "xbox-jacked": {
+  "titleId": "454D001E"
+ },
+ "xbox-jade-empire": {
+  "titleId": "4D53006D"
+ },
+ "xbox-james-bond-007-agent-under-fire": {
+  "aprox": true,
+  "titleId": "4541000D"
+ },
+ "xbox-james-bond-007-everything-or-nothing": {
+  "aprox": true,
+  "titleId": "45410042"
+ },
+ "xbox-james-bond-007-from-russia-with-love": {
+  "aprox": true,
+  "titleId": "45410079"
+ },
+ "xbox-james-bond-007-nightfire": {
+  "aprox": true,
+  "titleId": "45410026"
+ },
+ "xbox-james-cameron-s-dark-angel": {
+  "outros": [
+   "56560010"
+  ],
+  "titleId": "56550014"
+ },
+ "xbox-jaws-unleashed": {
+  "titleId": "4D4A000F"
+ },
+ "xbox-jet-set-radio-future": {
+  "aprox": true,
+  "outros": [
+   "5345000A",
+   "53450016"
+  ],
+  "titleId": "49470018"
+ },
+ "xbox-jockey-s-road": {
+  "titleId": "4D530030"
+ },
+ "xbox-judge-dredd-dredd-vs-death": {
+  "outros": [
+   "58490007"
+  ],
+  "titleId": "5656000D"
+ },
+ "xbox-juiced": {
+  "outros": [
+   "545100F3"
+  ],
+  "titleId": "545100EF"
+ },
+ "xbox-jurassic-park-operation-genesis": {
+  "outros": [
+   "5656000A"
+  ],
+  "titleId": "56550021"
+ },
+ "xbox-just-cause": {
+  "titleId": "534300FB"
+ },
+ "xbox-justice-league-heroes": {
+  "titleId": "57520001"
+ },
+ "xbox-kabuki-warriors": {
+  "outros": [
+   "47450001"
+  ],
+  "titleId": "43560001"
+ },
+ "xbox-kakuto-chojin-back-alley-brutal": {
+  "aprox": true,
+  "titleId": "4D53000C"
+ },
+ "xbox-kao-the-kangaroo-round-2": {
+  "titleId": "4A570003"
+ },
+ "xbox-karaoke-revolution": {
+  "titleId": "4B4E0025"
+ },
+ "xbox-karaoke-revolution-party": {
+  "titleId": "4B4E002E"
+ },
+ "xbox-kelly-slater-s-pro-surfer": {
+  "titleId": "41560002"
+ },
+ "xbox-kikou-heidan-j-phoenix-plus": {
+  "titleId": "54410001"
+ },
+ "xbox-kill-switch": {
+  "titleId": "4E4D000B"
+ },
+ "xbox-king-arthur": {
+  "titleId": "4B4E0024"
+ },
+ "xbox-kingdom-under-fire-heroes": {
+  "titleId": "504C0006"
+ },
+ "xbox-kingdom-under-fire-the-crusaders": {
+  "outros": [
+   "504C0004",
+   "504C0005"
+  ],
+  "titleId": "504C0002"
+ },
+ "xbox-knight-s-apprentice-memorick-s-adventures": {
+  "titleId": "4D490004"
+ },
+ "xbox-knights-of-the-temple-ii": {
+  "titleId": "544D0013"
+ },
+ "xbox-knights-of-the-temple-infernal-crusade": {
+  "titleId": "544D0007"
+ },
+ "xbox-knockout-kings-2002": {
+  "titleId": "4541000A"
+ },
+ "xbox-kof-maximum-impact-maniax": {
+  "titleId": "534E0007"
+ },
+ "xbox-kung-fu-chaos": {
+  "titleId": "4D530031"
+ },
+ "xbox-l-a-rush": {
+  "titleId": "4D570025"
+ },
+ "xbox-land-of-the-dead-road-to-fiddler-s-green": {
+  "titleId": "47560004"
+ },
+ "xbox-largo-winch-empire-under-threat": {
+  "titleId": "5553000B"
+ },
+ "xbox-legacy-of-kain-defiance": {
+  "titleId": "4553000F"
+ },
+ "xbox-legends-of-wrestling": {
+  "titleId": "41430003"
+ },
+ "xbox-legends-of-wrestling-ii": {
+  "titleId": "4143000F"
+ },
+ "xbox-lego-star-wars-ii-the-original-trilogy": {
+  "titleId": "4C41001F"
+ },
+ "xbox-lego-star-wars-the-video-game": {
+  "titleId": "4553001D"
+ },
+ "xbox-leisure-suit-larry-magna-cum-laude": {
+  "titleId": "56550031"
+ },
+ "xbox-lemony-snicket-s-a-series-of-unfortunate-events": {
+  "titleId": "4156001F"
+ },
+ "xbox-links-2004": {
+  "titleId": "4D53005D"
+ },
+ "xbox-lma-manager-2003": {
+  "titleId": "434D0004"
+ },
+ "xbox-lma-manager-2004": {
+  "titleId": "434D000F"
+ },
+ "xbox-lma-manager-2005": {
+  "titleId": "434D0046"
+ },
+ "xbox-lma-manager-2006": {
+  "titleId": "434D0054"
+ },
+ "xbox-loons-the-fight-for-fame": {
+  "titleId": "49470006"
+ },
+ "xbox-mace-griffin-bounty-hunter": {
+  "outros": [
+   "56560011"
+  ],
+  "titleId": "56550018"
+ },
+ "xbox-mad-dash-racing": {
+  "titleId": "45530001"
+ },
+ "xbox-madden-nfl-06": {
+  "titleId": "45410075"
+ },
+ "xbox-madden-nfl-07": {
+  "outros": [
+   "454100A8"
+  ],
+  "titleId": "4541009F"
+ },
+ "xbox-madden-nfl-08": {
+  "titleId": "454100AC"
+ },
+ "xbox-madden-nfl-09": {
+  "titleId": "4541023B"
+ },
+ "xbox-madden-nfl-2002": {
+  "titleId": "45410001"
+ },
+ "xbox-madden-nfl-2003": {
+  "titleId": "45410019"
+ },
+ "xbox-madden-nfl-2004": {
+  "titleId": "45410036"
+ },
+ "xbox-madden-nfl-2005": {
+  "titleId": "4541004D"
+ },
+ "xbox-mafia": {
+  "titleId": "54540009"
+ },
+ "xbox-magatama": {
+  "titleId": "4D530066"
+ },
+ "xbox-magi-death-fight-mahou-gakuen": {
+  "aprox": true,
+  "titleId": "544B0001"
+ },
+ "xbox-magic-the-gathering-battlegrounds": {
+  "titleId": "4947000E"
+ },
+ "xbox-major-league-baseball-2k5": {
+  "titleId": "53450037"
+ },
+ "xbox-major-league-baseball-2k5-world-series-edition": {
+  "titleId": "54540096"
+ },
+ "xbox-major-league-baseball-2k6": {
+  "titleId": "54540092"
+ },
+ "xbox-major-league-baseball-2k7": {
+  "titleId": "545400B1"
+ },
+ "xbox-malice": {
+  "outros": [
+   "584D0002"
+  ],
+  "titleId": "4253000A"
+ },
+ "xbox-manchester-united-manager-2005": {
+  "titleId": "434D0049"
+ },
+ "xbox-manhunt": {
+  "titleId": "54540019"
+ },
+ "xbox-marc-ecko-s-getting-up-contents-under-pressure": {
+  "titleId": "4947007D"
+ },
+ "xbox-marvel-nemesis-rise-of-the-imperfects": {
+  "outros": [
+   "45410095",
+   "4541038A"
+  ],
+  "titleId": "45410089"
+ },
+ "xbox-marvel-ultimate-alliance": {
+  "titleId": "4156005C"
+ },
+ "xbox-mashed-drive-to-survive": {
+  "titleId": "454D000A"
+ },
+ "xbox-mashed-fully-loaded": {
+  "titleId": "454D001B"
+ },
+ "xbox-mat-hoffman-s-pro-bmx-2": {
+  "titleId": "4156000B"
+ },
+ "xbox-max-payne": {
+  "titleId": "54540003"
+ },
+ "xbox-max-payne-2-the-fall-of-max-payne": {
+  "titleId": "5454000C"
+ },
+ "xbox-maximum-chase": {
+  "titleId": "4D53002E"
+ },
+ "xbox-mechassault": {
+  "titleId": "4D530017"
+ },
+ "xbox-mechassault-2-lone-wolf": {
+  "outros": [
+   "4D5300CA"
+  ],
+  "titleId": "4D53006B"
+ },
+ "xbox-medal-of-honor-european-assault": {
+  "titleId": "4541005E"
+ },
+ "xbox-medal-of-honor-frontline": {
+  "titleId": "4541001A"
+ },
+ "xbox-medal-of-honor-rising-sun": {
+  "titleId": "4541003F"
+ },
+ "xbox-mega-man-anniversary-collection": {
+  "titleId": "43430011"
+ },
+ "xbox-men-of-valor": {
+  "outros": [
+   "56550040"
+  ],
+  "titleId": "56550019"
+ },
+ "xbox-mercenaries-playground-of-destruction": {
+  "aprox": true,
+  "titleId": "4C410015"
+ },
+ "xbox-metal-arms-glitch-in-the-system": {
+  "outros": [
+   "5655002E"
+  ],
+  "titleId": "5655000A"
+ },
+ "xbox-metal-dungeon": {
+  "outros": [
+   "54510013",
+   "58490001"
+  ],
+  "titleId": "494C0001"
+ },
+ "xbox-metal-gear-solid-2-substance": {
+  "titleId": "4B4E0007"
+ },
+ "xbox-metal-slug-3": {
+  "outros": [
+   "534E0002"
+  ],
+  "titleId": "494F0005"
+ },
+ "xbox-metal-slug-4": {
+  "titleId": "534E0005"
+ },
+ "xbox-metal-slug-5": {
+  "titleId": "534E0008"
+ },
+ "xbox-metal-wolf-chaos": {
+  "titleId": "46530006"
+ },
+ "xbox-miami-vice": {
+  "titleId": "44580001"
+ },
+ "xbox-micro-machines": {
+  "titleId": "4947001C"
+ },
+ "xbox-midnight-club-3-dub-edition": {
+  "titleId": "54540079"
+ },
+ "xbox-midnight-club-ii": {
+  "titleId": "54540008"
+ },
+ "xbox-midtown-madness-3": {
+  "titleId": "4D53002A"
+ },
+ "xbox-midway-arcade-treasures": {
+  "titleId": "4D57001C"
+ },
+ "xbox-midway-arcade-treasures-2": {
+  "titleId": "4D570020"
+ },
+ "xbox-midway-arcade-treasures-3": {
+  "titleId": "4D57002D"
+ },
+ "xbox-mike-tyson-heavyweight-boxing": {
+  "titleId": "434D0003"
+ },
+ "xbox-minority-report-everybody-runs": {
+  "titleId": "41560014"
+ },
+ "xbox-mission-impossible-operation-surma": {
+  "titleId": "4947001F"
+ },
+ "xbox-mlb-slugfest-2003": {
+  "titleId": "4D570008"
+ },
+ "xbox-mlb-slugfest-2004": {
+  "titleId": "4D570009"
+ },
+ "xbox-mlb-slugfest-2006": {
+  "titleId": "4D570038"
+ },
+ "xbox-mlb-slugfest-loaded": {
+  "titleId": "4D57001D"
+ },
+ "xbox-mojo": {
+  "titleId": "43560005"
+ },
+ "xbox-monopoly-party": {
+  "titleId": "4947000F"
+ },
+ "xbox-monster-4x4-world-circuit": {
+  "titleId": "55530049"
+ },
+ "xbox-monster-garage": {
+  "titleId": "41560041"
+ },
+ "xbox-mortal-kombat-armageddon": {
+  "titleId": "4D570034"
+ },
+ "xbox-mortal-kombat-deadly-alliance": {
+  "titleId": "4D57000C"
+ },
+ "xbox-mortal-kombat-deception": {
+  "outros": [
+   "4D570023"
+  ],
+  "titleId": "4D570019"
+ },
+ "xbox-mortal-kombat-shaolin-monks": {
+  "titleId": "4D570029"
+ },
+ "xbox-motocross-mania-3": {
+  "titleId": "54540015"
+ },
+ "xbox-motogp-ultimate-racing-technology": {
+  "aprox": true,
+  "titleId": "54510008"
+ },
+ "xbox-motogp-ultimate-racing-technology-2": {
+  "aprox": true,
+  "titleId": "54510016"
+ },
+ "xbox-motogp-ultimate-racing-technology-3": {
+  "titleId": "54510088"
+ },
+ "xbox-mtv-music-generator-3": {
+  "titleId": "434D0029"
+ },
+ "xbox-mtx-mototrax": {
+  "titleId": "41560022"
+ },
+ "xbox-murakumo-renegade-mech-pursuit": {
+  "titleId": "55530016"
+ },
+ "xbox-muzzle-flash": {
+  "titleId": "56430001"
+ },
+ "xbox-mvp-06-ncaa-baseball": {
+  "titleId": "4541008D"
+ },
+ "xbox-mvp-baseball-2003": {
+  "titleId": "4541002D"
+ },
+ "xbox-mvp-baseball-2004": {
+  "titleId": "45410045"
+ },
+ "xbox-mvp-baseball-2005": {
+  "titleId": "45410056"
+ },
+ "xbox-mx-2002-featuring-ricky-carmichael": {
+  "titleId": "54510003"
+ },
+ "xbox-mx-superfly": {
+  "titleId": "54510010"
+ },
+ "xbox-mx-unleashed": {
+  "titleId": "54510021"
+ },
+ "xbox-mx-vs-atv-unleashed": {
+  "titleId": "545100ED"
+ },
+ "xbox-mx-world-tour-featuring-jamie-little": {
+  "titleId": "4356000E"
+ },
+ "xbox-myst-iii-exile": {
+  "outros": [
+   "55530011"
+  ],
+  "titleId": "4D500001"
+ },
+ "xbox-myst-iv-revelation": {
+  "titleId": "5553004A"
+ },
+ "xbox-n-u-d-e-natural-ultimate-digital-experiment": {
+  "titleId": "4D53003C"
+ },
+ "xbox-nakajima-tetsuya-no-othello-seminar": {
+  "titleId": "53550002"
+ },
+ "xbox-namco-museum": {
+  "titleId": "4E4D0007"
+ },
+ "xbox-namco-museum-50th-anniversary": {
+  "titleId": "4E4D0016"
+ },
+ "xbox-narc": {
+  "titleId": "4D570024"
+ },
+ "xbox-nascar-06-total-team-control": {
+  "outros": [
+   "45410093"
+  ],
+  "titleId": "4541008B"
+ },
+ "xbox-nascar-07": {
+  "titleId": "454100A3"
+ },
+ "xbox-nascar-2005-chase-for-the-cup": {
+  "titleId": "45410053"
+ },
+ "xbox-nascar-heat-2002": {
+  "titleId": "49470009"
+ },
+ "xbox-nascar-thunder-2002": {
+  "titleId": "45410002"
+ },
+ "xbox-nascar-thunder-2003": {
+  "titleId": "4541001B"
+ },
+ "xbox-nascar-thunder-2004": {
+  "titleId": "45410031"
+ },
+ "xbox-nba-2k2": {
+  "titleId": "53450002"
+ },
+ "xbox-nba-2k3": {
+  "outros": [
+   "5345001E"
+  ],
+  "titleId": "53450013"
+ },
+ "xbox-nba-2k6": {
+  "outros": [
+   "545400A1"
+  ],
+  "titleId": "54540090"
+ },
+ "xbox-nba-2k7": {
+  "titleId": "545400AE"
+ },
+ "xbox-nba-ballers": {
+  "titleId": "4D570010"
+ },
+ "xbox-nba-ballers-phenom": {
+  "outros": [
+   "5A4302F9"
+  ],
+  "titleId": "4D57002E"
+ },
+ "xbox-nba-inside-drive-2002": {
+  "titleId": "4D530011"
+ },
+ "xbox-nba-inside-drive-2003": {
+  "titleId": "4D530045"
+ },
+ "xbox-nba-inside-drive-2004": {
+  "titleId": "4D53000B"
+ },
+ "xbox-nba-jam": {
+  "titleId": "41430013"
+ },
+ "xbox-nba-live-06": {
+  "titleId": "4541007A"
+ },
+ "xbox-nba-live-07": {
+  "titleId": "454100A1"
+ },
+ "xbox-nba-live-2002": {
+  "titleId": "45410003"
+ },
+ "xbox-nba-live-2003": {
+  "titleId": "4541001C"
+ },
+ "xbox-nba-live-2004": {
+  "titleId": "45410038"
+ },
+ "xbox-nba-live-2005": {
+  "titleId": "45410050"
+ },
+ "xbox-nba-starting-five": {
+  "titleId": "4B4E0012"
+ },
+ "xbox-nba-street-v3": {
+  "titleId": "45410058"
+ },
+ "xbox-nba-street-vol-2": {
+  "titleId": "45410027"
+ },
+ "xbox-ncaa-college-basketball-2k3": {
+  "titleId": "53450018"
+ },
+ "xbox-ncaa-college-football-2k3": {
+  "titleId": "53450010"
+ },
+ "xbox-ncaa-football-06": {
+  "titleId": "45410080"
+ },
+ "xbox-ncaa-football-07": {
+  "titleId": "454100A2"
+ },
+ "xbox-ncaa-football-08": {
+  "titleId": "454100AB"
+ },
+ "xbox-ncaa-football-2003": {
+  "titleId": "4541001D"
+ },
+ "xbox-ncaa-football-2004": {
+  "titleId": "45410035"
+ },
+ "xbox-ncaa-football-2005": {
+  "titleId": "45410051"
+ },
+ "xbox-ncaa-march-madness-06": {
+  "titleId": "45410090"
+ },
+ "xbox-ncaa-march-madness-2004": {
+  "titleId": "45410044"
+ },
+ "xbox-ncaa-march-madness-2005": {
+  "titleId": "45410052"
+ },
+ "xbox-need-for-speed-carbon": {
+  "titleId": "4541009E"
+ },
+ "xbox-need-for-speed-hot-pursuit-2": {
+  "titleId": "45410028"
+ },
+ "xbox-need-for-speed-most-wanted": {
+  "outros": [
+   "45410088"
+  ],
+  "titleId": "4541007B"
+ },
+ "xbox-need-for-speed-underground": {
+  "titleId": "45410047"
+ },
+ "xbox-need-for-speed-underground-2": {
+  "outros": [
+   "4541006F",
+   "45410071"
+  ],
+  "titleId": "4541005A"
+ },
+ "xbox-neighbours-from-hell": {
+  "titleId": "4A570002"
+ },
+ "xbox-new-legends": {
+  "titleId": "54510001"
+ },
+ "xbox-nfl-2k2": {
+  "titleId": "53450006"
+ },
+ "xbox-nfl-2k3": {
+  "outros": [
+   "5345001F"
+  ],
+  "titleId": "53450011"
+ },
+ "xbox-nfl-blitz-2002": {
+  "titleId": "4D570001"
+ },
+ "xbox-nfl-blitz-2003": {
+  "titleId": "4D57000A"
+ },
+ "xbox-nfl-blitz-pro": {
+  "titleId": "4D570014"
+ },
+ "xbox-nfl-fever-2002": {
+  "titleId": "4D530006"
+ },
+ "xbox-nfl-fever-2003": {
+  "outros": [
+   "4D530037"
+  ],
+  "titleId": "4D530028"
+ },
+ "xbox-nfl-fever-2004": {
+  "titleId": "4D53004D"
+ },
+ "xbox-nfl-head-coach": {
+  "titleId": "4541008E"
+ },
+ "xbox-nfl-street": {
+  "titleId": "45410048"
+ },
+ "xbox-nfl-street-2": {
+  "titleId": "45410057"
+ },
+ "xbox-nhl-06": {
+  "titleId": "4541007C"
+ },
+ "xbox-nhl-07": {
+  "titleId": "454100A5"
+ },
+ "xbox-nhl-2002": {
+  "titleId": "45410005"
+ },
+ "xbox-nhl-2003": {
+  "titleId": "4541001E"
+ },
+ "xbox-nhl-2004": {
+  "titleId": "45410030"
+ },
+ "xbox-nhl-2005": {
+  "titleId": "4541004F"
+ },
+ "xbox-nhl-2k3": {
+  "outros": [
+   "53450020"
+  ],
+  "titleId": "53450017"
+ },
+ "xbox-nhl-2k6": {
+  "outros": [
+   "545400A2"
+  ],
+  "titleId": "5454008D"
+ },
+ "xbox-nhl-2k7": {
+  "titleId": "545400AD"
+ },
+ "xbox-nhl-hitz-2002": {
+  "titleId": "4D570003"
+ },
+ "xbox-nhl-hitz-2003": {
+  "titleId": "4D57000B"
+ },
+ "xbox-nhl-hitz-pro": {
+  "titleId": "4D57001A"
+ },
+ "xbox-nhl-rivals-2004": {
+  "titleId": "4D53004E"
+ },
+ "xbox-nickelodeon-party-blast": {
+  "titleId": "49470028"
+ },
+ "xbox-nightcaster-defeat-the-darkness": {
+  "titleId": "4D530008"
+ },
+ "xbox-nightcaster-ii-equinox": {
+  "titleId": "4A410002"
+ },
+ "xbox-ninja-gaiden": {
+  "titleId": "54430003"
+ },
+ "xbox-ninja-gaiden-black": {
+  "titleId": "5443000D"
+ },
+ "xbox-obscure": {
+  "titleId": "4D490009"
+ },
+ "xbox-oddworld-munch-s-oddysee": {
+  "titleId": "4D530001"
+ },
+ "xbox-oddworld-stranger-s-wrath": {
+  "titleId": "4541006D"
+ },
+ "xbox-open-season": {
+  "titleId": "55530061"
+ },
+ "xbox-operation-flashpoint-elite": {
+  "titleId": "434D005A"
+ },
+ "xbox-otogi-2-immortal-warriors": {
+  "titleId": "46530004"
+ },
+ "xbox-otogi-myth-of-demons": {
+  "titleId": "46530002"
+ },
+ "xbox-outlaw-golf": {
+  "outros": [
+   "56550010"
+  ],
+  "titleId": "544D0006"
+ },
+ "xbox-outlaw-golf-2": {
+  "titleId": "54540017"
+ },
+ "xbox-outlaw-golf-9-holes-of-x-mas": {
+  "outros": [
+   "5655801B"
+  ],
+  "titleId": "5655001B"
+ },
+ "xbox-outlaw-golf-9-more-holes-of-x-mas": {
+  "titleId": "53530006"
+ },
+ "xbox-outlaw-tennis": {
+  "titleId": "54540076"
+ },
+ "xbox-outlaw-volleyball": {
+  "outros": [
+   "53530007"
+  ],
+  "titleId": "53530003"
+ },
+ "xbox-outrun-2": {
+  "titleId": "53450036"
+ },
+ "xbox-outrun-2006-coast-2-coast": {
+  "titleId": "53450088"
+ },
+ "xbox-pac-man-world-2": {
+  "titleId": "4E4D0006"
+ },
+ "xbox-pac-man-world-3": {
+  "titleId": "4E4D0017"
+ },
+ "xbox-painkiller-hell-wars": {
+  "titleId": "44430003"
+ },
+ "xbox-panzer-dragoon-orta": {
+  "outros": [
+   "53450007",
+   "5345001C"
+  ],
+  "titleId": "4947002B"
+ },
+ "xbox-panzer-elite-action-fields-of-glory": {
+  "titleId": "4A570009"
+ },
+ "xbox-pariah": {
+  "titleId": "47560001"
+ },
+ "xbox-petit-copter": {
+  "titleId": "41510001"
+ },
+ "xbox-phantasy-star-online-episode-i-and-ii": {
+  "titleId": "4D53004A"
+ },
+ "xbox-phantom-crash": {
+  "outros": [
+   "47450003",
+   "504C0001"
+  ],
+  "titleId": "47450002"
+ },
+ "xbox-phantom-dust": {
+  "outros": [
+   "4D53007D"
+  ],
+  "titleId": "4D530046"
+ },
+ "xbox-pilot-down-behind-enemy-lines": {
+  "titleId": "4F580002"
+ },
+ "xbox-pirates-of-the-caribbean": {
+  "titleId": "42530004"
+ },
+ "xbox-pirates-the-legend-of-black-kat": {
+  "titleId": "45410015"
+ },
+ "xbox-pitfall-the-lost-expedition": {
+  "titleId": "41560018"
+ },
+ "xbox-playboy-the-mansion": {
+  "titleId": "41480002"
+ },
+ "xbox-plus-plumb-2": {
+  "titleId": "544B0004"
+ },
+ "xbox-pocketbike-racer": {
+  "titleId": "4D5300D4"
+ },
+ "xbox-pool-shark-2": {
+  "titleId": "5A440001"
+ },
+ "xbox-powerdrome": {
+  "titleId": "4253000B"
+ },
+ "xbox-predator-concrete-jungle": {
+  "titleId": "56550030"
+ },
+ "xbox-prince-of-persia-the-sands-of-time": {
+  "titleId": "5553001D"
+ },
+ "xbox-prince-of-persia-the-two-thrones": {
+  "titleId": "55530058"
+ },
+ "xbox-prince-of-persia-warrior-within": {
+  "titleId": "5553003B"
+ },
+ "xbox-prisoner-of-war": {
+  "titleId": "434D0008"
+ },
+ "xbox-pro-evolution-soccer-4": {
+  "titleId": "4B4E0022"
+ },
+ "xbox-pro-evolution-soccer-5": {
+  "titleId": "4B4E0030"
+ },
+ "xbox-pro-fishing-challenge": {
+  "titleId": "41540003"
+ },
+ "xbox-project-gotham-racing": {
+  "titleId": "4D530003"
+ },
+ "xbox-project-gotham-racing-2": {
+  "outros": [
+   "4D530079"
+  ],
+  "titleId": "4D53004B"
+ },
+ "xbox-project-snowblind": {
+  "outros": [
+   "5A430265"
+  ],
+  "titleId": "45530019"
+ },
+ "xbox-prostroke-golf-world-tour-2007": {
+  "titleId": "4F580004"
+ },
+ "xbox-psi-ops-the-mindgate-conspiracy": {
+  "titleId": "4D570016"
+ },
+ "xbox-psychonauts": {
+  "titleId": "4D4A0012"
+ },
+ "xbox-pulse-racer": {
+  "titleId": "4A410001"
+ },
+ "xbox-pump-it-up-exceed": {
+  "titleId": "41440002"
+ },
+ "xbox-pure-pinball": {
+  "titleId": "54540011"
+ },
+ "xbox-puyo-pop-fever": {
+  "aprox": true,
+  "titleId": "53450027"
+ },
+ "xbox-quantum-redshift": {
+  "titleId": "4D530015"
+ },
+ "xbox-r-racing-evolution": {
+  "titleId": "4E4D0008"
+ },
+ "xbox-rallisport-challenge": {
+  "outros": [
+   "4D530033"
+  ],
+  "titleId": "4D53000F"
+ },
+ "xbox-rallisport-challenge-2": {
+  "titleId": "4D530039"
+ },
+ "xbox-rally-fusion-race-of-champions": {
+  "titleId": "41560009"
+ },
+ "xbox-rapala-pro-fishing": {
+  "titleId": "4156003A"
+ },
+ "xbox-rayman-3-hoodlum-havoc": {
+  "titleId": "55530002"
+ },
+ "xbox-rayman-arena": {
+  "titleId": "55530003"
+ },
+ "xbox-raze-s-hell": {
+  "titleId": "4D4A0011"
+ },
+ "xbox-real-world-golf": {
+  "titleId": "49410001"
+ },
+ "xbox-red-dead-revolver": {
+  "titleId": "5454001A"
+ },
+ "xbox-red-faction-ii": {
+  "titleId": "54510005"
+ },
+ "xbox-red-ninja-end-of-honor": {
+  "titleId": "56550027"
+ },
+ "xbox-redcard-2003": {
+  "titleId": "4D57000F"
+ },
+ "xbox-reign-of-fire": {
+  "titleId": "424D0002"
+ },
+ "xbox-rent-a-hero-no-1": {
+  "titleId": "5345001D"
+ },
+ "xbox-reservoir-dogs": {
+  "titleId": "534300FF"
+ },
+ "xbox-return-to-castle-wolfenstein-tides-of-war": {
+  "titleId": "41560010"
+ },
+ "xbox-richard-burns-rally": {
+  "titleId": "53430005"
+ },
+ "xbox-roadkill": {
+  "titleId": "4D570018"
+ },
+ "xbox-robin-hood-defender-of-the-crown": {
+  "titleId": "4343000C"
+ },
+ "xbox-robocop": {
+  "titleId": "54530005"
+ },
+ "xbox-robot-wars-extreme-destruction": {
+  "titleId": "42570001"
+ },
+ "xbox-robotech-battlecry": {
+  "titleId": "544D0002"
+ },
+ "xbox-robotech-invasion": {
+  "outros": [
+   "5454007F"
+  ],
+  "titleId": "5454001B"
+ },
+ "xbox-robots": {
+  "titleId": "56550037"
+ },
+ "xbox-rocky": {
+  "outros": [
+   "55530014"
+  ],
+  "titleId": "52410007"
+ },
+ "xbox-rocky-legends": {
+  "titleId": "55530034"
+ },
+ "xbox-rogue-ops": {
+  "outros": [
+   "4B420004"
+  ],
+  "titleId": "4B420003"
+ },
+ "xbox-rogue-trooper": {
+  "titleId": "5343000E"
+ },
+ "xbox-rollercoaster-tycoon": {
+  "titleId": "4947002E"
+ },
+ "xbox-rolling": {
+  "titleId": "53430007"
+ },
+ "xbox-rugby-06": {
+  "titleId": "45410087"
+ },
+ "xbox-rugby-2005": {
+  "titleId": "45410061"
+ },
+ "xbox-rugby-challenge-2006": {
+  "titleId": "48500005"
+ },
+ "xbox-rugby-league": {
+  "titleId": "48450001"
+ },
+ "xbox-rugby-league-2": {
+  "titleId": "48450005"
+ },
+ "xbox-run-like-hell": {
+  "aprox": true,
+  "titleId": "49500006"
+ },
+ "xbox-samurai-shodown-v": {
+  "titleId": "534E0004"
+ },
+ "xbox-samurai-warriors": {
+  "titleId": "4B4F0006"
+ },
+ "xbox-scaler": {
+  "titleId": "5454007A"
+ },
+ "xbox-scar-squadra-corse-alfa-romeo": {
+  "titleId": "4C530002"
+ },
+ "xbox-scarface-the-world-is-yours": {
+  "titleId": "5655003F"
+ },
+ "xbox-scooby-doo-mystery-mayhem": {
+  "titleId": "5451000E"
+ },
+ "xbox-scooby-doo-night-of-100-frights": {
+  "titleId": "5451001F"
+ },
+ "xbox-scooby-doo-unmasked": {
+  "titleId": "545100F7"
+ },
+ "xbox-seablade": {
+  "outros": [
+   "56550017"
+  ],
+  "titleId": "544D0009"
+ },
+ "xbox-second-sight": {
+  "titleId": "434D0047"
+ },
+ "xbox-secret-weapons-over-normandy": {
+  "titleId": "4C410006"
+ },
+ "xbox-sega-gt-2002": {
+  "outros": [
+   "53450003"
+  ],
+  "titleId": "4947002C"
+ },
+ "xbox-sega-gt-online": {
+  "titleId": "53450021"
+ },
+ "xbox-sega-soccer-slam": {
+  "outros": [
+   "53450014"
+  ],
+  "titleId": "49470029"
+ },
+ "xbox-sensible-soccer-2006": {
+  "titleId": "434D005B"
+ },
+ "xbox-sentou-yousei-yukikaze-yousei-no-mau-sora": {
+  "titleId": "41510003"
+ },
+ "xbox-serious-sam": {
+  "titleId": "54540004"
+ },
+ "xbox-serious-sam-2": {
+  "aprox": true,
+  "titleId": "5454000D"
+ },
+ "xbox-shadow-of-memories": {
+  "titleId": "4B4E000E"
+ },
+ "xbox-shadow-ops-red-mercury": {
+  "outros": [
+   "49470041"
+  ],
+  "titleId": "49470025"
+ },
+ "xbox-shadow-the-hedgehog": {
+  "titleId": "53450086"
+ },
+ "xbox-shattered-union": {
+  "titleId": "54540083"
+ },
+ "xbox-shellshock-nam-67": {
+  "titleId": "45530013"
+ },
+ "xbox-shenmue-ii": {
+  "titleId": "4D530032"
+ },
+ "xbox-shikigami-no-shiro": {
+  "titleId": "4D500002"
+ },
+ "xbox-shikigami-no-shiro-evolution": {
+  "titleId": "4B490001"
+ },
+ "xbox-shikigami-no-shiro-ii": {
+  "titleId": "4B490002"
+ },
+ "xbox-shin-megami-tensei-nine": {
+  "titleId": "41540002"
+ },
+ "xbox-shinchou-mahjong": {
+  "titleId": "45460001"
+ },
+ "xbox-showdown-legends-of-wrestling": {
+  "titleId": "4143001D"
+ },
+ "xbox-shrek": {
+  "titleId": "544D0001"
+ },
+ "xbox-shrek-2": {
+  "titleId": "41560037"
+ },
+ "xbox-shrek-super-party": {
+  "titleId": "544D0004"
+ },
+ "xbox-sid-meier-s-pirates": {
+  "titleId": "5454008F"
+ },
+ "xbox-silent-hill-4-the-room": {
+  "titleId": "4B4E001F"
+ },
+ "xbox-silent-scope-complete": {
+  "titleId": "4B4E001A"
+ },
+ "xbox-ski-racing-2005": {
+  "titleId": "4A570005"
+ },
+ "xbox-ski-racing-2006": {
+  "titleId": "4A57000A"
+ },
+ "xbox-slam-tennis": {
+  "titleId": "49470011"
+ },
+ "xbox-smashing-drive": {
+  "titleId": "4E4D0001"
+ },
+ "xbox-sneak-king": {
+  "titleId": "4D5300D3"
+ },
+ "xbox-sneakers": {
+  "titleId": "4D530023"
+ },
+ "xbox-sniper-elite": {
+  "titleId": "4D49000D"
+ },
+ "xbox-snk-vs-capcom-svc-chaos": {
+  "titleId": "534E0001"
+ },
+ "xbox-soldier-of-fortune-ii-double-helix": {
+  "titleId": "4156001B"
+ },
+ "xbox-sonic-heroes": {
+  "titleId": "5345002B"
+ },
+ "xbox-sonic-mega-collection-plus": {
+  "titleId": "5345003C"
+ },
+ "xbox-sonic-riders": {
+  "titleId": "53450087"
+ },
+ "xbox-soulcalibur-ii": {
+  "titleId": "4E4D0003"
+ },
+ "xbox-spartan-total-warrior": {
+  "outros": [
+   "5345008A",
+   "5345008B"
+  ],
+  "titleId": "53450084"
+ },
+ "xbox-spawn-armageddon": {
+  "titleId": "4E4D000C"
+ },
+ "xbox-speed-kings": {
+  "titleId": "4143000B"
+ },
+ "xbox-sphinx-and-the-cursed-mummy": {
+  "titleId": "54510023"
+ },
+ "xbox-spider-man": {
+  "outros": [
+   "4343000A"
+  ],
+  "titleId": "41560006"
+ },
+ "xbox-spider-man-2": {
+  "titleId": "4156002B"
+ },
+ "xbox-spikeout-battle-street": {
+  "titleId": "53450029"
+ },
+ "xbox-splashdown": {
+  "titleId": "4947001B"
+ },
+ "xbox-splat-magazine-renegade-paintball": {
+  "titleId": "54540093"
+ },
+ "xbox-spy-vs-spy": {
+  "outros": [
+   "54540084"
+  ],
+  "titleId": "5454007C"
+ },
+ "xbox-spyhunter": {
+  "titleId": "4D570004"
+ },
+ "xbox-spyhunter-2": {
+  "titleId": "4D57001B"
+ },
+ "xbox-spyhunter-nowhere-to-run": {
+  "titleId": "4D570037"
+ },
+ "xbox-spyro-a-hero-s-tail": {
+  "titleId": "56550034"
+ },
+ "xbox-ssx-3": {
+  "titleId": "4541003C"
+ },
+ "xbox-ssx-on-tour": {
+  "titleId": "45410082"
+ },
+ "xbox-ssx-tricky": {
+  "titleId": "45410004"
+ },
+ "xbox-stacked-with-daniel-negreanu": {
+  "titleId": "4D4D0001"
+ },
+ "xbox-stake-fortune-fighters": {
+  "aprox": true,
+  "titleId": "4D440004"
+ },
+ "xbox-star-trek-shattered-universe": {
+  "titleId": "544D0010"
+ },
+ "xbox-star-wars-battlefront": {
+  "titleId": "4C410011"
+ },
+ "xbox-star-wars-battlefront-ii": {
+  "titleId": "4C41001A"
+ },
+ "xbox-star-wars-episode-iii-revenge-of-the-sith": {
+  "titleId": "4C410017"
+ },
+ "xbox-star-wars-jedi-knight-ii-jedi-outcast": {
+  "outros": [
+   "4C410009"
+  ],
+  "titleId": "41560015"
+ },
+ "xbox-star-wars-jedi-knight-jedi-academy": {
+  "titleId": "4C41000B"
+ },
+ "xbox-star-wars-jedi-starfighter": {
+  "titleId": "4C410005"
+ },
+ "xbox-star-wars-knights-of-the-old-republic": {
+  "titleId": "4C410003"
+ },
+ "xbox-star-wars-knights-of-the-old-republic-ii-the-sith-lords": {
+  "titleId": "4C410014"
+ },
+ "xbox-star-wars-obi-wan": {
+  "outros": [
+   "43540001",
+   "45410022",
+   "4C410001",
+   "5553000F"
+  ],
+  "titleId": "4156000F"
+ },
+ "xbox-star-wars-republic-commando": {
+  "outros": [
+   "4C410019"
+  ],
+  "titleId": "4C410013"
+ },
+ "xbox-star-wars-starfighter-special-edition": {
+  "titleId": "4C410002"
+ },
+ "xbox-star-wars-the-clone-wars": {
+  "titleId": "4C410004"
+ },
+ "xbox-starsky-and-hutch": {
+  "titleId": "454D0005"
+ },
+ "xbox-state-of-emergency": {
+  "titleId": "54540006"
+ },
+ "xbox-steel-battalion": {
+  "titleId": "43430002"
+ },
+ "xbox-steel-battalion-line-of-contact": {
+  "titleId": "43430009"
+ },
+ "xbox-still-life": {
+  "titleId": "4D49000B"
+ },
+ "xbox-stolen": {
+  "titleId": "48500001"
+ },
+ "xbox-street-fighter-anniversary-collection": {
+  "titleId": "4343000F"
+ },
+ "xbox-street-hoops": {
+  "titleId": "41560003"
+ },
+ "xbox-street-racing-syndicate": {
+  "aprox": true,
+  "titleId": "4E4D0013"
+ },
+ "xbox-strike-force-bowling": {
+  "titleId": "43560008"
+ },
+ "xbox-stubbs-the-zombie-in-rebel-without-a-pulse": {
+  "titleId": "41590002"
+ },
+ "xbox-sudeki": {
+  "titleId": "4D53000A"
+ },
+ "xbox-super-bubble-pop": {
+  "titleId": "4A410004"
+ },
+ "xbox-super-monkey-ball-deluxe": {
+  "titleId": "53450038"
+ },
+ "xbox-superman-returns": {
+  "titleId": "454100A0"
+ },
+ "xbox-superman-the-man-of-steel": {
+  "titleId": "49470016"
+ },
+ "xbox-swat-global-strike-team": {
+  "titleId": "56560025"
+ },
+ "xbox-sx-superstar": {
+  "titleId": "41430010"
+ },
+ "xbox-syberia": {
+  "titleId": "4D490006"
+ },
+ "xbox-syberia-ii": {
+  "titleId": "4D490008"
+ },
+ "xbox-taito-legends": {
+  "titleId": "454D001C"
+ },
+ "xbox-taito-legends-2": {
+  "titleId": "454D0022"
+ },
+ "xbox-takahashi-junko-no-mahjong-seminar": {
+  "titleId": "53550005"
+ },
+ "xbox-tao-feng-fist-of-the-lotus": {
+  "titleId": "4D530014"
+ },
+ "xbox-taz-wanted": {
+  "titleId": "4947000D"
+ },
+ "xbox-tecmo-classic-arcade": {
+  "titleId": "5443000E"
+ },
+ "xbox-teen-titans": {
+  "titleId": "4D4A0013"
+ },
+ "xbox-teenage-mutant-ninja-turtles": {
+  "titleId": "4B4E001B"
+ },
+ "xbox-teenage-mutant-ninja-turtles-2-battle-nexus": {
+  "titleId": "4B4E0023"
+ },
+ "xbox-teenage-mutant-ninja-turtles-3-mutant-nightmare": {
+  "titleId": "4B4E002A"
+ },
+ "xbox-tenchu-return-from-darkness": {
+  "outros": [
+   "41560036"
+  ],
+  "titleId": "41560026"
+ },
+ "xbox-tenerezza": {
+  "titleId": "41500001"
+ },
+ "xbox-tennis-masters-series-2003": {
+  "titleId": "4D490003"
+ },
+ "xbox-terminator-3-rise-of-the-machines": {
+  "titleId": "4947003B"
+ },
+ "xbox-terminator-3-the-redemption": {
+  "titleId": "4947003E"
+ },
+ "xbox-test-drive": {
+  "titleId": "49470007"
+ },
+ "xbox-test-drive-eve-of-destruction": {
+  "titleId": "49470075"
+ },
+ "xbox-test-drive-off-road-wide-open": {
+  "titleId": "49470001"
+ },
+ "xbox-tetris-worlds": {
+  "outros": [
+   "5451000A",
+   "5451001C"
+  ],
+  "titleId": "53550006"
+ },
+ "xbox-the-bard-s-tale": {
+  "titleId": "49580001"
+ },
+ "xbox-the-baseball-2002-battle-ball-park-sengen": {
+  "titleId": "4B410002"
+ },
+ "xbox-the-bible-game": {
+  "titleId": "43560011"
+ },
+ "xbox-the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe": {
+  "titleId": "42560003"
+ },
+ "xbox-the-chronicles-of-riddick-escape-from-butcher-bay": {
+  "outros": [
+   "5655003B"
+  ],
+  "titleId": "56550026"
+ },
+ "xbox-the-da-vinci-code": {
+  "titleId": "545400AB"
+ },
+ "xbox-the-dukes-of-hazzard-return-of-the-general-lee": {
+  "titleId": "5553003A"
+ },
+ "xbox-the-elder-scrolls-iii-morrowind": {
+  "outros": [
+   "55530015"
+  ],
+  "titleId": "42530001"
+ },
+ "xbox-the-fairly-oddparents-breakin-da-rules": {
+  "titleId": "54510020"
+ },
+ "xbox-the-godfather": {
+  "titleId": "4541007D"
+ },
+ "xbox-the-great-escape": {
+  "titleId": "53430003"
+ },
+ "xbox-the-guy-game": {
+  "titleId": "5454007B"
+ },
+ "xbox-the-house-of-the-dead-iii": {
+  "titleId": "53450008"
+ },
+ "xbox-the-hustle-detroit-streets": {
+  "titleId": "4156005B"
+ },
+ "xbox-the-incredible-hulk-ultimate-destruction": {
+  "titleId": "56550039"
+ },
+ "xbox-the-italian-job": {
+  "titleId": "4553000E"
+ },
+ "xbox-the-king-of-fighters-2002": {
+  "titleId": "534E0006"
+ },
+ "xbox-the-king-of-fighters-2003": {
+  "titleId": "534E0003"
+ },
+ "xbox-the-king-of-fighters-neowave": {
+  "titleId": "534E000A"
+ },
+ "xbox-the-legend-of-spyro-a-new-beginning": {
+  "titleId": "5655004A"
+ },
+ "xbox-the-lord-of-the-rings-the-fellowship-of-the-ring": {
+  "outros": [
+   "56560005"
+  ],
+  "titleId": "56550004"
+ },
+ "xbox-the-lord-of-the-rings-the-return-of-the-king": {
+  "titleId": "4541003E"
+ },
+ "xbox-the-lord-of-the-rings-the-third-age": {
+  "titleId": "4541005F"
+ },
+ "xbox-the-lord-of-the-rings-the-two-towers": {
+  "titleId": "45410010"
+ },
+ "xbox-the-matrix-path-of-neo": {
+  "titleId": "4947007C"
+ },
+ "xbox-the-punisher": {
+  "titleId": "54510018"
+ },
+ "xbox-the-simpsons-hit-and-run": {
+  "titleId": "56550015"
+ },
+ "xbox-the-simpsons-road-rage": {
+  "titleId": "45410013"
+ },
+ "xbox-the-sims": {
+  "titleId": "4541002F"
+ },
+ "xbox-the-sims-2": {
+  "titleId": "4541038B"
+ },
+ "xbox-the-sims-bustin-out": {
+  "titleId": "45410043"
+ },
+ "xbox-the-suffering": {
+  "titleId": "4D570015"
+ },
+ "xbox-the-suffering-ties-that-bind": {
+  "titleId": "4D57002C"
+ },
+ "xbox-the-terminator-dawn-of-fate": {
+  "titleId": "49470026"
+ },
+ "xbox-the-thing": {
+  "outros": [
+   "56560003"
+  ],
+  "titleId": "5655000D"
+ },
+ "xbox-the-urbz-sims-in-the-city": {
+  "titleId": "45410060"
+ },
+ "xbox-the-warriors": {
+  "titleId": "5454009B"
+ },
+ "xbox-the-wild-rings": {
+  "titleId": "4D530048"
+ },
+ "xbox-thief-deadly-shadows": {
+  "titleId": "45530004"
+ },
+ "xbox-thousand-land": {
+  "titleId": "46530003"
+ },
+ "xbox-thrillville": {
+  "titleId": "4C410022"
+ },
+ "xbox-tiger-woods-pga-tour-06": {
+  "titleId": "4541007E"
+ },
+ "xbox-tiger-woods-pga-tour-07": {
+  "titleId": "454100A4"
+ },
+ "xbox-tiger-woods-pga-tour-2003": {
+  "titleId": "45410021"
+ },
+ "xbox-tiger-woods-pga-tour-2004": {
+  "titleId": "4541003A"
+ },
+ "xbox-tiger-woods-pga-tour-2005": {
+  "titleId": "45410054"
+ },
+ "xbox-timesplitters-2": {
+  "titleId": "4553000A"
+ },
+ "xbox-timesplitters-future-perfect": {
+  "titleId": "45410066"
+ },
+ "xbox-tmnt-mutant-melee": {
+  "titleId": "4B4E0020"
+ },
+ "xbox-toca-race-driver": {
+  "outros": [
+   "434D000E"
+  ],
+  "titleId": "434D0002"
+ },
+ "xbox-toca-race-driver-2": {
+  "titleId": "434D0011"
+ },
+ "xbox-toca-race-driver-3": {
+  "titleId": "434D0050"
+ },
+ "xbox-toejam-and-earl-iii-mission-to-earth": {
+  "titleId": "5345000F"
+ },
+ "xbox-tom-and-jerry-in-war-of-the-whiskers": {
+  "titleId": "4E4B0001"
+ },
+ "xbox-tom-clancy-s-ghost-recon": {
+  "outros": [
+   "5553000A"
+  ],
+  "titleId": "55530006"
+ },
+ "xbox-tom-clancy-s-ghost-recon-2": {
+  "titleId": "55530005"
+ },
+ "xbox-tom-clancy-s-ghost-recon-2-summit-strike": {
+  "titleId": "5553004D"
+ },
+ "xbox-tom-clancy-s-ghost-recon-advanced-warfighter": {
+  "titleId": "55530054"
+ },
+ "xbox-tom-clancy-s-ghost-recon-island-thunder": {
+  "titleId": "55530007"
+ },
+ "xbox-tom-clancy-s-rainbow-six-3": {
+  "outros": [
+   "5553001F"
+  ],
+  "titleId": "55530013"
+ },
+ "xbox-tom-clancy-s-rainbow-six-3-black-arrow": {
+  "titleId": "55530037"
+ },
+ "xbox-tom-clancy-s-rainbow-six-critical-hour": {
+  "titleId": "5553005F"
+ },
+ "xbox-tom-clancy-s-rainbow-six-lockdown": {
+  "titleId": "55530048"
+ },
+ "xbox-tom-clancy-s-splinter-cell": {
+  "titleId": "5553000C"
+ },
+ "xbox-tom-clancy-s-splinter-cell-chaos-theory": {
+  "outros": [
+   "55530041"
+  ],
+  "titleId": "55530038"
+ },
+ "xbox-tom-clancy-s-splinter-cell-double-agent": {
+  "titleId": "5553005E"
+ },
+ "xbox-tom-clancy-s-splinter-cell-pandora-tomorrow": {
+  "titleId": "55530019"
+ },
+ "xbox-tony-hawk-s-american-wasteland": {
+  "titleId": "41560049"
+ },
+ "xbox-tony-hawk-s-pro-skater-2x": {
+  "titleId": "41560001"
+ },
+ "xbox-tony-hawk-s-pro-skater-3": {
+  "titleId": "41560004"
+ },
+ "xbox-tony-hawk-s-pro-skater-4": {
+  "titleId": "41560017"
+ },
+ "xbox-tony-hawk-s-project-8": {
+  "titleId": "4156005E"
+ },
+ "xbox-tony-hawk-s-underground": {
+  "titleId": "4156002D"
+ },
+ "xbox-tony-hawk-s-underground-2": {
+  "titleId": "4156003C"
+ },
+ "xbox-top-gear-rpm-tuning": {
+  "titleId": "4B420007"
+ },
+ "xbox-top-spin": {
+  "titleId": "4D530035"
+ },
+ "xbox-torino-2006": {
+  "titleId": "545400A9"
+ },
+ "xbox-tork-prehistoric-punk": {
+  "titleId": "55530040"
+ },
+ "xbox-total-club-manager-2004": {
+  "titleId": "45410041"
+ },
+ "xbox-total-club-manager-2005": {
+  "titleId": "45410065"
+ },
+ "xbox-total-immersion-racing": {
+  "outros": [
+   "56550013"
+  ],
+  "titleId": "454D0003"
+ },
+ "xbox-total-overdose": {
+  "titleId": "53430010"
+ },
+ "xbox-totaled": {
+  "titleId": "4D4A0002"
+ },
+ "xbox-touge-r": {
+  "titleId": "41540001"
+ },
+ "xbox-toxic-grind": {
+  "titleId": "54510007"
+ },
+ "xbox-transworld-snowboarding": {
+  "titleId": "49470004"
+ },
+ "xbox-transworld-surf": {
+  "titleId": "49470005"
+ },
+ "xbox-triangle-again": {
+  "titleId": "4B4B0001"
+ },
+ "xbox-triangle-again-2": {
+  "titleId": "4B4B0002"
+ },
+ "xbox-trigger-man": {
+  "titleId": "43560009"
+ },
+ "xbox-triple-play-2002": {
+  "titleId": "45410009"
+ },
+ "xbox-trivial-pursuit-unhinged": {
+  "titleId": "4947003D"
+ },
+ "xbox-tron-2-0-killer-app": {
+  "titleId": "42560001"
+ },
+ "xbox-true-crime-new-york-city": {
+  "titleId": "41560045"
+ },
+ "xbox-true-crime-streets-of-la": {
+  "titleId": "4156000E"
+ },
+ "xbox-turok-evolution": {
+  "outros": [
+   "5A420300"
+  ],
+  "titleId": "41430004"
+ },
+ "xbox-ty-the-tasmanian-tiger": {
+  "titleId": "45410029"
+ },
+ "xbox-ty-the-tasmanian-tiger-2-bush-rescue": {
+  "titleId": "45410063"
+ },
+ "xbox-uefa-champions-league-2004-2005": {
+  "titleId": "45410070"
+ },
+ "xbox-ultimate-beach-soccer": {
+  "titleId": "57450001"
+ },
+ "xbox-ultimate-pro-pinball": {
+  "titleId": "454D001D"
+ },
+ "xbox-ultimate-spider-man": {
+  "titleId": "41560035"
+ },
+ "xbox-ultra-bust-a-move": {
+  "titleId": "4D4A000C"
+ },
+ "xbox-umezawa-yukari-no-igo-seminar": {
+  "titleId": "53550003"
+ },
+ "xbox-unreal-championship": {
+  "titleId": "49470024"
+ },
+ "xbox-unreal-championship-2-the-liandri-conflict": {
+  "outros": [
+   "4D570028"
+  ],
+  "titleId": "4D570021"
+ },
+ "xbox-unreal-ii-the-awakening": {
+  "titleId": "4947003C"
+ },
+ "xbox-urban-chaos-riot-response": {
+  "titleId": "534300F7"
+ },
+ "xbox-v-rally-3": {
+  "titleId": "49470034"
+ },
+ "xbox-van-helsing": {
+  "titleId": "56550029"
+ },
+ "xbox-vexx": {
+  "titleId": "41430005"
+ },
+ "xbox-vietcong-purple-haze": {
+  "titleId": "5454000A"
+ },
+ "xbox-virtual-pool-tournament-edition": {
+  "titleId": "54540016"
+ },
+ "xbox-volvo-drive-for-life": {
+  "titleId": "4D530084"
+ },
+ "xbox-voodoo-vince": {
+  "titleId": "4D53005F"
+ },
+ "xbox-wakeboarding-unleashed-featuring-shaun-murray": {
+  "titleId": "4156000D"
+ },
+ "xbox-wallace-and-gromit-in-project-zoo": {
+  "titleId": "424D0003"
+ },
+ "xbox-wallace-and-gromit-the-curse-of-the-were-rabbit": {
+  "titleId": "4B4E0034"
+ },
+ "xbox-warpath": {
+  "titleId": "4756000A"
+ },
+ "xbox-whacked": {
+  "titleId": "4D530027"
+ },
+ "xbox-whiplash": {
+  "titleId": "45530011"
+ },
+ "xbox-whiteout": {
+  "titleId": "4B4E0001"
+ },
+ "xbox-winback-2-project-poseidon": {
+  "titleId": "4B4F0008"
+ },
+ "xbox-wings-of-war": {
+  "titleId": "54540018"
+ },
+ "xbox-without-warning": {
+  "titleId": "43430014"
+ },
+ "xbox-world-championship-poker": {
+  "titleId": "4356000D"
+ },
+ "xbox-world-championship-poker-2-featuring-howard-lederer": {
+  "titleId": "43560010"
+ },
+ "xbox-world-championship-pool-2004": {
+  "titleId": "4A410007"
+ },
+ "xbox-world-championship-rugby": {
+  "aprox": true,
+  "titleId": "4143001F"
+ },
+ "xbox-world-championship-snooker-2003": {
+  "titleId": "434D000D"
+ },
+ "xbox-world-championship-snooker-2004": {
+  "titleId": "434D002A"
+ },
+ "xbox-world-poker-tour": {
+  "titleId": "54540087"
+ },
+ "xbox-world-racing": {
+  "titleId": "544D0005"
+ },
+ "xbox-world-racing-2": {
+  "titleId": "544D0012"
+ },
+ "xbox-world-series-baseball": {
+  "titleId": "5345000E"
+ },
+ "xbox-world-series-baseball-2k3": {
+  "titleId": "5345001A"
+ },
+ "xbox-world-series-of-poker": {
+  "titleId": "41560054"
+ },
+ "xbox-world-snooker-championship-2005": {
+  "titleId": "53450081"
+ },
+ "xbox-world-war-ii-combat-iwo-jima": {
+  "titleId": "4756000B"
+ },
+ "xbox-world-war-ii-combat-road-to-berlin": {
+  "titleId": "47560009"
+ },
+ "xbox-worms-3d": {
+  "titleId": "5345002A"
+ },
+ "xbox-worms-4-mayhem": {
+  "outros": [
+   "4D4A0017"
+  ],
+  "titleId": "434D0052"
+ },
+ "xbox-worms-forts-under-siege": {
+  "titleId": "53450035"
+ },
+ "xbox-wrath-unleashed": {
+  "titleId": "4C41000F"
+ },
+ "xbox-wreckless-the-yakuza-missions": {
+  "outros": [
+   "4156000C"
+  ],
+  "titleId": "4156000A"
+ },
+ "xbox-wwe-raw-2": {
+  "titleId": "5451000D"
+ },
+ "xbox-wwe-wrestlemania-21": {
+  "outros": [
+   "545100F9"
+  ],
+  "titleId": "54510024"
+ },
+ "xbox-wwf-raw": {
+  "titleId": "54510002"
+ },
+ "xbox-x-men-legends": {
+  "titleId": "4156001E"
+ },
+ "xbox-x-men-legends-ii-rise-of-apocalypse": {
+  "titleId": "41560047"
+ },
+ "xbox-x-men-next-dimension": {
+  "titleId": "41560007"
+ },
+ "xbox-x-men-the-official-game": {
+  "titleId": "41560046"
+ },
+ "xbox-xbox-music-mixer": {
+  "titleId": "4D53005A"
+ },
+ "xbox-xgra-extreme-g-racing-association": {
+  "titleId": "41430014"
+ },
+ "xbox-xiaolin-showdown": {
+  "titleId": "4B4E0038"
+ },
+ "xbox-xiii": {
+  "titleId": "55530009"
+ },
+ "xbox-xyanide": {
+  "titleId": "50430001"
+ },
+ "xbox-yager": {
+  "outros": [
+   "54510006"
+  ],
+  "titleId": "4B420006"
+ },
+ "xbox-yetisports-arctic-adventures": {
+  "titleId": "4A570004"
+ },
+ "xbox-yonenaga-kunio-no-shougi-seminar": {
+  "titleId": "53550004"
+ },
+ "xbox-yourself-fitness": {
+  "titleId": "52440001"
+ },
+ "xbox-yu-gi-oh-the-dawn-of-destiny": {
+  "titleId": "4B4E001E"
+ },
+ "xbox-zapper-one-wicked-cricket": {
+  "aprox": true,
+  "titleId": "49470012"
+ },
+ "xbox-zathura": {
+  "outros": [
+   "545400A7"
+  ],
+  "titleId": "5454008C"
+ },
+ "xbox-zillernet": {
+  "titleId": "53540001"
+ }
+}
