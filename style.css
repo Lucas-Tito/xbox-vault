@@ -1,15 +1,16 @@
 /* Xbox Vault: catálogo de Xbox 360, Xbox original e homebrew */
 
-/* IBM Plex, a mesma da previa do CollectionUI. Os arquivos moram no projeto: o
-   netcheck garante que a pagina nao chama dominio externo, entao Google Fonts
-   esta fora. So o subconjunto latino, que cobre o portugues inteiro; glifo de
-   fora dele (seta, visto, estrela) cai na fonte do sistema sozinho. */
-@font-face{font-family:"IBM Plex Sans";font-weight:400;font-display:swap;src:url(fonts/plex-sans-400.woff2) format("woff2")}
-@font-face{font-family:"IBM Plex Sans";font-weight:500;font-display:swap;src:url(fonts/plex-sans-500.woff2) format("woff2")}
-@font-face{font-family:"IBM Plex Sans";font-weight:600;font-display:swap;src:url(fonts/plex-sans-600.woff2) format("woff2")}
+/* As fontes moram no projeto: o netcheck garante que a pagina nao chama dominio
+   externo, entao Google Fonts esta fora. So o subconjunto latino, que cobre o
+   portugues inteiro; glifo de fora dele (seta, visto, estrela) cai na fonte do
+   sistema sozinho. Montserrat no texto; IBM Plex Mono so nos numeros que sao dado
+   (contagem, Title ID), onde o algarismo alinhado ajuda; Archivo Black no nome. */
+@font-face{font-family:"Montserrat";font-weight:400;font-display:swap;src:url(fonts/montserrat-400.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-weight:500;font-display:swap;src:url(fonts/montserrat-500.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-weight:600;font-display:swap;src:url(fonts/montserrat-600.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-weight:700;font-display:swap;src:url(fonts/montserrat-700.woff2) format("woff2")}
 @font-face{font-family:"IBM Plex Mono";font-weight:400;font-display:swap;src:url(fonts/plex-mono-400.woff2) format("woff2")}
 @font-face{font-family:"IBM Plex Mono";font-weight:500;font-display:swap;src:url(fonts/plex-mono-500.woff2) format("woff2")}
-/* So no nome do site: o Plex no logo era o que mais tinha cara de gerado. */
 @font-face{font-family:"Archivo Black";font-weight:400;font-display:swap;src:url(fonts/archivo-black-400.woff2) format("woff2")}
 
 /* Paleta da previa do CollectionUI, que por sua vez copia o app/main.cpp:
@@ -27,7 +28,7 @@
    cravado, de quando o cabecalho tinha uma linha so: com o resumo embaixo ele
    passou dessa altura, e o ano grudava escondido atras dele. */
   --topo:84px;
-  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
+  --sans:"Montserrat",-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   /* O tom do card da previa (grupo30): a base rgb(18,28,22) com o gradiente
      vertical por cima, mais escuro em cima. Aqui ja vai composto. */
@@ -272,7 +273,8 @@ select:focus{border-color:var(--green)}
 #main > section:first-child .year{margin-top:0}
 /* A linha do primeiro ano dobrava com a linha logo acima, a das abas. */
 #main > section:first-child .year .ln{visibility:hidden}
-.year h2{margin:0;font-size:24px;font-weight:600;font-family:var(--mono)}
+/* O ano e titulo de secao, e nao dado: vai na fonte do texto, e nao na mono. */
+.year h2{margin:0;font-size:24px;font-weight:700}
 .year .cnt{font-size:13px;color:var(--dim)}
 .year .ln{flex:1;height:1px;background:var(--line)}
 
