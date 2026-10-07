@@ -38,6 +38,7 @@
   $('.menu-item.area[data-area=cui]').click();
   await ate(() => window.XBX_XBLIG); await wait(400);
   ok('menu do nome leva ao CollectionUI', document.body.classList.contains('cui') && location.hash === '#collectionui');
+  ok('o botao do topo passa a dizer CollectionUI', $('#brand-nome').textContent === 'CollectionUI');
   ok('a tela inicial e a das colecoes', document.body.dataset.tela === 'colecoes' && !!$('#cui-nova'));
   ok('sem filtros na tela das colecoes', !filtros());
   ok('os indies descem junto', !!window.XBX_XBLIG);
@@ -134,6 +135,7 @@
 
   // ---- volta ao catalogo ----
   $('.menu-item.area[data-area=cat]').click(); await wait(500);
+  ok('o botao do topo volta a dizer Xbox Vault', $('#brand-nome').textContent === 'Xbox Vault');
   ok('volta ao catalogo', !document.body.classList.contains('cui') && location.hash === '' &&
      !!$('#vistas-own').offsetParent && !!filtros());
   localStorage.removeItem('xbx.cui.v1');

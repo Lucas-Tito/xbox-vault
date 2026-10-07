@@ -1897,8 +1897,15 @@ function cuiPintar() {
 function setAreaInicial() {
   document.body.classList.add("cui");
   document.body.dataset.tela = cuiTela;
+  marcarArea("cui");
+}
+
+/* O botao do topo diz em que area se esta: fora do menu, era o unico lugar que
+   continuava dizendo "Xbox Vault" com o CollectionUI aberto. */
+function marcarArea(a) {
+  $("#brand-nome").textContent = a === "cui" ? "CollectionUI" : "Xbox Vault";
   $$(".menu-item.area").forEach(function (m) {
-    var on = m.dataset.area === "cui";
+    var on = m.dataset.area === a;
     m.classList.toggle("atual", on);
     if (on) m.setAttribute("aria-current", "page"); else m.removeAttribute("aria-current");
   });
@@ -1908,11 +1915,7 @@ function setArea(a) {
   AREA = a;
   document.body.classList.toggle("cui", a === "cui");
   history.replaceState(null, "", a === "cui" ? "#collectionui" : location.pathname + location.search);
-  $$(".menu-item.area").forEach(function (m) {
-    var on = m.dataset.area === a;
-    m.classList.toggle("atual", on);
-    if (on) m.setAttribute("aria-current", "page"); else m.removeAttribute("aria-current");
-  });
+  marcarArea(a);
   cuiSelIds = null; cuiAviso = ""; cuiRascunho = cuiRascunhoSet = null;
   cuiTela = "colecoes"; document.body.dataset.tela = cuiTela;
   cuiCarregarIndies();
