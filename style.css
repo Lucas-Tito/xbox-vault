@@ -136,6 +136,7 @@ a{color:var(--green2)}
 .fgroup h4{margin:0;font-size:13px;color:var(--txt);font-weight:600}
 .fgroup.fixo h4{padding:2px 0 6px}
 .sub-h{font-size:12px;color:var(--dim);margin:10px 0 5px}
+.chk-sep{margin-top:8px}
 /* Duas ou tres opcoes exclusivas lado a lado: o radio fica escondido, o rotulo e
    o botao. Vale para "Um ano / Intervalo" e para o "onde" do modo de jogo. */
 .seg{display:flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;margin:0 0 8px}

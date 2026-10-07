@@ -52,7 +52,7 @@ function padraoF() {
   return {
     q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
     systems: [], relType: "oficial", where: "any", plMin: 0, yMode: "intervalo", y1: "", y2: "",
-    bc: "all", cat: "", mcMin: 0, genres: [], sort: "year-desc"
+    bc: "all", cat: "", mcMin: 0, genres: [], coopt: false, sort: "year-desc"
   };
 }
 var F = padraoF();
@@ -211,6 +211,7 @@ function match(g, skip) {
   if (F.own === "none" && (owned.has(g.id) || wishlist.has(g.id))) return false;
 
   if (skip !== "mode" && !modosOk(g)) return false;
+  if (skip !== "coopt" && F.coopt && !g.coopInfo) return false;
   if (skip !== "flag") {
     for (var j = 0; j < F.flags.length; j++) {
       var f = F.flags[j], v = (g.flags || {})[f];
@@ -506,6 +507,9 @@ function updateFacets() {
     ff.forEach(function (g) { if ((g.flags || {})[k]) n++; });
     el.textContent = n;
   });
+  var fc = filtered("coopt"), nc = 0;
+  fc.forEach(function (g) { if (g.coopInfo) nc++; });
+  $("[data-cnt='coopt']").textContent = nc;
 }
 
 /* ---------------- detalhes ---------------- */
@@ -1319,6 +1323,7 @@ function restaurarControles() {
   // modo salvo que nao existe mais (multiplayerLocal, coopLocal...) sai do filtro
   F.modes = $$(".f-mode").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
   $$("input[name=f-where]").forEach(function (r) { r.checked = r.value === F.where; });
+  $("#f-coopt").checked = !!F.coopt;
   $$(".f-flag").forEach(function (c) { c.checked = F.flags.indexOf(c.value) >= 0; });
   // descarta flags salvas que nao existem mais na UI (senao filtrariam sem forma de desmarcar)
   F.flags = $$(".f-flag").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
@@ -1349,6 +1354,7 @@ function ligarEventos() {
     else if (t.classList.contains("f-sys")) F.systems = pick(".f-sys");
     else if (t.id === "f-reltype") F.relType = t.value;
     else if (t.name === "f-where") F.where = t.value;
+    else if (t.id === "f-coopt") F.coopt = t.checked;
     else if (t.name === "f-ymode") {
       F.yMode = t.value;
       if (F.yMode === "um") { F.y2 = F.y1; $("#f-y2").value = F.y1; }
