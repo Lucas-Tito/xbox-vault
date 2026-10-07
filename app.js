@@ -427,6 +427,27 @@ function cardHtml(g) {
     '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
 }
 
+/* Etiquetas numa linha so, sem nenhuma cortada no meio: se a linha passa da
+   largura do card, a ultima etiqueta sai inteira, e assim por diante ate caber.
+   Como tagsHtml ja poe em ordem de relevancia, sai sempre a menos importante
+   (quase sempre o ONLINE). Escondida, e nao removida: com a janela maior ela
+   volta. So mexe nos cards ainda nao ajustados, salvo quando a largura muda. */
+function ajustarEtiquetas(todas) {
+  $$(todas ? ".card .tags" : ".card .tags:not([data-ok])").forEach(function (box) {
+    var tags = box.children;
+    for (var i = 0; i < tags.length; i++) tags[i].hidden = false;
+    for (var k = tags.length - 1; k > 0 && box.scrollWidth > box.clientWidth + 1; k--) tags[k].hidden = true;
+    box.setAttribute("data-ok", "");
+  });
+}
+var ajusteTimer;
+// medido antes da Montserrat carregar, o texto tem outra largura
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { ajustarEtiquetas(true); });
+window.addEventListener("resize", function () {
+  clearTimeout(ajusteTimer);
+  ajusteTimer = setTimeout(function () { ajustarEtiquetas(true); }, 150);
+});
+
 function buildQueue(list) {
   var groups = [], cur = null;
   // Agrupar por ano só faz sentido quando a ordenação É por ano. Ordenando por
@@ -466,6 +487,7 @@ function renderMore() {
   var sent = $("#sentinel");
   if (sent) sent.insertAdjacentHTML("beforebegin", html);
   else main.insertAdjacentHTML("beforeend", html + '<div class="sentinel" id="sentinel"></div>');
+  ajustarEtiquetas();
   if (qi >= queue.length && $("#sentinel")) $("#sentinel").remove();
 }
 
