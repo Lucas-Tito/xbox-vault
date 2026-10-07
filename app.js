@@ -321,6 +321,12 @@ window.XBXimgErr = function (im) {
 
 function urTexto(v) { return (Math.round(v * 100) / 100).toFixed(2); }
 
+/* Icones dos botoes do card em SVG, e nao caractere: estrela e "proibido" de
+   texto mudam de desenho e de tamanho a cada fonte. A estrela cheia ou vazia
+   sai do CSS, pela classe .wish do card, entao marcar nao reescreve o botao. */
+var ICO_WISH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
+var ICO_HIDE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6-.5.8-1.6 2.2-3.1 3.5M6.6 6.6C4.6 8 3.2 10 2.5 12c1 1.5 4.5 6 9.5 6 1.7 0 3.2-.5 4.5-1.2M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>';
+
 function cardHtml(g) {
   // A nota da critica tem preferencia. A dos jogadores so aparece no card de
   // quem nao tem Metacritic, e com desenho diferente para ninguem confundir
@@ -352,8 +358,8 @@ function cardHtml(g) {
   return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") + (h ? " hide" : "") +
     '" data-id="' + esc(g.id) + '">' +
     '<div class="marks">' +
-    '<button class="wish-btn" title="Adicionar à wishlist">' + (w ? "★" : "☆") + "</button>" +
-    '<button class="hide-btn" title="Não quero, esconder da lista">⊘</button>' +
+    '<button class="wish-btn" title="Wishlist" aria-label="Wishlist">' + ICO_WISH + "</button>" +
+    '<button class="hide-btn" title="Não quero, esconder da lista" aria-label="Esconder">' + ICO_HIDE + "</button>" +
     "</div>" +
     '<div class="thumb">' + img + mc + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
@@ -1015,7 +1021,6 @@ function paintCard(card, id) {
   card.classList.toggle("own", o);
   card.classList.toggle("wish", w);
   card.classList.toggle("hide", escondidos.has(id));
-  card.querySelector(".wish-btn").textContent = w ? "★" : "☆";
 }
 /* "tenho" e "quero" se contradizem: marcar um limpa o outro, senao o arquivo
    exportado sairia com o mesmo jogo nas duas listas. */

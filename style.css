@@ -16,12 +16,15 @@
 :root{
   --bg:#091811; --bg2:#151B18; --bg3:#1D2521; --line:#2B352F;
   --txt:#E7EDE9; --dim:#8E9C94; --dim2:#5C6862;
-  --green:#9BCB3C; --green2:#9BCB3C; --on-green:#0B1004; --glow:rgba(155,203,60,.35);
+  --green:#9BCB3C; --green2:#9BCB3C; --on-green:#0B1004;
   --amber:#F0C036; --blue:#4B9BE8; --purple:#a77bd4; --red:#F2565B;
   /* 10px so no card, como o r:10 da previa; o resto usa os cantos dela, 4 e 5 */
   --r:10px; --r-sm:4px;
   --sans:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  /* O tom do card da previa (grupo30): a base rgb(18,28,22) com o gradiente
+     vertical por cima, mais escuro em cima. Aqui ja vai composto. */
+  --card:linear-gradient(rgb(12,23,16),rgb(17,29,21));
   /* O fundo da previa do CollectionUI (FUNDOS.medio): diagonal do canto de cima
      a esquerda ao de baixo a direita. Fixo na tela, e nao na pagina: esticado
      pelos milhares de pixels da grade, ele viraria um tom chapado. */
@@ -111,11 +114,18 @@ select:focus{border-color:var(--green)}
 
 /* ---------- card ---------- */
 .card{
-  background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);
-  overflow:hidden;display:flex;flex-direction:column;position:relative;transition:.15s;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  display:flex;flex-direction:column;position:relative;
 }
-.card:hover{border-color:var(--dim2);transform:translateY(-2px)}
-.card.own{border-color:var(--green);box-shadow:0 0 0 1px var(--green),0 0 18px -6px var(--glow)}
+/* Os aneis (tenho, wishlist e o do mouse) sao UMA camada por cima do card, no
+   contorno exato dele, e nao borda engrossada com box-shadow nem outline. Borda
+   mais sombra deixava emenda serrilhada no canto; outline com respiro mostrava a
+   borda cinza no vao e saia para fora, onde o titulo do ano seguinte o cobria.
+   Por cima e por dentro, ele cobre a borda e a beira da capa de uma vez so. O
+   card nao tem overflow:hidden de proposito: o corte apararia o anel. */
+.card::before{content:"";position:absolute;inset:-1px;border-radius:var(--r);
+  border:0 solid transparent;pointer-events:none;z-index:4}
+.card.own::before{border:2px solid var(--green)}
 /* O selo voltou. Ele tinha saido por duplicar o botao de "tenho" do canto, e o
    botao nao existe mais -- sem ele, sobravam so dois sinais de MATIZ, a borda
    verde e a capa em cor cheia, que some quando nao ha com o que comparar e que
@@ -124,9 +134,12 @@ select:focus{border-color:var(--green)}
    como qualquer outro ponto do card, e e la que se desmarca. */
 .card.own::after{
   content:"\2713";position:absolute;top:8px;left:8px;width:22px;height:22px;border-radius:50%;
-  background:var(--green);color:#0b1a08;display:grid;place-items:center;font-weight:900;font-size:13px;z-index:3;
+  background:var(--green);color:var(--on-green);display:grid;place-items:center;font-weight:700;font-size:13px;z-index:3;
 }
-.thumb{position:relative;aspect-ratio:3/4;background:var(--bg3);overflow:hidden;flex:none}
+/* A capa se arredonda sozinha, com o raio do card menos a borda: o card nao
+   corta mais o que esta dentro dele (ver .card::before). */
+.thumb{position:relative;aspect-ratio:3/4;background:var(--bg3);overflow:hidden;flex:none;
+  border-radius:calc(var(--r) - 1px) calc(var(--r) - 1px) 0 0}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block}
 /* logo/faixa horizontal em vez de box art: mostra inteiro, sem ampliar */
 .thumb img.wide{object-fit:contain;padding:10%;background:var(--bg2)}
@@ -142,39 +155,51 @@ select:focus{border-color:var(--green)}
 .card h3{margin:0;font-size:13px;line-height:1.3;font-weight:600}
 .card .sub{font-size:11px;color:var(--dim);line-height:1.35;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:4px}
-.tag{font-size:9.5px;font-weight:700;letter-spacing:.4px;padding:2px 5px;border-radius:4px;
-  background:var(--bg3);color:var(--dim);border:1px solid var(--line);white-space:nowrap}
-.tag.sp{color:#9fb4c7}
-.tag.co{color:var(--green2);border-color:rgba(110,209,92,.35);background:rgba(110,209,92,.1)}
-.tag.vs{color:var(--red);border-color:rgba(224,92,92,.35);background:rgba(224,92,92,.1)}
-.tag.loc{color:var(--amber);border-color:rgba(217,164,65,.35);background:rgba(217,164,65,.1)}
-.tag.onl{color:var(--blue);border-color:rgba(90,169,230,.35);background:rgba(90,169,230,.1)}
-.tag.bc{color:var(--purple);border-color:rgba(167,123,212,.35);background:rgba(167,123,212,.1)}
-.tag.nobc{color:var(--dim2);opacity:.75}
-.tag.plat{background:transparent}
-.tag.emu{color:var(--purple);border-color:rgba(167,123,212,.35);background:rgba(167,123,212,.1)}
-.tag.vaz{color:var(--amber);border-color:rgba(217,164,65,.5);background:rgba(217,164,65,.14)}
+/* Eram ate sete pilulas em seis cores, cada uma com borda propria. Texto corrido
+   sem caixa nenhuma tambem nao serviu: "ONLINE 4P CO-OP LOCAL 4P" virava uma
+   linha so, sem dar para ver onde uma etiqueta acabava. Ficou o meio-termo: um
+   fundo neutro e baixo separa cada uma, sem borda e sem cor. Cor so onde ela
+   avisa alguma coisa, o vazado. */
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:2px}
+.tag{white-space:nowrap;font-size:10px;font-weight:600;letter-spacing:.03em;line-height:1;
+  padding:4px 5px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
+.tag.plat,.tag.emu{color:var(--txt);background:rgba(231,237,233,.13)}
+.tag.nobc{color:var(--dim2)}
+.tag.vaz{color:var(--amber);background:rgba(240,192,54,.12)}
 
-.marks{position:absolute;top:8px;right:8px;z-index:3;display:flex;flex-direction:column;gap:6px}
+.marks{position:absolute;top:8px;right:8px;z-index:3;display:flex;flex-direction:column;gap:5px}
 /* Sobraram dois, entao cabe um alvo maior sem tapar a capa. O "tenho" saiu do
    card de proposito: quem indica o estado e a borda verde com a capa em cor
    cheia, e marcar passou a ser so pelo popup. */
 .wish-btn,.hide-btn{
-  width:32px;height:32px;border-radius:50%;
-  background:rgba(13,17,23,.82);border:1px solid var(--line);color:var(--txt);
-  display:grid;place-items:center;font-size:17px;line-height:1;backdrop-filter:blur(4px);transition:.15s;
+  width:30px;height:30px;border-radius:5px;padding:0;
+  background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt);
+  display:grid;place-items:center;
 }
-.wish-btn:hover{background:var(--amber);color:#1a1206;border-color:var(--amber);transform:scale(1.1)}
-.hide-btn:hover{background:var(--dim2);color:var(--bg);border-color:var(--dim2);transform:scale(1.1)}
+.wish-btn svg,.hide-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;
+  stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card.wish .wish-btn svg{fill:currentColor}
+.wish-btn:hover{background:var(--amber);color:#1a1206;border-color:var(--amber)}
+.hide-btn:hover{background:var(--dim);color:var(--bg);border-color:var(--dim)}
+/* Com mouse, os dois botoes so aparecem sobre o card: numa grade de dezenas,
+   vinte pares de botao fixos eram ruido. Marcado, o botao fica, porque ai ele
+   e o estado. No toque nao ha hover, entao la eles seguem sempre visiveis. */
+@media (hover:hover){
+  .marks button{opacity:0}
+  .card:hover .marks button,.marks button:focus-visible,
+  .card.wish .wish-btn,.card.hide .hide-btn{opacity:1}
+}
 .card.hide{opacity:.55;border-color:var(--line)}
-.card.hide .hide-btn{background:var(--dim2);color:var(--bg);border-color:var(--dim2)}
+.card.hide .hide-btn{background:var(--dim);color:var(--bg);border-color:var(--dim)}
 .card.hide .thumb img{filter:grayscale(1) brightness(.7)}
 .btn.muted{background:var(--bg3);border-color:var(--dim2);color:var(--dim)}
 .card.wish .wish-btn{background:var(--amber);color:#1a1206;border-color:var(--amber)}
 
 /* wishlist: mesma linguagem visual do "tenho", em ambar */
-.card.wish{border-color:var(--amber);box-shadow:0 0 0 1px var(--amber),0 0 18px -6px rgba(217,164,65,.35)}
+.card.wish::before{border:2px solid var(--amber)}
+/* Sob o mouse: 3px na cor do anel da previa do CollectionUI. Vale tambem sobre
+   o tenho e a wishlist; o visto e a estrela continuam dizendo o estado. */
+.card:hover::before{border:3px solid var(--green)}
 .card.wish .thumb img{filter:none}
 
 .empty{padding:60px 20px;text-align:center;color:var(--dim2)}
