@@ -47,13 +47,9 @@ a{color:var(--green2)}
   position:sticky; top:0; z-index:50; background:rgba(21,27,24,.96);
   border-bottom:1px solid var(--line);
 }
-.topbar-in{display:flex;align-items:center;gap:16px;padding:12px 20px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;letter-spacing:.3px}
-.brand .orb{
-  width:26px;height:26px;border-radius:50%;background:var(--green);
-  display:grid;place-items:center;color:#0d1117;font-weight:900;font-size:15px;
-  box-shadow:0 0 14px var(--glow);flex:none;
-}
+.topbar-in{display:flex;align-items:center;gap:16px;padding:10px 20px;flex-wrap:wrap}
+/* So o nome, sem bolinha com letra: logo provisorio e o que ela parecia. */
+.brand{font-weight:600;font-size:16px;white-space:nowrap}
 .search{flex:1 1 260px;min-width:180px;position:relative}
 .search input{
   width:100%;padding:8px 11px;background:var(--bg3);
