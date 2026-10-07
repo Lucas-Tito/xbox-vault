@@ -305,13 +305,34 @@ var queue = [], qi = 0, io = null;
 
 function mcClasse(n) { return n >= 75 ? "bom" : n >= 50 ? "medio" : "ruim"; }
 
+/* No maximo quatro etiquetas, na ordem do que mais pesa para escolher:
+   1. a plataforma, sempre;
+   2. o aviso que muda a decisao: VAZADO, ou a retrocompatibilidade do Xbox
+      original;
+   3. jogar junto no mesmo console, numa etiqueta so: co-op local, senao
+      versus local, senao multiplayer local, com o numero de jogadores;
+   4. online, com o numero de jogadores (co-op online quando o co-op e so la).
+   Fora do card, e so na ficha: 1P (quase todo jogo tem), VS solto, XBLA,
+   KINECT e categoria. Eram ate oito pilulas, e o corte de uma linha escondia
+   justamente as do fim. */
 function tagsHtml(g) {
-  var t = g._t, h = [], pl;
-  if (g.platform === "x360") h.push('<span class="tag plat">360</span>');
-  else if (g.platform === "xblig") h.push('<span class="tag plat">INDIE</span>');
-  else if (g.platform === "emu") h.push('<span class="tag emu">' + esc(g.system) + "</span>");
-  else if (g.platform === "xbox") h.push('<span class="tag plat">XBOX OG</span>');
-  else h.push('<span class="tag plat">HB</span>');
+  var t = g._t, h = [];
+  var tag = function (txt, cls) { h.push('<span class="tag' + (cls ? " " + cls : "") + '">' + txt + "</span>"); };
+  var nP = function (n) { return n ? " " + n + "P" : ""; };
+
+  if (g.platform === "x360") tag("360", "plat");
+  else if (g.platform === "xblig") tag("INDIE", "plat");
+  else if (g.platform === "emu") tag(esc(g.system), "emu");
+  else if (g.platform === "xbox") tag("XBOX OG", "plat");
+  else tag("HB", "plat");
+
+  if (g.releaseType === "Vazado") {
+    h.push('<span class="tag vaz" title="Cancelado antes de sair, mas ficou pronto e ' +
+      'a build vazou, então dá para jogar">VAZADO</span>');
+  } else if (g.platform === "xbox") {
+    if (g.bc360 && g.bc360.compatible) tag("RETRO ✓", "bc");
+    else tag("RETRO ✗", "nobc");
+  }
 
   /* Nos 3.344 jogos de source "xblig-default" o modo nao e fraco, e inventado:
      o coletor procura palavra de multiplayer no TITULO e, nao achando nenhuma,
@@ -319,45 +340,15 @@ function tagsHtml(g) {
      catalogo afirmando 3.344 vezes uma coisa que ninguem apurou, e aviso no
      card, numa grade de dezenas, ninguem le. O card entao nao diz nada sobre
      modo, e quem abrir a ficha encontra a frase inteira. */
-  if (t.source === "xblig-default") return h.join("") + extrasHtml(g);
+  if (t.source === "xblig-default") return h.join("");
 
-  if (t.singlePlayer) h.push('<span class="tag sp">1P</span>');
-  if (t.multiplayerLocal) {
-    pl = t.maxPlayersLocal ? t.maxPlayersLocal + "P" : "";
-    h.push('<span class="tag loc">LOCAL' + (pl ? " " + pl : "") + "</span>");
-  }
-  if (t.multiplayerOnline) {
-    pl = t.maxPlayersOnline ? t.maxPlayersOnline + "P" : "";
-    h.push('<span class="tag onl">ONLINE' + (pl ? " " + pl : "") + "</span>");
-  }
-  if (t.coop) {
-    var cp = Math.max(t.coopLocalMax || 0, t.coopOnlineMax || 0);
-    h.push('<span class="tag co">CO-OP' + (t.coopLocal ? " LOCAL" : "") +
-      (cp ? " " + cp + "P" : "") + "</span>");
-  }
-  if (t.versus) h.push('<span class="tag vs">VS</span>');
+  if (t.coopLocal) tag("CO-OP LOCAL" + nP(t.coopLocalMax || t.maxPlayersLocal));
+  else if (t.versusLocal) tag("VS LOCAL" + nP(t.maxPlayersLocal));
+  else if (t.multiplayerLocal) tag("LOCAL" + nP(t.maxPlayersLocal));
 
-  return h.join("") + extrasHtml(g);
-}
+  if (t.multiplayerOnline) tag("ONLINE" + nP(t.maxPlayersOnline));
+  else if (t.coopOnline) tag("CO-OP ONLINE" + nP(t.coopOnlineMax));
 
-/* O que nao e modo de jogo: plataforma ja saiu, aqui vem retrocompatibilidade,
-   situacao de vazado, flags e categoria. Fica a parte porque o card de XBLIG
-   sem fonte pula os modos e vem direto para ca. */
-function extrasHtml(g) {
-  var h = [];
-  if (g.platform === "xbox") {
-    h.push(g.bc360 && g.bc360.compatible
-      ? '<span class="tag bc">RETRO ✓</span>'
-      : '<span class="tag nobc">RETRO ✗</span>');
-  }
-  if (g.releaseType === "Vazado") {
-    h.push('<span class="tag vaz" title="Cancelado antes de sair, mas ficou pronto e ' +
-      'a build vazou, então dá para jogar">VAZADO</span>');
-  }
-  var f = g.flags || {};
-  if (f.xbla) h.push('<span class="tag">XBLA</span>');
-  if (f.kinect) h.push('<span class="tag">KINECT</span>');
-  if (g.category) h.push('<span class="tag">' + esc(g.category.toUpperCase()) + "</span>");
   return h.join("");
 }
 
