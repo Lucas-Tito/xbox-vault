@@ -391,19 +391,13 @@ function cardHtml(g) {
       ' alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") +
       ' onerror="XBXimgErr(this)">'
     : '<div class="ph">' + esc(g.title) + "</div>";
-  // Homebrew nao tem genero nem estudio: a categoria faz esse papel, e a
-  // descricao escrita a mao vai para a linha da descricao, como a dos outros.
-  var sub = g.platform === "homebrew"
-    ? esc(g.category || "")
-    : esc([g.genre, (g.developers || [])[0]].filter(Boolean).join(" · "));
-  /* Card com a informacao ao lado da capa: a nota sai de cima da capa e vem com
-     o ano numa linha so, e entram as duas primeiras linhas da descricao. Com a
-     capa ocupando o card inteiro era muita imagem para pouca informacao. */
+  /* O card leva so o que ajuda a escolher de relance: nome, genero, nota e as
+     etiquetas. Estudio, ano e descricao ficam na ficha: com eles o card ficava
+     apertado. O homebrew nao tem genero, e a categoria faz esse papel. */
+  var sub = esc(g.platform === "homebrew" ? g.category || "" : g.genre || "");
   var rotNota = typeof g.mc === "number" ? (g.mcGeral ? "Metacritic geral" : "Metacritic")
     : typeof g.ur === "number" ? "Marketplace" : "";
-  var linhaNota = (mc ? mc + "<span>" + rotNota + "</span>" : "") +
-    (mc && g.year ? '<span class="sep">·</span>' : "") + (g.year ? "<span>" + esc(g.year) + "</span>" : "");
-  var desc = (g.description || "").trim();
+  var linhaNota = mc ? mc + "<span>" + rotNota + "</span>" : "";
   /* Título sem link: clicar no card é para abrir a ficha, e um <a> no meio dele
      mandava a pessoa para fora do site sem aviso. A Wikipédia e a página do
      projeto continuam na Ficha técnica, que é onde link é o que se espera. */
@@ -433,7 +427,6 @@ function cardHtml(g) {
     '<div class="body"><h3>' + link + "</h3>" +
     (sub ? '<div class="sub">' + sub + "</div>" : "") +
     (linhaNota ? '<div class="linha">' + linhaNota + "</div>" : "") +
-    (desc ? '<div class="desc">' + esc(desc) + "</div>" : "") +
     '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
 }
 

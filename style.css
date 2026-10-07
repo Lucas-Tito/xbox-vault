@@ -333,13 +333,10 @@ select:focus{border-color:var(--green)}
 .card h3{margin:0;font-size:15px;line-height:1.3;font-weight:600}
 .card .sub{font-size:12.5px;color:var(--dim);line-height:1.35;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-/* nota e ano numa linha, com a nota fora da capa */
+/* a nota, fora da capa */
 .linha{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--dim)}
 .linha .mc,.linha .ur{position:static;box-shadow:none}
-.linha .sep{color:var(--dim2)}
-/* as duas primeiras linhas da descricao, para dizer do que o jogo se trata */
-.card .desc{font-size:13px;line-height:1.45;color:#B9C4BE;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
 /* Eram ate sete pilulas em seis cores, cada uma com borda propria. Texto corrido
    sem caixa nenhuma tambem nao serviu: "ONLINE 4P CO-OP LOCAL 4P" virava uma
    linha so, sem dar para ver onde uma etiqueta acabava. Ficou o meio-termo: um
