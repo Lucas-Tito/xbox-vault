@@ -420,13 +420,25 @@ body.cui .card.semtid:hover::before{border-width:0}
 }
 
 .mobile-filters{display:none}
+/* celular pequeno: nome e botoes ainda cabem na mesma linha */
+@media(max-width:400px){
+  .brand{font-size:17px !important;padding:6px 6px;margin-left:-6px}
+  .brand .seta{margin-left:5px}
+  .actions{gap:6px}
+  .actions .btn{padding:7px 10px}
+}
 @media(max-width:820px){
-  /* No celular a busca volta a ocupar a sobra da linha, e a contagem desce para
-     baixo das abas, que rolam de lado e nao teriam onde dividir espaco. */
-  .lado,.actions{flex:none}
+  /* No celular: nome e botoes na primeira linha e a busca inteira embaixo (com o
+     nome maior, ela caia sozinha numa linha do meio e o topo ficava com tres).
+     A contagem desce para baixo das abas, que rolam de lado e nao teriam onde
+     dividir espaco. */
+  .topbar-in{padding:12px 16px;gap:12px;min-height:0}
+  .brand{font-size:20px}
+  .lado{flex:1 1 auto}
+  .actions{flex:none}
   /* aqui o Arquivo fica a esquerda: o menu abre para a direita, senao sai da tela */
   .menu-lista{right:auto;left:0}
-  .search{flex:1 1 200px;max-width:none}
+  .search{order:3;flex:1 1 100%;max-width:none}
   .vistas-linha{flex-wrap:wrap;gap:0}
   .vistas{flex-basis:100%}
   .res-n{padding:8px 0}
