@@ -171,15 +171,19 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 
 /* Adicionar jogos: o nao marcado fica apagado, como na previa (capa a 50%), e o
    marcado acende com o anel e o visto no canto direito. */
-/* Aviso com Desfazer, embaixo e no centro, por cima da grade */
-.aviso{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:90;
-  display:flex;align-items:center;gap:16px;max-width:calc(100% - 32px);padding:10px 14px 10px 16px;
-  background:var(--bg2);border:1px solid var(--line);border-radius:7px;box-shadow:0 8px 24px rgba(0,0,0,.45);
-  font-size:13px;color:var(--txt)}
+/* Aviso com Desfazer, embaixo e no centro, por cima da grade. Claro sobre o
+   escuro: no tom do painel ele sumia no meio das capas. Sobe um pouco ao
+   aparecer, para o olho achar. */
+.aviso{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:90;
+  display:flex;align-items:center;gap:18px;max-width:calc(100% - 32px);padding:12px 12px 12px 18px;
+  background:var(--txt);color:#0D110F;border-radius:7px;box-shadow:0 10px 30px rgba(0,0,0,.6);
+  font-size:14px;font-weight:500;animation:aviso-sobe .18s ease-out}
+@keyframes aviso-sobe{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translateX(-50%)}}
 .aviso[hidden]{display:none}
 .aviso span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.aviso button{flex:none;background:none;border:0;padding:0;color:var(--green);font-weight:600;font-size:13px}
-.aviso button:hover{color:var(--txt)}
+.aviso button{flex:none;border:0;border-radius:5px;padding:6px 12px;background:var(--green);
+  color:var(--on-green);font-weight:600;font-size:13px}
+.aviso button:hover{filter:brightness(1.08)}
 .card.apagado{opacity:.5}
 .card.apagado:hover{opacity:.85}
 body.cui .card.nacol::after{left:auto;right:8px}
