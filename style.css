@@ -280,6 +280,9 @@ select:focus{border-color:var(--green)}
 /* Card deitado, com a informacao ao lado da capa: no minimo 420px de largura,
    24px entre linhas e 28px entre colunas. */
 .grid{display:grid;gap:24px 28px;grid-template-columns:repeat(auto-fill,minmax(420px,1fr))}
+/* O card 5px mais estreito que a coluna: a capa fica igual e so o texto perde
+   os 5px. */
+.grid > .card{width:calc(100% - 5px);justify-self:start}
 
 /* ---------- card ---------- */
 .card{
