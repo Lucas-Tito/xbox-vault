@@ -57,14 +57,17 @@ a{color:var(--green2)}
 }
 .topbar-in{display:flex;align-items:center;gap:16px;padding:10px 20px;flex-wrap:wrap}
 /* So o nome, sem bolinha com letra: logo provisorio e o que ela parecia. */
-.brand{font-weight:600;font-size:16px;white-space:nowrap}
-.search{flex:1 1 260px;min-width:180px;position:relative}
+/* Busca com largura limitada e no centro: nome e botoes dividem a sobra em
+   partes iguais (base 0, crescimento 1), entao o campo fica no meio da tela. Ela
+   crescia ate encostar nos botoes, uns 1.000px para digitar o nome de um jogo. */
+.brand{flex:1 1 0;font-weight:600;font-size:16px;white-space:nowrap}
+.search{flex:0 1 640px;min-width:180px}
 .search input{
   width:100%;padding:8px 11px;background:var(--bg3);
   border:1px solid var(--line);border-radius:var(--r-sm);outline:none;
 }
 .search input:focus{border-color:var(--green)}
-.actions{display:flex;gap:8px;flex-wrap:wrap}
+.actions{flex:1 1 0;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .btn{
   padding:8px 13px;background:var(--bg2);border:1px solid var(--line);
   border-radius:5px;white-space:nowrap;color:var(--dim);
@@ -281,8 +284,10 @@ select:focus{border-color:var(--green)}
 
 .mobile-filters{display:none}
 @media(max-width:820px){
-  /* No celular a contagem desce para baixo das abas, que rolam de lado e nao
-     teriam onde dividir espaco. */
+  /* No celular a busca volta a ocupar a sobra da linha, e a contagem desce para
+     baixo das abas, que rolam de lado e nao teriam onde dividir espaco. */
+  .brand,.actions{flex:none}
+  .search{flex:1 1 200px;max-width:none}
   .vistas-linha{flex-wrap:wrap;gap:0}
   .vistas{flex-basis:100%}
   .res-n{padding:8px 0}
