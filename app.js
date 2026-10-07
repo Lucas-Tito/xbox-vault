@@ -963,11 +963,11 @@ function detalheHtml(g) {
         ? '<p class="det-vaz"><b>Cancelado, mas jogável.</b> ' + esc(g.nota) + "</p>" : "") +
       '<div class="det-acoes">' +
         '<button class="btn ' + (o ? "primary" : "") + '" data-mark="own">' +
-          (o ? "✓ Eu tenho" : "+ Marcar que tenho") + "</button>" +
+          (o ? "Eu tenho" : "Marcar que tenho") + "</button>" +
         '<button class="btn ' + (w ? "amber" : "") + '" data-mark="wish">' +
-          (w ? "★ Na wishlist" : "☆ Pôr na wishlist") + "</button>" +
+          (w ? "Na wishlist" : "Pôr na wishlist") + "</button>" +
         '<button class="btn' + (escondidos.has(g.id) ? " muted" : "") + '" data-mark="hide">' +
-          (escondidos.has(g.id) ? "⊘ Escondido" : "⊘ Não quero") + "</button>" +
+          (escondidos.has(g.id) ? "Escondido" : "Não quero") + "</button>" +
       "</div>" + corpo +
     "</div></div>";
 }
