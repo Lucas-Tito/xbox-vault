@@ -13,20 +13,14 @@
 @font-face{font-family:"IBM Plex Mono";font-weight:500;font-display:swap;src:url(fonts/plex-mono-500.woff2) format("woff2")}
 @font-face{font-family:"Archivo Black";font-weight:400;font-display:swap;src:url(fonts/archivo-black-400.woff2) format("woff2")}
 
-/* Paleta Uxintace, clara: #BBCD83 lima, #8AA874 folha, #556E46 musgo, #495A4A
-   ardosia, #98B8A0 salvia, #C8E0C8 menta. Menta no fundo e nas etiquetas,
-   salvia na base da coluna de filtros, ardosia no topo e no texto, musgo no
-   destaque (tenho, aba ativa, botao principal), folha na etiqueta da
-   plataforma, lima no realce dentro do topo escuro. A wishlist (--amber, nome
-   de quando era ambar) e um tom de lima mais escuro, para aparecer no claro; o
-   aviso de dado (vazado, nao conferido) tem cor propria, --alerta. */
+/* Paleta da previa do CollectionUI, que por sua vez copia o app/main.cpp:
+   painel, linha, texto, apagado, fraco e o anel de selecao. As cores de aviso
+   sao as dos botoes do controle na mesma previa (A, B, X) e o ambar do aviso. */
 :root{
-  --bg:#C8E0C8; --bg2:#EEF5EC; --bg3:#E6F0E4; --line:#9DBAA4;
-  --txt:#2B382C; --dim:#495A4A; --dim2:#6C8270;
-  --green:#556E46; --green2:#556E46; --on-green:#EEF5EC;
-  --amber:#8FA34E; --alerta:#9A6B12; --blue:#2F6FA8; --purple:#7A55A8; --red:#C23B40;
-  --topo-bg:#495A4A; --topo-txt:#EEF5EA; --topo-campo:#566957; --lima:#BBCD83;
-  --painel:#B4CFB9; --tag:#C8E0C8; --tag-plat:#8AA874;
+  --bg:#091811; --bg2:#151B18; --bg3:#1D2521; --line:#2B352F;
+  --txt:#E7EDE9; --dim:#8E9C94; --dim2:#5C6862;
+  --green:#9BCB3C; --green2:#9BCB3C; --on-green:#0B1004;
+  --amber:#F0C036; --blue:#4B9BE8; --purple:#a77bd4; --red:#F2565B;
   /* 10px so no card, como o r:10 da previa; o resto usa os cantos dela, 4 e 5 */
   --r:10px; --r-sm:4px;
   /* Altura do cabecalho fixo, onde a coluna de filtros e o titulo do ano grudam.
@@ -36,10 +30,13 @@
   --topo:84px;
   --sans:"Montserrat",-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
-  --card:#EEF5EC;
-  /* Degrade de menta, diagonal. Fixo na tela, e nao na pagina: esticado pelos
-     milhares de pixels da grade, ele viraria um tom chapado. */
-  --fundo:linear-gradient(to bottom right,#DCEBDB,#C8E0C8) fixed;
+  /* O tom do card da previa (grupo30): a base rgb(18,28,22) com o gradiente
+     vertical por cima, mais escuro em cima. Aqui ja vai composto. */
+  --card:linear-gradient(rgb(12,23,16),rgb(17,29,21));
+  /* O fundo da previa do CollectionUI (FUNDOS.medio): diagonal do canto de cima
+     a esquerda ao de baixo a direita. Fixo na tela, e nao na pagina: esticado
+     pelos milhares de pixels da grade, ele viraria um tom chapado. */
+  --fundo:linear-gradient(to bottom right,rgb(9,24,17),rgb(26,52,38)) fixed;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -58,7 +55,7 @@ a{color:var(--green2)}
 
 /* ---------- topo ---------- */
 .topbar{
-  position:sticky; top:0; z-index:50; background:var(--topo-bg); color:var(--topo-txt);
+  position:sticky; top:0; z-index:50; background:rgba(21,27,24,.96);
   border-bottom:1px solid var(--line);
 }
 /* Topo mais alto, para o nome ter presenca */
@@ -71,21 +68,17 @@ a{color:var(--green2)}
 /* O nome do site abre o menu de areas: parece texto, e nao botao, ate o mouse
    chegar nele. */
 .brand{font-family:"Archivo Black",var(--sans);font-weight:400;font-size:23px;letter-spacing:.01em;
-  white-space:nowrap;background:none;border:0;padding:6px 10px;margin-left:-10px;border-radius:5px;color:var(--topo-txt)}
-.brand:hover,.brand[aria-expanded="true"]{background:rgba(238,245,234,.12)}
-.brand .seta{display:inline-block;width:6px;height:6px;margin:0 0 4px 7px;color:var(--topo-txt);opacity:.75;
+  white-space:nowrap;background:none;border:0;padding:6px 10px;margin-left:-10px;border-radius:5px;color:var(--txt)}
+.brand:hover,.brand[aria-expanded="true"]{background:var(--bg3)}
+.brand .seta{display:inline-block;width:6px;height:6px;margin:0 0 4px 7px;color:var(--dim);
   border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
 .brand[aria-expanded="true"] .seta{transform:rotate(225deg);margin-bottom:-1px}
 .search{flex:0 1 640px;min-width:180px}
 .search input{
-  width:100%;padding:10px 20px;background:var(--topo-campo);color:var(--topo-txt);
-  border:1px solid rgba(238,245,234,.18);border-radius:999px;outline:none;
+  width:100%;padding:10px 20px;background:var(--bg3);
+  border:1px solid var(--line);border-radius:999px;outline:none;
 }
-.search input::placeholder{color:var(--topo-txt);opacity:.65}
-.search input:focus{border-color:var(--lima)}
-/* botoes do topo (Arquivo, Filtros): contorno claro sobre a ardosia */
-.topbar .btn{background:transparent;color:var(--topo-txt);border-color:rgba(238,245,234,.35)}
-.topbar .btn:hover{border-color:var(--lima);color:var(--lima)}
+.search input:focus{border-color:var(--green)}
 .actions{flex:1 1 0;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .btn{
   padding:8px 13px;background:var(--bg2);border:1px solid var(--line);
@@ -174,7 +167,7 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .cui-tile-txt{position:absolute;z-index:2;left:14px;right:14px;bottom:14%;display:flex;flex-direction:column;gap:6px}
 /* Caixa alta so aqui, como o ParaMaiusculas do console, que so os quadrados das
    colecoes chamam: o nome guardado e o do arquivo nao mudam. */
-.cui-tile-txt b{font-size:15px;font-weight:600;color:#EEF5EA;line-height:1.3;text-transform:uppercase;
+.cui-tile-txt b{font-size:15px;font-weight:600;color:var(--txt);line-height:1.3;text-transform:uppercase;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* Sombra atras do texto: nome e contagem passam por cima das capas, e capa
    clara apagava a contagem. */
@@ -195,7 +188,7 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
    aparecer, para o olho achar. */
 .aviso{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:90;
   display:flex;align-items:center;gap:18px;max-width:calc(100% - 32px);padding:12px 12px 12px 18px;
-  background:var(--txt);color:var(--bg2);border-radius:7px;box-shadow:0 10px 30px rgba(0,0,0,.35);
+  background:var(--txt);color:#0D110F;border-radius:7px;box-shadow:0 10px 30px rgba(0,0,0,.6);
   font-size:14px;font-weight:500;animation:aviso-sobe .18s ease-out}
 @keyframes aviso-sobe{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translateX(-50%)}}
 .aviso[hidden]{display:none}
@@ -208,7 +201,7 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .card.apagado{opacity:.5}
 .card.apagado:hover{opacity:.85}
 body.cui .rem-btn{width:30px;height:30px;border-radius:5px;padding:0;display:grid;place-items:center;
-  background:rgba(30,39,31,.82);border:1px solid rgba(238,245,234,.25);color:#EEF5EA}
+  background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt)}
 body.cui .rem-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff}
 .res-n b{color:var(--txt);font-weight:500;font-family:var(--mono)}
@@ -218,8 +211,8 @@ body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff
 .wrap{display:flex;align-items:flex-start;gap:0}
 /* A coluna de filtros fica no tamanho de antes: so o resto da pagina cresceu. */
 .side{
-  width:252px;flex:none;padding:16px;border-right:1px solid var(--line);font-size:13px;background:var(--painel);
-  position:sticky;top:var(--topo);height:calc(100vh - var(--topo));overflow-y:auto;
+  width:252px;flex:none;padding:16px;border-right:1px solid var(--line);font-size:13px;
+  position:sticky;top:var(--topo);max-height:calc(100vh - var(--topo));overflow-y:auto;
 }
 .side::-webkit-scrollbar,.main::-webkit-scrollbar{width:9px}
 .side::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:5px}
@@ -340,7 +333,7 @@ select:focus{border-color:var(--green)}
 .linha .mc,.linha .ur{position:static;box-shadow:none}
 .linha .sep{color:var(--dim2)}
 /* as duas primeiras linhas da descricao, para dizer do que o jogo se trata */
-.card .desc{font-size:13px;line-height:1.45;color:var(--dim);
+.card .desc{font-size:13px;line-height:1.45;color:#B9C4BE;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* Eram ate sete pilulas em seis cores, cada uma com borda propria. Texto corrido
    sem caixa nenhuma tambem nao serviu: "ONLINE 4P CO-OP LOCAL 4P" virava uma
@@ -349,10 +342,10 @@ select:focus{border-color:var(--green)}
    avisa alguma coisa, o vazado. */
 .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:2px}
 .tag{white-space:nowrap;font-size:11px;font-weight:600;letter-spacing:.03em;line-height:1;
-  padding:5px 6px;border-radius:3px;background:var(--tag);color:var(--txt)}
-.tag.plat,.tag.emu{color:#1E271F;background:var(--tag-plat)}
+  padding:5px 6px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
+.tag.plat,.tag.emu{color:var(--txt);background:rgba(231,237,233,.13)}
 .tag.nobc{color:var(--dim2)}
-.tag.vaz{color:var(--alerta);background:rgba(154,107,18,.12)}
+.tag.vaz{color:var(--amber);background:rgba(240,192,54,.12)}
 
 /* No canto de cima da CAPA, e nao do card: no card deitado, o canto direito e o
    do texto, e os botoes tampariam o nome. 140 da capa, menos 30 do botao e 8. */
@@ -362,13 +355,13 @@ select:focus{border-color:var(--green)}
    cheia, e marcar passou a ser so pelo popup. */
 .wish-btn,.hide-btn{
   width:30px;height:30px;border-radius:5px;padding:0;
-  background:rgba(30,39,31,.82);border:1px solid rgba(238,245,234,.25);color:#EEF5EA;
+  background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt);
   display:grid;place-items:center;
 }
 .wish-btn svg,.hide-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;
   stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .card.wish .wish-btn svg{fill:currentColor}
-.wish-btn:hover{background:var(--amber);color:#1E271F;border-color:var(--amber)}
+.wish-btn:hover{background:var(--amber);color:#1a1206;border-color:var(--amber)}
 .hide-btn:hover{background:var(--dim);color:var(--bg);border-color:var(--dim)}
 /* Com mouse, os dois botoes so aparecem sobre o card: numa grade de dezenas,
    vinte pares de botao fixos eram ruido. Marcado, o botao fica, porque ai ele
@@ -382,7 +375,7 @@ select:focus{border-color:var(--green)}
 .card.hide .hide-btn{background:var(--dim);color:var(--bg);border-color:var(--dim)}
 .card.hide .thumb img{filter:grayscale(1) brightness(.7)}
 .btn.muted{background:var(--bg3);border-color:var(--dim2);color:var(--dim)}
-.card.wish .wish-btn{background:var(--amber);color:#1E271F;border-color:var(--amber)}
+.card.wish .wish-btn{background:var(--amber);color:#1a1206;border-color:var(--amber)}
 
 /* wishlist: mesma linguagem visual do "tenho", em ambar */
 .card.wish::before{border:2px solid var(--amber)}
@@ -421,11 +414,11 @@ body.cui .card.semtid:hover::before{border-width:0}
    disso a ampliacao comeca a aparecer, e o ganho de tela nao paga a borracha. */
 .lb img{width:min(100%,960px);max-height:82vh;object-fit:contain;justify-self:center;
   border-radius:8px;box-shadow:0 12px 44px rgba(0,0,0,.6);background:var(--bg3)}
-.lb-nav{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#EEF5EA;
+.lb-nav{background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--txt);
   width:44px;height:66px;border-radius:8px;font-size:28px;line-height:1;transition:.15s}
 .lb-nav:hover{background:rgba(255,255,255,.18);border-color:var(--dim2)}
 .lb-x{position:absolute;top:16px;right:20px;width:34px;height:34px;border-radius:50%;
-  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#EEF5EA;
+  background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--txt);
   font-size:20px;line-height:1;transition:.15s}
 .lb-x:hover{background:rgba(255,255,255,.18)}
 .lb-n{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);
@@ -465,7 +458,7 @@ body.cui .card.semtid:hover::before{border-width:0}
      nao ha altura de cabecalho para acertar, e os onze grupos ganham espaco.
      100dvh, e nao 100vh, porque no celular o vh conta a area embaixo da barra
      do navegador e o rodape ficaria fora do alcance. */
-  .side{position:fixed;inset:0;width:100%;background:var(--painel);z-index:60;
+  .side{position:fixed;inset:0;width:100%;background:var(--fundo);z-index:60;
     max-height:none;height:100vh;height:100dvh;padding:0;border-right:0;
     transform:translateX(100%);transition:transform .2s;
     display:flex;flex-direction:column;overflow:hidden}
@@ -492,7 +485,7 @@ body.cui .card.semtid:hover::before{border-width:0}
 /* ---------- popup de detalhes ---------- */
 .sheet--det{max-width:820px;padding:0;overflow:hidden}
 .sheet--det .sheet-x{position:absolute;top:10px;right:14px;z-index:5;
-  background:var(--bg3);border-radius:5px;width:30px;height:30px}
+  background:rgba(13,17,15,.85);border-radius:5px;width:30px;height:30px}
 .modal .sheet{position:relative}
 .det{display:flex;gap:0;align-items:stretch}
 .det-capa{flex:none;width:230px;background:var(--bg3);display:grid;place-items:start center;padding:22px 18px}
@@ -516,7 +509,7 @@ body.cui .card.semtid:hover::before{border-width:0}
 .det-info h4:first-child,.pane > h4:first-child{margin-top:4px}
 .det-acoes{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
 .det-acoes .btn{flex:1;min-width:150px;text-align:center;justify-content:center}
-.btn.amber{background:var(--amber);border-color:var(--amber);color:#1E271F;font-weight:600}
+.btn.amber{background:var(--amber);border-color:var(--amber);color:#1a1206;font-weight:600}
 .btn.amber:hover{filter:brightness(1.1);background:var(--amber)}
 .li{display:flex;gap:10px;padding:5px 0;font-size:14px;border-bottom:1px solid var(--line)}
 /* A ultima linha da ficha nao leva borda. So :last-child nao bastava: na Ficha
@@ -534,10 +527,10 @@ ul.modos li{color:var(--txt)}
 /* Ressalva sobre o DADO, e nao sobre o jogo: o que nao foi conferido e o que foi
    chutado. Fato negativo do jogo, como "nao roda no Xbox 360" ou os problemas
    conhecidos, continua neutro -- pintar de alerta faria o certo parecer duvidoso. */
-.det-info .nota.alerta{color:var(--alerta)}
+.det-info .nota.alerta{color:var(--amber)}
 /* A regua corre ao lado da lista de modos inteira, porque e ela que esta sob
    ressalva. Sem fundo e sem icone: o alerta mais discreto que da para fazer. */
-.fonte-fraca{border-left:2px solid var(--alerta);padding-left:12px}
+.fonte-fraca{border-left:2px solid var(--amber);padding-left:12px}
 .fonte-fraca > ul.modos{margin-top:0}
 .det-info p.sim{color:var(--green2);font-weight:600;margin:0 0 6px;font-size:13.5px}
 .det-info p.nao{color:var(--dim2);font-weight:600;margin:0 0 6px;font-size:13.5px}
@@ -552,7 +545,7 @@ ul.modos li{color:var(--txt)}
 .chip > span{flex:none}
 .chip b{color:var(--txt);font-weight:600;font-variant-numeric:tabular-nums;
   min-width:0;overflow-wrap:anywhere}
-.chip.sim{border-color:rgba(85,110,70,.45)}
+.chip.sim{border-color:rgba(155,203,60,.4)}
 .chip.sim b{color:var(--green2)}
 .chip.nao b{color:var(--dim2)}
 .bc-nota{margin:0 0 14px}
@@ -600,7 +593,7 @@ ul.modos li{color:var(--txt)}
 .ur{position:absolute;left:8px;bottom:8px;z-index:3;height:22px;padding:0 7px;
   border-radius:var(--r-sm);display:flex;align-items:center;gap:3px;
   font-family:var(--mono);font-size:11.5px;font-weight:500;
-  background:var(--bg3);color:var(--txt);border:1px solid var(--line)}
+  background:rgba(13,17,15,.88);color:var(--txt);border:1px solid var(--line)}
 .ur b{color:var(--amber);font-size:12px;line-height:1}
 .det-mc .ur{position:static;height:28px;min-width:34px;font-size:13px}
 .mc i{font-style:normal;font-size:9px;vertical-align:super;margin-left:1px;opacity:.8}
@@ -624,9 +617,9 @@ ul.modos li{color:var(--txt)}
 .num b{font-size:15px;font-weight:500;font-family:var(--mono)}
 .num.zero b{color:var(--dim2);font-weight:400;font-size:12.5px}
 .chips-coop{display:flex;flex-wrap:wrap;gap:5px}
-.chip-coop{background:rgba(85,110,70,.1);border:1px solid rgba(85,110,70,.35);
+.chip-coop{background:rgba(155,203,60,.08);border:1px solid rgba(155,203,60,.3);
   color:var(--green);border-radius:var(--r-sm);padding:3px 8px;font-size:11.5px}
-.coop-corpo .coop-exp{background:rgba(43,56,44,.07);margin-top:10px}
+.coop-corpo .coop-exp{background:rgba(0,0,0,.22);margin-top:10px}
 .coop-ex li{color:var(--green2)}
 .coop-exp{margin:8px 0 0;padding:8px 10px;font-size:12.5px;line-height:1.5;font-style:italic;
   color:var(--dim);background:var(--bg3);border-left:2px solid var(--line);border-radius:0 6px 6px 0}
@@ -672,8 +665,8 @@ ul.modos li{color:var(--txt)}
 .tu-kb{flex:none;width:78px;text-align:right;color:var(--dim2);font-variant-numeric:tabular-nums}
 
 .det-vaz{margin:0 0 14px;padding:10px 12px;font-size:12.5px;line-height:1.5;
-  color:var(--txt);background:rgba(154,107,18,.07);
-  border:1px solid rgba(154,107,18,.3);border-radius:5px}
-.det-vaz b{color:var(--alerta)}
+  color:var(--txt);background:rgba(240,192,54,.07);
+  border:1px solid rgba(240,192,54,.3);border-radius:5px}
+.det-vaz b{color:var(--amber)}
 .det-aviso{margin:16px 0 0;padding-top:12px;border-top:1px solid var(--line);
   color:var(--dim2);font-size:11px;line-height:1.5}
