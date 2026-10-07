@@ -212,7 +212,9 @@ body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff
 /* A coluna de filtros fica no tamanho de antes: so o resto da pagina cresceu. */
 .side{
   width:252px;flex:none;padding:16px;border-right:1px solid var(--line);font-size:13px;
-  position:sticky;top:var(--topo);max-height:calc(100vh - var(--topo));overflow-y:auto;
+  /* altura da tela, e nao do conteudo: a linha da direita vai sempre de cima a
+     baixo, em vez de encolher quando um grupo fecha */
+  position:sticky;top:var(--topo);height:calc(100vh - var(--topo));overflow-y:auto;
 }
 .side::-webkit-scrollbar,.main::-webkit-scrollbar{width:9px}
 .side::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:5px}
