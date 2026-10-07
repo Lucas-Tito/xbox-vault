@@ -498,7 +498,7 @@ ul.modos li{color:var(--txt)}
 .aba:hover{color:var(--txt)}
 .aba[aria-selected="true"]{color:var(--txt);border-bottom-color:var(--green)}
 
-.det-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:13px}
+.det-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;font-size:13px}
 
 @media(max-width:640px){
   .det{flex-direction:column}
