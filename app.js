@@ -1425,7 +1425,6 @@ function ligarEventos() {
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") menus.forEach(function (m) { abrirMenu(m, false); });
   });
-  $("#arq-export").textContent = nomeExport();
   $("#btn-export").onclick = doExport;
   // Abre o seletor do sistema direto. A tela intermediaria existia so para
   // oferecer o arrastar, e cobrava um clique de todo mundo por isso.

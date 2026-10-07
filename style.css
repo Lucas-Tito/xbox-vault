@@ -86,16 +86,14 @@ a{color:var(--green2)}
 .btn .seta{display:inline-block;width:6px;height:6px;margin:0 0 3px 6px;
   border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
 .btn[aria-expanded="true"] .seta{transform:rotate(225deg);margin-bottom:-1px}
-.menu-lista{position:absolute;right:0;top:calc(100% + 6px);z-index:60;min-width:290px;padding:4px;
+.menu-lista{position:absolute;right:0;top:calc(100% + 6px);z-index:60;min-width:230px;padding:4px;
   background:var(--bg2);border:1px solid var(--line);border-radius:7px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
-.menu-lista.esq{right:auto;left:-8px}
+.menu-lista.esq{right:auto;left:-8px;min-width:270px}
 .menu-item{display:block;width:100%;text-align:left;background:none;border:0;border-radius:4px;
   padding:8px 10px;color:var(--txt);font-size:13px;text-decoration:none;cursor:pointer}
 .menu-item.atual{box-shadow:inset 2px 0 0 var(--green);border-radius:0 4px 4px 0}
 .menu-item[aria-disabled="true"]{color:var(--dim);cursor:default}
 .menu-item small{display:block;margin-top:1px;color:var(--dim);font-size:11.5px}
-.menu-item code{display:block;margin-top:3px;font-family:var(--mono);font-size:11px;color:var(--dim)}
-.menu-tit{padding:6px 10px 4px;font-size:11.5px;color:var(--dim)}
 .menu-item:not([aria-disabled="true"]):hover,.menu-item:focus-visible{background:var(--bg3)}
 .btn.primary{background:var(--green);border-color:var(--green);color:var(--on-green);font-weight:600}
 .btn.primary:hover{filter:brightness(1.08);color:var(--on-green)}
