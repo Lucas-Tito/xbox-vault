@@ -1865,8 +1865,9 @@ function cuiPintar() {
       h = "<span>Nenhuma coleção ainda. Importe o colecoes.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
   } else if (cuiTela === "jogos" && c) {
     var k = cuiContar(c);
-    h = '<button class="cui-voltar" id="cui-voltar">‹ Coleções</button>' +
-      "<span><b>" + esc(c.nome) + "</b> · " + k.n + " jogo" + (k.n === 1 ? "" : "s") +
+    // Trilha no tamanho de titulo: o nivel de cima e link cinza, o atual em destaque.
+    h = '<div class="cui-trilha"><button id="cui-voltar">Coleções</button><i>/</i><b>' + esc(c.nome) + "</b></div>" +
+      '<span class="cui-conta">' + k.n + " jogo" + (k.n === 1 ? "" : "s") +
       (c.uniao ? " · união de " + esc(c.origens.map(function (o) { return (cuiPorId(o) || {}).nome; }).join(", ")) : "") +
       "</span>" +
       '<div class="cui-acoes">' +
@@ -1881,8 +1882,10 @@ function cuiPintar() {
     var n = 0, m = cuiMapa(), vistos = new Set();
     cuiRascunho.forEach(function (t) { var g = m.get(t); if (g) vistos.add(g.id); else n++; });
     n += vistos.size;
-    h = "<span>Adicionar jogos a <b>" + esc(c.nome) + "</b> · " + n + " marcado" + (n === 1 ? "" : "s") +
-      " · clique para marcar ou desmarcar</span>" +
+    // Sair pela trilha e o mesmo que Cancelar: o rascunho nao e gravado.
+    h = '<div class="cui-trilha"><button id="cui-voltar">Coleções</button><i>/</i>' +
+      '<button id="cui-trilha-col">' + esc(c.nome) + "</button><i>/</i><b>Adicionar jogos</b></div>" +
+      '<span class="cui-conta">' + n + " marcado" + (n === 1 ? "" : "s") + "</span>" +
       '<div class="cui-acoes"><button class="btn" id="cui-cancelar">Cancelar</button>' +
       '<button class="btn primary" id="cui-concluir">Concluir</button></div>';
   }
@@ -1934,10 +1937,10 @@ function ligarCui() {
   });
   $("#cui-barra").addEventListener("click", function (e) {
     var id = e.target.id;
-    if (id === "cui-voltar") { CUI.sel = null; cuiMudou(); cuiIr("colecoes"); }
+    if (id === "cui-voltar") { cuiRascunho = cuiRascunhoSet = null; CUI.sel = null; cuiMudou(); cuiIr("colecoes"); }
     else if (id === "cui-add") cuiAdicionar();
     else if (id === "cui-concluir") cuiConcluir();
-    else if (id === "cui-cancelar") cuiCancelar();
+    else if (id === "cui-cancelar" || id === "cui-trilha-col") cuiCancelar();
     else if (id === "cui-editar") cuiAbrirForm(cuiPorId(CUI.sel));
     else if (id === "cui-apagar") cuiApagar();
   });
