@@ -20,6 +20,11 @@
   --amber:#F0C036; --blue:#4B9BE8; --purple:#a77bd4; --red:#F2565B;
   /* 10px so no card, como o r:10 da previa; o resto usa os cantos dela, 4 e 5 */
   --r:10px; --r-sm:4px;
+  /* Altura do cabecalho fixo, onde a coluna de filtros e o titulo do ano grudam.
+   O app.js mede e reescreve; o valor daqui e so o do primeiro quadro. Era 57px
+   cravado, de quando o cabecalho tinha uma linha so: com o resumo embaixo ele
+   passou dessa altura, e o ano grudava escondido atras dele. */
+  --topo:84px;
   --sans:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   /* O tom do card da previa (grupo30): a base rgb(18,28,22) com o gradiente
@@ -78,7 +83,7 @@ a{color:var(--green2)}
 .wrap{display:flex;align-items:flex-start;gap:0}
 .side{
   width:252px;flex:none;padding:16px;border-right:1px solid var(--line);
-  position:sticky;top:57px;max-height:calc(100vh - 57px);overflow-y:auto;
+  position:sticky;top:var(--topo);max-height:calc(100vh - var(--topo));overflow-y:auto;
 }
 .side::-webkit-scrollbar,.main::-webkit-scrollbar{width:9px}
 .side::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:5px}
@@ -103,9 +108,12 @@ select:focus{border-color:var(--green)}
 /* ---------- seções por ano ---------- */
 .year{
   display:flex;align-items:center;gap:12px;margin:26px 0 12px;
-  position:sticky;top:57px;z-index:20;background:var(--fundo);padding:7px 0;
+  position:sticky;top:var(--topo);z-index:20;background:var(--fundo);padding:7px 0;
 }
-.year:first-child{margin-top:0}
+/* So o titulo da PRIMEIRA secao perde a margem. Com .year:first-child todos
+   perdiam, porque cada titulo e o primeiro filho da propria secao: o ano seguinte
+   colava no ultimo card e o fundo dele cobria a base do anel de selecao. */
+#main > section:first-child .year{margin-top:0}
 .year h2{margin:0;font-size:20px;font-weight:600;font-family:var(--mono)}
 .year .cnt{font-size:12px;color:var(--dim)}
 .year .ln{flex:1;height:1px;background:var(--line)}

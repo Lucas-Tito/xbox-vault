@@ -1197,9 +1197,21 @@ function onChange() {
 }
 
 function initControls() {
+  medirTopo();
   montarFacetas();
   restaurarControles();
   ligarEventos();
+}
+
+/* O cabecalho muda de altura quando quebra linha (tela estreita, janela
+   redimensionada), entao a altura e medida, e nao escrita no CSS. */
+function medirTopo() {
+  var topo = $(".topbar");
+  var aplicar = function () {
+    document.documentElement.style.setProperty("--topo", topo.offsetHeight + "px");
+  };
+  aplicar();
+  if (window.ResizeObserver) new ResizeObserver(aplicar).observe(topo);
 }
 
 function montarFacetas() {
