@@ -400,9 +400,19 @@ function cardHtml(g) {
       ' alt="' + esc(g.title) + '"' + (g.wide ? ' class="wide"' : "") +
       ' onerror="XBXimgErr(this)">'
     : '<div class="ph">' + esc(g.title) + "</div>";
+  // Homebrew nao tem genero nem estudio: a categoria faz esse papel, e a
+  // descricao escrita a mao vai para a linha da descricao, como a dos outros.
   var sub = g.platform === "homebrew"
-    ? esc(g.description || g.category || "")
+    ? esc(g.category || "")
     : esc([g.genre, (g.developers || [])[0]].filter(Boolean).join(" · "));
+  /* Card com a informacao ao lado da capa: a nota sai de cima da capa e vem com
+     o ano numa linha so, e entram as duas primeiras linhas da descricao. Com a
+     capa ocupando o card inteiro era muita imagem para pouca informacao. */
+  var rotNota = typeof g.mc === "number" ? (g.mcGeral ? "Metacritic geral" : "Metacritic")
+    : typeof g.ur === "number" ? "Marketplace" : "";
+  var linhaNota = (mc ? mc + "<span>" + rotNota + "</span>" : "") +
+    (mc && g.year ? '<span class="sep">·</span>' : "") + (g.year ? "<span>" + esc(g.year) + "</span>" : "");
+  var desc = (g.description || "").trim();
   /* Título sem link: clicar no card é para abrir a ficha, e um <a> no meio dele
      mandava a pessoa para fora do site sem aviso. A Wikipédia e a página do
      projeto continuam na Ficha técnica, que é onde link é o que se espera. */
@@ -428,9 +438,11 @@ function cardHtml(g) {
   return '<article class="card' + estado + '" data-id="' + esc(g.id) + '"' +
     (AREA === "cui" && !g._tids.length ? ' title="Sem Title ID: não dá para pôr em coleção do CollectionUI"' : "") + ">" +
     marcas +
-    '<div class="thumb">' + img + mc + "</div>" +
+    '<div class="thumb">' + img + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
-    '<div class="sub">' + sub + "</div>" +
+    (sub ? '<div class="sub">' + sub + "</div>" : "") +
+    (linhaNota ? '<div class="linha">' + linhaNota + "</div>" : "") +
+    (desc ? '<div class="desc">' + esc(desc) + "</div>" : "") +
     '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
 }
 
