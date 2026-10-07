@@ -1388,7 +1388,8 @@ function ligarEventos() {
     if (g) openDetail(g);                        // resto do card abre os detalhes
   });
 
-  // Menus do topo: fecham ao escolher, ao clicar fora e no Esc.
+  // Menus do topo (o do nome do site e o Arquivo): um aberto por vez, fecham ao
+  // escolher, ao clicar fora e no Esc.
   var menus = $$(".menu");
   var abrirMenu = function (menu, abre) {
     menu.querySelector(".menu-lista").hidden = !abre;

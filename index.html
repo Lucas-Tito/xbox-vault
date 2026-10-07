@@ -13,7 +13,17 @@
 
 <header class="topbar">
   <div class="topbar-in">
-    <div class="brand">Xbox Vault</div>
+    <!-- O nome do site e tambem a troca de area. O CollectionUI ainda nao tem
+         tela: o item fica inerte ate a pagina dele existir. -->
+    <div class="lado">
+      <div class="menu">
+        <button class="brand" aria-haspopup="menu" aria-expanded="false">Xbox Vault <span class="seta" aria-hidden="true"></span></button>
+        <div class="menu-lista esq" role="menu" hidden>
+          <a role="menuitem" class="menu-item atual" aria-current="page">Catálogo<small>Todos os jogos e o que você marcou</small></a>
+          <a role="menuitem" class="menu-item" aria-disabled="true">CollectionUI<small>Montar coleções para o console · em breve</small></a>
+        </div>
+      </div>
+    </div>
     <label class="search"><input id="q" type="search" placeholder="Buscar jogo, estúdio ou publisher" autocomplete="off"></label>
     <div class="actions">
       <button class="btn mobile-filters" id="btn-filters">Filtros</button>
