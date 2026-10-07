@@ -333,9 +333,9 @@ select:focus{border-color:var(--green)}
 /* a nota (so o numero) e o genero na mesma linha */
 .linha{display:flex;align-items:center;gap:8px;min-width:0;font-size:13px;color:var(--dim)}
 /* A descricao fica no meio do espaco entre a nota e as etiquetas: as margens
-   automaticas a centralizam na vertical. Ate tres linhas. */
+   automaticas a centralizam na vertical. Ate duas linhas. */
 .card .desc{margin:auto 0;font-size:13.5px;line-height:1.5;color:#B9C4BE;
-  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .linha .mc,.linha .ur{position:static;box-shadow:none;flex:none}
 .linha .sub{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
