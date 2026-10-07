@@ -41,7 +41,7 @@
 html,body{margin:0;padding:0}
 html{background:var(--bg)}
 body{
-  color:var(--txt); font:14px/1.5 var(--sans);
+  color:var(--txt); font:15px/1.5 var(--sans);
   -webkit-font-smoothing:antialiased;
 }
 /* Camada fixa, e nao background-attachment no body: o Safari do iPhone ignora o
@@ -107,11 +107,11 @@ a{color:var(--green2)}
 .vistas{display:flex;gap:2px;flex:1 1 auto;min-width:0;overflow-x:auto;scrollbar-width:none}
 .vistas::-webkit-scrollbar{display:none}
 .vista{background:none;border:0;border-bottom:2px solid transparent;
-  padding:9px 12px;color:var(--dim);font-size:13.5px;white-space:nowrap}
+  padding:10px 14px;color:var(--dim);font-size:15px;white-space:nowrap}
 .vista:hover{color:var(--txt)}
 .vista[aria-selected="true"]{color:var(--txt);border-bottom-color:var(--green);font-weight:500}
 .vista b{font-family:var(--mono);font-weight:400;font-size:11.5px;color:var(--dim2);margin-left:3px}
-.res-n{flex:none;font-size:13px;color:var(--dim);white-space:nowrap}
+.res-n{flex:none;font-size:14px;color:var(--dim);white-space:nowrap}
 
 /* ---------- area do CollectionUI ----------
    O fluxo da previa: a tela inicial e a das colecoes; dentro de uma, so os jogos
@@ -122,7 +122,7 @@ body.cui .so-cat, body:not(.cui) .so-cui,
 body.cui:not([data-tela=adicionar]) .side{display:none}
 @media(max-width:820px){ body.cui:not([data-tela=adicionar]) .mobile-filters{display:none} }
 .cui-barra{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:0 0 18px;
-  font-size:13.5px;color:var(--dim)}
+  font-size:14.5px;color:var(--dim)}
 .cui-barra:empty{display:none}
 .cui-barra b{color:var(--txt);font-weight:600}
 /* Trilha no tamanho de titulo: "Colecoes / co-op 2 players". O nivel de cima e
@@ -132,7 +132,7 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .cui-seta{flex:none;width:34px;height:34px;padding:0 0 3px;display:grid;place-items:center;
   background:var(--bg2);border:1px solid var(--line);border-radius:5px;color:var(--txt);font-size:22px;line-height:1}
 .cui-seta:hover{border-color:var(--green);color:var(--green)}
-.cui-trilha{display:flex;align-items:baseline;flex-wrap:wrap;font-size:20px;line-height:1.3}
+.cui-trilha{display:flex;align-items:baseline;flex-wrap:wrap;font-size:22px;line-height:1.3}
 .cui-trilha button{background:none;border:0;padding:0;font-size:inherit;color:var(--dim);font-weight:400}
 .cui-trilha button:hover{color:var(--green)}
 .cui-trilha i{font-style:normal;color:var(--dim2);margin:0 10px;font-weight:300}
@@ -199,7 +199,7 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .aviso button:hover{filter:brightness(1.08)}
 .card.apagado{opacity:.5}
 .card.apagado:hover{opacity:.85}
-body.cui .card.nacol::after{left:auto;right:8px}
+body.cui .card.nacol::after{left:auto;right:10px}
 body.cui .rem-btn{width:30px;height:30px;border-radius:5px;padding:0;display:grid;place-items:center;
   background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt)}
 body.cui .rem-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
@@ -209,13 +209,14 @@ body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff
 
 /* ---------- layout ---------- */
 .wrap{display:flex;align-items:flex-start;gap:0}
+/* A coluna de filtros fica no tamanho de antes: so o resto da pagina cresceu. */
 .side{
-  width:252px;flex:none;padding:16px;border-right:1px solid var(--line);
+  width:252px;flex:none;padding:16px;border-right:1px solid var(--line);font-size:13px;
   position:sticky;top:var(--topo);max-height:calc(100vh - var(--topo));overflow-y:auto;
 }
 .side::-webkit-scrollbar,.main::-webkit-scrollbar{width:9px}
 .side::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:5px}
-.main{flex:1;padding:18px 20px 120px;min-width:0}
+.main{flex:1;padding:22px 28px 120px;min-width:0}
 
 .side-top,.side-bot{display:none}
 /* Grupo recolhivel, separado do proximo por uma linha, como no Metacritic. */
@@ -234,8 +235,8 @@ body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff
 .chk-sep{margin-top:8px}
 /* Duas ou tres opcoes exclusivas lado a lado: o radio fica escondido, o rotulo e
    o botao. Vale para "Um ano / Intervalo" e para o "onde" do modo de jogo. */
-.seg{display:flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;margin:0 0 8px}
-.seg label{flex:1;text-align:center;font-size:12px;color:var(--dim);padding:6px 4px;cursor:pointer;
+.seg{display:flex;height:36px;border:1px solid var(--line);border-radius:5px;overflow:hidden;margin:0 0 8px}
+.seg label{flex:1;display:grid;place-items:center;font-size:12.5px;color:var(--dim);padding:0 4px;cursor:pointer;
   border-left:1px solid var(--line)}
 .seg label:first-child{border-left:0}
 .seg input{position:absolute;opacity:0;pointer-events:none}
@@ -249,11 +250,14 @@ body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff
 .chk input{accent-color:var(--green);width:15px;height:15px;cursor:pointer;flex:none}
 .chk .n{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2)}
 select,.side input[type=number]{
-  width:100%;padding:7px 9px;background:var(--bg3);border:1px solid var(--line);
+  width:100%;height:36px;padding:0 9px;background:var(--bg3);border:1px solid var(--line);
   border-radius:var(--r-sm);outline:none;
 }
 select:focus{border-color:var(--green)}
-.row2{display:flex;gap:6px;align-items:center}
+/* O ano: os dois seletores dividem a largura igual, com o "ate" no meio, e tudo na
+   altura do "Um ano / Intervalo" de cima. Em flex, o "Todos" de um lado e o do
+   outro ficavam de larguras diferentes. */
+.row2{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:6px;align-items:center}
 .row2 span{color:var(--dim2);font-size:12px}
 
 
@@ -268,11 +272,14 @@ select:focus{border-color:var(--green)}
 #main > section:first-child .year{margin-top:0}
 /* A linha do primeiro ano dobrava com a linha logo acima, a das abas. */
 #main > section:first-child .year .ln{visibility:hidden}
-.year h2{margin:0;font-size:20px;font-weight:600;font-family:var(--mono)}
-.year .cnt{font-size:12px;color:var(--dim)}
+.year h2{margin:0;font-size:24px;font-weight:600;font-family:var(--mono)}
+.year .cnt{font-size:13px;color:var(--dim)}
 .year .ln{flex:1;height:1px;background:var(--line)}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(188px,1fr));gap:14px}
+/* No maximo 7 por linha, e card de no minimo 200px: em tela larga cabiam 8 ou 9
+   capas pequenas; agora o card cresce em vez de caber mais um. */
+.grid{display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fill,minmax(max(200px,calc((100% - 6 * 16px) / 7)),1fr))}
 
 /* ---------- card ---------- */
 .card{
@@ -295,8 +302,10 @@ select:focus{border-color:var(--green)}
    Nao e controle: ::after nao captura clique, entao clicar nele abre a ficha
    como qualquer outro ponto do card, e e la que se desmarca. */
 .card.own::after,.card.nacol::after{
-  content:"\2713";position:absolute;top:8px;left:8px;width:22px;height:22px;border-radius:50%;
-  background:var(--green);color:var(--on-green);display:grid;place-items:center;font-weight:700;font-size:13px;z-index:3;
+  content:"\2713";position:absolute;top:10px;left:10px;width:30px;height:30px;border-radius:50%;
+  background:var(--green);color:var(--on-green);display:grid;place-items:center;font-weight:700;font-size:17px;z-index:3;
+  /* aro escuro em volta: em capa clara o visto verde sumia */
+  box-shadow:0 0 0 2px rgba(0,0,0,.55),0 2px 8px rgba(0,0,0,.5);
 }
 /* A capa se arredonda sozinha, com o raio do card menos a borda: o card nao
    corta mais o que esta dentro dele (ver .card::before). */
@@ -313,9 +322,9 @@ select:focus{border-color:var(--green)}
 .card:not(.own) .thumb img{filter:saturate(.75) brightness(.86)}
 .card:hover .thumb img{filter:none}
 
-.body{padding:9px 10px 10px;display:flex;flex-direction:column;gap:6px;flex:1}
-.card h3{margin:0;font-size:13px;line-height:1.3;font-weight:600}
-.card .sub{font-size:11px;color:var(--dim);line-height:1.35;
+.body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{margin:0;font-size:15px;line-height:1.3;font-weight:600}
+.card .sub{font-size:12.5px;color:var(--dim);line-height:1.35;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* Eram ate sete pilulas em seis cores, cada uma com borda propria. Texto corrido
    sem caixa nenhuma tambem nao serviu: "ONLINE 4P CO-OP LOCAL 4P" virava uma
@@ -323,8 +332,8 @@ select:focus{border-color:var(--green)}
    fundo neutro e baixo separa cada uma, sem borda e sem cor. Cor so onde ela
    avisa alguma coisa, o vazado. */
 .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:2px}
-.tag{white-space:nowrap;font-size:10px;font-weight:600;letter-spacing:.03em;line-height:1;
-  padding:4px 5px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
+.tag{white-space:nowrap;font-size:11px;font-weight:600;letter-spacing:.03em;line-height:1;
+  padding:5px 6px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
 .tag.plat,.tag.emu{color:var(--txt);background:rgba(231,237,233,.13)}
 .tag.nobc{color:var(--dim2)}
 .tag.vaz{color:var(--amber);background:rgba(240,192,54,.12)}
@@ -463,11 +472,11 @@ body.cui .card.semtid:hover::before{border-width:0}
    cursor e pior do que sobrar espaco no painel curto. Quem rola agora e o
    painel, dentro de uma moldura que nao se mexe. */
 .det-info{flex:1;min-width:0;padding:22px 24px 24px;overflow-y:auto;height:72vh}
-.det-info h3{margin:0 0 3px;font-size:19px;line-height:1.25}
-.det-sub{color:var(--dim);font-size:12.5px;margin-bottom:14px}
+.det-info h3{margin:0 0 3px;font-size:21px;line-height:1.25}
+.det-sub{color:var(--dim);font-size:13.5px;margin-bottom:14px}
 /* A descricao e prosa: vai solta, sem caixa e sem a regua verde do lado. */
-.det-info .desc{color:var(--txt);font-size:13.5px;line-height:1.6;margin:0 0 14px}
-.det-info h4{margin:18px 0 7px;font-size:12.5px;color:var(--dim);font-weight:600}
+.det-info .desc{color:var(--txt);font-size:14.5px;line-height:1.6;margin:0 0 14px}
+.det-info h4{margin:18px 0 7px;font-size:13.5px;color:var(--dim);font-weight:600}
 /* So o h4 que abre o painel perde a margem de cima. Com :first-of-type, o
    "Tempo de jogo" tambem perdia, porque e o primeiro h4 da Visao geral mesmo
    vindo depois da faixa de fatos, e colava na nota acima dele. */
@@ -476,7 +485,7 @@ body.cui .card.semtid:hover::before{border-width:0}
 .det-acoes .btn{flex:1;min-width:150px;text-align:center;justify-content:center}
 .btn.amber{background:var(--amber);border-color:var(--amber);color:#1a1206;font-weight:600}
 .btn.amber:hover{filter:brightness(1.1);background:var(--amber)}
-.li{display:flex;gap:10px;padding:4px 0;font-size:13px;border-bottom:1px solid var(--line)}
+.li{display:flex;gap:10px;padding:5px 0;font-size:14px;border-bottom:1px solid var(--line)}
 /* A ultima linha da ficha nao leva borda. So :last-child nao bastava: na Ficha
    tecnica o bloco dos links vem depois das linhas, e a ultima delas (o Title ID,
    quase sempre) ficava com uma linha solta embaixo. */
@@ -522,7 +531,7 @@ ul.modos li{color:var(--txt)}
   overflow-x:auto;scrollbar-width:none}
 .abas::-webkit-scrollbar{display:none}
 .aba{background:none;border:0;border-bottom:2px solid transparent;color:var(--dim2);
-  padding:8px 11px;font-size:12.5px;white-space:nowrap;transition:.15s}
+  padding:8px 11px;font-size:13.5px;white-space:nowrap;transition:.15s}
 .aba:hover{color:var(--txt)}
 .aba[aria-selected="true"]{color:var(--txt);border-bottom-color:var(--green)}
 
