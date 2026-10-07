@@ -145,6 +145,9 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .cui-acoes{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:10px;margin-left:auto}
 .cui-acoes .btn{height:36px;padding:0 16px;display:flex;align-items:center;justify-content:center;
   text-align:center;white-space:nowrap}
+/* A borda escura dos botoes de contorno sumia no fundo, e o olho via so a parte
+   de dentro, 2px menor que o botao verde ao lado. Mais clara, ela aparece. */
+.cui-acoes .btn:not(.primary){border-color:var(--dim2)}
 .btn.perigo:hover{border-color:var(--red);color:var(--red)}
 .cui-nota{flex-basis:100%;font-size:12px;color:var(--dim)}
 .cui-nota code{font-family:var(--mono);font-size:11px}
