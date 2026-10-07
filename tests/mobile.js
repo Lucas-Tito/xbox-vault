@@ -44,11 +44,11 @@
        $('#side-n').textContent + ' vs ' + $('#s-shown').textContent);
     // filtrar com a gaveta aberta atualiza o numero ao vivo
     const antes = $('#side-n').textContent;
-    $('#f-own').value = 'yes'; $('#f-own').dispatchEvent(new Event('change', {bubbles:true}));
+    $('.vista[data-own="yes"]').click();
     await wait(400);
     ok('numero acompanha o filtro ao vivo', $('#side-n').textContent !== antes,
        antes + ' -> ' + $('#side-n').textContent);
-    $('#f-own').value = 'all'; $('#f-own').dispatchEvent(new Event('change', {bubbles:true}));
+    $('.vista[data-own="all"]').click();
     await wait(300);
     // o rodape rola junto? nao: ele e fixo, e o miolo que rola
     const bot = $('.side-bot').getBoundingClientRect();

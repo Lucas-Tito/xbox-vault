@@ -114,11 +114,11 @@
 
     // filtro "so os que tenho"
     $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(500);
-    $('#f-own').value = 'yes'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="yes"]').click(); await wait(400);
     ok('filtro so-tenho', cards().length === 1, cards().length + ' card(s)');
-    $('#f-own').value = 'no'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="no"]').click(); await wait(400);
     ok('filtro so-faltam', +$('#s-shown').textContent.replace(/\D/g,'') === catalogo().length - 1, $('#s-shown').textContent);
-    $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
+    $('.vista[data-own="all"]').click(); await wait(300);
 
     // persistencia de filtros
     ok('filtros salvos no storage', !!localStorage.getItem('xbx.filters.v1'));
@@ -688,35 +688,35 @@
     // devolve para a wishlist para os testes de filtro/export
     wcard.querySelector('.wish-btn').click(); await wait(250);
 
-    $('#f-own').value = 'wish'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="wish"]').click(); await wait(400);
     const wlFilter = JSON.parse(localStorage.getItem('xbx.wishlist.v1')||'[]').length;
     ok('filtro so-wishlist', cards().length === wlFilter, cards().length + ' cards vs ' + wlFilter + ' na wishlist');
 
     // "so os que eu ainda nao marquei": nem tenho, nem quero, nem escondi.
     // Nao compara com o tamanho do catalogo (depende de quais bundles ja
     // desceram): compara com "so os que faltam", que so difere pela wishlist.
-    $('#f-own').value = 'none'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="none"]').click(); await wait(400);
     const semMarca = +$('#s-shown').textContent.replace(/\D/g,'');
     ok('nao-marcados nao trazem marcado nenhum',
        !cards().some(c => c.classList.contains('own') || c.classList.contains('wish') ||
                           c.classList.contains('hide')),
        semMarca + ' exibidos');
-    $('#f-own').value = 'no'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="no"]').click(); await wait(400);
     const faltam = +$('#s-shown').textContent.replace(/\D/g,'');
     ok('nao-marcados = faltam menos a wishlist', faltam - semMarca === wlFilter,
        faltam + ' - ' + semMarca + ' = ' + (faltam - semMarca) + ', wishlist ' + wlFilter);
 
     // marcar pelo popup enquanto o filtro esta ligado tira o card da tela
-    $('#f-own').value = 'none'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="none"]').click(); await wait(400);
     const nm = cards()[0], nmid = nm.dataset.id, nmAntes = cards().length;
     await toggleOwn(nm);
     ok('marcar tira o card dos nao-marcados',
        cards().length === nmAntes - 1 && !cards().some(c => c.dataset.id === nmid),
        nmAntes + ' -> ' + cards().length);
-    $('#f-own').value = 'all'; fire($('#f-own')); await wait(300);
+    $('.vista[data-own="all"]').click(); await wait(300);
 
     // ---- "nao quero" (esconder) ----
-    $('#f-own').value = 'all'; fire($('#f-own')); await wait(400);
+    $('.vista[data-own="all"]').click(); await wait(400);
     $('#q').value = 'Bayonetta'; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
     await until(() => cards().length > 0 && cards().length < 40, 6000); await wait(250);
     const hc = cards()[0], hid = hc.dataset.id;
@@ -728,14 +728,14 @@
     ok('estado gravado como hide',
        JSON.parse(localStorage.getItem('xbx.marks.v3')||'{}')[hid]?.s === 'hide');
 
-    $('#f-own').value = 'hide'; fire($('#f-own')); await wait(500);
+    $('.vista[data-own="hide"]').click(); await wait(500);
     ok('filtro "so os escondidos" mostra ele',
        cards().some(c => c.dataset.id === hid), cards().length + ' escondido(s)');
     ok('card escondido tem a classe', cards()[0].classList.contains('hide'));
 
     // desfazer devolve o jogo para a lista normal
     cards().find(c => c.dataset.id === hid).querySelector('.hide-btn').click(); await wait(400);
-    $('#f-own').value = 'all'; fire($('#f-own')); await wait(500);
+    $('.vista[data-own="all"]').click(); await wait(500);
     ok('desfazer devolve o jogo', cards().some(c => c.dataset.id === hid));
 
     // esconder e exclusivo com tenho/wishlist
@@ -807,7 +807,7 @@
     await until(() => cards().length > 50, 8000); await wait(300);
 
     // ---- nota do Metacritic ----
-    $('#f-own').value='all'; fire($('#f-own'));
+    $('.vista[data-own="all"]').click();
     $('#q').value=''; $('#q').dispatchEvent(new Event('input',{bubbles:true}));
     await until(() => cards().length > 50, 8000); await wait(300);
     const comMC = catalogo().filter(g => typeof g.mc === 'number');
@@ -876,11 +876,12 @@
       const shown = +$('#s-shown').textContent.replace(/\D/g,'');
       const real = catalogo().filter(g => g.tags && g.tags.coop).length;
       ok('filtro co-op', shown === real, shown + ' exibidos vs ' + real + ' reais');
-      const lb = $$('.f-mode').find(c => c.value === 'multiplayerLocal');
+      // o "onde" refina o modo: co-op + Local e o co-op local do dado
+      const lb = $('input[name=f-where][value=local]'), qq = $('input[name=f-where][value=any]');
       lb.checked = true; fire(lb); await wait(500);
-      const both = catalogo().filter(g => g.tags && g.tags.coop && g.tags.multiplayerLocal).length;
-      ok('filtros combinam (E logico)', +$('#s-shown').textContent.replace(/\D/g,'') === both, both + ' co-op local');
-      coopBox.checked = false; fire(coopBox); lb.checked = false; fire(lb); await wait(400);
+      const both = catalogo().filter(g => g.tags && g.tags.coopLocal).length;
+      ok('modo + onde combinam', +$('#s-shown').textContent.replace(/\D/g,'') === both, both + ' co-op local');
+      coopBox.checked = false; fire(coopBox); qq.checked = true; fire(qq); await wait(400);
 
       $('#f-pl-min').value = '4'; fire($('#f-pl-min')); await wait(500);
       const p4 = catalogo().filter(g => { const t = g.tags||{};

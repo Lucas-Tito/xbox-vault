@@ -48,12 +48,18 @@ function rebuildSets() {
    que quase todo mundo veio ver, 360 e Xbox original, e as outras categorias
    entram quando a pessoa pedir. Os 3.450 indies sozinhos passavam na frente de
    tudo por ano de lancamento. */
-var F = {
-  q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
-  systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all", cat: "",
-  mcMin: 0, genres: [], sort: "year-desc"
-};
+function padraoF() {
+  return {
+    q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
+    systems: [], relType: "oficial", where: "any", plMin: 0, yMode: "intervalo", y1: "", y2: "",
+    bc: "all", cat: "", mcMin: 0, genres: [], sort: "year-desc"
+  };
+}
+var F = padraoF();
 try { Object.assign(F, JSON.parse(localStorage.getItem(FILT_KEY) || "{}")); } catch (e) {}
+// Filtro salvo antes da fusao do modo de jogo: o escopo dos jogadores virou o
+// "onde", que agora vale para o modo tambem.
+if (F.plScope) { if (F.where === "any") F.where = F.plScope; delete F.plScope; }
 
 var $ = function (s) { return document.querySelector(s); };
 var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -163,6 +169,30 @@ function maxPlayers(g, scope) {
   return Math.max(t.maxPlayersLocal || 0, t.maxPlayersOnline || 0, t.maxPlayers || 0);
 }
 
+/* Um modo de jogo, levando em conta o "onde". Sem co-op nem versus marcado, o
+   onde sozinho pede multiplayer naquele lugar. Nao existe versus online no dado,
+   so versus local: online usa "tem versus e tem multiplayer online", que e o mais
+   perto que da para chegar. */
+function modoOk(g, m) {
+  var t = g._t, w = F.where;
+  if (m === "singlePlayer") return !!t.singlePlayer;
+  if (m === "coop") return !!(w === "local" ? t.coopLocal : w === "online" ? t.coopOnline : t.coop);
+  if (m === "versus") return !!(w === "local" ? t.versusLocal :
+                                w === "online" ? t.versus && t.multiplayerOnline : t.versus);
+  return false;
+}
+
+function modosOk(g) {
+  var multi = false;
+  for (var i = 0; i < F.modes.length; i++) {
+    if (!modoOk(g, F.modes[i])) return false;
+    if (F.modes[i] !== "singlePlayer") multi = true;
+  }
+  if (!multi && F.where === "local" && !g._t.multiplayerLocal) return false;
+  if (!multi && F.where === "online" && !g._t.multiplayerOnline) return false;
+  return true;
+}
+
 function match(g, skip) {
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
   if (F.q) {
@@ -180,9 +210,7 @@ function match(g, skip) {
   // porque a wishlist também falta, e ela já foi decidida.
   if (F.own === "none" && (owned.has(g.id) || wishlist.has(g.id))) return false;
 
-  if (skip !== "mode") {
-    for (var i = 0; i < F.modes.length; i++) if (!g._t[F.modes[i]]) return false;
-  }
+  if (skip !== "mode" && !modosOk(g)) return false;
   if (skip !== "flag") {
     for (var j = 0; j < F.flags.length; j++) {
       var f = F.flags[j], v = (g.flags || {})[f];
@@ -190,7 +218,7 @@ function match(g, skip) {
       else if (!v) return false;
     }
   }
-  if (F.plMin > 0 && maxPlayers(g, F.plScope) < F.plMin) return false;
+  if (F.plMin > 0 && maxPlayers(g, F.where) < F.plMin) return false;
   if (F.mcMin > 0 && !(g.mc >= F.mcMin)) return false;   // sem nota também não passa
 
   if (F.y1 && (g.year == null || g.year < +F.y1)) return false;
@@ -457,8 +485,6 @@ function updateStats(list) {
   $("#side-n").textContent = list.length.toLocaleString("pt-BR");
   $("#s-total").textContent = totalTudo.toLocaleString("pt-BR");
   $("#s-own").textContent = ownCount.toLocaleString("pt-BR");
-  var pct = totalTudo ? (ownCount / totalTudo * 100) : 0;
-  $("#s-pct").textContent = "(" + pct.toFixed(1) + "%)";
   $$("[data-cnt^='plat-']").forEach(function (el) {
     var k = el.dataset.cnt.slice(5), n = totalPlat(k);
     // Bundle velho nao traz o total das categorias sob demanda: nesse caso fica
@@ -471,7 +497,7 @@ function updateFacets() {
   var fm = filtered("mode"), ff = filtered("flag");
   $$("[data-cnt^='m-']").forEach(function (el) {
     var k = el.dataset.cnt.slice(2), n = 0;
-    fm.forEach(function (g) { if (g._t[k]) n++; });
+    fm.forEach(function (g) { if (modoOk(g, k)) n++; });
     el.textContent = n;
   });
   $$("[data-cnt^='f-']").forEach(function (el) {
@@ -1188,8 +1214,8 @@ function filtros(abrir) {
 }
 
 function onChange() {
+  contexto();
   saveF();
-  subfiltrosEmu();
   // ligar uma categoria sob demanda dispara o download dela, uma vez por visita
   var faltam = pendentes(F.plats);
   if (faltam.length) return carregarCatalogos(faltam, render);
@@ -1218,18 +1244,23 @@ function montarFacetas() {
   // anos
   var years = Array.from(new Set(GAMES.map(function (g) { return g.year; })
     .filter(function (y) { return y != null; }))).sort(function (a, b) { return a - b; });
-  var o1 = '<option value="">qualquer</option>' + years.map(function (y) { return "<option>" + y + "</option>"; }).join("");
+  var o1 = '<option value="">Todos</option>' + years.map(function (y) { return "<option>" + y + "</option>"; }).join("");
   $("#f-y1").innerHTML = o1; $("#f-y2").innerHTML = o1;
   $("#f-y1").value = F.y1; $("#f-y2").value = F.y2;
 
-  // gêneros
+  // gêneros: os cinco maiores e o resto atrás do "Mostrar mais". Um gênero
+  // marcado fica sempre à vista, senão o filtro ativo sumiria ao recolher.
   var gc = {};
   GAMES.forEach(function (g) { if (g.genre) gc[g.genre] = (gc[g.genre] || 0) + 1; });
   var gens = Object.keys(gc).sort(function (a, b) { return gc[b] - gc[a] || a.localeCompare(b); });
-  $("#f-genres").innerHTML = gens.map(function (g) {
-    return '<label class="chk"><input type="checkbox" class="f-genre" value="' + esc(g) + '"' +
-      (F.genres.indexOf(g) >= 0 ? " checked" : "") + "> " + esc(g) + '<span class="n">' + gc[g] + "</span></label>";
+  $("#f-genres").innerHTML = gens.map(function (g, i) {
+    var on = F.genres.indexOf(g) >= 0;
+    return '<label class="chk' + (i >= 5 && !on ? " extra" : "") + '"><input type="checkbox" class="f-genre" value="' +
+      esc(g) + '"' + (on ? " checked" : "") + "> " + esc(g) + '<span class="n">' + gc[g] + "</span></label>";
   }).join("");
+  var mais = $("#genre-mais");
+  mais.hidden = gens.length <= 5;
+  mais.textContent = $("#f-genres").classList.contains("aberto") ? "− Mostrar menos" : "+ Mostrar mais";
 
   // categorias homebrew
   var cats = Array.from(new Set(GAMES.map(function (g) { return g.category; }).filter(Boolean))).sort();
@@ -1238,26 +1269,65 @@ function montarFacetas() {
   $("#f-cat").value = F.cat;
 }
 
-function subfiltrosEmu() {
-  var on = F.plats.indexOf("emu") >= 0;
-  var g = $("#g-emu");
-  if (g) g.hidden = !on;
+/* Grupo que so vale para uma plataforma aparece com ela marcada. Escondido, ele
+   tambem e zerado: um filtro ativo sem controle visivel esvaziaria a lista sem
+   explicacao. */
+function contexto() {
+  $$(".fgroup[data-plat]").forEach(function (gr) {
+    var on = F.plats.indexOf(gr.dataset.plat) >= 0;
+    gr.hidden = !on;
+    if (on) return;
+    var k = gr.dataset.g;
+    if (k === "bc") { F.bc = "all"; $("#f-bc").value = "all"; }
+    else if (k === "extras") { F.flags = []; $$(".f-flag").forEach(function (c) { c.checked = false; }); }
+    else if (k === "cat") { F.cat = ""; $("#f-cat").value = ""; }
+  });
+}
+
+function marcarVista() {
+  $$(".vista").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.own === F.own); });
+}
+
+/* "Um ano" usa so o primeiro seletor e espelha o valor no segundo. */
+function modoAno() {
+  var um = F.yMode === "um";
+  $(".y-ate").hidden = um; $("#f-y2").hidden = um;
+  $$("input[name=f-ymode]").forEach(function (r) { r.checked = r.value === F.yMode; });
+}
+
+var GRUPOS_KEY = "xbx.grupos.v1";
+function restaurarGrupos() {
+  var fechados = [];
+  try { fechados = JSON.parse(localStorage.getItem(GRUPOS_KEY) || "[]"); } catch (e) {}
+  $$("details.fgroup").forEach(function (gr) {
+    if (fechados.indexOf(gr.dataset.g) >= 0) gr.open = false;
+    gr.addEventListener("toggle", function () {
+      var f = $$("details.fgroup").filter(function (x) { return !x.open; }).map(function (x) { return x.dataset.g; });
+      try { localStorage.setItem(GRUPOS_KEY, JSON.stringify(f)); } catch (e) {}
+    });
+  });
 }
 
 function restaurarControles() {
   // restaura estado
   $("#q").value = F.q ? F.q : "";
-  $("#f-own").value = F.own; $("#f-bc").value = F.bc; $("#f-cat").value = F.cat;
-  $("#f-sort").value = F.sort; $("#f-pl-scope").value = F.plScope; $("#f-pl-min").value = String(F.plMin);
+  $("#f-bc").value = F.bc; $("#f-cat").value = F.cat;
+  $("#f-sort").value = F.sort; $("#f-pl-min").value = String(F.plMin);
   $$(".f-plat").forEach(function (c) { c.checked = F.plats.indexOf(c.value) >= 0; });
   $$(".f-mode").forEach(function (c) { c.checked = F.modes.indexOf(c.value) >= 0; });
+  // modo salvo que nao existe mais (multiplayerLocal, coopLocal...) sai do filtro
+  F.modes = $$(".f-mode").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
+  $$("input[name=f-where]").forEach(function (r) { r.checked = r.value === F.where; });
   $$(".f-flag").forEach(function (c) { c.checked = F.flags.indexOf(c.value) >= 0; });
   // descarta flags salvas que nao existem mais na UI (senao filtrariam sem forma de desmarcar)
   F.flags = $$(".f-flag").filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
   $$(".f-sys").forEach(function (c) { c.checked = F.systems.indexOf(c.value) >= 0; });
   if ($("#f-reltype")) $("#f-reltype").value = F.relType;
   if ($("#f-mc")) $("#f-mc").value = String(F.mcMin);
-  subfiltrosEmu();
+  marcarVista();
+  modoAno();
+  contexto();
+  restaurarGrupos();
 }
 
 function ligarEventos() {
@@ -1277,18 +1347,31 @@ function ligarEventos() {
     else if (t.classList.contains("f-genre")) F.genres = pick(".f-genre");
     else if (t.classList.contains("f-sys")) F.systems = pick(".f-sys");
     else if (t.id === "f-reltype") F.relType = t.value;
-    else if (t.id === "f-own") F.own = t.value;
+    else if (t.name === "f-where") F.where = t.value;
+    else if (t.name === "f-ymode") {
+      F.yMode = t.value;
+      if (F.yMode === "um") { F.y2 = F.y1; $("#f-y2").value = F.y1; }
+      modoAno();
+    }
     else if (t.id === "f-bc") F.bc = t.value;
     else if (t.id === "f-cat") F.cat = t.value;
     else if (t.id === "f-sort") F.sort = t.value;
-    else if (t.id === "f-y1") F.y1 = t.value;
+    else if (t.id === "f-y1") { F.y1 = t.value; if (F.yMode === "um") { F.y2 = t.value; $("#f-y2").value = t.value; } }
     else if (t.id === "f-y2") F.y2 = t.value;
-    else if (t.id === "f-pl-scope") F.plScope = t.value;
     else if (t.id === "f-pl-min") F.plMin = +t.value;
     else if (t.id === "f-mc") F.mcMin = +t.value;
     else return;
     onChange();
   });
+
+  $$(".vista").forEach(function (b) {
+    b.onclick = function () { F.own = b.dataset.own; marcarVista(); onChange(); };
+  });
+  $("#genre-mais").onclick = function () {
+    var box = $("#f-genres");
+    box.classList.toggle("aberto");
+    this.textContent = box.classList.contains("aberto") ? "− Mostrar menos" : "+ Mostrar mais";
+  };
 
   $("#main").addEventListener("click", function (e) {
     if (e.target.tagName === "A") return;
@@ -1360,9 +1443,7 @@ function ligarEventos() {
   $("#side-x").onclick = function () { filtros(false); };
   $("#side-done").onclick = function () { filtros(false); };
   $("#btn-reset").onclick = function () {
-    F = { q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
-          systems: [], relType: "oficial", plScope: "any", plMin: 0, y1: "", y2: "", bc: "all",
-          cat: "", mcMin: 0, genres: [], sort: "year-desc" };
+    F = padraoF();
     saveF(); location.reload();
   };
 }
