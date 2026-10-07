@@ -21,6 +21,12 @@
 "n": "SKYFALL Content Pack"
 }
 ],
+"x360-2010-fifa-world-cup-south-africa": [
+{
+"mb": 0.73,
+"n": "Flag Themed Ball Updates"
+}
+],
 "x360-3d-ultra-minigolf-adventures": [
 {
 "mb": 23.39,
@@ -1468,6 +1474,76 @@
 "n": "Planes Pack 1 P 47 Thunderbolt OS2U Kingfisher"
 }
 ],
+"x360-blazblue-calamity-trigger": [
+{
+"mb": 0.11,
+"n": "Additional character colors 2 type A"
+},
+{
+"mb": 0.11,
+"n": "Other Unlimited Characters Unlocked"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors 3 type B"
+},
+{
+"mb": 0.11,
+"n": "All additional character colors 3"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors 3 type A"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors 3 type C"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors 2 type C"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors 2 type B"
+},
+{
+"mb": 0.11,
+"n": "All additional character colors 2"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors Type B"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors All Types"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors Type A"
+},
+{
+"mb": 0.11,
+"n": "Additional character colors Type C"
+},
+{
+"mb": 0.11,
+"n": "Unlimited Rachel Unlocked"
+},
+{
+"mb": 0.11,
+"n": "Unlimited Ragna Unlocked"
+},
+{
+"mb": 0.11,
+"n": "Unlimited Hakumen Unlocked"
+},
+{
+"mb": 0.11,
+"n": "Unlimited Nu Unlocked"
+}
+],
 "x360-blazblue-continuum-shift-extend": [
 {
 "mb": 0.11,
@@ -1540,6 +1616,20 @@
 {
 "mb": 3.14,
 "n": "Bomberman Live Bomb up Pack 1"
+}
+],
+"x360-bomberman-live-battlefest": [
+{
+"mb": 5.86,
+"n": "Bomb Up Pack III"
+},
+{
+"mb": 4.17,
+"n": "Bomb Up Pack II"
+},
+{
+"mb": 4.17,
+"n": "Bomb Up Pack I"
 }
 ],
 "x360-boom-boom-rocket": [
@@ -1998,6 +2088,24 @@
 {
 "mb": 0.11,
 "n": "Yellowcard Car"
+}
+],
+"x360-cabela-s-african-safari": [
+{
+"mb": 0.11,
+"n": "Safari Bonus Animal"
+}
+],
+"x360-cabela-s-alaskan-adventures": [
+{
+"mb": 0.11,
+"n": "Alaskan Bonus Pack 1"
+}
+],
+"x360-cabela-s-big-game-hunter": [
+{
+"mb": 0.11,
+"n": "Rifle and Sheep Pack"
 }
 ],
 "x360-cabela-s-big-game-hunter-2012": [
@@ -3364,6 +3472,20 @@
 "n": "Download Song 04"
 }
 ],
+"x360-dance-evolution-dancemasters-in-na": [
+{
+"mb": 38.34,
+"n": "OUTFIT 2"
+},
+{
+"mb": 38.89,
+"n": "OUTFIT 1"
+},
+{
+"mb": 1.57,
+"n": "Master Level Pack"
+}
+],
 "x360-dante-s-inferno": [
 {
 "mb": 0.23,
@@ -3870,6 +3992,16 @@
 {
 "mb": 4.53,
 "n": "Joan of Arc DLC"
+}
+],
+"x360-deadliest-warrior-the-game": [
+{
+"mb": 69.89,
+"n": "Deadliest Warrior DLC 1 FREE VERSION"
+},
+{
+"mb": 69.89,
+"n": "Deadliest Warrior DLC Expansion Pack 1"
 }
 ],
 "x360-deadpool": [
@@ -4482,6 +4614,56 @@
 "n": "Doritos Crash Course City Lights"
 }
 ],
+"x360-dragon-age-ii": [
+{
+"mb": 1075.2,
+"n": "Mark of the Assassin"
+},
+{
+"mb": 20.87,
+"n": "All Class Item Pack II"
+},
+{
+"mb": 5.93,
+"n": "Mage Item Pack II"
+},
+{
+"mb": 6.4,
+"n": "Rogue Item Pack II"
+},
+{
+"mb": 8.73,
+"n": "Warrior Item Pack II"
+},
+{
+"mb": 717.67,
+"n": "Legacy"
+},
+{
+"mb": 13.75,
+"n": "Dragon Age II Item Pack Bundle"
+},
+{
+"mb": 5.0,
+"n": "Mage Item Pack"
+},
+{
+"mb": 5.04,
+"n": "Rogue Item Pack"
+},
+{
+"mb": 3.9,
+"n": "Warrior Item Pack"
+},
+{
+"mb": 18.15,
+"n": "The Black Emporium"
+},
+{
+"mb": 50.01,
+"n": "The Exiled Prince"
+}
+],
 "x360-dragon-age-inquisition": [
 {
 "mb": 260.14,
@@ -4540,6 +4722,52 @@
 {
 "mb": 1.01,
 "n": "Feastday Pranks"
+}
+],
+"x360-dragon-ball-raging-blast": [
+{
+"mb": 0.11,
+"n": "Dragon Ball Ultimate Warriors Pack 4"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Ultimate Warriors Pack 3"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Ultimate Warriors Pack 2"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Ultimate Warriors Pack 1"
+},
+{
+"mb": 0.11,
+"n": "DB Saiyans Pack"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Revived Warriors Pack"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Warriors of Justice Pack"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Androids Pack"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Ginyu Force Pack"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Alien Warriors Pack"
+},
+{
+"mb": 0.11,
+"n": "Dragon Ball Warriors on Earth Pack"
 }
 ],
 "x360-dragon-ball-xenoverse": [
@@ -4872,6 +5100,48 @@
 "n": "NEW STAGE BGM PACK 1"
 }
 ],
+"x360-dynasty-warriors-gundam-2": [
+{
+"mb": 0.15,
+"n": "Additional Mission 08"
+},
+{
+"mb": 0.12,
+"n": "Additional Mission 09"
+},
+{
+"mb": 0.12,
+"n": "Additional Mission 10"
+},
+{
+"mb": 0.17,
+"n": "Additional Mission 07"
+},
+{
+"mb": 0.14,
+"n": "Additional Mission 04"
+},
+{
+"mb": 0.12,
+"n": "Additional Mission 05"
+},
+{
+"mb": 0.12,
+"n": "Additional Mission 06"
+},
+{
+"mb": 0.14,
+"n": "Additional Mission 02"
+},
+{
+"mb": 0.14,
+"n": "Additional Mission 01"
+},
+{
+"mb": 0.12,
+"n": "Additional Mission 03"
+}
+],
 "x360-dynasty-warriors-gundam-3": [
 {
 "mb": 8.01,
@@ -4936,6 +5206,12 @@
 {
 "mb": 0.15,
 "n": "Fortress Infiltration Blaze of Glory Extra Mission"
+}
+],
+"x360-dynasty-warriors-strikeforce": [
+{
+"mb": 0.11,
+"n": "DW Strikeforce Pack 4"
 }
 ],
 "x360-earth-defense-force-2025": [
@@ -5048,6 +5324,20 @@
 {
 "mb": 0.81,
 "n": "EXIT2"
+}
+],
+"x360-f-e-a-r-2-project-origin": [
+{
+"mb": 1044.48,
+"n": "FEAR 2 Reborn"
+},
+{
+"mb": 139.31,
+"n": "FEAR 2 Armored Front Map Pack"
+},
+{
+"mb": 157.4,
+"n": "FEAR 2 Toy Soldiers Map Pack"
 }
 ],
 "x360-f-e-a-r-3": [
@@ -6366,6 +6656,16 @@
 "n": "Golf Tee It Up Desert Course"
 }
 ],
+"x360-grand-theft-auto-iv": [
+{
+"mb": 1781.76,
+"n": "GTA IV The Lost and Damned"
+},
+{
+"mb": 1884.16,
+"n": "Grand Theft Auto The Ballad of Gay Tony"
+}
+],
 "x360-grand-theft-auto-v": [
 {
 "mb": 158.68,
@@ -6540,6 +6840,26 @@
 "n": "Survival Game Mode"
 }
 ],
+"x360-guilty-gear-2-overture": [
+{
+"mb": 63.92,
+"n": "New Stage Holy Knights Fortress"
+},
+{
+"mb": 0.12,
+"n": "New Costume Ex Sol"
+},
+{
+"mb": 0.21,
+"n": "New Master Raven"
+}
+],
+"x360-guilty-gear-xx-accent-core-plus": [
+{
+"mb": 225.04,
+"n": "Version Up CATALOG 1"
+}
+],
 "x360-guitar-hero-5": [
 {
 "mb": 36.32,
@@ -6704,10 +7024,466 @@
 "n": "Guitar Hero Track Pack 2"
 }
 ],
+"x360-guitar-hero-iii-legends-of-rock": [
+{
+"mb": 1372.16,
+"n": "Metallica Death Magnetic Full Album"
+},
+{
+"mb": 61.03,
+"n": "Classic Rock Track Pack"
+},
+{
+"mb": 64.28,
+"n": "Foo Fighters Pack"
+},
+{
+"mb": 63.32,
+"n": "Def Leppard Track Pack"
+},
+{
+"mb": 174.37,
+"n": "Dragonforce Track Pack"
+},
+{
+"mb": 37.82,
+"n": "Companion Three Pack"
+},
+{
+"mb": 67.37,
+"n": "Guitar Virtuoso Track Pack"
+},
+{
+"mb": 17.48,
+"n": "July 4th 2008 Holiday Single"
+},
+{
+"mb": 13.98,
+"n": "I am Murloc World of Warcraft Single"
+},
+{
+"mb": 55.46,
+"n": "Coldplay Track Pack"
+},
+{
+"mb": 51.34,
+"n": "Isle of Wight Track Pack"
+},
+{
+"mb": 38.43,
+"n": "Motörhead Track Pack"
+},
+{
+"mb": 55.48,
+"n": "Muse Track Pack"
+},
+{
+"mb": 54.48,
+"n": "Modern Metal Track Pack"
+},
+{
+"mb": 58.12,
+"n": "No Doubt Track Pack"
+},
+{
+"mb": 14.34,
+"n": "Holiday 2007 Single We Three Kings"
+},
+{
+"mb": 53.28,
+"n": "Warner Reprise Track Pack"
+},
+{
+"mb": 35.18,
+"n": "Die Fantastischen Vier Ernten Was Wir Säen Single Track"
+},
+{
+"mb": 35.23,
+"n": "Extremoduro So Payaso Single Track"
+},
+{
+"mb": 24.51,
+"n": "Trust Antisocial Single Track"
+},
+{
+"mb": 27.82,
+"n": "Halo Theme MJOLNIR Mix"
+},
+{
+"mb": 71.96,
+"n": "Boss Battle Track Pack"
+},
+{
+"mb": 56.01,
+"n": "Velvet Revolver Pack"
+}
+],
 "x360-guitar-hero-metallica": [
 {
 "mb": 1372.16,
 "n": "Metallica Death Magnetic Full Album"
+}
+],
+"x360-guitar-hero-warriors-of-rock": [
+{
+"mb": 30.87,
+"n": "Hey Superstar Madina Lake"
+},
+{
+"mb": 35.62,
+"n": "Ignorance Paramore"
+},
+{
+"mb": 96.67,
+"n": "Darkest Hour Track Pack"
+},
+{
+"mb": 33.07,
+"n": "Doomsayer DarkestHour"
+},
+{
+"mb": 30.68,
+"n": "SavorTheKill DarkestHour"
+},
+{
+"mb": 96.86,
+"n": "Middle Class Rut Track Pack"
+},
+{
+"mb": 34.73,
+"n": "ThatsWhatYouGet Paramore"
+},
+{
+"mb": 33.64,
+"n": "BeyondtheLife DarkestHour"
+},
+{
+"mb": 34.39,
+"n": "New Low MCRut"
+},
+{
+"mb": 134.07,
+"n": "Emo Edge Track Pack"
+},
+{
+"mb": 33.25,
+"n": "Sad To Know MCRut"
+},
+{
+"mb": 33.92,
+"n": "Across5Oceans Madina Lake"
+},
+{
+"mb": 29.93,
+"n": "Lifelong Dayshift MCRut"
+},
+{
+"mb": 267.65,
+"n": "Modern Rock Mega Pack"
+},
+{
+"mb": 31.25,
+"n": "Psycho Puddle Of Mudd"
+},
+{
+"mb": 40.36,
+"n": "Headstrong Trapt"
+},
+{
+"mb": 31.93,
+"n": "Sic Transit Brand New"
+},
+{
+"mb": 25.34,
+"n": "She s A Genius Jet"
+},
+{
+"mb": 28.29,
+"n": "Supermassive Black Muse"
+},
+{
+"mb": 29.11,
+"n": "Always Saliva"
+},
+{
+"mb": 28.57,
+"n": "Sorrow Bad Religion"
+},
+{
+"mb": 25.98,
+"n": "Little Sister QOTSA"
+},
+{
+"mb": 29.53,
+"n": "Hands Open Snow Patrol"
+},
+{
+"mb": 367.71,
+"n": "February Mega Pack"
+},
+{
+"mb": 38.12,
+"n": "Blooddrunk COB"
+},
+{
+"mb": 37.79,
+"n": "Crazy Horse BLS"
+},
+{
+"mb": 38.59,
+"n": "Tourniquet Marilyn Manson"
+},
+{
+"mb": 27.06,
+"n": "Black Sunday BLS"
+},
+{
+"mb": 39.59,
+"n": "World On Fire Firewind"
+},
+{
+"mb": 32.09,
+"n": "Was It Worth It COB"
+},
+{
+"mb": 49.42,
+"n": "Coma White Marilyn Manson"
+},
+{
+"mb": 31.93,
+"n": "Parade Of The Dead BLS"
+},
+{
+"mb": 45.37,
+"n": "Living Dead Beat COB"
+},
+{
+"mb": 30.56,
+"n": "Get Your Gunn MarilynManson"
+},
+{
+"mb": 352.92,
+"n": "January Mega Pack"
+},
+{
+"mb": 34.36,
+"n": "All I Want ADTR"
+},
+{
+"mb": 31.9,
+"n": "The Downfall of Us All ADTR"
+},
+{
+"mb": 31.68,
+"n": "Wings Of A Butterfly HIM"
+},
+{
+"mb": 45.71,
+"n": "Head Like A Hole NIN"
+},
+{
+"mb": 39.39,
+"n": "Buried Myself Alive The Used"
+},
+{
+"mb": 23.12,
+"n": "2nd Sucks ADTR"
+},
+{
+"mb": 27.62,
+"n": "Rescue Me Hawthorne Heights"
+},
+{
+"mb": 40.64,
+"n": "Weve Got The Damned Things"
+},
+{
+"mb": 51.46,
+"n": "Closer NIN"
+},
+{
+"mb": 29.7,
+"n": "The Hand That Feeds NIN"
+},
+{
+"mb": 91.62,
+"n": "KISS mas Track Pack"
+},
+{
+"mb": 27.59,
+"n": "Rock And Roll All Nite by KISS"
+},
+{
+"mb": 34.06,
+"n": "Detroit Rock City by KISS"
+},
+{
+"mb": 30.54,
+"n": "Calling Dr Love by KISS"
+},
+{
+"mb": 169.93,
+"n": "90s Rock Track Pack"
+},
+{
+"mb": 24.73,
+"n": "Sex and Candy by Marcy Playground"
+},
+{
+"mb": 38.57,
+"n": "Real World by Matchbox 20"
+},
+{
+"mb": 43.01,
+"n": "Name by Goo Goo Dolls"
+},
+{
+"mb": 34.37,
+"n": "Whats the Frequency Kenneth by REM"
+},
+{
+"mb": 30.34,
+"n": "Plowed by Sponge"
+},
+{
+"mb": 25.34,
+"n": "Teenagers by My Chemical Romance"
+},
+{
+"mb": 43.75,
+"n": "Bulletproof Heart by My Chemical Romance"
+},
+{
+"mb": 43.76,
+"n": "Welcome to the Black Parade by My Chemical Romance"
+},
+{
+"mb": 31.17,
+"n": "Helena by My Chemical Romance"
+},
+{
+"mb": 143.21,
+"n": "My Chemical Romance Track Pack"
+},
+{
+"mb": 420.2,
+"n": "Guitar Hero Warriors Of Rock 1 Track Pack"
+},
+{
+"mb": 30.78,
+"n": "Love Song by Tesla"
+},
+{
+"mb": 39.45,
+"n": "Poison by Alice Cooper"
+},
+{
+"mb": 48.59,
+"n": "Tom Sawyer by Rush"
+},
+{
+"mb": 44.04,
+"n": "Limelight by Rush"
+},
+{
+"mb": 54.32,
+"n": "Red Barchetta by Rush"
+},
+{
+"mb": 42.2,
+"n": "Talk Dirty To Me by Poison"
+},
+{
+"mb": 54.68,
+"n": "Nothing To Say with M Shadows by Slash"
+},
+{
+"mb": 32.4,
+"n": "Watch This with Dave Grohl and Duff McKagan by Slash"
+},
+{
+"mb": 35.29,
+"n": "Elected by Alice Cooper"
+},
+{
+"mb": 40.73,
+"n": "Were All Gonna Die with Iggy Pop by Slash"
+},
+{
+"mb": 37.82,
+"n": "Fell On Black Days by Soundgarden"
+},
+{
+"mb": 38.78,
+"n": "Burden In My Hand by Soundgarden"
+},
+{
+"mb": 40.51,
+"n": "Rusty Cage by Soundgarden"
+},
+{
+"mb": 48.43,
+"n": "Blow Up The Outside World by Soundgarden"
+},
+{
+"mb": 45.84,
+"n": "Black Hole Sun by Soundgarden"
+},
+{
+"mb": 30.53,
+"n": "Sweet Transvestite from The Rocky Horror Picture Show"
+},
+{
+"mb": 50.56,
+"n": "Outshined by Soundgarden"
+},
+{
+"mb": 30.96,
+"n": "Hot Patootie from The Rocky Horror Picture Show"
+},
+{
+"mb": 49.15,
+"n": "Birth Ritual by Soundgarden"
+},
+{
+"mb": 38.43,
+"n": "My Wave by Soundgarden"
+},
+{
+"mb": 42.4,
+"n": "Spoonman by Soundgarden"
+},
+{
+"mb": 55.54,
+"n": "Hands All Over by Soundgarden"
+},
+{
+"mb": 22.53,
+"n": "Hunted Down by Soundgarden"
+},
+{
+"mb": 40.89,
+"n": "Time Warp from The Rocky Horror Picture Show"
+},
+{
+"mb": 101.87,
+"n": "The Rocky Horror Picture Show Track Pack"
+},
+{
+"mb": 35.2,
+"n": "Blackout by Linkin Park"
+},
+{
+"mb": 31.14,
+"n": "Waiting For The End by Linkin Park"
+},
+{
+"mb": 36.48,
+"n": "Burning In The Skies by Linkin Park"
+},
+{
+"mb": 41.39,
+"n": "The Catalyst by Linkin Park"
 }
 ],
 "x360-guitar-hero-world-tour": [
@@ -7178,6 +7954,12 @@
 {
 "mb": 22.0,
 "n": "JAM Live Music Arcade Overdrive by Jaytech"
+}
+],
+"x360-jeopardy-america-s-favorite-quiz-show": [
+{
+"mb": 51.5,
+"n": "New Clues Pack"
 }
 ],
 "x360-joe-danger-2-the-movie": [
@@ -7780,6 +8562,20 @@
 "n": "Winter Warrior Pack"
 }
 ],
+"x360-kane-and-lynch-2-dog-days": [
+{
+"mb": 0.11,
+"n": "Kane Lynch 2 Alliance Weapon Pack"
+},
+{
+"mb": 0.11,
+"n": "Kane Lynch 2 Multiplayer Masks Pack"
+},
+{
+"mb": 443.06,
+"n": "Kane Lynch 2 The Doggie Bag"
+}
+],
 "x360-kane-and-lynch-dead-men": [
 {
 "mb": 442.14,
@@ -7888,6 +8684,250 @@
 {
 "mb": 149.68,
 "n": "To Sir With Love"
+}
+],
+"x360-karaoke-revolution-presents-american-idol-encore": [
+{
+"mb": 12.56,
+"n": "Drift Away"
+},
+{
+"mb": 10.68,
+"n": "Every Little Thing She Does is Magic"
+},
+{
+"mb": 12.01,
+"n": "When Im Gone"
+},
+{
+"mb": 10.45,
+"n": "Celebration"
+},
+{
+"mb": 11.42,
+"n": "Here Without You"
+},
+{
+"mb": 8.92,
+"n": "Sweet Home Alabama"
+},
+{
+"mb": 8.96,
+"n": "Rock and Roll All Nite"
+},
+{
+"mb": 11.93,
+"n": "Im With You"
+},
+{
+"mb": 20.31,
+"n": "Heaven"
+},
+{
+"mb": 20.92,
+"n": "Uptown Girl"
+},
+{
+"mb": 8.84,
+"n": "Thank You"
+},
+{
+"mb": 10.29,
+"n": "Wide Open Spaces"
+},
+{
+"mb": 5.95,
+"n": "Lets Stay Together"
+},
+{
+"mb": 8.14,
+"n": "Cant Help Falling in Love"
+},
+{
+"mb": 18.2,
+"n": "Build Me Up Buttercup"
+},
+{
+"mb": 7.32,
+"n": "I Left My Heart in San Francisco"
+},
+{
+"mb": 20.15,
+"n": "Truth Is"
+},
+{
+"mb": 11.0,
+"n": "Ill Be"
+},
+{
+"mb": 6.82,
+"n": "I Walk The Line"
+},
+{
+"mb": 24.87,
+"n": "More Than Words"
+},
+{
+"mb": 12.36,
+"n": "Easy"
+},
+{
+"mb": 7.65,
+"n": "Born to be Wild"
+},
+{
+"mb": 10.0,
+"n": "Straight Up"
+},
+{
+"mb": 10.93,
+"n": "Careless Whisper"
+},
+{
+"mb": 8.29,
+"n": "Love Will Keep Us Together"
+},
+{
+"mb": 27.84,
+"n": "Photograph"
+},
+{
+"mb": 8.34,
+"n": "New York New York"
+},
+{
+"mb": 24.34,
+"n": "When The Sun Goes Down"
+},
+{
+"mb": 8.98,
+"n": "You and Me"
+},
+{
+"mb": 6.75,
+"n": "Stand By Your Man"
+}
+],
+"x360-karaoke-revolution-presents-american-idol-encore-2": [
+{
+"mb": 9.4,
+"n": "The Joker And The Thief"
+},
+{
+"mb": 10.67,
+"n": "Put Your Records On"
+},
+{
+"mb": 8.67,
+"n": "I Love Rock and Roll"
+},
+{
+"mb": 12.25,
+"n": "My Immortal"
+},
+{
+"mb": 9.59,
+"n": "Sweet Caroline"
+},
+{
+"mb": 10.4,
+"n": "Hemorrhage In My Hands"
+},
+{
+"mb": 8.4,
+"n": "Toxic"
+},
+{
+"mb": 13.75,
+"n": "Black Velvet"
+},
+{
+"mb": 12.93,
+"n": "Waiting For A Girl Like You"
+},
+{
+"mb": 9.92,
+"n": "These Words I Love You I Love You"
+},
+{
+"mb": 10.04,
+"n": "Brick House"
+},
+{
+"mb": 10.89,
+"n": "Breakaway"
+},
+{
+"mb": 8.03,
+"n": "Tainted Love"
+},
+{
+"mb": 10.14,
+"n": "Stickwitu"
+},
+{
+"mb": 15.57,
+"n": "You Cant Hurry Love"
+},
+{
+"mb": 9.73,
+"n": "Call Me"
+},
+{
+"mb": 19.37,
+"n": "Unforgettable"
+},
+{
+"mb": 7.9,
+"n": "What I Like About You"
+},
+{
+"mb": 6.26,
+"n": "Stand By Me"
+},
+{
+"mb": 10.17,
+"n": "Unchained Melody"
+},
+{
+"mb": 13.62,
+"n": "Rio"
+},
+{
+"mb": 13.5,
+"n": "Sister Christian"
+},
+{
+"mb": 10.23,
+"n": "If You Dont Know Me By Now"
+},
+{
+"mb": 14.37,
+"n": "In The Air Tonight"
+},
+{
+"mb": 12.39,
+"n": "Irreplaceable"
+},
+{
+"mb": 11.92,
+"n": "Lips Of An Angel"
+},
+{
+"mb": 8.87,
+"n": "Smooth Criminal"
+},
+{
+"mb": 11.46,
+"n": "More Than A Feeling"
+},
+{
+"mb": 12.37,
+"n": "Saving All My Love For You"
+},
+{
+"mb": 12.25,
+"n": "I Dont Want To Miss A Thing"
 }
 ],
 "x360-killer-is-dead": [
@@ -8026,6 +9066,32 @@
 {
 "mb": 1351.68,
 "n": "KQ Complete Collection Compatibility Pack 2"
+}
+],
+"x360-kingdom-under-fire-circle-of-doom": [
+{
+"mb": 0.11,
+"n": "KUF COD Accessory Pack 4Mask or Accessor eyes"
+},
+{
+"mb": 0.11,
+"n": "KUF COD Accessory Pack ALL SETS COMBINED"
+},
+{
+"mb": 0.11,
+"n": "KUF COD Accessory Pack 3Hats Galore"
+},
+{
+"mb": 0.11,
+"n": "KUF COD Accessory Pack 2Animal Adornments"
+},
+{
+"mb": 0.11,
+"n": "KUF COD Accessory Pack 1Hair Feathers anyone"
+},
+{
+"mb": 0.11,
+"n": "KUF COD Accessory Pack 5Weird Wonderful"
 }
 ],
 "x360-kingdoms-of-amalur-reckoning": [
@@ -8824,6 +9890,16 @@
 "n": "Mad Tracks Encore"
 }
 ],
+"x360-madballs-in-babo-invasion": [
+{
+"mb": 1.67,
+"n": "Versus Weapons Madballs Babo Invasion"
+},
+{
+"mb": 1.67,
+"n": "Obsidian Magmor Madballs Babo Invasion"
+}
+],
 "x360-madden-nfl-10": [
 {
 "mb": 302.4,
@@ -9082,6 +10158,164 @@
 "n": "Joes Adventure"
 }
 ],
+"x360-magic-the-gathering-2013": [
+{
+"mb": 29.07,
+"n": "Deck Pack 3 Mana Mastery Rogues Gallery Multiplayer Only"
+},
+{
+"mb": 29.07,
+"n": "Deck Pack 3 Mana Mastery Rogues Gallery Full"
+},
+{
+"mb": 26.67,
+"n": "Deck Pack 2 Grim Procession Berserker Rage Full"
+},
+{
+"mb": 26.67,
+"n": "Deck Pack 2 Grim Procession Berserker Rage Multiplayer Only"
+},
+{
+"mb": 26.75,
+"n": "Deck Pack 1 Act of War Sky and Scale Multiplayer Only"
+},
+{
+"mb": 26.75,
+"n": "Deck Pack 1 Act of War Sky and Scale Full"
+},
+{
+"mb": 62.11,
+"n": "Magic 2013 Expansion"
+},
+{
+"mb": 0.11,
+"n": "Magic 2013 Multiplayer"
+}
+],
+"x360-magic-the-gathering-2015": [
+{
+"mb": 0.12,
+"n": "Card Collection Bundle"
+},
+{
+"mb": 0.11,
+"n": "Collection Unlock Alara"
+},
+{
+"mb": 0.11,
+"n": "Collection Unlock Battle Boosters"
+},
+{
+"mb": 63.82,
+"n": "Magic 2015 Garruks Revenge Multiplayer Only"
+},
+{
+"mb": 63.82,
+"n": "Magic 2015 Garruks Revenge"
+},
+{
+"mb": 0.12,
+"n": "Collection Unlock Innistrad"
+},
+{
+"mb": 0.12,
+"n": "Collection Unlock Ravnica"
+},
+{
+"mb": 0.12,
+"n": "Collection Unlock Shandalar"
+},
+{
+"mb": 0.12,
+"n": "Collection Unlock Theros"
+},
+{
+"mb": 0.12,
+"n": "Collection Unlock Zendikar"
+}
+],
+"x360-magic-the-gathering-duels-of-the-planeswalkers": [
+{
+"mb": 33.2,
+"n": "Expansion Pack 3 Full Version"
+},
+{
+"mb": 33.2,
+"n": "Expansion Pack 3 Multiplayer Only"
+},
+{
+"mb": 32.71,
+"n": "Expansion Pack 2 Full Version"
+},
+{
+"mb": 32.71,
+"n": "Expansion Pack 2 Multiplayer Only"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Wings of Light"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Thoughts of the Wind"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Teeth of the Predator"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Scales of Fury"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Relics of Doom"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Mind of Void"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Hands of Flame"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Eyes of Shadow"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Ears of the Elves"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Cries of Rage"
+},
+{
+"mb": 0.11,
+"n": "Full Deck Claws of Vengeance"
+},
+{
+"mb": 0.45,
+"n": "Expansion Pack 1 Full Version"
+},
+{
+"mb": 0.45,
+"n": "Expansion Pack 1 Multiplayer Only"
+},
+{
+"mb": 41.71,
+"n": "Duels of the Planeswalkers Backgrounds"
+},
+{
+"mb": 0.56,
+"n": "Duels of the Planeswalkers Player Personas"
+},
+{
+"mb": 36.21,
+"n": "Magic The Gathering Game Tables"
+}
+],
 "x360-magnacarta-2": [
 {
 "mb": 83.2,
@@ -9092,6 +10326,42 @@
 {
 "mb": 85.73,
 "n": "Majin Challenge Pack"
+}
+],
+"x360-major-league-baseball-2k7": [
+{
+"mb": 98.01,
+"n": "MLB 2K7 Historic Stadium Package 1 In Game Content"
+},
+{
+"mb": 122.23,
+"n": "MLB 2K7 Historic Stadium Package 2 In Game Content"
+},
+{
+"mb": 108.82,
+"n": "MLB 2K7 Historic Stadium Package 3 In Game Content"
+},
+{
+"mb": 327.54,
+"n": "MLB 2K7 Historic Stadium Bundle In Game Content"
+},
+{
+"mb": 172.64,
+"n": "MLB 2K7 Olympic Stadium"
+}
+],
+"x360-major-league-baseball-2k8": [
+{
+"mb": 136.81,
+"n": "Majestic Cool Base Uniforms"
+},
+{
+"mb": 3.64,
+"n": "Card Series 2"
+},
+{
+"mb": 85.0,
+"n": "Major League Baseball 2K8 Minor League Stadium Pack"
 }
 ],
 "x360-marathon-durandal": [
@@ -9424,6 +10694,12 @@
 "n": "MEGA MAN 9 PROTO MAN MODE"
 }
 ],
+"x360-mercenaries-2-world-in-flames": [
+{
+"mb": 377.17,
+"n": "Mercenaries 2 Blow It Up Again Pack"
+}
+],
 "x360-mercury-hg": [
 {
 "mb": 18.01,
@@ -9650,6 +10926,78 @@
 "n": "Michael Jackson The Experience Another Part of Me"
 }
 ],
+"x360-might-and-magic-clash-of-heroes-hd": [
+{
+"mb": 5.64,
+"n": "Might Magic Clash of Heroes Advanced opponents"
+},
+{
+"mb": 5.64,
+"n": "Might Magic Clash of Heroes I am the boss"
+}
+],
+"x360-might-and-magic-duel-of-champions-forgotten-wars": [
+{
+"mb": 0.11,
+"n": "Herald of The Void"
+},
+{
+"mb": 0.11,
+"n": "One Time Offer All Series Champ Deck Alternate Art"
+},
+{
+"mb": 0.11,
+"n": "Weaver of Fate"
+},
+{
+"mb": 0.11,
+"n": "One Time Offer Heroes Bundle"
+},
+{
+"mb": 0.11,
+"n": "Deluge of Destruction"
+},
+{
+"mb": 0.11,
+"n": "Heroes Bundle"
+},
+{
+"mb": 0.11,
+"n": "Imperial Might"
+},
+{
+"mb": 0.11,
+"n": "All Series Bundle"
+},
+{
+"mb": 0.11,
+"n": "Mega Gold Boost"
+},
+{
+"mb": 0.11,
+"n": "The Void Rising"
+},
+{
+"mb": 0.11,
+"n": "Forgotten Wars"
+},
+{
+"mb": 0.11,
+"n": "Five Towers"
+},
+{
+"mb": 0.11,
+"n": "One Time Offer Champion Deck and Alternate Art"
+},
+{
+"mb": 0.11,
+"n": "Demonic Madness"
+},
+{
+"mb": 0.11,
+"n": "Path of the Lotus"
+}
+],
 "x360-mighty-no-9": [
 {
 "mb": 0.45,
@@ -9774,6 +11122,16 @@
 {
 "mb": 1.73,
 "n": "Rocking Horse Token Preview"
+}
+],
+"x360-monster-madness-battle-for-suburbia": [
+{
+"mb": 57.11,
+"n": "Battle Field Zacks House"
+},
+{
+"mb": 61.84,
+"n": "Battle Field High School"
 }
 ],
 "x360-moon-diver": [
@@ -10083,6 +11441,18 @@
 {
 "mb": 5.15,
 "n": "NASCAR 15 Paint Pack 3"
+}
+],
+"x360-nascar-the-game-2011": [
+{
+"mb": 483.78,
+"n": "NASCAR The Game 2011 Season Update"
+}
+],
+"x360-nascar-the-game-inside-line": [
+{
+"mb": 0.11,
+"n": "Inside Line Pack"
 }
 ],
 "x360-naughty-bear": [
@@ -11077,6 +12447,80 @@
 "n": "The Run Time Savers Pack"
 }
 ],
+"x360-need-for-speed-undercover": [
+{
+"mb": 133.36,
+"n": "Challenge Series Expansion"
+},
+{
+"mb": 0.11,
+"n": "Boss Car Bundle"
+},
+{
+"mb": 0.11,
+"n": "Street Power Bundle"
+},
+{
+"mb": 0.11,
+"n": "Pro Power Bundle"
+},
+{
+"mb": 0.11,
+"n": "Tuner Car Bundle"
+},
+{
+"mb": 0.11,
+"n": "Collectors Edition Upgrade"
+},
+{
+"mb": 0.11,
+"n": "Ultimate Performance Bundle"
+},
+{
+"mb": 0.11,
+"n": "Paint Vinyls Package"
+},
+{
+"mb": 0.11,
+"n": "Street Handling Bundle"
+},
+{
+"mb": 0.11,
+"n": "Pro Handling Bundle"
+},
+{
+"mb": 0.11,
+"n": "Race Power Bundle"
+},
+{
+"mb": 0.11,
+"n": "Aftermarket Hoods Spoilers Exhaust Package"
+},
+{
+"mb": 0.11,
+"n": "Ultimate Visual Bundle"
+},
+{
+"mb": 0.11,
+"n": "Exotic Car Bundle"
+},
+{
+"mb": 0.11,
+"n": "Muscle Car Bundle"
+},
+{
+"mb": 0.11,
+"n": "Aftermarket Wheels Package"
+},
+{
+"mb": 0.11,
+"n": "Aftermarket Body Kit Package"
+},
+{
+"mb": 0.11,
+"n": "Race Handling Bundle"
+}
+],
 "x360-neverdead": [
 {
 "mb": 192.36,
@@ -11373,6 +12817,16 @@
 "n": "Omerta City of Gangsters The Bulgarian Colossus"
 }
 ],
+"x360-operation-flashpoint-dragon-rising": [
+{
+"mb": 7.7,
+"n": "Operation Flashpoint Dragon Rising Overwatch Pack"
+},
+{
+"mb": 9.39,
+"n": "Operation Flashpoint Dragon Rising Skirmish Pack"
+}
+],
 "x360-operation-flashpoint-red-river": [
 {
 "mb": 12.45,
@@ -11563,6 +13017,38 @@
 {
 "mb": 18.54,
 "n": "Reentrance BGM"
+}
+],
+"x360-pac-man-museum-includes-nine-pac-man-games": [
+{
+"mb": 0.11,
+"n": "MsPAC MAN"
+}
+],
+"x360-painkiller-hell-and-damnation": [
+{
+"mb": 343.23,
+"n": "Painkiller Hell Damnation Demonic Vacation BS"
+},
+{
+"mb": 396.15,
+"n": "Painkiller Hell Damnation City Critters"
+},
+{
+"mb": 576.62,
+"n": "Painkiller Hell Damnation Operation Zombie Bunker"
+},
+{
+"mb": 500.53,
+"n": "Painkiller Hell Damnation Full Metal Rocket"
+},
+{
+"mb": 433.18,
+"n": "Painkiller Hell Damnation Medieval Horror"
+},
+{
+"mb": 326.89,
+"n": "Painkiller Hell Damnation The Clock Strikes Meat Night"
 }
 ],
 "x360-payday-2": [
@@ -11909,6 +13395,20 @@
 "n": "Cues Balls and Decals Pack"
 }
 ],
+"x360-port-royale-3-pirates-and-merchants": [
+{
+"mb": 204.43,
+"n": "Port Royale 3 New Adventures"
+},
+{
+"mb": 204.43,
+"n": "Port Royale 3 Dawn of Pirates"
+},
+{
+"mb": 204.43,
+"n": "Port Royale 3 Harbour Master"
+}
+],
 "x360-portal-2": [
 {
 "mb": 1402.88,
@@ -12023,6 +13523,126 @@
 "n": "South American Classic Kit"
 }
 ],
+"x360-project-gotham-racing-3": [
+{
+"mb": 33.7,
+"n": "365 GTB4 Daytona"
+},
+{
+"mb": 33.7,
+"n": "BMW M3 CSL"
+},
+{
+"mb": 33.7,
+"n": "BMW M6"
+},
+{
+"mb": 33.7,
+"n": "BMW MINI COOPER S"
+},
+{
+"mb": 33.7,
+"n": "BMW Z8"
+},
+{
+"mb": 33.7,
+"n": "Chrysler Firepower Concept"
+},
+{
+"mb": 33.7,
+"n": "Ferrari 430 Challenge"
+},
+{
+"mb": 33.7,
+"n": "Gumpert Apollo Coupe 42 V8"
+},
+{
+"mb": 33.7,
+"n": "Mercedes CLK DTM AMG Class"
+},
+{
+"mb": 33.7,
+"n": "Pagani Zonda F"
+},
+{
+"mb": 33.7,
+"n": "RUF RK Spyder"
+},
+{
+"mb": 33.7,
+"n": "Vanwall GPR V12"
+},
+{
+"mb": 33.7,
+"n": "The Style Pack"
+},
+{
+"mb": 8.4,
+"n": "Cadillac V Series Collection"
+},
+{
+"mb": 32.71,
+"n": "Aston Martin V8 Vantage"
+},
+{
+"mb": 32.71,
+"n": "Audi RS 4"
+},
+{
+"mb": 32.71,
+"n": "Chevrolet Corvette Z06"
+},
+{
+"mb": 32.71,
+"n": "Dodge Viper SRT 10 Coupe"
+},
+{
+"mb": 32.71,
+"n": "Ferrari 612 Scaglietti"
+},
+{
+"mb": 32.71,
+"n": "Lamborghini Gallardo SE"
+},
+{
+"mb": 32.71,
+"n": "Mitsubishi Lancer Evolution VIII FQ 400"
+},
+{
+"mb": 32.71,
+"n": "Nissan NISMO R34GT R Z Tune"
+},
+{
+"mb": 32.71,
+"n": "Pontiac GTO"
+},
+{
+"mb": 32.71,
+"n": "Radical SR8"
+},
+{
+"mb": 32.71,
+"n": "RUF RT12"
+},
+{
+"mb": 32.71,
+"n": "Saleen S7 Twin Turbo"
+},
+{
+"mb": 32.71,
+"n": "Speed Pack"
+}
+],
+"x360-project-gotham-racing-4": [
+{
+"mb": 29.89,
+"n": "Free Challenge Pack"
+},
+{
+"mb": 29.89,
+"n": "Premium Challenge Pack"
+}
+],
 "x360-project-sylpheed": [
 {
 "mb": 2.43,
@@ -12047,6 +13667,16 @@
 {
 "mb": 17.81,
 "n": "Puzzle Arcade Space"
+}
+],
+"x360-puzzle-bobble-a-k-a-bust-a-move-live": [
+{
+"mb": 0.11,
+"n": "1P Puzzle Pack 1"
+},
+{
+"mb": 0.11,
+"n": "1P Puzzle Pack 2"
 }
 ],
 "x360-puzzle-quest-challenge-of-the-warlords": [
@@ -12155,6 +13785,12 @@
 {
 "mb": 0.2,
 "n": "Additional ship 1 Raiden MK II"
+}
+],
+"x360-rapala-tournament-fishing": [
+{
+"mb": 0.11,
+"n": "California Delta Bonus Level"
 }
 ],
 "x360-raskulls": [
@@ -12619,6 +14255,24 @@
 {
 "mb": 15.26,
 "n": "Catalog Data RAID Outfit Rachael Ooze"
+}
+],
+"x360-rhythm-party-boom-boom-dance": [
+{
+"mb": 230.96,
+"n": "Song Pack No 3"
+},
+{
+"mb": 0.18,
+"n": "Master Level Pack"
+},
+{
+"mb": 239.64,
+"n": "Song Pack No 1"
+},
+{
+"mb": 291.89,
+"n": "Song Pack No 2"
 }
 ],
 "x360-ride": [
@@ -14177,6 +15831,12 @@
 "n": "Siberian Strike"
 }
 ],
+"x360-sonic-and-all-stars-racing-transformed": [
+{
+"mb": 0.11,
+"n": "Sonic All Stars Racing Transformed Metal Sonic Outrun DLC"
+}
+],
 "x360-sonic-the-hedgehog": [
 {
 "mb": 0.17,
@@ -14439,10 +16099,56 @@
 "n": "TEKKEN TAG 2 Online Pass"
 }
 ],
+"x360-the-black-eyed-peas-experience": [
+{
+"mb": 104.03,
+"n": "Black Eyed Peas Experience DLC Bebot"
+}
+],
+"x360-the-chronicles-of-riddick-assault-on-dark-athena": [
+{
+"mb": 192.2,
+"n": "Escape From Butcher Bay Commentary Mode"
+},
+{
+"mb": 371.32,
+"n": "The Chronicles of Riddick AODA Premium MP Pack"
+}
+],
 "x360-the-lego-movie-videogame": [
 {
 "mb": 0.2,
 "n": "The LEGO Movie Videogame Wild West Pack"
+}
+],
+"x360-the-lord-of-the-rings-conquest": [
+{
+"mb": 392.42,
+"n": "Heroes and Maps Pack"
+},
+{
+"mb": 135.48,
+"n": "Hero Arena bonus"
+}
+],
+"x360-the-lord-of-the-rings-the-battle-for-middle-earth-ii": [
+{
+"mb": 10.36,
+"n": "Northern Badlands Map Pack 2"
+}
+],
+"x360-the-pinball-arcade": [
+{
+"mb": 52.36,
+"n": "Two table add on pack 3 Gorgar 1979 and Monster Bash 1998"
+},
+{
+"mb": 88.34,
+"n": "The Pinball Arcade Update for Launch Tables"
+},
+{
+"mb": 71.4,
+"n": "Two table add on pack 2 Cirqus Voltaire 1997 and Funhouse 1990"
 }
 ],
 "x360-tom-clancy-s-ghost-recon-future-soldier": [
@@ -14473,6 +16179,16 @@
 "n": "Tom Clancys HAWX 2 MIG Alley Pack"
 }
 ],
+"x360-tom-clancy-s-rainbow-six-vegas": [
+{
+"mb": 705.59,
+"n": "Players Pack Black Edition"
+},
+{
+"mb": 685.87,
+"n": "Players Pack Red Edition"
+}
+],
 "x360-tomb-raider-underworld": [
 {
 "mb": 61.93,
@@ -14499,6 +16215,12 @@
 {
 "mb": 2.45,
 "n": "VANQUISH Tri Weapon Pack"
+}
+],
+"x360-vigilante-8-arcade": [
+{
+"mb": 41.46,
+"n": "Vigilante 8 Arcade High Octane Pack"
 }
 ],
 "x360-world-of-tanks": [
