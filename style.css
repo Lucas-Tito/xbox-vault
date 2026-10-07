@@ -278,10 +278,11 @@ select:focus{border-color:var(--green)}
 .year .cnt{font-size:13px;color:var(--dim)}
 .year .ln{flex:1;height:1px;background:var(--line)}
 
-/* No maximo 7 por linha, e card de no minimo 200px: em tela larga cabiam 8 ou 9
-   capas pequenas; agora o card cresce em vez de caber mais um. */
-.grid{display:grid;gap:16px;
-  grid-template-columns:repeat(auto-fill,minmax(max(200px,calc((100% - 6 * 16px) / 7)),1fr))}
+/* No maximo 6 por linha, card de no minimo 200px e 28px entre eles: com 16px e
+   7 por linha os cards ficavam colados. Em tela larga o card cresce em vez de
+   caber mais um. */
+.grid{display:grid;gap:28px 24px;
+  grid-template-columns:repeat(auto-fill,minmax(max(200px,calc((100% - 5 * 24px) / 6)),1fr))}
 
 /* ---------- card ---------- */
 .card{
