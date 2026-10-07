@@ -341,9 +341,9 @@ select:focus{border-color:var(--green)}
    fundo neutro e baixo separa cada uma, sem borda e sem cor. Cor so onde ela
    avisa alguma coisa, o vazado. */
 /* Uma linha so, com no maximo quatro etiquetas escolhidas por relevancia
-   (tagsHtml); as que nao cabem saem inteiras pelo fim (ajustarEtiquetas). */
+   (tagsHtml). O que nao cabe fica cortado no fim, mesmo no meio de uma
+   etiqueta: esconder a etiqueta inteira tirava informacao demais. */
 .tags{display:flex;flex-wrap:nowrap;gap:4px;margin-top:auto;padding-top:2px;overflow:hidden}
-.tag[hidden]{display:none}
 .tag{flex:none}
 .tag{white-space:nowrap;font-size:10.5px;font-weight:600;letter-spacing:.03em;line-height:1;
   padding:5px 6px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
