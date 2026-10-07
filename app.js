@@ -224,12 +224,13 @@ function match(g, skip) {
   if (F.y1 && (g.year == null || g.year < +F.y1)) return false;
   if (F.y2 && (g.year == null || g.year > +F.y2)) return false;
 
+  // So corta jogo de Xbox original. O "sim" escondia tambem todos os de 360,
+  // que nao tem retrocompatibilidade nenhuma a filtrar.
   if (F.bc !== "all" && g.platform === "xbox") {
     var c = !!(g.bc360 && g.bc360.compatible);
     if (F.bc === "yes" && !c) return false;
     if (F.bc === "no" && c) return false;
   }
-  if (F.bc === "yes" && g.platform !== "xbox") return false;
 
   // Vale para o catálogo inteiro, não só emulação: o GoldenEye do XBLA é um
   // vazado do próprio 360.
