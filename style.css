@@ -1,17 +1,25 @@
 /* Xbox Vault: catálogo de Xbox 360, Xbox original e homebrew */
 :root{
-  --bg:#0d1117; --bg2:#151b23; --bg3:#1c242e; --line:#2a343f;
+  --bg:#091811; --bg2:#151b23; --bg3:#1c242e; --line:#2a343f;
   --txt:#e6edf3; --dim:#8d99a6; --dim2:#6b7683;
   --green:#52b043; --green2:#6ed15c; --glow:rgba(82,176,67,.35);
   --amber:#d9a441; --blue:#5aa9e6; --purple:#a77bd4; --red:#e05c5c;
   --r:10px;
+  /* O fundo da previa do CollectionUI (FUNDOS.medio): diagonal do canto de cima
+     a esquerda ao de baixo a direita. Fixo na tela, e nao na pagina: esticado
+     pelos milhares de pixels da grade, ele viraria um tom chapado. */
+  --fundo:linear-gradient(to bottom right,rgb(9,24,17),rgb(26,52,38)) fixed;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+html{background:var(--bg)}
 body{
-  background:var(--bg); color:var(--txt); font:14px/1.5 "Segoe UI",Roboto,system-ui,sans-serif;
+  color:var(--txt); font:14px/1.5 "Segoe UI",Roboto,system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;
 }
+/* Camada fixa, e nao background-attachment no body: o Safari do iPhone ignora o
+   fixed e esticaria o degrade pela pagina inteira. */
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:var(--fundo)}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
 a{color:var(--green2)}
@@ -82,7 +90,7 @@ select:focus{border-color:var(--green)}
 /* ---------- seções por ano ---------- */
 .year{
   display:flex;align-items:center;gap:12px;margin:26px 0 12px;
-  position:sticky;top:57px;z-index:20;background:var(--bg);padding:7px 0;
+  position:sticky;top:57px;z-index:20;background:var(--fundo);padding:7px 0;
 }
 .year:first-child{margin-top:0}
 .year h2{margin:0;font-size:21px;font-weight:700;letter-spacing:.5px}
@@ -204,7 +212,7 @@ select:focus{border-color:var(--green)}
      nao ha altura de cabecalho para acertar, e os onze grupos ganham espaco.
      100dvh, e nao 100vh, porque no celular o vh conta a area embaixo da barra
      do navegador e o rodape ficaria fora do alcance. */
-  .side{position:fixed;inset:0;width:100%;background:var(--bg);z-index:60;
+  .side{position:fixed;inset:0;width:100%;background:var(--fundo);z-index:60;
     max-height:none;height:100vh;height:100dvh;padding:0;border-right:0;
     transform:translateX(100%);transition:transform .2s;
     display:flex;flex-direction:column;overflow:hidden}
