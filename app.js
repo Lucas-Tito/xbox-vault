@@ -1079,6 +1079,13 @@ function toggleMark(id, which, card) {
 }
 
 /* ---------------- export / import ---------------- */
+/* O nome diz o que o arquivo guarda. Era "xbox-vault-colecao-", e colecao vai ser
+   a do CollectionUI. A importacao nao olha o nome, entao os arquivos antigos
+   continuam entrando. */
+function nomeExport() {
+  return "xbox-vault-marcacoes-" + new Date().toISOString().slice(0, 10) + ".json";
+}
+
 function doExport() {
   var payload = {
     app: "xbox-vault", version: 3,
@@ -1097,7 +1104,7 @@ function doExport() {
   var url = URL.createObjectURL(blob);
   var a = document.createElement("a");
   a.href = url;
-  a.download = "xbox-vault-colecao-" + new Date().toISOString().slice(0, 10) + ".json";
+  a.download = nomeExport();
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
 }
@@ -1169,7 +1176,7 @@ function applyImport(p, mode, semConferir) {
   }
   saveMarks(); render();
   closeModal();
-  alert("Importado: " + o.length + " na coleção, " + w.length + " na wishlist" +
+  alert("Importado: " + o.length + " que tenho, " + w.length + " na wishlist" +
     (ignorados ? "\n" + ignorados + " id(s) do arquivo não existem no catálogo e foram ignorados." : "") +
     (semConferir ? "\nNão consegui carregar uma das categorias, então os ids dela entraram sem conferência." : "") +
     "\nAgora: " + owned.size + " que tenho, " + wishlist.size + " na wishlist.");
@@ -1191,16 +1198,16 @@ function importFlow(text) {
   try { pending = parseImport(text); }
   catch (e) { alert("Arquivo inválido: " + e.message); return; }
   openModal(
-    "<h3>Importar</h3><p>O arquivo tem <b>" + pending.owned.length +
-    "</b> jogo(s) na coleção e <b>" + pending.wishlist.length +
+    "<h3>Importar marcações</h3><p>O arquivo tem <b>" + pending.owned.length +
+    "</b> jogo(s) que você tem e <b>" + pending.wishlist.length +
     "</b> na wishlist. Como aplicar?</p>" +
-    '<button class="btn primary" id="imp-merge">➕ Somar ao que já tenho aqui (' +
-    owned.size + " + " + wishlist.size + " na wishlist)</button>" +
-    '<button class="btn" id="imp-replace">♻️ Substituir tudo pelo arquivo</button>');
+    '<button class="btn primary" id="imp-merge">Somar ao que já está marcado aqui (' +
+    owned.size + " que tenho, " + wishlist.size + " na wishlist)</button>" +
+    '<button class="btn" id="imp-replace">Substituir tudo pelo arquivo</button>');
   $("#imp-merge").onclick = function () { applyImport(pending, "merge"); };
   $("#imp-replace").onclick = function () {
-    if (confirm("Isso apaga sua coleção atual (" + owned.size + " jogos e " + wishlist.size +
-                " na wishlist) e usa só a do arquivo. Confirmar?"))
+    if (confirm("Isso apaga suas marcações atuais (" + owned.size + " que tenho e " + wishlist.size +
+                " na wishlist) e usa só as do arquivo. Confirmar?"))
       applyImport(pending, "replace");
   };
 }
@@ -1418,6 +1425,7 @@ function ligarEventos() {
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") menus.forEach(function (m) { abrirMenu(m, false); });
   });
+  $("#arq-export").textContent = nomeExport();
   $("#btn-export").onclick = doExport;
   // Abre o seletor do sistema direto. A tela intermediaria existia so para
   // oferecer o arrastar, e cobrava um clique de todo mundo por isso.

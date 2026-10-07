@@ -31,9 +31,12 @@
            que voce marcou: ficam num menu so. -->
       <div class="menu" id="menu-backup">
         <button class="btn" id="btn-backup" aria-haspopup="menu" aria-expanded="false">Arquivo <span class="seta" aria-hidden="true"></span></button>
+        <!-- "Marcacoes", e nao "colecao": colecao vai ser a do CollectionUI, que tera o
+             proprio arquivo neste mesmo menu. Cada item mostra o arquivo que sai ou entra. -->
         <div class="menu-lista" role="menu" hidden>
-          <button role="menuitem" class="menu-item" id="btn-export">Exportar coleção<small>Baixa um arquivo com o que você marcou</small></button>
-          <button role="menuitem" class="menu-item" id="btn-import">Importar coleção<small>Carrega um arquivo exportado antes</small></button>
+          <div class="menu-tit">Arquivo do Xbox Vault</div>
+          <button role="menuitem" class="menu-item" id="btn-export">Exportar marcações<small>O que você tem, quer e escondeu</small><code id="arq-export">xbox-vault-marcacoes.json</code></button>
+          <button role="menuitem" class="menu-item" id="btn-import">Importar marcações<small>Um arquivo exportado antes, de outro navegador</small><code>um .json do Xbox Vault</code></button>
         </div>
       </div>
     </div>
