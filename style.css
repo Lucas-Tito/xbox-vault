@@ -282,9 +282,9 @@ select:focus{border-color:var(--green)}
 /* Card deitado, com a informacao ao lado da capa: no minimo 420px de largura,
    24px entre linhas e 28px entre colunas. */
 .grid{display:grid;gap:24px 28px;grid-template-columns:repeat(auto-fill,minmax(420px,1fr))}
-/* O card 20px mais estreito que a coluna: a capa fica igual e so o texto perde
-   os 20px. */
-.grid > .card{width:calc(100% - 20px);justify-self:start}
+/* O card 50px mais estreito que a coluna: a capa fica igual e so o texto perde
+   os 50px. */
+.grid > .card{width:calc(100% - 50px);justify-self:start}
 
 /* ---------- card ---------- */
 .card{
@@ -337,8 +337,6 @@ select:focus{border-color:var(--green)}
 .linha{display:flex;align-items:center;gap:8px;min-width:0;font-size:12.5px;color:var(--dim)}
 .linha .mc,.linha .ur{position:static;box-shadow:none;flex:none}
 .linha .sub{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-/* uma linha da descricao, cortada com reticencias */
-.card .desc{font-size:13px;line-height:1.45;color:#B9C4BE;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* Eram ate sete pilulas em seis cores, cada uma com borda propria. Texto corrido
    sem caixa nenhuma tambem nao serviu: "ONLINE 4P CO-OP LOCAL 4P" virava uma

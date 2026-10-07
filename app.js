@@ -393,10 +393,9 @@ function cardHtml(g) {
     : '<div class="ph">' + esc(g.title) + "</div>";
   /* O card leva so o que ajuda a escolher de relance: nome; a nota ao lado do
      genero, so o numero (o desenho ja separa critica de jogador, e o rotulo
-     completo fica no title); uma linha da descricao; e as etiquetas. Estudio e
-     ano ficam na ficha. O homebrew nao tem genero, e a categoria faz esse papel. */
+     completo fica no title); e as etiquetas. Estudio, ano e descricao ficam na
+     ficha. O homebrew nao tem genero, e a categoria faz esse papel. */
   var genero = esc(g.platform === "homebrew" ? g.category || "" : g.genre || "");
-  var desc = (g.description || "").trim();
   /* Título sem link: clicar no card é para abrir a ficha, e um <a> no meio dele
      mandava a pessoa para fora do site sem aviso. A Wikipédia e a página do
      projeto continuam na Ficha técnica, que é onde link é o que se espera. */
@@ -425,7 +424,6 @@ function cardHtml(g) {
     '<div class="thumb">' + img + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
     (mc || genero ? '<div class="linha">' + mc + (genero ? '<span class="sub">' + genero + "</span>" : "") + "</div>" : "") +
-    (desc ? '<div class="desc">' + esc(desc) + "</div>" : "") +
     '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
 }
 
