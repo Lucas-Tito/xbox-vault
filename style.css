@@ -130,7 +130,7 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
    link cinza; o atual, em destaque. */
 /* Seta de voltar ao lado da trilha: volta UM nivel (da colecao para as colecoes;
    de Adicionar para a colecao, sem gravar o rascunho). */
-.cui-seta{flex:none;width:34px;height:34px;padding:0 0 3px;display:grid;place-items:center;
+.cui-seta{flex:none;width:36px;height:36px;padding:0 0 3px;display:grid;place-items:center;
   background:var(--bg2);border:1px solid var(--line);border-radius:5px;color:var(--txt);font-size:22px;line-height:1}
 .cui-seta:hover{border-color:var(--green);color:var(--green)}
 .cui-trilha{display:flex;align-items:baseline;flex-wrap:wrap;font-size:22px;line-height:1.3}
@@ -139,9 +139,12 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .cui-trilha i{font-style:normal;color:var(--dim2);margin:0 10px;font-weight:300}
 .cui-trilha b{font-weight:600}
 .cui-conta{font-family:var(--mono);font-size:12px;color:var(--dim)}
-.cui-acoes{display:flex;gap:8px;margin-left:auto}
-/* mesma largura em todos: o negrito do verde deixava o Concluir maior que o Cancelar */
-.cui-acoes .btn{padding:6px 12px;min-width:96px;justify-content:center;text-align:center}
+/* Botoes de acao todos iguais: mesma largura (a do maior, pelas colunas iguais
+   da grade), mesma altura da seta de voltar (36px) e o mesmo espaco entre eles.
+   Antes cada um tinha a largura do proprio texto, e a seta era 2px mais baixa. */
+.cui-acoes{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:10px;margin-left:auto}
+.cui-acoes .btn{height:36px;padding:0 16px;display:flex;align-items:center;justify-content:center;
+  text-align:center;white-space:nowrap}
 .btn.perigo:hover{border-color:var(--red);color:var(--red)}
 .cui-nota{flex-basis:100%;font-size:12px;color:var(--dim)}
 .cui-nota code{font-family:var(--mono);font-size:11px}
