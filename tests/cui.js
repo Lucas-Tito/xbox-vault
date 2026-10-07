@@ -109,6 +109,19 @@
   rem.click(); await wait(300);
   ok('remover tira o jogo, com os alternativos', linha(await exportar(), 'The Alfa') === '2|jogos|The Alfa|' + c.titleId);
   ok('o card sai da tela', !card(alt));
+  ok('aparece o aviso com Desfazer', !$('#aviso').hidden && /removido/.test($('#aviso-txt').textContent));
+  const antesDesfazer = linha(await exportar(), 'The Alfa');
+  // poe de novo para testar o Desfazer devolvendo a lista exatamente como estava
+  $('#cui-add').click(); await wait(600); await buscar(alt.title);
+  card(alt).click(); await wait(200); $('#cui-concluir').click(); await wait(500); await buscar('');
+  const comJogo = linha(await exportar(), 'The Alfa');
+  card(alt).querySelector('.rem-btn').click(); await wait(300);
+  $('#aviso-desfazer').click(); await wait(500);
+  ok('Desfazer devolve a colecao exatamente como estava', linha(await exportar(), 'The Alfa') === comJogo && !!card(alt),
+     comJogo);
+  ok('o aviso some depois de desfazer', $('#aviso').hidden);
+  card(alt).querySelector('.rem-btn').click(); await wait(300);
+  ok('remover de novo deixa como antes', linha(await exportar(), 'The Alfa') === antesDesfazer);
 
   // ---- jogo sem Title ID nao entra ----
   $('#cui-add').click(); await wait(600);

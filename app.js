@@ -1720,6 +1720,7 @@ function cuiTexto() {
 function cuiMudou() { cuiSelIds = null; cuiSalvar(); }
 
 function cuiIr(tela) {
+  cuiFecharAviso();
   cuiTela = tela;
   document.body.dataset.tela = tela;
   render();
@@ -1787,11 +1788,37 @@ function cuiRemover(card) {
   var c = cuiPorId(CUI.sel);
   var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
   if (!c || c.uniao || !g) return;
+  var antes = c.ids.slice();
   c.ids = c.ids.filter(function (t) { return g._tids.indexOf(t) < 0; });
   cuiMudou();
   removeCard(card);
   updateStats(filtered(null));
   cuiPintar();
+  // Sem confirmacao: remover e frequente e facil de refazer, entao o que protege
+  // do clique errado e o Desfazer, que devolve a lista de Title IDs como estava
+  // (mesma ordem, o arquivo exportado nao muda).
+  cuiAvisar(g.title + " removido da coleção", function () {
+    var atual = cuiPorId(c.id);
+    if (!atual) return;
+    atual.ids = antes;
+    cuiMudou(); render();
+  });
+}
+
+/* Aviso embaixo da tela com um Desfazer. Some sozinho em 6 s, ao desfazer e ao
+   sair da tela: desfazer em outra tela mexeria no que a pessoa nao esta vendo. */
+var cuiAvisoTimer = null, cuiDesfazer = null;
+function cuiAvisar(texto, desfazer) {
+  $("#aviso-txt").textContent = texto;
+  cuiDesfazer = desfazer;
+  $("#aviso").hidden = false;
+  clearTimeout(cuiAvisoTimer);
+  cuiAvisoTimer = setTimeout(cuiFecharAviso, 6000);
+}
+function cuiFecharAviso() {
+  clearTimeout(cuiAvisoTimer);
+  cuiDesfazer = null;
+  $("#aviso").hidden = true;
 }
 
 /* A tela inicial: um quadrado por colecao, com a colagem de tres capas da previa
@@ -1929,6 +1956,7 @@ function setArea(a) {
   history.replaceState(null, "", a === "cui" ? "#collectionui" : location.pathname + location.search);
   marcarArea(a);
   cuiSelIds = null; cuiAviso = ""; cuiRascunho = cuiRascunhoSet = null;
+  cuiFecharAviso();
   cuiTela = "colecoes"; document.body.dataset.tela = cuiTela;
   cuiCarregarIndies();
   render();
@@ -1959,6 +1987,11 @@ function ligarCui() {
     else if (id === "cui-editar") cuiAbrirForm(cuiPorId(CUI.sel));
     else if (id === "cui-apagar") cuiApagar();
   });
+  $("#aviso-desfazer").onclick = function () {
+    var f = cuiDesfazer;
+    cuiFecharAviso();
+    if (f) f();
+  };
   $("#btn-cui-import").onclick = function () { $("#file-cui").click(); };
   $("#btn-cui-export").onclick = cuiExportar;
   $("#file-cui").addEventListener("change", function (e) {
