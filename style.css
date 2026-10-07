@@ -277,10 +277,9 @@ select:focus{border-color:var(--green)}
 .year .cnt{font-size:13px;color:var(--dim)}
 .year .ln{flex:1;height:1px;background:var(--line)}
 
-/* Card deitado, com a informacao ao lado da capa: no minimo 340px de largura,
-   24px entre linhas e 28px entre colunas. Com 420px cabiam 3 por linha a 1920px
-   e cada card esticava ate mais de 500px, largo demais para o texto. */
-.grid{display:grid;gap:24px 28px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+/* Card deitado, com a informacao ao lado da capa: no minimo 420px de largura,
+   24px entre linhas e 28px entre colunas. */
+.grid{display:grid;gap:24px 28px;grid-template-columns:repeat(auto-fill,minmax(420px,1fr))}
 
 /* ---------- card ---------- */
 .card{
