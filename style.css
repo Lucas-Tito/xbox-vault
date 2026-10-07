@@ -156,7 +156,9 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
   background:linear-gradient(rgba(8,14,10,0),rgba(8,14,10,.94))}
 /* nome e contagem ancorados pela base, a 86% da altura, crescendo para cima */
 .cui-tile-txt{position:absolute;z-index:2;left:14px;right:14px;bottom:14%;display:flex;flex-direction:column;gap:6px}
-.cui-tile-txt b{font-size:15px;font-weight:600;color:var(--txt);line-height:1.3;
+/* Caixa alta so aqui, como o ParaMaiusculas do console, que so os quadrados das
+   colecoes chamam: o nome guardado e o do arquivo nao mudam. */
+.cui-tile-txt b{font-size:15px;font-weight:600;color:var(--txt);line-height:1.3;text-transform:uppercase;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .cui-tile-txt i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--dim2)}
 .cui-tile:hover{border-color:var(--green);box-shadow:inset 0 0 0 2px var(--green)}
