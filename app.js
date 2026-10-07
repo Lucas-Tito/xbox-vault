@@ -78,6 +78,9 @@ function prepararJogo(g) {
   g._s = norm([g.title, (g.developers || []).join(" "), (g.publishers || []).join(" ")].join(" "));
   g._c = g._s.replace(/[^a-z0-9]/g, "");   // sem espaço nem pontuação, para busca tolerante
   g._t = g.tags || {};
+  // Todos os Title IDs do jogo, em maiusculas: o que o colecoes.txt guarda
+  g._tids = g.titleId ? [g.titleId.toUpperCase()].concat((g.titleIdAlt || []).map(function (t) {
+    return t.toUpperCase(); })) : [];
 }
 
 /* Busca tolerante: verifica se as letras da consulta aparecem NA ORDEM, mesmo
@@ -199,6 +202,10 @@ function match(g, skip) {
     if (g._s.indexOf(F.q) < 0 && !(F.qFrouxa && subsequencia(F.qc, g._c))) return false;
   }
 
+  // No CollectionUI quem recorta e a colecao, e o escondido continua valendo
+  // para montar: um jogo escondido do catalogo ainda pode estar no console.
+  if (AREA === "cui") { if (!cuiVistaOk(g)) return false; }
+  else {
   // "não quero" tira o jogo de todas as listas, menos da lista de escondidos
   if (F.own === "hide") { if (!escondidos.has(g.id)) return false; }
   else if (escondidos.has(g.id)) return false;
@@ -209,6 +216,7 @@ function match(g, skip) {
   // escondi (escondido já saiu acima). "Só os que faltam" não serve aqui
   // porque a wishlist também falta, e ela já foi decidida.
   if (F.own === "none" && (owned.has(g.id) || wishlist.has(g.id))) return false;
+  }
 
   if (skip !== "mode" && !modosOk(g)) return false;
   if (skip !== "coopt" && F.coopt && !g.coopInfo) return false;
@@ -385,8 +393,11 @@ function cardHtml(g) {
   var link = esc(g.title);
 
   var o = owned.has(g.id), w = wishlist.has(g.id), h = escondidos.has(g.id);
-  return '<article class="card' + (o ? " own" : "") + (w ? " wish" : "") + (h ? " hide" : "") +
-    '" data-id="' + esc(g.id) + '">' +
+  var estado = AREA === "cui"
+    ? (cuiNaSel(g) ? " nacol" : "") + (g._tids.length ? "" : " semtid")
+    : (o ? " own" : "") + (w ? " wish" : "") + (h ? " hide" : "");
+  return '<article class="card' + estado + '" data-id="' + esc(g.id) + '"' +
+    (AREA === "cui" && !g._tids.length ? ' title="Sem Title ID: não dá para pôr em coleção do CollectionUI"' : "") + ">" +
     '<div class="marks">' +
     '<button class="wish-btn" title="Wishlist" aria-label="Wishlist">' + ICO_WISH + "</button>" +
     '<button class="hide-btn" title="Não quero, esconder da lista" aria-label="Esconder">' + ICO_HIDE + "</button>" +
@@ -451,6 +462,7 @@ function render() {
   }
   updateStats(list);
   updateFacets();
+  cuiPintar();
 }
 
 function observe() {
@@ -1241,9 +1253,11 @@ function onChange() {
 
 function initControls() {
   medirTopo();
+  if (AREA === "cui") setAreaInicial();
   montarFacetas();
   restaurarControles();
   ligarEventos();
+  ligarCui();
 }
 
 /* O cabecalho muda de altura quando quebra linha (tela estreita, janela
@@ -1396,6 +1410,7 @@ function ligarEventos() {
     if (e.target.tagName === "A") return;
     var card = e.target.closest(".card");
     if (!card) return;
+    if (AREA === "cui") { cuiClique(card); return; }   // la o clique monta a colecao
     var btn = e.target.closest(".wish-btn, .hide-btn");
     if (btn) {                                   // botoes do canto marcam direto
       toggleMark(card.dataset.id,
@@ -1489,6 +1504,352 @@ function ligarEventos() {
     F = padraoF();
     saveF(); location.reload();
   };
+}
+
+/* ---------------- CollectionUI ---------------- */
+/* As colecoes do CollectionUI (o colecoes.txt do console) montadas em cima do
+   catalogo: a mesma grade, os mesmos filtros, e o clique no card poe ou tira o
+   jogo da colecao escolhida. Fica no navegador, como as marcacoes; o arquivo
+   entra e sai pelo menu Arquivo.
+
+   O formato e o do app/src/colecoes.cpp: tres linhas de comentario e uma
+   colecao por linha, "id|tipo|nome|conteudo", CRLF. tipo jogos guarda Title IDs
+   em hexa (8 digitos, maiusculos); tipo uniao guarda ids de colecao. */
+var AREA = location.hash === "#collectionui" ? "cui" : "cat";
+var CUI_KEY = "xbx.cui.v1";
+var CUI = { cols: [], sel: null, vista: "todos" };
+try { Object.assign(CUI, JSON.parse(localStorage.getItem(CUI_KEY) || "{}")); } catch (e) {}
+var cuiAviso = "";          // uma linha de retorno na barra: importou, exportou...
+var cuiSelIds = null;       // os Title IDs da colecao escolhida, refeito a cada mudanca
+var cuiMapaCache = null;    // Title ID -> jogo, refeito quando uma categoria desce
+
+function cuiSalvar() { try { localStorage.setItem(CUI_KEY, JSON.stringify(CUI)); } catch (e) {} }
+
+function cuiMapa() {
+  if (cuiMapaCache && cuiMapaCache.n === GAMES.length) return cuiMapaCache.m;
+  var m = new Map();
+  GAMES.forEach(function (g) { g._tids.forEach(function (t) { if (!m.has(t)) m.set(t, g); }); });
+  cuiMapaCache = { n: GAMES.length, m: m };
+  return m;
+}
+
+function cuiPorId(id) {
+  for (var i = 0; i < CUI.cols.length; i++) if (CUI.cols[i].id === id) return CUI.cols[i];
+  return null;
+}
+
+/* Os Title IDs de uma colecao. A uniao junta os das origens. */
+function cuiIds(c) {
+  var s = new Set();
+  if (!c) return s;
+  if (!c.uniao) { c.ids.forEach(function (t) { s.add(t); }); return s; }
+  c.origens.forEach(function (o) {
+    var oc = cuiPorId(o);
+    if (oc && !oc.uniao) oc.ids.forEach(function (t) { s.add(t); });
+  });
+  return s;
+}
+
+function cuiNaSel(g) {
+  if (!cuiSelIds) cuiSelIds = cuiIds(cuiPorId(CUI.sel));
+  for (var i = 0; i < g._tids.length; i++) if (cuiSelIds.has(g._tids[i])) return true;
+  return false;
+}
+
+function cuiVistaOk(g) {
+  if (CUI.vista === "tenho") return owned.has(g.id);
+  if (CUI.vista === "colecao") return cuiNaSel(g);
+  return true;
+}
+
+/* Quantos JOGOS a colecao tem: os do catalogo contam uma vez, por mais Title
+   IDs que tenham la dentro, e o que o catalogo nao conhece conta um por ID. */
+function cuiContar(c) {
+  var m = cuiMapa(), vistos = new Set(), fora = [];
+  cuiIds(c).forEach(function (t) {
+    var g = m.get(t);
+    if (g) vistos.add(g.id); else fora.push(t);
+  });
+  return { n: vistos.size + fora.length, fora: fora };
+}
+
+/* Ordem do console: alfabetica sem diferenciar caixa, ignorando o artigo do
+   comeco (SemArtigo, no colecoes.cpp). */
+function semArtigo(n) {
+  var s = (n || "").toLowerCase(), A = ["the ", "a ", "an ", "o ", "os ", "as ", "um ", "uma "];
+  for (var i = 0; i < A.length; i++) if (s.indexOf(A[i]) === 0) return s.slice(A[i].length);
+  return s;
+}
+function cuiOrdenadas() {
+  return CUI.cols.slice().sort(function (a, b) {
+    var x = semArtigo(a.nome), y = semArtigo(b.nome);
+    return x < y ? -1 : x > y ? 1 : 0;
+  });
+}
+
+/* O Sanear do app: sem barra nem quebra de linha, e no maximo 28 BYTES, cortando
+   por caractere para nao partir um acento no meio. */
+function cuiSanear(nome) {
+  var cs = Array.from(String(nome || "").replace(/[|\r\n]/g, " ").trim());
+  var enc = new TextEncoder();
+  while (cs.length && enc.encode(cs.join("")).length > 28) cs.pop();
+  return cs.join("").trim();
+}
+
+function cuiProximoId(cols) {
+  var maior = 0;
+  (cols || CUI.cols).forEach(function (c) { if (c.id > maior) maior = c.id; });
+  return maior + 1;
+}
+
+/* O LimparUnioes do app: uniao so aponta para colecao de jogos que existe, e a
+   que fica sem origem e apagada. Devolve os nomes das apagadas. */
+function cuiLimparUnioes(cols) {
+  var apagadas = [], mexeu = true;
+  while (mexeu) {
+    mexeu = false;
+    for (var i = 0; i < cols.length; i++) {
+      var c = cols[i];
+      if (!c.uniao) continue;
+      var antes = c.origens.length;
+      c.origens = c.origens.filter(function (o) {
+        var oc = null;
+        for (var k = 0; k < cols.length; k++) if (cols[k].id === o) oc = cols[k];
+        return oc && !oc.uniao;
+      });
+      if (c.origens.length !== antes) mexeu = true;
+      if (!c.origens.length) { apagadas.push(c.nome); cols.splice(i, 1); mexeu = true; break; }
+    }
+  }
+  return apagadas;
+}
+
+/* Le o colecoes.txt. Tolera BOM, CRLF e o formato antigo "nome|TitleIds", que o
+   app ainda le e converte. Id repetido: vale o primeiro, como no PorId do app. */
+function cuiLer(txt) {
+  var cols = [], legado = [];
+  String(txt).replace(/^﻿/, "").split(/\r?\n/).forEach(function (l) {
+    if (!l || l.charAt(0) === "#" || l.indexOf("|") < 0) return;
+    var p = l.split("|");
+    var hexa = function (lista) {
+      var out = [];
+      lista.split(",").forEach(function (t) {
+        t = t.trim();
+        if (/^[0-9a-f]{1,8}$/i.test(t) && parseInt(t, 16)) {
+          t = ("0000000" + t.toUpperCase()).slice(-8);
+          if (out.indexOf(t) < 0) out.push(t);
+        }
+      });
+      return out;
+    };
+    if (/^\d+$/.test(p[0]) && p.length >= 4) {
+      var id = +p[0];
+      if (!(id > 0) || cols.some(function (c) { return c.id === id; })) return;
+      var uniao = p[1] === "uniao", conteudo = p.slice(3).join("|");
+      cols.push({ id: id, uniao: uniao, nome: p[2],
+        ids: uniao ? [] : hexa(conteudo),
+        origens: uniao ? conteudo.split(",").map(Number).filter(function (n) { return n > 0; }) : [] });
+    } else if (p.length === 2) {
+      legado.push({ nome: p[0], ids: hexa(p[1]) });
+    }
+  });
+  legado.forEach(function (c) {
+    cols.push({ id: cuiProximoId(cols), uniao: false, nome: c.nome, ids: c.ids, origens: [] });
+  });
+  cuiLimparUnioes(cols);
+  return cols;
+}
+
+function cuiTexto() {
+  cuiLimparUnioes(CUI.cols);
+  var L = ["# CollectionUI: uma colecao por linha, no formato",
+           "#   id, tipo, nome, conteudo -- separados por barra vertical",
+           "#   tipo jogos: TitleIds em hexa. tipo uniao: ids de colecao"];
+  CUI.cols.forEach(function (c) {
+    L.push(c.id + "|" + (c.uniao ? "uniao" : "jogos") + "|" + c.nome + "|" +
+      (c.uniao ? c.origens.join(",") : c.ids.join(",")));
+  });
+  return L.join("\r\n") + "\r\n";
+}
+
+function cuiMudou() { cuiSelIds = null; cuiSalvar(); }
+
+function cuiEscolher(id) {
+  CUI.sel = id; cuiAviso = ""; cuiMudou(); render();
+}
+
+function cuiImportar(txt) {
+  var cols = cuiLer(txt);
+  if (!cols.length) { alert("Nenhuma coleção nesse arquivo."); return; }
+  if (CUI.cols.length && !confirm("Substituir as " + CUI.cols.length + " coleções daqui pelas " +
+      cols.length + " do arquivo?")) return;
+  CUI.cols = cols;
+  CUI.sel = cuiOrdenadas()[0].id;
+  cuiAviso = cols.length + " coleç" + (cols.length > 1 ? "ões importadas" : "ão importada") + ".";
+  cuiMudou(); render();
+}
+
+function cuiExportar() {
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([cuiTexto()], { type: "text/plain" }));
+  a.download = "colecoes.txt";
+  a.click();
+  setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  // O app so le o arquivo ao abrir e regrava tudo a cada mudanca: copiado com
+  // ele aberto, a copia se perde na primeira edicao feita no console.
+  cuiAviso = "colecoes.txt exportado. Copie para a pasta do CollectionUI com o app fechado.";
+  cuiSalvar(); cuiPintar();
+}
+
+/* Clique num card: poe ou tira o jogo da colecao escolhida. Entram TODOS os
+   Title IDs do jogo (disco e Arcade, regioes): o console mostra o que estiver
+   instalado e ignora o resto, entao ele aparece qualquer que seja a versao. */
+function cuiClique(card) {
+  var c = cuiPorId(CUI.sel);
+  var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
+  if (!c || c.uniao || !g || !g._tids.length) return;
+  var dentro = cuiNaSel(g);
+  if (dentro) c.ids = c.ids.filter(function (t) { return g._tids.indexOf(t) < 0; });
+  else g._tids.forEach(function (t) { if (c.ids.indexOf(t) < 0) c.ids.push(t); });
+  cuiAviso = "";
+  cuiMudou();
+  if (dentro && CUI.vista === "colecao") removeCard(card);
+  else card.classList.toggle("nacol", !dentro);
+  updateStats(filtered(null));
+  cuiPintar();
+}
+
+function cuiFormulario(titulo, c) {
+  var jogos = cuiOrdenadas().filter(function (x) { return !x.uniao && (!c || x.id !== c.id); });
+  var novo = !c;
+  return "<h3>" + titulo + "</h3>" +
+    '<input type="text" id="cui-nome" maxlength="28" placeholder="Ex.: Para jogar em dois" value="' +
+      esc(c ? c.nome : "") + '">' +
+    (novo ? '<div class="seg" role="radiogroup" aria-label="Tipo">' +
+      '<label><input type="radio" name="cui-tipo" value="jogos" checked> Jogos</label>' +
+      '<label><input type="radio" name="cui-tipo" value="uniao"> União de coleções</label></div>' : "") +
+    '<div id="cui-origens"' + (novo || !c.uniao ? " hidden" : "") + '><p>Junta os jogos de:</p>' +
+    (jogos.length ? jogos.map(function (x) {
+      return '<label class="chk"><input type="checkbox" class="cui-origem" value="' + x.id + '"' +
+        (c && c.uniao && c.origens.indexOf(x.id) >= 0 ? " checked" : "") + "> " + esc(x.nome) + "</label>";
+    }).join("") : "<p>Crie antes uma coleção de jogos.</p>") + "</div>" +
+    '<button class="btn primary" id="cui-ok">' + (novo ? "Criar" : "Salvar") + "</button>";
+}
+
+function cuiAbrirForm(c) {
+  openModal(cuiFormulario(c ? (c.uniao ? "Editar união" : "Renomear coleção") : "Nova coleção", c));
+  var nome = $("#cui-nome");
+  nome.focus();
+  $$("input[name=cui-tipo]").forEach(function (r) {
+    r.onchange = function () { $("#cui-origens").hidden = r.value !== "uniao" || !r.checked; };
+  });
+  var salvar = function () {
+    var n = cuiSanear(nome.value);
+    if (!n) { nome.focus(); return; }
+    var uniao = c ? c.uniao : $("input[name=cui-tipo]:checked").value === "uniao";
+    var origens = $$(".cui-origem").filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+    if (uniao && !origens.length) { alert("Escolha ao menos uma coleção para a união."); return; }
+    if (c) { c.nome = n; if (c.uniao) c.origens = origens; }
+    else {
+      c = { id: cuiProximoId(), uniao: uniao, nome: n, ids: [], origens: uniao ? origens : [] };
+      CUI.cols.push(c);
+    }
+    CUI.sel = c.id; cuiAviso = "";
+    cuiMudou(); closeModal(); render();
+  };
+  $("#cui-ok").onclick = salvar;
+  nome.onkeydown = function (e) { if (e.key === "Enter") salvar(); };
+}
+
+function cuiApagar() {
+  var c = cuiPorId(CUI.sel);
+  if (!c || !confirm('Apagar a coleção "' + c.nome + '"?')) return;
+  CUI.cols = CUI.cols.filter(function (x) { return x !== c; });
+  var foram = cuiLimparUnioes(CUI.cols);
+  CUI.sel = CUI.cols.length ? cuiOrdenadas()[0].id : null;
+  cuiAviso = foram.length ? "União apagada junto, por ficar sem origem: " + foram.join(", ") + "." : "";
+  cuiMudou(); render();
+}
+
+function cuiPintar() {
+  if (AREA !== "cui") return;
+  if (!cuiPorId(CUI.sel) && CUI.cols.length) { CUI.sel = cuiOrdenadas()[0].id; cuiSelIds = null; }
+  // "+ Nova" a esquerda, antes das colecoes
+  $("#cui-abas").innerHTML = '<button class="vista nova" id="cui-nova">+ Nova</button>' +
+    cuiOrdenadas().map(function (c) {
+      return '<button role="tab" class="vista" data-col="' + c.id + '" aria-selected="' + (c.id === CUI.sel) + '">' +
+        esc(c.nome) + "<i>" + (c.uniao ? "união" : cuiContar(c).n) + "</i></button>";
+    }).join("");
+  var c = cuiPorId(CUI.sel), h;
+  if (!c) {
+    h = '<span>Nenhuma coleção ainda. Importe o colecoes.txt do console pelo menu Arquivo, ou crie uma em <b>+ Nova</b>.</span>';
+  } else {
+    var k = cuiContar(c);
+    h = "<span><b>" + esc(c.nome) + "</b> · " + k.n + " jogo" + (k.n === 1 ? "" : "s") + " · " +
+      (c.uniao ? "união de " + esc(c.origens.map(function (o) { return (cuiPorId(o) || {}).nome; }).join(", ")) +
+                 "; para mudar os jogos, edite as coleções de origem"
+               : "clique num jogo para pôr ou tirar") + "</span>" +
+      '<div class="seg" role="radiogroup" aria-label="Mostrar">' +
+      [["todos", "Todos"], ["tenho", "Que tenho"], ["colecao", "Da coleção"]].map(function (v) {
+        return '<label><input type="radio" name="cui-vista" value="' + v[0] + '"' +
+          (CUI.vista === v[0] ? " checked" : "") + "> " + v[1] + "</label>";
+      }).join("") + "</div>" +
+      '<div class="cui-acoes"><button id="cui-editar">' + (c.uniao ? "Editar união" : "Renomear") + "</button>" +
+      '<button class="perigo" id="cui-apagar">Apagar</button></div>' +
+      (k.fora.length ? '<div class="cui-nota">' + k.fora.length + " desta coleção não aparece" +
+        (k.fora.length > 1 ? "m" : "") + " no catálogo carregado e continua no arquivo: " +
+        k.fora.map(function (t) { return "<code>" + t + "</code>"; }).join(" ") + "</div>" : "");
+  }
+  if (cuiAviso) h += '<div class="cui-nota">' + esc(cuiAviso) + "</div>";
+  $("#cui-barra").innerHTML = h;
+}
+
+/* Na carga a area vem do endereco (#collectionui); render() ainda vai rodar. */
+function setAreaInicial() {
+  document.body.classList.add("cui");
+  $$(".menu-item.area").forEach(function (m) {
+    var on = m.dataset.area === "cui";
+    m.classList.toggle("atual", on);
+    if (on) m.setAttribute("aria-current", "page"); else m.removeAttribute("aria-current");
+  });
+}
+
+function setArea(a) {
+  AREA = a;
+  document.body.classList.toggle("cui", a === "cui");
+  history.replaceState(null, "", a === "cui" ? "#collectionui" : location.pathname + location.search);
+  $$(".menu-item.area").forEach(function (m) {
+    var on = m.dataset.area === a;
+    m.classList.toggle("atual", on);
+    if (on) m.setAttribute("aria-current", "page"); else m.removeAttribute("aria-current");
+  });
+  cuiSelIds = null; cuiAviso = "";
+  render();
+}
+
+function ligarCui() {
+  $$(".menu-item.area").forEach(function (m) {
+    m.onclick = function () { if (m.dataset.area !== AREA) setArea(m.dataset.area); };
+  });
+  $("#cui-abas").addEventListener("click", function (e) {
+    if (e.target.closest("#cui-nova")) return cuiAbrirForm(null);
+    var b = e.target.closest("[data-col]");
+    if (b) cuiEscolher(+b.dataset.col);
+  });
+  $("#cui-barra").addEventListener("click", function (e) {
+    if (e.target.id === "cui-editar") cuiAbrirForm(cuiPorId(CUI.sel));
+    else if (e.target.id === "cui-apagar") cuiApagar();
+  });
+  $("#cui-barra").addEventListener("change", function (e) {
+    if (e.target.name === "cui-vista") { CUI.vista = e.target.value; cuiAviso = ""; cuiMudou(); render(); }
+  });
+  $("#btn-cui-import").onclick = function () { $("#file-cui").click(); };
+  $("#btn-cui-export").onclick = cuiExportar;
+  $("#file-cui").addEventListener("change", function (e) {
+    var f = e.target.files[0];
+    if (f) f.text().then(cuiImportar);
+    e.target.value = "";
+  });
 }
 
 /* ---------------- boot ---------------- */

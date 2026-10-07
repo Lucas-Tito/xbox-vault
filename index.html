@@ -13,14 +13,14 @@
 
 <header class="topbar">
   <div class="topbar-in">
-    <!-- O nome do site e tambem a troca de area. O CollectionUI ainda nao tem
-         tela: o item fica inerte ate a pagina dele existir. -->
+    <!-- O nome do site e tambem a troca de area: o catalogo e a montagem das
+         colecoes do CollectionUI, que usa a mesma grade e os mesmos filtros. -->
     <div class="lado">
       <div class="menu">
         <button class="brand" aria-haspopup="menu" aria-expanded="false">Xbox Vault <span class="seta" aria-hidden="true"></span></button>
         <div class="menu-lista esq" role="menu" hidden>
-          <a role="menuitem" class="menu-item atual" aria-current="page">Catálogo<small>Todos os jogos e o que você marcou</small></a>
-          <a role="menuitem" class="menu-item" aria-disabled="true">CollectionUI<small>Montar coleções para o console · em breve</small></a>
+          <a role="menuitem" class="menu-item area atual" data-area="cat" aria-current="page">Catálogo<small>Todos os jogos e o que você marcou</small></a>
+          <a role="menuitem" class="menu-item area" data-area="cui">CollectionUI<small>Montar coleções para o console</small></a>
         </div>
       </div>
     </div>
@@ -31,11 +31,14 @@
            que voce marcou: ficam num menu so. -->
       <div class="menu" id="menu-backup">
         <button class="btn" id="btn-backup" aria-haspopup="menu" aria-expanded="false">Arquivo <span class="seta" aria-hidden="true"></span></button>
-        <!-- Cada item diz de qual arquivo se trata: no CollectionUI este mesmo menu vai
-             importar e exportar o arquivo do console. -->
+        <!-- Cada item diz de qual arquivo se trata, e o menu muda com a area. No
+             CollectionUI importar vem primeiro: o passo um e puxar o que ja esta no
+             console. -->
         <div class="menu-lista" role="menu" hidden>
-          <button role="menuitem" class="menu-item" id="btn-export">Exportar marcações<small>Exportar arquivo do Xbox Vault</small></button>
-          <button role="menuitem" class="menu-item" id="btn-import">Importar marcações<small>Importar arquivo do Xbox Vault</small></button>
+          <button role="menuitem" class="menu-item so-cat" id="btn-export">Exportar marcações<small>Exportar arquivo do Xbox Vault</small></button>
+          <button role="menuitem" class="menu-item so-cat" id="btn-import">Importar marcações<small>Importar arquivo do Xbox Vault</small></button>
+          <button role="menuitem" class="menu-item so-cui" id="btn-cui-import">Importar coleções<small>Importar arquivo do CollectionUI</small></button>
+          <button role="menuitem" class="menu-item so-cui" id="btn-cui-export">Exportar coleções<small>Exportar arquivo do CollectionUI</small></button>
         </div>
       </div>
     </div>
@@ -176,7 +179,8 @@
          e nao mais um filtro entre os outros: vira aba, como Jogos/Filmes/Series no
          Metacritic. A contagem de cada uma mora na propria aba. -->
     <div class="vistas-linha">
-    <nav class="vistas" role="tablist" aria-label="Coleção">
+    <nav class="vistas cui-abas" id="cui-abas" aria-label="Coleções do CollectionUI"></nav>
+    <nav class="vistas" id="vistas-own" role="tablist" aria-label="Coleção">
       <button role="tab" class="vista" data-own="all">Todos</button>
       <button role="tab" class="vista" data-own="yes">Tenho <b id="s-own">0</b></button>
       <button role="tab" class="vista" data-own="no">Faltam</button>
@@ -186,6 +190,8 @@
     </nav>
     <span class="res-n"><b id="s-shown">0</b> de <span id="s-total">0</span> jogos</span>
     </div>
+    <!-- a colecao escolhida no CollectionUI: o que ela e, o que mostrar, e as acoes -->
+    <div class="cui-barra" id="cui-barra"></div>
     <div id="main">
       <div class="loading">Carregando catálogo…</div>
     </div>
@@ -200,6 +206,7 @@
   </div>
 </div>
 <input type="file" id="file-in" accept="application/json,.json" hidden>
+<input type="file" id="file-cui" accept=".txt,text/plain" hidden>
 
 <!-- visualizador de screenshots, por cima do popup de detalhes -->
 <div class="lb" id="lb" hidden>

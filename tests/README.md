@@ -24,6 +24,9 @@ google-chrome --headless=new --disable-gpu --window-size=500,760 \
 sleep 4
 node tests/drive.mjs "file://$PWD/index.html" tests/mobile.js
 
+# área do CollectionUI: importar e exportar o colecoes.txt, pôr e tirar jogo, uniões
+node tests/drive.mjs "file://$PWD/index.html" tests/cui.js
+
 # auditoria de rede: prova que a página não faz requisição a domínio externo
 node tests/netcheck.mjs "file://$PWD/index.html"
 node tests/netcheck.mjs "file://$PWD/index.html" emu
