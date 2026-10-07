@@ -340,7 +340,11 @@ select:focus{border-color:var(--green)}
    linha so, sem dar para ver onde uma etiqueta acabava. Ficou o meio-termo: um
    fundo neutro e baixo separa cada uma, sem borda e sem cor. Cor so onde ela
    avisa alguma coisa, o vazado. */
-.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:2px}
+/* Uma linha so: o que nao cabe some num degrade no fim, em vez de abrir mais
+   linhas e esticar o card. A ordem ja poe a plataforma e o modo primeiro. */
+.tags{display:flex;flex-wrap:nowrap;gap:4px;margin-top:auto;padding-top:2px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent)}
+.tag{flex:none}
 .tag{white-space:nowrap;font-size:11px;font-weight:600;letter-spacing:.03em;line-height:1;
   padding:5px 6px;border-radius:3px;background:rgba(231,237,233,.07);color:#B9C4BE}
 .tag.plat,.tag.emu{color:var(--txt);background:rgba(231,237,233,.13)}

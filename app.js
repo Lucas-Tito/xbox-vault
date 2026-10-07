@@ -310,7 +310,7 @@ function tagsHtml(g) {
   if (g.platform === "x360") h.push('<span class="tag plat">360</span>');
   else if (g.platform === "xblig") h.push('<span class="tag plat">INDIE</span>');
   else if (g.platform === "emu") h.push('<span class="tag emu">' + esc(g.system) + "</span>");
-  else if (g.platform === "xbox") h.push('<span class="tag plat">XBOX</span>');
+  else if (g.platform === "xbox") h.push('<span class="tag plat">XBOX OG</span>');
   else h.push('<span class="tag plat">HB</span>');
 
   /* Nos 3.344 jogos de source "xblig-default" o modo nao e fraco, e inventado:
