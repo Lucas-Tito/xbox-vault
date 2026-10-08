@@ -1629,13 +1629,17 @@ function cuiOrdenadas() {
 }
 
 /* O Sanear do app: sem barra nem quebra de linha, e no maximo 28 BYTES, cortando
-   por caractere para nao partir um acento no meio. */
-function cuiSanear(nome) {
-  var cs = Array.from(String(nome || "").replace(/[|\r\n]/g, " ").trim());
+   por caractere para nao partir um acento no meio. Como o do app, nao mexe no
+   espaco das pontas. Vale para o nome digitado, para o importado e para o
+   exportado: nome de arquivo editado a mao nao atravessa o Vault fora da regra. */
+function cuiSanearArquivo(nome) {
+  var cs = Array.from(String(nome || "").replace(/[|\r\n]/g, " "));
   var enc = new TextEncoder();
   while (cs.length && enc.encode(cs.join("")).length > 28) cs.pop();
-  return cs.join("").trim();
+  return cs.join("");
 }
+/* No formulario o espaco das pontas sai antes, que o teclado deixa sobrar. */
+function cuiSanear(nome) { return cuiSanearArquivo(String(nome || "").trim()).trim(); }
 
 function cuiProximoId(cols) {
   var maior = 0;
@@ -1665,38 +1669,68 @@ function cuiLimparUnioes(cols) {
   return apagadas;
 }
 
-/* Le o colecoes.txt. Tolera BOM, CRLF e o formato antigo "nome|TitleIds", que o
-   app ainda le e converte. Id repetido: vale o primeiro, como no PorId do app. */
+/* strtoul(p, NULL, 16) e atoi(p) do C++: espaco na frente, sinal, e o que
+   houver de numero no comeco vale ("4D53082Dx" e 4D53082D); sem numero, 0. */
+function cuiStrtoulHex(t) {
+  var m = /^[ \t\n\v\f\r]*([+-]?)(?:0[xX])?([0-9a-fA-F]*)/.exec(t);
+  var d = m[2].replace(/^0+/, "");
+  if (!d) return 0;
+  var v = d.length > 8 ? 0xFFFFFFFF : parseInt(d, 16);   // estouro: ULONG_MAX
+  if (m[1] === "-" && d.length <= 8) v = (0x100000000 - v) % 0x100000000;
+  return v >>> 0;
+}
+function cuiAtoi(t) {
+  var m = /^[ \t\n\v\f\r]*([+-]?\d+)/.exec(t);
+  return m ? parseInt(m[1], 10) : 0;
+}
+
+/* Le o colecoes.txt como o Carregar do app/src/colecoes.cpp, decisao por decisao,
+   porque o Vault regrava o arquivo inteiro a partir do que leu: o que a leitura
+   descarta some do console no proximo export, sem aviso.
+   - O que separa colecao de comentario e a BARRA, nao o "#": uma colecao
+     chamada "#1 favoritos" e valida. O cabecalho nao tem barra.
+   - Formato novo so quando abre com numero, barra, e o segundo campo e "jogos"
+     ou "uniao" ("1942|FFED0707" e uma colecao antiga chamada 1942).
+   - Linha nova cortada no meio ("9|jogos|Nome"): fica a colecao, sem conteudo.
+   - Formato antigo: nome ate a primeira barra, Title IDs no resto.
+   - Id 0 e as antigas ganham id depois, acima do maior, na ordem do arquivo; id
+     repetido fica repetido (o app tambem guarda os dois).
+   - Title ID repetido fica, e 0 sai; origem de uniao em decimal, so > 0.
+   A unica tolerancia a mais e o BOM no comeco do arquivo, que o app nao espera. */
 function cuiLer(txt) {
-  var cols = [], legado = [];
-  String(txt).replace(/^﻿/, "").split(/\r?\n/).forEach(function (l) {
-    if (!l || l.charAt(0) === "#" || l.indexOf("|") < 0) return;
-    var p = l.split("|");
-    var hexa = function (lista) {
-      var out = [];
-      lista.split(",").forEach(function (t) {
-        t = t.trim();
-        if (/^[0-9a-f]{1,8}$/i.test(t) && parseInt(t, 16)) {
-          t = ("0000000" + t.toUpperCase()).slice(-8);
-          if (out.indexOf(t) < 0) out.push(t);
-        }
-      });
-      return out;
-    };
-    if (/^\d+$/.test(p[0]) && p.length >= 4) {
-      var id = +p[0];
-      if (!(id > 0) || cols.some(function (c) { return c.id === id; })) return;
-      var uniao = p[1] === "uniao", conteudo = p.slice(3).join("|");
-      cols.push({ id: id, uniao: uniao, nome: p[2],
-        ids: uniao ? [] : hexa(conteudo),
-        origens: uniao ? conteudo.split(",").map(Number).filter(function (n) { return n > 0; }) : [] });
-    } else if (p.length === 2) {
-      legado.push({ nome: p[0], ids: hexa(p[1]) });
+  var cols = [];
+  String(txt).replace(/^\uFEFF/, "").split("\n").forEach(function (l) {
+    l = l.replace(/[\r\n]+$/, "");
+    var barra = l.indexOf("|");
+    if (barra < 0) return;
+    var b2 = l.indexOf("|", barra + 1);
+    var tipo = b2 < 0 ? "" : l.slice(barra + 1, b2);
+    var novo = barra > 0 && /^\d+$/.test(l.slice(0, barra)) && (tipo === "jogos" || tipo === "uniao");
+    var c = { id: 0, uniao: false, nome: "", ids: [], origens: [] }, conteudo = "";
+    if (novo) {
+      c.id = cuiAtoi(l.slice(0, barra));
+      c.uniao = tipo === "uniao";
+      var b3 = l.indexOf("|", b2 + 1);
+      if (b3 < 0) c.nome = l.slice(b2 + 1);
+      else { c.nome = l.slice(b2 + 1, b3); conteudo = l.slice(b3 + 1); }
+    } else {
+      c.nome = l.slice(0, barra);
+      conteudo = l.slice(barra + 1);
     }
+    c.nome = cuiSanearArquivo(c.nome);
+    conteudo.split(",").forEach(function (t) {
+      if (!t) return;                              // o strtok pula token vazio
+      if (c.uniao) { var o = cuiAtoi(t); if (o > 0) c.origens.push(o); }
+      else {
+        var v = cuiStrtoulHex(t);
+        if (v) c.ids.push(("0000000" + v.toString(16).toUpperCase()).slice(-8));
+      }
+    });
+    cols.push(c);
   });
-  legado.forEach(function (c) {
-    cols.push({ id: cuiProximoId(cols), uniao: false, nome: c.nome, ids: c.ids, origens: [] });
-  });
+  var maior = 0;
+  cols.forEach(function (c) { if (c.id > maior) maior = c.id; });
+  cols.forEach(function (c) { if (c.id === 0) c.id = ++maior; });
   cuiLimparUnioes(cols);
   return cols;
 }
@@ -1707,7 +1741,7 @@ function cuiTexto() {
            "#   id, tipo, nome, conteudo -- separados por barra vertical",
            "#   tipo jogos: TitleIds em hexa. tipo uniao: ids de colecao"];
   CUI.cols.forEach(function (c) {
-    L.push(c.id + "|" + (c.uniao ? "uniao" : "jogos") + "|" + c.nome + "|" +
+    L.push(c.id + "|" + (c.uniao ? "uniao" : "jogos") + "|" + cuiSanearArquivo(c.nome) + "|" +
       (c.uniao ? c.origens.join(",") : c.ids.join(",")));
   });
   return L.join("\r\n") + "\r\n";

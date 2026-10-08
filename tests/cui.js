@@ -156,6 +156,29 @@
   ok('formato antigo entra e sai no formato novo',
      (await exportar()).indexOf('1|jogos|Antiga|' + a.titleId.toUpperCase() + '\r\n') >= 0);
 
+  // ---- a leitura e a do Carregar do console: nada some em silencio ----
+  const arq2 = CAB +
+    '#1 favoritos|' + a.titleId + '\r\n' +                        // antigo comecando com #
+    '7|jogos|Cortada\r\n' +                                         // cortada no meio
+    '1942|' + b.titleId + '\r\n' +                                  // antigo que comeca com numero
+    '7|jogos|Repetida|' + c.titleId + '\r\n' +                      // id repetido
+    '0|jogos|Zero|' + c.titleId + ',' + c.titleId + ',4D53082Dx\r\n' +  // id 0, TID repetido, lixo
+    '8|jogos|Um nome comprido que passa de vinte e oito bytes|' + a.titleId + '\r\n';
+  await importar(arq2);
+  const ls = (await exportar()).split('\r\n');
+  const T = x => x.toUpperCase();
+  ok('"#" no comeco nao e comentario', ls.some(l => /^\d+\|jogos\|#1 favoritos\|/.test(l)), ls.join(' / '));
+  ok('linha cortada fica, sem conteudo', ls.includes('7|jogos|Cortada|'));
+  ok('"1942|..." e o formato antigo', ls.some(l => /^\d+\|jogos\|1942\|/.test(l) && l.endsWith('|' + T(b.titleId))));
+  ok('id repetido fica repetido', ls.filter(l => l.startsWith('7|jogos|')).length === 2);
+  ok('id 0 ganha id novo; Title ID repetido fica; lixo depois do hexa sai',
+     ls.some(l => !l.startsWith('0|') && /\|jogos\|Zero\|/.test(l) &&
+       l.endsWith('|' + T(c.titleId) + ',' + T(c.titleId) + ',4D53082D')));
+  ok('nome importado passa pelo Sanear (28 bytes)', ls.some(l => {
+       const p = l.split('|'); return p[0] === '8' && new TextEncoder().encode(p[2]).length <= 28 && p[2].startsWith('Um nome'); }));
+  ok('a ordem do arquivo fica', ls.findIndex(l => /#1 favoritos/.test(l)) < ls.findIndex(l => /Cortada/.test(l)) &&
+     ls.findIndex(l => /Cortada/.test(l)) < ls.findIndex(l => /\|1942\|/.test(l)));
+
   // ---- volta ao catalogo ----
   $('.menu-item.area[data-area=cat]').click(); await wait(500);
   ok('o botao do topo volta a dizer Xbox Vault', $('#brand-nome').textContent === 'Xbox Vault');
