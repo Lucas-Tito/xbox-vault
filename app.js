@@ -1641,7 +1641,21 @@ function cuiSanearArquivo(nome) {
 /* No formulario o espaco das pontas sai antes, que o teclado deixa sobrar. */
 function cuiSanear(nome) { return cuiSanearArquivo(String(nome || "").trim()).trim(); }
 
+/* Id de colecao e SORTEADO, nao sequencial, como no ProximoId do console. O
+   arquivo tem dois editores, o app e o Vault, e os dois criavam id como "maior +
+   1": apagar a de maior id devolvia aquele numero ao estoque, e criar uma de cada
+   lado antes de sincronizar dava o MESMO id a colecoes diferentes, e uma uniao
+   passava a apontar para a errada, em silencio. Sortear em 31 bits resolve sem os
+   dois lados combinarem nada. Os ids pequenos que ja existem continuam valendo. */
 function cuiProximoId(cols) {
+  var usados = {};
+  (cols || CUI.cols).forEach(function (c) { usados[c.id] = 1; });
+  for (var t = 0; t < 64; t++) {
+    var id = 1 + Math.floor(Math.random() * 2147483647);   // 1 a 2147483647
+    if (!usados[id]) return id;
+  }
+  // 64 sorteios sem achar um livre nao acontece com dezenas de colecoes; se
+  // acontecer, o sequencial e melhor que devolver id repetido.
   var maior = 0;
   (cols || CUI.cols).forEach(function (c) { if (c.id > maior) maior = c.id; });
   return maior + 1;
@@ -1693,8 +1707,10 @@ function cuiAtoi(t) {
      ou "uniao" ("1942|FFED0707" e uma colecao antiga chamada 1942).
    - Linha nova cortada no meio ("9|jogos|Nome"): fica a colecao, sem conteudo.
    - Formato antigo: nome ate a primeira barra, Title IDs no resto.
-   - Id 0 e as antigas ganham id depois, acima do maior, na ordem do arquivo; id
-     repetido fica repetido (o app tambem guarda os dois).
+   - Id 0 e as antigas ganham id sorteado depois, na ordem do arquivo.
+   - Id repetido: a SEGUNDA ganha id sorteado e isso vira aviso (cols.avisos). E a
+     primeira que o app ja devolvia ao procurar pelo id, entao as unioes que
+     existem continuam apontando para onde apontavam.
    - Title ID repetido fica, e 0 sai; origem de uniao em decimal, so > 0.
    A unica tolerancia a mais e o BOM no comeco do arquivo, que o app nao espera. */
 function cuiLer(txt) {
@@ -1728,9 +1744,17 @@ function cuiLer(txt) {
     });
     cols.push(c);
   });
-  var maior = 0;
-  cols.forEach(function (c) { if (c.id > maior) maior = c.id; });
-  cols.forEach(function (c) { if (c.id === 0) c.id = ++maior; });
+  cols.forEach(function (c) { if (c.id === 0) c.id = cuiProximoId(cols); });
+  cols.avisos = [];
+  for (var i = 0; i < cols.length; i++) {
+    for (var k = 0; k < i; k++) {
+      if (cols[k].id !== cols[i].id) continue;
+      var novo = cuiProximoId(cols);
+      cols.avisos.push('"' + cols[i].nome + '" tinha o id ' + cols[i].id + " repetido e virou " + novo);
+      cols[i].id = novo;
+      break;
+    }
+  }
   cuiLimparUnioes(cols);
   return cols;
 }
@@ -1782,7 +1806,8 @@ function cuiImportar(txt) {
       cols.length + " do arquivo?")) return;
   CUI.cols = cols;
   CUI.sel = null;
-  cuiAviso = cols.length + " coleç" + (cols.length > 1 ? "ões importadas" : "ão importada") + ".";
+  cuiAviso = cols.length + " coleç" + (cols.length > 1 ? "ões importadas" : "ão importada") + "." +
+    (cols.avisos.length ? " " + cols.avisos.join("; ") + "." : "");
   cuiMudou(); cuiIr("colecoes");
 }
 

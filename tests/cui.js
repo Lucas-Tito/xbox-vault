@@ -135,9 +135,9 @@
   $('#cui-nova').click(); await wait(200);
   $('#cui-nome').value = 'Coop|ação para jogar em dois no sofá';
   $('#cui-ok').click(); await wait(500);
-  const nova = (await exportar()).split('\r\n').find(x => x.startsWith('4|'));
+  const nova = (await exportar()).split('\r\n').find(x => /^\d+\|jogos\|Coop/.test(x) && !/^[123]\|/.test(x));
   const nomeNovo = nova && nova.split('|')[2];
-  ok('nova colecao ganha o proximo id e abre', !!nova && document.body.dataset.tela === 'jogos', nova);
+  ok('nova colecao ganha id sorteado (fora dos que existiam) e abre', !!nova && document.body.dataset.tela === 'jogos', nova);
   ok('nome sem barra e com ate 28 bytes', nomeNovo && nomeNovo.indexOf('|') < 0 && new TextEncoder().encode(nomeNovo).length <= 28,
      nomeNovo + ' = ' + (nomeNovo && new TextEncoder().encode(nomeNovo).length) + ' bytes');
   $('#cui-voltar').click(); await wait(400);
@@ -154,7 +154,7 @@
   // ---- formato antigo "nome|TitleIds" ----
   await importar('Antiga|' + a.titleId.toLowerCase() + '\n');
   ok('formato antigo entra e sai no formato novo',
-     (await exportar()).indexOf('1|jogos|Antiga|' + a.titleId.toUpperCase() + '\r\n') >= 0);
+     (await exportar()).split('\r\n').some(l => new RegExp('^[1-9]\\d*\\|jogos\\|Antiga\\|' + a.titleId.toUpperCase() + '$').test(l)));
 
   // ---- a leitura e a do Carregar do console: nada some em silencio ----
   const arq2 = CAB +
@@ -165,12 +165,15 @@
     '0|jogos|Zero|' + c.titleId + ',' + c.titleId + ',4D53082Dx\r\n' +  // id 0, TID repetido, lixo
     '8|jogos|Um nome comprido que passa de vinte e oito bytes|' + a.titleId + '\r\n';
   await importar(arq2);
+  const avisoImport = $('#cui-barra').textContent;
   const ls = (await exportar()).split('\r\n');
   const T = x => x.toUpperCase();
   ok('"#" no comeco nao e comentario', ls.some(l => /^\d+\|jogos\|#1 favoritos\|/.test(l)), ls.join(' / '));
   ok('linha cortada fica, sem conteudo', ls.includes('7|jogos|Cortada|'));
   ok('"1942|..." e o formato antigo', ls.some(l => /^\d+\|jogos\|1942\|/.test(l) && l.endsWith('|' + T(b.titleId))));
-  ok('id repetido fica repetido', ls.filter(l => l.startsWith('7|jogos|')).length === 2);
+  ok('id repetido: a primeira fica com ele, a segunda ganha id novo', ls.includes('7|jogos|Cortada|') &&
+     ls.some(l => !l.startsWith('7|') && /\|jogos\|Repetida\|/.test(l)));
+  ok('o id renumerado vira aviso', /Repetida" tinha o id 7 repetido/.test(avisoImport), avisoImport.slice(0, 120));
   ok('id 0 ganha id novo; Title ID repetido fica; lixo depois do hexa sai',
      ls.some(l => !l.startsWith('0|') && /\|jogos\|Zero\|/.test(l) &&
        l.endsWith('|' + T(c.titleId) + ',' + T(c.titleId) + ',4D53082D')));
