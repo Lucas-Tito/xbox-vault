@@ -37,8 +37,8 @@
         <div class="menu-lista" role="menu" hidden>
           <button role="menuitem" class="menu-item so-cat" id="btn-export">Exportar marcações<small>Exportar arquivo do Xbox Vault</small></button>
           <button role="menuitem" class="menu-item so-cat" id="btn-import">Importar marcações<small>Importar arquivo do Xbox Vault</small></button>
-          <button role="menuitem" class="menu-item so-cui" id="btn-cui-import">Importar coleções<small>Importar arquivo do CollectionUI</small></button>
-          <button role="menuitem" class="menu-item so-cui" id="btn-cui-export">Exportar coleções<small>Exportar arquivo do CollectionUI</small></button>
+          <button role="menuitem" class="menu-item so-cui" id="btn-cui-import">Importar coleções<small>Importar o vault.txt do CollectionUI</small></button>
+          <button role="menuitem" class="menu-item so-cui" id="btn-cui-export">Exportar coleções<small>Gerar o colecoes.txt para o CollectionUI</small></button>
         </div>
       </div>
     </div>
@@ -183,6 +183,7 @@
     <div class="cui-barra" id="cui-barra"></div>
     <div class="vistas-linha">
     <nav class="vistas" id="vistas-own" role="tablist" aria-label="Coleção">
+      <button role="tab" class="vista" data-own="console" id="vista-con" hidden>No console <b id="s-con">0</b></button>
       <button role="tab" class="vista" data-own="all">Todos</button>
       <button role="tab" class="vista" data-own="yes">Tenho <b id="s-own">0</b></button>
       <button role="tab" class="vista" data-own="no">Faltam</button>

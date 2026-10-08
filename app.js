@@ -60,6 +60,8 @@ try { Object.assign(F, JSON.parse(localStorage.getItem(FILT_KEY) || "{}")); } ca
 // Filtro salvo antes da fusao do modo de jogo: o escopo dos jogadores virou o
 // "onde", que agora vale para o modo tambem.
 if (F.plScope) { if (F.where === "any") F.where = F.plScope; delete F.plScope; }
+// A aba "No console" so existe ao adicionar jogos ao CollectionUI.
+if (F.own === "console") F.own = "all";
 
 var $ = function (s) { return document.querySelector(s); };
 var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -204,22 +206,30 @@ function match(g, skip) {
   // Dentro de uma colecao do CollectionUI so a busca vale: os filtros do catalogo
   // escondem a coluna e poderiam sumir com um jogo que esta la.
   if (AREA === "cui" && cuiTela === "jogos") return buscaOk(g) && cuiNaSel(g);
+  var aCon = AREA === "cui" && cuiTela === "adicionar" && F.own === "console";
+  if (aCon && !g._con) return false;
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
   if (!buscaOk(g)) return false;
+  // Item do console que o catalogo nao conhece (ROM, homebrew, jogo que falta
+  // la) nao tem genero, nota nem modo: so a busca e a plataforma valem, e ele so
+  // aparece em "No console" e em "Todos", que nao dependem de marcacao.
+  if (g._con && !g._cat) return F.own === "console" || F.own === "all";
 
   // Ao adicionar jogos ao CollectionUI as abas do catalogo (tenho, wishlist,
-  // escondidos...) valem igual: e o recorte mais util para montar colecao.
-  if (AREA !== "cui" || cuiTela === "adicionar") {
+  // escondidos...) valem igual: e o recorte mais util para montar colecao. A
+  // marcacao do item do console e a do jogo do catalogo que ele e.
+  if (!aCon && (AREA !== "cui" || cuiTela === "adicionar")) {
+  var mid = g._cat ? g._cat.id : g.id;
   // "não quero" tira o jogo de todas as listas, menos da lista de escondidos
-  if (F.own === "hide") { if (!escondidos.has(g.id)) return false; }
-  else if (escondidos.has(g.id)) return false;
-  if (F.own === "yes" && !owned.has(g.id)) return false;
-  if (F.own === "no" && owned.has(g.id)) return false;
-  if (F.own === "wish" && !wishlist.has(g.id)) return false;
+  if (F.own === "hide") { if (!escondidos.has(mid)) return false; }
+  else if (escondidos.has(mid)) return false;
+  if (F.own === "yes" && !owned.has(mid)) return false;
+  if (F.own === "no" && owned.has(mid)) return false;
+  if (F.own === "wish" && !wishlist.has(mid)) return false;
   // o que ainda não passou por nenhuma decisão: nem tenho, nem quero, nem
   // escondi (escondido já saiu acima). "Só os que faltam" não serve aqui
   // porque a wishlist também falta, e ela já foi decidida.
-  if (F.own === "none" && (owned.has(g.id) || wishlist.has(g.id))) return false;
+  if (F.own === "none" && (owned.has(mid) || wishlist.has(mid))) return false;
   }
 
   if (skip !== "mode" && !modosOk(g)) return false;
@@ -263,18 +273,34 @@ function match(g, skip) {
 }
 
 function filtered(skip) {
-  var out = [];
+  var out = [], U = universo();
   if (F.q) {
     F.qc = F.q.replace(/[^a-z0-9]/g, "");
     F.qFrouxa = false;
     var exato = 0;
-    for (var k = 0; k < GAMES.length && exato < 1; k++) {
-      if (GAMES[k]._s.indexOf(F.q) >= 0) exato++;
+    for (var k = 0; k < U.length && exato < 1; k++) {
+      if (U[k]._s.indexOf(F.q) >= 0) exato++;
     }
     F.qFrouxa = exato === 0 && F.qc.length >= 5;   // só se o literal não achou nada
   }
-  for (var i = 0; i < GAMES.length; i++) if (match(GAMES[i], skip)) out.push(GAMES[i]);
+  for (var i = 0; i < U.length; i++) if (match(U[i], skip)) out.push(U[i]);
   return out;
+}
+
+/* O que a lista percorre. No catalogo, o catalogo. Na area do CollectionUI com o
+   inventario do console importado, cada item do console vira um card (dois discos
+   do mesmo jogo sao dois cards, como no console) e o catalogo entra com o que NAO
+   esta no console, para planejar. */
+function universo() {
+  var con = AREA === "cui" ? cuiConsole() : null;
+  return con ? con.universo : GAMES;
+}
+
+/* Acha o jogo de um card pelo data-id, no que a lista percorre. */
+function jogoDoCard(card) {
+  var id = card.dataset.id, U = universo();
+  for (var i = 0; i < U.length; i++) if (U[i].id === id) return U[i];
+  return null;
 }
 
 /* A ordem em vigor. Dentro de uma colecao do CollectionUI e a do console:
@@ -320,11 +346,19 @@ function tagsHtml(g) {
   var tag = function (txt, cls) { h.push('<span class="tag' + (cls ? " " + cls : "") + '">' + txt + "</span>"); };
   var nP = function (n) { return n ? " " + n + "P" : ""; };
 
-  if (g.platform === "x360") tag("360", "plat");
+  if (g._con && g._con.rom) tag("ROM", "emu");
+  else if (g.platform === "x360") tag("360", "plat");
   else if (g.platform === "xblig") tag("INDIE", "plat");
   else if (g.platform === "emu") tag(esc(g.system), "emu");
   else if (g.platform === "xbox") tag("XBOX OG", "plat");
   else tag("HB", "plat");
+
+  // CollectionUI com o inventario do console: se o jogo esta ou nao la
+  var onde = AREA === "cui" ? cuiOnde(g) : "";
+  if (onde === "con") tag("NO CONSOLE", "con");
+  else if (onde === "fora") tag("FORA DO CONSOLE", "fora");
+  // O que so o console conhece nao tem mais nada a dizer em etiqueta.
+  if (g._con && !g._cat) return h.join("");
 
   if (g.releaseType === "Vazado") {
     h.push('<span class="tag vaz" title="Cancelado antes de sair, mas ficou pronto e ' +
@@ -398,6 +432,18 @@ function cardHtml(g) {
      categoria faz esse papel. */
   var genero = esc(g.platform === "homebrew" ? g.category || "" : g.genre || "");
   var desc = (g.description || "").trim();
+  var junto = "";
+  if (g._con) {
+    // So o console conhece: o que se sabe e de onde ele vem.
+    if (!g._cat) {
+      genero = g._con.rom ? "ROM · " + esc(g._emu) : "Só no console";
+      desc = cuiPasta(g._con);
+    }
+    // Title ID que outro item do console tambem usa: a colecao guarda Title ID,
+    // entao os dois entram e saem juntos. E do desenho do app, nao e erro.
+    if (g._junto) junto = '<div class="cui-junto">Mesmo Title ID de ' + g._junto.map(function (x) {
+      return "<b>" + esc(cuiPasta(x._con)) + "</b>"; }).join(", ") + ": entram juntos na coleção.</div>";
+  }
   /* Título sem link: clicar no card é para abrir a ficha, e um <a> no meio dele
      mandava a pessoa para fora do site sem aviso. A Wikipédia e a página do
      projeto continuam na Ficha técnica, que é onde link é o que se espera. */
@@ -416,17 +462,19 @@ function cardHtml(g) {
     estado = (cuiNoRascunho(g) ? " nacol" : " apagado") + (g._tids.length ? "" : " semtid");
     marcas = "";
   } else {
-    estado = "";
+    estado = cuiOnde(g) === "fora" ? " fora" : "";
     marcas = cuiEditavel() ? '<div class="marks"><button class="rem-btn" title="Remover da coleção" ' +
       'aria-label="Remover da coleção">' + ICO_REM + "</button></div>" : "";
   }
   return '<article class="card' + estado + '" data-id="' + esc(g.id) + '"' +
-    (AREA === "cui" && !g._tids.length ? ' title="Sem Title ID: não dá para pôr em coleção do CollectionUI"' : "") + ">" +
+    (AREA === "cui" && !g._tids.length ? ' title="' + (g._con
+      ? "Title ID 00000000 (homebrew sem EXECUTION_INFO): não dá para pôr em coleção"
+      : "Sem Title ID: não dá para pôr em coleção do CollectionUI") + '"' : "") + ">" +
     marcas +
     '<div class="thumb">' + img + "</div>" +
     '<div class="body"><h3>' + link + "</h3>" +
     (mc || genero ? '<div class="linha">' + mc + (genero ? '<span class="sub">' + genero + "</span>" : "") + "</div>" : "") +
-    (desc ? '<div class="desc">' + esc(desc) + "</div>" : "") +
+    (desc ? '<div class="desc">' + esc(desc) + "</div>" : "") + junto +
     '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
 }
 
@@ -1447,7 +1495,10 @@ function ligarEventos() {
         btn.classList.contains("wish-btn") ? "wish" : "hide", card);
       return;
     }
-    var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
+    // O item do console abre a ficha do jogo do catalogo que ele e; o que so o
+    // console conhece nao tem ficha.
+    var g = jogoDoCard(card);
+    if (g && g._con) g = g._cat;
     if (g) openDetail(g);                        // resto do card abre os detalhes
   });
 
@@ -1558,6 +1609,19 @@ var cuiRascunho = null, cuiRascunhoSet = null;
 var cuiAviso = "";          // uma linha de retorno na barra: importou, exportou...
 var cuiSelIds = null;       // os Title IDs da colecao escolhida, refeito a cada mudanca
 var cuiMapaCache = null;    // Title ID -> jogo, refeito quando uma categoria desce
+// A aba do catalogo de antes de entrar em "Adicionar jogos", que abre em "No
+// console": ao sair, o catalogo volta para a aba em que estava.
+var cuiOwnAntes = null;
+
+/* O inventario do console, que vem no vault.txt: um item por linha JOGO ou ROM.
+   Fica no navegador junto com a hora em que chegou, que o arquivo nao traz data.
+   { t: epoch ms, itens: [{ k, rom, tid, ct, emu, nome, arq }] }; k e a chave
+   unica: o ContentItemId do jogo, ou o id da ROM. Title ID NAO e unico. */
+var CUI_INV_KEY = "xbx.cui.inv.v1";
+var CUI_INV = null;
+try { CUI_INV = JSON.parse(localStorage.getItem(CUI_INV_KEY) || "null"); } catch (e) {}
+if (CUI_INV && !Array.isArray(CUI_INV.itens)) CUI_INV = null;
+var cuiConCache = null;
 
 function cuiSalvar() { try { localStorage.setItem(CUI_KEY, JSON.stringify(CUI)); } catch (e) {} }
 
@@ -1567,6 +1631,87 @@ function cuiMapa() {
   GAMES.forEach(function (g) { g._tids.forEach(function (t) { if (!m.has(t)) m.set(t, g); }); });
   cuiMapaCache = { n: GAMES.length, m: m };
   return m;
+}
+
+/* Os cards do console, refeitos quando o inventario muda ou uma categoria do
+   catalogo desce. O item que casa com o catalogo HERDA o jogo de la (capa, nota,
+   etiquetas, filtros) e so troca o id e os Title IDs; o que nao casa vira um card
+   simples com o nome do console. Sobre este console o export e a fonte: nada do
+   que veio nele fica de fora por o catalogo nao conhecer.
+   - porTid: Title ID -> cards do console que ele acende (inclui os Title IDs
+     alternativos do jogo do catalogo, que o Adicionar grava junto).
+   - cat: ids do catalogo que estao no console, e que saem do universo para nao
+     aparecerem duas vezes. */
+function cuiConsole() {
+  if (!CUI_INV) return null;
+  if (cuiConCache && cuiConCache.n === GAMES.length && cuiConCache.inv === CUI_INV) return cuiConCache;
+  var m = cuiMapa(), lista = [], porTid = new Map(), cat = new Set(), emus = {}, nomeEmu = {};
+  CUI_INV.itens.forEach(function (it) { if (it.rom) emus[it.emu] = 1; });
+  CUI_INV.itens.forEach(function (it) { if (!it.rom && emus[it.tid] && !nomeEmu[it.tid]) nomeEmu[it.tid] = it.nome; });
+  CUI_INV.itens.forEach(function (it) {
+    // Title ID zero e xex de homebrew sem EXECUTION_INFO: nao casa com nada.
+    var zero = it.tid === "00000000";
+    var c = zero || it.rom ? null : m.get(it.tid) || null;
+    var g = c ? Object.create(c) : {};
+    g.id = "con-" + it.k; g._con = it; g._cat = c;
+    if (c) {
+      g._tids = [it.tid].concat(c._tids.filter(function (t) { return t !== it.tid; }));
+      g._s = c._s + " " + norm(it.nome);
+      cat.add(c.id);
+    } else {
+      g.title = it.nome;
+      g.platform = it.rom ? "emu" : zero || emus[it.tid] ? "homebrew"
+        : it.ct === "00005000" ? "xbox" : it.ct === "00000002" ? "xblig" : "x360";
+      g._tids = zero ? [] : [it.tid];
+      g._s = norm(it.nome);
+      g._t = {}; g.flags = {}; g.year = null;
+      if (it.rom) g._emu = nomeEmu[it.emu] || it.emu;
+    }
+    g._c = g._s.replace(/[^a-z0-9]/g, "");
+    g._tids.forEach(function (t) {
+      if (!porTid.has(t)) porTid.set(t, []);
+      porTid.get(t).push(g);
+    });
+    lista.push(g);
+  });
+  // Mesmo Title ID em mais de um item: cada card sabe quem vem junto.
+  lista.forEach(function (g) {
+    if (!g._tids.length) return;
+    var j = porTid.get(g._con.tid).filter(function (x) { return x !== g && x._con.tid === g._con.tid; });
+    if (j.length) g._junto = j;
+  });
+  cuiConCache = { n: GAMES.length, inv: CUI_INV, lista: lista, porTid: porTid, cat: cat,
+    universo: lista.concat(GAMES.filter(function (g) { return !cat.has(g.id); })) };
+  return cuiConCache;
+}
+
+/* "con" para o card do console, "fora" para o do catalogo, e "" quando nao ha
+   inventario ou a etiqueta so repetiria a aba. Dentro da colecao so o que esta
+   fora ganha marca; em "No console" nada ganha. */
+function cuiOnde(g) {
+  if (!CUI_INV) return "";
+  if (cuiTela === "jogos") return g._con ? "" : "fora";
+  if (cuiTela === "adicionar" && F.own !== "console" && g._con) return "con";
+  return "";
+}
+
+/* Onde o item mora no console, para distinguir dois com o mesmo nome: a pasta,
+   sem o nome do executavel e sem a pasta de cima (JOGOS, XBLA...). ROM e o nome
+   do arquivo. */
+function cuiPasta(it) {
+  if (it.rom) return it.arq;
+  var p = it.arq.split("\\").filter(Boolean);
+  if (p.length > 1 && /\.[a-z0-9]{2,4}$/i.test(p[p.length - 1])) p.pop();
+  if (p.length > 1) p.shift();
+  return p.join("\\") || it.nome;
+}
+
+/* Os cards que um Title ID da colecao acende: os do console, senao o do catalogo. */
+function cuiDonos(t) {
+  var con = cuiConsole();
+  if (con && con.porTid.has(t)) return con.porTid.get(t);
+  var g = cuiMapa().get(t);
+  return g ? [g] : [];
 }
 
 function cuiPorId(id) {
@@ -1605,11 +1750,12 @@ function cuiEditavel() {
 
 /* Quantos JOGOS a colecao tem: os do catalogo contam uma vez, por mais Title
    IDs que tenham la dentro, e o que o catalogo nao conhece conta um por ID. */
-function cuiContar(c) {
-  var m = cuiMapa(), vistos = new Set(), fora = [];
-  cuiIds(c).forEach(function (t) {
-    var g = m.get(t);
-    if (g) vistos.add(g.id); else fora.push(t);
+function cuiContar(c) { return cuiContarIds(cuiIds(c)); }
+function cuiContarIds(ids) {
+  var vistos = new Set(), fora = [];
+  ids.forEach(function (t) {
+    var d = cuiDonos(t);
+    if (d.length) d.forEach(function (g) { vistos.add(g.id); }); else fora.push(t);
   });
   return { n: vistos.size + fora.length, fora: fora };
 }
@@ -1787,19 +1933,105 @@ function cuiAdicionar() {
   var c = cuiPorId(CUI.sel);
   if (!c || c.uniao) return;
   cuiRascunho = c.ids.slice(); cuiRascunhoSet = new Set(cuiRascunho);
+  // Com o inventario, o fluxo principal e montar com o que o console tem; as
+  // outras abas continuam ali para olhar o catalogo.
+  if (CUI_INV) { cuiOwnAntes = F.own; F.own = "console"; marcarVista(); }
   cuiAviso = ""; cuiIr("adicionar");
+}
+
+/* Saiu do Adicionar: o rascunho vai embora e o catalogo volta a sua aba. */
+function cuiSairAdicionar() {
+  cuiRascunho = cuiRascunhoSet = null;
+  if (cuiOwnAntes !== null) { F.own = cuiOwnAntes; cuiOwnAntes = null; marcarVista(); }
 }
 
 function cuiConcluir() {
   var c = cuiPorId(CUI.sel);
   if (c && cuiRascunho) { c.ids = cuiRascunho; cuiMudou(); }
-  cuiRascunho = cuiRascunhoSet = null;
+  cuiSairAdicionar();
   cuiIr("jogos");
 }
 
-function cuiCancelar() { cuiRascunho = cuiRascunhoSet = null; cuiIr("jogos"); }
+function cuiCancelar() { cuiSairAdicionar(); cuiIr("jogos"); }
 
-function cuiImportar(txt) {
+/* O id da ROM, como o console calcula: FNV-1a 32 semeado com o Title ID do
+   emulador, sobre os BYTES CRUS do nome do arquivo, com a minuscula do console
+   (A-Z e o Latin-1 maiusculo, menos o x de multiplicacao), e nao a do JS. */
+function cuiMinuscula(b) {
+  if (b >= 0x41 && b <= 0x5A) return b + 32;
+  if (b >= 0xC0 && b <= 0xDE && b !== 0xD7) return b + 32;
+  return b;
+}
+function cuiIdDaRom(emulador, bytes) {
+  var h = (2166136261 ^ emulador) >>> 0;
+  for (var i = 0; i < bytes.length; i++) {
+    h = (h ^ cuiMinuscula(bytes[i])) >>> 0;
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h;
+}
+
+/* Le o vault.txt, o export do CollectionUI para o Vault: o inventario do console
+   e as colecoes num arquivo so.
+   - Linha de dado comeca com JOGO|, ROM| ou COLECAO|; todo o resto e comentario
+     (o proprio cabecalho tem linha com barra).
+   - JOGO e ROM tem 7 campos: tipo|id|contentType|emulador|item|nome|arquivo.
+     COLECAO e a linha do colecoes.txt com o prefixo, e vai pelo cuiLer.
+   - UTF-8. O hash da ROM e sobre os bytes crus do campo arquivo, entao a linha
+     e partida em bytes antes de virar texto.
+   - O rodape "# total: N jogos, N ROMs, N colecoes" e obrigatorio e tem de bater:
+     e o que separa arquivo inteiro de arquivo cortado. Sem ele nada e trocado.
+   Devolve { cols, itens, avisos }, ou lanca Error com a mensagem para a pessoa. */
+function cuiLerVault(buf) {
+  var b = new Uint8Array(buf), dec = new TextDecoder("utf-8");
+  var hex = /^[0-9A-Fa-f]{8}$/, ini = b[0] === 0xEF && b[1] === 0xBB && b[2] === 0xBF ? 3 : 0;
+  var itens = [], colLinhas = [], avisos = [], chaves = {}, n = { JOGO: 0, ROM: 0, COLECAO: 0 };
+  var rodape = null, ruins = 0, roms = 0;
+  for (var i = ini; i <= b.length; i++) {
+    if (i < b.length && b[i] !== 0x0A) continue;
+    var fim = i;
+    while (fim > ini && b[fim - 1] === 0x0D) fim--;
+    var l = b.subarray(ini, fim);
+    ini = i + 1;
+    var s = dec.decode(l), tipo = s.slice(0, s.indexOf("|"));
+    if (tipo === "COLECAO") { n.COLECAO++; colLinhas.push(s.slice(8)); continue; }
+    if (tipo !== "JOGO" && tipo !== "ROM") {
+      var r = /^# total: (\d+) jogos, (\d+) ROMs, (\d+) colecoes\s*$/.exec(s);
+      if (r) rodape = { JOGO: +r[1], ROM: +r[2], COLECAO: +r[3] };
+      continue;
+    }
+    n[tipo]++;
+    var f = [], a = 0;
+    for (var k = 0; k <= l.length; k++) if (k === l.length || l[k] === 0x7C) { f.push(l.subarray(a, k)); a = k + 1; }
+    var t = f.map(function (x) { return dec.decode(x); });
+    var rom = tipo === "ROM";
+    if (f.length !== 7 || !hex.test(t[1]) || !hex.test(t[2]) || !hex.test(rom ? t[3] : t[4])) { ruins++; continue; }
+    var it = { k: "", rom: rom, tid: t[1].toUpperCase(), ct: t[2].toUpperCase(), emu: "", nome: t[5], arq: t[6] };
+    if (rom) {
+      it.emu = t[3].toUpperCase();
+      it.k = "R" + it.tid;
+      if (cuiIdDaRom(parseInt(it.emu, 16), f[6]) !== parseInt(it.tid, 16)) roms++;
+    } else it.k = "J" + t[4].toUpperCase();
+    if (chaves[it.k]) { ruins++; continue; }
+    chaves[it.k] = 1;
+    itens.push(it);
+  }
+  if (!rodape)
+    throw new Error("O vault.txt não tem a linha de total no fim: parece cortado. Nada foi trocado; exporte de novo no console.");
+  if (rodape.JOGO !== n.JOGO || rodape.ROM !== n.ROM || rodape.COLECAO !== n.COLECAO)
+    throw new Error("O vault.txt diz ter " + rodape.JOGO + " jogos, " + rodape.ROM + " ROMs e " + rodape.COLECAO +
+      " coleções, mas veio com " + n.JOGO + ", " + n.ROM + " e " + n.COLECAO + ". Nada foi trocado; exporte de novo no console.");
+  if (ruins) avisos.push(ruins + " linha" + (ruins > 1 ? "s" : "") + " de jogo fora do formato ficou de fora");
+  if (roms) avisos.push(roms + " ROM" + (roms > 1 ? "s" : "") + " com id que não bate com o nome do arquivo");
+  var cols = cuiLer(colLinhas.join("\n"));
+  return { cols: cols, itens: itens, avisos: cols.avisos.concat(avisos) };
+}
+
+/* O arquivo que entra pelo menu: o vault.txt (inventario e colecoes) ou o
+   colecoes.txt (so as colecoes). Quem diz e o conteudo, nao o nome. */
+function cuiImportar(buf) {
+  var txt = new TextDecoder("utf-8").decode(buf);
+  if (/^(JOGO|ROM|COLECAO)\|/m.test(txt)) return cuiImportarVault(buf);
   var cols = cuiLer(txt);
   if (!cols.length) { alert("Nenhuma coleção nesse arquivo."); return; }
   if (CUI.cols.length && !confirm("Substituir as " + CUI.cols.length + " coleções daqui pelas " +
@@ -1808,6 +2040,21 @@ function cuiImportar(txt) {
   CUI.sel = null;
   cuiAviso = cols.length + " coleç" + (cols.length > 1 ? "ões importadas" : "ão importada") + "." +
     (cols.avisos.length ? " " + cols.avisos.join("; ") + "." : "");
+  cuiMudou(); cuiIr("colecoes");
+}
+
+function cuiImportarVault(buf) {
+  var v;
+  try { v = cuiLerVault(buf); } catch (e) { alert(e.message); return; }
+  if (CUI.cols.length && !confirm("Substituir as " + CUI.cols.length + " coleções daqui pelas " +
+      v.cols.length + " do console? O inventário do console também é trocado pelo do arquivo.")) return;
+  CUI.cols = v.cols;
+  CUI.sel = null;
+  CUI_INV = { t: Date.now(), itens: v.itens };
+  try { localStorage.setItem(CUI_INV_KEY, JSON.stringify(CUI_INV)); } catch (e) {}
+  var nr = v.itens.filter(function (it) { return it.rom; }).length;
+  cuiAviso = "Importado do console: " + v.cols.length + " coleç" + (v.cols.length === 1 ? "ão" : "ões") + ", " +
+    (v.itens.length - nr) + " jogos e " + nr + " ROMs." + (v.avisos.length ? " " + v.avisos.join("; ") + "." : "");
   cuiMudou(); cuiIr("colecoes");
 }
 
@@ -1827,28 +2074,33 @@ function cuiExportar() {
    Title IDs do jogo (disco e Arcade, regioes): o console mostra o que estiver
    instalado e ignora o resto, entao ele aparece qualquer que seja a versao. */
 function cuiAlternar(card) {
-  var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
+  var g = jogoDoCard(card);
   if (!cuiRascunho || !g || !g._tids.length) return;
   var dentro = cuiNoRascunho(g);
   if (dentro) cuiRascunho = cuiRascunho.filter(function (t) { return g._tids.indexOf(t) < 0; });
   else g._tids.forEach(function (t) { if (!cuiRascunhoSet.has(t)) cuiRascunho.push(t); });
   cuiRascunhoSet = new Set(cuiRascunho);
-  card.classList.toggle("nacol", !dentro);
-  card.classList.toggle("apagado", dentro);
+  // O que divide Title ID com ele muda junto, e o card tem de dizer isso.
+  [card].concat($$(".card").filter(function (x) {
+    return (g._junto || []).some(function (j) { return j.id === x.dataset.id; });
+  })).forEach(function (x) {
+    x.classList.toggle("nacol", !dentro);
+    x.classList.toggle("apagado", dentro);
+  });
   cuiPintar();
 }
 
 /* Dentro da colecao: o botao do canto tira o jogo, com todos os Title IDs dele. */
 function cuiRemover(card) {
   var c = cuiPorId(CUI.sel);
-  var g = GAMES.find(function (x) { return x.id === card.dataset.id; });
+  var g = jogoDoCard(card);
   if (!c || c.uniao || !g) return;
   var antes = c.ids.slice();
   c.ids = c.ids.filter(function (t) { return g._tids.indexOf(t) < 0; });
   cuiMudou();
-  removeCard(card);
-  updateStats(filtered(null));
-  cuiPintar();
+  // Quem divide Title ID com ele sai junto: ai a lista e refeita inteira.
+  if (g._junto) render();
+  else { removeCard(card); updateStats(filtered(null)); cuiPintar(); }
   // Sem confirmacao: remover e frequente e facil de refazer, entao o que protege
   // do clique errado e o Desfazer, que devolve a lista de Title IDs como estava
   // (mesma ordem, o arquivo exportado nao muda).
@@ -1879,15 +2131,16 @@ function cuiFecharAviso() {
 /* A tela inicial: um quadrado por colecao, com a colagem de tres capas da previa
    (grupo30). A busca do topo filtra pelo nome da colecao. */
 function cuiTelaColecoes() {
-  var m = cuiMapa(), q = F.q;
+  var q = F.q;
   var lista = cuiOrdenadas().filter(function (c) { return !q || norm(c.nome).indexOf(q) >= 0; });
   var h = '<div class="cui-grade"><button class="cui-tile cui-tile-nova" id="cui-nova">' +
     "<span>+</span><b>Nova coleção</b></button>";
   lista.forEach(function (c) {
     var capas = [], vistos = new Set();
     cuiIds(c).forEach(function (t) {
-      var g = m.get(t);
-      if (g && g.image && capas.length < 3 && !vistos.has(g.id)) { vistos.add(g.id); capas.push(g); }
+      cuiDonos(t).forEach(function (g) {
+        if (g.image && capas.length < 3 && !vistos.has(g.image)) { vistos.add(g.image); capas.push(g); }
+      });
     });
     h += '<button class="cui-tile" data-col="' + c.id + '"><span class="colagem">' +
       capas.map(function (g) {
@@ -1956,7 +2209,14 @@ function cuiPintar() {
   var c = cuiPorId(CUI.sel), h = "";
   if (cuiTela === "colecoes") {
     if (!CUI.cols.length)
-      h = "<span>Nenhuma coleção ainda. Importe o colecoes.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
+      h = "<span>Nenhuma coleção ainda. Importe o vault.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
+    if (CUI_INV) {
+      var nr = CUI_INV.itens.filter(function (it) { return it.rom; }).length, nj = CUI_INV.itens.length - nr;
+      var d = new Date(CUI_INV.t);
+      h += '<div class="cui-nota cui-inv">Console: ' + nj + " jogo" + (nj === 1 ? "" : "s") + " e " + nr +
+        " ROM" + (nr === 1 ? "" : "s") + ", importados em " + d.toLocaleDateString("pt-BR") + " às " +
+        d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }) + ".</div>";
+    }
   } else if (cuiTela === "jogos" && c) {
     var k = cuiContar(c);
     // Trilha no tamanho de titulo: o nivel de cima e link cinza, o atual em destaque.
@@ -1974,9 +2234,7 @@ function cuiPintar() {
         (k.fora.length > 1 ? "m" : "") + " no catálogo e continua no arquivo: " +
         k.fora.map(function (t) { return "<code>" + t + "</code>"; }).join(" ") + "</div>" : "");
   } else if (cuiTela === "adicionar" && c) {
-    var n = 0, m = cuiMapa(), vistos = new Set();
-    cuiRascunho.forEach(function (t) { var g = m.get(t); if (g) vistos.add(g.id); else n++; });
-    n += vistos.size;
+    var n = cuiContarIds(cuiRascunho).n;
     // Sair pela trilha e o mesmo que Cancelar: o rascunho nao e gravado.
     h = '<button class="cui-seta" id="cui-trilha-col" title="Voltar para a coleção, sem gravar" aria-label="Voltar">‹</button>' +
       '<div class="cui-trilha"><button id="cui-voltar">Coleções</button><i>/</i>' +
@@ -1987,6 +2245,9 @@ function cuiPintar() {
   }
   if (cuiAviso) h += '<div class="cui-nota">' + esc(cuiAviso) + "</div>";
   $("#cui-barra").innerHTML = h;
+  var aba = $("#vista-con");
+  aba.hidden = !(CUI_INV && cuiTela === "adicionar");
+  if (CUI_INV) $("#s-con").textContent = CUI_INV.itens.length.toLocaleString("pt-BR");
 }
 
 /* Na carga a area vem do endereco (#collectionui); render() ainda vai rodar. */
@@ -2012,7 +2273,7 @@ function setArea(a) {
   document.body.classList.toggle("cui", a === "cui");
   history.replaceState(null, "", a === "cui" ? "#collectionui" : location.pathname + location.search);
   marcarArea(a);
-  cuiSelIds = null; cuiAviso = ""; cuiRascunho = cuiRascunhoSet = null;
+  cuiSelIds = null; cuiAviso = ""; cuiSairAdicionar();
   cuiFecharAviso();
   cuiTela = "colecoes"; document.body.dataset.tela = cuiTela;
   cuiCarregarIndies();
@@ -2037,7 +2298,7 @@ function ligarCui() {
   });
   $("#cui-barra").addEventListener("click", function (e) {
     var id = e.target.id;
-    if (id === "cui-voltar" || id === "cui-voltar2") { cuiRascunho = cuiRascunhoSet = null; CUI.sel = null; cuiMudou(); cuiIr("colecoes"); }
+    if (id === "cui-voltar" || id === "cui-voltar2") { cuiSairAdicionar(); CUI.sel = null; cuiMudou(); cuiIr("colecoes"); }
     else if (id === "cui-add") cuiAdicionar();
     else if (id === "cui-concluir") cuiConcluir();
     else if (id === "cui-cancelar" || id === "cui-trilha-col" || id === "cui-trilha-col2") cuiCancelar();
@@ -2053,7 +2314,7 @@ function ligarCui() {
   $("#btn-cui-export").onclick = cuiExportar;
   $("#file-cui").addEventListener("change", function (e) {
     var f = e.target.files[0];
-    if (f) f.text().then(cuiImportar);
+    if (f) f.arrayBuffer().then(cuiImportar);
     e.target.value = "";
   });
 }

@@ -182,6 +182,95 @@
   ok('a ordem do arquivo fica', ls.findIndex(l => /#1 favoritos/.test(l)) < ls.findIndex(l => /Cortada/.test(l)) &&
      ls.findIndex(l => /Cortada/.test(l)) < ls.findIndex(l => /\|1942\|/.test(l)));
 
+  // ---- vault.txt: inventario do console e colecoes num arquivo so ----
+  // O id da ROM calculado aqui de novo, a parte, com a minuscula do console.
+  const fnv = (emu, nome) => {
+    let h = (2166136261 ^ emu) >>> 0;
+    for (let x of new TextEncoder().encode(nome)) {
+      if ((x >= 0x41 && x <= 0x5A) || (x >= 0xC0 && x <= 0xDE && x !== 0xD7)) x += 32;
+      h = Math.imul((h ^ x) >>> 0, 16777619) >>> 0;
+    }
+    return h.toString(16).toUpperCase().padStart(8, '0');
+  };
+  const rom = fnv(0xFFED0707, 'Jogo Teste.SMC');
+  const VCAB = '# CollectionUI: inventario deste console, para o xbox-vault\r\n' +
+               '#   tipo|id|contentType|emulador|item|nome|arquivo\r\n' +
+               '#   COLECAO|id|tipo|nome|conteudo\r\n';
+  const vault = (rodape, idRom = rom) => VCAB +
+    'JOGO|' + T(a.titleId) + '|00007000||00000001|' + a.title + '|\\JOGOS\\A\\GAME\\default.xex\r\n' +
+    'JOGO|' + T(a.titleId) + '|00007000||00000002|' + a.title + '|\\JOGOS\\A\\DISC2\\default.xex\r\n' +
+    'JOGO|7E570001|00007000||00000003|Só Do Console™|\\JOGOS\\SO CONSOLE\\default.xex\r\n' +
+    'JOGO|00000000|00007000||00000004|Homebrew Zero|\\HOMEBREW\\HZ\\hz.xex\r\n' +
+    'JOGO|FFED0707|00007000||00000005|Snes360|\\HOMEBREW\\Snes360\\default.xex\r\n' +
+    'ROM|' + idRom + '|00007000|FFED0707||Jogo Teste|Jogo Teste.SMC\r\n' +
+    'COLECAO|11|jogos|Do console|' + T(a.titleId) + ',7E570001,' + idRom + ',' + T(c.titleId) + '\r\n' +
+    'COLECAO|12|uniao|Uniao|11\r\n' +
+    (rodape === undefined ? '# total: 5 jogos, 1 ROMs, 2 colecoes\r\n' : rodape);
+  const alertas = []; window.alert = m => alertas.push(m);
+  const antesVault = await exportar();
+  await importar(vault(''));
+  ok('vault.txt sem o rodape: avisa e nao troca nada', /linha de total/.test(alertas.pop() || '') &&
+     (await exportar()) === antesVault);
+  await importar(vault('# total: 6 jogos, 1 ROMs, 2 colecoes\r\n'));
+  ok('rodape que nao bate: avisa e nao troca nada', /diz ter 6 jogos/.test(alertas.pop() || '') &&
+     (await exportar()) === antesVault);
+  await importar(vault());
+  await ate(() => tile('Do console'));
+  ok('vault.txt traz as colecoes', !!tile('Do console') && !!tile('Uniao') && $$('.cui-tile[data-col]').length === 2,
+     $$('.cui-tile[data-col] b').map(x => x.textContent).join(', '));
+  ok('linha de comentario com barra nao vira jogo nem colecao', alertas.length === 0, alertas.join(' / '));
+  ok('a barra diz o que veio do console', /Console: 5 jogos e 1 ROM, importados em/.test($('#cui-barra').textContent),
+     $('#cui-barra').textContent.slice(0, 90));
+  ok('dois discos com o mesmo Title ID contam como dois itens', /\(\s*5\s*\)/.test(tile('Do console').textContent),
+     tile('Do console').textContent);
+  const saida = await exportar();
+  ok('exportar continua gerando so o colecoes.txt', saida === CAB + '11|jogos|Do console|' + T(a.titleId) + ',7E570001,' +
+     rom + ',' + T(c.titleId) + '\r\n12|uniao|Uniao|11\r\n', saida);
+
+  const porId = id => $$('.card').find(x => x.dataset.id === id);
+  await abrir('Do console');
+  ok('dentro da colecao: um card por item do console, e o do catalogo', $$('.card').length === 5,
+     $$('.card h3').map(h => h.textContent).join(' | '));
+  ok('os dois discos aparecem, cada um dizendo que vem junto com o outro',
+     /DISC2/.test((porId('con-J00000001') || document.body).querySelector('.cui-junto')?.textContent || '') &&
+     /GAME/.test((porId('con-J00000002') || document.body).querySelector('.cui-junto')?.textContent || ''));
+  ok('o que o catalogo nao conhece aparece com o nome do console',
+     /Só Do Console™/.test((porId('con-J00000003') || document.body).textContent) && !!porId('con-R' + rom));
+  ok('o jogo da colecao que nao esta no console fica marcado como fora',
+     !!card(c) && card(c).classList.contains('fora') && /FORA DO CONSOLE/.test(card(c).textContent));
+  ok('a ROM traz o emulador', /ROM · Snes360/.test((porId('con-R' + rom) || document.body).textContent));
+
+  $('#cui-add').click(); await wait(700);
+  ok('Adicionar abre na aba No console', !$('#vista-con').hidden &&
+     $('.vista[aria-selected=true]').dataset.own === 'console' && $('#s-con').textContent === '6');
+  ok('No console mostra so o que veio do console', $$('.card').every(x => x.dataset.id.startsWith('con-')) &&
+     !!porId('con-J00000003'), $$('.card').map(x => x.dataset.id).join(' '));
+  porId('con-J00000001').click(); await wait(200);
+  ok('desmarcar um disco desmarca o outro, que divide o Title ID',
+     porId('con-J00000001').classList.contains('apagado') && porId('con-J00000002').classList.contains('apagado'));
+  porId('con-J00000002').click(); await wait(200);
+  ok('marcar o outro acende os dois', porId('con-J00000001').classList.contains('nacol') &&
+     porId('con-J00000002').classList.contains('nacol'));
+  $('.vista[data-own="all"]').click(); await wait(500);
+  await buscar(a.title);
+  ok('nas abas do catalogo o que esta no console ganha NO CONSOLE',
+     /NO CONSOLE/.test((porId('con-J00000001') || document.body).querySelector('.tags')?.textContent || '') &&
+     !card(a), $$('.card').map(x => x.dataset.id).join(' '));
+  await buscar('');
+  $('#cui-cancelar').click(); await wait(500);
+  ok('ao sair do Adicionar a aba do catalogo volta', $('#vista-con').hidden &&
+     $('.vista[aria-selected=true]')?.dataset.own !== 'console');
+
+  porId('con-J00000002').querySelector('.rem-btn').click(); await wait(500);
+  ok('remover um disco tira os dois', !porId('con-J00000001') && !porId('con-J00000002') &&
+     linha(await exportar(), 'Do console') === '11|jogos|Do console|7E570001,' + rom + ',' + T(c.titleId));
+  $('#cui-voltar').click(); await wait(400);
+
+  await importar(vault(undefined, 'DEADBEEF'));
+  ok('ROM com id que nao bate com o arquivo vira aviso', /1 ROM com id que não bate/.test($('#cui-barra').textContent),
+     $('#cui-barra').textContent.slice(0, 160));
+  localStorage.removeItem('xbx.cui.inv.v1');
+
   // ---- volta ao catalogo ----
   $('.menu-item.area[data-area=cat]').click(); await wait(500);
   ok('o botao do topo volta a dizer Xbox Vault', $('#brand-nome').textContent === 'Xbox Vault');

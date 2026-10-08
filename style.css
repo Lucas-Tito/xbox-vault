@@ -206,6 +206,16 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .aviso button:hover{filter:brightness(1.08)}
 .card.apagado{opacity:.5}
 .card.apagado:hover{opacity:.85}
+/* Dentro da colecao, com o inventario do console: o que nao esta instalado nao
+   aparece no Xbox, e fica esmaecido aqui. */
+.card.fora{opacity:.5}
+.card.fora:hover{opacity:.85}
+.tag.con{color:var(--green);background:rgba(155,203,60,.12)}
+.tag.fora{color:var(--dim)}
+/* Dois itens do console com o mesmo Title ID: entram e saem juntos da colecao. */
+.cui-junto{font-size:12px;line-height:1.4;color:var(--amber);display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden}
+.cui-junto b{font-weight:600}
 body.cui .rem-btn{width:30px;height:30px;border-radius:5px;padding:0;display:grid;place-items:center;
   background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt)}
 body.cui .rem-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
