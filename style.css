@@ -226,6 +226,10 @@ body.cui .rem-btn,.info-btn{width:30px;height:30px;border-radius:5px;padding:0;d
   background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt)}
 body.cui .rem-btn svg,.info-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+/* O da ficha fica no canto do CARD, e nao no da capa como os outros: e do jogo,
+   nao da imagem. O titulo abre espaco para ele nao tampar o fim do nome. */
+.marks.marks-info{left:auto;right:8px}
+.card:has(.marks-info) h3{padding-right:30px}
 .info-btn:hover{background:var(--txt);border-color:var(--txt);color:var(--bg)}
 .res-n b{color:var(--txt);font-weight:500;font-family:var(--mono)}
 .res-n span{font-family:var(--mono)}

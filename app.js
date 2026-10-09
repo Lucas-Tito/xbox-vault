@@ -484,7 +484,7 @@ function cardHtml(g) {
     estado = (cuiNoRascunho(g) ? " nacol" : " apagado") + (g._tids.length ? "" : " semtid");
     // O clique no card marca, entao a ficha ganha um botao proprio. O que so o
     // console conhece nao tem ficha, e fica sem ele.
-    marcas = g._con && !g._cat ? "" : '<div class="marks"><button class="info-btn" title="Ver ficha" ' +
+    marcas = g._con && !g._cat ? "" : '<div class="marks marks-info"><button class="info-btn" title="Ver ficha" ' +
       'aria-label="Ver ficha">' + ICO_INFO + "</button></div>";
   } else {
     estado = cuiOnde(g) === "fora" ? " fora" : "";
