@@ -317,6 +317,19 @@
   porId('con-J00000002').click(); await wait(200);
   ok('marcar o outro acende os dois', porId('con-J00000001').classList.contains('nacol') &&
      porId('con-J00000002').classList.contains('nacol'));
+  porId('con-J00000001').click(); await wait(200);   // tira os dois discos de novo
+  ok('a aba Fora da colecao aparece, contando o que falta por', !$('#vista-fora').hidden &&
+     $('#s-fora').textContent === '3', $('#s-fora').textContent);
+  $('#vista-fora').click(); await wait(500);
+  ok('Fora da colecao: so o do console que nao esta nela',
+     $$('.card').map(x => x.dataset.id).sort().join(' ') === 'con-J00000001 con-J00000002',
+     $$('.card').map(x => x.dataset.id).join(' '));
+  ok('Fora da colecao nao repete a etiqueta NO CONSOLE', !/NO CONSOLE/.test($('#main').textContent));
+  porId('con-J00000001').click(); await wait(200);
+  ok('marcar ali nao some com o card, e a contagem desce', !!porId('con-J00000001') &&
+     porId('con-J00000002').classList.contains('nacol') && $('#s-fora').textContent === '1', $('#s-fora').textContent);
+  $('#vista-fora').click(); await wait(500);
+  ok('reabrir a aba tira o que entrou', $$('.card').length === 0, $$('.card').length + ' cards');
   $('.vista[data-own="all"]').click(); await wait(500);
   await buscar(a.title);
   ok('nas abas do catalogo o que esta no console ganha NO CONSOLE',

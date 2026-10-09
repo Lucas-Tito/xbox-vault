@@ -77,8 +77,9 @@ if (F.plMin) {
 }
 delete F.plMin;
 if (!Array.isArray(F.pls)) F.pls = [];
-// A aba "No console" so existe ao adicionar jogos ao CollectionUI.
-if (F.own === "console") F.own = "all";
+// As abas "No console" e "Fora da colecao" so existem ao adicionar jogos ao
+// CollectionUI.
+if (F.own === "console" || F.own === "fora") F.own = "all";
 
 var $ = function (s) { return document.querySelector(s); };
 var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -223,14 +224,17 @@ function match(g, skip) {
   // Dentro de uma colecao do CollectionUI so a busca vale: os filtros do catalogo
   // escondem a coluna e poderiam sumir com um jogo que esta la.
   if (AREA === "cui" && cuiTela === "jogos") return buscaOk(g) && cuiNaSel(g);
-  var aCon = AREA === "cui" && cuiTela === "adicionar" && F.own === "console";
+  var aCon = AREA === "cui" && cuiTela === "adicionar" && (F.own === "console" || F.own === "fora");
   if (aCon && !g._con) return false;
+  // "Fora da colecao": o do console que nao estava nela quando a aba foi aberta.
+  // Nao e o rascunho ao vivo, senao o card sumiria no clique que o marca.
+  if (aCon && F.own === "fora" && (!g._tids.length || cuiNoFora(g))) return false;
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
   if (!buscaOk(g)) return false;
   // Item do console que o catalogo nao conhece (ROM, homebrew, jogo que falta
   // la) nao tem genero, nota nem modo: so a busca e a plataforma valem, e ele so
   // aparece em "No console" e em "Todos", que nao dependem de marcacao.
-  if (g._con && !g._cat) return F.own === "console" || F.own === "all";
+  if (g._con && !g._cat) return aCon || F.own === "all";
 
   // Ao adicionar jogos ao CollectionUI as abas do catalogo (tenho, wishlist,
   // escondidos...) valem igual: e o recorte mais util para montar colecao. A
@@ -1497,7 +1501,11 @@ function ligarEventos() {
   });
 
   $$(".vista").forEach(function (b) {
-    b.onclick = function () { F.own = b.dataset.own; marcarVista(); onChange(); };
+    b.onclick = function () {
+      F.own = b.dataset.own;
+      if (F.own === "fora" && cuiRascunho) cuiForaSet = new Set(cuiRascunho);
+      marcarVista(); onChange();
+    };
   });
   $("#genre-mais").onclick = function () {
     var box = $("#f-genres");
@@ -1636,6 +1644,8 @@ var cuiTela = "colecoes";   // colecoes | jogos | adicionar
 // Ao adicionar, a marcacao vai numa COPIA dos Title IDs: e o que da sentido ao
 // Cancelar, como o rascunho da previa.
 var cuiRascunho = null, cuiRascunhoSet = null;
+// A colecao como estava ao abrir a aba "Fora da colecao" (Title IDs).
+var cuiForaSet = null;
 var cuiAviso = "";          // uma linha de retorno na barra: importou, exportou...
 var cuiSelIds = null;       // os Title IDs da colecao escolhida, refeito a cada mudanca
 var cuiMapaCache = null;    // Title ID -> jogo, refeito quando uma categoria desce
@@ -1721,7 +1731,7 @@ function cuiConsole() {
 function cuiOnde(g) {
   if (!CUI_INV) return "";
   if (cuiTela === "jogos") return g._con ? "" : "fora";
-  if (cuiTela === "adicionar" && F.own !== "console" && g._con) return "con";
+  if (cuiTela === "adicionar" && F.own !== "console" && F.own !== "fora" && g._con) return "con";
   return "";
 }
 
@@ -1795,6 +1805,11 @@ function cuiOrigemMorta(c) {
 function cuiNaSel(g) {
   if (!cuiSelIds) cuiSelIds = cuiIds(cuiPorId(CUI.sel));
   for (var i = 0; i < g._tids.length; i++) if (cuiSelIds.has(g._tids[i])) return true;
+  return false;
+}
+
+function cuiNoFora(g) {
+  for (var i = 0; i < g._tids.length; i++) if (cuiForaSet.has(g._tids[i])) return true;
   return false;
 }
 
@@ -2022,7 +2037,7 @@ function cuiAbrir(id) { CUI.sel = id; cuiAviso = ""; cuiMudou(); cuiIr("jogos");
 function cuiAdicionar() {
   var c = cuiPorId(CUI.sel);
   if (!c || c.tipo !== "jogos") return;
-  cuiRascunho = c.ids.slice(); cuiRascunhoSet = new Set(cuiRascunho);
+  cuiRascunho = c.ids.slice(); cuiRascunhoSet = new Set(cuiRascunho); cuiForaSet = new Set(cuiRascunho);
   // Com o inventario, o fluxo principal e montar com o que o console tem; as
   // outras abas continuam ali para olhar o catalogo.
   if (CUI_INV) { cuiOwnAntes = F.own; F.own = "console"; marcarVista(); }
@@ -2031,7 +2046,7 @@ function cuiAdicionar() {
 
 /* Saiu do Adicionar: o rascunho vai embora e o catalogo volta a sua aba. */
 function cuiSairAdicionar() {
-  cuiRascunho = cuiRascunhoSet = null;
+  cuiRascunho = cuiRascunhoSet = cuiForaSet = null;
   if (cuiOwnAntes !== null) { F.own = cuiOwnAntes; cuiOwnAntes = null; marcarVista(); }
 }
 
@@ -2379,9 +2394,13 @@ function cuiPintar() {
   }
   if (cuiAviso) h += '<div class="cui-nota">' + esc(cuiAviso) + "</div>";
   $("#cui-barra").innerHTML = h;
-  var aba = $("#vista-con");
-  aba.hidden = !(CUI_INV && cuiTela === "adicionar");
+  var abas = !(CUI_INV && cuiTela === "adicionar");
+  $("#vista-con").hidden = $("#vista-fora").hidden = abas;
   if (CUI_INV) $("#s-con").textContent = CUI_INV.itens.length.toLocaleString("pt-BR");
+  // A contagem e a do rascunho ao vivo: diz quanto do console ainda falta pôr.
+  if (!abas) $("#s-fora").textContent = cuiConsole().lista.filter(function (g) {
+    return g._tids.length && !cuiNoRascunho(g);
+  }).length.toLocaleString("pt-BR");
 }
 
 /* Na carga a area vem do endereco (#collectionui); render() ainda vai rodar. */
