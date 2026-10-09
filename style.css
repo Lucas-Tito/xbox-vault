@@ -509,7 +509,9 @@ body.cui .card.semtid:hover::before{border-width:0}
   body.filtros-abertos{overflow:hidden}
   .mobile-filters{display:inline-flex}
   /* um card por linha, com a capa menor */
-  .grid{grid-template-columns:1fr;gap:14px}
+  /* minmax(0,..): 1fr sozinho nao desce abaixo do conteudo, e a linha de
+     etiquetas empurrava o card para fora da tela */
+  .grid{grid-template-columns:minmax(0,1fr);gap:14px}
   .thumb{width:110px;min-height:147px}
   .marks{left:72px}
   .main{padding:14px 12px 100px}
