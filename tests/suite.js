@@ -895,6 +895,27 @@
       ok('duas faixas marcadas somam', +$('#s-shown').textContent.replace(/\D/g,'') === p24, p24 + ' jogos');
       pl('2').checked = false; fire(pl('2')); pl('4').checked = false; fire(pl('4')); await wait(300);
 
+      // Com Co-op marcado, Jogadores e o numero do co-op, e nao o maximo geral
+      // (Halo 2: co-op local para 2, versus local para 4)
+      lb.checked = true; fire(lb); coopBox.checked = true; fire(coopBox);
+      pl('4').checked = true; fire(pl('4')); await wait(500);
+      const coopLoc = g => { const t = g.tags||{}, c = g.coopInfo; return t.coopLocalMax || (c && c.local) || t.maxPlayersLocal || 0; };
+      const c4 = catalogo().filter(g => g.tags && g.tags.coopLocal && coopLoc(g) === 4).length;
+      ok('co-op local + 4 jogadores usa o numero do co-op', +$('#s-shown').textContent.replace(/\D/g,'') === c4, c4 + ' jogos');
+      const search = async q => { $('#q').value = q; fire($('#q'), 'input'); await wait(600); };
+      await search('Halo 2');
+      ok('Halo 2 (co-op para 2, versus para 4) nao entra em co-op local para 4',
+         !cards().some(x => x.dataset.id === 'xbox-halo-2'), cards().map(x => x.dataset.id).join(' '));
+      pl('2').checked = true; fire(pl('2')); await wait(500);
+      ok('e entra em co-op local para 2', cards().some(x => x.dataset.id === 'xbox-halo-2'));
+      pl('2').checked = false; fire(pl('2'));
+      await search('');
+      const co = $('#f-coopt'); co.checked = true; fire(co); await wait(500);
+      const c4o = catalogo().filter(g => g.tags && g.tags.coopLocal && g.coopInfo && g.coopInfo.local === 4).length;
+      ok('com so Co-Optimus, o numero e o do Co-Optimus', +$('#s-shown').textContent.replace(/\D/g,'') === c4o, c4o + ' jogos');
+      co.checked = false; fire(co); pl('4').checked = false; fire(pl('4'));
+      coopBox.checked = false; fire(coopBox); qq.checked = true; fire(qq); await wait(400);
+
       const withImg = catalogo().filter(g => g.image).length;
       ok('capas presentes', withImg > tagged.length * 0.5, withImg + ' jogos com imagem');
     } else ok('dados de tags presentes', false, 'apenas ' + tagged.length + ' jogos com tags');

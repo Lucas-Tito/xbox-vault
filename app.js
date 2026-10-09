@@ -50,10 +50,12 @@ function rebuildSets() {
    tudo por ano de lancamento. */
 /* As caixas de Jogadores: o MAXIMO de jogadores do jogo no "onde" escolhido, em
    faixas. Pelo maximo, e nao "N ou mais", porque e assim que se separa jogo para
-   dois e jogo para quatro; e duas caixas marcadas somam, como em Plataforma. */
+   dois e jogo para quatro; e duas caixas marcadas somam, como em Plataforma.
+   Com Co-op marcado o numero e o do CO-OP: o maximo geral junta o versus, e o
+   Halo 2, co-op local para 2 e versus para 4, entrava em "co-op local para 4". */
 var FAIXAS_PL = { "2": [2, 2], "3": [3, 3], "4": [4, 4], "5-8": [5, 8], "9-16": [9, 16], "17+": [17, Infinity] };
 function faixaPl(g) {
-  var n = maxPlayers(g, F.where);
+  var n = F.modes.indexOf("coop") >= 0 ? coopPlayers(g, F.where) : maxPlayers(g, F.where);
   for (var k in FAIXAS_PL) if (n >= FAIXAS_PL[k][0] && n <= FAIXAS_PL[k][1]) return k;
   return "";
 }
@@ -190,6 +192,21 @@ function maxPlayers(g, scope) {
   if (scope === "local")  return t.maxPlayersLocal || 0;
   if (scope === "online") return t.maxPlayersOnline || 0;
   return Math.max(t.maxPlayersLocal || 0, t.maxPlayersOnline || 0, t.maxPlayers || 0);
+}
+
+/* Quantos jogam o co-op, no "onde" escolhido.
+   - Com "so com dados do Co-Optimus" marcado, o numero e o do Co-Optimus e
+     nenhum outro: e a fonte que a pessoa pediu.
+   - Sem ele, o coopLocalMax/coopOnlineMax do catalogo; na falta, o do
+     Co-Optimus; e so na falta dos dois, o maximo geral, como antes. */
+function coopPlayers(g, scope) {
+  var c = g.coopInfo, t = g._t;
+  var co = c ? (scope === "local" ? c.local : scope === "online" ? c.online
+    : Math.max(c.local || 0, c.online || 0, c.combo || 0, c.lan || 0)) || 0 : 0;
+  if (F.coopt) return co;
+  var cat = scope === "local" ? t.coopLocalMax : scope === "online" ? t.coopOnlineMax
+    : Math.max(t.coopLocalMax || 0, t.coopOnlineMax || 0);
+  return cat || co || maxPlayers(g, scope);
 }
 
 /* Um modo de jogo, levando em conta o "onde". Sem co-op nem versus marcado, o
