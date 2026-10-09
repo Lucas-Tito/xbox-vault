@@ -23,4 +23,4 @@ As baterias em `tests/` rodam só aqui, num Chrome sem janela (não há automaç
 - Sem travessão: reescrever a frase, nunca trocar o travessão por hífen.
 - Commits atômicos, um assunto por commit, mensagem em português explicando o porquê.
 - Nada de `Co-Authored-By` nem `Claude-Session` nas mensagens.
-- Push pela conta pessoal: `gh auth switch --user Lucas-Tito` no MESMO comando do push (a conta ativa volta sozinha para a de trabalho), e conferir depois no GitHub.
+- Push pela conta pessoal, por token e sem `gh auth switch` (a conta ativa da máquina é a de trabalho e fica como está): `GH_TOKEN=$(gh auth token --user Lucas-Tito) git push origin main`. O mesmo prefixo vale para qualquer comando `gh` neste repositório. Conferir depois no GitHub.
