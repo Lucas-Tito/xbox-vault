@@ -348,6 +348,38 @@
   await importar(vault(undefined, 'DEADBEEF'));
   ok('ROM com id que nao bate com o arquivo vira aviso', /1 ROM com id que não bate/.test($('#cui-barra').textContent),
      $('#cui-barra').textContent.slice(0, 160));
+  // ---- APP: homebrew sem Title ID, com id sintetico do caminho ----
+  const fnvApp = s => {
+    let h = 2166136261 >>> 0;
+    for (let x of new TextEncoder().encode(s)) { if (x >= 0x41 && x <= 0x5A) x += 32; h = Math.imul(h ^ x, 16777619) >>> 0; }
+    return ('0000000' + (h || 1).toString(16).toUpperCase()).slice(-8);
+  };
+  const caminho = '\\HOMEBREW\\Raw360\\Raw360.xex', idApp = fnvApp(caminho);
+  const comApp = VCAB + 'JOGO|' + T(a.titleId) + '|00007000||00000001|' + a.title + '|\\JOGOS\\A\\GAME\\default.xex\r\n' +
+    'APP|' + idApp + '|00007000||00000029|Another World|' + caminho + '\r\n' +
+    'COLECAO|11|jogos|Com app|' + T(a.titleId) + '\r\n' +
+    '# total: 1 jogos, 1 apps, 0 ROMs, 1 colecoes\r\n';
+  await importar(comApp);
+  await ate(() => tile('Com app'));
+  ok('vault.txt com APP entra, e a barra conta o app a parte', /Console: 1 jogo, 1 app e 0 ROMs/.test($('#cui-barra').textContent),
+     $('#cui-barra').textContent.slice(0, 160));
+  ok('o id do app confere com o caminho', !/app com id/.test($('#cui-barra').textContent));
+  const antesApp = await exportar();
+  await importar(comApp.replace('1 apps', '2 apps'));
+  ok('rodape com a conta de apps errada: avisa e nao troca nada', /2 apps/.test(alertas.pop() || '') &&
+     (await exportar()) === antesApp);
+  const hb = $$('.f-plat').find(x => x.value === 'homebrew');
+  hb.checked = true; hb.dispatchEvent(new Event('change', {bubbles:true})); await ate(() => window.XBX_HB); await wait(400);
+  await abrir('Com app');
+  $('#cui-add').click(); await wait(600);
+  const kApp = porId('con-J00000029');
+  ok('o app aparece no console como homebrew, e pode entrar em colecao', !!kApp && !kApp.classList.contains('semtid') &&
+     kApp.classList.contains('apagado'), kApp ? kApp.className : $$('.card').map(x => x.dataset.id).join(' '));
+  kApp.click(); await wait(200);
+  $('#cui-concluir').click(); await wait(500);
+  ok('o id do app vai para o colecoes.txt', linha(await exportar(), 'Com app') === '11|jogos|Com app|' + T(a.titleId) + ',' + idApp);
+  hb.checked = false; hb.dispatchEvent(new Event('change', {bubbles:true})); await wait(400);
+  $('#cui-voltar').click(); await wait(400);
   localStorage.removeItem('xbx.cui.inv.v1');
 
   // ---- volta ao catalogo ----

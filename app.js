@@ -1706,9 +1706,12 @@ function cuiConsole() {
   CUI_INV.itens.forEach(function (it) { if (it.rom) emus[it.emu] = 1; });
   CUI_INV.itens.forEach(function (it) { if (!it.rom && emus[it.tid] && !nomeEmu[it.tid]) nomeEmu[it.tid] = it.nome; });
   CUI_INV.itens.forEach(function (it) {
-    // Title ID zero e xex de homebrew sem EXECUTION_INFO: nao casa com nada.
+    // Homebrew sem EXECUTION_INFO nao tem Title ID. O vault.txt atual o manda
+    // como APP, com id sintetico do caminho: vai em colecao, mas nao e Title ID
+    // e nao se procura no catalogo. O antigo mandava 00000000, que nao e id
+    // nenhum: esse continua sem casar e sem poder entrar em colecao.
     var zero = it.tid === "00000000";
-    var c = zero || it.rom ? null : m.get(it.tid) || null;
+    var c = zero || it.rom || it.app ? null : m.get(it.tid) || null;
     var g = c ? Object.create(c) : {};
     g.id = "con-" + it.k; g._con = it; g._cat = c;
     if (c) {
@@ -1717,7 +1720,7 @@ function cuiConsole() {
       cat.add(c.id);
     } else {
       g.title = it.nome;
-      g.platform = it.rom ? "emu" : zero || emus[it.tid] ? "homebrew"
+      g.platform = it.rom ? "emu" : zero || it.app || emus[it.tid] ? "homebrew"
         : it.ct === "00005000" ? "xbox" : it.ct === "00000002" ? "xblig" : "x360";
       g._tids = zero ? [] : [it.tid];
       g._s = norm(it.nome);
@@ -2093,22 +2096,38 @@ function cuiIdDaRom(emulador, bytes) {
   return h;
 }
 
+/* O id do APP, como o console calcula: FNV-1a 32 sobre os bytes do caminho, so
+   com A-Z em minuscula, sem semente de emulador; zero vira 1, que zero e a
+   ausencia de id. */
+function cuiIdDoApp(bytes) {
+  var h = 2166136261 >>> 0;
+  for (var i = 0; i < bytes.length; i++) {
+    var x = bytes[i];
+    if (x >= 0x41 && x <= 0x5A) x += 32;
+    h = Math.imul(h ^ x, 16777619) >>> 0;
+  }
+  return h || 1;
+}
+
 /* Le o vault.txt, o export do CollectionUI para o Vault: o inventario do console
    e as colecoes num arquivo so.
-   - Linha de dado comeca com JOGO|, ROM| ou COLECAO|; todo o resto e comentario
-     (o proprio cabecalho tem linha com barra).
-   - JOGO e ROM tem 7 campos: tipo|id|contentType|emulador|item|nome|arquivo.
+   - Linha de dado comeca com JOGO|, APP|, ROM| ou COLECAO|; todo o resto e
+     comentario (o proprio cabecalho tem linha com barra).
+   - JOGO, APP e ROM tem 7 campos: tipo|id|contentType|emulador|item|nome|arquivo.
+     APP e o homebrew sem Title ID: a linha e igual a de JOGO, e o id e sintetico,
+     FNV-1a 32 do caminho com A-Z em minuscula (zero vira 1).
      COLECAO e a linha do colecoes.txt com o prefixo, e vai pelo cuiLer.
    - UTF-8. O hash da ROM e sobre os bytes crus do campo arquivo, entao a linha
      e partida em bytes antes de virar texto.
-   - O rodape "# total: N jogos, N ROMs, N colecoes" e obrigatorio e tem de bater:
-     e o que separa arquivo inteiro de arquivo cortado. Sem ele nada e trocado.
+   - O rodape "# total: N jogos, N apps, N ROMs, N colecoes" e obrigatorio e tem
+     de bater: e o que separa arquivo inteiro de arquivo cortado. Sem ele nada e
+     trocado. O vault.txt de antes do APP nao tem a conta de apps, e vale com 0.
    Devolve { cols, itens, avisos }, ou lanca Error com a mensagem para a pessoa. */
 function cuiLerVault(buf) {
   var b = new Uint8Array(buf), dec = new TextDecoder("utf-8");
   var hex = /^[0-9A-Fa-f]{8}$/, ini = b[0] === 0xEF && b[1] === 0xBB && b[2] === 0xBF ? 3 : 0;
-  var itens = [], colLinhas = [], avisos = [], chaves = {}, n = { JOGO: 0, ROM: 0, COLECAO: 0 };
-  var rodape = null, ruins = 0, roms = 0;
+  var itens = [], colLinhas = [], avisos = [], chaves = {}, n = { JOGO: 0, APP: 0, ROM: 0, COLECAO: 0 };
+  var rodape = null, ruins = 0, roms = 0, apps = 0;
   for (var i = ini; i <= b.length; i++) {
     if (i < b.length && b[i] !== 0x0A) continue;
     var fim = i;
@@ -2117,9 +2136,9 @@ function cuiLerVault(buf) {
     ini = i + 1;
     var s = dec.decode(l), tipo = s.slice(0, s.indexOf("|"));
     if (tipo === "COLECAO") { n.COLECAO++; colLinhas.push(s.slice(8)); continue; }
-    if (tipo !== "JOGO" && tipo !== "ROM") {
-      var r = /^# total: (\d+) jogos, (\d+) ROMs, (\d+) colecoes\s*$/.exec(s);
-      if (r) rodape = { JOGO: +r[1], ROM: +r[2], COLECAO: +r[3] };
+    if (tipo !== "JOGO" && tipo !== "APP" && tipo !== "ROM") {
+      var r = /^# total: (\d+) jogos, (?:(\d+) apps, )?(\d+) ROMs, (\d+) colecoes\s*$/.exec(s);
+      if (r) rodape = { JOGO: +r[1], APP: +(r[2] || 0), ROM: +r[3], COLECAO: +r[4] };
       continue;
     }
     n[tipo]++;
@@ -2134,17 +2153,23 @@ function cuiLerVault(buf) {
       it.k = "R" + it.tid;
       if (cuiIdDaRom(parseInt(it.emu, 16), f[6]) !== parseInt(it.tid, 16)) roms++;
     } else it.k = "J" + t[4].toUpperCase();
+    if (tipo === "APP") {
+      it.app = true;
+      if (cuiIdDoApp(f[6]) !== parseInt(it.tid, 16)) apps++;
+    }
     if (chaves[it.k]) { ruins++; continue; }
     chaves[it.k] = 1;
     itens.push(it);
   }
   if (!rodape)
     throw new Error("O vault.txt não tem a linha de total no fim: parece cortado. Nada foi trocado; exporte de novo no console.");
-  if (rodape.JOGO !== n.JOGO || rodape.ROM !== n.ROM || rodape.COLECAO !== n.COLECAO)
-    throw new Error("O vault.txt diz ter " + rodape.JOGO + " jogos, " + rodape.ROM + " ROMs e " + rodape.COLECAO +
-      " coleções, mas veio com " + n.JOGO + ", " + n.ROM + " e " + n.COLECAO + ". Nada foi trocado; exporte de novo no console.");
+  if (rodape.JOGO !== n.JOGO || rodape.APP !== n.APP || rodape.ROM !== n.ROM || rodape.COLECAO !== n.COLECAO)
+    throw new Error("O vault.txt diz ter " + rodape.JOGO + " jogos, " + rodape.APP + " apps, " + rodape.ROM +
+      " ROMs e " + rodape.COLECAO + " coleções, mas veio com " + n.JOGO + ", " + n.APP + ", " + n.ROM + " e " +
+      n.COLECAO + ". Nada foi trocado; exporte de novo no console.");
   if (ruins) avisos.push(ruins + " linha" + (ruins > 1 ? "s" : "") + " de jogo fora do formato ficou de fora");
   if (roms) avisos.push(roms + " ROM" + (roms > 1 ? "s" : "") + " com id que não bate com o nome do arquivo");
+  if (apps) avisos.push(apps + " app" + (apps > 1 ? "s" : "") + " com id que não bate com o caminho");
   var cols = cuiLer(colLinhas.join("\n"));
   return { cols: cols, itens: itens, avisos: cols.avisos.concat(avisos) };
 }
@@ -2153,7 +2178,7 @@ function cuiLerVault(buf) {
    colecoes.txt (so as colecoes). Quem diz e o conteudo, nao o nome. */
 function cuiImportar(buf) {
   var txt = new TextDecoder("utf-8").decode(buf);
-  if (/^(JOGO|ROM|COLECAO)\|/m.test(txt)) return cuiImportarVault(buf);
+  if (/^(JOGO|APP|ROM|COLECAO)\|/m.test(txt)) return cuiImportarVault(buf);
   var cols = cuiLer(txt);
   if (!cols.length) { alert("Nenhuma coleção nesse arquivo."); return; }
   if (CUI.cols.length && !confirm("Substituir as " + CUI.cols.length + " coleções daqui pelas " +
@@ -2165,6 +2190,17 @@ function cuiImportar(buf) {
   cuiMudou(); cuiIr("colecoes");
 }
 
+/* "392 jogos, 6 apps e 41 ROMs": os apps so entram na frase quando existem. */
+function cuiResumoInv(itens) {
+  var n = { j: 0, a: 0, r: 0 };
+  itens.forEach(function (it) { n[it.rom ? "r" : it.app ? "a" : "j"]++; });
+  var p = function (k, um, v) { return k + " " + um + (k === 1 ? "" : v); };
+  var partes = [p(n.j, "jogo", "s")];
+  if (n.a) partes.push(p(n.a, "app", "s"));
+  partes.push(p(n.r, "ROM", "s"));
+  return partes.slice(0, -1).join(", ") + " e " + partes[partes.length - 1];
+}
+
 function cuiImportarVault(buf) {
   var v;
   try { v = cuiLerVault(buf); } catch (e) { alert(e.message); return; }
@@ -2174,9 +2210,8 @@ function cuiImportarVault(buf) {
   CUI.sel = null;
   CUI_INV = { t: Date.now(), itens: v.itens };
   try { localStorage.setItem(CUI_INV_KEY, JSON.stringify(CUI_INV)); } catch (e) {}
-  var nr = v.itens.filter(function (it) { return it.rom; }).length;
   cuiAviso = "Importado do console: " + v.cols.length + " coleç" + (v.cols.length === 1 ? "ão" : "ões") + ", " +
-    (v.itens.length - nr) + " jogos e " + nr + " ROMs." + (v.avisos.length ? " " + v.avisos.join("; ") + "." : "");
+    cuiResumoInv(v.itens) + "." + (v.avisos.length ? " " + v.avisos.join("; ") + "." : "");
   cuiMudou(); cuiIr("colecoes");
 }
 
@@ -2374,10 +2409,8 @@ function cuiPintar() {
     if (!CUI.cols.length)
       h = "<span>Nenhuma coleção ainda. Importe o vault.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
     if (CUI_INV) {
-      var nr = CUI_INV.itens.filter(function (it) { return it.rom; }).length, nj = CUI_INV.itens.length - nr;
       var d = new Date(CUI_INV.t);
-      h += '<div class="cui-nota cui-inv">Console: ' + nj + " jogo" + (nj === 1 ? "" : "s") + " e " + nr +
-        " ROM" + (nr === 1 ? "" : "s") + ", importados em " + d.toLocaleDateString("pt-BR") + " às " +
+      h += '<div class="cui-nota cui-inv">Console: ' + cuiResumoInv(CUI_INV.itens) + ", importados em " + d.toLocaleDateString("pt-BR") + " às " +
         d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }) + ".</div>";
     }
   } else if (cuiTela === "jogos" && c) {
