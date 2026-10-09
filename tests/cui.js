@@ -345,6 +345,53 @@
      linha(await exportar(), 'Do console') === '11|jogos|Do console|7E570001,' + rom + ',' + T(c.titleId));
   $('#cui-voltar').click(); await wait(400);
 
+  // ---- Biblioteca: passear pelo console e distribuir pelas colecoes ----
+  $('#cui-nova').click(); await wait(200);
+  $('#cui-nome').value = 'Outra'; $('#cui-ok').click(); await wait(500);
+  $('#cui-voltar').click(); await wait(400);
+  ok('a tela das colecoes tem o botao Biblioteca', !!$('#cui-bib'));
+  $('#cui-bib').click(); await wait(600);
+  ok('a Biblioteca abre no console, com filtros e as abas dela', document.body.dataset.tela === 'biblioteca' && !!filtros() &&
+     $('.vista[aria-selected=true]').dataset.own === 'console' && !$('#vista-semcol').hidden && $('#vista-fora').hidden);
+  ok('Sem colecao conta o do console fora de toda colecao', $('#s-semcol').textContent === '3', $('#s-semcol').textContent);
+  ok('o card diz em que colecoes o jogo esta', (porId('con-J00000003').querySelector('.cui-em') || {}).textContent === 'Em Do console, Uniao',
+     (porId('con-J00000003').querySelector('.cui-em') || {}).textContent);
+  $('#vista-semcol').click(); await wait(500);
+  ok('a aba Sem colecao mostra so o que nao esta em nenhuma',
+     $$('.card').map(x => x.dataset.id).sort().join(' ') === 'con-J00000001 con-J00000002', $$('.card').map(x => x.dataset.id).join(' '));
+  porId('con-J00000001').click(); await wait(400);
+  const caixas = $$('#modal-body .cui-vinc');
+  ok('a ficha traz as colecoes manuais, desmarcadas', caixas.length === 2 && caixas.every(x => !x.checked),
+     caixas.map(x => x.parentNode.textContent).join(','));
+  const outra = caixas.find(x => /Outra/.test(x.parentNode.textContent));
+  outra.click(); await wait(300);
+  ok('marcar na ficha grava na hora', (linha(await exportar(), 'Outra') || '').indexOf(T(a.titleId)) > 0 &&
+     $$('#modal-body .cui-vinc').find(x => /Outra/.test(x.parentNode.textContent)).checked, linha(await exportar(), 'Outra'));
+  $('#modal').click(); await wait(200);
+  ok('o card fica na aba e os dois discos dizem a colecao', !!porId('con-J00000001') &&
+     porId('con-J00000002').querySelector('.cui-em').textContent === 'Em Outra' && $('#s-semcol').textContent === '1',
+     porId('con-J00000002').querySelector('.cui-em').textContent + ' / ' + $('#s-semcol').textContent);
+  const antesDoMais = linha(await exportar(), 'Do console');
+  porId('con-J00000002').querySelector('.vinc-btn').click(); await wait(200);
+  const pop = $('#cui-pop');
+  ok('o + abre a lista, com a colecao em que ja esta marcada', !!pop &&
+     $$('#cui-pop .cui-vinc').filter(x => x.checked).map(x => x.parentNode.textContent.trim()).join() === 'Outra');
+  $$('#cui-pop .cui-vinc').find(x => /Do console/.test(x.parentNode.textContent)).click(); await wait(300);
+  ok('marcar no + poe o jogo em mais uma colecao', (linha(await exportar(), 'Do console') || '').indexOf(T(a.titleId)) > 0 &&
+     /entrou em Do console/.test($('#aviso-txt').textContent) &&
+     porId('con-J00000001').querySelector('.cui-em').textContent === 'Em Do console, Outra, Uniao',
+     porId('con-J00000001').querySelector('.cui-em').textContent);
+  $('#aviso-desfazer').click(); await wait(300);
+  ok('Desfazer tira de novo', linha(await exportar(), 'Do console') === antesDoMais &&
+     porId('con-J00000001').querySelector('.cui-em').textContent === 'Em Outra');
+  document.body.click(); await wait(100);
+  ok('clicar fora fecha a lista', !$('#cui-pop'));
+  $('#vista-semcol').click(); await wait(500);
+  ok('reabrir Sem colecao tira o que entrou', $$('.card').length === 0, $$('.card').length + ' cards');
+  $('#cui-voltar').click(); await wait(400);
+  ok('sair da Biblioteca devolve a aba do catalogo', document.body.dataset.tela === 'colecoes' &&
+     ['console', 'semcol'].indexOf(($('.vista[aria-selected=true]') || {dataset: {}}).dataset.own) < 0);
+
   await importar(vault(undefined, 'DEADBEEF'));
   ok('ROM com id que nao bate com o arquivo vira aviso', /1 ROM com id que não bate/.test($('#cui-barra').textContent),
      $('#cui-barra').textContent.slice(0, 160));

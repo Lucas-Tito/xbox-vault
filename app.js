@@ -81,7 +81,7 @@ delete F.plMin;
 if (!Array.isArray(F.pls)) F.pls = [];
 // As abas "No console" e "Fora da colecao" so existem ao adicionar jogos ao
 // CollectionUI.
-if (F.own === "console" || F.own === "fora") F.own = "all";
+if (F.own === "console" || F.own === "fora" || F.own === "semcol") F.own = "all";
 
 var $ = function (s) { return document.querySelector(s); };
 var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -241,11 +241,12 @@ function match(g, skip) {
   // Dentro de uma colecao do CollectionUI so a busca vale: os filtros do catalogo
   // escondem a coluna e poderiam sumir com um jogo que esta la.
   if (AREA === "cui" && cuiTela === "jogos") return buscaOk(g) && cuiNaSel(g);
-  var aCon = AREA === "cui" && cuiTela === "adicionar" && (F.own === "console" || F.own === "fora");
+  var aCon = AREA === "cui" && cuiCatalogo() && (F.own === "console" || F.own === "fora" || F.own === "semcol");
   if (aCon && !g._con) return false;
-  // "Fora da colecao": o do console que nao estava nela quando a aba foi aberta.
-  // Nao e o rascunho ao vivo, senao o card sumiria no clique que o marca.
-  if (aCon && F.own === "fora" && (!g._tids.length || cuiNoFora(g))) return false;
+  // "Fora da colecao" e "Sem colecao": o do console que nao estava nela (ou em
+  // colecao nenhuma) quando a aba foi aberta. Nao e o estado ao vivo, senao o
+  // card sumiria no clique que o poe.
+  if (aCon && F.own !== "console" && (!g._tids.length || cuiNoFora(g))) return false;
   if (skip !== "plat" && F.plats.indexOf(g.platform) < 0) return false;
   if (!buscaOk(g)) return false;
   // Item do console que o catalogo nao conhece (ROM, homebrew, jogo que falta
@@ -256,7 +257,7 @@ function match(g, skip) {
   // Ao adicionar jogos ao CollectionUI as abas do catalogo (tenho, wishlist,
   // escondidos...) valem igual: e o recorte mais util para montar colecao. A
   // marcacao do item do console e a do jogo do catalogo que ele e.
-  if (!aCon && (AREA !== "cui" || cuiTela === "adicionar")) {
+  if (!aCon && (AREA !== "cui" || cuiCatalogo())) {
   var mid = g._cat ? g._cat.id : g.id;
   // "não quero" tira o jogo de todas as listas, menos da lista de escondidos
   if (F.own === "hide") { if (!escondidos.has(mid)) return false; }
@@ -442,6 +443,7 @@ function urTexto(v) { return (Math.round(v * 100) / 100).toFixed(2); }
    sai do CSS, pela classe .wish do card, entao marcar nao reescreve o botao. */
 var ICO_WISH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
 var ICO_REM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+var ICO_MAIS = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
 var ICO_INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.6v.1"/></svg>';
 var ICO_HIDE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6-.5.8-1.6 2.2-3.1 3.5M6.6 6.6C4.6 8 3.2 10 2.5 12c1 1.5 4.5 6 9.5 6 1.7 0 3.2-.5 4.5-1.2M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>';
 
@@ -503,6 +505,12 @@ function cardHtml(g) {
     // console conhece nao tem ficha, e fica sem ele.
     marcas = g._con && !g._cat ? "" : '<div class="marks marks-card"><button class="info-btn" title="Ver ficha" ' +
       'aria-label="Ver ficha">' + ICO_INFO + "</button></div>";
+  } else if (cuiTela === "biblioteca") {
+    // Passeio: o clique abre a ficha, e o "+" do canto escolhe as colecoes.
+    estado = g._tids.length ? "" : " semtid";
+    marcas = g._tids.length ? '<div class="marks marks-card"><button class="vinc-btn" title="Coleções" ' +
+      'aria-label="Escolher coleções" aria-haspopup="true">' + ICO_MAIS + "</button></div>" : "";
+    junto += cuiEmHtml(g);
   } else {
     estado = cuiOnde(g) === "fora" ? " fora" : "";
     marcas = cuiEditavel() ? '<div class="marks marks-card"><button class="rem-btn" title="Remover da coleção" ' +
@@ -1141,7 +1149,7 @@ function detalheHtml(g) {
           (w ? "Na wishlist" : "Pôr na wishlist") + "</button>" +
         '<button class="btn' + (escondidos.has(g.id) ? " muted" : "") + '" data-mark="hide">' +
           (escondidos.has(g.id) ? "Escondido" : "Não quero") + "</button>" +
-      "</div>" + corpo +
+      "</div>" + cuiFichaCols() + corpo +
     "</div></div>";
 }
 
@@ -1325,6 +1333,7 @@ function openModal(html, cls) {
 }
 function closeModal() {
   $("#modal").hidden = true;
+  cuiFichaObj = null;
   $("#modal-body").innerHTML = "";   // limpa: senão os botões do diálogo anterior
   detAtual = null;                   // continuam no DOM e podem ser reativados
 }
@@ -1521,6 +1530,7 @@ function ligarEventos() {
     b.onclick = function () {
       F.own = b.dataset.own;
       if (F.own === "fora" && cuiRascunho) cuiForaSet = new Set(cuiRascunho);
+      if (F.own === "semcol") cuiForaSet = cuiTodosIds();
       marcarVista(); onChange();
     };
   });
@@ -1537,6 +1547,7 @@ function ligarEventos() {
     if (AREA === "cui") {
       if (cuiTela === "adicionar" && !e.target.closest(".info-btn")) { cuiAlternar(card); return; }   // marca no rascunho
       if (e.target.closest(".rem-btn")) { cuiRemover(card); return; }
+      if (e.target.closest(".vinc-btn")) { cuiAbrirVinc(card, e.target.closest(".vinc-btn")); return; }
       // dentro da colecao o clique abre a ficha, como no catalogo
     }
     var btn = e.target.closest(".wish-btn, .hide-btn");
@@ -1548,6 +1559,9 @@ function ligarEventos() {
     // O item do console abre a ficha do jogo do catalogo que ele e; o que so o
     // console conhece nao tem ficha.
     var g = jogoDoCard(card);
+    // Na Biblioteca a ficha leva as colecoes do jogo; vale o item do console,
+    // que e quem tem os Title IDs que entram nelas.
+    cuiFichaObj = AREA === "cui" && cuiTela === "biblioteca" && g && g._tids.length ? g : null;
     if (g && g._con) g = g._cat;
     if (g) openDetail(g);                        // resto do card abre os detalhes
   });
@@ -1657,12 +1671,15 @@ delete CUI.vista;           // do seletor Todos/Que tenho/Da colecao, que saiu
 if (!Array.isArray(CUI.extras)) CUI.extras = [];
 // O bool uniao virou tipo: jogos, uniao ou intersecao.
 CUI.cols.forEach(function (c) { if (!c.tipo) c.tipo = c.uniao ? "uniao" : "jogos"; delete c.uniao; });
-var cuiTela = "colecoes";   // colecoes | jogos | adicionar
+var cuiTela = "colecoes";   // colecoes | jogos | adicionar | biblioteca
 // Ao adicionar, a marcacao vai numa COPIA dos Title IDs: e o que da sentido ao
 // Cancelar, como o rascunho da previa.
 var cuiRascunho = null, cuiRascunhoSet = null;
-// A colecao como estava ao abrir a aba "Fora da colecao" (Title IDs).
+// A colecao como estava ao abrir a aba "Fora da colecao" (Title IDs); na
+// Biblioteca, o que estava em alguma colecao ao abrir "Sem colecao".
 var cuiForaSet = null;
+// Na Biblioteca: o jogo da ficha aberta, e Title ID -> colecoes que o contem.
+var cuiFichaObj = null, cuiEmCache = null;
 var cuiAviso = "";          // uma linha de retorno na barra: importou, exportou...
 var cuiSelIds = null;       // os Title IDs da colecao escolhida, refeito a cada mudanca
 var cuiMapaCache = null;    // Title ID -> jogo, refeito quando uma categoria desce
@@ -1751,7 +1768,7 @@ function cuiConsole() {
 function cuiOnde(g) {
   if (!CUI_INV) return "";
   if (cuiTela === "jogos") return g._con ? "" : "fora";
-  if (cuiTela === "adicionar" && F.own !== "console" && F.own !== "fora" && g._con) return "con";
+  if (cuiCatalogo() && F.own !== "console" && F.own !== "fora" && F.own !== "semcol" && g._con) return "con";
   return "";
 }
 
@@ -2042,10 +2059,115 @@ function cuiTexto() {
   return L.concat(CUI.extras).join("\r\n") + "\r\n";
 }
 
-function cuiMudou() { cuiSelIds = null; cuiSalvar(); }
+function cuiMudou() { cuiSelIds = null; cuiEmCache = null; cuiSalvar(); }
+
+/* As telas que mostram o catalogo com filtros e abas: Adicionar e Biblioteca. */
+function cuiCatalogo() { return cuiTela === "adicionar" || cuiTela === "biblioteca"; }
+
+/* ---- Biblioteca: passear pelo console e distribuir os jogos pelas colecoes ----
+   O jogo entra em quantas colecoes manuais quiser, pelo "+" do card ou pela
+   ficha, e grava na hora: com varias colecoes de uma vez, rascunho com Concluir
+   confundiria. O clique errado se desfaz pelo aviso, como no remover. */
+
+/* Todo Title ID que esta em alguma colecao manual: juncao e intersecao so
+   juntam o que ja esta nelas. */
+function cuiTodosIds() {
+  var s = new Set();
+  CUI.cols.forEach(function (c) { if (c.tipo === "jogos") c.ids.forEach(function (t) { s.add(t); }); });
+  return s;
+}
+
+/* As colecoes que contem o jogo, de todos os tipos, em ordem de nome. */
+function cuiColsDe(g) {
+  if (!cuiEmCache) cuiEmCache = cuiOrdenadas().map(function (c) { return { c: c, ids: cuiIds(c) }; });
+  return cuiEmCache.filter(function (x) {
+    return g._tids.some(function (t) { return x.ids.has(t); });
+  }).map(function (x) { return x.c; });
+}
+
+function cuiEmHtml(g) {
+  var cs = g._tids.length ? cuiColsDe(g) : [];
+  return '<div class="cui-em">' + (cs.length ? "Em " + cs.map(function (c) { return esc(c.nome); }).join(", ") : "") + "</div>";
+}
+
+/* As caixas das colecoes manuais, marcadas onde o jogo ja esta. */
+function cuiVincHtml(g) {
+  var ms = cuiOrdenadas().filter(function (c) { return c.tipo === "jogos"; });
+  if (!ms.length) return '<p class="cui-vinc-vazio">Nenhuma coleção manual ainda.</p>';
+  var dentro = cuiColsDe(g);
+  return ms.map(function (c) {
+    return '<label class="chk"><input type="checkbox" class="cui-vinc" value="' + c.id + '"' +
+      (dentro.indexOf(c) >= 0 ? " checked" : "") + "> " + esc(c.nome) + "</label>";
+  }).join("");
+}
+
+function cuiFichaCols() {
+  if (AREA !== "cui" || cuiTela !== "biblioteca" || !cuiFichaObj) return "";
+  return '<div class="cui-ficha-cols"><h4>Coleções</h4><div class="cui-vinc-lista">' + cuiVincHtml(cuiFichaObj) + "</div></div>";
+}
+
+/* Poe ou tira o jogo de uma colecao manual, com todos os Title IDs dele. */
+function cuiVincular(g, id, por) {
+  var c = cuiPorId(id);
+  if (!c || c.tipo !== "jogos" || !g._tids.length) return;
+  var antes = c.ids.slice();
+  if (por) g._tids.forEach(function (t) { if (c.ids.indexOf(t) < 0) c.ids.push(t); });
+  else c.ids = c.ids.filter(function (t) { return g._tids.indexOf(t) < 0; });
+  cuiMudou(); cuiRepintarVinc();
+  cuiAvisar(g.title + (por ? " entrou em " : " saiu de ") + c.nome, function () {
+    var atual = cuiPorId(id);
+    if (!atual) return;
+    atual.ids = antes;
+    cuiMudou(); cuiRepintarVinc();
+  });
+}
+
+/* Depois de mudar: a linha "Em" dos cards na tela (o disco 2 muda junto), as
+   caixas abertas e a contagem da aba. */
+function cuiRepintarVinc() {
+  $$(".card").forEach(function (k) {
+    var g = jogoDoCard(k), em = k.querySelector(".cui-em");
+    if (g && em) em.outerHTML = cuiEmHtml(g);
+  });
+  var pop = $("#cui-pop");
+  if (pop && cuiPopObj) pop.querySelector(".cui-vinc-lista").innerHTML = cuiVincHtml(cuiPopObj);
+  var fl = $("#modal-body .cui-vinc-lista");
+  if (fl && cuiFichaObj) fl.innerHTML = cuiVincHtml(cuiFichaObj);
+  cuiPintar();
+}
+
+/* A lista do "+": junto do botao, fecha no clique fora, no Esc e ao rolar. */
+var cuiPopObj = null;
+function cuiAbrirVinc(card, btn) {
+  var aberto = $("#cui-pop");
+  cuiFecharVinc();
+  var g = jogoDoCard(card);
+  if (!g || (aberto && aberto.dataset.id === g.id)) return;   // o mesmo "+" fecha
+  cuiPopObj = g;
+  btn.setAttribute("aria-expanded", "true");
+  var pop = document.createElement("div");
+  pop.id = "cui-pop"; pop.className = "cui-pop"; pop.dataset.id = g.id;
+  pop.innerHTML = "<h4>Coleções</h4><div class=\"cui-vinc-lista\">" + cuiVincHtml(g) + "</div>";
+  document.body.appendChild(pop);
+  var r = btn.getBoundingClientRect(), w = pop.offsetWidth, h = pop.offsetHeight;
+  pop.style.left = Math.max(8, Math.min(r.right - w, innerWidth - w - 8)) + "px";
+  pop.style.top = (r.bottom + 6 + h > innerHeight - 8 ? Math.max(8, r.top - 6 - h) : r.bottom + 6) + "px";
+}
+function cuiFecharVinc() {
+  var p = $("#cui-pop");
+  if (p) p.remove();
+  cuiPopObj = null;
+  $$('.vinc-btn[aria-expanded="true"]').forEach(function (b) { b.setAttribute("aria-expanded", "false"); });
+}
+
+function cuiAbrirBiblioteca() {
+  CUI.sel = null; cuiMudou();
+  cuiOwnAntes = F.own; F.own = "console"; marcarVista();
+  cuiAviso = ""; cuiIr("biblioteca");
+}
 
 function cuiIr(tela) {
-  cuiFecharAviso();
+  cuiFecharAviso(); cuiFecharVinc();
   cuiTela = tela;
   document.body.dataset.tela = tela;
   render();
@@ -2067,6 +2189,7 @@ function cuiAdicionar() {
 /* Saiu do Adicionar: o rascunho vai embora e o catalogo volta a sua aba. */
 function cuiSairAdicionar() {
   cuiRascunho = cuiRascunhoSet = cuiForaSet = null;
+  cuiFecharVinc();
   if (cuiOwnAntes !== null) { F.own = cuiOwnAntes; cuiOwnAntes = null; marcarVista(); }
 }
 
@@ -2406,6 +2529,7 @@ function cuiPintar() {
   if (AREA !== "cui") return;
   var c = cuiPorId(CUI.sel), h = "";
   if (cuiTela === "colecoes") {
+    if (CUI_INV) h += '<div class="cui-acoes"><button class="btn" id="cui-bib">Biblioteca</button></div>';
     if (!CUI.cols.length)
       h = "<span>Nenhuma coleção ainda. Importe o vault.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
     if (CUI_INV) {
@@ -2432,6 +2556,10 @@ function cuiPintar() {
         k.fora.map(function (t) { return "<code>" + t + "</code>"; }).join(" ") + "</div>" : "") +
       (cuiOrigemMorta(c) ? '<div class="cui-nota">Uma das coleções desta interseção não existe mais, e por isso ' +
         "ela está vazia. Escolha as coleções de novo em Editar.</div>" : "");
+  } else if (cuiTela === "biblioteca") {
+    h = '<button class="cui-seta" id="cui-voltar" title="Voltar para as coleções" aria-label="Voltar">‹</button>' +
+      '<div class="cui-trilha"><button id="cui-voltar2">Coleções</button><i>/</i><b>Biblioteca</b></div>' +
+      '<span class="cui-conta">' + cuiResumoInv(CUI_INV.itens) + "</span>";
   } else if (cuiTela === "adicionar" && c) {
     var n = cuiContarIds(cuiRascunho).n;
     // Sair pela trilha e o mesmo que Cancelar: o rascunho nao e gravado.
@@ -2444,13 +2572,20 @@ function cuiPintar() {
   }
   if (cuiAviso) h += '<div class="cui-nota">' + esc(cuiAviso) + "</div>";
   $("#cui-barra").innerHTML = h;
-  var abas = !(CUI_INV && cuiTela === "adicionar");
-  $("#vista-con").hidden = $("#vista-fora").hidden = abas;
+  var add = !!CUI_INV && cuiTela === "adicionar", bib = !!CUI_INV && cuiTela === "biblioteca";
+  $("#vista-con").hidden = !(add || bib);
+  $("#vista-fora").hidden = !add;
+  $("#vista-semcol").hidden = !bib;
   if (CUI_INV) $("#s-con").textContent = CUI_INV.itens.length.toLocaleString("pt-BR");
-  // A contagem e a do rascunho ao vivo: diz quanto do console ainda falta pôr.
-  if (!abas) $("#s-fora").textContent = cuiConsole().lista.filter(function (g) {
-    return g._tids.length && !cuiNoRascunho(g);
-  }).length.toLocaleString("pt-BR");
+  // As contagens sao ao vivo: dizem quanto do console ainda falta pôr.
+  var falta = function (dentro) {
+    return cuiConsole().lista.filter(function (g) { return g._tids.length && !dentro(g); }).length.toLocaleString("pt-BR");
+  };
+  if (add) $("#s-fora").textContent = falta(cuiNoRascunho);
+  if (bib) {
+    var todos = cuiTodosIds();
+    $("#s-semcol").textContent = falta(function (g) { return g._tids.some(function (t) { return todos.has(t); }); });
+  }
 }
 
 /* Na carga a area vem do endereco (#collectionui); render() ainda vai rodar. */
@@ -2503,11 +2638,24 @@ function ligarCui() {
     var id = e.target.id;
     if (id === "cui-voltar" || id === "cui-voltar2") { cuiSairAdicionar(); CUI.sel = null; cuiMudou(); cuiIr("colecoes"); }
     else if (id === "cui-add") cuiAdicionar();
+    else if (id === "cui-bib") cuiAbrirBiblioteca();
     else if (id === "cui-concluir") cuiConcluir();
     else if (id === "cui-cancelar" || id === "cui-trilha-col" || id === "cui-trilha-col2") cuiCancelar();
     else if (id === "cui-editar") cuiAbrirForm(cuiPorId(CUI.sel));
     else if (id === "cui-apagar") cuiApagar();
   });
+  // As caixas do "+" e da ficha gravam na hora.
+  document.addEventListener("change", function (e) {
+    var x = e.target;
+    if (!x.classList || !x.classList.contains("cui-vinc")) return;
+    var g = x.closest("#cui-pop") ? cuiPopObj : cuiFichaObj;
+    if (g) cuiVincular(g, +x.value, x.checked);
+  });
+  document.addEventListener("click", function (e) {
+    if ($("#cui-pop") && !e.target.closest("#cui-pop, .vinc-btn")) cuiFecharVinc();
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") cuiFecharVinc(); });
+  window.addEventListener("scroll", function () { if ($("#cui-pop")) cuiFecharVinc(); }, { passive: true });
   $("#aviso-desfazer").onclick = function () {
     var f = cuiDesfazer;
     cuiFecharAviso();
