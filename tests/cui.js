@@ -361,13 +361,17 @@
   ok('a aba Sem colecao mostra so o que nao esta em nenhuma',
      $$('.card').map(x => x.dataset.id).sort().join(' ') === 'con-J00000001 con-J00000002', $$('.card').map(x => x.dataset.id).join(' '));
   porId('con-J00000001').click(); await wait(400);
-  const caixas = $$('#modal-body .cui-vinc');
-  ok('a ficha traz as colecoes manuais, desmarcadas', caixas.length === 2 && caixas.every(x => !x.checked),
+  ok('a ficha tem a linha do card: sem etiqueta e com o +', !!$('#modal-body .cui-ficha-cols .vinc-btn') &&
+     $$('#modal-body .cui-ficha-cols .tag').length === 0);
+  $('#modal-body .cui-ficha-cols .vinc-btn').click(); await wait(200);
+  const caixas = $$('#cui-pop .cui-vinc');
+  ok('o + da ficha abre as colecoes manuais, desmarcadas', caixas.length === 2 && caixas.every(x => !x.checked),
      caixas.map(x => x.parentNode.textContent).join(','));
-  const outra = caixas.find(x => /Outra/.test(x.parentNode.textContent));
-  outra.click(); await wait(300);
-  ok('marcar na ficha grava na hora', (linha(await exportar(), 'Outra') || '').indexOf(T(a.titleId)) > 0 &&
-     $$('#modal-body .cui-vinc').find(x => /Outra/.test(x.parentNode.textContent)).checked, linha(await exportar(), 'Outra'));
+  caixas.find(x => /Outra/.test(x.parentNode.textContent)).click(); await wait(300);
+  ok('marcar pela ficha grava na hora e vira etiqueta nela', (linha(await exportar(), 'Outra') || '').indexOf(T(a.titleId)) > 0 &&
+     $$('#modal-body .cui-ficha-cols .tag').map(t => t.textContent).join() === 'Outra' && !$('#aviso').hidden,
+     linha(await exportar(), 'Outra'));
+  document.body.click(); await wait(100);
   $('#modal').click(); await wait(200);
   ok('o card fica na aba e os dois discos dizem a colecao', !!porId('con-J00000001') &&
      cols(porId('con-J00000002')) === 'Outra' && $('#s-semcol').textContent === '1',

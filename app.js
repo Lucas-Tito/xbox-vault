@@ -1548,7 +1548,7 @@ function ligarEventos() {
     if (AREA === "cui") {
       if (cuiTela === "adicionar" && !e.target.closest(".info-btn")) { cuiAlternar(card); return; }   // marca no rascunho
       if (e.target.closest(".rem-btn")) { cuiRemover(card); return; }
-      if (e.target.closest(".vinc-btn")) { cuiAbrirVinc(card, e.target.closest(".vinc-btn")); return; }
+      if (e.target.closest(".vinc-btn")) { cuiAbrirVinc(jogoDoCard(card), e.target.closest(".vinc-btn")); return; }
       // dentro da colecao o clique abre a ficha, como no catalogo
     }
     var btn = e.target.closest(".wish-btn, .hide-btn");
@@ -2108,7 +2108,9 @@ function cuiVincHtml(g) {
 
 function cuiFichaCols() {
   if (AREA !== "cui" || cuiTela !== "biblioteca" || !cuiFichaObj) return "";
-  return '<div class="cui-ficha-cols"><h4>Coleções</h4><div class="cui-vinc-lista">' + cuiVincHtml(cuiFichaObj) + "</div></div>";
+  // O mesmo do card: as colecoes em etiqueta e o "+" que abre a lista.
+  return '<div class="cui-ficha-cols">' + cuiEmHtml(cuiFichaObj) +
+    '<button class="vinc-btn" title="Coleções" aria-label="Escolher coleções" aria-haspopup="true">' + ICO_MAIS + "</button></div>";
 }
 
 /* Poe ou tira o jogo de uma colecao manual, com todos os Title IDs dele. */
@@ -2136,17 +2138,16 @@ function cuiRepintarVinc() {
   });
   var pop = $("#cui-pop");
   if (pop && cuiPopObj) pop.querySelector(".cui-vinc-lista").innerHTML = cuiVincHtml(cuiPopObj);
-  var fl = $("#modal-body .cui-vinc-lista");
-  if (fl && cuiFichaObj) fl.innerHTML = cuiVincHtml(cuiFichaObj);
+  var fe = $("#modal-body .cui-ficha-cols .cui-em");
+  if (fe && cuiFichaObj) fe.outerHTML = cuiEmHtml(cuiFichaObj);
   cuiPintar();
 }
 
 /* A lista do "+": junto do botao, fecha no clique fora, no Esc e ao rolar. */
 var cuiPopObj = null;
-function cuiAbrirVinc(card, btn) {
+function cuiAbrirVinc(g, btn) {
   var aberto = $("#cui-pop");
   cuiFecharVinc();
-  var g = jogoDoCard(card);
   if (!g || (aberto && aberto.dataset.id === g.id)) return;   // o mesmo "+" fecha
   cuiPopObj = g;
   btn.setAttribute("aria-expanded", "true");
@@ -2653,14 +2654,18 @@ function ligarCui() {
   document.addEventListener("change", function (e) {
     var x = e.target;
     if (!x.classList || !x.classList.contains("cui-vinc")) return;
-    var g = x.closest("#cui-pop") ? cuiPopObj : cuiFichaObj;
-    if (g) cuiVincular(g, +x.value, x.checked);
+    if (cuiPopObj) cuiVincular(cuiPopObj, +x.value, x.checked);
   });
   document.addEventListener("click", function (e) {
     if ($("#cui-pop") && !e.target.closest("#cui-pop, .vinc-btn")) cuiFecharVinc();
   });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") cuiFecharVinc(); });
-  window.addEventListener("scroll", function () { if ($("#cui-pop")) cuiFecharVinc(); }, { passive: true });
+  // Captura: rolar a ficha, e nao so a pagina, tambem fecha.
+  document.addEventListener("scroll", function () { if ($("#cui-pop")) cuiFecharVinc(); }, { passive: true, capture: true });
+  $("#modal-body").addEventListener("click", function (e) {
+    var b = e.target.closest(".vinc-btn");
+    if (b && cuiFichaObj) cuiAbrirVinc(cuiFichaObj, b);
+  });
   $("#aviso-desfazer").onclick = function () {
     var f = cuiDesfazer;
     cuiFecharAviso();
