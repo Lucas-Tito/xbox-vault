@@ -47,7 +47,8 @@
   // ---- importar: formato atual, uniao, CRLF, BOM ----
   const CAB = '# CollectionUI: uma colecao por linha, no formato\r\n' +
               '#   id, tipo, nome, conteudo -- separados por barra vertical\r\n' +
-              '#   tipo jogos: TitleIds em hexa. tipo uniao: ids de colecao\r\n';
+              '#   tipo jogos: TitleIds em hexa\r\n' +
+              '#   tipo uniao e intersecao: ids de colecao, em decimal\r\n';
   const arq = CAB + '1|jogos|Zeta|' + a.titleId + ',' + b.titleId + ',0BD92375\r\n' +
                     '2|jogos|The Alfa|' + c.titleId + '\r\n' +
                     '3|uniao|Tudo|1,2\r\n';
@@ -57,6 +58,10 @@
   ok('ordem do console: sem artigo e sem caixa', nomes.join('|') === 'The Alfa|Tudo|Zeta', nomes.join('|'));
   ok('"Nova colecao" vem primeiro', $('.cui-grade').firstElementChild.id === 'cui-nova');
   ok('o quadrado traz a contagem', /\(\s*3\s*\)/.test(tile('Zeta').textContent), tile('Zeta').textContent);
+  ok('a uniao mostra a contagem resolvida e o raio, sem a palavra uniao',
+     /\(\s*4\s*\)/.test(tile('Tudo').textContent) && !/união/i.test($('.cui-grade').textContent) &&
+     !!tile('Tudo').querySelector('.cui-emblema path') && !tile('Zeta').querySelector('.cui-emblema'),
+     tile('Tudo').textContent);
 
   const ida = await exportar();
   ok('exportar sem mexer devolve o arquivo byte a byte (sem o BOM)', ida === arq, ida && ida.length + ' vs ' + arq.length);
@@ -148,8 +153,58 @@
   ok('a uniao perde a origem apagada', (await exportar()).indexOf('3|uniao|Tudo|2\r\n') >= 0);
   await abrir('The Alfa'); $('#cui-apagar').click(); await wait(500);
   const aviso = $('#cui-barra').textContent;
-  ok('uniao sem origem e apagada junto, com aviso', (await exportar()).indexOf('|uniao|') < 0 && /União apagada/.test(aviso),
+  ok('uniao sem origem e apagada junto, com aviso', (await exportar()).indexOf('|uniao|') < 0 && /Apagada junto/.test(aviso),
      aviso.slice(0, 80));
+
+  // ---- intersecao: so o que esta em todas; origem morta esvazia, nao alarga ----
+  const arqX = CAB + '1|jogos|Zeta|' + a.titleId + ',' + b.titleId + '\r\n' +
+                     '2|jogos|Alfa|' + b.titleId + ',' + c.titleId + '\r\n' +
+                     '3|uniao|Tudo|1,2\r\n' +
+                     '4|intersecao|Cruz|1,3\r\n' +
+                     '5|intersecao|Morta|2,99\r\n' +
+                     '6|intersecao|Errada|4\r\n' +
+                     '7|futuro|Tipo novo|x,y\r\n';
+  await importar(arqX);
+  ok('tipo desconhecido nao vira colecao', !tile('Tipo novo') && $$('.cui-tile[data-col]').length === 6,
+     $$('.cui-tile[data-col] b').map(x => x.textContent).join(', '));
+  ok('a intersecao conta so o que esta em todas, com a lente', /\(\s*2\s*\)/.test(tile('Cruz').textContent) &&
+     tile('Cruz').querySelectorAll('.cui-emblema circle').length === 2, tile('Cruz').textContent);
+  ok('intersecao com origem morta fica vazia', /\(\s*0\s*\)/.test(tile('Morta').textContent), tile('Morta').textContent);
+  ok('intersecao de intersecao fica vazia', /\(\s*0\s*\)/.test(tile('Errada').textContent), tile('Errada').textContent);
+  ok('exportar devolve tudo como veio, a linha desconhecida inclusive', (await exportar()) === arqX);
+  await abrir('Cruz');
+  ok('dentro da intersecao: os jogos e a regra no cabecalho', $$('.card').length === 2 && !!card(a) && !!card(b) &&
+     /em todas: Zeta, Tudo/.test($('#cui-barra').textContent) && !$('#cui-add'), $('#cui-barra').textContent.slice(0, 120));
+  $('#cui-voltar').click(); await wait(400);
+  await abrir('Morta');
+  ok('a origem morta e explicada na barra', /não existe mais/.test($('#cui-barra').textContent));
+  $('#cui-voltar').click(); await wait(400);
+  await abrir('Zeta'); $('#cui-apagar').click(); await wait(500);
+  const semZeta = await exportar();
+  ok('apagar uma origem: a uniao encolhe, a intersecao fica com a origem e vazia',
+     semZeta.indexOf('\r\n3|uniao|Tudo|2\r\n') > 0 && semZeta.indexOf('\r\n4|intersecao|Cruz|1,3\r\n') > 0 &&
+     /\(\s*0\s*\)/.test(tile('Cruz').textContent), semZeta);
+
+  // ---- nova intersecao pelo formulario, com a contagem ao vivo ----
+  $('#cui-nova').click(); await wait(200);
+  $('#cui-nome').value = 'Cruzada';
+  const rx = $('input[name=cui-tipo][value=intersecao]'); rx.checked = true; rx.dispatchEvent(new Event('change'));
+  await wait(100);
+  const opc = $$('.cui-origem').map(x => +x.value);
+  ok('a intersecao so oferece manual e juncao como origem', opc.length === 2 && opc.indexOf(2) >= 0 && opc.indexOf(3) >= 0,
+     opc.join(','));
+  $$('.cui-origem').forEach(x => { x.checked = true; x.dispatchEvent(new Event('change')); });
+  ok('o formulario diz quantos jogos daria', /Daria 2 jogos/.test($('#cui-daria').textContent), $('#cui-daria').textContent);
+  $('#cui-ok').click(); await wait(500);
+  ok('a intersecao criada vai para o arquivo', (await exportar()).split('\r\n').some(x => /^\d+\|intersecao\|Cruzada\|(2,3|3,2)$/.test(x)));
+  $('#cui-voltar').click(); await wait(400);
+
+  // ---- id da linha guardada fica reservado ----
+  await importar(CAB + '1|jogos|Z|' + a.titleId + '\r\n2|uniao|U|1\r\n1|futuro|X|\r\n');
+  const colide = (await exportar()).split('\r\n');
+  const zId = (colide.find(x => /\|jogos\|Z\|/.test(x)) || '').split('|')[0];
+  ok('colecao com o id de uma linha guardada e renumerada, e a uniao vai junto',
+     zId && zId !== '1' && colide.indexOf('2|uniao|U|' + zId) > 0 && colide.indexOf('1|futuro|X|') > 0, colide.join(' / '));
 
   // ---- formato antigo "nome|TitleIds" ----
   await importar('Antiga|' + a.titleId.toLowerCase() + '\n');

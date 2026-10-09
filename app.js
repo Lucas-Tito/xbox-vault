@@ -1617,12 +1617,17 @@ function ligarEventos() {
 
    O formato e o do app/src/colecoes.cpp: tres linhas de comentario e uma
    colecao por linha, "id|tipo|nome|conteudo", CRLF. tipo jogos guarda Title IDs
-   em hexa (8 digitos, maiusculos); tipo uniao guarda ids de colecao. */
+   em hexa (8 digitos, maiusculos); tipos uniao e intersecao guardam ids de
+   colecao. A linha de tipo que o Vault nao conhece fica em CUI.extras, como
+   chegou, e volta igual no export. */
 var AREA = location.hash === "#collectionui" ? "cui" : "cat";
 var CUI_KEY = "xbx.cui.v1";
-var CUI = { cols: [], sel: null };
+var CUI = { cols: [], sel: null, extras: [] };
 try { Object.assign(CUI, JSON.parse(localStorage.getItem(CUI_KEY) || "{}")); } catch (e) {}
 delete CUI.vista;           // do seletor Todos/Que tenho/Da colecao, que saiu
+if (!Array.isArray(CUI.extras)) CUI.extras = [];
+// O bool uniao virou tipo: jogos, uniao ou intersecao.
+CUI.cols.forEach(function (c) { if (!c.tipo) c.tipo = c.uniao ? "uniao" : "jogos"; delete c.uniao; });
 var cuiTela = "colecoes";   // colecoes | jogos | adicionar
 // Ao adicionar, a marcacao vai numa COPIA dos Title IDs: e o que da sentido ao
 // Cancelar, como o rascunho da previa.
@@ -1740,16 +1745,47 @@ function cuiPorId(id) {
   return null;
 }
 
-/* Os Title IDs de uma colecao. A uniao junta os das origens. */
+/* A escada do console: jogos < uniao < intersecao. A uniao so tem origem de
+   jogos; a intersecao, de jogos ou uniao. Nenhum tipo aceita o proprio, entao
+   resolver desce no maximo dois degraus, sem ciclo, nem em arquivo editado a mao. */
+function cuiComposta(c) { return !!c && c.tipo !== "jogos"; }
+function cuiPodeSerOrigem(o, alvo) {
+  if (!o) return false;
+  if (alvo === "uniao") return o.tipo === "jogos";
+  if (alvo === "intersecao") return o.tipo === "jogos" || o.tipo === "uniao";
+  return false;
+}
+
+/* Os Title IDs de uma colecao, como o Tem() do console.
+   - Uniao: o que esta em qualquer origem; origem morta so encolhe, e e ignorada.
+   - Intersecao: o que esta em todas. Origem morta derruba tudo, em vez de ser
+     ignorada: ignorar faria "co-op nao zerado" virar "co-op", maior que o certo
+     e com cara de certo. E sem origem nenhuma e vazia, nao o catalogo inteiro. */
 function cuiIds(c) {
   var s = new Set();
   if (!c) return s;
-  if (!c.uniao) { c.ids.forEach(function (t) { s.add(t); }); return s; }
-  c.origens.forEach(function (o) {
-    var oc = cuiPorId(o);
-    if (oc && !oc.uniao) oc.ids.forEach(function (t) { s.add(t); });
-  });
+  if (c.tipo === "jogos") { c.ids.forEach(function (t) { s.add(t); }); return s; }
+  var os = c.origens.map(cuiPorId);
+  if (c.tipo === "uniao") {
+    os.forEach(function (o) {
+      if (cuiPodeSerOrigem(o, "uniao")) cuiIds(o).forEach(function (t) { s.add(t); });
+    });
+    return s;
+  }
+  if (c.tipo === "intersecao" && os.length &&
+      os.every(function (o) { return cuiPodeSerOrigem(o, "intersecao"); })) {
+    var cada = os.map(cuiIds);
+    cada[0].forEach(function (t) {
+      if (cada.every(function (x) { return x.has(t); })) s.add(t);
+    });
+  }
   return s;
+}
+
+/* Intersecao com origem que nao resolve: fica vazia ate alguem escolher de novo. */
+function cuiOrigemMorta(c) {
+  return !!c && c.tipo === "intersecao" &&
+    !c.origens.every(function (o) { return cuiPodeSerOrigem(cuiPorId(o), "intersecao"); });
 }
 
 function cuiNaSel(g) {
@@ -1763,10 +1799,10 @@ function cuiNoRascunho(g) {
   return false;
 }
 
-/* Colecao de jogos aberta: e onde da para adicionar e remover. A uniao so le. */
+/* Colecao de jogos aberta: e onde da para adicionar e remover. A composta so le. */
 function cuiEditavel() {
   var c = cuiPorId(CUI.sel);
-  return !!(c && !c.uniao);
+  return !!(c && c.tipo === "jogos");
 }
 
 /* Quantos JOGOS a colecao tem: os do catalogo contam uma vez, por mais Title
@@ -1813,10 +1849,12 @@ function cuiSanear(nome) { return cuiSanearArquivo(String(nome || "").trim()).tr
    1": apagar a de maior id devolvia aquele numero ao estoque, e criar uma de cada
    lado antes de sincronizar dava o MESMO id a colecoes diferentes, e uma uniao
    passava a apontar para a errada, em silencio. Sortear em 31 bits resolve sem os
-   dois lados combinarem nada. Os ids pequenos que ja existem continuam valendo. */
-function cuiProximoId(cols) {
+   dois lados combinarem nada. Os ids pequenos que ja existem continuam valendo.
+   O id de linha guardada como chegou (tipo desconhecido) tambem esta ocupado. */
+function cuiProximoId(cols, extras) {
   var usados = {};
   (cols || CUI.cols).forEach(function (c) { usados[c.id] = 1; });
+  (extras || CUI.extras).forEach(function (l) { usados[cuiAtoi(l)] = 1; });
   for (var t = 0; t < 64; t++) {
     var id = 1 + Math.floor(Math.random() * 2147483647);   // 1 a 2147483647
     if (!usados[id]) return id;
@@ -1828,20 +1866,24 @@ function cuiProximoId(cols) {
   return maior + 1;
 }
 
-/* O LimparUnioes do app: uniao so aponta para colecao de jogos que existe, e a
-   que fica sem origem e apagada. Devolve os nomes das apagadas. */
-function cuiLimparUnioes(cols) {
+/* O LimparCompostas do app: a uniao perde a origem que nao resolve, e a
+   composta que fica sem origem nenhuma e apagada. A intersecao NAO e podada:
+   tirar um fator ALARGA o resultado, entao a origem morta fica, a intersecao
+   fica vazia e isso aparece, em vez de um conjunto errado passar despercebido.
+   Repete ate parar: apagar uma uniao pode esvaziar a intersecao que a usava.
+   Devolve os nomes das apagadas. */
+function cuiLimparCompostas(cols) {
   var apagadas = [], mexeu = true;
   while (mexeu) {
     mexeu = false;
     for (var i = 0; i < cols.length; i++) {
       var c = cols[i];
-      if (!c.uniao) continue;
+      if (c.tipo === "jogos") continue;
       var antes = c.origens.length;
-      c.origens = c.origens.filter(function (o) {
+      if (c.tipo === "uniao") c.origens = c.origens.filter(function (o) {
         var oc = null;
-        for (var k = 0; k < cols.length; k++) if (cols[k].id === o) oc = cols[k];
-        return oc && !oc.uniao;
+        for (var k = 0; k < cols.length; k++) if (cols[k].id === o) { oc = cols[k]; break; }
+        return cuiPodeSerOrigem(oc, "uniao");
       });
       if (c.origens.length !== antes) mexeu = true;
       if (!c.origens.length) { apagadas.push(c.nome); cols.splice(i, 1); mexeu = true; break; }
@@ -1870,30 +1912,39 @@ function cuiAtoi(t) {
    descarta some do console no proximo export, sem aviso.
    - O que separa colecao de comentario e a BARRA, nao o "#": uma colecao
      chamada "#1 favoritos" e valida. O cabecalho nao tem barra.
-   - Formato novo so quando abre com numero, barra, e o segundo campo e "jogos"
-     ou "uniao" ("1942|FFED0707" e uma colecao antiga chamada 1942).
-   - Linha nova cortada no meio ("9|jogos|Nome"): fica a colecao, sem conteudo.
+   - Formato novo quando abre com numero, barra, e tem a SEGUNDA barra ("1942|
+     FFED0707" e uma colecao antiga chamada 1942: o antigo nunca tem duas).
+   - Tipo que o Vault nao conhece: a linha nao e lida, e guardada inteira em
+     cols.extras e volta igual no export. Vao existir tipos novos; descartar a
+     linha a apagaria do console na primeira regravacao.
+   - Composta cortada no meio (sem o conteudo) tambem e guardada como chegou:
+     sem origem ela seria apagada.
+   - Colecao de jogos cortada no meio ("9|jogos|Nome"): fica, sem conteudo.
    - Formato antigo: nome ate a primeira barra, Title IDs no resto.
    - Id 0 e as antigas ganham id sorteado depois, na ordem do arquivo.
    - Id repetido: a SEGUNDA ganha id sorteado e isso vira aviso (cols.avisos). E a
      primeira que o app ja devolvia ao procurar pelo id, entao as unioes que
      existem continuam apontando para onde apontavam.
-   - Title ID repetido fica, e 0 sai; origem de uniao em decimal, so > 0.
+   - Id igual ao de uma linha guardada: a colecao viva ganha id sorteado, e as
+     origens que apontavam para ele vao junto (so a viva podia ser a origem).
+   - Title ID repetido fica, e 0 sai; origem de composta em decimal, so > 0.
    A unica tolerancia a mais e o BOM no comeco do arquivo, que o app nao espera. */
+var CUI_TIPOS = ["jogos", "uniao", "intersecao"];
 function cuiLer(txt) {
-  var cols = [];
+  var cols = [], extras = [];
   String(txt).replace(/^\uFEFF/, "").split("\n").forEach(function (l) {
     l = l.replace(/[\r\n]+$/, "");
     var barra = l.indexOf("|");
     if (barra < 0) return;
     var b2 = l.indexOf("|", barra + 1);
     var tipo = b2 < 0 ? "" : l.slice(barra + 1, b2);
-    var novo = barra > 0 && /^\d+$/.test(l.slice(0, barra)) && (tipo === "jogos" || tipo === "uniao");
-    var c = { id: 0, uniao: false, nome: "", ids: [], origens: [] }, conteudo = "";
+    var novo = barra > 0 && /^\d+$/.test(l.slice(0, barra)) && b2 > 0;
+    var b3 = novo ? l.indexOf("|", b2 + 1) : -1;
+    if (novo && (CUI_TIPOS.indexOf(tipo) < 0 || (tipo !== "jogos" && b3 < 0))) { extras.push(l); return; }
+    var c = { id: 0, tipo: "jogos", nome: "", ids: [], origens: [] }, conteudo = "";
     if (novo) {
       c.id = cuiAtoi(l.slice(0, barra));
-      c.uniao = tipo === "uniao";
-      var b3 = l.indexOf("|", b2 + 1);
+      c.tipo = tipo;
       if (b3 < 0) c.nome = l.slice(b2 + 1);
       else { c.nome = l.slice(b2 + 1, b3); conteudo = l.slice(b3 + 1); }
     } else {
@@ -1903,7 +1954,7 @@ function cuiLer(txt) {
     c.nome = cuiSanearArquivo(c.nome);
     conteudo.split(",").forEach(function (t) {
       if (!t) return;                              // o strtok pula token vazio
-      if (c.uniao) { var o = cuiAtoi(t); if (o > 0) c.origens.push(o); }
+      if (c.tipo !== "jogos") { var o = cuiAtoi(t); if (o > 0) c.origens.push(o); }
       else {
         var v = cuiStrtoulHex(t);
         if (v) c.ids.push(("0000000" + v.toString(16).toUpperCase()).slice(-8));
@@ -1911,31 +1962,45 @@ function cuiLer(txt) {
     });
     cols.push(c);
   });
-  cols.forEach(function (c) { if (c.id === 0) c.id = cuiProximoId(cols); });
+  cols.forEach(function (c) { if (c.id === 0) c.id = cuiProximoId(cols, extras); });
   cols.avisos = [];
   for (var i = 0; i < cols.length; i++) {
     for (var k = 0; k < i; k++) {
       if (cols[k].id !== cols[i].id) continue;
-      var novo = cuiProximoId(cols);
+      var novo = cuiProximoId(cols, extras);
       cols.avisos.push('"' + cols[i].nome + '" tinha o id ' + cols[i].id + " repetido e virou " + novo);
       cols[i].id = novo;
       break;
     }
   }
-  cuiLimparUnioes(cols);
+  var guardados = {};
+  extras.forEach(function (l) { guardados[cuiAtoi(l)] = 1; });
+  cols.forEach(function (c) {
+    if (!guardados[c.id]) return;
+    var era = c.id, novo = cuiProximoId(cols, extras);
+    cols.forEach(function (u) {
+      if (u.tipo !== "jogos") u.origens = u.origens.map(function (o) { return o === era ? novo : o; });
+    });
+    c.id = novo;
+  });
+  if (extras.length) cols.avisos.push(extras.length + (extras.length > 1 ? " linhas" : " linha") +
+    " de tipo que o Vault não conhece, guardada" + (extras.length > 1 ? "s" : "") + " como veio");
+  cuiLimparCompostas(cols);
+  cols.extras = extras;
   return cols;
 }
 
 function cuiTexto() {
-  cuiLimparUnioes(CUI.cols);
+  cuiLimparCompostas(CUI.cols);
   var L = ["# CollectionUI: uma colecao por linha, no formato",
            "#   id, tipo, nome, conteudo -- separados por barra vertical",
-           "#   tipo jogos: TitleIds em hexa. tipo uniao: ids de colecao"];
+           "#   tipo jogos: TitleIds em hexa",
+           "#   tipo uniao e intersecao: ids de colecao, em decimal"];
   CUI.cols.forEach(function (c) {
-    L.push(c.id + "|" + (c.uniao ? "uniao" : "jogos") + "|" + cuiSanearArquivo(c.nome) + "|" +
-      (c.uniao ? c.origens.join(",") : c.ids.join(",")));
+    L.push(c.id + "|" + c.tipo + "|" + cuiSanearArquivo(c.nome) + "|" +
+      (c.tipo !== "jogos" ? c.origens.join(",") : c.ids.join(",")));
   });
-  return L.join("\r\n") + "\r\n";
+  return L.concat(CUI.extras).join("\r\n") + "\r\n";
 }
 
 function cuiMudou() { cuiSelIds = null; cuiSalvar(); }
@@ -1952,7 +2017,7 @@ function cuiAbrir(id) { CUI.sel = id; cuiAviso = ""; cuiMudou(); cuiIr("jogos");
 
 function cuiAdicionar() {
   var c = cuiPorId(CUI.sel);
-  if (!c || c.uniao) return;
+  if (!c || c.tipo !== "jogos") return;
   cuiRascunho = c.ids.slice(); cuiRascunhoSet = new Set(cuiRascunho);
   // Com o inventario, o fluxo principal e montar com o que o console tem; as
   // outras abas continuam ali para olhar o catalogo.
@@ -2057,7 +2122,7 @@ function cuiImportar(buf) {
   if (!cols.length) { alert("Nenhuma coleção nesse arquivo."); return; }
   if (CUI.cols.length && !confirm("Substituir as " + CUI.cols.length + " coleções daqui pelas " +
       cols.length + " do arquivo?")) return;
-  CUI.cols = cols;
+  CUI.cols = cols; CUI.extras = cols.extras;
   CUI.sel = null;
   cuiAviso = cols.length + " coleç" + (cols.length > 1 ? "ões importadas" : "ão importada") + "." +
     (cols.avisos.length ? " " + cols.avisos.join("; ") + "." : "");
@@ -2069,7 +2134,7 @@ function cuiImportarVault(buf) {
   try { v = cuiLerVault(buf); } catch (e) { alert(e.message); return; }
   if (CUI.cols.length && !confirm("Substituir as " + CUI.cols.length + " coleções daqui pelas " +
       v.cols.length + " do console? O inventário do console também é trocado pelo do arquivo.")) return;
-  CUI.cols = v.cols;
+  CUI.cols = v.cols; CUI.extras = v.cols.extras;
   CUI.sel = null;
   CUI_INV = { t: Date.now(), itens: v.itens };
   try { localStorage.setItem(CUI_INV_KEY, JSON.stringify(CUI_INV)); } catch (e) {}
@@ -2115,7 +2180,7 @@ function cuiAlternar(card) {
 function cuiRemover(card) {
   var c = cuiPorId(CUI.sel);
   var g = jogoDoCard(card);
-  if (!c || c.uniao || !g) return;
+  if (!c || c.tipo !== "jogos" || !g) return;
   var antes = c.ids.slice();
   c.ids = c.ids.filter(function (t) { return g._tids.indexOf(t) < 0; });
   cuiMudou();
@@ -2166,46 +2231,87 @@ function cuiTelaColecoes() {
     h += '<button class="cui-tile" data-col="' + c.id + '"><span class="colagem">' +
       capas.map(function (g) {
         return '<img loading="lazy" src="' + esc(g.image) + '" alt="" onerror="this.remove()">';
-      }).join("") + '</span><span class="cui-tile-txt"><b>' + esc(c.nome) + "</b><i>( " +
-      (c.uniao ? "união" : cuiContar(c).n) + " )</i></span></button>";
+      }).join("") + "</span>" + cuiEmblema(c.tipo) + '<span class="cui-tile-txt"><b>' + esc(c.nome) +
+      "</b><i>( " + cuiContar(c).n + " )</i></span></button>";
   });
   $("#main").innerHTML = h + "</div>";
   cuiPintar();
 }
 
+/* O emblema do canto de cima, o mesmo da previa do console: o raio na juncao e,
+   na intersecao, dois circulos vazados com a lente cheia. A contagem embaixo e
+   sempre a resolvida, entao e o emblema que diz que a colecao e composta. */
+var CUI_NOME_TIPO = { jogos: "Coleção Manual", uniao: "Junção", intersecao: "Interseção" };
+var CUI_EFEITO = { uniao: "em qualquer uma delas", intersecao: "só em todas elas" };
+function cuiEmblema(tipo) {
+  if (tipo !== "uniao" && tipo !== "intersecao") return "";
+  var d = tipo === "uniao"
+    ? '<path d="M.62 .02 .17 .56H.44L.34 .98 .82 .42H.54Z"/>'
+    : '<g fill="none" stroke="currentColor" stroke-width=".11"><circle cx=".35" cy=".5" r=".27"/>' +
+      '<circle cx=".65" cy=".5" r=".27"/></g><path d="M.5 .2755A.27 .27 0 0 1 .5 .7245 .27 .27 0 0 1 .5 .2755Z"/>';
+  return '<svg class="cui-emblema" viewBox="0 0 1 1" fill="currentColor" role="img" aria-label="' +
+    CUI_NOME_TIPO[tipo] + ": " + CUI_EFEITO[tipo] + '"><title>' + CUI_NOME_TIPO[tipo] + ": " +
+    CUI_EFEITO[tipo] + "</title>" + d + "</svg>";
+}
+
 function cuiFormulario(titulo, c) {
-  var jogos = cuiOrdenadas().filter(function (x) { return !x.uniao && (!c || x.id !== c.id); });
   var novo = !c;
   return "<h3>" + titulo + "</h3>" +
     '<input type="text" id="cui-nome" maxlength="28" placeholder="Ex.: Para jogar em dois" value="' +
       esc(c ? c.nome : "") + '">' +
     (novo ? '<div class="seg" role="radiogroup" aria-label="Tipo">' +
-      '<label><input type="radio" name="cui-tipo" value="jogos" checked> Jogos</label>' +
-      '<label><input type="radio" name="cui-tipo" value="uniao"> União de coleções</label></div>' : "") +
-    '<div id="cui-origens"' + (novo || !c.uniao ? " hidden" : "") + '><p>Junta os jogos de:</p>' +
-    (jogos.length ? jogos.map(function (x) {
-      return '<label class="chk"><input type="checkbox" class="cui-origem" value="' + x.id + '"' +
-        (c && c.uniao && c.origens.indexOf(x.id) >= 0 ? " checked" : "") + "> " + esc(x.nome) + "</label>";
-    }).join("") : "<p>Crie antes uma coleção de jogos.</p>") + "</div>" +
+      ["jogos", "uniao", "intersecao"].map(function (t) {
+        return '<label><input type="radio" name="cui-tipo" value="' + t + '"' + (t === "jogos" ? " checked" : "") +
+          "> " + CUI_NOME_TIPO[t] + "</label>";
+      }).join("") + "</div>" : "") +
+    '<div id="cui-origens"></div>' +
     '<button class="btn primary" id="cui-ok">' + (novo ? "Criar" : "Salvar") + "</button>";
 }
 
+/* As origens que o tipo aceita, pela escada, nunca a propria colecao, e embaixo
+   quantos jogos daria agora: uma intersecao esvazia facil, e descobrir o ( 0 )
+   depois de criar e tarde. */
+function cuiPintarOrigens(tipo, c, marcadas) {
+  var box = $("#cui-origens");
+  box.hidden = tipo === "jogos";
+  if (box.hidden) return;
+  var L = cuiOrdenadas().filter(function (x) { return x !== c && cuiPodeSerOrigem(x, tipo); });
+  box.innerHTML = '<p>Os jogos que estão ' + CUI_EFEITO[tipo] + ":</p>" +
+    (L.length ? L.map(function (x) {
+      return '<label class="chk"><input type="checkbox" class="cui-origem" value="' + x.id + '"' +
+        (marcadas.indexOf(x.id) >= 0 ? " checked" : "") + "> " + esc(x.nome) + cuiEmblema(x.tipo) + "</label>";
+    }).join("") : "<p>" + (tipo === "uniao" ? "Crie antes uma coleção manual." : "Crie antes uma coleção para cruzar.") + "</p>") +
+    '<p class="cui-daria" id="cui-daria"></p>';
+  var daria = function () {
+    var os = cuiOrigensMarcadas();
+    $("#cui-daria").textContent = os.length
+      ? "Daria " + cuiContarIds(cuiIds({ tipo: tipo, ids: [], origens: os })).n + " jogos." : "";
+  };
+  $$(".cui-origem").forEach(function (x) { x.onchange = daria; });
+  daria();
+}
+function cuiOrigensMarcadas() {
+  return $$(".cui-origem").filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
+}
+
 function cuiAbrirForm(c) {
-  openModal(cuiFormulario(c ? (c.uniao ? "Editar união" : "Renomear coleção") : "Nova coleção", c));
+  openModal(cuiFormulario(c ? (cuiComposta(c) ? "Editar " + CUI_NOME_TIPO[c.tipo].toLowerCase() : "Renomear coleção")
+    : "Nova coleção", c));
   var nome = $("#cui-nome");
   nome.focus();
+  var tipo = c ? c.tipo : "jogos";
+  cuiPintarOrigens(tipo, c, c ? c.origens : []);
   $$("input[name=cui-tipo]").forEach(function (r) {
-    r.onchange = function () { $("#cui-origens").hidden = r.value !== "uniao" || !r.checked; };
+    r.onchange = function () { if (r.checked) { tipo = r.value; cuiPintarOrigens(tipo, c, cuiOrigensMarcadas()); } };
   });
   var salvar = function () {
     var n = cuiSanear(nome.value);
     if (!n) { nome.focus(); return; }
-    var uniao = c ? c.uniao : $("input[name=cui-tipo]:checked").value === "uniao";
-    var origens = $$(".cui-origem").filter(function (x) { return x.checked; }).map(function (x) { return +x.value; });
-    if (uniao && !origens.length) { alert("Escolha ao menos uma coleção para a união."); return; }
-    if (c) { c.nome = n; if (c.uniao) c.origens = origens; }
+    var origens = cuiOrigensMarcadas();
+    if (tipo !== "jogos" && !origens.length) { alert("Escolha ao menos uma coleção."); return; }
+    if (c) { c.nome = n; if (cuiComposta(c)) c.origens = origens; }
     else {
-      c = { id: cuiProximoId(), uniao: uniao, nome: n, ids: [], origens: uniao ? origens : [] };
+      c = { id: cuiProximoId(), tipo: tipo, nome: n, ids: [], origens: tipo !== "jogos" ? origens : [] };
       CUI.cols.push(c);
     }
     CUI.sel = c.id; cuiAviso = "";
@@ -2219,9 +2325,9 @@ function cuiApagar() {
   var c = cuiPorId(CUI.sel);
   if (!c || !confirm('Apagar a coleção "' + c.nome + '"?')) return;
   CUI.cols = CUI.cols.filter(function (x) { return x !== c; });
-  var foram = cuiLimparUnioes(CUI.cols);
+  var foram = cuiLimparCompostas(CUI.cols);
   CUI.sel = null;
-  cuiAviso = foram.length ? "União apagada junto, por ficar sem origem: " + foram.join(", ") + "." : "";
+  cuiAviso = foram.length ? "Apagada junto, por ficar sem origem: " + foram.join(", ") + "." : "";
   cuiMudou(); cuiIr("colecoes");
 }
 
@@ -2244,16 +2350,19 @@ function cuiPintar() {
     h = '<button class="cui-seta" id="cui-voltar" title="Voltar para as coleções" aria-label="Voltar">‹</button>' +
       '<div class="cui-trilha"><button id="cui-voltar2">Coleções</button><i>/</i><b>' + esc(c.nome) + "</b></div>" +
       '<span class="cui-conta">' + k.n + " jogo" + (k.n === 1 ? "" : "s") +
-      (c.uniao ? " · união de " + esc(c.origens.map(function (o) { return (cuiPorId(o) || {}).nome; }).join(", ")) : "") +
+      (cuiComposta(c) ? " · " + (c.tipo === "uniao" ? "em qualquer uma: " : "em todas: ") +
+        esc(c.origens.map(cuiPorId).filter(Boolean).map(function (o) { return o.nome; }).join(", ")) : "") +
       "</span>" +
       '<div class="cui-acoes">' +
-      (c.uniao ? '<button class="btn" id="cui-editar">Editar união</button>'
+      (cuiComposta(c) ? '<button class="btn" id="cui-editar">Editar</button>'
                : '<button class="btn primary" id="cui-add">Adicionar jogos</button>' +
                  '<button class="btn" id="cui-editar">Renomear</button>') +
       '<button class="btn perigo" id="cui-apagar">Apagar</button></div>' +
       (k.fora.length ? '<div class="cui-nota">' + k.fora.length + " desta coleção não aparece" +
         (k.fora.length > 1 ? "m" : "") + " no catálogo e continua no arquivo: " +
-        k.fora.map(function (t) { return "<code>" + t + "</code>"; }).join(" ") + "</div>" : "");
+        k.fora.map(function (t) { return "<code>" + t + "</code>"; }).join(" ") + "</div>" : "") +
+      (cuiOrigemMorta(c) ? '<div class="cui-nota">Uma das coleções desta interseção não existe mais, e por isso ' +
+        "ela está vazia. Escolha as coleções de novo em Editar.</div>" : "");
   } else if (cuiTela === "adicionar" && c) {
     var n = cuiContarIds(cuiRascunho).n;
     // Sair pela trilha e o mesmo que Cancelar: o rascunho nao e gravado.
