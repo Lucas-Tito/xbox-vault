@@ -95,6 +95,11 @@
   await buscar(alt.title);
   const k = card(alt);
   ok('o jogo fora da colecao vem apagado', k && k.classList.contains('apagado'));
+  k.querySelector('.info-btn').click(); await wait(300);
+  ok('o botao de ficha abre a ficha e nao marca', !$('#modal').hidden && $('.sheet').classList.contains('sheet--det') &&
+     k.classList.contains('apagado') && /(^|\D)1 marcado(?!s)/.test($('#cui-barra').textContent),
+     [!$('#modal').hidden, $('.sheet').className, k.className].join(' / '));
+  $('#modal').click(); await wait(200);
   k.click(); await wait(200);
   ok('marcar acende o jogo', k.classList.contains('nacol') && !k.classList.contains('apagado'));
   ok('a barra conta o marcado', /2 marcados/.test($('#cui-barra').textContent), $('#cui-barra').textContent.slice(0, 70));
@@ -300,6 +305,12 @@
      $('.vista[aria-selected=true]').dataset.own === 'console' && $('#s-con').textContent === '6');
   ok('No console mostra so o que veio do console', $$('.card').every(x => x.dataset.id.startsWith('con-')) &&
      !!porId('con-J00000003'), $$('.card').map(x => x.dataset.id).join(' '));
+  ok('o item do console que o catalogo conhece tem ficha; o que so o console conhece, nao',
+     !!porId('con-J00000001').querySelector('.info-btn') && !porId('con-J00000003').querySelector('.info-btn'));
+  porId('con-J00000001').querySelector('.info-btn').click(); await wait(300);
+  ok('a ficha do item do console e a do jogo do catalogo', !$('#modal').hidden &&
+     $('#modal-body').textContent.indexOf(a.title) >= 0 && porId('con-J00000001').classList.contains('nacol'));
+  $('#modal').click(); await wait(200);
   porId('con-J00000001').click(); await wait(200);
   ok('desmarcar um disco desmarca o outro, que divide o Title ID',
      porId('con-J00000001').classList.contains('apagado') && porId('con-J00000002').classList.contains('apagado'));

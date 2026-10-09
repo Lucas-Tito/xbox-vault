@@ -222,10 +222,11 @@ body.cui:not([data-tela=adicionar]) .side{display:none}
 .cui-junto{font-size:12px;line-height:1.4;color:var(--amber);display:-webkit-box;-webkit-line-clamp:2;
   -webkit-box-orient:vertical;overflow:hidden}
 .cui-junto b{font-weight:600}
-body.cui .rem-btn{width:30px;height:30px;border-radius:5px;padding:0;display:grid;place-items:center;
+body.cui .rem-btn,.info-btn{width:30px;height:30px;border-radius:5px;padding:0;display:grid;place-items:center;
   background:rgba(13,17,15,.85);border:1px solid var(--line);color:var(--txt)}
-body.cui .rem-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+body.cui .rem-btn svg,.info-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.info-btn:hover{background:var(--txt);border-color:var(--txt);color:var(--bg)}
 .res-n b{color:var(--txt);font-weight:500;font-family:var(--mono)}
 .res-n span{font-family:var(--mono)}
 

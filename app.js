@@ -421,6 +421,7 @@ function urTexto(v) { return (Math.round(v * 100) / 100).toFixed(2); }
    sai do CSS, pela classe .wish do card, entao marcar nao reescreve o botao. */
 var ICO_WISH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
 var ICO_REM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+var ICO_INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.6v.1"/></svg>';
 var ICO_HIDE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.5 9.5 6-.5.8-1.6 2.2-3.1 3.5M6.6 6.6C4.6 8 3.2 10 2.5 12c1 1.5 4.5 6 9.5 6 1.7 0 3.2-.5 4.5-1.2M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>';
 
 function cardHtml(g) {
@@ -477,7 +478,10 @@ function cardHtml(g) {
   } else if (cuiTela === "adicionar") {
     // Como na previa: o nao marcado fica apagado, e so acende quando marcado.
     estado = (cuiNoRascunho(g) ? " nacol" : " apagado") + (g._tids.length ? "" : " semtid");
-    marcas = "";
+    // O clique no card marca, entao a ficha ganha um botao proprio. O que so o
+    // console conhece nao tem ficha, e fica sem ele.
+    marcas = g._con && !g._cat ? "" : '<div class="marks"><button class="info-btn" title="Ver ficha" ' +
+      'aria-label="Ver ficha">' + ICO_INFO + "</button></div>";
   } else {
     estado = cuiOnde(g) === "fora" ? " fora" : "";
     marcas = cuiEditavel() ? '<div class="marks"><button class="rem-btn" title="Remover da coleção" ' +
@@ -1506,7 +1510,7 @@ function ligarEventos() {
     var card = e.target.closest(".card");
     if (!card) return;
     if (AREA === "cui") {
-      if (cuiTela === "adicionar") { cuiAlternar(card); return; }   // marca no rascunho
+      if (cuiTela === "adicionar" && !e.target.closest(".info-btn")) { cuiAlternar(card); return; }   // marca no rascunho
       if (e.target.closest(".rem-btn")) { cuiRemover(card); return; }
       // dentro da colecao o clique abre a ficha, como no catalogo
     }
