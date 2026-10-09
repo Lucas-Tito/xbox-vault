@@ -510,7 +510,6 @@ function cardHtml(g) {
     estado = g._tids.length ? "" : " semtid";
     marcas = g._tids.length ? '<div class="marks marks-card"><button class="vinc-btn" title="Coleções" ' +
       'aria-label="Escolher coleções" aria-haspopup="true">' + ICO_MAIS + "</button></div>" : "";
-    junto += cuiEmHtml(g);
   } else {
     estado = cuiOnde(g) === "fora" ? " fora" : "";
     marcas = cuiEditavel() ? '<div class="marks marks-card"><button class="rem-btn" title="Remover da coleção" ' +
@@ -525,7 +524,9 @@ function cardHtml(g) {
     '<div class="body"><h3>' + link + "</h3>" +
     (mc || genero ? '<div class="linha">' + mc + (genero ? '<span class="sub">' + genero + "</span>" : "") + "</div>" : "") +
     (desc ? '<div class="desc">' + esc(desc) + "</div>" : "") + junto +
-    '<div class="tags">' + tagsHtml(g) + "</div></div></article>";
+    // Na Biblioteca as etiquetas sao as colecoes do jogo: e o que se decide la.
+    (AREA === "cui" && cuiTela === "biblioteca" ? cuiEmHtml(g) : '<div class="tags">' + tagsHtml(g) + "</div>") +
+    "</div></article>";
 }
 
 function buildQueue(list) {
@@ -2085,9 +2086,13 @@ function cuiColsDe(g) {
   }).map(function (x) { return x.c; });
 }
 
+/* As etiquetas do card na Biblioteca: uma por colecao, juncao e intersecao
+   mais apagadas, que o jogo esta nelas pelas origens. */
 function cuiEmHtml(g) {
   var cs = g._tids.length ? cuiColsDe(g) : [];
-  return '<div class="cui-em">' + (cs.length ? "Em " + cs.map(function (c) { return esc(c.nome); }).join(", ") : "") + "</div>";
+  return '<div class="tags cui-em">' + cs.map(function (c) {
+    return '<span class="tag col' + (c.tipo === "jogos" ? "" : " comp") + '">' + esc(c.nome) + "</span>";
+  }).join("") + "</div>";
 }
 
 /* As caixas das colecoes manuais, marcadas onde o jogo ja esta. */

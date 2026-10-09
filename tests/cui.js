@@ -354,8 +354,9 @@
   ok('a Biblioteca abre no console, com filtros e as abas dela', document.body.dataset.tela === 'biblioteca' && !!filtros() &&
      $('.vista[aria-selected=true]').dataset.own === 'console' && !$('#vista-semcol').hidden && $('#vista-fora').hidden);
   ok('Sem colecao conta o do console fora de toda colecao', $('#s-semcol').textContent === '3', $('#s-semcol').textContent);
-  ok('o card diz em que colecoes o jogo esta', (porId('con-J00000003').querySelector('.cui-em') || {}).textContent === 'Em Do console, Uniao',
-     (porId('con-J00000003').querySelector('.cui-em') || {}).textContent);
+  const cols = k => k.querySelectorAll('.tag').length && [...k.querySelectorAll('.tags.cui-em .tag')].map(t => t.textContent).join(', ');
+  ok('na Biblioteca as etiquetas do card sao as colecoes dele', cols(porId('con-J00000003')) === 'Do console, Uniao' &&
+     porId('con-J00000003').querySelectorAll('.tag').length === 2, cols(porId('con-J00000003')));
   $('#vista-semcol').click(); await wait(500);
   ok('a aba Sem colecao mostra so o que nao esta em nenhuma',
      $$('.card').map(x => x.dataset.id).sort().join(' ') === 'con-J00000001 con-J00000002', $$('.card').map(x => x.dataset.id).join(' '));
@@ -369,8 +370,8 @@
      $$('#modal-body .cui-vinc').find(x => /Outra/.test(x.parentNode.textContent)).checked, linha(await exportar(), 'Outra'));
   $('#modal').click(); await wait(200);
   ok('o card fica na aba e os dois discos dizem a colecao', !!porId('con-J00000001') &&
-     porId('con-J00000002').querySelector('.cui-em').textContent === 'Em Outra' && $('#s-semcol').textContent === '1',
-     porId('con-J00000002').querySelector('.cui-em').textContent + ' / ' + $('#s-semcol').textContent);
+     cols(porId('con-J00000002')) === 'Outra' && $('#s-semcol').textContent === '1',
+     cols(porId('con-J00000002')) + ' / ' + $('#s-semcol').textContent);
   const antesDoMais = linha(await exportar(), 'Do console');
   porId('con-J00000002').querySelector('.vinc-btn').click(); await wait(200);
   const pop = $('#cui-pop');
@@ -379,11 +380,11 @@
   $$('#cui-pop .cui-vinc').find(x => /Do console/.test(x.parentNode.textContent)).click(); await wait(300);
   ok('marcar no + poe o jogo em mais uma colecao', (linha(await exportar(), 'Do console') || '').indexOf(T(a.titleId)) > 0 &&
      /entrou em Do console/.test($('#aviso-txt').textContent) &&
-     porId('con-J00000001').querySelector('.cui-em').textContent === 'Em Do console, Outra, Uniao',
-     porId('con-J00000001').querySelector('.cui-em').textContent);
+     cols(porId('con-J00000001')) === 'Do console, Outra, Uniao',
+     cols(porId('con-J00000001')));
   $('#aviso-desfazer').click(); await wait(300);
   ok('Desfazer tira de novo', linha(await exportar(), 'Do console') === antesDoMais &&
-     porId('con-J00000001').querySelector('.cui-em').textContent === 'Em Outra');
+     cols(porId('con-J00000001')) === 'Outra');
   document.body.click(); await wait(100);
   ok('clicar fora fecha a lista', !$('#cui-pop'));
   $('#vista-semcol').click(); await wait(500);
