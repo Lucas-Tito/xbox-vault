@@ -2086,12 +2086,12 @@ function cuiColsDe(g) {
   }).map(function (x) { return x.c; });
 }
 
-/* As etiquetas do card na Biblioteca: uma por colecao, juncao e intersecao
-   mais apagadas, que o jogo esta nelas pelas origens. */
+/* As etiquetas do card na Biblioteca: uma por colecao, no mesmo desenho das
+   etiquetas do catalogo. */
 function cuiEmHtml(g) {
   var cs = g._tids.length ? cuiColsDe(g) : [];
   return '<div class="tags cui-em">' + cs.map(function (c) {
-    return '<span class="tag col' + (c.tipo === "jogos" ? "" : " comp") + '">' + esc(c.nome) + "</span>";
+    return '<span class="tag">' + esc(c.nome) + "</span>";
   }).join("") + "</div>";
 }
 
