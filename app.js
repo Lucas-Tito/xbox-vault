@@ -48,10 +48,20 @@ function rebuildSets() {
    que quase todo mundo veio ver, 360 e Xbox original, e as outras categorias
    entram quando a pessoa pedir. Os 3.450 indies sozinhos passavam na frente de
    tudo por ano de lancamento. */
+/* As caixas de Jogadores: o MAXIMO de jogadores do jogo no "onde" escolhido, em
+   faixas. Pelo maximo, e nao "N ou mais", porque e assim que se separa jogo para
+   dois e jogo para quatro; e duas caixas marcadas somam, como em Plataforma. */
+var FAIXAS_PL = { "2": [2, 2], "3": [3, 3], "4": [4, 4], "5-8": [5, 8], "9-16": [9, 16], "17+": [17, Infinity] };
+function faixaPl(g) {
+  var n = maxPlayers(g, F.where);
+  for (var k in FAIXAS_PL) if (n >= FAIXAS_PL[k][0] && n <= FAIXAS_PL[k][1]) return k;
+  return "";
+}
+
 function padraoF() {
   return {
     q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
-    systems: [], relType: "oficial", where: "any", plMin: 0, yMode: "intervalo", y1: "", y2: "",
+    systems: [], relType: "oficial", where: "any", pls: [], yMode: "intervalo", y1: "", y2: "",
     bc: "all", cat: "", mcMin: 0, genres: [], coopt: false, sort: "year-desc"
   };
 }
@@ -60,6 +70,13 @@ try { Object.assign(F, JSON.parse(localStorage.getItem(FILT_KEY) || "{}")); } ca
 // Filtro salvo antes da fusao do modo de jogo: o escopo dos jogadores virou o
 // "onde", que agora vale para o modo tambem.
 if (F.plScope) { if (F.where === "any") F.where = F.plScope; delete F.plScope; }
+// "N ou mais jogadores" virou caixas por faixa: o filtro salvo vira as faixas
+// que davam o mesmo resultado.
+if (F.plMin) {
+  F.pls = Object.keys(FAIXAS_PL).filter(function (k) { return FAIXAS_PL[k][0] >= F.plMin; });
+}
+delete F.plMin;
+if (!Array.isArray(F.pls)) F.pls = [];
 // A aba "No console" so existe ao adicionar jogos ao CollectionUI.
 if (F.own === "console") F.own = "all";
 
@@ -241,7 +258,7 @@ function match(g, skip) {
       else if (!v) return false;
     }
   }
-  if (F.plMin > 0 && maxPlayers(g, F.where) < F.plMin) return false;
+  if (skip !== "pl" && F.pls.length && F.pls.indexOf(faixaPl(g)) < 0) return false;
   if (F.mcMin > 0 && !(g.mc >= F.mcMin)) return false;   // sem nota também não passa
 
   if (F.y1 && (g.year == null || g.year < +F.y1)) return false;
@@ -593,6 +610,9 @@ function updateFacets() {
     ff.forEach(function (g) { if ((g.flags || {})[k]) n++; });
     el.textContent = n;
   });
+  var fp = filtered("pl"), np = {};
+  fp.forEach(function (g) { var k = faixaPl(g); if (k) np[k] = (np[k] || 0) + 1; });
+  $$("[data-cnt^='pl-']").forEach(function (el) { el.textContent = np[el.dataset.cnt.slice(3)] || 0; });
   var fc = filtered("coopt"), nc = 0;
   fc.forEach(function (g) { if (g.coopInfo) nc++; });
   $("[data-cnt='coopt']").textContent = nc;
@@ -1417,7 +1437,8 @@ function restaurarControles() {
   // restaura estado
   $("#q").value = F.q ? F.q : "";
   $("#f-bc").value = F.bc; $("#f-cat").value = F.cat;
-  $("#f-sort").value = F.sort; $("#f-pl-min").value = String(F.plMin);
+  $("#f-sort").value = F.sort;
+  $$(".f-pl").forEach(function (c) { c.checked = F.pls.indexOf(c.value) >= 0; });
   $$(".f-plat").forEach(function (c) { c.checked = F.plats.indexOf(c.value) >= 0; });
   $$(".f-mode").forEach(function (c) { c.checked = F.modes.indexOf(c.value) >= 0; });
   // modo salvo que nao existe mais (multiplayerLocal, coopLocal...) sai do filtro
@@ -1449,6 +1470,7 @@ function ligarEventos() {
     var t = e.target;
     if (t.classList.contains("f-plat")) F.plats = pick(".f-plat");
     else if (t.classList.contains("f-mode")) F.modes = pick(".f-mode");
+    else if (t.classList.contains("f-pl")) F.pls = pick(".f-pl");
     else if (t.classList.contains("f-flag")) F.flags = pick(".f-flag");
     else if (t.classList.contains("f-genre")) F.genres = pick(".f-genre");
     else if (t.classList.contains("f-sys")) F.systems = pick(".f-sys");
@@ -1465,7 +1487,6 @@ function ligarEventos() {
     else if (t.id === "f-sort") F.sort = t.value;
     else if (t.id === "f-y1") { F.y1 = t.value; if (F.yMode === "um") { F.y2 = t.value; $("#f-y2").value = t.value; } }
     else if (t.id === "f-y2") F.y2 = t.value;
-    else if (t.id === "f-pl-min") F.plMin = +t.value;
     else if (t.id === "f-mc") F.mcMin = +t.value;
     else return;
     onChange();

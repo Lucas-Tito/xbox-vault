@@ -883,11 +883,17 @@
       ok('modo + onde combinam', +$('#s-shown').textContent.replace(/\D/g,'') === both, both + ' co-op local');
       coopBox.checked = false; fire(coopBox); qq.checked = true; fire(qq); await wait(400);
 
-      $('#f-pl-min').value = '4'; fire($('#f-pl-min')); await wait(500);
-      const p4 = catalogo().filter(g => { const t = g.tags||{};
-        return Math.max(t.maxPlayersLocal||0, t.maxPlayersOnline||0, t.maxPlayers||0) >= 4; }).length;
-      ok('filtro 4+ jogadores', +$('#s-shown').textContent.replace(/\D/g,'') === p4, p4 + ' jogos');
-      $('#f-pl-min').value = '0'; fire($('#f-pl-min')); await wait(300);
+      // Jogadores: caixas pelo maximo de jogadores; duas marcadas somam
+      const maxPl = g => { const t = g.tags||{}; return Math.max(t.maxPlayersLocal||0, t.maxPlayersOnline||0, t.maxPlayers||0); };
+      const pl = v => $$('.f-pl').find(x => x.value === v);
+      pl('4').checked = true; fire(pl('4')); await wait(500);
+      const p4 = catalogo().filter(g => maxPl(g) === 4).length;
+      ok('filtro de jogadores: no maximo 4', +$('#s-shown').textContent.replace(/\D/g,'') === p4, p4 + ' jogos');
+      ok('a caixa traz a contagem', +$('[data-cnt="pl-4"]').textContent === p4, $('[data-cnt="pl-4"]').textContent);
+      pl('2').checked = true; fire(pl('2')); await wait(500);
+      const p24 = catalogo().filter(g => maxPl(g) === 4 || maxPl(g) === 2).length;
+      ok('duas faixas marcadas somam', +$('#s-shown').textContent.replace(/\D/g,'') === p24, p24 + ' jogos');
+      pl('2').checked = false; fire(pl('2')); pl('4').checked = false; fire(pl('4')); await wait(300);
 
       const withImg = catalogo().filter(g => g.image).length;
       ok('capas presentes', withImg > tagged.length * 0.5, withImg + ' jogos com imagem');

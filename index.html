@@ -128,14 +128,13 @@
         <label><input type="radio" name="f-where" value="local"> Local</label>
         <label><input type="radio" name="f-where" value="online"> Online</label>
       </div>
-      <div class="sub-h">Jogadores</div>
-      <select id="f-pl-min">
-        <option value="0">Qualquer número</option>
-        <option value="2">2 ou mais</option><option value="3">3 ou mais</option>
-        <option value="4">4 ou mais</option><option value="6">6 ou mais</option>
-        <option value="8">8 ou mais</option><option value="12">12 ou mais</option>
-        <option value="16">16 ou mais</option><option value="24">24 ou mais</option>
-      </select>
+      <div class="sub-h">Jogadores (no máximo)</div>
+      <label class="chk"><input type="checkbox" class="f-pl" value="2"> 2 <span class="n" data-cnt="pl-2"></span></label>
+      <label class="chk"><input type="checkbox" class="f-pl" value="3"> 3 <span class="n" data-cnt="pl-3"></span></label>
+      <label class="chk"><input type="checkbox" class="f-pl" value="4"> 4 <span class="n" data-cnt="pl-4"></span></label>
+      <label class="chk"><input type="checkbox" class="f-pl" value="5-8"> 5 a 8 <span class="n" data-cnt="pl-5-8"></span></label>
+      <label class="chk"><input type="checkbox" class="f-pl" value="9-16"> 9 a 16 <span class="n" data-cnt="pl-9-16"></span></label>
+      <label class="chk"><input type="checkbox" class="f-pl" value="17+"> Mais de 16 <span class="n" data-cnt="pl-17+"></span></label>
       <!-- Co-Optimus e catalogo de co-op mantido a mao, jogo a jogo: quem quer
            confiar no dado de co-op, e nao na nossa inferencia, liga isto. -->
       <label class="chk chk-sep"><input type="checkbox" id="f-coopt"> Só com dados do Co-Optimus <span class="n" data-cnt="coopt"></span></label>
