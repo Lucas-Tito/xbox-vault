@@ -477,8 +477,8 @@
 
   // ---- o mesmo pelo menu Arquivo, sem importar de novo ----
   $('#btn-backup').click(); await wait(100);
-  ok('com vault.txt importado, o menu oferece atualizar o Tenho, com a data', !$('#btn-sinc-cat').hidden &&
-     $('#btn-sinc-cat').offsetParent && /Pelo vault\.txt de \d\d\/\d\d\/\d{4} às \d\d:\d\d/.test($('#btn-sinc-cat').textContent),
+  ok('com vault.txt importado, o menu oferece Sincronizar', !$('#btn-sinc-cat').hidden &&
+     $('#btn-sinc-cat').offsetParent && $('#btn-sinc-cat').textContent === 'SincronizarAtualizar Catálogo pelo CollectionUI',
      $('#btn-sinc-cat').textContent);
   $('#btn-sinc-cat').click(); await wait(400);
   ok('pelo menu e sem diferenca: avisa que ja esta igual, sem Desfazer', !$('#cui-cat-sim') &&
@@ -490,7 +490,7 @@
   $('#btn-backup').click(); await wait(100); $('#btn-sinc-cat').click();
   await ate(() => $('#cui-cat-sim'));
   ok('pelo menu: pergunta dizendo de quando e o vault.txt, e com Cancelar', /Atualizar o Tenho pelo console\?/.test($('#modal-body').textContent) &&
-     /importado em/.test($('#modal-body').textContent) && $('#cui-cat-nao').textContent === 'Cancelar', $('#modal-body').textContent);
+     /importado em \d\d\/\d\d\/\d{4} às \d\d:\d\d/.test($('#modal-body').textContent) && $('#cui-cat-nao').textContent === 'Cancelar', $('#modal-body').textContent);
   $('#cui-cat-sim').click(); await wait(400);
   ok('pelo menu: o Tenho fica igual ao console', est(a.id) === 'own' && est(c.id) === 'own' && est(b.id) === 'wish' &&
      !$('#aviso-desfazer').hidden);

@@ -97,9 +97,8 @@ a{color:var(--green2)}
   padding:8px 10px;color:var(--txt);font-size:13px;text-decoration:none;cursor:pointer}
 .menu-item.atual{box-shadow:inset 2px 0 0 var(--green);border-radius:0 4px 4px 0}
 .menu-item[aria-disabled="true"]{color:var(--dim);cursor:default}
-.menu-item small{display:block;margin-top:1px;color:var(--dim);font-size:11.5px}
+.menu-item small{display:block;margin-top:1px;color:var(--dim);font-size:11.5px;white-space:nowrap}
 .menu-item[hidden],.aviso button[hidden]{display:none}
-#sinc-cat-quando{white-space:nowrap}
 .menu-item:not([aria-disabled="true"]):hover,.menu-item:focus-visible{background:var(--bg3)}
 .btn.primary{background:var(--green);border-color:var(--green);color:var(--on-green);font-weight:600}
 .btn.primary:hover{filter:brightness(1.08);color:var(--on-green)}

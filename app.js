@@ -2739,10 +2739,8 @@ function ligarCui() {
   $("#btn-cui-export").onclick = cuiExportar;
   $("#btn-sinc-cat").onclick = cuiSincCatalogo;
   // O item depende do vault.txt guardado: confere a cada vez que o menu abre.
-  $("#btn-backup").addEventListener("click", function () {
-    $("#btn-sinc-cat").hidden = !CUI_INV;
-    if (CUI_INV) $("#sinc-cat-quando").textContent = "Pelo vault.txt de " + cuiQuando();
-  });
+  // A data dele fica na pergunta que o item abre.
+  $("#btn-backup").addEventListener("click", function () { $("#btn-sinc-cat").hidden = !CUI_INV; });
   $("#file-cui").addEventListener("change", function (e) {
     var f = e.target.files[0];
     if (f) f.arrayBuffer().then(cuiImportar);
