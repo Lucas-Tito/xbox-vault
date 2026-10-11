@@ -13,9 +13,12 @@ enciclopedia e nao de descricao, que sai aqui:
 - as marcas de nota ("[1]", "[citation needed]") e os titulos de secao ("Plot[edit]");
 - as quebras de paragrafo, que a ficha juntaria de qualquer jeito.
 
-O teto e o mesmo do 360, 1.200 caracteres; o que passa e cortado no fim da
-ultima frase que cabe, em vez de jogado fora como la (la o texto curto e outro
-campo da mesma loja; aqui nao ha versao curta).
+O LaunchBox traz o texto inteiro (mediana de 656 caracteres, ate 1.200), e o
+do 360 e a descricao CURTA da loja, que vai no maximo a 500 (mediana de 309).
+Para o Xbox original ter o mesmo tamanho, o texto e cortado no fim da ultima
+frase que cabe em 500. Frase unica maior que isso (o Test Drive: Eve of
+Destruction e uma lista de modos numa frase so) e cortada na ultima palavra,
+com reticencias.
 
 Saida: data/descricoes-xbox.json, {id: texto}. O bundle.py so preenche quem
 nao tem descricao.
@@ -33,7 +36,7 @@ import jsonio  # noqa: E402
 import launchboxlib  # noqa: E402
 
 SAIDA = os.path.join(ROOT, "data", "descricoes-xbox.json")
-MIN, MAX = 20, 1200
+MIN, MAX = 20, 500        # 500 e o teto da descricao curta do 360
 JAPONES = re.compile(r"[　-ヿ㐀-鿿＀-￯]")
 
 
@@ -52,7 +55,7 @@ def limpa(txt):
     t = " ".join(t.split())
     if len(t) > MAX:
         corte = max(t.rfind(". ", 0, MAX), t.rfind("! ", 0, MAX), t.rfind("? ", 0, MAX))
-        t = t[:corte + 1] if corte > MIN else ""
+        t = t[:corte + 1] if corte > MIN else t[:t.rfind(" ", 0, MAX - 1)].rstrip(",;: ") + "…"
     return t if len(t) >= MIN else ""
 
 
