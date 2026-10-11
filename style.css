@@ -244,8 +244,7 @@ body.cui .rem-btn:hover{background:var(--red);border-color:var(--red);color:#fff
 .cui-pop .chk{color:var(--txt)}
 .cui-vinc-vazio{margin:0;font-size:13px;color:var(--dim)}
 /* Na ficha, a mesma linha do card: etiquetas das colecoes e o "+" no fim. */
-.cui-ficha-cols{display:flex;align-items:center;gap:6px;margin:12px 0 4px}
-.cui-ficha-cols .tags{margin-top:0;padding-top:0;max-height:none}
+.tags.cui-ficha-cols{flex-wrap:wrap;align-items:center;margin:12px 0 4px;padding-top:0;max-height:none}
 /* Na ficha o "+" fica ao lado das etiquetas e tem a altura delas (11,5 da letra
    mais 5 em cima e embaixo), em vez dos 30 do botao do canto do card. */
 .cui-ficha-cols .vinc-btn{height:21.5px;width:26px;border-radius:3px}

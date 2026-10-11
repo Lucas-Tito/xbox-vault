@@ -2088,12 +2088,11 @@ function cuiColsDe(g) {
 
 /* As etiquetas do card na Biblioteca: uma por colecao, no mesmo desenho das
    etiquetas do catalogo. */
-function cuiEmHtml(g) {
+function cuiEmTags(g) {
   var cs = g._tids.length ? cuiColsDe(g) : [];
-  return '<div class="tags cui-em">' + cs.map(function (c) {
-    return '<span class="tag">' + esc(c.nome) + "</span>";
-  }).join("") + "</div>";
+  return cs.map(function (c) { return '<span class="tag">' + esc(c.nome) + "</span>"; }).join("");
 }
+function cuiEmHtml(g) { return '<div class="tags cui-em">' + cuiEmTags(g) + "</div>"; }
 
 /* As caixas das colecoes manuais, marcadas onde o jogo ja esta. */
 function cuiVincHtml(g) {
@@ -2108,8 +2107,10 @@ function cuiVincHtml(g) {
 
 function cuiFichaCols() {
   if (AREA !== "cui" || cuiTela !== "biblioteca" || !cuiFichaObj) return "";
-  // O mesmo do card: as colecoes em etiqueta e o "+" que abre a lista.
-  return '<div class="cui-ficha-cols">' + cuiEmHtml(cuiFichaObj) +
+  // O mesmo do card: as colecoes em etiqueta e o "+" que abre a lista. O "+"
+  // vai dentro da mesma linha, como a ultima etiqueta: com muita colecao ele
+  // quebra junto e fica ao lado da ultima, e nao no canto direito.
+  return '<div class="tags cui-ficha-cols">' + cuiEmTags(cuiFichaObj) +
     '<button class="vinc-btn" title="Coleções" aria-label="Escolher coleções" aria-haspopup="true">' + ICO_MAIS + "</button></div>";
 }
 
@@ -2138,8 +2139,12 @@ function cuiRepintarVinc() {
   });
   var pop = $("#cui-pop");
   if (pop && cuiPopObj) pop.querySelector(".cui-vinc-lista").innerHTML = cuiVincHtml(cuiPopObj);
-  var fe = $("#modal-body .cui-ficha-cols .cui-em");
-  if (fe && cuiFichaObj) fe.outerHTML = cuiEmHtml(cuiFichaObj);
+  // Na ficha so as etiquetas mudam: o "+" fica, porque a lista aberta mora nele.
+  var fe = $("#modal-body .cui-ficha-cols");
+  if (fe && cuiFichaObj) {
+    fe.querySelectorAll(".tag").forEach(function (t) { t.remove(); });
+    fe.insertAdjacentHTML("afterbegin", cuiEmTags(cuiFichaObj));
+  }
   cuiPintar();
 }
 
