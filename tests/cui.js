@@ -48,6 +48,7 @@
   ok('sem colecao, a barra explica o que fazer', /Nenhuma coleção/.test($('#cui-barra').textContent));
   $('#btn-backup').click(); await wait(100);
   ok('sem vault.txt importado, o menu nao oferece atualizar o Tenho', $('#btn-sinc-cat').hidden);
+  ok('sem vault.txt importado, nao ha botao Biblioteca', !$('#cui-bib').offsetParent);
   $('#btn-backup').click(); await wait(100);
 
   // ---- importar: formato atual, uniao, CRLF, BOM ----
@@ -355,8 +356,10 @@
   $('#cui-nova').click(); await wait(200);
   $('#cui-nome').value = 'Outra'; $('#cui-ok').click(); await wait(500);
   $('#cui-voltar').click(); await wait(400);
-  ok('a tela das colecoes tem o botao Biblioteca', !!$('#cui-bib'));
+  ok('o botao Biblioteca fica no topo, ao lado do Arquivo', !!$('#cui-bib').offsetParent &&
+     $('#cui-bib').closest('.actions') === $('#menu-backup').closest('.actions'));
   $('#cui-bib').click(); await wait(600);
+  ok('dentro da Biblioteca o botao some', !$('#cui-bib').offsetParent);
   ok('a Biblioteca abre no console, com filtros e as abas dela', document.body.dataset.tela === 'biblioteca' && !!filtros() &&
      $('.vista[aria-selected=true]').dataset.own === 'console' && !$('#vista-semcol').hidden && $('#vista-fora').hidden);
   ok('Sem colecao conta o do console fora de toda colecao', $('#s-semcol').textContent === '3', $('#s-semcol').textContent);
@@ -503,6 +506,7 @@
   ok('o botao do topo volta a dizer Xbox Vault', $('#brand-nome').textContent === 'Xbox Vault');
   $('#btn-backup').click(); await wait(100);
   ok('no catalogo o menu tambem oferece atualizar o Tenho', !!$('#btn-sinc-cat').offsetParent);
+  ok('no catalogo nao ha botao Biblioteca', !$('#cui-bib').offsetParent);
   $('#btn-backup').click(); await wait(100);
   ok('volta ao catalogo', !document.body.classList.contains('cui') && location.hash === '' &&
      !!$('#vistas-own').offsetParent && !!filtros());

@@ -120,7 +120,7 @@ a{color:var(--green2)}
    dela; e a coluna de filtros so aparece em "Adicionar jogos", onde o catalogo
    inteiro entra com os nao marcados apagados, e na Biblioteca. */
 body.cui:not([data-tela=adicionar]):not([data-tela=biblioteca]) .vistas-linha, body:not(.cui) .cui-barra,
-body.cui .so-cat, body:not(.cui) .so-cui,
+body.cui .so-cat, body:not(.cui) .so-cui, body:not(.cui) #cui-bib, #cui-bib[hidden],
 body.cui:not([data-tela=adicionar]):not([data-tela=biblioteca]) .side{display:none}
 @media(max-width:820px){ body.cui:not([data-tela=adicionar]):not([data-tela=biblioteca]) .mobile-filters{display:none} }
 .cui-barra{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:0 0 18px;

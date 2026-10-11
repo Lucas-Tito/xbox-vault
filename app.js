@@ -2600,8 +2600,10 @@ function cuiApagar() {
 function cuiPintar() {
   if (AREA !== "cui") return;
   var c = cuiPorId(CUI.sel), h = "";
+  // A Biblioteca fica no topo, ao lado do Arquivo. Some em Adicionar, onde
+  // sair largaria o rascunho, e nela mesma.
+  $("#cui-bib").hidden = !CUI_INV || (cuiTela !== "colecoes" && cuiTela !== "jogos");
   if (cuiTela === "colecoes") {
-    if (CUI_INV) h += '<div class="cui-acoes"><button class="btn" id="cui-bib">Biblioteca</button></div>';
     if (!CUI.cols.length)
       h = "<span>Nenhuma coleção ainda. Importe o vault.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
     if (CUI_INV) {
@@ -2708,7 +2710,6 @@ function ligarCui() {
     var id = e.target.id;
     if (id === "cui-voltar" || id === "cui-voltar2") { cuiSairAdicionar(); CUI.sel = null; cuiMudou(); cuiIr("colecoes"); }
     else if (id === "cui-add") cuiAdicionar();
-    else if (id === "cui-bib") cuiAbrirBiblioteca();
     else if (id === "cui-concluir") cuiConcluir();
     else if (id === "cui-cancelar" || id === "cui-trilha-col" || id === "cui-trilha-col2") cuiCancelar();
     else if (id === "cui-editar") cuiAbrirForm(cuiPorId(CUI.sel));
@@ -2738,6 +2739,7 @@ function ligarCui() {
   $("#btn-cui-import").onclick = function () { $("#file-cui").click(); };
   $("#btn-cui-export").onclick = cuiExportar;
   $("#btn-sinc-cat").onclick = cuiSincCatalogo;
+  $("#cui-bib").onclick = cuiAbrirBiblioteca;
   // O item depende do vault.txt guardado: confere a cada vez que o menu abre.
   // A data dele fica na pergunta que o item abre.
   $("#btn-backup").addEventListener("click", function () { $("#btn-sinc-cat").hidden = !CUI_INV; });
