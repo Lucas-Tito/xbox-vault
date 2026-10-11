@@ -604,7 +604,7 @@ ul.modos li{color:var(--txt)}
 .chip.sim{border-color:rgba(155,203,60,.4)}
 .chip.sim b{color:var(--green2)}
 .chip.nao b{color:var(--dim2)}
-.bc-nota{margin:0 0 14px}
+.det-info .bc-nota{margin:0 0 14px}
 
 /* As abas da ficha. Com o popup a 820px a coluna tem 525px e os quatro nomes
    cabem folgados; a 700px eles somavam 404px de 405px e o padding tinha de ser
