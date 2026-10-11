@@ -12,9 +12,7 @@ original nao tem essa coluna, e nenhum dos 995 jogos tinha genero.
    dos Genres, num vocabulario mais grosso ("Shooter" onde a Wikipedia diria
    "First-person shooter"), por isso so entra depois.
 
-O casamento com o LaunchBox comeca pelo NOME, e so recorre ao link da Wikipedia
-quando o artigo e de um jogo so: artigo de serie (LMA Manager 2003 a 2006 num
-artigo) daria o genero de um jogo para todos.
+O casamento com o LaunchBox e o do launchboxlib.py, o mesmo da descricao.
 
 Saida: data/genero-xbox.json, {id: {"genero": ..., "fonte": "wikipedia" | "launchbox"}}.
 O bundle.py so preenche o genre de quem nao tem.
@@ -24,18 +22,14 @@ import json
 import os
 import re
 import sys
-import urllib.parse
-import xml.etree.ElementTree as ET
-import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import jsonio  # noqa: E402
+import launchboxlib  # noqa: E402
 import taglib as t  # noqa: E402
-import titlelib  # noqa: E402
 import wikilib as w  # noqa: E402
 
-LB = os.path.join(ROOT, "cache", "launchbox-metadata.zip")
 SAIDA = os.path.join(ROOT, "data", "genero-xbox.json")
 
 
@@ -65,31 +59,6 @@ def limpa_wiki(g):
     return g[0].upper() + g[1:]
 
 
-def wiki_chave(u):
-    if not u:
-        return None
-    u = urllib.parse.unquote(u.split("/wiki/")[-1]).replace("_", " ").split("#")[0]
-    return u.strip().lower() or None
-
-
-def ler_launchbox():
-    jogos, alternativos = {}, collections.defaultdict(list)
-    with zipfile.ZipFile(LB).open("Metadata.xml") as f:
-        for _, el in ET.iterparse(f):
-            if el.tag == "Game":
-                if el.findtext("Platform") == "Microsoft Xbox":
-                    jogos[el.findtext("DatabaseID")] = {
-                        "nome": el.findtext("Name") or "",
-                        "generos": el.findtext("Genres") or "",
-                        "wiki": wiki_chave(el.findtext("WikipediaURL")),
-                    }
-                el.clear()
-            elif el.tag == "GameAlternateName":
-                alternativos[el.findtext("DatabaseID")].append(el.findtext("AlternateName") or "")
-                el.clear()
-    return jogos, alternativos
-
-
 def main():
     games = json.load(open(os.path.join(ROOT, "data", "xbox.json"), encoding="utf-8"))
     print("jogos do Xbox original: %d" % len(games))
@@ -107,39 +76,16 @@ def main():
             out[g["id"]] = {"genero": gen, "fonte": "wikipedia"}
     print("genero pela Wikipedia: %d" % len(out))
 
-    lb, alt = ler_launchbox()
-    print("jogos de Xbox no LaunchBox: %d" % len(lb))
-    por_nome = collections.defaultdict(set)
-    por_wiki = collections.defaultdict(set)
-    for k, d in lb.items():
-        for n in [d["nome"]] + alt.get(k, []):
-            por_nome[titlelib.norm(n)].add(k)
-        if d["wiki"]:
-            por_wiki[d["wiki"]].add(k)
-    # artigo de um jogo so: o link aparece em um jogo do catalogo
-    uso_wiki = collections.Counter(wiki_chave(g.get("wiki")) for g in games if g.get("wiki"))
-
-    como = collections.Counter()
-    for g in games:
-        if g["id"] in out:
-            continue
-        cands = por_nome.get(titlelib.norm(g["title"]), set())
-        if len(cands) != 1:
-            wk = wiki_chave(g.get("wiki"))
-            cands = por_wiki.get(wk, set()) if wk and uso_wiki[wk] == 1 else set()
-            via = "link"
-        else:
-            via = "nome"
-        if len(cands) != 1:
-            como["sem par"] += 1
-            continue
-        primeiro = lb[next(iter(cands))]["generos"].split(";")[0].strip()
+    pares, sem = launchboxlib.casar(games, {g["id"] for g in games if g["id"] not in out})
+    como = collections.Counter({"sem par": sem})
+    for gid, (d, via) in pares.items():
+        primeiro = d["generos"].split(";")[0].strip()
         if primeiro.lower() in COM_GAME:
             primeiro = primeiro.capitalize()
         if not primeiro:
             como["par sem genero"] += 1
             continue
-        out[g["id"]] = {"genero": primeiro, "fonte": "launchbox"}
+        out[gid] = {"genero": primeiro, "fonte": "launchbox"}
         como["launchbox pelo " + via] += 1
     print("LaunchBox: %s" % dict(como))
     print("com genero: %d de %d" % (len(out), len(games)))
