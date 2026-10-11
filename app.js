@@ -2342,6 +2342,53 @@ function cuiImportarVault(buf) {
   cuiAviso = "Importado do console: " + v.cols.length + " coleç" + (v.cols.length === 1 ? "ão" : "ões") + ", " +
     cuiResumoInv(v.itens) + "." + (v.avisos.length ? " " + v.avisos.join("; ") + "." : "");
   cuiMudou(); cuiIr("colecoes");
+  // Os indies tambem tem Title ID: sem eles na memoria, o que esta no console
+  // como indie nao entraria no Tenho.
+  var faltava = pendentes(["xblig"]).length;
+  carregarCatalogos(["xblig"], function () { if (faltava) render(); cuiPerguntarCatalogo(v.itens); });
+}
+
+/* O vault.txt tambem pode acertar o Tenho do catalogo: passa a ser o que esta
+   no console. O que estava no Tenho e nao veio vai para a wishlist, em vez de
+   sumir, porque pode ser um jogo vendido ou so apagado do HD. So se julga jogo
+   com Title ID (360, Xbox original e indies): homebrew e emulacao nao tem como
+   ser achados no console e ficam como estao. */
+function cuiDiferencaCatalogo(itens) {
+  var tids = new Set(), entram = [], saem = [];
+  itens.forEach(function (it) { if (!it.rom && !it.app && it.tid !== "00000000") tids.add(it.tid); });
+  GAMES.forEach(function (g) {
+    if (!g._tids.length) return;
+    var no = g._tids.some(function (t) { return tids.has(t); });
+    if (no && !owned.has(g.id)) entram.push(g.id);
+    else if (!no && owned.has(g.id)) saem.push(g.id);
+  });
+  return { entram: entram, saem: saem };
+}
+
+function cuiPerguntarCatalogo(itens) {
+  var d = cuiDiferencaCatalogo(itens);
+  if (!d.entram.length && !d.saem.length) return;
+  var n = function (k) { return "<b>" + k + "</b> jogo" + (k === 1 ? "" : "s"); };
+  openModal(
+    "<h3>Atualizar o catálogo também?</h3>" +
+    "<p>O <b>Tenho</b> do catálogo passa a ser o que está no console:</p><ul>" +
+    (d.entram.length ? "<li>" + n(d.entram.length) + " do console entra" + (d.entram.length === 1 ? "" : "m") + " no Tenho</li>" : "") +
+    (d.saem.length ? "<li>" + n(d.saem.length) + " do Tenho que não " + (d.saem.length === 1 ? "está no console vai" : "estão no console vão") +
+      " para a wishlist</li>" : "") +
+    "</ul><p>Homebrew e emulação ficam como estão: o console não tem como dizer quais você tem.</p>" +
+    '<button class="btn primary" id="cui-cat-sim">Atualizar o catálogo</button>' +
+    '<button class="btn" id="cui-cat-nao">Só as coleções</button>');
+  $("#cui-cat-nao").onclick = closeModal;
+  $("#cui-cat-sim").onclick = function () {
+    var antes = JSON.stringify(marks), agora = Date.now();
+    d.entram.forEach(function (id) { marks[id] = { s: "own", t: agora }; });
+    d.saem.forEach(function (id) { marks[id] = { s: "wish", t: agora }; });
+    rebuildSets(); saveMarks(); closeModal(); render();
+    cuiAvisar("Catálogo atualizado: " + d.entram.length + " no Tenho, " + d.saem.length + " para a wishlist", function () {
+      marks = JSON.parse(antes);
+      rebuildSets(); saveMarks(); render();
+    });
+  };
 }
 
 function cuiExportar() {

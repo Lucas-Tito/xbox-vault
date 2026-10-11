@@ -453,6 +453,7 @@ body.cui .card.semtid:hover::before{border-width:0}
   padding:22px;max-height:85vh;overflow:auto}
 .sheet h3{margin:0 0 4px;font-size:17px}
 .sheet p{color:var(--dim);font-size:13px;margin:0 0 16px}
+.sheet ul{color:var(--dim);font-size:13px;margin:-8px 0 16px;padding-left:20px;line-height:1.6}
 .sheet .btn{width:100%;margin-bottom:8px;text-align:left;display:flex;gap:10px;align-items:center}
 .sheet input[type=text]{width:100%;padding:8px 10px;margin:0 0 12px;background:var(--bg3);
   border:1px solid var(--line);border-radius:var(--r-sm);outline:none}

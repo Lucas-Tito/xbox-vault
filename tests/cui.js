@@ -18,6 +18,9 @@
     const dt = new DataTransfer(); dt.items.add(new File([txt], 'colecoes.txt', {type:'text/plain'}));
     const inp = $('#file-cui'); inp.files = dt.files; inp.dispatchEvent(new Event('change', {bubbles:true}));
     await ate(() => $('.cui-tile[data-col]')); await wait(200);
+    // O vault.txt pergunta se acerta o Tenho do catalogo; fora do bloco que
+    // testa isso, a resposta e nao.
+    if (!window.__cat && $('#cui-cat-nao')) { $('#cui-cat-nao').click(); await wait(200); }
   };
   const exportar = async () => {
     let cap = null; const o = URL.createObjectURL;
@@ -432,6 +435,44 @@
   ok('o id do app vai para o colecoes.txt', linha(await exportar(), 'Com app') === '11|jogos|Com app|' + T(a.titleId) + ',' + idApp);
   hb.checked = false; hb.dispatchEvent(new Event('change', {bubbles:true})); await wait(400);
   $('#cui-voltar').click(); await wait(400);
+
+  // ---- vault.txt acerta o Tenho do catalogo, se a pessoa quiser ----
+  // No Tenho: a (esta no console), b (nao esta) e um homebrew (sem Title ID).
+  // O console tem a e c. Entra c, b vai para a wishlist e o homebrew fica.
+  const hbId = window.XBX_HB.games[0].id;
+  const mk = () => JSON.parse(localStorage.getItem('xbx.marks.v3') || '{}');
+  const est = id => (mk()[id] || {}).s || null;
+  const dt = new DataTransfer();
+  dt.items.add(new File([JSON.stringify({ owned: [a.id, b.id, hbId], wishlist: [c.id] })], 'm.json', {type:'application/json'}));
+  $('#file-in').files = dt.files; $('#file-in').dispatchEvent(new Event('change', {bubbles:true}));
+  await ate(() => $('#imp-replace')); $('#imp-replace').click(); await wait(400);
+  const doConsole = VCAB + 'JOGO|' + T(a.titleId) + '|00007000||00000001|' + a.title + '|\\JOGOS\\A\\default.xex\r\n' +
+    'JOGO|' + T(c.titleId) + '|00007000||00000002|' + c.title + '|\\JOGOS\\C\\default.xex\r\n' +
+    'COLECAO|11|jogos|Sinc|' + T(a.titleId) + '\r\n# total: 2 jogos, 0 ROMs, 1 colecoes\r\n';
+  window.__cat = 1;
+  await importar(doConsole);
+  await ate(() => $('#cui-cat-sim'));
+  ok('importar o vault.txt pergunta se atualiza o catalogo, com as contas', !!$('#cui-cat-sim') &&
+     /1<\/b> jogo do console entra no Tenho/.test($('#modal-body').innerHTML) &&
+     /1<\/b> jogo do Tenho que não está no console vai para a wishlist/.test($('#modal-body').innerHTML),
+     ($('#modal-body') || {}).textContent);
+  $('#cui-cat-nao').click(); await wait(200);
+  ok('"So as colecoes" nao mexe no Tenho', est(a.id) === 'own' && est(b.id) === 'own' && est(c.id) === 'wish');
+  await importar(doConsole);
+  await ate(() => $('#cui-cat-sim')); $('#cui-cat-sim').click(); await wait(400);
+  ok('atualizar: o que esta no console entra no Tenho, mesmo vindo da wishlist', est(a.id) === 'own' && est(c.id) === 'own');
+  ok('atualizar: o que nao esta no console vai para a wishlist', est(b.id) === 'wish');
+  ok('atualizar: homebrew, sem Title ID, fica como estava', est(hbId) === 'own');
+  ok('o aviso diz o que mudou', /1 no Tenho, 1 para a wishlist/.test($('#aviso-txt').textContent) && !$('#aviso').hidden,
+     $('#aviso-txt').textContent);
+  $('#aviso-desfazer').click(); await wait(300);
+  ok('Desfazer devolve o Tenho de antes', est(b.id) === 'own' && est(c.id) === 'wish');
+  await importar(doConsole);
+  await ate(() => $('#cui-cat-sim')); $('#cui-cat-sim').click(); await wait(300);
+  await importar(doConsole); await wait(400);
+  ok('com o Tenho igual ao console, nao pergunta nada', !$('#cui-cat-sim'));
+  window.__cat = 0;
+  localStorage.removeItem('xbx.marks.v3');
   localStorage.removeItem('xbx.cui.inv.v1');
 
   // ---- volta ao catalogo ----
