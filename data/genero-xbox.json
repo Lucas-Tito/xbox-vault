@@ -1,0 +1,3910 @@
+{
+ "xbox-187-ride-or-die": {
+  "fonte": "wikipedia",
+  "genero": "Racing, vehicular combat"
+ },
+ "xbox-2002-fifa-world-cup": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-2006-fifa-world-cup": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-25-to-life": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-4x4-evo-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-50-cent-bulletproof": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-advent-rising": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, third-person shooter"
+ },
+ "xbox-afl-live-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-afl-live-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-afl-live-premiership-edition": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-afl-premiership": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-aggressive-inline": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-airforce-delta-storm": {
+  "fonte": "wikipedia",
+  "genero": "Flight simulator"
+ },
+ "xbox-alias": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-alien-hominid": {
+  "fonte": "wikipedia",
+  "genero": "Run and gun"
+ },
+ "xbox-aliens-versus-predator-extinction": {
+  "fonte": "wikipedia",
+  "genero": "Real-time strategy"
+ },
+ "xbox-all-star-baseball-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-all-star-baseball-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-all-star-baseball-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-alter-echo": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-america-s-army-rise-of-a-soldier": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-american-chopper": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-american-chopper-2-full-throttle": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-amf-bowling-2004": {
+  "fonte": "wikipedia",
+  "genero": "Bowling"
+ },
+ "xbox-amf-xtreme-bowling": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-amped-2": {
+  "fonte": "wikipedia",
+  "genero": "Snowboarding"
+ },
+ "xbox-amped-freestyle-snowboarding": {
+  "fonte": "wikipedia",
+  "genero": "Snowboarding"
+ },
+ "xbox-and-1-streetball": {
+  "fonte": "wikipedia",
+  "genero": "Sports, Basketball"
+ },
+ "xbox-animaniacs-the-great-edgar-hunt": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-antz-extreme-racing": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-apex": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-aquaman-battle-for-atlantis": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-arctic-thunder": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-area-51": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-arena-football": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-armed-and-dangerous": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, third-person shooter"
+ },
+ "xbox-army-men-major-malfunction": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-army-men-sarge-s-war": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-arx-fatalis": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, dungeon crawl"
+ },
+ "xbox-atari-anthology": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-atv-quad-power-racing-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-auto-modellista": {
+  "fonte": "wikipedia",
+  "genero": "Arcade style racing"
+ },
+ "xbox-avatar-the-last-airbender": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-azurik-rise-of-perathia": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-backyard-wrestling-2-there-goes-the-neighborhood": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-backyard-wrestling-don-t-try-this-at-home": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-bad-boys-miami-takedown": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, Third-person shooter"
+ },
+ "xbox-baldur-s-gate-dark-alliance": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, hack and slash"
+ },
+ "xbox-baldur-s-gate-dark-alliance-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, hack and slash"
+ },
+ "xbox-barbarian": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-barbie-horse-adventures-wild-horse-rescue": {
+  "fonte": "wikipedia",
+  "genero": "Adventure, children's, role-playing"
+ },
+ "xbox-bass-pro-shops-trophy-bass-2007": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-bass-pro-shops-trophy-hunter-2007": {
+  "fonte": "launchbox",
+  "genero": "Shooter"
+ },
+ "xbox-batman-begins": {
+  "fonte": "wikipedia",
+  "genero": "Stealth, action-adventure Action, platform"
+ },
+ "xbox-batman-dark-tomorrow": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-batman-rise-of-sin-tzu": {
+  "fonte": "wikipedia",
+  "genero": "Action, beat 'em up"
+ },
+ "xbox-batman-vengeance": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-battle-engine-aquila": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, simulation"
+ },
+ "xbox-battlefield-2-modern-combat": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-battlestar-galactica": {
+  "fonte": "wikipedia",
+  "genero": "Space combat simulator"
+ },
+ "xbox-beat-down-fists-of-vengeance": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, beat 'em up"
+ },
+ "xbox-beyond-good-and-evil": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-bicycle-casino": {
+  "fonte": "wikipedia",
+  "genero": "Gambling"
+ },
+ "xbox-big-bumpin": {
+  "fonte": "wikipedia",
+  "genero": "Racing, action"
+ },
+ "xbox-big-mutha-truckers": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-big-mutha-truckers-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-bionicle": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-bistro-cupid": {
+  "fonte": "launchbox",
+  "genero": "Construction and Management Simulation"
+ },
+ "xbox-black": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-black-stone-magic-and-steel": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-blade-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action, beat 'em up"
+ },
+ "xbox-blazing-angels-squadrons-of-wwii": {
+  "fonte": "wikipedia",
+  "genero": "Flight combat"
+ },
+ "xbox-blinx-2-masters-of-time-and-space": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-blinx-the-time-sweeper": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-blitz-the-league": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-blood-omen-2": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-blood-wake": {
+  "fonte": "wikipedia",
+  "genero": "Vehicle combat"
+ },
+ "xbox-bloodrayne": {
+  "fonte": "wikipedia",
+  "genero": "Action, hack and slash"
+ },
+ "xbox-bloodrayne-2": {
+  "fonte": "wikipedia",
+  "genero": "Action, hack and slash"
+ },
+ "xbox-bloody-roar-extreme": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-blowout": {
+  "fonte": "wikipedia",
+  "genero": "Run and gun"
+ },
+ "xbox-bmx-xxx": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-braveknight": {
+  "fonte": "launchbox",
+  "genero": "Adventure"
+ },
+ "xbox-break-nine-world-billiards-tournament": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-breakdown": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-brian-lara-international-cricket-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-broken-sword-the-sleeping-dragon": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-brothers-in-arms-earned-in-blood": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-brothers-in-arms-road-to-hill-30": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-bruce-lee-quest-of-the-dragon": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up"
+ },
+ "xbox-brute-force": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter Tactical shooter"
+ },
+ "xbox-buffy-the-vampire-slayer": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-buffy-the-vampire-slayer-chaos-bleeds": {
+  "fonte": "wikipedia",
+  "genero": "Action, beat 'em up"
+ },
+ "xbox-burnout": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-burnout-2-point-of-impact": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-burnout-3-takedown": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-burnout-revenge": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-c-a-t-cyber-attack-team": {
+  "fonte": "wikipedia",
+  "genero": "Turn-based tactics"
+ },
+ "xbox-cabela-s-big-game-hunter-2005-adventures": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, sports"
+ },
+ "xbox-cabela-s-dangerous-hunts": {
+  "fonte": "wikipedia",
+  "genero": "Hunting, simulation, first-person shooter"
+ },
+ "xbox-cabela-s-dangerous-hunts-2": {
+  "fonte": "wikipedia",
+  "genero": "Simulation"
+ },
+ "xbox-cabela-s-deer-hunt-2004-season": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-cabela-s-deer-hunt-2005-season": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-cabela-s-outdoor-adventures": {
+  "fonte": "wikipedia",
+  "genero": "Simulation"
+ },
+ "xbox-call-of-cthulhu-dark-corners-of-the-earth": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-call-of-duty-2-big-red-one": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-call-of-duty-3": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-call-of-duty-finest-hour": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-capcom-classics-collection-vol-1": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-capcom-classics-collection-vol-2": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-capcom-fighting-evolution": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-capcom-vs-snk-2-eo": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-carmen-sandiego-the-secret-of-the-stolen-drums": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platformer"
+ },
+ "xbox-cars": {
+  "fonte": "wikipedia",
+  "genero": "Adventure, racing"
+ },
+ "xbox-carve": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-castlevania-curse-of-darkness": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, hack and slash"
+ },
+ "xbox-catwoman": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-cel-damage": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-celebrity-deathmatch": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-championship-bowling": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-championship-manager-2006": {
+  "fonte": "wikipedia",
+  "genero": "Sports management"
+ },
+ "xbox-championship-manager-5": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-championship-manager-season-01-02": {
+  "fonte": "wikipedia",
+  "genero": "Sport, Management"
+ },
+ "xbox-championship-manager-season-02-03": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-charlie-and-the-chocolate-factory": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platform"
+ },
+ "xbox-chase-hollywood-stunt-driver": {
+  "fonte": "wikipedia",
+  "genero": "Racing, action"
+ },
+ "xbox-chessmaster": {
+  "fonte": "wikipedia",
+  "genero": "Computer chess"
+ },
+ "xbox-chicago-enforcer": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-chicken-little": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-circus-maximus-chariot-wars": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-classified-the-sentinel-crisis": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-close-combat-first-to-fight": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-club-football": {
+  "fonte": "wikipedia",
+  "genero": "Sport"
+ },
+ "xbox-club-football-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sport"
+ },
+ "xbox-codename-kids-next-door-operation-v-i-d-e-o-g-a-m-e": {
+  "fonte": "wikipedia",
+  "genero": "Platform-adventure"
+ },
+ "xbox-cold-fear": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror, third-person shooter"
+ },
+ "xbox-cold-war": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-colin-mcrae-rally-04": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-colin-mcrae-rally-2005": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-colin-mcrae-rally-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-college-hoops-2k6": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-college-hoops-2k7": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-combat-elite-wwii-paratroopers": {
+  "fonte": "launchbox",
+  "genero": "Shooter"
+ },
+ "xbox-combat-task-force-121": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-commandos-2-men-of-courage": {
+  "fonte": "wikipedia",
+  "genero": "Real-time tactics"
+ },
+ "xbox-commandos-strike-force": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-conan": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-conflict-desert-storm": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-conflict-desert-storm-ii": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-conflict-global-terror": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-conflict-vietnam": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-conker-live-and-reloaded": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-conspiracy-weapons-of-mass-destruction": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-constantine": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-corvette": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-counter-strike": {
+  "fonte": "wikipedia",
+  "genero": "Tactical first-person shooter"
+ },
+ "xbox-crash-bandicoot-the-wrath-of-cortex": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-crash-n-burn": {
+  "fonte": "wikipedia",
+  "genero": "Racing, vehicular combat"
+ },
+ "xbox-crash-nitro-kart": {
+  "fonte": "wikipedia",
+  "genero": "Kart racing"
+ },
+ "xbox-crash-tag-team-racing": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-crash-twinsanity": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-crazy-taxi-3-high-roller": {
+  "fonte": "wikipedia",
+  "genero": "Racing, action"
+ },
+ "xbox-cricket-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-crime-life-gang-wars": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-crimson-sea": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter, Hack and slash, Action adventure, RPG"
+ },
+ "xbox-crimson-skies-high-road-to-revenge": {
+  "fonte": "wikipedia",
+  "genero": "Action, Arcade flight"
+ },
+ "xbox-crouching-tiger-hidden-dragon": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up"
+ },
+ "xbox-crusty-demons": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-csi-crime-scene-investigation": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-curious-george": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-curse-the-eye-of-isis": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-dai-senryaku-vii-modern-military-tactics": {
+  "fonte": "wikipedia",
+  "genero": "Turn-based strategy"
+ },
+ "xbox-dakar-2-the-world-s-ultimate-rally": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-dance-dance-revolution-ultramix": {
+  "fonte": "launchbox",
+  "genero": "Music"
+ },
+ "xbox-dance-dance-revolution-ultramix-2": {
+  "fonte": "wikipedia",
+  "genero": "Music, Rhythm game Exergaming"
+ },
+ "xbox-dance-dance-revolution-ultramix-3": {
+  "fonte": "wikipedia",
+  "genero": "Music"
+ },
+ "xbox-dance-dance-revolution-ultramix-4": {
+  "fonte": "launchbox",
+  "genero": "Music"
+ },
+ "xbox-dance-uk": {
+  "fonte": "launchbox",
+  "genero": "Music"
+ },
+ "xbox-dark-summit": {
+  "fonte": "wikipedia",
+  "genero": "Snowboarding"
+ },
+ "xbox-darkwatch": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-dave-mirra-freestyle-bmx-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-david-beckham-soccer": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-dead-man-s-hand": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-dead-or-alive-1-ultimate": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-dead-or-alive-2-ultimate": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-dead-or-alive-3": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-dead-or-alive-xtreme-beach-volleyball": {
+  "fonte": "wikipedia",
+  "genero": "Sports, casino"
+ },
+ "xbox-dead-to-rights": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-dead-to-rights-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action, third-person shooter"
+ },
+ "xbox-deathrow": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-def-jam-fight-for-ny": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-defender": {
+  "fonte": "wikipedia",
+  "genero": "Shoot 'em up"
+ },
+ "xbox-delta-force-black-hawk-down": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-dennou-taisen-dronez": {
+  "fonte": "launchbox",
+  "genero": "Shooter"
+ },
+ "xbox-destroy-all-humans": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-destroy-all-humans-2": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-deus-ex-invisible-war": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, first-person shooter, stealth"
+ },
+ "xbox-die-hard-vendetta": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-digimon-rumble-arena-2": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-digimon-world-4": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-dino-crisis-3": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-dinosaur-hunting": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-dinotopia-the-sunstone-odyssey": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-disney-s-extreme-skate-adventure": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-doom-3": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, Survival Horror"
+ },
+ "xbox-doom-3-resurrection-of-evil": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, survival horror"
+ },
+ "xbox-double-s-t-e-a-l-the-second-clash": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-dr-muto": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-dragon-ball-z-sagas": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-dragon-s-lair-3d-return-to-the-lair": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-drake-of-the-99-dragons": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-dreamfall-the-longest-journey": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-drihoo": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-driver-3": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-driver-parallel-lines": {
+  "fonte": "wikipedia",
+  "genero": "Racing, third-person shooter, action-adventure"
+ },
+ "xbox-dungeons-and-dragons-heroes": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-dynasty-warriors-3": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-dynasty-warriors-4": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-dynasty-warriors-5": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-ed-edd-n-eddy-the-mis-edventures": {
+  "fonte": "wikipedia",
+  "genero": "Adventure, platform"
+ },
+ "xbox-egg-mania-eggstreme-madness": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle"
+ },
+ "xbox-enclave": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-england-international-football": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-enter-the-matrix": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-eragon": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, action-adventure"
+ },
+ "xbox-espn-college-hoops": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-college-hoops-2k5": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-international-winter-sports-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-major-league-baseball": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-mls-extratime-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nba-2k5": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nba-2night-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nba-basketball": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nfl-2k5": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nfl-football": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nfl-primetime-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nhl-2k5": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-nhl-hockey": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-espn-winter-x-games-snowboarding-2002": {
+  "fonte": "wikipedia",
+  "genero": "Snowboarding"
+ },
+ "xbox-evil-dead-a-fistful-of-boomstick": {
+  "fonte": "wikipedia",
+  "genero": "Action, hack and slash"
+ },
+ "xbox-evil-dead-regeneration": {
+  "fonte": "wikipedia",
+  "genero": "Action, hack and slash"
+ },
+ "xbox-exaskeleton": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-f1-2001": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-f1-2002": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-f1-career-challenge": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-fable": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-fable-the-lost-chapters": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-fahrenheit": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-fallout-brotherhood-of-steel": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-family-guy-video-game": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platform"
+ },
+ "xbox-fantastic-four": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-far-cry-instincts": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-far-cry-instincts-evolution": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-fatal-frame": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-fatal-frame-ii-crimson-butterfly-director-s-cut": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-fifa-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fifa-07": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fifa-football-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fifa-football-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fifa-football-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fifa-street": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fifa-street-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fight-club": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-fight-night-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fight-night-round-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fight-night-round-3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-fila-world-tour-tennis": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-final-fight-streetwise": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up, action-adventure"
+ },
+ "xbox-finding-nemo": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-fire-blade": {
+  "fonte": "wikipedia",
+  "genero": "Flight simulation"
+ },
+ "xbox-flatout": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-flatout-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing, action"
+ },
+ "xbox-ford-mustang-the-legend-lives": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-ford-racing-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-ford-racing-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-ford-street-racing": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-ford-vs-chevy": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-forgotten-realms-demon-stone": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, hack and slash"
+ },
+ "xbox-forza-motorsport": {
+  "fonte": "wikipedia",
+  "genero": "Racing simulation"
+ },
+ "xbox-freaky-flyers": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-freedom-fighters": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-freestyle-metalx": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-freestyle-street-soccer": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-frogger-ancient-shadow": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-frogger-beyond": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-full-spectrum-warrior": {
+  "fonte": "wikipedia",
+  "genero": "Real-time tactics"
+ },
+ "xbox-full-spectrum-warrior-ten-hammers": {
+  "fonte": "wikipedia",
+  "genero": "Real-time tactics"
+ },
+ "xbox-furious-karting": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-futurama": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-future-tactics-the-uprising": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-fuzion-frenzy": {
+  "fonte": "wikipedia",
+  "genero": "Party"
+ },
+ "xbox-galaxy-angel": {
+  "fonte": "launchbox",
+  "genero": "Strategy"
+ },
+ "xbox-galleon": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure Platformer"
+ },
+ "xbox-gauntlet-dark-legacy": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, dungeon crawl"
+ },
+ "xbox-gauntlet-seven-sorrows": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, dungeon crawl"
+ },
+ "xbox-gene-troopers": {
+  "fonte": "launchbox",
+  "genero": "Role-Playing"
+ },
+ "xbox-genma-onimusha": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-ghost-master-the-gravenville-chronicles": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle, strategy"
+ },
+ "xbox-gladiator-sword-of-vengeance": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-gladius": {
+  "fonte": "wikipedia",
+  "genero": "Tactical role-playing"
+ },
+ "xbox-goblin-commander-unleash-the-horde": {
+  "fonte": "wikipedia",
+  "genero": "Action, real-time strategy"
+ },
+ "xbox-godzilla-destroy-all-monsters-melee": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-godzilla-save-the-earth": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-goldeneye-rogue-agent": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, action adventure"
+ },
+ "xbox-gotcha": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, sports"
+ },
+ "xbox-grabbed-by-the-ghoulies": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-grand-theft-auto-double-pack": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-grand-theft-auto-iii": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-grand-theft-auto-san-andreas": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-grand-theft-auto-the-trilogy": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-grand-theft-auto-vice-city": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-gravity-games-bike-street-vert-dirt": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-greg-hastings-tournament-paintball": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, sports"
+ },
+ "xbox-greg-hastings-tournament-paintball-max-d": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, sports"
+ },
+ "xbox-grooverider-slot-car-thunder": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-group-s-challenge": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-guilty-gear-isuka": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-guilty-gear-x2-reload": {
+  "fonte": "wikipedia",
+  "genero": "2D weapon based fighting"
+ },
+ "xbox-gun": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-gun-metal": {
+  "fonte": "wikipedia",
+  "genero": "Shooting, flight simulator"
+ },
+ "xbox-gungriffon-allied-strike": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-gunvalkyrie": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-half-life-2": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-halo-2": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-halo-2-multiplayer-map-pack": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-halo-combat-evolved": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-harry-potter-and-the-chamber-of-secrets": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-harry-potter-and-the-goblet-of-fire": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-harry-potter-and-the-philosopher-s-stone": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-harry-potter-and-the-prisoner-of-azkaban": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure Role-playing"
+ },
+ "xbox-harry-potter-quidditch-world-cup": {
+  "fonte": "wikipedia",
+  "genero": "Sports, action"
+ },
+ "xbox-he-man-defender-of-grayskull": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-headhunter-redemption": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-hello-kitty-roller-rescue": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-heroes-of-the-pacific": {
+  "fonte": "wikipedia",
+  "genero": "Air combat simulation"
+ },
+ "xbox-high-heat-major-league-baseball-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-high-rollers-casino": {
+  "fonte": "wikipedia",
+  "genero": "Casino"
+ },
+ "xbox-hitman-2-silent-assassin": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-hitman-blood-money": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-hitman-contracts": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-hot-wheels-stunt-track-challenge": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-hulk": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up, stealth"
+ },
+ "xbox-hummer-badlands": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-hunter-the-reckoning": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, third-person shooter"
+ },
+ "xbox-hunter-the-reckoning-redeemer": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, third-person shooter"
+ },
+ "xbox-i-ninja": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-ice-age-2-the-meltdown": {
+  "fonte": "wikipedia",
+  "genero": "Platformer, Action-adventure"
+ },
+ "xbox-indiana-jones-and-the-emperor-s-tomb": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-indycar-series": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-indycar-series-2005": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-innocent-tears": {
+  "fonte": "launchbox",
+  "genero": "Role-Playing"
+ },
+ "xbox-inside-pitch-2003": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-intellivision-lives": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-international-superstar-soccer-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-iron-phoenix": {
+  "fonte": "launchbox",
+  "genero": "Fighting"
+ },
+ "xbox-jacked": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-jade-empire": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-james-bond-007-agent-under-fire": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-james-bond-007-everything-or-nothing": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-james-bond-007-from-russia-with-love": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-james-bond-007-nightfire": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-james-cameron-s-dark-angel": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up"
+ },
+ "xbox-jaws-unleashed": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-jet-set-radio-future": {
+  "fonte": "wikipedia",
+  "genero": "Platformer, action, sports"
+ },
+ "xbox-jikkyo-world-soccer-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-jockey-s-road": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-judge-dredd-dredd-vs-death": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-juiced": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-jurassic-park-operation-genesis": {
+  "fonte": "wikipedia",
+  "genero": "Theme park simulation"
+ },
+ "xbox-just-cause": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-justice-league-heroes": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-kabuki-warriors": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-kakuto-chojin-back-alley-brutal": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-kao-the-kangaroo-round-2": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platform"
+ },
+ "xbox-karaoke-revolution": {
+  "fonte": "wikipedia",
+  "genero": "Rhythm"
+ },
+ "xbox-karaoke-revolution-party": {
+  "fonte": "wikipedia",
+  "genero": "Rhythm"
+ },
+ "xbox-kelly-slater-s-pro-surfer": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-kikou-heidan-j-phoenix-plus": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-kill-switch": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-king-arthur": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-kingdom-under-fire-heroes": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, real-time tactics"
+ },
+ "xbox-kingdom-under-fire-the-crusaders": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash, real-time tactics"
+ },
+ "xbox-knight-s-apprentice-memorick-s-adventures": {
+  "fonte": "wikipedia",
+  "genero": "Platformer"
+ },
+ "xbox-knights-of-the-temple-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-knights-of-the-temple-infernal-crusade": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-knockout-kings-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-kof-maximum-impact-maniax": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-kung-fu-chaos": {
+  "fonte": "wikipedia",
+  "genero": "Fighting, party"
+ },
+ "xbox-l-a-rush": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-land-of-the-dead-road-to-fiddler-s-green": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-largo-winch-empire-under-threat": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-legacy-of-kain-defiance": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-legends-of-wrestling": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-legends-of-wrestling-ii": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-lego-star-wars-ii-the-original-trilogy": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-lego-star-wars-the-video-game": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-leisure-suit-larry-magna-cum-laude": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-lemony-snicket-s-a-series-of-unfortunate-events": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, Platform"
+ },
+ "xbox-links-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-lma-manager-2003": {
+  "fonte": "wikipedia",
+  "genero": "Football management"
+ },
+ "xbox-lma-manager-2004": {
+  "fonte": "wikipedia",
+  "genero": "Football management"
+ },
+ "xbox-lma-manager-2005": {
+  "fonte": "wikipedia",
+  "genero": "Football management"
+ },
+ "xbox-lma-manager-2006": {
+  "fonte": "wikipedia",
+  "genero": "Football management"
+ },
+ "xbox-loons-the-fight-for-fame": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-lotus-challenge": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-mace-griffin-bounty-hunter": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-mad-dash-racing": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-madagascar": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platform"
+ },
+ "xbox-madden-nfl-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-07": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-08": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-09": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-madden-nfl-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mafia": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-magatama": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-magi-death-fight-mahou-gakuen": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-magic-the-gathering-battlegrounds": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-major-league-baseball-2k5": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-major-league-baseball-2k5-world-series-edition": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-major-league-baseball-2k6": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-major-league-baseball-2k7": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-malice": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-manchester-united-manager-2005": {
+  "fonte": "wikipedia",
+  "genero": "Football management"
+ },
+ "xbox-manhunt": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-marc-ecko-s-getting-up-contents-under-pressure": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up, action-adventure"
+ },
+ "xbox-marvel-nemesis-rise-of-the-imperfects": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-marvel-ultimate-alliance": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-marvel-vs-capcom-2": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-mashed-drive-to-survive": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat, racing"
+ },
+ "xbox-mashed-fully-loaded": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat, racing"
+ },
+ "xbox-mat-hoffman-s-pro-bmx-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-max-payne": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-max-payne-2-the-fall-of-max-payne": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-maximum-chase": {
+  "fonte": "wikipedia",
+  "genero": "Action, vehicular combat"
+ },
+ "xbox-mechassault": {
+  "fonte": "wikipedia",
+  "genero": "Action / Shooter"
+ },
+ "xbox-mechassault-2-lone-wolf": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-medal-of-honor-european-assault": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-medal-of-honor-frontline": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-medal-of-honor-rising-sun": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-mega-man-anniversary-collection": {
+  "fonte": "wikipedia",
+  "genero": "Action, platform"
+ },
+ "xbox-melbourne-cup-challenge": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-men-of-valor": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-mercenaries-playground-of-destruction": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-metal-arms-glitch-in-the-system": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter, action-adventure"
+ },
+ "xbox-metal-dungeon": {
+  "fonte": "wikipedia",
+  "genero": "Role-playing"
+ },
+ "xbox-metal-gear-solid-2-substance": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-metal-slug-3": {
+  "fonte": "wikipedia",
+  "genero": "Run and gun"
+ },
+ "xbox-metal-slug-4": {
+  "fonte": "wikipedia",
+  "genero": "Run and gun"
+ },
+ "xbox-metal-slug-5": {
+  "fonte": "wikipedia",
+  "genero": "Run and gun"
+ },
+ "xbox-metal-wolf-chaos": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-miami-vice": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-micro-machines": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-midnight-club-3-dub-edition": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-midnight-club-3-dub-edition-remix": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-midnight-club-ii": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-midtown-madness-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-midway-arcade-treasures": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-midway-arcade-treasures-2": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-midway-arcade-treasures-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-mike-tyson-heavyweight-boxing": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-minority-report-everybody-runs": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up, third-person shooter"
+ },
+ "xbox-mission-impossible-operation-surma": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-mlb-slugfest-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mlb-slugfest-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mlb-slugfest-2006": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mlb-slugfest-loaded": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mojo": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle"
+ },
+ "xbox-monopoly-party": {
+  "fonte": "wikipedia",
+  "genero": "Strategy, Digital tabletop"
+ },
+ "xbox-monster-4x4-world-circuit": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-monster-garage": {
+  "fonte": "wikipedia",
+  "genero": "Simulation"
+ },
+ "xbox-mortal-kombat-armageddon": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-mortal-kombat-deadly-alliance": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-mortal-kombat-deception": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-mortal-kombat-shaolin-monks": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-motocross-mania-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-motogp-ultimate-racing-technology": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-motogp-ultimate-racing-technology-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-motogp-ultimate-racing-technology-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-mtx-mototrax": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-murakumo-renegade-mech-pursuit": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-muzzle-flash": {
+  "fonte": "launchbox",
+  "genero": "Shooter"
+ },
+ "xbox-mvp-06-ncaa-baseball": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mvp-baseball-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports, Simulation"
+ },
+ "xbox-mvp-baseball-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports, Simulation"
+ },
+ "xbox-mvp-baseball-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-mx-2002-featuring-ricky-carmichael": {
+  "fonte": "wikipedia",
+  "genero": "Sports, racing"
+ },
+ "xbox-mx-superfly": {
+  "fonte": "wikipedia",
+  "genero": "Sports, racing"
+ },
+ "xbox-mx-unleashed": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-mx-vs-atv-unleashed": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-mx-world-tour-featuring-jamie-little": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-myst-iii-exile": {
+  "fonte": "wikipedia",
+  "genero": "Graphic adventure"
+ },
+ "xbox-myst-iv-revelation": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-n-u-d-e-natural-ultimate-digital-experiment": {
+  "fonte": "wikipedia",
+  "genero": "Life simulation"
+ },
+ "xbox-nakajima-tetsuya-no-othello-seminar": {
+  "fonte": "launchbox",
+  "genero": "Board game"
+ },
+ "xbox-namco-museum": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-narc": {
+  "fonte": "wikipedia",
+  "genero": "Run and gun"
+ },
+ "xbox-nascar-06-total-team-control": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-nascar-07": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-nascar-2005-chase-for-the-cup": {
+  "fonte": "wikipedia",
+  "genero": "Racing simulation"
+ },
+ "xbox-nascar-heat-2002": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-nascar-thunder-2002": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-nascar-thunder-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sim racing"
+ },
+ "xbox-nascar-thunder-2004": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-nba-2k2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-2k3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-2k6": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-2k7": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-ballers": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-ballers-phenom": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-inside-drive-2002": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-nba-inside-drive-2003": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-nba-inside-drive-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-jam": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-live-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-live-07": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-live-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-live-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-live-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-live-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-starting-five": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-nba-street-v3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nba-street-vol-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-college-basketball-2k3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-college-football-2k3": {
+  "fonte": "wikipedia",
+  "genero": "Sports football"
+ },
+ "xbox-ncaa-football-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-football-07": {
+  "fonte": "wikipedia",
+  "genero": "Sports, American football"
+ },
+ "xbox-ncaa-football-08": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-football-2003": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-football-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-football-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-march-madness-06": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-march-madness-2004": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-ncaa-march-madness-2005": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-need-for-speed-carbon": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-need-for-speed-hot-pursuit-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-need-for-speed-most-wanted": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-need-for-speed-underground": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-need-for-speed-underground-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-neighbours-from-hell": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle, strategy"
+ },
+ "xbox-new-legends": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, Hack and slash"
+ },
+ "xbox-nfl-2k2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-2k3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-blitz-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-blitz-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-blitz-pro": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-fever-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-fever-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-fever-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-head-coach": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-street": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nfl-street-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-07": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2k3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2k6": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-2k7": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-hitz-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-hitz-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-hitz-pro": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nhl-rivals-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-nickelodeon-party-blast": {
+  "fonte": "wikipedia",
+  "genero": "Party"
+ },
+ "xbox-nightcaster-defeat-the-darkness": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-nightcaster-ii-equinox": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-ninja-gaiden": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-ninja-gaiden-black": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-nobunaga-no-yabo-ranseiki": {
+  "fonte": "wikipedia",
+  "genero": "Wargame, turn-based strategy, tactical role-playing"
+ },
+ "xbox-obscure": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-oddworld-munch-s-oddysee": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-oddworld-stranger-s-wrath": {
+  "fonte": "wikipedia",
+  "genero": "First-person, third-person shooter, action-adventure"
+ },
+ "xbox-on-flux": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-open-season": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-operation-flashpoint-elite": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-otogi-2-immortal-warriors": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, hack and slash"
+ },
+ "xbox-otogi-myth-of-demons": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing, hack and slash"
+ },
+ "xbox-outlaw-golf": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-outlaw-golf-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-outlaw-golf-9-holes-of-x-mas": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-outlaw-golf-9-more-holes-of-x-mas": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-outlaw-tennis": {
+  "fonte": "wikipedia",
+  "genero": "Sports, fighting"
+ },
+ "xbox-outlaw-volleyball": {
+  "fonte": "wikipedia",
+  "genero": "Sports, fighting"
+ },
+ "xbox-outlaw-volleyball-red-hot": {
+  "fonte": "wikipedia",
+  "genero": "Sports, fighting"
+ },
+ "xbox-outrun-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-outrun-2006-coast-2-coast": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-over-the-hedge": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-pac-man-world-2": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-pac-man-world-3": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-painkiller-hell-wars": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-panzer-dragoon-orta": {
+  "fonte": "wikipedia",
+  "genero": "Rail shooter"
+ },
+ "xbox-panzer-elite-action-fields-of-glory": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-pariah": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-peter-jackson-s-king-kong": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, action-adventure"
+ },
+ "xbox-petit-copter": {
+  "fonte": "launchbox",
+  "genero": "Flight Simulator"
+ },
+ "xbox-phantasy-star-online-episode-i-and-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-phantom-crash": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-phantom-dust": {
+  "fonte": "wikipedia",
+  "genero": "Action, real-time strategy"
+ },
+ "xbox-pilot-down-behind-enemy-lines": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-pinball-hall-of-fame": {
+  "fonte": "wikipedia",
+  "genero": "Pinball"
+ },
+ "xbox-pirates-of-the-caribbean": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-pirates-the-legend-of-black-kat": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-pitfall-the-lost-expedition": {
+  "fonte": "wikipedia",
+  "genero": "Action, platform"
+ },
+ "xbox-playboy-the-mansion": {
+  "fonte": "wikipedia",
+  "genero": "Erotic, business simulation"
+ },
+ "xbox-plus-plumb-2": {
+  "fonte": "launchbox",
+  "genero": "Puzzle"
+ },
+ "xbox-pocketbike-racer": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-pool-shark-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-powerdrome": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-predator-concrete-jungle": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-prince-of-persia-the-sands-of-time": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platform"
+ },
+ "xbox-prince-of-persia-the-two-thrones": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash, platform"
+ },
+ "xbox-prince-of-persia-warrior-within": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platform, hack and slash"
+ },
+ "xbox-prisoner-of-war": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-pro-evolution-soccer-4": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-pro-evolution-soccer-5": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-pro-fishing-challenge": {
+  "fonte": "wikipedia",
+  "genero": "Fishing"
+ },
+ "xbox-project-gotham-racing": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-project-gotham-racing-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-project-snowblind": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-prostroke-golf-world-tour-2007": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-psi-ops-the-mindgate-conspiracy": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, third-person shooter"
+ },
+ "xbox-psychonauts": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-psyvariar-2": {
+  "fonte": "wikipedia",
+  "genero": "Scrolling shooter"
+ },
+ "xbox-pulse-racer": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-pump-it-up-exceed": {
+  "fonte": "wikipedia",
+  "genero": "Music"
+ },
+ "xbox-pure-pinball": {
+  "fonte": "wikipedia",
+  "genero": "Pinball simulation"
+ },
+ "xbox-puyo-pop-fever": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle"
+ },
+ "xbox-quantum-redshift": {
+  "fonte": "wikipedia",
+  "genero": "Futuristic racing"
+ },
+ "xbox-r-racing-evolution": {
+  "fonte": "wikipedia",
+  "genero": "Sim racing"
+ },
+ "xbox-rallisport-challenge": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-rallisport-challenge-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-rally-fusion-race-of-champions": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-rapala-pro-fishing": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-ratatouille": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-rayman-3-hoodlum-havoc": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-rayman-arena": {
+  "fonte": "wikipedia",
+  "genero": "Party, racing"
+ },
+ "xbox-raze-s-hell": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-real-world-golf": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-red-dead-revolver": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, third-person shooter"
+ },
+ "xbox-red-faction-ii": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-red-ninja-end-of-honor": {
+  "fonte": "wikipedia",
+  "genero": "Stealth action"
+ },
+ "xbox-redcard-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-reign-of-fire": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-rent-a-hero-no-1": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-reservoir-dogs": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-return-to-castle-wolfenstein-tides-of-war": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-richard-burns-rally": {
+  "fonte": "wikipedia",
+  "genero": "Sim racing"
+ },
+ "xbox-roadkill": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-robin-hood-defender-of-the-crown": {
+  "fonte": "wikipedia",
+  "genero": "Turn-based strategy"
+ },
+ "xbox-robocop": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-robot-wars-extreme-destruction": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-robotech-battlecry": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-robotech-invasion": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-robots": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-rocky": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-rocky-legends": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-rogue-ops": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-rogue-trooper": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-rollercoaster-tycoon": {
+  "fonte": "wikipedia",
+  "genero": "Construction and management simulation"
+ },
+ "xbox-rolling": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-rugby-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-rugby-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-rugby-challenge-2006": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-rugby-league": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-rugby-league-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-run-like-hell": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-samurai-jack-the-shadow-of-aku": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, Science fantasy, Platformer"
+ },
+ "xbox-samurai-shodown-v": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-samurai-warriors": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-scaler": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-scar-squadra-corse-alfa-romeo": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-scarface-the-world-is-yours": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-scooby-doo-mystery-mayhem": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-scooby-doo-night-of-100-frights": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-scooby-doo-unmasked": {
+  "fonte": "wikipedia",
+  "genero": "Platformer"
+ },
+ "xbox-scrapland": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-seablade": {
+  "fonte": "wikipedia",
+  "genero": "Shooter"
+ },
+ "xbox-second-sight": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-secret-weapons-over-normandy": {
+  "fonte": "wikipedia",
+  "genero": "Combat flight simulation"
+ },
+ "xbox-sega-gt-2002": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-sega-gt-online": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-sega-soccer-slam": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-sensible-soccer-2006": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-sentou-yousei-yukikaze-yousei-no-mau-sora": {
+  "fonte": "launchbox",
+  "genero": "Flight Simulator"
+ },
+ "xbox-serious-sam": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-serious-sam-2": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-shadow-of-memories": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-shadow-ops-red-mercury": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-shadow-the-hedgehog": {
+  "fonte": "wikipedia",
+  "genero": "Platform, third-person shooter"
+ },
+ "xbox-shamu-s-deep-sea-adventures": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-shark-tale": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-shattered-union": {
+  "fonte": "wikipedia",
+  "genero": "Turn-based tactics"
+ },
+ "xbox-shellshock-nam-67": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-shenmue-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-shikigami-no-shiro": {
+  "fonte": "launchbox",
+  "genero": "Shooter"
+ },
+ "xbox-shikigami-no-shiro-ii": {
+  "fonte": "wikipedia",
+  "genero": "Scrolling shooter"
+ },
+ "xbox-shin-megami-tensei-nine": {
+  "fonte": "wikipedia",
+  "genero": "Role-playing"
+ },
+ "xbox-shinchou-mahjong": {
+  "fonte": "launchbox",
+  "genero": "Board game"
+ },
+ "xbox-showdown-legends-of-wrestling": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-shrek": {
+  "fonte": "wikipedia",
+  "genero": "Platformer"
+ },
+ "xbox-shrek-2": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up, platform"
+ },
+ "xbox-shrek-super-party": {
+  "fonte": "wikipedia",
+  "genero": "Party"
+ },
+ "xbox-shrek-superslam": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-sid-meier-s-pirates": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, strategy"
+ },
+ "xbox-silent-hill-2": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-silent-hill-4-the-room": {
+  "fonte": "wikipedia",
+  "genero": "Survival horror"
+ },
+ "xbox-silent-scope-complete": {
+  "fonte": "wikipedia",
+  "genero": "Rail shooter"
+ },
+ "xbox-ski-racing-2005": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-ski-racing-2006": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-slam-tennis": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-smashing-drive": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-sneak-king": {
+  "fonte": "wikipedia",
+  "genero": "Stealth-action, advergame"
+ },
+ "xbox-sneakers": {
+  "fonte": "wikipedia",
+  "genero": "Action, Puzzle"
+ },
+ "xbox-sniper-elite": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter, stealth"
+ },
+ "xbox-snk-vs-capcom-svc-chaos": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-soldier-of-fortune-ii-double-helix": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-sonic-heroes": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-sonic-mega-collection-plus": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-sonic-riders": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-soulcalibur-ii": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-spartan-total-warrior": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-spawn-armageddon": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-special-forces-nemesis-strike": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-speed-kings": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-sphinx-and-the-cursed-mummy": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-spider-man": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-spider-man-2": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-spikeout-battle-street": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up"
+ },
+ "xbox-splashdown": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-splat-magazine-renegade-paintball": {
+  "fonte": "launchbox",
+  "genero": "Shooter"
+ },
+ "xbox-spongebob-squarepants-battle-for-bikini-bottom": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-spongebob-squarepants-lights-camera-pants": {
+  "fonte": "wikipedia",
+  "genero": "Party"
+ },
+ "xbox-spy-vs-spy": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-spyhunter": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-spyhunter-2": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-spyhunter-nowhere-to-run": {
+  "fonte": "wikipedia",
+  "genero": "Action, Racing"
+ },
+ "xbox-spyro-a-hero-s-tail": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-ssx-3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ssx-on-tour": {
+  "fonte": "wikipedia",
+  "genero": "Sports, Racing"
+ },
+ "xbox-ssx-tricky": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-stacked-with-daniel-negreanu": {
+  "fonte": "wikipedia",
+  "genero": "Poker"
+ },
+ "xbox-stake-fortune-fighters": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-star-trek-shattered-universe": {
+  "fonte": "wikipedia",
+  "genero": "Space combat simulator"
+ },
+ "xbox-star-wars-battlefront": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter, first-person shooter"
+ },
+ "xbox-star-wars-battlefront-ii": {
+  "fonte": "wikipedia",
+  "genero": "Action, third-person shooter, first-person shooter"
+ },
+ "xbox-star-wars-episode-iii-revenge-of-the-sith": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-star-wars-jedi-knight-ii-jedi-outcast": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, third-person shooter, hack and slash"
+ },
+ "xbox-star-wars-jedi-knight-jedi-academy": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, third-person shooter, hack and slash"
+ },
+ "xbox-star-wars-jedi-starfighter": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-star-wars-knights-of-the-old-republic": {
+  "fonte": "wikipedia",
+  "genero": "Role-playing"
+ },
+ "xbox-star-wars-knights-of-the-old-republic-ii-the-sith-lords": {
+  "fonte": "wikipedia",
+  "genero": "Role-playing"
+ },
+ "xbox-star-wars-obi-wan": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-star-wars-republic-commando": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter, first-person shooter"
+ },
+ "xbox-star-wars-starfighter-special-edition": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-star-wars-the-clone-wars": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-starsky-and-hutch": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-state-of-emergency": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up"
+ },
+ "xbox-steel-battalion": {
+  "fonte": "wikipedia",
+  "genero": "Action, vehicle simulation"
+ },
+ "xbox-steel-battalion-line-of-contact": {
+  "fonte": "wikipedia",
+  "genero": "Vehicle simulation"
+ },
+ "xbox-still-life": {
+  "fonte": "wikipedia",
+  "genero": "Adventure"
+ },
+ "xbox-stolen": {
+  "fonte": "wikipedia",
+  "genero": "Stealth, platform"
+ },
+ "xbox-street-fighter-anniversary-collection": {
+  "fonte": "launchbox",
+  "genero": "Fighting"
+ },
+ "xbox-street-hoops": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-street-racing-syndicate": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-strike-force-bowling": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-stubbs-the-zombie-in-rebel-without-a-pulse": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-sudeki": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-super-bubble-pop": {
+  "fonte": "launchbox",
+  "genero": "Puzzle"
+ },
+ "xbox-super-monkey-ball-deluxe": {
+  "fonte": "wikipedia",
+  "genero": "Platform, party"
+ },
+ "xbox-superman-returns": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-superman-the-man-of-steel": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-swat-global-strike-team": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-sx-superstar": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-syberia": {
+  "fonte": "wikipedia",
+  "genero": "Graphic adventure"
+ },
+ "xbox-syberia-ii": {
+  "fonte": "wikipedia",
+  "genero": "Graphic adventure"
+ },
+ "xbox-taito-legends": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-taito-legends-2": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-tak-2-the-staff-of-dreams": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platformer"
+ },
+ "xbox-tak-the-great-juju-challenge": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-takahashi-junko-no-mahjong-seminar": {
+  "fonte": "launchbox",
+  "genero": "Board game"
+ },
+ "xbox-tao-feng-fist-of-the-lotus": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-taz-wanted": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-tecmo-classic-arcade": {
+  "fonte": "launchbox",
+  "genero": "Compilation"
+ },
+ "xbox-teen-titans": {
+  "fonte": "wikipedia",
+  "genero": "Action, beat 'em up"
+ },
+ "xbox-teenage-mutant-ninja-turtles": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up"
+ },
+ "xbox-teenage-mutant-ninja-turtles-2-battle-nexus": {
+  "fonte": "launchbox",
+  "genero": "Beat 'em Up"
+ },
+ "xbox-teenage-mutant-ninja-turtles-3-mutant-nightmare": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-tenchu-return-from-darkness": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-tenerezza": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-tennis-masters-series-2003": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-terminator-3-rise-of-the-machines": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, action Shoot 'em up"
+ },
+ "xbox-terminator-3-the-redemption": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-test-drive": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-test-drive-eve-of-destruction": {
+  "fonte": "wikipedia",
+  "genero": "Racing, vehicular combat"
+ },
+ "xbox-test-drive-off-road-wide-open": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-tetris-worlds": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle"
+ },
+ "xbox-the-bard-s-tale": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-the-baseball-2002-battle-ball-park-sengen": {
+  "fonte": "launchbox",
+  "genero": "Sports"
+ },
+ "xbox-the-bible-game": {
+  "fonte": "wikipedia",
+  "genero": "Christian, party"
+ },
+ "xbox-the-cat-in-the-hat": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-chronicles-of-riddick-escape-from-butcher-bay": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, stealth"
+ },
+ "xbox-the-da-vinci-code": {
+  "fonte": "wikipedia",
+  "genero": "Adventure, puzzle"
+ },
+ "xbox-the-dukes-of-hazzard-return-of-the-general-lee": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-the-elder-scrolls-iii-morrowind": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-the-fairly-oddparents-breakin-da-rules": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-the-godfather": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-great-escape": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-the-guy-game": {
+  "fonte": "wikipedia",
+  "genero": "Party"
+ },
+ "xbox-the-haunted-mansion": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, survival horror"
+ },
+ "xbox-the-hobbit": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-house-of-the-dead-iii": {
+  "fonte": "wikipedia",
+  "genero": "Light gun shooter"
+ },
+ "xbox-the-incredible-hulk-ultimate-destruction": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-incredibles": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up, platformer"
+ },
+ "xbox-the-incredibles-rise-of-the-underminer": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-the-italian-job": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-the-king-of-fighters-2002": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-the-king-of-fighters-2003": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-the-king-of-fighters-neowave": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-the-legend-of-spyro-a-new-beginning": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-lord-of-the-rings-the-fellowship-of-the-ring": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-lord-of-the-rings-the-return-of-the-king": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-the-lord-of-the-rings-the-third-age": {
+  "fonte": "wikipedia",
+  "genero": "Role-playing"
+ },
+ "xbox-the-lord-of-the-rings-the-two-towers": {
+  "fonte": "wikipedia",
+  "genero": "Hack and slash"
+ },
+ "xbox-the-matrix-path-of-neo": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-the-nightmare-before-christmas-oogie-s-revenge": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-the-punisher": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, third-person shooter"
+ },
+ "xbox-the-simpsons-hit-and-run": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, racing"
+ },
+ "xbox-the-simpsons-road-rage": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-the-sims": {
+  "fonte": "wikipedia",
+  "genero": "Social simulation"
+ },
+ "xbox-the-sims-2": {
+  "fonte": "wikipedia",
+  "genero": "Social simulation"
+ },
+ "xbox-the-sims-bustin-out": {
+  "fonte": "wikipedia",
+  "genero": "Social simulation"
+ },
+ "xbox-the-spongebob-squarepants-movie": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-the-suffering": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, third-person shooter, survival horror"
+ },
+ "xbox-the-suffering-ties-that-bind": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, third-person shooter, survival horror"
+ },
+ "xbox-the-terminator-dawn-of-fate": {
+  "fonte": "wikipedia",
+  "genero": "Action"
+ },
+ "xbox-the-thing": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter, survival horror"
+ },
+ "xbox-the-urbz-sims-in-the-city": {
+  "fonte": "wikipedia",
+  "genero": "Life simulation"
+ },
+ "xbox-the-warriors": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, beat 'em up"
+ },
+ "xbox-the-wild-rings": {
+  "fonte": "launchbox",
+  "genero": "Fighting"
+ },
+ "xbox-thief-deadly-shadows": {
+  "fonte": "wikipedia",
+  "genero": "Stealth"
+ },
+ "xbox-thousand-land": {
+  "fonte": "launchbox",
+  "genero": "Strategy"
+ },
+ "xbox-thrillville": {
+  "fonte": "wikipedia",
+  "genero": "Management simulator"
+ },
+ "xbox-tiger-woods-pga-tour-06": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tiger-woods-pga-tour-07": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tiger-woods-pga-tour-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tiger-woods-pga-tour-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tiger-woods-pga-tour-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-timesplitters-2": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-timesplitters-future-perfect": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-tmnt-mutant-melee": {
+  "fonte": "launchbox",
+  "genero": "Fighting"
+ },
+ "xbox-toca-race-driver": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-toca-race-driver-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-toca-race-driver-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-toejam-and-earl-iii-mission-to-earth": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, action, platform"
+ },
+ "xbox-tom-and-jerry-in-war-of-the-whiskers": {
+  "fonte": "wikipedia",
+  "genero": "Fighting"
+ },
+ "xbox-tom-clancy-s-ghost-recon": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-ghost-recon-2": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-ghost-recon-2-summit-strike": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-ghost-recon-advanced-warfighter": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-ghost-recon-island-thunder": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-rainbow-six-3": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-rainbow-six-3-black-arrow": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-rainbow-six-critical-hour": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-rainbow-six-lockdown": {
+  "fonte": "wikipedia",
+  "genero": "Tactical shooter"
+ },
+ "xbox-tom-clancy-s-splinter-cell": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-tom-clancy-s-splinter-cell-chaos-theory": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-tom-clancy-s-splinter-cell-double-agent": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-tom-clancy-s-splinter-cell-pandora-tomorrow": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, stealth"
+ },
+ "xbox-tomb-raider-legend": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-tony-hawk-s-american-wasteland": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tony-hawk-s-pro-skater-2x": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tony-hawk-s-pro-skater-3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tony-hawk-s-pro-skater-4": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tony-hawk-s-project-8": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tony-hawk-s-underground": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tony-hawk-s-underground-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-top-gear-rpm-tuning": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-top-spin": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-torino-2006": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-tork-prehistoric-punk": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-total-club-manager-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports management"
+ },
+ "xbox-total-club-manager-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports management"
+ },
+ "xbox-total-immersion-racing": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-total-overdose": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-totaled": {
+  "fonte": "wikipedia",
+  "genero": "Vehicular combat"
+ },
+ "xbox-touge-r": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-toxic-grind": {
+  "fonte": "wikipedia",
+  "genero": "Extreme sports"
+ },
+ "xbox-transworld-snowboarding": {
+  "fonte": "wikipedia",
+  "genero": "Snowboarding"
+ },
+ "xbox-transworld-surf": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-triangle-again": {
+  "fonte": "launchbox",
+  "genero": "Adventure"
+ },
+ "xbox-triangle-again-2": {
+  "fonte": "launchbox",
+  "genero": "Adventure"
+ },
+ "xbox-trigger-man": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-triple-play-2002": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-trivial-pursuit-unhinged": {
+  "fonte": "wikipedia",
+  "genero": "Board game"
+ },
+ "xbox-tron-2-0-killer-app": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-true-crime-new-york-city": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-true-crime-streets-of-la": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure"
+ },
+ "xbox-turok-evolution": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-ty-the-tasmanian-tiger": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-ty-the-tasmanian-tiger-2-bush-rescue": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-ty-the-tasmanian-tiger-3-night-of-the-quinkan": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-uefa-champions-league-2004-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-uefa-euro-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports, Football"
+ },
+ "xbox-ufc-tapout": {
+  "fonte": "wikipedia",
+  "genero": "Versus fighting, Sports"
+ },
+ "xbox-ufc-tapout-2": {
+  "fonte": "wikipedia",
+  "genero": "Versus fighting, Sports"
+ },
+ "xbox-ultimate-beach-soccer": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-ultimate-pro-pinball": {
+  "fonte": "launchbox",
+  "genero": "Pinball"
+ },
+ "xbox-ultimate-spider-man": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure Beat 'em up"
+ },
+ "xbox-ultra-bust-a-move": {
+  "fonte": "wikipedia",
+  "genero": "Puzzle"
+ },
+ "xbox-unreal-championship": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-unreal-championship-2-the-liandri-conflict": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, third-person shooter"
+ },
+ "xbox-unreal-ii-the-awakening": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-urban-chaos-riot-response": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-v-rally-3": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-van-helsing": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, hack and slash"
+ },
+ "xbox-vexx": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-vietcong-purple-haze": {
+  "fonte": "wikipedia",
+  "genero": "Tactical first-person shooter"
+ },
+ "xbox-virtual-pool-tournament-edition": {
+  "fonte": "wikipedia",
+  "genero": "Sports simulation &ndash, snooker & pool"
+ },
+ "xbox-volvo-drive-for-life": {
+  "fonte": "launchbox",
+  "genero": "Racing"
+ },
+ "xbox-voodoo-vince": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-wakeboarding-unleashed-featuring-shaun-murray": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-wallace-and-gromit-in-project-zoo": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-wallace-and-gromit-the-curse-of-the-were-rabbit": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-warpath": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-whacked": {
+  "fonte": "wikipedia",
+  "genero": "Party"
+ },
+ "xbox-whiplash": {
+  "fonte": "wikipedia",
+  "genero": "Platform, action-adventure"
+ },
+ "xbox-whiteout": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-winback-2-project-poseidon": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-wings-of-war": {
+  "fonte": "launchbox",
+  "genero": "Flight Simulator"
+ },
+ "xbox-without-warning": {
+  "fonte": "wikipedia",
+  "genero": "Third-person shooter"
+ },
+ "xbox-world-championship-poker": {
+  "fonte": "wikipedia",
+  "genero": "Cards"
+ },
+ "xbox-world-championship-poker-2-featuring-howard-lederer": {
+  "fonte": "wikipedia",
+  "genero": "Cards"
+ },
+ "xbox-world-championship-pool-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports simulation"
+ },
+ "xbox-world-championship-rugby": {
+  "fonte": "wikipedia",
+  "genero": "Rugby union"
+ },
+ "xbox-world-championship-snooker-2003": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-world-championship-snooker-2004": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-world-poker-tour": {
+  "fonte": "wikipedia",
+  "genero": "Card game"
+ },
+ "xbox-world-racing": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-world-racing-2": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-world-series-baseball": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-world-series-baseball-2k3": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-world-series-of-poker": {
+  "fonte": "launchbox",
+  "genero": "Casino"
+ },
+ "xbox-world-snooker-championship-2005": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-world-war-ii-combat-iwo-jima": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-world-war-ii-combat-road-to-berlin": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter"
+ },
+ "xbox-worms-3d": {
+  "fonte": "wikipedia",
+  "genero": "Artillery, strategy"
+ },
+ "xbox-worms-4-mayhem": {
+  "fonte": "wikipedia",
+  "genero": "Artillery, strategy"
+ },
+ "xbox-worms-forts-under-siege": {
+  "fonte": "wikipedia",
+  "genero": "Artillery, strategy"
+ },
+ "xbox-wrath-unleashed": {
+  "fonte": "wikipedia",
+  "genero": "Strategy"
+ },
+ "xbox-wreckless-the-yakuza-missions": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-wta-tour-tennis": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-wwe-raw-2": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-wwe-wrestlemania-21": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-wwf-raw": {
+  "fonte": "wikipedia",
+  "genero": "Sports"
+ },
+ "xbox-x-men-legends": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-x-men-legends-ii-rise-of-apocalypse": {
+  "fonte": "wikipedia",
+  "genero": "Action role-playing"
+ },
+ "xbox-x-men-next-dimension": {
+  "fonte": "wikipedia",
+  "genero": "Versus fighting"
+ },
+ "xbox-x-men-the-official-game": {
+  "fonte": "wikipedia",
+  "genero": "Action, beat 'em up"
+ },
+ "xbox-x2-wolverine-s-revenge": {
+  "fonte": "wikipedia",
+  "genero": "Action Beat'em up"
+ },
+ "xbox-xbox-music-mixer": {
+  "fonte": "launchbox",
+  "genero": "Music"
+ },
+ "xbox-xgra-extreme-g-racing-association": {
+  "fonte": "wikipedia",
+  "genero": "Racing"
+ },
+ "xbox-xiaolin-showdown": {
+  "fonte": "wikipedia",
+  "genero": "Beat 'em up, fighting"
+ },
+ "xbox-xiii": {
+  "fonte": "wikipedia",
+  "genero": "First-person shooter, stealth"
+ },
+ "xbox-xyanide": {
+  "fonte": "wikipedia",
+  "genero": "Shoot 'em up"
+ },
+ "xbox-yager": {
+  "fonte": "wikipedia",
+  "genero": "Air combat simulation"
+ },
+ "xbox-yetisports-arctic-adventures": {
+  "fonte": "launchbox",
+  "genero": "Action"
+ },
+ "xbox-yonenaga-kunio-no-shougi-seminar": {
+  "fonte": "launchbox",
+  "genero": "Board game"
+ },
+ "xbox-yourself-fitness": {
+  "fonte": "wikipedia",
+  "genero": "Exergaming"
+ },
+ "xbox-yu-gi-oh-the-dawn-of-destiny": {
+  "fonte": "wikipedia",
+  "genero": "Digital collectible card"
+ },
+ "xbox-zapper-one-wicked-cricket": {
+  "fonte": "wikipedia",
+  "genero": "Platform"
+ },
+ "xbox-zathura": {
+  "fonte": "wikipedia",
+  "genero": "Action-adventure, platformer"
+ },
+ "xbox-zillernet": {
+  "fonte": "launchbox",
+  "genero": "Music"
+ }
+}

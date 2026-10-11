@@ -198,6 +198,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # Hoje nao ha colisao (descricoes.json so tem x360- e xblig-), mas a guarda
     # fica para que uma fonte nova nao apague texto curado sem ninguem notar.
     descricoes = load("descricoes.json", {})
+    # Genero do Xbox original: a lista da Wikipedia dele nao tem a coluna que da
+    # o do 360. Vem da infobox e, na falta, do LaunchBox (fetch_genero_xbox.py).
+    # So preenche quem nao tem.
+    generos = load("genero-xbox.json", {})
     # Tamanho do download em GB, do Marketplace arquivado. E o download real, e
     # nao a imagem de disco do Redump, onde quase tudo cairia em 7,30 ou 8,14 GB
     # por causa do enchimento -- ver o cabecalho do fetch_marketplace.py.
@@ -280,6 +284,8 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
         dl = dlcs.get(g["id"])
         if dl:
             g["dlc"] = dl
+        if not g.get("genre") and g["id"] in generos:
+            g["genre"] = generos[g["id"]]["genero"]
         if not (g.get("description") or "").strip():
             dsc = descricoes.get(g["id"])
             if dsc:

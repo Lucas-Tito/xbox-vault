@@ -125,6 +125,7 @@ data/
   tempo.json        tempo de jogo conferido à mão      <- manda no hltb*.json
   x360db.json       Title ID (e os alternativos), nota de jogador e publisher: 360 e indies
   xemu.json         Title ID (e os alternativos) do Xbox original, do xdb do xemu
+  genero-xbox.json  gênero do Xbox original: infobox da Wikipédia, senão o LaunchBox
   hltb*.json        tempo de jogo do HowLongToBeat, um arquivo por alvo
   db.js             Xbox 360 + Xbox original, é o que carrega no primeiro byte
   db-xblig.js       XBLIG, baixado só quando a categoria é ligada
@@ -139,6 +140,7 @@ tools/
   tag_*.py          geram os data/tags-*.json
   fetch_x360db.py   Title ID, nota de jogador e publisher, do x360db (Marketplace do 360)
   fetch_xemu.py     Title ID do Xbox original, do xdb do xemu
+  fetch_genero_xbox.py  gênero do Xbox original (Wikipédia, e o LaunchBox na falta)
   fetch_hltb.py     tempo de jogo do HowLongToBeat (resumível)
   fetch_libretro.py tamanho e nº de jogadores da emulação, dos DATs do libretro
   fetch_screens_libretro.py  uma captura por jogo, dos thumbnails do libretro
@@ -161,6 +163,7 @@ python3 tools/fetch_images_launchbox.py  # completa as que a Wikipédia não tem
 python3 tools/fetch_images_extra.py      # links verificados à mão para o resto
 python3 tools/fetch_x360db.py            # Title ID do 360 e dos indies
 python3 tools/fetch_xemu.py              # Title ID do Xbox original
+python3 tools/fetch_genero_xbox.py       # gênero do Xbox original
 python3 tools/fetch_hltb.py xbox         # tempo de jogo: 360 + Xbox original
 python3 tools/fetch_hltb.py emu          # idem, catálogo de emulação
 python3 tools/fetch_hltb.py indies       # idem, XBLIG
