@@ -60,6 +60,85 @@ function faixaPl(g) {
   return "";
 }
 
+/* ---- familias de genero ----
+   O campo genre vem escrito de jeitos diferentes conforme a fonte: a loja da
+   Xbox diz "Action & adventure" e "Role playing", a Wikipedia diz
+   "Action-adventure" e "Action role-playing", e muito jogo tem genero composto
+   ("Action-adventure, platformer"). Agrupado pelo texto exato, o filtro tinha
+   centenas de caixas, a maioria com um jogo so. O filtro trabalha com familias;
+   o texto original continua intacto no card e na ficha.
+
+   Cada parte do genero (o que vem entre virgulas) passa pelas regras na ordem.
+   O trecho que casa SAI do texto antes da regra seguinte: assim "Action RPG"
+   vira RPG e nao sobra o "action" para cair tambem em Acao, e "sports
+   management" fica em Esporte sem entrar em Simulacao. Por isso o composto mais
+   especifico vem antes do termo solto. Genero composto entra em todas as
+   familias das partes: marcar Plataforma tem de achar o "Action-adventure,
+   platformer". O que nao casa com nada (Expansion, Western, Open world ao lado
+   de outro genero) e qualificador e e ignorado; genero sem familia nenhuma vai
+   para Outros. */
+var GEN_OUTROS = "Outros";
+var GEN_REGRAS = [
+  ["Visual novel", /visual novel|dating sim\w*/g],
+  // A loja junta os dois numa categoria so; trivia sozinho e o mesmo publico.
+  ["Quebra-cabeça e quiz", /puzzle (&|and) trivia|trivia|quiz\w*|game show/g],
+  // "Strategy & simulation" da loja e quase todo tower defense e estrategia.
+  ["Estratégia", /strategy (&|and) simulation/g],
+  // "Racing & flying" da loja e quase todo carro e moto: fica so em Corrida.
+  ["Corrida", /racing (&|and) flying|(sim |kart |horse |arcade style |futuristic )?racing( simulation| mission)?/g],
+  ["Voo e espaço", /(air |space )?combat (flight )?simulat\w*( game)?|(space combat |space )sim\w*|(combat |arcade )?flight( simulat\w*| combat)?|flying/g],
+  ["Esporte", /(extreme )?sports?( simulation| management| manager| (&|and) recreation| game)?|football management|hunting|fishing|bowling|rugby( union)?|snowboarding|baseball|basketball|(american )?football|olympic|snooker|\bpool\b|golf|tennis|fitness|exergam\w*/g],
+  ["Pinball", /pinball( simulation)?/g],
+  // Jogo de mesa: cartas, tabuleiro, xadrez, mahjong e cassino.
+  ["Jogos de mesa", /card (&|and) board|board games?|(digital collectible )?cards?( battle| game| based)?|(computer )?chess|digital tabletop|casino|poker|gambling|mahjong/g],
+  ["Terror", /(survival )?horror/g],
+  ["Música e ritmo", /music( video game)?|rhythm( game)?|dance|singing( game)?|karaoke/g],
+  ["Party", /party( game)?/g],
+  ["Educativo e infantil", /family (&|and) educational|educat\w*|children'?s/g],
+  ["Clássicos e coletâneas", /classics|compilation/g],
+  ["Kinect", /kinect/g],
+  ["Luta", /(2d weapon based |versus )?fighting( game)?/g],
+  ["RPG", /(action[- ]?|tactical |mmo|a)?(role[- ]?play\w*|rpg)( game)?|dungeon crawl\w*/g],
+  // Beat 'em up e hack and slash juntos: os dois sao briga corpo a corpo contra
+  // muitos inimigos, e "Pancadaria" cabe numa linha da coluna de filtros.
+  ["Pancadaria", /beat ?'?em ?up|hack (&|and|n) slash|hack ?'?n'? ?slash/g],
+  // Combate de veiculo (Armored Core, Full Auto) e acao, nao simulacao.
+  ["Ação", /vehic\w* combat/g],
+  ["Ação e aventura", /action\s*(-|&|and)?\s*adventure|stealth[- ]?action|stealth/g],
+  ["Estratégia", /((real-time|turn-based|grand) )?strategy( wargame)?|\brts\b|\brtt\b|(real-time|turn-based) tactics|tactics|tower defense|wargame|artillery/g],
+  ["Tiro", /shooter|shoot ?'?em ?up|bullet hell|run and gun|shooting/g],
+  ["Plataforma", /platform\w*/g],
+  ["Quebra-cabeça e quiz", /puzzle( game)?/g],
+  ["Simulação", /simulat\w*|\bsim\b|construct\w*|manag\w*|business|god game|sandbox/g],
+  ["Aventura", /(graphic )?adventure|point and click|interactive (movie|cinema)/g],
+  ["Ação", /action/g]
+];
+var GEN_FAMILIAS = GEN_REGRAS.map(function (r) { return r[0]; })
+  .filter(function (f, i, a) { return a.indexOf(f) === i; }).concat(GEN_OUTROS);
+var genCache = {};
+function familiasDoGenero(genre) {
+  if (!genre) return [];
+  if (genCache[genre]) return genCache[genre];
+  var fams = [], aberto = false;
+  norm(genre).replace(/&ndash;?/g, " ").split(",").forEach(function (parte) {
+    var t = " " + parte.replace(/\//g, " ").trim() + " ";
+    GEN_REGRAS.forEach(function (r) {
+      t = t.replace(r[1], function () {
+        if (fams.indexOf(r[0]) < 0) fams.push(r[0]);
+        return " ";
+      });
+    });
+    if (/open world/.test(t)) aberto = true;
+  });
+  // "Open world" e qualificador ao lado de outro genero; sozinho, e o jogo de
+  // mundo aberto que a loja chama de acao e aventura.
+  if (!fams.length && aberto) fams.push("Ação e aventura");
+  return (genCache[genre] = fams.length ? fams : [GEN_OUTROS]);
+}
+function familias(g) {
+  return g._fam || (g._fam = familiasDoGenero(g.platform === "homebrew" ? "" : g.genre));
+}
+
 function padraoF() {
   return {
     q: "", own: "all", plats: ["x360", "xbox"], modes: [], flags: [],
@@ -82,6 +161,22 @@ if (!Array.isArray(F.pls)) F.pls = [];
 // As abas "No console" e "Fora da colecao" so existem ao adicionar jogos ao
 // CollectionUI.
 if (F.own === "console" || F.own === "fora" || F.own === "semcol") F.own = "all";
+// O filtro de genero guardava o texto exato ("Action & adventure"); agora guarda
+// a familia. Valor antigo vira a(s) familia(s) dele, para quem tinha marcado
+// "Sports" continuar vendo esporte; o que nao virar familia conhecida sai. Se
+// algo mudou, o filtro ja convertido e gravado, e a conversao roda uma vez so.
+(function () {
+  var antes = JSON.stringify(F.genres);
+  F.genres = (Array.isArray(F.genres) ? F.genres : []).reduce(function (acc, v) {
+    if (typeof v !== "string" || !v) return acc;
+    var fams = GEN_FAMILIAS.indexOf(v) >= 0 ? [v] : familiasDoGenero(v).filter(function (f) {
+      return f !== GEN_OUTROS;   // texto antigo sem familia nao vira "Outros"
+    });
+    fams.forEach(function (f) { if (acc.indexOf(f) < 0) acc.push(f); });
+    return acc;
+  }, []);
+  if (JSON.stringify(F.genres) !== antes) saveF();
+})();
 
 var $ = function (s) { return document.querySelector(s); };
 var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -307,7 +402,7 @@ function match(g, skip) {
     if (F.relType === "hb" && g.releaseType !== "Homebrew") return false;
   }
   if (F.cat && g.category !== F.cat) return false;
-  if (F.genres.length && F.genres.indexOf(g.genre || "") < 0) return false;
+  if (F.genres.length && !familias(g).some(function (f) { return F.genres.indexOf(f) >= 0; })) return false;
   return true;
 }
 
@@ -1408,11 +1503,18 @@ function montarFacetas() {
   $("#f-y1").innerHTML = o1; $("#f-y2").innerHTML = o1;
   $("#f-y1").value = F.y1; $("#f-y2").value = F.y2;
 
-  // gêneros: os cinco maiores e o resto atrás do "Mostrar mais". Um gênero
-  // marcado fica sempre à vista, senão o filtro ativo sumiria ao recolher.
+  // gêneros: as familias, as cinco maiores à vista e o resto atrás do "Mostrar
+  // mais". Uma familia marcada fica sempre à vista, senão o filtro ativo sumiria
+  // ao recolher. Jogo de genero composto conta em cada familia dele, que e
+  // exatamente quantos jogos a caixa traz sozinha. Outros vai sempre por ultimo:
+  // e sobra, nao genero.
   var gc = {};
-  GAMES.forEach(function (g) { if (g.genre) gc[g.genre] = (gc[g.genre] || 0) + 1; });
-  var gens = Object.keys(gc).sort(function (a, b) { return gc[b] - gc[a] || a.localeCompare(b); });
+  GAMES.forEach(function (g) {
+    familias(g).forEach(function (f) { gc[f] = (gc[f] || 0) + 1; });
+  });
+  var gens = Object.keys(gc).sort(function (a, b) {
+    return (a === GEN_OUTROS) - (b === GEN_OUTROS) || gc[b] - gc[a] || a.localeCompare(b);
+  });
   $("#f-genres").innerHTML = gens.map(function (g, i) {
     var on = F.genres.indexOf(g) >= 0;
     return '<label class="chk' + (i >= 5 && !on ? " extra" : "") + '"><input type="checkbox" class="f-genre" value="' +

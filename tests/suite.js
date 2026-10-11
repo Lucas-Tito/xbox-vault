@@ -123,6 +123,84 @@
     // persistencia de filtros
     ok('filtros salvos no storage', !!localStorage.getItem('xbx.filters.v1'));
 
+    // ---- genero por familia ----
+    // O filtro agrupava pelo texto exato do genero, e a mesma coisa escrita de
+    // dois jeitos ("Role playing", "Role-playing", "RPG") virava caixas
+    // separadas. Agora cada caixa e uma familia e o oraculo daqui e a palavra
+    // que define a familia, procurada direto no genero cru do catalogo.
+    {
+      const caixa = v => $$('.f-genre').find(c => c.value === v);
+      const marcar = async (vals) => {
+        $$('.f-genre').forEach(c => { c.checked = vals.includes(c.value); });
+        fire($$('.f-genre')[0]); await wait(400);
+      };
+      const shown = () => +$('#s-shown').textContent.replace(/\D/g,'');
+      const nCaixa = v => +(caixa(v)?.parentNode.querySelector('.n')?.textContent || -1);
+      const comGenero = re => catalogo().filter(g => g.platform !== 'homebrew' &&
+        g.platform !== 'emu' && re.test(g.genre || ''));
+      const vals = $$('.f-genre').map(c => c.value);
+      ok('genero vira poucas familias', vals.length >= 15 && vals.length <= 25,
+         vals.length + ' caixas: ' + vals.join(', '));
+      ok('nenhuma caixa e o texto cru do genero',
+         !['Action & adventure', 'Action-adventure', 'Sports', 'Role playing'].some(v => vals.includes(v)));
+      ok('Outros fica por ultimo', vals.indexOf('Outros') < 0 || vals[vals.length - 1] === 'Outros');
+
+      await marcar(['RPG']);
+      const rpg = comGenero(/role[- ]?play|rpg|dungeon crawl/i);
+      const grafias = new Set(rpg.map(g => g.genre));
+      ok('RPG junta as grafias diferentes',
+         shown() === rpg.length && ['Role playing', 'Role-playing', 'RPG', 'Action RPG'].every(x => grafias.has(x)),
+         shown() + ' exibidos vs ' + rpg.length + ' com role-play/RPG no genero, ' + grafias.size + ' grafias');
+      ok('a contagem da caixa bate com o resultado', nCaixa('RPG') === shown(),
+         'caixa ' + nCaixa('RPG') + ', exibidos ' + shown());
+
+      await marcar(['Plataforma']);
+      const plat = comGenero(/platform/i);
+      ok('Plataforma acha Platform, Platformer e composto', shown() === plat.length,
+         shown() + ' exibidos vs ' + plat.length + ' com platform no genero');
+      await marcar(['Plataforma', 'Corrida']);
+      const soma = comGenero(/platform|racing/i);
+      ok('duas familias marcadas somam', shown() === soma.length,
+         shown() + ' exibidos vs ' + soma.length);
+
+      // genero composto entra em todas as familias das partes
+      const comp = catalogo().find(g => g.genre === 'Action-adventure, platformer');
+      const achaComp = async (fams) => {
+        await marcar(fams);
+        $('#q').value = comp.title; $('#q').dispatchEvent(new Event('input', {bubbles:true}));
+        await wait(600);
+        return cards().some(c => c.dataset.id === comp.id);
+      };
+      if (comp) {
+        const emPlat = await achaComp(['Plataforma']);
+        const emAA = await achaComp(['Ação e aventura']);
+        const emCorr = await achaComp(['Corrida']);
+        ok('composto entra em cada familia dele', emPlat && emAA && !emCorr,
+           comp.title + ': plataforma=' + emPlat + ' acao-aventura=' + emAA + ' corrida=' + emCorr);
+      } else ok('composto entra em cada familia dele', false, 'sem jogo de genero composto no catalogo');
+      $('#q').value = ''; $('#q').dispatchEvent(new Event('input', {bubbles:true})); await wait(500);
+      await marcar([]);
+
+      // Filtro salvo antes das familias guardava o texto do genero. Recarregar
+      // mataria o contexto do teste, entao a pagina sobe de novo num iframe, que
+      // divide o localStorage com esta: o app dele converte e grava o filtro.
+      const guardado = localStorage.getItem('xbx.filters.v1');
+      localStorage.setItem('xbx.filters.v1', JSON.stringify(
+        {plats: ['x360', 'xbox'], genres: ['Action & adventure', 'Genero que nao existe', 7, 'Outros']}));
+      const fr = document.createElement('iframe');
+      fr.style.cssText = 'position:fixed;width:900px;height:600px;left:-2000px;top:0';
+      fr.src = location.href.split('#')[0];
+      document.body.appendChild(fr);
+      const lerG = () => { try { return JSON.parse(localStorage.getItem('xbx.filters.v1')).genres; } catch (e) { return null; } };
+      await until(() => JSON.stringify(lerG()) !== JSON.stringify(['Action & adventure', 'Genero que nao existe', 7, 'Outros']), 8000);
+      const conv = lerG();
+      ok('filtro de genero antigo vira familia', JSON.stringify(conv) === JSON.stringify(['Ação e aventura', 'Outros']),
+         JSON.stringify(conv));
+      fr.remove();
+      if (guardado == null) localStorage.removeItem('xbx.filters.v1');
+      else localStorage.setItem('xbx.filters.v1', guardado);
+    }
+
     // import: injeta ids conhecidos e valida via fluxo real do app
     const sample = catalogo().slice(0, 5).map(g => g.id);
     const wsample = catalogo().slice(10, 13).map(g => g.id);
