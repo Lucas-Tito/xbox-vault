@@ -198,6 +198,9 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # Hoje nao ha colisao (descricoes.json so tem x360- e xblig-), mas a guarda
     # fica para que uma fonte nova nao apague texto curado sem ninguem notar.
     descricoes = load("descricoes.json", {})
+    # A do Xbox original vem do LaunchBox (fetch_descricao_xbox.py), porque o
+    # x360db nao cobre o console. Arquivo a parte, e as chaves nao se cruzam.
+    descricoes.update(load("descricoes-xbox.json", {}))
     # Genero do Xbox original: a lista da Wikipedia dele nao tem a coluna que da
     # o do 360. Vem da infobox e, na falta, do LaunchBox (fetch_genero_xbox.py).
     # So preenche quem nao tem.
