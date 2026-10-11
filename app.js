@@ -2365,19 +2365,37 @@ function cuiDiferencaCatalogo(itens) {
   return { entram: entram, saem: saem };
 }
 
-function cuiPerguntarCatalogo(itens) {
+/* "11/10/2026 às 07:29": quando o vault.txt guardado entrou. */
+function cuiQuando() {
+  var d = new Date(CUI_INV.t);
+  return d.toLocaleDateString("pt-BR") + " às " + d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+}
+
+/* Pelo menu Arquivo, sem importar de novo: compara com o ultimo vault.txt. Ai a
+   pergunta diz de quando ele e, e sem diferenca responde em vez de se calar. */
+function cuiSincCatalogo() {
+  if (!CUI_INV) return;
+  var faltava = pendentes(["xblig"]).length;
+  carregarCatalogos(["xblig"], function () { if (faltava) render(); cuiPerguntarCatalogo(CUI_INV.itens, true); });
+}
+
+function cuiPerguntarCatalogo(itens, peloMenu) {
   var d = cuiDiferencaCatalogo(itens);
-  if (!d.entram.length && !d.saem.length) return;
+  if (!d.entram.length && !d.saem.length) {
+    if (peloMenu) cuiAvisar("O Tenho do catálogo já está igual ao console", null);
+    return;
+  }
   var n = function (k) { return "<b>" + k + "</b> jogo" + (k === 1 ? "" : "s"); };
   openModal(
-    "<h3>Atualizar o catálogo também?</h3>" +
-    "<p>O <b>Tenho</b> do catálogo passa a ser o que está no console:</p><ul>" +
+    "<h3>" + (peloMenu ? "Atualizar o Tenho pelo console?" : "Atualizar o catálogo também?") + "</h3>" +
+    "<p>O <b>Tenho</b> do catálogo passa a ser o que está no console" +
+    (peloMenu ? ", pelo vault.txt importado em " + cuiQuando() : "") + ":</p><ul>" +
     (d.entram.length ? "<li>" + n(d.entram.length) + " do console entra" + (d.entram.length === 1 ? "" : "m") + " no Tenho</li>" : "") +
     (d.saem.length ? "<li>" + n(d.saem.length) + " do Tenho que não " + (d.saem.length === 1 ? "está no console vai" : "estão no console vão") +
       " para a wishlist</li>" : "") +
     "</ul><p>Homebrew e emulação ficam como estão: o console não tem como dizer quais você tem.</p>" +
     '<button class="btn primary" id="cui-cat-sim">Atualizar o catálogo</button>' +
-    '<button class="btn" id="cui-cat-nao">Só as coleções</button>');
+    '<button class="btn" id="cui-cat-nao">' + (peloMenu ? "Cancelar" : "Só as coleções") + "</button>");
   $("#cui-cat-nao").onclick = closeModal;
   $("#cui-cat-sim").onclick = function () {
     var antes = JSON.stringify(marks), agora = Date.now();
@@ -2451,6 +2469,7 @@ var cuiAvisoTimer = null, cuiDesfazer = null;
 function cuiAvisar(texto, desfazer) {
   $("#aviso-txt").textContent = texto;
   cuiDesfazer = desfazer;
+  $("#aviso-desfazer").hidden = !desfazer;
   $("#aviso").hidden = false;
   clearTimeout(cuiAvisoTimer);
   cuiAvisoTimer = setTimeout(cuiFecharAviso, 6000);
@@ -2586,9 +2605,7 @@ function cuiPintar() {
     if (!CUI.cols.length)
       h = "<span>Nenhuma coleção ainda. Importe o vault.txt do console pelo menu Arquivo, ou crie uma em Nova coleção.</span>";
     if (CUI_INV) {
-      var d = new Date(CUI_INV.t);
-      h += '<div class="cui-nota cui-inv">Console: ' + cuiResumoInv(CUI_INV.itens) + ", importados em " + d.toLocaleDateString("pt-BR") + " às " +
-        d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }) + ".</div>";
+      h += '<div class="cui-nota cui-inv">Console: ' + cuiResumoInv(CUI_INV.itens) + ", importados em " + cuiQuando() + ".</div>";
     }
   } else if (cuiTela === "jogos" && c) {
     var k = cuiContar(c);
@@ -2720,6 +2737,12 @@ function ligarCui() {
   };
   $("#btn-cui-import").onclick = function () { $("#file-cui").click(); };
   $("#btn-cui-export").onclick = cuiExportar;
+  $("#btn-sinc-cat").onclick = cuiSincCatalogo;
+  // O item depende do vault.txt guardado: confere a cada vez que o menu abre.
+  $("#btn-backup").addEventListener("click", function () {
+    $("#btn-sinc-cat").hidden = !CUI_INV;
+    if (CUI_INV) $("#sinc-cat-quando").textContent = "Pelo vault.txt de " + cuiQuando();
+  });
   $("#file-cui").addEventListener("change", function (e) {
     var f = e.target.files[0];
     if (f) f.arrayBuffer().then(cuiImportar);

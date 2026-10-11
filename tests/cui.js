@@ -46,6 +46,9 @@
   ok('sem filtros na tela das colecoes', !filtros());
   ok('os indies descem junto', !!window.XBX_XBLIG);
   ok('sem colecao, a barra explica o que fazer', /Nenhuma coleção/.test($('#cui-barra').textContent));
+  $('#btn-backup').click(); await wait(100);
+  ok('sem vault.txt importado, o menu nao oferece atualizar o Tenho', $('#btn-sinc-cat').hidden);
+  $('#btn-backup').click(); await wait(100);
 
   // ---- importar: formato atual, uniao, CRLF, BOM ----
   const CAB = '# CollectionUI: uma colecao por linha, no formato\r\n' +
@@ -471,6 +474,26 @@
   await ate(() => $('#cui-cat-sim')); $('#cui-cat-sim').click(); await wait(300);
   await importar(doConsole); await wait(400);
   ok('com o Tenho igual ao console, nao pergunta nada', !$('#cui-cat-sim'));
+
+  // ---- o mesmo pelo menu Arquivo, sem importar de novo ----
+  $('#btn-backup').click(); await wait(100);
+  ok('com vault.txt importado, o menu oferece atualizar o Tenho, com a data', !$('#btn-sinc-cat').hidden &&
+     $('#btn-sinc-cat').offsetParent && /Pelo vault\.txt de \d\d\/\d\d\/\d{4} às \d\d:\d\d/.test($('#btn-sinc-cat').textContent),
+     $('#btn-sinc-cat').textContent);
+  $('#btn-sinc-cat').click(); await wait(400);
+  ok('pelo menu e sem diferenca: avisa que ja esta igual, sem Desfazer', !$('#cui-cat-sim') &&
+     /já está igual/.test($('#aviso-txt').textContent) && $('#aviso-desfazer').hidden);
+  const dt2 = new DataTransfer();
+  dt2.items.add(new File([JSON.stringify({ owned: [a.id, b.id], wishlist: [] })], 'm.json', {type:'application/json'}));
+  $('#file-in').files = dt2.files; $('#file-in').dispatchEvent(new Event('change', {bubbles:true}));
+  await ate(() => $('#imp-replace')); $('#imp-replace').click(); await wait(400);
+  $('#btn-backup').click(); await wait(100); $('#btn-sinc-cat').click();
+  await ate(() => $('#cui-cat-sim'));
+  ok('pelo menu: pergunta dizendo de quando e o vault.txt, e com Cancelar', /Atualizar o Tenho pelo console\?/.test($('#modal-body').textContent) &&
+     /importado em/.test($('#modal-body').textContent) && $('#cui-cat-nao').textContent === 'Cancelar', $('#modal-body').textContent);
+  $('#cui-cat-sim').click(); await wait(400);
+  ok('pelo menu: o Tenho fica igual ao console', est(a.id) === 'own' && est(c.id) === 'own' && est(b.id) === 'wish' &&
+     !$('#aviso-desfazer').hidden);
   window.__cat = 0;
   localStorage.removeItem('xbx.marks.v3');
   localStorage.removeItem('xbx.cui.inv.v1');
@@ -478,6 +501,9 @@
   // ---- volta ao catalogo ----
   $('.menu-item.area[data-area=cat]').click(); await wait(500);
   ok('o botao do topo volta a dizer Xbox Vault', $('#brand-nome').textContent === 'Xbox Vault');
+  $('#btn-backup').click(); await wait(100);
+  ok('no catalogo o menu tambem oferece atualizar o Tenho', !!$('#btn-sinc-cat').offsetParent);
+  $('#btn-backup').click(); await wait(100);
   ok('volta ao catalogo', !document.body.classList.contains('cui') && location.hash === '' &&
      !!$('#vistas-own').offsetParent && !!filtros());
   localStorage.removeItem('xbx.cui.v1');
