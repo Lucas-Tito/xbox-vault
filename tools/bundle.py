@@ -213,6 +213,10 @@ def montar(lista_arquivos, tag_arquivos, rotulo, extras=None):
     # ja em GB e da ROM EXTRAIDA. Mora em arquivo proprio porque a fonte e outra,
     # igual aos metacritic-emu e hltb-emu.
     tamanhos.update(load("tamanho-emu.json", {}))
+    # Xbox original: a soma dos arquivos do disco no dbox.tools, o espaco que o
+    # jogo ocupa no HD (fetch_tamanho_xbox.py). O arquivo guarda o disco usado
+    # junto, para conferencia; aqui so entra o numero.
+    tamanhos.update({k: v["gb"] for k, v in load("tamanho-xbox.json", {}).items()})
     # Numero de jogadores da emulacao, do metadat/maxusers do libretro-database.
     # E a fonte PREFERIDA: onde ela fala, o numero dela vale sobre o do LaunchBox.
     jogadores = load("jogadores-emu.json", {})
